@@ -1,0 +1,1 @@
+Le **validation board** sono board di grandi dimensioni con lo scopo di effettuare "silicon validation" ovvero una verifica per evidenziare errori di progettazione o di strutturazione del chip.

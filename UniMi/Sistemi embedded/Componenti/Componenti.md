@@ -17,3 +17,5 @@ Elenco:
 * **transistor**: un semiconduttore che si comporta come un relè. Una piccola corrente definisce il passaggio tra due punti dove passa grande corrente. Se quella di pilotaggio varia nel tempo la corrente in uscita avrà la stessa forma d'onda, ma con intensità maggiore. Esistono transinsor che anziche usare flussi di corrente per pilotare usano campi elettrici diminuendo la dispersione di calore.
 - [[Sensori]]
 - [[Attuatori]]
+- [[GPIO]]
+- [[Memoria]]

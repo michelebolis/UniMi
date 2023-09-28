@@ -21,3 +21,8 @@ Ciò vale per qualsiasi stringa predefinita.
 La strinfa verrà presa direttamente dalla flash quando necessaria anzichè ricopiarla prima in RAM.
 
 Legato all'uso di memoria è anche la [[ricorsione]]
+
+In ambito embedded, solitamente vengono utilizzate memorie NAND per lo storage principale e le NOR per le funzioni di basso livello e il boot.
+
+Per **XIP** si intende "execution in place", che è una caratteristica fondamentale delle porte NOR nei processori che le supportano; sostanzialmente non c'è il bisogno di caricare il codice oggetto contenuto sulle porte NOR su un'eventuale memoria esterna.  
+Il pregio principale è rappresentato dal fatto che è ideale nelle fasi di "boot" in cui la memoria di sistema potrebbe non essere ancora accessibile.

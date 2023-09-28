@@ -1,0 +1,1 @@
+Sistema per evitare che venga riscritto sempre lo stesso blocco ed evitare il suo cessato funzionamento prematuro

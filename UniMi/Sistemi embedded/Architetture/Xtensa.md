@@ -1,0 +1,1 @@
+E' un **microcontrollore RISC** ad elevate prestazioni con bassi consumi. L'architettura puntava sulla flessibilità ed estendibilità e l'ISA, nonostante a 32 bit, era capace di eseguire istruzioni a 16 o 24 bit riducendo così le dimensioni del codice. (mercato audio e WiFi ESP)

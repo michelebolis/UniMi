@@ -5,7 +5,11 @@
     "fontSize": 16,
     "emojiStyle": "none",
     "iconColor": null,
-    "recentlyUsedIcons": [],
+    "recentlyUsedIcons": [
+      "IbHeartbeatMonitor",
+      "IbConnectivity",
+      "IbLightning"
+    ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
     "extraMargin": {
@@ -15,5 +19,8 @@
       "left": 0
     },
     "iconInTabsEnabled": false
-  }
+  },
+  "Sistemi embedded": "IbLightning",
+  "Reti di calcolatori": "IbConnectivity",
+  "Ingegneria del software": "IbHeartbeatMonitor"
 }
