@@ -1,0 +1,5 @@
+- Proprietà esterna: percepibili dal cliente
+	- #Usabilità: E' una fase fondamentale ma costosa e poi non brevettabile. Nielsen-Norman's Law la usabilità è quantificabile.
+	- #Efficienza nell'uso delle risorse (tempo o spazio): Diventa un requisito importante. Soft-realtime: . Ricordando che i tempi di sviluppo sono alti, la velocità dell'HW potrebbe aumentare nel tempo e quindi risolvere in parte i problemi di efficienza.
+	- #Verificabilità: SW leggibile tanto che sia facilmente verificabile la sua correttezza.
+- Proprietà interna: percepibili solo da chi lo sviluppa

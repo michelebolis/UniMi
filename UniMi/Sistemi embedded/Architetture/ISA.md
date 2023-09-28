@@ -1,0 +1,1 @@
+Un **ISA**, Instruction Set Architecture, è un modello astratto di una architettura che descrive tipologia di dati utilizzabili, registri, come devono essere fatti input e output e le instruzioni macchina.

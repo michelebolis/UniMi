@@ -1,0 +1,3 @@
+- #Correttezza: se requisiti (necessità dell'utente) e specifiche (necessità che io ho compreso di dover fare) coincidono. R.Glass' Law: le mancanze nei requisiti sono la fonte primaria di fallimenti.
+- #Affidabilità: L'utente si può fidare che vengano rispettati i requisiti richiesti
+- #Robustezza o Safety

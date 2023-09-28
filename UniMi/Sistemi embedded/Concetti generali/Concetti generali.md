@@ -1,0 +1,6 @@
+- [[Sistema monoprogrammato e multiprogrammato]]
+- [[Tecniche multiplexing]]
+- [[Controllo a loop aperto o chiuso]]
+- [[Interrupt]]
+- [[Realt-time]]
+- [[PWM]]

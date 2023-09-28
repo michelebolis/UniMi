@@ -1,0 +1,1 @@
+La #MdT, Macchina di Turing, è una macchina a stati dotata di piu testine che leggono/scrivono simboli su uno o piu nastri, prendendo le decisioni in base al simbolo sul nastro.  

@@ -1,0 +1,2 @@
+La **costante di tempo RC** è il tempo impiegato dal condensatore per caricare il 63,2% della capacità restante da caricare.
+$t=R*C$ (esempio un condensatore scarico impiegherà t tempo per caricare il 63,2% della sua capacità totale, un altro t tempo per caricare il 53,2% della 36,8% della capacità mancante e così via)

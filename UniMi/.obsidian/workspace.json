@@ -1,0 +1,241 @@
+{
+  "main": {
+    "id": "7abe8d0316359bea",
+    "type": "split",
+    "children": [
+      {
+        "id": "bc9ef162967de419",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "283ccd8db5b1d389",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "d2c76d9a572a66e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sistemi embedded/Componenti/Componenti.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b553b04494e956a5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sistemi embedded/Architetture/Architetture.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4a383cab0eedf58f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sistemi embedded/Architetture/ISA.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "d797c49ad80d940a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ca3a66364a2c8dc6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sistemi embedded/Appunti originali.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "13264f1f0d7c8d3f",
+    "type": "split",
+    "children": [
+      {
+        "id": "9c2b8e2aea8aae59",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "47136b92c595cdff",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "bdd78e7dc8a45cb1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6f7aa6bfa33cda0f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "98d901f23bf6ce7e",
+    "type": "split",
+    "children": [
+      {
+        "id": "c1dd70081452f2c5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fa98dda33a9452bd",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Sistemi embedded/Architetture/Architetture.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7866e558f30212e5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Sistemi embedded/Architetture/Architetture.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f3a4d1fd087531b4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "cea30255b2fc744f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Sistemi embedded/Architetture/Architetture.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "47136b92c595cdff",
+  "lastOpenFiles": [
+    "Sistemi embedded/Architetture/Tipi di architetture.md",
+    "Sistemi embedded/Appunti originali.md",
+    "Sistemi embedded/Architetture/Tipi di architettur.md",
+    "Sistemi embedded/Architetture/Architetture.md",
+    "Sistemi embedded/Architetture/ISA.md",
+    "Sistemi embedded/Device/Device.md",
+    "Sistemi embedded/Componenti/Attuatori.md",
+    "Sistemi embedded/Architetture",
+    "Sistemi embedded/Componenti/Componenti.md",
+    "Sistemi embedded/Componenti/Sensori/Sensori fisici.md",
+    "Sistemi embedded/Componenti/Sensori/Sensori.md",
+    "Sistemi embedded/Componenti/Sensori/Sensori numerici.md",
+    "Sistemi embedded/Componenti/Sensori",
+    "Sistemi embedded/Device/Strumenti di misurazione.md",
+    "Sistemi embedded/Concetti generali/Concetti generali.md",
+    "Sistemi embedded/Device/Strum",
+    "Sistemi embedded/Concetti generali/PWM.md",
+    "Sistemi embedded/Componenti/Filtro passa alto.md",
+    "Sistemi embedded/Componenti/Filtro passa basso.md",
+    "Sistemi embedded/Componenti/Filtri.md",
+    "Sistemi embedded/Concetti elettronica/Costante RC.md",
+    "Sistemi embedded/Componenti",
+    "Sistemi embedded/Concetti elettronica/Tensione.md",
+    "Sistemi embedded/Concetti elettronica/Concetti elettronica.md",
+    "Sistemi embedded/Concetti elettronica/Forma d'onda.md",
+    "Sistemi embedded/Concetti elettronica/Panoramica unità di misura.md",
+    "Sistemi embedded/Concetti elettronica/Potenza.md",
+    "Sistemi embedded/Concetti elettronica/Corrente alternata e continua.md",
+    "Sistemi embedded/Concetti elettronica/Leggi di Kirchhoff.md",
+    "Sistemi embedded/Concetti generali/Interrupt.md",
+    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+    "Reti di calcolatori",
+    "Sistemi embedded/Concetti licenze",
+    "Sistemi embedded/Device/Arduino",
+    "Sistemi embedded/Concetti elettronica",
+    "Sistemi embedded/Device",
+    "Sistemi embedded/Concetti/Untitled"
+  ]
+}

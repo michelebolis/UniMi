@@ -1,0 +1,2 @@
+- [[Tipi di architetture]]
+- [[ISA]]

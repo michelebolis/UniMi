@@ -1,0 +1,1 @@
+Un **segnale** elettrico è un informazione associata a grandezze di tensione e corrente su conduttori.
