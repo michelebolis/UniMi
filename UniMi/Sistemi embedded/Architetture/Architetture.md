@@ -1,2 +1,3 @@
 - [[Tipi di architetture]]
 - [[ISA]]
+- [[Ordine memorizzazione]]

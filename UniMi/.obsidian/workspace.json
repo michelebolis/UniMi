@@ -179,14 +179,21 @@
                 "file": "Sistemi embedded/Architetture/Architetture.md"
               }
             }
+          },
+          {
+            "id": "a036a027379b1f76",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -198,12 +205,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "47136b92c595cdff",
+  "active": "b553b04494e956a5",
   "lastOpenFiles": [
-    "Sistemi embedded/Architetture/Tipi di architetture.md",
+    "Sistemi embedded/Architetture/Ordine memorizzazione.md",
     "Sistemi embedded/Appunti originali.md",
-    "Sistemi embedded/Architetture/Tipi di architettur.md",
     "Sistemi embedded/Architetture/Architetture.md",
+    "Sistemi embedded/Architetture/Tipi di architetture.md",
+    "Sistemi embedded/Architetture/Tipi di architettur.md",
     "Sistemi embedded/Architetture/ISA.md",
     "Sistemi embedded/Device/Device.md",
     "Sistemi embedded/Componenti/Attuatori.md",
@@ -229,7 +237,6 @@
     "Sistemi embedded/Concetti elettronica/Potenza.md",
     "Sistemi embedded/Concetti elettronica/Corrente alternata e continua.md",
     "Sistemi embedded/Concetti elettronica/Leggi di Kirchhoff.md",
-    "Sistemi embedded/Concetti generali/Interrupt.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Reti di calcolatori",
     "Sistemi embedded/Concetti licenze",
