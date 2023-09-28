@@ -28,18 +28,6 @@
             }
           },
           {
-            "id": "b553b04494e956a5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sistemi embedded/Concetti generali/MdT.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "4a383cab0eedf58f",
             "type": "leaf",
             "state": {
@@ -52,7 +40,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "d797c49ad80d940a",
@@ -137,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sistemi embedded/Concetti generali/MdT.md",
+                "file": "Sistemi embedded/Componenti/Componenti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sistemi embedded/Concetti generali/MdT.md",
+                "file": "Sistemi embedded/Componenti/Componenti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sistemi embedded/Concetti generali/MdT.md"
+                "file": "Sistemi embedded/Componenti/Componenti.md"
               }
             }
           },
@@ -206,8 +194,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b553b04494e956a5",
+  "active": "d2c76d9a572a66e2",
   "lastOpenFiles": [
+    "Sistemi embedded/Concetti generali/MdT.md",
     "Sistemi embedded/Architetture/Architetture.md",
     "Sistemi embedded/Architetture/Ordine memorizzazione.md",
     "Sistemi embedded/Appunti originali.md",
@@ -237,7 +226,6 @@
     "Sistemi embedded/Concetti elettronica/Panoramica unità di misura.md",
     "Sistemi embedded/Concetti elettronica/Potenza.md",
     "Sistemi embedded/Concetti elettronica/Corrente alternata e continua.md",
-    "Sistemi embedded/Concetti elettronica/Leggi di Kirchhoff.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Reti di calcolatori",
     "Sistemi embedded/Concetti licenze",
