@@ -33,7 +33,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sistemi embedded/Architetture/Architetture.md",
+                "file": "Sistemi embedded/Concetti generali/MdT.md",
                 "mode": "source",
                 "source": false
               }
@@ -99,7 +99,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#MdT",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -116,7 +116,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -136,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sistemi embedded/Architetture/Architetture.md",
+                "file": "Sistemi embedded/Concetti generali/MdT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sistemi embedded/Architetture/Architetture.md",
+                "file": "Sistemi embedded/Concetti generali/MdT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -176,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sistemi embedded/Architetture/Architetture.md"
+                "file": "Sistemi embedded/Concetti generali/MdT.md"
               }
             }
           },
@@ -193,7 +194,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 230.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -207,9 +208,9 @@
   },
   "active": "b553b04494e956a5",
   "lastOpenFiles": [
+    "Sistemi embedded/Architetture/Architetture.md",
     "Sistemi embedded/Architetture/Ordine memorizzazione.md",
     "Sistemi embedded/Appunti originali.md",
-    "Sistemi embedded/Architetture/Architetture.md",
     "Sistemi embedded/Architetture/Tipi di architetture.md",
     "Sistemi embedded/Architetture/Tipi di architettur.md",
     "Sistemi embedded/Architetture/ISA.md",
