@@ -15,9 +15,9 @@
               "state": {
                 "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "viewState": {
-                  "x": 548.0430155047446,
-                  "y": 812.6788005432932,
-                  "zoom": -1.492346241110032
+                  "x": 450.19064825645273,
+                  "y": -4059.695444055883,
+                  "zoom": -1.1590129077766986
                 }
               }
             }
@@ -146,8 +146,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
