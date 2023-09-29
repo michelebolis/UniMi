@@ -1,4 +1,4 @@
-Le **partizioni** sono ==porzioni di memoria utilizzate dal SO per il boot ==(partizione di boot) contenendo tutti i file necessari all'avvio e il kernel. 
+Le **partizioni** sono ==porzioni di memoria utilizzate dal SO per il boot==(partizione di boot) contenendo tutti i file necessari all'avvio e il kernel. 
 Vi sono poi la partizione di root (la home dell'utente root) e la partizione di SWAP per lo swapping delle pagine.  
 Le partizioni sono dividono in
 

@@ -4,15 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "276c951f988dec83",
+        "id": "f3a0bf6795f4041c",
         "type": "tabs",
         "children": [
           {
-            "id": "f90ba631fb7ccfb0",
+            "id": "c1ce2ce19829fc50",
             "type": "leaf",
+            "pinned": true,
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "graph",
+              "state": {},
+              "pinned": true
             }
           }
         ]
@@ -44,7 +46,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#semi-conduttori",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -146,16 +148,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f90ba631fb7ccfb0",
+  "active": "47136b92c595cdff",
   "lastOpenFiles": [
-    "Sistemi embedded/Device/Device.md",
     "Sistemi embedded/Sistemi embedded.md",
+    "Ingegneria del software/SWENG.md",
+    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Index.md",
+    "Sistemi embedded/Sistemi embedded.canvas",
+    "Sistemi embedded/img/Pasted image 20230929133655.png",
+    "Pasted image 20230929133140.png",
+    "Sistemi embedded/img/Pasted image 20230929133039.png",
+    "Sistemi embedded/Concetti elettronica/PWM.md",
+    "Pasted image 20230929132143.png.~tmp",
+    "Sistemi embedded/img/Pasted image 20230929132143.png",
+    "Sistemi embedded/Device/Device.md",
     "Sistemi embedded/Componenti/Componenti.md",
     "Sistemi embedded/img/Pasted image 20230929115226.png",
     "Sistemi embedded/img",
     "Sistemi embedded/img/Pasted image 20230929115447.png",
-    "Sistemi embedded/Sistemi embedded.canvas",
     "2023-09-29.md",
     "Sistemi embedded/SO/FreeRTOS.md",
     "Sistemi embedded/SO/real-time==.md",
@@ -178,15 +188,11 @@
     "Sistemi embedded/Componenti/Filtri.md",
     "Sistemi embedded/Device/Arduino/Arduino.md",
     "Sistemi embedded/Device/Arduino/Gestione Interrupt.md",
-    "Sistemi embedded/Protocolli/Protocolli.md",
-    "Sistemi embedded/Protocolli/IoT.md",
     "Sistemi embedded/SO",
     "Sistemi embedded/Protocolli",
     "Sistemi embedded/Componenti/Memoria",
     "Sistemi embedded/Architetture",
     "Sistemi embedded/Componenti/Sensori",
-    "Sistemi embedded/Device/Strum",
-    "Sistemi embedded/Componenti",
-    "Ingegneria del software/Ingegneria del software (SWENG).canvas"
+    "Sistemi embedded/Device/Strum"
   ]
 }

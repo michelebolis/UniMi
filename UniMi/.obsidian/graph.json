@@ -2,21 +2,57 @@
   "collapse-filter": false,
   "search": "",
   "showTags": true,
-  "showAttachments": false,
-  "hideUnresolved": false,
+  "showAttachments": true,
+  "hideUnresolved": true,
   "showOrphans": true,
-  "collapse-color-groups": true,
-  "colorGroups": [],
-  "collapse-display": false,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:\"Ingegneria del software\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:\"Sistemi embedded\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 5425632
+      }
+    },
+    {
+      "query": "path:\"Reti di calcolatori\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14718802
+      }
+    },
+    {
+      "query": "path:\"Linguaggi di programmazione\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 11752160
+      }
+    },
+    {
+      "query": "file:Index",
+      "color": {
+        "a": 1,
+        "rgb": 16777215
+      }
+    }
+  ],
+  "collapse-display": true,
   "showArrow": true,
   "textFadeMultiplier": -0.8,
   "nodeSizeMultiplier": 1.52916666666667,
   "lineSizeMultiplier": 0.967708333333333,
   "collapse-forces": false,
-  "centerStrength": 0.307291666666667,
-  "repelStrength": 11.875,
+  "centerStrength": 0.395833333333333,
+  "repelStrength": 14.7916666666667,
   "linkStrength": 1,
-  "linkDistance": 184,
-  "scale": 0.16348370567220813,
-  "close": true
+  "linkDistance": 258,
+  "scale": 0.1166089157945759,
+  "close": false
 }

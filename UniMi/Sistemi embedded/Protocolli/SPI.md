@@ -8,3 +8,5 @@ Linee bus:
 * MOSI (Master Output Slave Input) attivo-alto
 * CS (Chip Select): seleziona quale slave abilitare per la comunicazione con il master (abilitato/disabilitato molto distante dalla trasmissione). 
 	Per apprezzarne  la variazione dovremmo prevederne l'attivazione e la disattivazione molto prima e molto dopo la trasmissione. Tuttavia cosi non sarebbe permesso vedere altri segnali distintamente.
+
+![[Pasted image 20230929133655.png]]

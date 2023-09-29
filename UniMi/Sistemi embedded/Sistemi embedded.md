@@ -18,4 +18,6 @@ Alcuni esempi per capire i settori di utilizzo e sviluppo di tali sistemi sono:
 [[Protocolli]]
 [[Licenze]]
 
+Mappa concettuale [[Sistemi embedded.canvas|Sistemi embedded]]
+
 Source: [[Appunti originali]]
