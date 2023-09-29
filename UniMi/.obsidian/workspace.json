@@ -4,20 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "540f2e61d122045e",
+        "id": "22c585b8249d92b6",
         "type": "tabs",
         "children": [
           {
-            "id": "77a7466b59e29305",
+            "id": "2c5522e13a2507a7",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
                 "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "viewState": {
-                  "x": 450.19064825645273,
-                  "y": -4059.695444055883,
-                  "zoom": -1.1590129077766986
+                  "x": 1265.1161846316347,
+                  "y": 428.37242872960667,
+                  "zoom": -1.492346241110032
                 }
               }
             }
@@ -68,8 +68,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -158,8 +157,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "77a7466b59e29305",
+  "active": "2c5522e13a2507a7",
   "lastOpenFiles": [
+    "Pasted image 20230929115447.png",
+    "Pasted image 20230929115226.png",
+    "2023-09-29.md",
     "Sistemi embedded/Sistemi embedded.canvas",
     "Sistemi embedded/SO/FreeRTOS.md",
     "Sistemi embedded/SO/real-time==.md",
@@ -187,7 +189,6 @@
     "Sistemi embedded/Protocolli/IoT.md",
     "Sistemi embedded/Appunti originali.md",
     "Sistemi embedded/Protocolli/MQTT.md",
-    "Sistemi embedded/Protocolli/TCP-IP.md",
     "Sistemi embedded/SO",
     "Sistemi embedded/Protocolli",
     "Sistemi embedded/Componenti/Memoria",
