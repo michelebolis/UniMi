@@ -1,2 +1,5 @@
- Il **JTAG (Join Test Action Group)** è uno strumento per il testing e la validazione hardware e software di basso livello (es driver) delle board.
- Semplificando è come una liena di celle interconnesse tutte intorno alla logica I/O del chip. Le celle possono raccogliere le infromrazione sullo stato complessivo di tutti i registri e della memoria permettendo un controllo completo su quello che viene eseguito all'interno dell'elaboratore. Viene gestrito tramite connettori JTAG. Sono solitamente rimossi per specifiche di sicurezza e per evitare reverse ingineering sulla board di produzione.
+Il **JTAG (Join Test Action Group)** è uno strumento per il ==testing e la validazione hardware e software di basso livello== (es driver) delle board.
+ 
+Semplificando è come una linea di celle interconnesse tutte intorno alla logica I/O del chip. Le celle possono raccogliere le informazione sullo stato complessivo di tutti i registri e della memoria permettendo un controllo completo su quello che viene eseguito all'interno dell'elaboratore. 
+
+Sono solitamente rimossi per specifiche di sicurezza e per evitare reverse engineering sulla board di produzione.

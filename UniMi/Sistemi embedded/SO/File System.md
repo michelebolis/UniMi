@@ -1,4 +1,4 @@
- È un astrazione delle informazioni nei dispositivi fisici e del loro trasferimento.
+ È un ==astrazione delle informazioni nei dispositivi fisici e del loro trasferimento==.
  Composto da:
 
 * strutture dati: per organizzare dati (i blocchi dei file) e metadati

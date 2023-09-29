@@ -1,2 +1,2 @@
- il root filesystem è la [[partizione]] del filesystem consente gli elementi necessari al boot del sistema (libc, shell o altro interprete di comandi, altri tool ...).
- Viene convenzionalmente montata come primo nodo dell'albero delle cartelle "/".
+il root filesystem è la [[partizione]] del filesystem consente gli elementi necessari al boot del sistema (libc, shell o altro interprete di comandi, altri tool ...).
+Viene convenzionalmente montata come primo nodo dell'albero delle cartelle "/".

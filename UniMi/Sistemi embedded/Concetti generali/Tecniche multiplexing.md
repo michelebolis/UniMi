@@ -1,6 +1,6 @@
  Per **Multiplexing** si intende condividere un canale per trasportare più flussi informativi contemporaneamente.
+ 
  Tecniche:
-
 * **Divisione di frequenza**: I segnali usano fequenze diverse e il ricevente si sintonizza su quella desiderata (es frequenze telefoni, radio). Se sono troppo vicine c'è interferenza.
 * **Divisioni dei tempo**: i segnali vengono inviati sul canale in alternaza veloce, il ricevente smista i segnali.
 

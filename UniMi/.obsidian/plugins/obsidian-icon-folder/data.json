@@ -6,6 +6,7 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "IbPencil",
       "IbHeartbeatMonitor",
       "IbConnectivity",
       "IbLightning"
@@ -22,5 +23,6 @@
   },
   "Sistemi embedded": "IbLightning",
   "Reti di calcolatori": "IbConnectivity",
-  "Ingegneria del software": "IbHeartbeatMonitor"
+  "Ingegneria del software": "IbHeartbeatMonitor",
+  "Linguaggi di programmazione": "IbPencil"
 }

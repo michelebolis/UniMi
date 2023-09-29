@@ -1,4 +1,4 @@
-Un **attuatore** è un dispositivo che cambia le proprie proprietà meccanica in funzione di segnali elettrici in input.
+Un **attuatore** è un dispositivo che cambia le proprie proprietà **meccanica** in funzione di segnali elettrici in input.
 es:
 
 * motori

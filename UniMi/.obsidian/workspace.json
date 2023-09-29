@@ -4,20 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "ab4a019b821885b3",
+        "id": "540f2e61d122045e",
         "type": "tabs",
         "children": [
           {
-            "id": "b4e972381bd214ce",
+            "id": "77a7466b59e29305",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
                 "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "viewState": {
-                  "x": 1888.9303437312867,
-                  "y": -2556.3415134438287,
-                  "zoom": -0.39699412837129605
+                  "x": 548.0430155047446,
+                  "y": 812.6788005432932,
+                  "zoom": -1.492346241110032
                 }
               }
             }
@@ -68,7 +68,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -158,16 +159,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b4e972381bd214ce",
+  "active": "77a7466b59e29305",
   "lastOpenFiles": [
     "Sistemi embedded/Sistemi embedded.canvas",
+    "Sistemi embedded/SO/FreeRTOS.md",
+    "Sistemi embedded/SO/real-time==.md",
+    "Linguaggi di programmazione/Linguaggi di programmazione.md",
+    "Linguaggi di programmazione/Appunti.md",
+    "Linguaggi di programmazione/OCaml/OCaml.md",
+    "Linguaggi di programmazione/OCaml",
+    "Linguaggi di programmazione",
+    "Reti di calcolatori/Reti di calcolatori.md",
+    "Reti di calcolatori/Introduzione.md",
+    "Reti di calcolatori/Router.md",
+    "Reti di calcolatori/Requisiti della rete.md",
+    "Reti di calcolatori/Appunti.md",
+    "Reti di calcolatori/Rete.md",
+    "Sistemi embedded/Concetti generali/Concetti generali.md",
     "Sistemi embedded/Device/Arduino/Boot.md",
     "Sistemi embedded/Device/JTAG.md",
     "Sistemi embedded/Concetti generali/PID.md",
     "Sistemi embedded/Componenti/Filtro passa alto.md",
     "Sistemi embedded/Componenti/Filtri.md",
     "Sistemi embedded/Componenti/Componenti.md",
-    "Reti di calcolatori/Appunti.md",
     "Sistemi embedded/Device/Arduino/Arduino.md",
     "Sistemi embedded/Device/Arduino/Gestione Interrupt.md",
     "Sistemi embedded/Protocolli/Protocolli.md",
@@ -175,17 +189,6 @@
     "Sistemi embedded/Appunti originali.md",
     "Sistemi embedded/Protocolli/MQTT.md",
     "Sistemi embedded/Protocolli/TCP-IP.md",
-    "Sistemi embedded/Protocolli/ISO-OSI.md",
-    "Sistemi embedded/Componenti/GPIO.md",
-    "Sistemi embedded/Device/Arduino/Untitled.md",
-    "Sistemi embedded/Device/Arduino/Pro e contro.md",
-    "Sistemi embedded/Concetti generali/Funzione.md",
-    "Sistemi embedded/Concetti generali/Concetti generali.md",
-    "Sistemi embedded/Device/Arduino/Tipi di dato.md",
-    "Sistemi embedded/Device/Arduino/setup e loop.md",
-    "Sistemi embedded/Concetti generali/Semaforo.md",
-    "Sistemi embedded/SO/FreeRTOS.md",
-    "Sistemi embedded/SO/SO.md",
     "Sistemi embedded/SO",
     "Sistemi embedded/Protocolli",
     "Sistemi embedded/Componenti/Memoria",
@@ -194,8 +197,6 @@
     "Sistemi embedded/Device/Strum",
     "Sistemi embedded/Componenti",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-    "Reti di calcolatori",
-    "Sistemi embedded/Concetti licenze",
-    "Sistemi embedded/Device/Arduino"
+    "Reti di calcolatori"
   ]
 }

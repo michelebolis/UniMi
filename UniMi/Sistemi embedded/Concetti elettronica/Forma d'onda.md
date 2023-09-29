@@ -1,1 +1,1 @@
-La **forma d'onda** è una rappresentazione cartesiana di una grandezza elettrica (Tensione o corrente) rispetto al tempo
+La **forma d'onda** è una ==rappresentazione cartesiana di una grandezza elettrica== (Tensione o corrente) rispetto al tempo

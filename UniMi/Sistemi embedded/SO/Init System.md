@@ -1,1 +1,1 @@
- Insieme degli strumenti software (incluso il processo init) e le configurazioni che permettono l'avvio di tutti gli applicativi e i demoni del sistema
+Insieme degli strumenti software (incluso il processo init) e le configurazioni che ==permettono l'avvio di tutti gli applicativi e i demoni del sistema==
