@@ -1,0 +1,1 @@
+ Sistema per la gerstione della concorrenza.

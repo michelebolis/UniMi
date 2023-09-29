@@ -13,7 +13,8 @@
 	* L2: libertà di ridistribuire copie
 	* L3: libertà di migliorare il programma e pubblicare il codice con i miglioramenti. La comunità ne trae beneficio (accesso al codice sorgente necessario)
 
-**GNU** General Public License (o più comunemente indicata con l'acronimo GPL). Si tratta di una licenza fortemente copyleft (ovvero con libertà di utilizzare, copiare, modificare e distribuire un prodotto dell'ingegno) per SW libero. Molto particolare poiché col susseguirsi delle modifiche deve continuare a garantire le cosiddette quattro libertà citate sopra (da L0 a L3).  
+#GNU General Public License (o più comunemente indicata con l'acronimo GPL). 
+Si tratta di una licenza fortemente copyleft (ovvero con libertà di utilizzare, copiare, modificare e distribuire un prodotto dell'ingegno) per SW libero. Molto particolare poiché col susseguirsi delle modifiche deve continuare a garantire le cosiddette quattro libertà citate sopra (da L0 a L3).  
 
 L'editor di testo Emcs ed il kernel Linux sono esempi di SW diffusi che per primi adottarono questa licenza.
 

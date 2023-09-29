@@ -1,7 +1,7 @@
 - [[Tipi di architetture]]
 - [[ISA]]
 - [[Ordine memorizzazione]]
-- [[File System]]
+- [[File System embedded]]
 
 Elenco:
 - [[FPGA]]

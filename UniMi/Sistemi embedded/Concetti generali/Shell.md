@@ -1,0 +1,1 @@
+È un software che permette l'interpretazione di comanti definiti in un proprio linguaggio (di "scripting") durante l'esecuzione.

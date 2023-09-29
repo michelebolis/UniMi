@@ -6,6 +6,10 @@
 - [[CAN-BUS]]
 - [[Ethernet]]
 - Tecnica di comunicazione SW: [[Bit banging]]
+- [[MQTT]]
+- [[IoT]]
+- [[ISO-OSI]]
+- [[TCP-IP]]
 
 In generale la linea di CLOCK  può servire per:
 * abilitare la trasmissione di dati

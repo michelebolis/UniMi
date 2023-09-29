@@ -19,3 +19,4 @@ Elenco:
 - [[Attuatori]]
 - [[GPIO]]
 - [[Memoria]]
+- [[Filtri]]

@@ -1,8 +1,8 @@
-E' un modello di controllo e per PID si intende Proporzionale-Integrativa-Derivativa ovvero:
+E' un modello di controllo e per PID si intende **Proporzionale-Integrativa-Derivativa** ovvero:
 
-* **Proporzionale**: la distanza assoluta dallo stato desiderato utilizzando lo stato attuale per valutare quanto sia distante dall'obiettivo.
-* **Integrativa**: la storia dell'evoluzione dello stato del sistema calcolata in una finestra temporale (es media dell'errore).
-* **Derivativa**: la velocità di variazione dello stato dall'obiettivo.
+* #Proporzionale: la distanza assoluta dallo stato desiderato utilizzando lo stato attuale per valutare quanto sia distante dall'obiettivo.
+* #Integrativa: la storia dell'evoluzione dello stato del sistema calcolata in una finestra temporale (es media dell'errore).
+* #Derivativa: la velocità di variazione dello stato dall'obiettivo.
 
 Una volta calcolati i valori vanno stabiliti dei coefficienti per pesare la funzione P*(distanza) + I*(media errore) + D*(velocità variazione - può corrispondere alla distanza). È importate avere una funzione che definisca l'errore. Nel caso del motore e(t)= RegimeDesiderato - GiriMotore
 esempio:

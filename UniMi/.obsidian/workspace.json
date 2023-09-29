@@ -4,15 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "f664c1d6a14c2c53",
+        "id": "ab4a019b821885b3",
         "type": "tabs",
         "children": [
           {
-            "id": "25f6522523af34e9",
+            "id": "b4e972381bd214ce",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "canvas",
+              "state": {
+                "file": "Sistemi embedded/Sistemi embedded.canvas",
+                "viewState": {
+                  "x": 1888.9303437312867,
+                  "y": -2556.3415134438287,
+                  "zoom": -0.39699412837129605
+                }
+              }
             }
           }
         ]
@@ -81,6 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +127,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Sistemi embedded/Sistemi embedded.canvas"
+              }
             }
           },
           {
@@ -134,7 +145,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -146,35 +158,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "47136b92c595cdff",
+  "active": "b4e972381bd214ce",
   "lastOpenFiles": [
-    "Sistemi embedded/Device/Device.md",
-    "Sistemi embedded/Sistemi embedded.md",
-    "Sistemi embedded/Componenti/Componenti.md",
-    "Sistemi embedded/Appunti originali.md",
+    "Sistemi embedded/Sistemi embedded.canvas",
+    "Sistemi embedded/Device/Arduino/Boot.md",
     "Sistemi embedded/Device/JTAG.md",
-    "Sistemi embedded/Protocolli/Bit banging.md",
+    "Sistemi embedded/Concetti generali/PID.md",
+    "Sistemi embedded/Componenti/Filtro passa alto.md",
+    "Sistemi embedded/Componenti/Filtri.md",
+    "Sistemi embedded/Componenti/Componenti.md",
+    "Reti di calcolatori/Appunti.md",
+    "Sistemi embedded/Device/Arduino/Arduino.md",
+    "Sistemi embedded/Device/Arduino/Gestione Interrupt.md",
     "Sistemi embedded/Protocolli/Protocolli.md",
+    "Sistemi embedded/Protocolli/IoT.md",
+    "Sistemi embedded/Appunti originali.md",
+    "Sistemi embedded/Protocolli/MQTT.md",
+    "Sistemi embedded/Protocolli/TCP-IP.md",
+    "Sistemi embedded/Protocolli/ISO-OSI.md",
     "Sistemi embedded/Componenti/GPIO.md",
-    "Sistemi embedded/Protocolli/Ethernet.md",
+    "Sistemi embedded/Device/Arduino/Untitled.md",
+    "Sistemi embedded/Device/Arduino/Pro e contro.md",
+    "Sistemi embedded/Concetti generali/Funzione.md",
     "Sistemi embedded/Concetti generali/Concetti generali.md",
-    "Sistemi embedded/Concetti generali/Frame.md",
-    "Sistemi embedded/Protocolli/CAN-BUS.md",
-    "Sistemi embedded/Protocolli/SPI.md",
-    "Sistemi embedded/Protocolli/I2S.md",
-    "Sistemi embedded/Protocolli/I2C.md",
-    "Sistemi embedded/Protocolli/NMEA0183.md",
-    "Sistemi embedded/Protocolli/RS232.md",
+    "Sistemi embedded/Device/Arduino/Tipi di dato.md",
+    "Sistemi embedded/Device/Arduino/setup e loop.md",
+    "Sistemi embedded/Concetti generali/Semaforo.md",
+    "Sistemi embedded/SO/FreeRTOS.md",
+    "Sistemi embedded/SO/SO.md",
+    "Sistemi embedded/SO",
     "Sistemi embedded/Protocolli",
-    "Sistemi embedded/Device/Arduino/Memoria.md",
-    "Sistemi embedded/Architetture/File System.md",
-    "Sistemi embedded/Architetture/Architetture.md",
-    "Sistemi embedded/Componenti/Memoria/Memoria.md",
-    "Sistemi embedded/Componenti/Memoria/Wear leveling.md",
-    "Sistemi embedded/Componenti/Memoria/MMU.md",
-    "Sistemi embedded/Componenti/Memoria/Memoria  di massa.md",
-    "Sistemi embedded/Device/ESP32.md",
-    "Sistemi embedded/Componenti/Memoria/Memoria di sistema.md",
     "Sistemi embedded/Componenti/Memoria",
     "Sistemi embedded/Architetture",
     "Sistemi embedded/Componenti/Sensori",
@@ -183,7 +196,6 @@
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Reti di calcolatori",
     "Sistemi embedded/Concetti licenze",
-    "Sistemi embedded/Device/Arduino",
-    "Sistemi embedded/Concetti elettronica"
+    "Sistemi embedded/Device/Arduino"
   ]
 }

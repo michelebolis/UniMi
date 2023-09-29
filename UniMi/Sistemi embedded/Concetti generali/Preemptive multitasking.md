@@ -1,0 +1,1 @@
+Preemptive multitasking è un multitasking gestito tramite il rilascio forzato della CPU da parte del task in esecuzione.
