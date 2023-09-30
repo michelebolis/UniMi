@@ -1,2 +1,3 @@
-- [[OCaml]]
-Source: [[Linguaggi di programmazione/Appunti|Appunti]]
+- [[Programmazione funzionale]]
+
+Source: [[Linguaggi di programmazione/Appunti|Appunti]], [[Index slide]]

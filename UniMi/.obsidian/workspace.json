@@ -16,8 +16,33 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "a5832db21f2e43f6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2d011ec0f487c098",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linguaggi di programmazione/OCaml/OCaml.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -83,6 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Linguaggi di programmazione/OCaml/OCaml.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Linguaggi di programmazione/OCaml/OCaml.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +147,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Linguaggi di programmazione/OCaml/OCaml.md"
+              }
             }
           },
           {
@@ -136,7 +165,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -148,8 +178,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "47136b92c595cdff",
+  "active": "2d011ec0f487c098",
   "lastOpenFiles": [
+    "Linguaggi di programmazione/Linguaggi di programmazione.md",
+    "Linguaggi di programmazione/Programmazione funzionale.md",
+    "Linguaggi di programmazione/OCaml/Slide/Index slide.md",
+    "Linguaggi di programmazione/OCaml/OCaml.md",
+    "Linguaggi di programmazione/Appunti.md",
+    "Linguaggi di programmazione/OCaml/Slide/01. functional programming (λ-calculus and ml) & recursion.4.pdf",
+    "Sistemi embedded/Concetti generali/Interrupt.md",
+    "Linguaggi di programmazione/OCaml/Slide",
     "Sistemi embedded/Sistemi embedded.md",
     "Ingegneria del software/SWENG.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
@@ -169,9 +207,6 @@
     "2023-09-29.md",
     "Sistemi embedded/SO/FreeRTOS.md",
     "Sistemi embedded/SO/real-time==.md",
-    "Linguaggi di programmazione/Linguaggi di programmazione.md",
-    "Linguaggi di programmazione/Appunti.md",
-    "Linguaggi di programmazione/OCaml/OCaml.md",
     "Linguaggi di programmazione/OCaml",
     "Linguaggi di programmazione",
     "Reti di calcolatori/Reti di calcolatori.md",
@@ -185,14 +220,9 @@
     "Sistemi embedded/Device/JTAG.md",
     "Sistemi embedded/Concetti generali/PID.md",
     "Sistemi embedded/Componenti/Filtro passa alto.md",
-    "Sistemi embedded/Componenti/Filtri.md",
-    "Sistemi embedded/Device/Arduino/Arduino.md",
-    "Sistemi embedded/Device/Arduino/Gestione Interrupt.md",
     "Sistemi embedded/SO",
     "Sistemi embedded/Protocolli",
     "Sistemi embedded/Componenti/Memoria",
-    "Sistemi embedded/Architetture",
-    "Sistemi embedded/Componenti/Sensori",
-    "Sistemi embedded/Device/Strum"
+    "Sistemi embedded/Architetture"
   ]
 }

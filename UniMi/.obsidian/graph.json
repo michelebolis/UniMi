@@ -1,11 +1,11 @@
 {
-  "collapse-filter": false,
+  "collapse-filter": true,
   "search": "",
   "showTags": true,
   "showAttachments": true,
   "hideUnresolved": true,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "path:\"Ingegneria del software\"  ",
@@ -45,14 +45,14 @@
   ],
   "collapse-display": true,
   "showArrow": true,
-  "textFadeMultiplier": -0.8,
-  "nodeSizeMultiplier": 1.52916666666667,
+  "textFadeMultiplier": -1.9,
+  "nodeSizeMultiplier": 1.65677083333333,
   "lineSizeMultiplier": 0.967708333333333,
-  "collapse-forces": false,
+  "collapse-forces": true,
   "centerStrength": 0.395833333333333,
   "repelStrength": 14.7916666666667,
   "linkStrength": 1,
   "linkDistance": 258,
-  "scale": 0.1634837056722092,
+  "scale": 0.11660891579457673,
   "close": true
 }
