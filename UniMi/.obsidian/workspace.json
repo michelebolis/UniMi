@@ -25,9 +25,9 @@
               "state": {
                 "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "viewState": {
-                  "x": 2052.511616624632,
-                  "y": -1427.600261294936,
-                  "zoom": -0.5766151580076364
+                  "x": 880,
+                  "y": -983,
+                  "zoom": -3.587634459551769
                 }
               }
             }
@@ -156,8 +156,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -169,10 +168,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "47136b92c595cdff",
+  "active": "51680df2ffd18c34",
   "lastOpenFiles": [
-    "Linguaggi di programmazione/Linguaggi di programmazione.md",
     "Sistemi embedded/Sistemi embedded.canvas",
+    "Sistemi embedded/img/Pasted image 20230930143958.png",
+    "Linguaggi di programmazione/Linguaggi di programmazione.md",
     "Linguaggi di programmazione/OCaml/OCaml.md",
     "Linguaggi di programmazione/Programmazione funzionale.md",
     "Linguaggi di programmazione/OCaml/Slide/Index slide.md",

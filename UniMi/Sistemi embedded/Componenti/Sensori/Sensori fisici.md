@@ -1,6 +1,6 @@
 Sensori relativamente semplici che cambiano le proprietà in funzione di qualche semplice principio fisico diretto e forniscono come output una grandezza elettrica.  
 es:
 
-* sensore di rumore a condensatore: una delle due piastre del condensatore è strutturata in modo da muoversi quando colpita da onde sonore e, quindi, si ottiene che in caso di rumore cambia la capacità del condensatore.
+* le fotoresistenze hanno un semiconduttore che ne varia il "comportamento" da resistenza (ovvero che varia le sue proprietà elettriche) in base alla quantità di luce percepita.
 
 * interruttore a mercurio: bulbo di vetro contenete una goccia di mercuri al suo interno e due elettrodi. Muovendo il bulbo si muove la goccia che, in base a come è orientato il bulbo, potrebbe chiudere il contatto elettrico degli elettrodi. Si ottiene così un sesore di pendenza fisico  
