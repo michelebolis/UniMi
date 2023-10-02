@@ -1,5 +1,5 @@
 - #Proprietaria:
-	* divieto di eseguzione su più dispositivi
+	* divieto di esecuzione su più dispositivi
 	* divieto di rivendere il programma
 	* divieto di analisi del codice (reverse engineering)
 	* divieto di studiarne le prestazioni e pubblicare confronti

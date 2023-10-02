@@ -25,9 +25,9 @@
               "state": {
                 "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "viewState": {
-                  "x": 880,
-                  "y": -983,
-                  "zoom": -3.587634459551769
+                  "x": 740.6842167129106,
+                  "y": -885.0465422519051,
+                  "zoom": -0.25430112621843587
                 }
               }
             }
@@ -83,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -99,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas",
+                "file": "Sistemi embedded/Concetti licenze/Licenze.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas",
+                "file": "Sistemi embedded/Concetti licenze/Licenze.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas"
+                "file": "Sistemi embedded/Concetti licenze/Licenze.md"
               }
             }
           },
@@ -156,7 +157,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
