@@ -78,5 +78,172 @@ match expression with
 	| pattern when boolean expression -> expression
  ```
 
-Catchall si dovrebbe sempre mettere con un \_ , in modo da catturare i casi non previsti nei pattern
+Catchall si dovrebbe sempre mettere con un \_ come safe rule, in modo da catturare i casi non previsti nei pattern
+
+Ocaml ha un pattern matching esaustivo
+
+---
+
+```ocaml
+let invert = function
+	| pattern when boolean expression -> expression 
+	| pattern when boolean expression -> expression
+ ```
+nasconde l ultimo argomento rendendolo implicito 
+
+
+ricorsione
+...
+
+ ```ocaml
+let rec fact(n) = if n<=1 then 1 else n*fact(n-1)
+ ```
+devo dire esplicitamente che sia ricorsiva con rec
+
+record di attivazione/frame
+essendo impilati, l'argomento e il valore di ritorno sono in posizioni note, in particolare il valore di ritorno e l'argomento sono in alto e in basso
+
+soluzione iterativa alla fine richiede sempre 3 valori
+
+itertiva piu efficiente 
+
+ottimizzazione possibile: memorization/caching
+
+problema mi serve l n precedente, un dato locale, per questo mi serve un record di attivazione 
+Per evitare l'verhead serve la ricorsione in coda, accumulando in un ulteriore argomento tutto
+
+...
+
+
+staticamente tipato, MA io non scrivo i tipi, i tipi sono inferito dall uso che fai degli opertori
+MA il sistema di inferenza prevede che * sia solo per interi, non c è una coversione inplicita , quindi dovro usare \*. che è un operazione per i float
+
+operatori 
+...
+
+Stringhe
+^ per concatenazione delle stringhe 
+.\[] per acceedere ai char, le \[] sono il nome della funzione
+
+ATT le stringhe sono immutabili, bisogna usare Bytes.set stringa posizione char
+
+Le liste sono omogenee
+la concatenazione è inefficiente, meglio usare il costruttore in testa e poi invertier 
+
+sul pattern matching non posso usare stringhe ma posso sulle liste perche ho un costruttore 
+
+
+le tuple hanno una dimensione fissata e sono eterogeneee
+
+pair sono tuple di 2 dimensioni
+le coppie posso usare first e second
+
+
+array sono omogeneo e mutabili
+...
+
+<- per assegnare
+
+matrice
+
+
+record/strutture con campi eterogenei
+keyword mutable 
+
+per i record fa un matching strutturale
+
+sto definendo il dominio di una funzione con un pattern matching usando i costruttori
+
+definizzioe fatte insieme usando l and
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
