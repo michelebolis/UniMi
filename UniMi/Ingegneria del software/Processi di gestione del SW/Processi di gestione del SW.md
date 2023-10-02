@@ -9,6 +9,6 @@ Dato il #Target, riflettiamo su
 - Le [[Qualità]] che vogliamo raggiungere. Infatti utilizzando un buon processo ho un'elevata probabilità di produrre un prodotto di qualità. La qualità a cui puntiamo è di interesse per uno stakeholders
 
 Come deve essere un processo: deve funzionare, deve essere bello e deve farmi diventare ricco
-- Robustezza: per qualcunque problema sia del processo che esterno ad esso (es personale malato)
+- Robustezza: per qualunque problema sia del processo che esterno ad esso (es personale malato)
 - Produttibilità: 
 - Tempismo: spesso si privilegia la velocità di arrivare in tempo che la qualità del processo stesso.

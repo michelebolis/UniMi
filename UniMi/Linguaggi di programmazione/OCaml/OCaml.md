@@ -29,22 +29,5 @@ MA -1 non è una costante, ma una funzione seguita da 1 QUINDI sto dando a $succ
 
 ==Un nuovo binding (riuso di un nome) nasconde la prima volta che ho usato quel nome==
 
-### Composizione di funzione
-```ocaml
-let compose f g x = f (g x);; 
-let compose' (f, g) x = f (g x);;
- ```
-Hanno tipi diversi
-- ('a -> 'b) -> ('c -> 'a) -> 'c -> 'b
-* ('a -> 'b) * ('c -> 'a) -> 'c -> 'b
-	L'argomento richiesto rappresenta la $tupla$, le parentesi sono fonte di errore
-
-### Pattern matching
-I costrutti If non si usano, vengono usati i pattern matching per definire funzioni
-```ocaml
-match expression with 
-	| pattern when boolean expression -> expression 
-	| pattern when boolean expression -> expression
- ```
-
-Catchall si dovrebbe sempre mettere con un \_ , in modo da catturare i casi non previsti nei pattern
+- [[Composizione di funzioni]]
+- [[Pattern matching]]

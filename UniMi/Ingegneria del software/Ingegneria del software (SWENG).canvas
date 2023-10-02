@@ -1,17 +1,22 @@
 {
 	"nodes":[
-		{"id":"a2ed117451add2c3","type":"file","file":"Ingegneria del software/Processi di gestione del SW/Processi di gestione del SW.md","x":-100,"y":-60,"width":800,"height":560},
-		{"id":"590f6d629c13ff2e","type":"file","file":"Ingegneria del software/Processi di gestione del SW/Qualità/Funzionamento.md","x":1394,"y":-220,"width":701,"height":220},
-		{"id":"432ce7ecdf2a72f4","type":"file","file":"Ingegneria del software/Processi di gestione del SW/Qualità/Qualità.md","x":940,"y":140,"width":400,"height":160},
-		{"id":"4d01314159e89ec4","type":"file","file":"Ingegneria del software/Processi di gestione del SW/Qualità/che mi faccia diventare ricco.md","x":1340,"y":440,"width":675,"height":426},
-		{"id":"1d1f3f21fac079a5","type":"file","file":"Ingegneria del software/Processi di gestione del SW/Qualità/che sia bello.md","x":1420,"y":66,"width":799,"height":308},
-		{"id":"0d37f6ef212e0cb8","type":"file","file":"Ingegneria del software/Macroargomenti.md","x":-800,"y":130,"width":400,"height":180}
+		{"id":"0f78c09f017840d2","type":"group","x":-120,"y":-640,"width":2359,"height":1526,"color":"#0e5328","label":"Processi di gestione del SW"},
+		{"id":"4d01314159e89ec4","type":"file","file":"Ingegneria del software/Processi di gestione del SW/Qualità/che mi faccia diventare ricco.md","x":1340,"y":440,"width":675,"height":426,"color":"4"},
+		{"id":"1d1f3f21fac079a5","type":"file","file":"Ingegneria del software/Processi di gestione del SW/Qualità/che sia bello.md","x":1420,"y":66,"width":799,"height":308,"color":"4"},
+		{"id":"432ce7ecdf2a72f4","type":"file","file":"Ingegneria del software/Processi di gestione del SW/Qualità/Qualità.md","x":960,"y":195,"width":160,"height":50,"color":"4"},
+		{"id":"590f6d629c13ff2e","type":"file","file":"Ingegneria del software/Processi di gestione del SW/Qualità/Funzionamento.md","x":1340,"y":-220,"width":701,"height":220,"color":"4"},
+		{"id":"0d37f6ef212e0cb8","type":"file","file":"Ingegneria del software/Macroargomenti.md","x":-600,"y":195,"width":300,"height":50},
+		{"id":"a2ed117451add2c3","type":"file","file":"Ingegneria del software/Processi di gestione del SW/Processi di gestione del SW.md","x":-100,"y":-60,"width":800,"height":560,"color":"4"},
+		{"id":"756eacf3cfe548c4","type":"file","file":"Ingegneria del software/Processi di gestione del SW/Storia.md","x":-100,"y":-440,"width":460,"height":260,"color":"4"},
+		{"id":"8a6a4b52c1e7ac12","type":"file","file":"Ingegneria del software/Processi di gestione del SW/Terminologia.md","x":460,"y":-560,"width":660,"height":380,"color":"4"}
 	],
 	"edges":[
 		{"id":"2b5b30c34a79acbe","fromNode":"a2ed117451add2c3","fromSide":"right","toNode":"432ce7ecdf2a72f4","toSide":"left"},
 		{"id":"ac09f2fffa2e24aa","fromNode":"432ce7ecdf2a72f4","fromSide":"bottom","toNode":"4d01314159e89ec4","toSide":"left"},
 		{"id":"91aff26526e69f60","fromNode":"432ce7ecdf2a72f4","fromSide":"right","toNode":"1d1f3f21fac079a5","toSide":"left"},
 		{"id":"f89cfba1b15dcfae","fromNode":"432ce7ecdf2a72f4","fromSide":"top","toNode":"590f6d629c13ff2e","toSide":"left"},
-		{"id":"c530f2fbfe5018c0","fromNode":"0d37f6ef212e0cb8","fromSide":"right","toNode":"a2ed117451add2c3","toSide":"left"}
+		{"id":"c530f2fbfe5018c0","fromNode":"0d37f6ef212e0cb8","fromSide":"right","toNode":"a2ed117451add2c3","toSide":"left"},
+		{"id":"f0767c11b88f852a","fromNode":"a2ed117451add2c3","fromSide":"top","toNode":"756eacf3cfe548c4","toSide":"bottom"},
+		{"id":"ab806cf80857e88a","fromNode":"a2ed117451add2c3","fromSide":"top","toNode":"8a6a4b52c1e7ac12","toSide":"bottom"}
 	]
 }

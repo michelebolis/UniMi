@@ -18,16 +18,16 @@
             }
           },
           {
-            "id": "51680df2ffd18c34",
+            "id": "efa0c0d2c4afd789",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas",
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
                 "viewState": {
-                  "x": -2530.3631570873085,
-                  "y": 1724.9774689769429,
-                  "zoom": -0.6709677928851026
+                  "x": 985.0897775491662,
+                  "y": -186.5199562526978,
+                  "zoom": -0.5813771363680069
                 }
               }
             }
@@ -83,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -100,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas",
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas",
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas"
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas"
               }
             }
           },
@@ -157,8 +156,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -170,12 +168,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "51680df2ffd18c34",
+  "active": "efa0c0d2c4afd789",
   "lastOpenFiles": [
-    "Sistemi embedded/Sistemi embedded.canvas",
-    "Sistemi embedded/img/Pasted image 20230930143958.png",
-    "Linguaggi di programmazione/Linguaggi di programmazione.md",
+    "Linguaggi di programmazione/OCaml/Pattern matching.md",
+    "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+    "Reti di calcolatori/Reti di calcolatori.md",
+    "Linguaggi di programmazione/OCaml/Composizione di funzioni.md",
     "Linguaggi di programmazione/OCaml/OCaml.md",
+    "Linguaggi di programmazione/Linguaggi di programmazione.md",
+    "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+    "Ingegneria del software/SWENG.md",
+    "Sistemi embedded/Sistemi embedded.canvas",
+    "Index.md",
+    "Sistemi embedded/img/Pasted image 20230930143958.png",
     "Linguaggi di programmazione/Programmazione funzionale.md",
     "Linguaggi di programmazione/OCaml/Slide/Index slide.md",
     "Linguaggi di programmazione/Appunti.md",
@@ -183,9 +189,6 @@
     "Sistemi embedded/Concetti generali/Interrupt.md",
     "Linguaggi di programmazione/OCaml/Slide",
     "Sistemi embedded/Sistemi embedded.md",
-    "Ingegneria del software/SWENG.md",
-    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-    "Index.md",
     "Sistemi embedded/img/Pasted image 20230929133655.png",
     "Pasted image 20230929133140.png",
     "Sistemi embedded/img/Pasted image 20230929133039.png",
@@ -202,7 +205,6 @@
     "Sistemi embedded/SO/real-time==.md",
     "Linguaggi di programmazione/OCaml",
     "Linguaggi di programmazione",
-    "Reti di calcolatori/Reti di calcolatori.md",
     "Reti di calcolatori/Introduzione.md",
     "Reti di calcolatori/Router.md",
     "Reti di calcolatori/Requisiti della rete.md",
@@ -210,8 +212,6 @@
     "Reti di calcolatori/Rete.md",
     "Sistemi embedded/Concetti generali/Concetti generali.md",
     "Sistemi embedded/Device/Arduino/Boot.md",
-    "Sistemi embedded/Device/JTAG.md",
-    "Sistemi embedded/Concetti generali/PID.md",
     "Sistemi embedded/SO",
     "Sistemi embedded/Protocolli",
     "Sistemi embedded/Componenti/Memoria",

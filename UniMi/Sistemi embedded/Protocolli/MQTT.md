@@ -1,4 +1,4 @@
-MQTT (Message Queuing Telemetry Transport) è un ==protocollo del tipo publisher/subscriver (obesrver/observee) basato su messaggi==. 
+MQTT (Message Queuing Telemetry Transport) è un ==protocollo del tipo publisher/subscriber (obesrver/observee) basato su messaggi==. 
 I messaggi formati da *topic* (parole separate da "/") e *payload* (stringa UTF-8).
 
 Essi sono inviati da un nodo *client*  ad un *broker* al quale sono connessi. 

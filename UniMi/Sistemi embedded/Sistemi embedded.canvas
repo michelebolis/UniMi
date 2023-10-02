@@ -32,7 +32,6 @@
 		{"id":"d810cec89797f772","type":"file","file":"Sistemi embedded/Protocolli/Ethernet.md","x":-80,"y":-4021,"width":520,"height":349,"color":"1"},
 		{"id":"b8ad2a2e57b9b4f6","type":"file","file":"Sistemi embedded/Protocolli/I2C.md","x":-820,"y":-4170,"width":607,"height":563,"color":"1"},
 		{"id":"121788a875b5e8d0","type":"file","file":"Sistemi embedded/Concetti elettronica/Conversione AD e DA.md","x":-1470,"y":-264,"width":580,"height":529,"color":"3"},
-		{"id":"444c55dd1f166a31","type":"file","file":"Sistemi embedded/Concetti elettronica/Concetti elettronica.md","x":-1405,"y":-439,"width":360,"height":50,"color":"3"},
 		{"id":"bc7023574a9741a1","type":"file","file":"Sistemi embedded/Concetti elettronica/Leggi di Kirchhoff.md","x":-3660,"y":-606,"width":621,"height":200,"color":"3"},
 		{"id":"4d46b1638366a941","type":"file","file":"Sistemi embedded/Concetti elettronica/Watchdog.md","x":-2083,"y":-294,"width":550,"height":559,"color":"3"},
 		{"id":"50b8b2987377cf14","type":"file","file":"Sistemi embedded/Concetti generali/Shell.md","x":980,"y":-2072,"width":400,"height":160,"color":"4"},
@@ -98,7 +97,8 @@
 		{"id":"d7314bead638cac7","type":"file","file":"Sistemi embedded/Device/Arduino/Boot.md","x":-1280,"y":3306,"width":680,"height":375,"color":"#464cfb"},
 		{"id":"4b2b79ef8caf5d0f","type":"file","file":"Sistemi embedded/Device/Arduino/setup e loop.md","x":-1300,"y":3786,"width":600,"height":200,"color":"#464cfb"},
 		{"id":"574f52617d9549b3","type":"file","file":"Sistemi embedded/Device/Soc.md","x":-1020,"y":942,"width":740,"height":306,"color":"#464cfb"},
-		{"id":"cb416f72e2550041","type":"file","file":"Sistemi embedded/Device/ESP32.md","x":-1020,"y":1340,"width":500,"height":200,"color":"#464cfb"}
+		{"id":"cb416f72e2550041","type":"file","file":"Sistemi embedded/Device/ESP32.md","x":-1020,"y":1340,"width":500,"height":200,"color":"#464cfb"},
+		{"id":"444c55dd1f166a31","type":"file","file":"Sistemi embedded/Concetti elettronica/Concetti elettronica.md","x":-1440,"y":-440,"width":360,"height":50,"color":"3"}
 	],
 	"edges":[
 		{"id":"50d98d8401a2d339","fromNode":"954b47bb098b77a6","fromSide":"bottom","toNode":"f5090fa65806fbac","toSide":"top"},
