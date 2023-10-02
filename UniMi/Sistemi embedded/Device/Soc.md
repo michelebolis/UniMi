@@ -1,4 +1,4 @@
-Un #SoC (System On Chip) è una singola unità con più potenza computazionale che possono contenere quasi tutte le componenti del sistema. 
+Un SoC (System On Chip) è una singola unità con più potenza computazionale che possono contenere quasi tutte le componenti del sistema. 
 
 Può contendere: CPU, GPU, ISP (Image Signal Processor), Decoder/Encoder video, WiFi, Bluetooth, Display controller, Audio Controller, seriali, USB, ADC/DAC, Sensori, GPS, Modem, RAM, FLASH, ecc.
 

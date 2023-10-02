@@ -5,5 +5,5 @@ es:
 * relè
 
 * panoramica generale su motori, esempi  
-* servomotore: riceve in input una tensione che definisce la rotazione.
-* step (passo a passo): riceve in un segnale che deficisce uno spostamento angolare.
+	* servomotore: riceve in input una tensione che definisce la rotazione.
+	* step (passo a passo): riceve in un segnale che deficisce uno spostamento angolare.

@@ -25,9 +25,9 @@
               "state": {
                 "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "viewState": {
-                  "x": 740.6842167129106,
-                  "y": -885.0465422519051,
-                  "zoom": -0.25430112621843587
+                  "x": -2530.3631570873085,
+                  "y": 1910.0638199790512,
+                  "zoom": -0.6709677928851026
                 }
               }
             }
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sistemi embedded/Concetti licenze/Licenze.md",
+                "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sistemi embedded/Concetti licenze/Licenze.md",
+                "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sistemi embedded/Concetti licenze/Licenze.md"
+                "file": "Sistemi embedded/Sistemi embedded.canvas"
               }
             }
           },
