@@ -1,14 +1,32 @@
 {
 	"nodes":[
-		{"id":"93bc7e8c05e8e7c9","x":220,"y":-480,"width":1560,"height":860,"type":"group","label":"OCaml"},
+		{"id":"93bc7e8c05e8e7c9","type":"group","x":220,"y":-680,"width":3860,"height":3640,"label":"OCaml"},
 		{"id":"90a70fae5d31174b","type":"file","file":"Linguaggi di programmazione/Programmazione funzionale.md","x":-900,"y":-420,"width":980,"height":940},
-		{"id":"84af42148e2feed9","type":"file","file":"Linguaggi di programmazione/OCaml/OCaml.md","x":240,"y":-420,"width":760,"height":760},
-		{"id":"0585123c9a0f7076","x":1120,"y":-40,"width":640,"height":290,"type":"file","file":"Linguaggi di programmazione/OCaml/Pattern matching.md"},
-		{"id":"7577c96a1763e1c1","type":"file","file":"Linguaggi di programmazione/OCaml/Composizione di funzioni.md","x":1120,"y":-420,"width":640,"height":300}
+		{"id":"d06b3011641ea840","type":"file","file":"Linguaggi di programmazione/OCaml/Ricorsione.md","x":1120,"y":290,"width":940,"height":620},
+		{"id":"e403335f02064911","type":"file","file":"Linguaggi di programmazione/OCaml/Datatypes/Datatypes.md","x":280,"y":720,"width":680,"height":920},
+		{"id":"84af42148e2feed9","type":"file","file":"Linguaggi di programmazione/OCaml/OCaml.md","x":240,"y":-250,"width":760,"height":760},
+		{"id":"7577c96a1763e1c1","type":"file","file":"Linguaggi di programmazione/OCaml/Composizione di funzioni.md","x":1120,"y":-640,"width":640,"height":300},
+		{"id":"0585123c9a0f7076","type":"file","file":"Linguaggi di programmazione/OCaml/Pattern matching.md","x":1120,"y":-280,"width":640,"height":480},
+		{"id":"380e235801797767","type":"file","file":"Linguaggi di programmazione/OCaml/Datatypes/Collezioni/Collezioni.md","x":1120,"y":1360,"width":217,"height":50},
+		{"id":"3b26d21723603c02","type":"file","file":"Linguaggi di programmazione/OCaml/Datatypes/Collezioni/Liste.md","x":1480,"y":985,"width":800,"height":700},
+		{"id":"c11bdee0b51c48c3","type":"file","file":"Linguaggi di programmazione/OCaml/Datatypes/Collezioni/Record.md","x":1480,"y":1765,"width":640,"height":260},
+		{"id":"01568da233364663","type":"file","file":"Linguaggi di programmazione/OCaml/Datatypes/Collezioni/Array.md","x":2420,"y":985,"width":660,"height":375},
+		{"id":"1663df6455f33027","type":"file","file":"Linguaggi di programmazione/OCaml/Datatypes/Collezioni/Variants.md","x":1720,"y":2185,"width":680,"height":680},
+		{"id":"83b6911add2eab38","type":"file","file":"Linguaggi di programmazione/OCaml/Datatypes/Collezioni/Tuple.md","x":2420,"y":1460,"width":800,"height":720},
+		{"id":"9045cdbd4488b16a","x":960,"y":2185,"width":720,"height":255,"type":"file","file":"Linguaggi di programmazione/OCaml/Datatypes/Collezioni/Aliasing.md"}
 	],
 	"edges":[
 		{"id":"162af45b546ad90b","fromNode":"90a70fae5d31174b","fromSide":"right","toNode":"84af42148e2feed9","toSide":"left"},
 		{"id":"2384d60da4f8354e","fromNode":"84af42148e2feed9","fromSide":"right","toNode":"7577c96a1763e1c1","toSide":"left"},
-		{"id":"aa424802bd7da970","fromNode":"84af42148e2feed9","fromSide":"right","toNode":"0585123c9a0f7076","toSide":"left"}
+		{"id":"aa424802bd7da970","fromNode":"84af42148e2feed9","fromSide":"right","toNode":"0585123c9a0f7076","toSide":"left"},
+		{"id":"62bdbd5075b10cc5","fromNode":"84af42148e2feed9","fromSide":"bottom","toNode":"d06b3011641ea840","toSide":"left"},
+		{"id":"a4eae5409e0d0d92","fromNode":"84af42148e2feed9","fromSide":"bottom","toNode":"e403335f02064911","toSide":"top"},
+		{"id":"39115bcbfb625009","fromNode":"e403335f02064911","fromSide":"right","toNode":"380e235801797767","toSide":"left"},
+		{"id":"6c786fdec4f946a0","fromNode":"380e235801797767","fromSide":"right","toNode":"3b26d21723603c02","toSide":"left"},
+		{"id":"58e4327305c96b9c","fromNode":"3b26d21723603c02","fromSide":"right","toNode":"01568da233364663","toSide":"left"},
+		{"id":"ef71eba45975633a","fromNode":"380e235801797767","fromSide":"right","toNode":"c11bdee0b51c48c3","toSide":"left"},
+		{"id":"6fe45177412307bf","fromNode":"3b26d21723603c02","fromSide":"right","toNode":"83b6911add2eab38","toSide":"left"},
+		{"id":"cc3664b7c207d8c0","fromNode":"c11bdee0b51c48c3","fromSide":"bottom","toNode":"1663df6455f33027","toSide":"top"},
+		{"id":"fbf2cbfa82f65892","fromNode":"c11bdee0b51c48c3","fromSide":"bottom","toNode":"9045cdbd4488b16a","toSide":"top"}
 	]
 }

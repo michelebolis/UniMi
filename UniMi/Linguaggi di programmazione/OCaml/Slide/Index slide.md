@@ -1,1 +1,2 @@
 - [[01. functional programming (λ-calculus and ml) & recursion.4.pdf]]
+- [[02. datatypes in ml.4.pdf]]

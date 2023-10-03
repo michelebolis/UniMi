@@ -20,7 +20,7 @@ Si scriverà:
 Ciò vale per qualsiasi stringa predefinita.
 La stringa verrà presa direttamente dalla flash quando necessaria anziché ricopiarla prima in RAM.
 
-Legato all'uso di memoria è anche la [[ricorsione]]
+Legato all'uso di memoria è anche la [[Sistemi embedded/Device/Arduino/Ricorsione]]
 
 In ambito embedded, solitamente vengono utilizzate memorie NAND per lo storage principale e le NOR per le funzioni di basso livello e il boot.
 

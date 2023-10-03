@@ -18,7 +18,7 @@
             }
           },
           {
-            "id": "efa0c0d2c4afd789",
+            "id": "80c4014dc5971c26",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -26,6 +26,23 @@
                 "file": "Ingegneria del software/Appunti.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "08bb02bafb70b4a9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a590f58c5ae4be8c",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Ingegneria del software/Slide/IS2023-L02.pdf"
               }
             }
           }
@@ -58,7 +75,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Monoliticita",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,7 +92,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -95,6 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Ingegneria del software/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,6 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Ingegneria del software/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,7 +152,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Ingegneria del software/Appunti.md"
+              }
             }
           },
           {
@@ -148,7 +170,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -160,25 +183,43 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c1ce2ce19829fc50",
+  "active": "bdd78e7dc8a45cb1",
   "lastOpenFiles": [
+    "Ingegneria del software/Slide/IS2023-L02.pdf",
     "Ingegneria del software/Appunti.md",
-    "Linguaggi di programmazione/Appunti.md",
-    "Linguaggi di programmazione/OCaml/Pattern matching.md",
+    "Linguaggi di programmazione/OCaml/Datatypes/Datatypes.md",
+    "Ingegneria del software/Slide/Index slide.md",
+    "Linguaggi di programmazione/Linguaggi di programmazione.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+    "Ingegneria del software/SWENG.md",
+    "Ingegneria del software/Slide/IS2023-L01.pdf",
+    "Ingegneria del software/Slides/Untitled.md",
+    "Ingegneria del software/Slide",
+    "Ingegneria del software/Slides",
+    "Linguaggi di programmazione/OCaml/Datatypes/Collezioni/Collezioni.md",
+    "Linguaggi di programmazione/OCaml/Slide/01. functional programming (λ-calculus and ml) & recursion.4.pdf",
+    "Linguaggi di programmazione/OCaml/Slide/Index slide.md",
+    "Linguaggi di programmazione/OCaml/Datatypes/Collezioni/Record.md",
+    "Linguaggi di programmazione/OCaml/Datatypes/Collezioni/Variants.md",
+    "Linguaggi di programmazione/Appunti.md",
+    "Linguaggi di programmazione/OCaml/Datatypes/Collezioni/Aliasing.md",
+    "Linguaggi di programmazione/OCaml/Datatypes/Collezioni/Array.md",
+    "Linguaggi di programmazione/OCaml/Datatypes/Collezioni/Tuple.md",
+    "Linguaggi di programmazione/OCaml/Datatypes/Collezioni/Liste.md",
+    "Linguaggi di programmazione/OCaml/Ricorsione.md",
+    "Linguaggi di programmazione/OCaml/Datatypes/Collezioni",
+    "Linguaggi di programmazione/OCaml/OCaml.md",
+    "Linguaggi di programmazione/OCaml/Datatypes",
+    "Linguaggi di programmazione/OCaml/Pattern matching.md",
+    "Linguaggi di programmazione/OCaml/Slide/02. datatypes in ml.4.pdf",
     "Reti di calcolatori/Reti di calcolatori.md",
     "Linguaggi di programmazione/OCaml/Composizione di funzioni.md",
-    "Linguaggi di programmazione/OCaml/OCaml.md",
-    "Linguaggi di programmazione/Linguaggi di programmazione.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-    "Ingegneria del software/SWENG.md",
     "Sistemi embedded/Sistemi embedded.canvas",
     "Index.md",
     "Sistemi embedded/img/Pasted image 20230930143958.png",
     "Linguaggi di programmazione/Programmazione funzionale.md",
-    "Linguaggi di programmazione/OCaml/Slide/Index slide.md",
-    "Linguaggi di programmazione/OCaml/Slide/01. functional programming (λ-calculus and ml) & recursion.4.pdf",
     "Sistemi embedded/Concetti generali/Interrupt.md",
     "Linguaggi di programmazione/OCaml/Slide",
     "Sistemi embedded/Sistemi embedded.md",
@@ -188,26 +229,7 @@
     "Sistemi embedded/Concetti elettronica/PWM.md",
     "Pasted image 20230929132143.png.~tmp",
     "Sistemi embedded/img/Pasted image 20230929132143.png",
-    "Sistemi embedded/Device/Device.md",
-    "Sistemi embedded/Componenti/Componenti.md",
     "Sistemi embedded/img/Pasted image 20230929115226.png",
-    "Sistemi embedded/img",
-    "Sistemi embedded/img/Pasted image 20230929115447.png",
-    "2023-09-29.md",
-    "Sistemi embedded/SO/FreeRTOS.md",
-    "Sistemi embedded/SO/real-time==.md",
-    "Linguaggi di programmazione/OCaml",
-    "Linguaggi di programmazione",
-    "Reti di calcolatori/Introduzione.md",
-    "Reti di calcolatori/Router.md",
-    "Reti di calcolatori/Requisiti della rete.md",
-    "Reti di calcolatori/Appunti.md",
-    "Reti di calcolatori/Rete.md",
-    "Sistemi embedded/Concetti generali/Concetti generali.md",
-    "Sistemi embedded/Device/Arduino/Boot.md",
-    "Sistemi embedded/SO",
-    "Sistemi embedded/Protocolli",
-    "Sistemi embedded/Componenti/Memoria",
-    "Sistemi embedded/Architetture"
+    "Sistemi embedded/img/Pasted image 20230929115447.png"
   ]
 }

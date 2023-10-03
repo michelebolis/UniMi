@@ -57,173 +57,184 @@ Come deve essere un processo: deve funzionare, deve essere bello e deve farmi di
 
 ---
 
-Si è iniziato a capire che produrre codice non è solo scrivere codice ma bisogna anche risolvere dei problemi di comunicazione e bisogna essere rigorosi (Ipotesi di Bauer Zemanek: metodi formali riducono significamente gli errori di design o li eliminano anticipatamente; per essere realistici non sempre possiamo lavorare con metodi formali).
-ci sono poi tanti aspetti da considerare in diversi momenti dello sviluppo
+Si è iniziato a capire che produrre codice non è solo scrivere codice ma bisogna anche:
+- risolvere dei problemi di comunicazione 
+- essere rigorosi 
+	- Ipotesi di Bauer Zemanek: metodi formali riducono significamente gli errori di design o li eliminano anticipatamente; per essere realistici non sempre possiamo lavorare con metodi formali).
+- considerare che ci sono diversi aspetti da considerare in diversi momenti dello sviluppo
 
 modellare ciclo di vita del SW
-- identificare i vari passi e le attivita chiedendosu
+- identificare i vari passi e le attività chiedendosi
 	- cosa bisogna fare e fino a quando
 	- chi lo debba fare
 
-Studio di fattibilità 
-Definizione preliminare del problema considerando il possibile mercato e i concorrenti
-Studio di diversi scenari di realizzazione sia architatturale, HW, di personale interno o subappaltandolo
-Stima dei costi, dei tempi di sviluppo, delle risorse necessarie e dei benifici delle varie soluzioni
+Fasi
+## Studio di fattibilità 
+Consiste nella 
+- Definizione preliminare del problema considerando il possibile mercato e i concorrenti.
+- Studio dei diversi scenari di realizzazione sia architetturale, HW, di personale, scegliendo se produrlo internamente o subappaltandolo
+- Stima dei costi, dei tempi di sviluppo, delle risorse necessarie e dei benifici delle varie soluzioni
 Spesso questa fase di analisi si effettua in modo esterno per non sprecare risorse, per avere una visione esperta dando dei limiti temporali e di costi
 
 Possibili output: un documento spesso in linguaggio naturale
 
-Analisi e specifica dei requisiti
-- comprendere il dominio applicativo
-- identificare gli stakeholders 
-- capire le funzioni richieste: capire cosa deve fare il sistema mentre il come è una fase piu avanti, quella di progettazione. 
+## Analisi e specifica dei requisiti
+- Comprendere il dominio applicativo
+- Identificare gli stakeholders 
+- Capire le funzionalità richieste: capire solo $cosa$ deve fare il sistema $non$ $come$ (è una fase piu avanti, quella di progettazione). 
 	- Metodi esaustivi: in un linguaggio naturale 
-	- metodi operazionali: modello eseguibile in qualche forma che fa vedere le caratteristiche che il modello deve rispettare
-- Dal punto di vista dell utente, non gli interessa il progetto o l implementazione, ma quello che deve fare
+	- Metodi operazionali: modello eseguibile in qualche forma che fa vedere le caratteristiche che il modello deve rispettare
+- Dobbiamo considerare solo il prodotto dal punto di vista dell'utente, non gli interessa il progetto o l implementazione, ma quello che deve fare il sistema considerandone
 	- Correttezza
 	- Verificabilità: da linguaggio formale 
 
-Output:
+Possibili output:
 - Documenti di specifica
 	- Documento contrattuale approvato dal committente
-	- base per il lavoro del deisgner e di verifica
-	- Importante quindi avere un documento formale
-- Manuale utente o maschere di interazione 
-- Piano dei testi di sistema, dei collaudi che certificano la correttezza
-David Law: il valore dei modelli dipendono dalla vista presa ma nessuna è migliore per tutti gli scopi
+	- Una base per il lavoro di design e di verifica
+	Risulta quindi importante avere un documento formale
+- Manuale utente o maschere di interazione desiderate (la vista esterna per eccellenza)
+- Piano dei testi di sistema: collaudi che certificano la correttezza
+David Law: il valore dei modelli dipende dalla vista adottata ma nessuna è migliore per tutti gli scopi
 
 
-Progettazione
-Definizione dell'architettura del sistema
+## Progettazione
+Considerando le specifiche fissate, definiamo ora l'architettura del sistema in particolare
 - scelta di una architettura SW di riferimento
 - Scomposizione in moduli o oggetti
 - Identificazioni di patterns
 
-Programmazione e test di unità
-- Le black box definite al punto precedente vengono realizzate
-- lo sviluppatore deve avere testato i suoi moduli indipendentemente 
-	- Utilizzo framework per il test (che ovviamente non consegnero all utente)
-		- moduli stub/fittizzi (fittizzio cioe che in apparenza fa quello che dovrebbe fare in modo sicuro e semplice): moduli che la mia classe utilizza
-		- moduli driver: moduli che usano la mia classe 
+Possibili output:
+- Documento di specifica di progetti considerando diversi linguaggi
 
-Output:
+## Programmazione e test di unità
+Le black box definite al punto precedente vengono realizzate
+Lo sviluppatore deve avere testato i suoi moduli in modo indipendente utilizzando framework per il test (che ovviamente non consegnerò all'utente)
+- moduli stub/fittizzi (fittizzio cioe che in apparenza fa quello che dovrebbe fare in modo sicuro e semplice): moduli che la mia classe utilizza
+- moduli driver: moduli che usano la mia classe 
+
+Possibili output:
 - insieme di moduli sviluppati separatamente con un interfaccia concordata e singolarmente verificati
-- Unendo i vari componenti sono necessari
-	- Test di integrazione: sottoinsieme dell'applicazione, sostituendo a mano i moduli di testing con i moduli reali
-		- top-down
-		- bottom-up
 
-Manutenzione
-- COrrettiva 
+## Integrazione e test di sistema
+Ora è necessario unire i vari componenti realizzati
+- Test di integrazione: consideriamo un sottoinsieme dell'applicazione alla volta, sostituendo a mano i moduli di testing con i moduli reali
+	- top-down
+	- bottom-up
+
+## Manutenzione
+- Correttiva 
 - Adattiva 
 - Perfettiva
 
-Output: ...
+Output: un prodotto migliore
 
-Altre attivita:
-- documentazione : puo essere vista come attività trasversale o posteriore
-- Verifica e controllo qualità
-- gestione incentivi, responsabilità, eccezioni
-- gestione delle configurazioni 
+Altre attività:
+- Documentazione : può essere vista come attività trasversale o posteriore
+- Verifica e controllo qualità (QA quality assurance)
+- Gestione del processo, in particolare degli incentivi, responsabilità, eccezioni
+- Gestione delle configurazioni, cioè delle relazioni inter-progettuali
 
 
-Modelli di ciclo di vita del SW
-- Modello a cascata/document driven: ogni fase produce un semilavorato che è utilizzato dalla fase successiva senza possibilità di retroazione
-nasce durante la fine degli anni 50 in un progetto militare
-Famiglia di processi in cui in modo sequenziale 
-...
-
-Vantaggi:
-Garantisce una buona separazione dei compiti
-
-è possibile pianificare i tempi e monitoring dello stato di avanzamento ma è a senso unico
-
-Svantaggi:
-la manutenzione avviene post rilascio perche non è prevista retroazione (non si possono fare modifiche a specifiche, codice, documentazione...), è considerata una eccezione. ma il 70% dei costi di sviluppo ricadono in questa fase 
-- Rigidita 
-- Congelamento sotto prodotti, essendo vincolati a stime fatte nelle prime fasi
-- monoliticita in quanto la pianificazione è orientata ad un singolo rilascio e la manutenzione è fatta solo sul codice 
-
-- Modello a V: è come il modello a cascata che espande la fase di testing e chiarisce alcune relazioni. 
-Dopo ogni fase si considera la coerenza con le specifiche del progetto 
-
+## Modelli di ciclo di vita del SW
 Modelli
-- prescrittivi: da un modo per procedere, quella giusta (spesso in realta incompleti)
+- prescrittivi: da un modo per procedere, quella giusta (spesso in realtà incompleti)
 - descrittivi: rappresentano una situazione prendendone solo alcuni aspetti perche non direttamente utilizzabili 
-
-
-- Modello a cascata con singola retroazione alla fase precedente (iterazione ripetibile)
-- Modello ciclo di vita a fontana: non vado alla fase precedente ma sempre al punto di partenza senza buttare quanto fatto anche se non so ogni volta quanto profonda di ogni zampillo sara. E' quindi un modello incrementale 
 
 Modelli
 - incrementale: quando nelle iterazioni viene inclusa la consegna. Quello che viene fatto dopo la consegna fa parte del processo
-- iterativi: 
+- iterativi
 
-es implementazione iterativa:
-- Stressa la modularizzazione e l'identificazione di sottosistemi e si ripetono fasi di coding ed integrazione
-sviluppo incrementale
-- viene esteso a tutte le fasi specifiche comprese
-- la fase di manutenzione in senso stretto sparisce diventando semplice riciclo
-
-
-- Modelli prototipali
-Prototipo usa e getta, prima di buttarlo lo faccio vedere all'utente
-prototipi:
-- pubblici/esterni: lo presento al cliente per verificare di aver capito i requisiti per far compiere scelte all'utente
-- privati/interni: per esplorare nuovi strumenti, linguaggi, diverse scelte per problemi difficili
-Boehm Law protopizzazione diminuisce significativamente gli errori di progettazione e raccolta dei requisiti soprattutto per l'interfacce utente
-
-è un modello iterativo perche il prototipo non glielo lascio davvero (non è incrementale perche non parto da quello)
+es 
+- implementazione iterativa: stressa la modularizzazione e l'identificazione di sottosistemi e si ripetono fasi di coding ed integrazione
+- sviluppo incrementale
+	- viene esteso a tutte le fasi, specifiche comprese
+	- la fase di manutenzione in senso stretto sparisce diventando semplice riciclo
 
 
 Problemi con i modelli incrementali
 - il lavoro di planning viene complicato in quanto lo stato del processo è meno visibile e bisogna pianificare tutte le iterazioni
-- si riconosce che bisogna rimettere mano a cio che si è fatto MA il sistema potrebbe non convergere, non arrivando mai a qualcosa che consegno e non lo tocco piu
+- si riconosce che bisogna rimettere mano a ciò che si è fatto MA il sistema potrebbe non convergere, non arrivando mai a un risultato che consegno e che non lo tocco piu
 - cosa è un iterazione e quanto dura?
 	- rischio di voler mettere troppo nella prima iterazione
 	- rischio di overhead dovuto a troppe iterazioni
 	- rischio di avere un eccessivo overlapping tra le iterazioni in quanto non si hanno feedback dell'utente
 
-- Modello Pinball Life-Cycle (Ambler)
-Il controllo che ho su cosa succede dopo è limitato
-è una visione pessimistica di un processo indefinito in cui qualunque passo è possibile e quindi non è misurabile neanche in termini di vincoli temporali
+- ### Modello a cascata/document driven
+Ogni fase produce un semilavorato che è utilizzato dalla fase successiva senza possibilità di retroazione. Forza quindi una progressione lineare.
+Nasce durante la fine degli anni 50 in un progetto militare
 
-- Modelli trasformazionali
-Vediamo lo sviluppo del SW come un riffinamento di rappresentazioni formali del problema
-Ad ogni passo vengono specializzate, ottimizzate e rese piu concrete attraverso trasformazioni automatiche o controllate. Deve essere dimostrabile che mantengo le stesse qualita precedenti
+Vantaggi:
+- Garantisce una buona separazione dei compiti
+- è possibile pianificare i tempi e monitorare lo stato di avanzamento, ma è a senso unico
 
-A partire da specifiche formali si ottiene un prototipo infatti
+Svantaggi:
+- La manutenzione avviene post rilascio perché non è prevista retroazione (non si possono fare modifiche a specifiche, codice, documentazione...), ed anzi è considerata un'eccezione. 
+	Tuttavia il 70% dei costi di sviluppo ricadono in questa fase 
+- Rigidità 
+- Congelamento sotto prodotti, essendo vincolati a stime fatte nelle prime fasi
+- Monoliticità in quanto la pianificazione è orientata ad un singolo rilascio e la manutenzione è fatta solo sul codice 
+
+- ### Modello a V: 
+E' un modello simile a quello a cascata ma espande la fase di testing e chiarisce alcune relazioni. 
+Dopo ogni fase si considera la coerenza con le specifiche del progetto.
+
+- ### Modello a cascata con singola retroazione 
+Permette una singola retroazione alla fase precedente eventualmente iterabile e ripetibile
+
+- ### Modello ciclo di vita a fontana
+In questo modello la retroazione non va alla fase precedente ma sempre al punto di partenza, senza buttare quanto fatto 
+In ogni retroazione non è noto a priori la profonda di ogni zampillo. 
+E' quindi un modello incrementale 
+
+- ### Modelli prototipali
+Considera un prototipo usa e getta
+I prototipi possono essere:
+- pubblici/esterni: viene presentato al cliente per verificare di aver capito i requisiti e far compiere scelte all'utente
+- privati/interni: per esplorare nuovi strumenti, linguaggi, diverse scelte per problemi difficili
+Boehm Law: la protopizzazione diminuisce significativamente gli errori di progettazione e raccolta dei requisiti soprattutto per l'interfacce utente
+
+E' un modello iterativo perché il prototipo non glielo lascio davvero (non è incrementale perché non parto da quello)
+
+- ### Modello Pinball Life-Cycle (Ambler)
+Il controllo che ho su cosa succede dopo ogni fase è limitato
+E' una visione pessimistica di un processo indefinito in cui qualunque passo è possibile e quindi non è misurabile neanche in termini di vincoli temporali
+
+- ### Modelli trasformazionali
+Vediamo lo sviluppo del SW come un raffinamento di rappresentazioni formali del problema.
+Ad ogni passo vengono specializzate, ottimizzate e rese piu concrete attraverso trasformazioni automatiche o controllate. 
+
+A partire da specifiche formali si ottiene un prototipo che
 - differisce dal prodotto finale per efficienza e completezza
-- passi di trasformazioni formalmente dimostrabili come corretti, portano ad avere la versione finale
+- comprende passi di trasformazioni formalmente dimostrabili come corretti, in particolare che portano ad avere la versione finale e che mantengano le stesse qualità precedentemente ottenute
 
-- Modello a spirale
-metamodello in quanto si usa per descrive altri modelli
-è guidato dall'analisi dei rischi
+- ### Meta-Modello a spirale
+E' un metamodello in quanto si usa per descrive altri modelli
+E' guidato dall'analisi dei rischi
 Fasi
 - Determinazioni obiettivi, alternative e vincoli
 - Valutazione alternative, identificazione rischi
 - Sviluppo e verifica
 - Pianificazione fase successiva
+Ad ogni passo mi chiedo se valga la pena continuare, considerando appunti i rischi.
 
-ad ogni passo mi chiedo se ne valga la pena di continuare
-
-
-- Modello spirale win-win
-Evidenzia le comunicazioni con i clienti e che non sono di tipo pacifico ma necessitano di contrattazioni e negoziazione
-Esplicita quindi il rischio di comunicazione
+- ### Modello spirale win-win
+Evidenzia che le comunicazioni con i clienti e non sono di tipo pacifico ma anzi necessitano di contrattazioni e negoziazione
+Questo modello esplicita quindi il rischio di comunicazione
 
 
-- Modello COTS Component Off The Shelf
-prende a principio la riusabilità dei componenti sul mercato di moduli preesistenti, partendo da quelli mediante integrazione
+- ### Modello COTS Component Off The Shelf
+Prende a principio la riusabilità dei componenti sul mercato di moduli preesistenti, partendo da quelli e attuando un'integrazione
 
-Apre a nuovi problemi quali la classificazione dei moduli e il retrieval dei moduli
-Servono degli adattatori per far convinvere componenti nati con assunzioni diverse (parametri diversi)
+Questa metodologia porta a nuovi problemi quali la classificazione dei moduli e il retrieval dei moduli
+Servono degli adattatori per far convivere componenti nati con assunzioni diverse (parametri diversi).
 Rischio di importare codice inutile
 
 
-Metodologie agili: eXtreme Programming
-Valorizzare gli individui, responsabilizzare gli individui e il team non calando decisioni e deadline dall alto 
-Valorizzare un SW che funziona piuttosto che una documentazione esaustiva
-Collaborazione del cliente come se fosse nel team
-Capacita di rispondere ai cambiamenti piuttosto che seguire il piano predisposto
+- ### Metodologie agili: eXtreme Programming
+Principi
+- Valorizzare gli individui, responsabilizzare gli individui e il team non calando decisioni e deadline dall'alto 
+- Valorizzare un SW che funziona piuttosto che una documentazione esaustiva
+- Collaborazione del cliente come se fosse nel team
+- Capacita di rispondere ai cambiamenti piuttosto che seguire il piano predisposto
 
