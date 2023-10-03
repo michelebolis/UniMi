@@ -18,35 +18,22 @@
             }
           },
           {
-            "id": "80c4014dc5971c26",
+            "id": "52e6e4de8c2d2360",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Ingegneria del software/Appunti.md",
-                "mode": "source",
-                "source": false
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+                "viewState": {
+                  "x": 2037.0191858586309,
+                  "y": 2169.1868961160803,
+                  "zoom": -1.0833333333333335
+                }
               }
             }
           }
         ],
         "currentTab": 1
-      },
-      {
-        "id": "08bb02bafb70b4a9",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "a590f58c5ae4be8c",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Ingegneria del software/Slide/IS2023-L02.pdf"
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -92,8 +79,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -113,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ingegneria del software/Appunti.md",
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ingegneria del software/Appunti.md",
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ingegneria del software/Appunti.md"
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas"
               }
             }
           },
@@ -170,8 +156,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,7 +168,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bdd78e7dc8a45cb1",
+  "active": "52e6e4de8c2d2360",
   "lastOpenFiles": [
     "Ingegneria del software/Slide/IS2023-L02.pdf",
     "Ingegneria del software/Appunti.md",
