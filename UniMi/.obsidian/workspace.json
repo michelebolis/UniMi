@@ -18,12 +18,12 @@
             }
           },
           {
-            "id": "1c79d90d37104f13",
+            "id": "be38726845e9518f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ingegneria del software/Appunti.md",
+                "file": "Reti di calcolatori/Appunti.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ingegneria del software/Appunti.md",
+                "file": "Reti di calcolatori/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ingegneria del software/Appunti.md",
+                "file": "Reti di calcolatori/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ingegneria del software/Appunti.md"
+                "file": "Reti di calcolatori/Appunti.md"
               }
             }
           },
@@ -165,8 +165,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1c79d90d37104f13",
+  "active": "be38726845e9518f",
   "lastOpenFiles": [
+    "Ingegneria del software/Appunti.md",
     "Ingegneria del software/Progettazione del SW/Modelli/Pasted image 20231004102106.png.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Ingegneria del software/Progettazione del SW/Modelli/Modelli di ciclo di vita del SW.md",
@@ -178,7 +179,6 @@
     "Ingegneria del software/img/Immagine 2023-10-04 102615.png",
     "Ingegneria del software/img/Immagine 2023-10-04 102522.png",
     "Ingegneria del software/Progettazione del SW/Modelli/Modello a fontana.md",
-    "Ingegneria del software/Appunti.md",
     "Ingegneria del software/img/Immagine 2023-10-04 102241.png",
     "Ingegneria del software/img/Immagine 2023-10-04 102056.png",
     "Pasted image 20231004102106.png",

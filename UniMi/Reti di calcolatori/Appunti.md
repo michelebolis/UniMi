@@ -68,3 +68,77 @@ Man mano che il pacchetto viene processato dai router  aumenta di dimensione, di
 
 
 Rete a commutazione di pacchetti:
+
+---
+
+ogni router ha porte I/O, ognuna con una coda (FIFO) di entrata e una coda in uscita
+Periodicamente secondo un algoritmo di instradamento, facendo una codifica dei pacchetti (in particolare lo header che sicuramente contiene sorgente e destinazione) decide in che porta mandare il pacchetto.
+Tabella di instradamento: destinatario pacchetto | porta di uscita
+Le code hanno una dimensione finita
+La sequenza prelevamento-decodifica-forward deve essere effettuata il piu velocemente possibile. Difatti l'header è nei primi bit cosi il router è piu veloce nella lettura
+Piu piccoli sono i pacchetti, meno spazio occuperemo nelle code ma avremo un overhead a causa dell header di ogni pacchetto. Serve un compromesso tra lo spazio occupato nelle code e l overhead
+
+Tempi statici conseguenti dai tempi fisici
+I tempi variabili della rete sono i tempi delle code, in quanto non so quanto sono piene e quindi quando l algoritmo decodifichera il pacchetto
+In questo caso le code sono store and forward. Il tempo indefinito è quello che intercorre tra forward e store: Jitter.
+Quanti piu nodi di reti devo attraversare, tanto piu Jitter aggiungo e quindi tanto piu la media per i pacchetti aumentera.
+
+Sara quindi necessario una stima adattiva 
+
+Trasmissione in banda base: quando trasmetto da 0 a Hz massimo 
+ogni canale fisico ha un certo data rate, rate di immissione 
+es 1 Mbps
+attaccata alla porta di rete abbiamo il bus di comunicazione con la coda di uscita Tx, con delle word di una certa dimensione.
+Viene quindi fatta una prima conversione mandando in alternanza veloce i singoli bit (da LSB a MSB), grazie a un clock che viaggia. Lato ricevitore si rappresenta l 1 con un livello alto di voltaggio e 0 un voltaggio basso. 
+Problemi: 
+- Essendo pero due sistemi distribuiti, hanno due clock diversi: capire quando inizia e quando finisce un bit -> algoritmi di sincronizzazione
+
+Tipicamente la rete non è affidabile a causa del rumore. Un bit potrebbe cambiare nel suo opposto
+Ci sono bit aggiuntivi per
+- riconoscere se c e stato almeno un bit sbagliato
+- rimediare all'errore
+
+La rete deve quindi riconoscere se un pacchetto è corretto/non alterato e rimediare all errore
+Nel caso in cui il pacchetto sia arrivato corretto, ma la consegna dei singoli pacchetti non è in ordine, è necessario un meccanismo per ricomporli. In particolare oltre a sorgente e destinazione, puo avere una serie di bit per riconoscere la posizione del pacchetto nella sequenza e la lunghezza della sequenza.
+Potro quindi anche riconoscere se ho ricevuto dei duplicati
+
+Acknoledgement, il ricevente lo manda al mittente
+A passa, una volta che ha mandato i bit da Tx a Wait, in cui il canale non è utilizzato.
+Il problema è che l ACK potrebbe non arrivare, potrebbere essere perso o corrotto
+
+Il Jitter è definito dalla deviazione standard, importante per alcuni applicativi che necessitano stabilità di comunicazione (es videogiochi)
+La media è comunque importante 
+
+In realta per la maggior parte dei casi non è richiesta affidabilita ma piuttosto la velocita (es voce in videochiamata, caso contrario una mail)
+
+
+La rete fornisce gli strumenti per essere configurata dalle varie applicazioni, quindi deve essere abbastanza flessibile 
+
+
+Un protocollo è un insieme di regole e convenzioni che permettono la comunicazione due entità. Ovviamente le due entità devono usare lo stesso protocollo.
+es http
+
+Consideriamo A e B collegati da un solo cavo
+Tempo di trasmissione Tx = datiDaTrasmettere/capacitaCanale
+Tempo di propagazione Tp: tempo da A a B, dipende unicamente dal canale su cui viaggiano i dati
+Tp = distanza / velocità
+Tp+Tx tempo che intercorre da quando il primo bit esce a quando l ultimo bit arriva
+
+Tp aumenta molto fino a superare Tx quando le distanze aumentano (comunicazioni satellitari, continentali)
+
+Anche l'ACK è un pacchetto, che viaggia nella direzione opposta
+quindi dobbiamo considerare TxACK e il TpACK
+osserviamo che Tp e TpACK sono uguali, perche è lo stesso canale e la stessa distanza 
+TxACK vogliamo che si minimizzi, minimizzando il peso dell ACK, quindi è spesso irrilevante come tempo
+SE non ricevo ACK assumo che qualcosa non sia andato bene
+
+Minimo tempo prima di dire che non è arrivato niente: Tx + 2 Tp
+
+una volta inviato un pacchetto, ne tengo una copia nel buffer del Kernel finche non mi arrivi ACK. Stessa cosa anche il ricevente, tiene una copia del pacchetto nel buffer del Kernel finche non ricevo tutti i pacchetti del file.
+una volta inviato un pacchetto parte un timer per il waiting che stima il tempo minimo, Tx + 2 Tp sovrastimato
+
+SE ACK non arriva A non sa se è arrivato il pacchetto, quindi lo manda nuovamente. Host riconosce se il pacchetto era gia arrivato nei buff. Nel caso ce l abbia gia lo scarta, mandando l ACK.
+
+
+SE la rete è affidabile e succedono degli errori, siamo in grado di risolverli dagli host (non dalla rete)
+

@@ -326,4 +326,19 @@ figure in gioco e responsabilità (in XP)
 		- cambiare stime dei tempi secondo la propria esperienza
 		- identificare e indicare le funzionalita pericolose
 		- produrre SW di qualita 
+- Ad ogni iterazione viene definito un tracker, di controllo e stimolo
 
+Approccio di XP: definizione di 12 pratiche che hanno influenze positive o negative tra di loro
+1. Planning game: avviene all inizio di ogni iterazione. Basato sulle storie scritte dall utente (versione semplificata degli Use Cases di UML). Vengono determinate le funzionalità del prossimo rilascio combinando priorita commerciali e valutazioni tecniche
+2. Planning game: cliente prepara delle carte con delle frasi brevi di descrizione, caso di test che funge da test di accettazione e il valore di business che ha per lui. Gli sviluppatori (team) invece qui stimeranno il tempo necessario. Il managaer sulla base delle informazioni sulla scheda, la implementera alla prossima interazione 
+	- Come si effettua una stima da parte del team
+		- Ci sono diverse stime possibili ore vs giorni
+		- è piu difficile che qualcosa sfugga all intero team piuttosto che al singolo, ho una stima piu accurata
+		- In realta la ragione è che la stima deve essere del team, deve appartenere al team
+		- Problemi
+			- Richiede molto tempo, dovremo minimizzare le discussioni
+			- Effetto ancora / ancoraggio: il primo che dice la stima, confrontano la propria rispetto a quella detta per prima (da assoluto a relativo). Dovremo minimizzare questo effetto
+	- Planning poker: vengono presentate brevemente le carte con dei numeri che seguono una determinata scala (non lineari o qualitative). Il team puo fare domande, richiedere chiarimenti e discutere per chiarire assunzioni e rischi. Ognuno sceglie una carta senza farla vedere e si scopre la stima. In questo modo abbiamo minimizzato l effetto ancora mentre per minimizzare la discussione puo parlare solo la carta piu basse e piu alta. Si vota nuovamente e si convergera piu velocemente all unanimita. Funziona perche le carte sono molto distanziate e l unita di misura non è reale ma piuttosto ore ideali (si usano anche i pomodori come unita di misura). SE ci sono tante carte ?, si divide la carte in piu carte semplici
+	- Team Estimation Game Si sfrutta una valutazione comparativa rispetto alla carta precedente, quindi rispetto alla stima del team non alla mia. Ogni developer svela una carta e la pone a sinistra se è piu facile di quella sul tavolo o a destra se è piu difficile. SE non sono d accordo con l ordine delle carte sul tavolo, muovo le carte spiegando al team. Pericolo dell effetto ancora ma attenuato dal fatto che non c è un valore assoluto. Una volta definito un ordine, quantifico le distanze, sempre con numeri distanti come nel planning poker. ... . Metodo piu veloce se ho molte carte
+	- 
+		
