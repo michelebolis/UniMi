@@ -16,8 +16,24 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "e654be22e247443e",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+                "viewState": {
+                  "x": 2107.8286874632645,
+                  "y": 1463.6271286422425,
+                  "zoom": -0.3564159194422643
+                }
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +138,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas"
+              }
             }
           },
           {
@@ -148,7 +168,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "47136b92c595cdff",
+  "active": "e654be22e247443e",
   "lastOpenFiles": [
     "Ingegneria del software/Progettazione del SW/Modelli/Modelli di ciclo di vita del SW.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
