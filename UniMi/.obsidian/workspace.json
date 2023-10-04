@@ -18,16 +18,16 @@
             }
           },
           {
-            "id": "52e6e4de8c2d2360",
+            "id": "4ea0a9bc831ec45e",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+                "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "viewState": {
-                  "x": 2037.0191858586309,
-                  "y": 2169.1868961160803,
-                  "zoom": -1.0833333333333335
+                  "x": 342.9886753856932,
+                  "y": -5772.665866581586,
+                  "zoom": -0.22005053726141527
                 }
               }
             }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+                "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+                "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas"
+                "file": "Sistemi embedded/Sistemi embedded.canvas"
               }
             }
           },
@@ -168,14 +168,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "52e6e4de8c2d2360",
+  "active": "4ea0a9bc831ec45e",
   "lastOpenFiles": [
+    "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Ingegneria del software/Slide/IS2023-L02.pdf",
     "Ingegneria del software/Appunti.md",
     "Linguaggi di programmazione/OCaml/Datatypes/Datatypes.md",
     "Ingegneria del software/Slide/Index slide.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.md",
-    "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Ingegneria del software/SWENG.md",
     "Ingegneria del software/Slide/IS2023-L01.pdf",
     "Ingegneria del software/Slides/Untitled.md",
