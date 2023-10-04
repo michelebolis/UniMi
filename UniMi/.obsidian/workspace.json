@@ -16,24 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "4ea0a9bc831ec45e",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas",
-                "viewState": {
-                  "x": 342.9886753856932,
-                  "y": -5772.665866581586,
-                  "zoom": -0.22005053726141527
-                }
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas"
-              }
+              "state": {}
             }
           },
           {
@@ -168,53 +148,56 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4ea0a9bc831ec45e",
+  "active": "47136b92c595cdff",
   "lastOpenFiles": [
+    "Ingegneria del software/Progettazione del SW/Modelli/Modelli di ciclo di vita del SW.md",
+    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+    "Ingegneria del software/img/Immagine 2023-10-04 102924.png",
+    "Ingegneria del software/img/Immagine 2023-10-04 102853.png",
+    "Ingegneria del software/img/Immagine 2023-10-04 102813.png",
+    "Ingegneria del software/img/Immagine 2023-10-04 102718.png",
+    "Ingegneria del software/img/Immagine 2023-10-04 102615.png",
+    "Ingegneria del software/img/Immagine 2023-10-04 102522.png",
+    "Ingegneria del software/Progettazione del SW/Modelli/Modello a fontana.md",
+    "Ingegneria del software/Appunti.md",
+    "Ingegneria del software/img/Immagine 2023-10-04 102241.png",
+    "Ingegneria del software/Progettazione del SW/Modelli/Pasted image 20231004102106.png.md",
+    "Ingegneria del software/img/Immagine 2023-10-04 102056.png",
+    "Pasted image 20231004102106.png",
+    "Ingegneria del software/img/Immagine 2023-10-04 101824.png",
+    "Ingegneria del software/img",
+    "Ingegneria del software/Nuova cartella",
+    "Ingegneria del software/Progettazione del SW/Progettazione del SW.md",
+    "Ingegneria del software/Progettazione del SW/Fasi/Fasi.md",
+    "Ingegneria del software/Progettazione del SW/Modelli/Metodologie agili.md",
+    "Ingegneria del software/Progettazione del SW/Modelli/Modello COTS.md",
+    "Ingegneria del software/Progettazione del SW/Modelli/Modello spirale win-win.md",
+    "Ingegneria del software/Progettazione del SW/Modelli/Meta-modello a spirale.md",
+    "Ingegneria del software/Progettazione del SW/Modelli/Modello trasformazionale.md",
+    "Ingegneria del software/Progettazione del SW/Modelli/Modello Pinball Life-Cycle.md",
+    "Ingegneria del software/Progettazione del SW/Modelli/Modello prototipale.md",
+    "Ingegneria del software/Progettazione del SW/Modelli/Modello a cascata con singola retroazione.md",
+    "Ingegneria del software/Progettazione del SW/Modelli/Modello a V.md",
+    "Ingegneria del software/Progettazione del SW/Modelli/Modello a cascata.md",
+    "Ingegneria del software/Progettazione del SW/Modelli",
+    "Ingegneria del software/Progettazione del SW/Fasi/Progettazione.md",
+    "Ingegneria del software/Progettazione del SW/Fasi/Analisi e specifica dei requisiti.md",
+    "Ingegneria del software/Progettazione del SW/Fasi/Programmazione e test di utilità.md",
+    "Ingegneria del software/Progettazione del SW/Fasi",
+    "Ingegneria del software/Progettazione del SW/Fasi/Manutenzione e altre attività.md",
+    "Ingegneria del software/Progettazione del SW/Fasi/Integrazione e test di sistema.md",
+    "Ingegneria del software/Progettazione del SW/Fasi/Studio di fattibilità.md",
+    "Sistemi embedded/Sistemi embedded.canvas",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Ingegneria del software/Slide/IS2023-L02.pdf",
-    "Ingegneria del software/Appunti.md",
     "Linguaggi di programmazione/OCaml/Datatypes/Datatypes.md",
     "Ingegneria del software/Slide/Index slide.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.md",
-    "Ingegneria del software/SWENG.md",
     "Ingegneria del software/Slide/IS2023-L01.pdf",
-    "Ingegneria del software/Slides/Untitled.md",
     "Ingegneria del software/Slide",
     "Ingegneria del software/Slides",
-    "Linguaggi di programmazione/OCaml/Datatypes/Collezioni/Collezioni.md",
     "Linguaggi di programmazione/OCaml/Slide/01. functional programming (λ-calculus and ml) & recursion.4.pdf",
-    "Linguaggi di programmazione/OCaml/Slide/Index slide.md",
-    "Linguaggi di programmazione/OCaml/Datatypes/Collezioni/Record.md",
-    "Linguaggi di programmazione/OCaml/Datatypes/Collezioni/Variants.md",
-    "Linguaggi di programmazione/Appunti.md",
-    "Linguaggi di programmazione/OCaml/Datatypes/Collezioni/Aliasing.md",
-    "Linguaggi di programmazione/OCaml/Datatypes/Collezioni/Array.md",
-    "Linguaggi di programmazione/OCaml/Datatypes/Collezioni/Tuple.md",
-    "Linguaggi di programmazione/OCaml/Datatypes/Collezioni/Liste.md",
-    "Linguaggi di programmazione/OCaml/Ricorsione.md",
     "Linguaggi di programmazione/OCaml/Datatypes/Collezioni",
-    "Linguaggi di programmazione/OCaml/OCaml.md",
-    "Linguaggi di programmazione/OCaml/Datatypes",
-    "Linguaggi di programmazione/OCaml/Pattern matching.md",
-    "Linguaggi di programmazione/OCaml/Slide/02. datatypes in ml.4.pdf",
-    "Reti di calcolatori/Reti di calcolatori.md",
-    "Linguaggi di programmazione/OCaml/Composizione di funzioni.md",
-    "Reti di calcolatori/Reti di calcolatori.canvas",
-    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-    "Sistemi embedded/Sistemi embedded.canvas",
-    "Index.md",
-    "Sistemi embedded/img/Pasted image 20230930143958.png",
-    "Linguaggi di programmazione/Programmazione funzionale.md",
-    "Sistemi embedded/Concetti generali/Interrupt.md",
-    "Linguaggi di programmazione/OCaml/Slide",
-    "Sistemi embedded/Sistemi embedded.md",
-    "Sistemi embedded/img/Pasted image 20230929133655.png",
-    "Pasted image 20230929133140.png",
-    "Sistemi embedded/img/Pasted image 20230929133039.png",
-    "Sistemi embedded/Concetti elettronica/PWM.md",
-    "Pasted image 20230929132143.png.~tmp",
-    "Sistemi embedded/img/Pasted image 20230929132143.png",
-    "Sistemi embedded/img/Pasted image 20230929115226.png",
-    "Sistemi embedded/img/Pasted image 20230929115447.png"
+    "Reti di calcolatori/Reti di calcolatori.canvas"
   ]
 }

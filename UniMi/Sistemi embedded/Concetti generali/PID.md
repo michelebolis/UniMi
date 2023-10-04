@@ -4,7 +4,11 @@ E' un modello di controllo e per PID si intende **Proporzionale-Integrativa-Deri
 * #Integrativa: la storia dell'evoluzione dello stato del sistema calcolata in una finestra temporale (es media dell'errore).
 * #Derivativa: la velocità di variazione dello stato dall'obiettivo.
 
-Una volta calcolati i valori vanno stabiliti dei coefficienti per pesare la funzione P*(distanza) + I*(media errore) + D*(velocità variazione - può corrispondere alla distanza). È importate avere una funzione che definisca l'errore. Nel caso del motore e(t)= RegimeDesiderato - GiriMotore
+Una volta calcolati i valori vanno stabiliti dei coefficienti per pesare la funzione P*(distanza) + I*(media errore) + D*(velocità variazione - può corrispondere alla distanza). È importate avere una funzione che definisca l'errore. 
+
+![[Pasted image 20231004093936.png]]
+
+Nel caso del motore e(t)= RegimeDesiderato - GiriMotore
 esempio:
 Ipotizzando che vogliamo un motore che vada ad un regime di 1400 giri
 
