@@ -1,4 +1,4 @@
-**FreeRTOS (Free Real Time Operating System)** è un sistema operativo ==semplice e veloce che ha lo scopo di offrire prestazioni [[real-time]]==.
+**FreeRTOS (Free Real Time Operating System)** è un sistema operativo ==semplice e veloce che ha lo scopo di offrire prestazioni [[Real-time]]==.
 
  Non comprende driver né API complesse ma solo il necessario per la gestione di thread, task, mutex, semafori e timer.
 

@@ -1,4 +1,20 @@
-Gli array sono [[liste]] omogenee e mutabili direttamente accessibili
+Le tuple sono [[Liste]] con una dimensione fissata e sono $eterogeneee$
+
+Sintassi:
+ ```ocaml
+ let tupla = (valore1, valore2, valore3)
+  ```
+
+Le pair o coppie sono tuple con solo 2 elementi
+Sintassi:
+ ```ocaml
+ let pair = (valore1, valore2)
+ fst pair (*Restituisce valore 1*)
+ snd pair (*Restituisce valore 2*)
+  ```
+
+- Array
+Gli array sono liste omogenee e mutabili direttamente accessibili
 Gli operatori provengono dal modulo Array [(documentazione)](https://v2.ocaml.org/api/Array.html)
 
 Sintassi:

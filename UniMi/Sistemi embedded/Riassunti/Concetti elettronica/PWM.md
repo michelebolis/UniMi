@@ -1,4 +1,4 @@
-Un Pulse With Modulation è un [[segnale]] con una ==forma d'onda quadrata con un periodo fisso ma non simmetrico==. 
+Un Pulse With Modulation è un [[Segnale]] con una ==forma d'onda quadrata con un periodo fisso ma non simmetrico==. 
 Solitamente la semi-onda alta corrisponde all'1 logico e quella bassa 0 logico.  
 
 Il #duty-cycle (espresso in %) rappresenta il tempo in cui il segnale è alto. 

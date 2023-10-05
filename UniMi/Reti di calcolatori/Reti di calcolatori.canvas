@@ -1,9 +1,9 @@
 {
 	"nodes":[
-		{"id":"a088fa9a4f01c8e8","x":-640,"y":-340,"width":740,"height":520,"type":"file","file":"Reti di calcolatori/Introduzione.md"},
-		{"id":"1875cdd354f1d938","x":240,"y":-340,"width":859,"height":520,"type":"file","file":"Reti di calcolatori/Rete.md"},
-		{"id":"2f8a5a425dbb61db","x":240,"y":-820,"width":859,"height":400,"type":"file","file":"Reti di calcolatori/Requisiti della rete.md"},
-		{"id":"7335e215a19879bf","x":240,"y":260,"width":859,"height":500,"type":"file","file":"Reti di calcolatori/Router.md"}
+		{"id":"a088fa9a4f01c8e8","x":-640,"y":-340,"width":740,"height":520,"type":"file","file":"Reti di calcolatori/Riassunti/Introduzione.md"},
+		{"id":"1875cdd354f1d938","x":240,"y":-340,"width":859,"height":520,"type":"file","file":"Reti di calcolatori/Riassunti/Rete.md"},
+		{"id":"2f8a5a425dbb61db","x":240,"y":-820,"width":859,"height":400,"type":"file","file":"Reti di calcolatori/Riassunti/Requisiti della rete.md"},
+		{"id":"7335e215a19879bf","x":240,"y":260,"width":859,"height":500,"type":"file","file":"Reti di calcolatori/Riassunti/Router.md"}
 	],
 	"edges":[
 		{"id":"f1a1bb1ac6e1b4e2","fromNode":"a088fa9a4f01c8e8","fromSide":"right","toNode":"1875cdd354f1d938","toSide":"left"},

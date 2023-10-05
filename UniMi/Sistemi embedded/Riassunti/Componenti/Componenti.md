@@ -18,5 +18,5 @@ Elenco:
 - [[Sensori]]
 - [[Attuatori]]
 - [[GPIO]]
-- [[Memoria]]
+- [[Sistemi embedded/Riassunti/Componenti/Memoria/Memoria]]
 - [[Filtri]]

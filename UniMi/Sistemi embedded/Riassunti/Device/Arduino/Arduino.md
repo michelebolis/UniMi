@@ -1,0 +1,6 @@
+- [[Sistemi embedded/Riassunti/Device/Arduino/Storia|Storia]]
+- [[Sistemi embedded/Riassunti/Device/Arduino/Memoria]]]]
+- [[Tipi di dato]]
+- [[Boot]]
+- [[setup e loop]]
+- [[Pro e contro]]

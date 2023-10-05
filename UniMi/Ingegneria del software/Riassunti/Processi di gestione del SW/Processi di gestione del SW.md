@@ -1,4 +1,4 @@
-- [[Ingegneria del software/Processi di gestione del SW/Storia]]
+- [[Ingegneria del software/Riassunti/Processi di gestione del SW/Storia]]
 - [[Terminologia]]
 
 Dato il #Target, riflettiamo su

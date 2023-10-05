@@ -18,14 +18,17 @@
             }
           },
           {
-            "id": "be38726845e9518f",
+            "id": "cf9d703c2338e295",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
-                "mode": "source",
-                "source": false
+                "file": "Sistemi embedded/Sistemi embedded.canvas",
+                "viewState": {
+                  "x": 880,
+                  "y": -983,
+                  "zoom": -3.970050537261415
+                }
               }
             }
           }
@@ -96,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
+                "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
+                "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md"
+                "file": "Sistemi embedded/Sistemi embedded.canvas"
               }
             }
           },
@@ -165,56 +168,57 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "be38726845e9518f",
+  "active": "47136b92c595cdff",
   "lastOpenFiles": [
+    "Ingegneria del software/Riassunti",
+    "Linguaggi di programmazione/Riassunti",
+    "Reti di calcolatori/Riassunti",
+    "Sistemi embedded/Sistemi embedded.canvas",
+    "Sistemi embedded/Riassunti",
+    "Reti di calcolatori/Appunti.md",
     "Ingegneria del software/Appunti.md",
     "Ingegneria del software/Progettazione del SW/Modelli/Pasted image 20231004102106.png.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
-    "Ingegneria del software/Progettazione del SW/Modelli/Modelli di ciclo di vita del SW.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli di ciclo di vita del SW.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-    "Ingegneria del software/img/Immagine 2023-10-04 102924.png",
-    "Ingegneria del software/img/Immagine 2023-10-04 102853.png",
-    "Ingegneria del software/img/Immagine 2023-10-04 102813.png",
-    "Ingegneria del software/img/Immagine 2023-10-04 102718.png",
-    "Ingegneria del software/img/Immagine 2023-10-04 102615.png",
-    "Ingegneria del software/img/Immagine 2023-10-04 102522.png",
-    "Ingegneria del software/Progettazione del SW/Modelli/Modello a fontana.md",
-    "Ingegneria del software/img/Immagine 2023-10-04 102241.png",
-    "Ingegneria del software/img/Immagine 2023-10-04 102056.png",
+    "Ingegneria del software/Riassunti/img/Immagine 2023-10-04 102924.png",
+    "Ingegneria del software/Riassunti/img/Immagine 2023-10-04 102853.png",
+    "Ingegneria del software/Riassunti/img/Immagine 2023-10-04 102813.png",
+    "Ingegneria del software/Riassunti/img/Immagine 2023-10-04 102718.png",
+    "Ingegneria del software/Riassunti/img/Immagine 2023-10-04 102615.png",
+    "Ingegneria del software/Riassunti/img/Immagine 2023-10-04 102522.png",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modello a fontana.md",
+    "Ingegneria del software/Riassunti/img/Immagine 2023-10-04 102241.png",
+    "Ingegneria del software/Riassunti/img/Immagine 2023-10-04 102056.png",
     "Pasted image 20231004102106.png",
-    "Ingegneria del software/img/Immagine 2023-10-04 101824.png",
-    "Ingegneria del software/img",
+    "Ingegneria del software/Riassunti/img/Immagine 2023-10-04 101824.png",
+    "Ingegneria del software/Riassunti/img",
     "Ingegneria del software/Nuova cartella",
-    "Ingegneria del software/Progettazione del SW/Progettazione del SW.md",
-    "Ingegneria del software/Progettazione del SW/Fasi/Fasi.md",
-    "Ingegneria del software/Progettazione del SW/Modelli/Metodologie agili.md",
-    "Ingegneria del software/Progettazione del SW/Modelli/Modello COTS.md",
-    "Ingegneria del software/Progettazione del SW/Modelli/Modello spirale win-win.md",
-    "Ingegneria del software/Progettazione del SW/Modelli/Meta-modello a spirale.md",
-    "Ingegneria del software/Progettazione del SW/Modelli/Modello trasformazionale.md",
-    "Ingegneria del software/Progettazione del SW/Modelli/Modello Pinball Life-Cycle.md",
-    "Ingegneria del software/Progettazione del SW/Modelli/Modello prototipale.md",
-    "Ingegneria del software/Progettazione del SW/Modelli/Modello a cascata con singola retroazione.md",
-    "Ingegneria del software/Progettazione del SW/Modelli/Modello a V.md",
-    "Ingegneria del software/Progettazione del SW/Modelli/Modello a cascata.md",
-    "Ingegneria del software/Progettazione del SW/Modelli",
-    "Ingegneria del software/Progettazione del SW/Fasi/Progettazione.md",
-    "Ingegneria del software/Progettazione del SW/Fasi/Analisi e specifica dei requisiti.md",
-    "Ingegneria del software/Progettazione del SW/Fasi/Programmazione e test di utilità.md",
-    "Ingegneria del software/Progettazione del SW/Fasi",
-    "Ingegneria del software/Progettazione del SW/Fasi/Manutenzione e altre attività.md",
-    "Ingegneria del software/Progettazione del SW/Fasi/Integrazione e test di sistema.md",
-    "Ingegneria del software/Progettazione del SW/Fasi/Studio di fattibilità.md",
-    "Sistemi embedded/Sistemi embedded.canvas",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Progettazione del SW.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Fasi/Fasi.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Metodologie agili.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modello COTS.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modello spirale win-win.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Meta-modello a spirale.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modello trasformazionale.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modello Pinball Life-Cycle.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modello prototipale.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modello a cascata con singola retroazione.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modello a V.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modello a cascata.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Fasi/Progettazione.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Fasi/Analisi e specifica dei requisiti.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Fasi/Programmazione e test di utilità.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Fasi",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Fasi/Manutenzione e altre attività.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Fasi/Integrazione e test di sistema.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Fasi/Studio di fattibilità.md",
     "Ingegneria del software/Slide/IS2023-L02.pdf",
-    "Linguaggi di programmazione/OCaml/Datatypes/Datatypes.md",
+    "Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Datatypes.md",
     "Ingegneria del software/Slide/Index slide.md",
-    "Linguaggi di programmazione/Linguaggi di programmazione.md",
     "Ingegneria del software/Slide/IS2023-L01.pdf",
     "Ingegneria del software/Slide",
-    "Ingegneria del software/Slides",
-    "Linguaggi di programmazione/OCaml/Slide/01. functional programming (λ-calculus and ml) & recursion.4.pdf",
-    "Linguaggi di programmazione/OCaml/Datatypes/Collezioni",
     "Reti di calcolatori/Reti di calcolatori.canvas"
   ]
 }
