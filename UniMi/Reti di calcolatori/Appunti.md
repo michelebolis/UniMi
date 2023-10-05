@@ -153,7 +153,8 @@ Tempo di invio completo: Tx+ Tp + Tq + TxR1 + ...
 Tq: tempo di coda nel singolo router
 
 
-Stratificazione
+Obittivi per la progettazione
+- Affidabilita
 l affidabilità, oltre per quanto riguarda i messaggi, riguarda anche identificare se un link sia ancora funzionante.
 
 
@@ -165,4 +166,115 @@ multiplexing: usato per condividere i canali da piu host
 
 - Controllo di flusso: il protocollo tra A e B deve essere in grado di comunicare a A di aspettare perche B sta processando (o perche ha il buffer pieno) o di far negoziare tra A e B il tempo massimo di elaborazione in base all host piu lento
 	es dopo poche interazione HB arriva ad avere il buffer pieno ed inizia a buttare via cio che gli arriva 
-- Controllo di congestione: 
+- Controllo di congestione: la rete deve essere in grado di comunicare quando è congestionata. Congestione avviene quando si ha saturazione delle code dei router o ci sono dei link che causano colli di bottiglia (che si notano con l aumento dei pacchetti inviati). Ci sono algoritmi che cercano di evitare la congestione a priori o che non agiscono finche non avviene una congestione e poi provano ad abbassare la velocita di trasmissione
+
+Solitamente perdita di pacchetti causati da congestione
+
+
+- QoS
+Oltre all affidabilita la rete deve essere il piu possibile general purpose per offrire diverse qualita di servizi in base all applicazione utente
+
+le richieste/parametri di qualita di servizi sono il Jitter, il data rate, il massimo degli utenti...
+SE non c è la possibilita di raggiungere le richieste, si attua una negoziazione
+
+Difficolta: le applicazioni che utilizzano la rete sono moltissime e molto variegati 
+E' necessario che il router applichi una politica per la gestione delle code, per far cio nel pacchetto i parametri di QoS sono presenti nell header
+
+
+- Sicurezza
+Sia sul canale 
+https richiede di cifrare il contenuto dei pacchetti, cifra solo il contenuto/payload
+
+
+Come l hanno realizzata
+Principi di ingegneria del SW
+- Information hiding: incapsulare le informazioni rendendole disponibili solo attraverso delle interfacce. Nascondere anche il funzionamento del sistema ai livelli superiori
+
+
+Stratificazione della rete (semplice)
+Mappatura 1:1 tra i 2 host che devono usare gli stessi protocolli
+A livello piu alto abbiamo i nostri utenti
+Mittente:
+- La richiesta viene incapusulata nel livello 5. Utilizza un protocollo di livello 5 (i due livelli sono peer) per aggiungere alla richiesta un header di livello 5. Passa al livello sottostante il messaggio
+- Il livello 4 espone delle interfacce/primitive al livello 5 (o un servizio affidabile o un servizio veloce ma non affidabile) che sceglie. Nell'header aggiunge quale servizio ha scelto il livello 5 
+- Il livello 3 è in grado di fare l'instradamento, capire se c è un percorso di consegnare il messaggio 
+- Il livello 2 offro anch esso un servizio affidabile e uno non affidabile, che sceglie il livello 3
+- Il livello 1 richiede a che velocita vuole il trasferimento e aggiunge anche informazioni in coda
+Ricevente:
+- Accordo tra i 2 livello 1 è la forma d onda per capire quando il bit è 1 o 0. Il livello 1 utilizza l head del livello 1, che contiene informazioni di interesse per quel livello (es interpretazione codifica). Passa quindi al livello superiore il resto del messaggio
+- Livello 2 controlla la correttezza
+- Livello 3 controlla se l indirizzo è corretto
+- Livello 4 controlla il servizio richiesto e se è stato rispettato 
+- Livello 5 la richiesta viene processata e passata all applicativo del destinatario. Qui si torna ad avere il pacchetto originario
+
+NIC Network Interface Card
+Mittente dal livello 5 a 1 aggiunge gli header ai payload, mentre lato destinatario dal livello 1 a 5 viene usato e tolto gli header
+
+
+Due modalita di utilizzo di protocollo
+- Servizi orientati alla connessione: fare una connessione significare istaurare un canale (setup), il dialogo e infine una fase di rilascio. 
+- Servizi senza connessione: appena ho il dato lo mando, senza contrattare i QoS
+
+Standard teorico: ISO-OSI
+- Applicazione: protocollo che mette in comunicazione due applicazioni (es http, DNS, IMAP, REST)
+- Presentazione: fare in modo che i dati siano presentati opportunamente, quindi i dati sono compressi e decompressi
+- Sessione: mantenimento di una connessione virtuali tra i due host
+- Trasporto: 
+- Rete: (es IP, Internet Protocol)si occupa di fare instradamento data una sorgente e una destinazione in multi hop (passando per piu nodi)
+- Data link: (es Ethernet) si occupa di trasferire un pacchetto da una porta di un apparato dall'altro lato del cavo
+- Fisico:
+
+Fino al livello 4 tra i protocolli, i peer comunicano direttamente 
+(nella foto a destra in parte sono le "unita di misura" di cio che sto trasferendo)
+
+
+TCP-IP Transition Control Protocol
+E' uno standard de facto
+Chiamiamo i pacchetti segmenti
+- Applicativo (HTTP, SMTP, DNS)
+- Trasporto (TCP, UDP)
+- Internet: (IP, ICMP)
+- Data link: dipende fortemente dal livello fisico (DSL, SONET, 802-11, Ethernet)
+
+Trasporto e Internet implementato nel SO
+Ente di standardizzazione IEEE 802.
+802.3 LAN
+802.11 WiFi
+802.15 Bluethoot
+SE cambiano i protocolli, NON devono cambiare le interfacce tra i livelli
+
+Tipo di comunicazione
+- Unicast: unico sorgente che invia e una sola destinazione 
+	- Simplex: una sola direzione, ci inetressa solo mandare i dati
+	- Half-duplex: canale bidirezionale ma puo essere utilizzato una sola direzione alla volta
+	- Full-dupllex: comunicazione bidirezionale nello stesso istante di tempo
+- Multicast: unico sorgente che invia a un sottoinsieme di host
+- Broadcast: unico sorgente che invia a tutte le destinazioni
+
+
+Livello fisico
+Vogliamo trasmettere dei bit sul canale.
+Facciamo variare un livello di voltaggio, -V per lo 0 e +V per l 1
+Modulatore: modula un onda sinusoidale per darle una forma approssimata, a banda limitata cioe un certo numero di armoniche (ognuna una frequenza in Hz). se uso poca banda (poche armoniche), la forma del segnale non approsima bene. Diminuendo banda perdo la definizione del mio sistema 
+
+c è sempre un rumore elettromagnetico che disturba la mia comunicazione, ma il ricevitore non puo riconoscere quale punto sia dato dal segnale iniziale e quale dal rumore. Alcuni bit potrebbero quindi invertirsi
+
+Doppino telefonico (Twisted Pair): coppia di cavi arrotolati tra di loro a spirale (UTP Unshielded)
+Le caratteristiche del cavo sono date dalla sua categoria, CAT
+
+Per una comunicazione elttrica servono due cavi per chiudere il circuito. Bisogna arrotolarli perche quando passa la corrente induce un campo magnetico MA anche dall altro cavo parte si crea un campo (cross-toc). Con l arrotolamento si annullano i campi.
+Si mettono a coppie perche viene trasmessa l informazione sia come la vogliamo sia invertita in modo che qual ora l informazione passasse da una all altra si annullerebbe. Al lato del destinatario di fara T1-T2 e quindi se passasse del rumore, per es di 3V, cio ha influenza su entrambi quindi +3V-3V si puo eliminare
+
+STP Shielded, schematura sta in un foglio di alluminio attorno ai cavi
+
+
+Cavo coaxial: cavo di rame
+
+Cavo fibra ottica: parte di vetro in cui passa la luce
+- Multimodale: riflessione continua della luce grazie ad un angolo critico per effetto della rifrazione
+C è un laser o un diodo che manda gli 1 o 0 mentre dall altra parte c e un ricevitore ottico
+
+
+Differenze
+- costo
+- proprieta di attenuazione: fibra attenuazione minore del doppino telefonico  (doppino massimo teorico 100m)

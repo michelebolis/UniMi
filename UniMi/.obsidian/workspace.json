@@ -28,8 +28,24 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b1a3f00762166186",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Sistemi embedded/Sistemi embedded.canvas",
+                "viewState": {
+                  "x": -1818.2225859762011,
+                  "y": 2808.479246942722,
+                  "zoom": -2.7353482284191513
+                }
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -95,6 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Reti di calcolatori/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,6 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Reti di calcolatori/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,7 +150,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Reti di calcolatori/Appunti.md"
+              }
             }
           },
           {
@@ -160,10 +180,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c1ce2ce19829fc50",
+  "active": "e8d7f6637b4c5458",
   "lastOpenFiles": [
-    "Reti di calcolatori/Appunti.md",
     "Sistemi embedded/Sistemi embedded.canvas",
+    "Reti di calcolatori/Appunti.md",
     "Ingegneria del software/Riassunti",
     "Linguaggi di programmazione/Riassunti",
     "Reti di calcolatori/Riassunti",
