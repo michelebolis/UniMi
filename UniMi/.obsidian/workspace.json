@@ -18,22 +18,18 @@
             }
           },
           {
-            "id": "cf9d703c2338e295",
+            "id": "e8d7f6637b4c5458",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas",
-                "viewState": {
-                  "x": 2388.5408268334845,
-                  "y": 976.7112888302877,
-                  "zoom": -0.636717203928082
-                }
+                "file": "Reti di calcolatori/Appunti.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +95,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +111,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,9 +132,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas"
-              }
+              "state": {}
             }
           },
           {
@@ -168,14 +160,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cf9d703c2338e295",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
+    "Reti di calcolatori/Appunti.md",
+    "Sistemi embedded/Sistemi embedded.canvas",
     "Ingegneria del software/Riassunti",
     "Linguaggi di programmazione/Riassunti",
     "Reti di calcolatori/Riassunti",
-    "Sistemi embedded/Sistemi embedded.canvas",
     "Sistemi embedded/Riassunti",
-    "Reti di calcolatori/Appunti.md",
     "Ingegneria del software/Appunti.md",
     "Ingegneria del software/Progettazione del SW/Modelli/Pasted image 20231004102106.png.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
@@ -218,7 +210,6 @@
     "Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Datatypes.md",
     "Ingegneria del software/Slide/Index slide.md",
     "Ingegneria del software/Slide/IS2023-L01.pdf",
-    "Ingegneria del software/Slide",
     "Reti di calcolatori/Reti di calcolatori.canvas"
   ]
 }

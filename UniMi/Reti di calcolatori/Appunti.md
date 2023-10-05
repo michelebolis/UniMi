@@ -119,8 +119,8 @@ Un protocollo è un insieme di regole e convenzioni che permettono la comunicazi
 es http
 
 Consideriamo A e B collegati da un solo cavo
-Tempo di trasmissione Tx = datiDaTrasmettere/capacitaCanale
-Tempo di propagazione Tp: tempo da A a B, dipende unicamente dal canale su cui viaggiano i dati
+Tempo di trasmissione Tx = datiDaTrasmettere/capacitaCanale dipende dalla capacita del canale e anche quanto è veloce il mittente a immettere
+Tempo di propagazione Tp: tempo da A a B, dipende unicamente dalle caratteristiche fisiche del canale su cui viaggiano i dati (lunghezza e materiale fisico)
 Tp = distanza / velocità
 Tp+Tx tempo che intercorre da quando il primo bit esce a quando l ultimo bit arriva
 
@@ -142,3 +142,27 @@ SE ACK non arriva A non sa se è arrivato il pacchetto, quindi lo manda nuovamen
 
 SE la rete è affidabile e succedono degli errori, siamo in grado di risolverli dagli host (non dalla rete)
 
+---
+
+in realta consideriamo il tempo del singolo bit perche la capienza del messaggio totale l abbiamo tenuta presente in TxP1
+
+in realta non abbiamo solo il tempo di propagazione del canale in se, ma abbiamo piu router coinvolti, ognuna con le proprie code.
+Il tempo complessivo è piu complicato da stimare
+
+Tempo di invio completo: Tx+ Tp + Tq + TxR1 + ...
+Tq: tempo di coda nel singolo router
+
+
+Stratificazione
+l affidabilità, oltre per quanto riguarda i messaggi, riguarda anche identificare se un link sia ancora funzionante.
+
+
+allocazione a commutazione di circuito: comunicazione vogliamo che sia completa, non c è interruzione del traffico (es voce)
+allocazione a commutazione di pacchetto: come condividere i canali a disposizione dei vari host
+multiplexing: usato per condividere i canali da piu host 
+- time division multiplexing TDM: usata nell ambito delle reti fisse, in particolare per l upload. MA non tiene conto della priorita 
+
+
+- Controllo di flusso: il protocollo tra A e B deve essere in grado di comunicare a A di aspettare perche B sta processando (o perche ha il buffer pieno) o di far negoziare tra A e B il tempo massimo di elaborazione in base all host piu lento
+	es dopo poche interazione HB arriva ad avere il buffer pieno ed inizia a buttare via cio che gli arriva 
+- Controllo di congestione: 
