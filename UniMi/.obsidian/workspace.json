@@ -16,21 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "34780e285b22e1ff",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ingegneria del software/Appunti lab.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ingegneria del software/Appunti lab.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ingegneria del software/Appunti lab.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Ingegneria del software/Appunti lab.md"
-              }
+              "state": {}
             }
           },
           {
@@ -165,16 +148,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "34780e285b22e1ff",
+  "active": "47136b92c595cdff",
   "lastOpenFiles": [
-    "Ingegneria del software/Appunti lab.md",
+    "Ingegneria del software/SWENG.md",
+    "Ingegneria del software/Slide/IS2023-L01.pdf",
     "Reti di calcolatori/Appunti.md",
+    "Ingegneria del software/Appunti.md",
+    "Ingegneria del software/Appunti lab.md",
     "Sistemi embedded/Sistemi embedded.canvas",
     "Ingegneria del software/Riassunti",
     "Linguaggi di programmazione/Riassunti",
     "Reti di calcolatori/Riassunti",
     "Sistemi embedded/Riassunti",
-    "Ingegneria del software/Appunti.md",
     "Ingegneria del software/Progettazione del SW/Modelli/Pasted image 20231004102106.png.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli di ciclo di vita del SW.md",
@@ -213,9 +198,6 @@
     "Ingegneria del software/Riassunti/Progettazione del SW/Fasi/Integrazione e test di sistema.md",
     "Ingegneria del software/Riassunti/Progettazione del SW/Fasi/Studio di fattibilità.md",
     "Ingegneria del software/Slide/IS2023-L02.pdf",
-    "Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Datatypes.md",
-    "Ingegneria del software/Slide/Index slide.md",
-    "Ingegneria del software/Slide/IS2023-L01.pdf",
     "Reti di calcolatori/Reti di calcolatori.canvas"
   ]
 }

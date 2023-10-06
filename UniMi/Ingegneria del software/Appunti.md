@@ -244,29 +244,29 @@ Meyer analizza in maniera critica molti concetti metodologici su come si fa a pa
 Lean SW: nasce nella Toyota che punta a ridurre la spazzatura ("waste"), cioe lato SW quello che non interessa all'utente ma anche a livello strutturale.
 Si cerca di fidelizzare lo sviluppatore
 
-Kanban
+- Kanban
 si fa una schema a colonne con uno stato di avanzamento nel tempo
 Per Done si intende fatta, testata E accettata dal cliente
 minimizzare il lavoro in esecuzione: togliere l overhead di content switching
 se sono bloccato su una cosa e non posso fare altro non mi devo fermare, ma andare a supportare il collega che sta facendo il componente che mi serve per continuare
 
-Scrum ("mischia")
+- Scrum ("mischia")
 l intero team si concentra su un obiettivo comune chiaro in un breve tempo, bloccando i requisiti del cliente.
-Si arriva ad una win win condition: io lavoro alle richieste mentre il cliente intanto pensa ad altri requisiti
+Si arriva ad una win-win condition: io lavoro alle richieste mentre il cliente intanto pensa ad altri requisiti
 
-Crystal
+- Crystal
 comunicazione osmotica (spesso assunto nei metodi agili): il team è un concetto reale, un'entita con una conoscenza, quella del team; il codice è del team, non del singolo che lo ha scritto.
-MA cio puo funzionare su un team piccolo (potrei dividere il mio team in team piu piccolo applicando metodi agili)
+MA ciò puo funzionare su un team piccolo (potrei dividere il mio team in team piu piccolo applicando metodi agili)
 
 
-eXtreme Programming
+- eXtreme Programming
 Incrementa poi semplifica, rendendo il codice piu leggibile, migliore (refactoring)
 Nella semplificazione le funzionalita rimangono uguali migliorando le proprieta interne del componente
 
-TDD Test Driven Development
+- TDD Test Driven Development
 Red-Green-Refactor
-Nonostante ci sia sceittto Test, in realta è un attività di design
-Sto scrivendo una specifica, cio che deve fare il codice, e mi sto mettendo nei panni dell'utilizzatore del metodo.
+Nonostante ci sia scritto Test, in realta è un attività di design
+Sto scrivendo una specifica, ciò che deve fare il codice, e mi sto mettendo nei panni dell'utilizzatore del metodo.
 - Scrivi un test che fallisce
 - Qual è la piu rapida ottimizzazione che mi permetta di ottenere il Green? Ottengo un test che passa
 - Refactor, attività di design pura
@@ -278,8 +278,8 @@ Devo avere il prima possibile un feedback rapido, ripetendo il tutto 2-10 minuti
 
 
 eXP variabili in gioco
-- La portata: la quantita di funzionalita che si vogliono implementare
-	- è delicata perche la fonte delle funzionalita è l'utente, i cui desideri sono mutevoli
+- La portata: la quantita di funzionalità che si vogliono implementare
+	- è delicata perche la fonte delle funzionalità è l'utente, i cui desideri sono mutevoli
 - Tempo che si puo dedicare al progetto
 - Qualità del progetto che si deve ottenere (correttezza e mantenibilità). MA questa dimensione si considera non trattabile, deve sempre essere al 100%
 - Costo: quante risorse finanziarie si possono impiegare per il progetto
@@ -288,13 +288,13 @@ Il cliente mi dice portata e tempo, per avere la qualita massima gli comunico il
 Non viene venduto il prodotto MA il tempo, garantendo che io stia lavorando al meglio
 
 principi: confronto
- XP 
+XP 
  - feedback
  - presupporre la semplicità, attuale (contrapposta al design for change)
  - accettare il cambiamento (ma non è il primo obiettivo)
  - modifiche incrementali previste nel TDD
  - lavoro di qualita (voglio che il prodotto sia buono ma anche lavoro in un ambiente di qualita)
- Ing SW classica
+Ing SW classica
  - separazione degli interessi (aspects o concerns)
  - astrazione e modularità
  - design for change: anticipazione del cambiamento 
@@ -310,27 +310,27 @@ figure in gioco e responsabilità (in XP)
 - Manager e/o cliente: 
 	- responsabilità di decidere
 		- la portata del progetti
-		- la priorita (business value) tra le funzionalita
+		- la priorita (business value) tra le funzionalità
 		- date dei rilasci
 	 - diritto di
 		 - sapere cosa puo essere fatto con quali tempi e quali costi
 		 - vedere progressi nel sistema provati dal superamento di test da lui definiti
-		 - cambiare idea, sostituire funzionalita e cambiare priorita
+		 - cambiare idea, sostituire funzionalità e cambiare priorita
 - Lo sviluppatore 
 	- ha la responsabilità di decidere
-		- Le stime dei tempi per le singole funzionalita
+		- Le stime dei tempi per le singole funzionalità
 		- conseguenze di scelte tecnologiche e segnalare i possibili problemi tecnici
 		- pianificazione dettagliata (ogni 2-3 settimane decidono cosa fare ogni giorno)
 	- ha diritto di
 		- sapere cosa è necessario fare attraverso dei requisiti chiari attraverso scenari d uso, ognuno con la propria priorita
 		- cambiare stime dei tempi secondo la propria esperienza
-		- identificare e indicare le funzionalita pericolose
-		- produrre SW di qualita 
+		- identificare e indicare le funzionalità pericolose
+		- produrre SW di qualità 
 - Ad ogni iterazione viene definito un tracker, di controllo e stimolo
 
 Approccio di XP: definizione di 12 pratiche che hanno influenze positive o negative tra di loro
 1. Planning game: avviene all inizio di ogni iterazione. Basato sulle storie scritte dall utente (versione semplificata degli Use Cases di UML). Vengono determinate le funzionalità del prossimo rilascio combinando priorita commerciali e valutazioni tecniche
-2. Planning game: cliente prepara delle carte con delle frasi brevi di descrizione, caso di test che funge da test di accettazione e il valore di business che ha per lui. Gli sviluppatori (team) invece qui stimeranno il tempo necessario. Il managaer sulla base delle informazioni sulla scheda, la implementera alla prossima interazione 
+2. Planning game: cliente prepara delle carte con delle frasi brevi di descrizione, caso di test che funge da test di accettazione e il valore di business che ha per lui. Gli sviluppatori (team) invece qui stimeranno il tempo necessario. Il manager sulla base delle informazioni sulla scheda, la implementerà alla prossima interazione 
 	- Come si effettua una stima da parte del team
 		- Ci sono diverse stime possibili ore vs giorni
 		- è piu difficile che qualcosa sfugga all intero team piuttosto che al singolo, ho una stima piu accurata
@@ -338,7 +338,7 @@ Approccio di XP: definizione di 12 pratiche che hanno influenze positive o negat
 		- Problemi
 			- Richiede molto tempo, dovremo minimizzare le discussioni
 			- Effetto ancora / ancoraggio: il primo che dice la stima, confrontano la propria rispetto a quella detta per prima (da assoluto a relativo). Dovremo minimizzare questo effetto
-	- Planning poker: vengono presentate brevemente le carte con dei numeri che seguono una determinata scala (non lineari o qualitative). Il team puo fare domande, richiedere chiarimenti e discutere per chiarire assunzioni e rischi. Ognuno sceglie una carta senza farla vedere e si scopre la stima. In questo modo abbiamo minimizzato l effetto ancora mentre per minimizzare la discussione puo parlare solo la carta piu basse e piu alta. Si vota nuovamente e si convergera piu velocemente all unanimita. Funziona perche le carte sono molto distanziate e l unita di misura non è reale ma piuttosto ore ideali (si usano anche i pomodori come unita di misura). SE ci sono tante carte ?, si divide la carte in piu carte semplici
-	- Team Estimation Game Si sfrutta una valutazione comparativa rispetto alla carta precedente, quindi rispetto alla stima del team non alla mia. Ogni developer svela una carta e la pone a sinistra se è piu facile di quella sul tavolo o a destra se è piu difficile. SE non sono d accordo con l ordine delle carte sul tavolo, muovo le carte spiegando al team. Pericolo dell effetto ancora ma attenuato dal fatto che non c è un valore assoluto. Una volta definito un ordine, quantifico le distanze, sempre con numeri distanti come nel planning poker. ... . Metodo piu veloce se ho molte carte
+	- Planning poker: vengono presentate brevemente le carte con dei numeri che seguono una determinata scala (non lineari o qualitative). Il team puo fare domande, richiedere chiarimenti e discutere per chiarire assunzioni e rischi. Ognuno sceglie una carta senza farla vedere e si scopre la stima. In questo modo abbiamo minimizzato l effetto ancora mentre per minimizzare la discussione puo parlare solo la carta piu basse e piu alta. Si vota nuovamente e si convergerà piu velocemente all unanimità. Funziona perche le carte sono molto distanziate e l unita di misura non è reale ma piuttosto ore ideali (si usano anche i pomodori come unita di misura). SE ci sono tante carte ?, si divide la carte in piu carte semplici
+	- Team Estimation Game Si sfrutta una valutazione comparativa rispetto alla carta precedente, quindi rispetto alla stima del team non alla mia. Ogni developer svela una carta e la pone a sinistra se è piu facile di quella sul tavolo o a destra se è piu difficile. SE non sono d accordo con l ordine delle carte sul tavolo, muovo le carte spiegando al team. Pericolo dell'effetto ancora ma attenuato dal fatto che non c è un valore assoluto. Una volta definito un ordine, quantifico le distanze, sempre con numeri distanti come nel planning poker. ... . Metodo piu veloce se ho molte carte
 	- 
 		
