@@ -368,3 +368,113 @@ Tuttavia:
 - NON deve essere imposta
 
 ---
+
+Probabilmente non serve mappare in ore reali, basta guardare l iterazione prima 
+...
+è necessario un progresso continuo grazie ad uno scheduling realistico
+
+3. Utilizzare una metafora
+	Obiettivo: fornire un nuovo vocabolario comune per comunicare con l utente, permettendo di far comprendere gli elementi fondamentali e le loro relazioni
+4. Semplicità di progetto
+	Massimizzare il lavoro non fatto consegnando le cose utili
+5. Testing: 
+	I clienti scrivono i test funzionali per aumentare la loro fiducia, ma la correttezza dei test non puo dimostrare la correttezza certa di un programma.
+6. Refactoring: 
+	Modifica al codice che NON modifica le funzionalità.
+	Si punta alla semplicità del progetto. Tool di coverage per eliminare parti di codice inutile per i test attuali o per aggiungere un test che passi per quelle righe.
+7. Programmazione a coppie
+	Aiuta ad avere un ocntrollo continuo del rispetto delle regole di XP
+	Aiuta l'inserimento di nuovo personale e la sua formazione
+	Aiuta a ottenere la proprieta collettiva, la conoscenza osmotica 
+	Aiuta il refactoring, mentre uno scrive l altro puo pensare a come semplificarlo 
+	Dimezzare le persone dimezza la produttività? Dati alcuni test, si ha una diminuzione del 25% della produttività in righe di codice (una produttivita istantanea)
+	Anche se non ci fossero problemi, il lavoro fatto non viene congelato ma ha una sua vita successiva, correggendolo, ampliandolo. Bisognerebbe quindi usare un arco temporale piu ampio, notando un minore ritorno sul lavoro consegnato
+	Lavorare in coppie non è ispezione del codice (leggendo il codice si cercano errori) ma chi non sta scrivendo fa una prima fase embrionale di analisi 
+	I commenti si scrivono per poi rimuoverli, se ho dovuto scrivere un commento non ho scritto codice leggibile 
+8. Proprietà collettiva 
+	Il codice non appartiene ad una persona sola 
+	Il codice non è senza proprietà, dove  tutti possono modificare tutto senza preoccupazioni
+	Ci si deve sentire responsabilizzati sull'intero codice anche se non si conosce tutto alla stessa maniera
+9. Integrazione continua 
+	Nell ottica di avere feedback rapidi, l'integrazione va fatta piu volte al giorno 
+	La coppia quindi dopo avere risolto il suo problema in piccolo è responsabile di risolvere anche i problemi di integrazione. L'azione nonostante sia frequente, è rapida perche nel frattempo il sistema non è cambiato molto. Parallelizziamo lo sviluppo e serializziamo l integrazione. Tool di versioning aiutano molto. 
+10. Settimana di 40 ore
+	- Problema di freschezza
+	- soddisfazione di lavorare nel team
+	- meno problemi familiari
+	- minor probabilita di perdere dipendenti e knowhow
+11. Cliente sul posto
+	Coinvolgendo il cliente, permette una fase di specifica piu leggere fornendo in tempo reale scelte, test. Il problema sara quanto questa figura sia rappresentativa di tutti gli stakeholders
+12. Standard di codifica
+	Enfatizza la comunicazione attraverso codice attraverso l aiuto del refactoring, programmazione a coppie e la proprieta collettiva 
+13. Just rules: sono solo regole che il team puo modificare, prenderne solo un sottoinsieme
+
+Raggruppiamo per fasi
+- Requirements
+	- Gli utenti fanno parte del team di sviluppo
+	- Consegne incrementali e pianificazioni continue
+- Code
+	- Programmazione a coppie
+	- Proprieta collettiva 
+	- Integrazioni continue 
+	- Standard di codifica 
+- Design
+	- Una metafora come visione unificante di un progetto
+	- Refactoring
+	- Presumere la semplicità
+- Test
+	- testing di unita continuo
+	- test funzionale scritto dagli utenti 
+
+La documentazione in senso stretto non c è ma è 
+- sul retro delle stories
+- nel codice tramite standard di codifica che permettono una maggiore leggebilità e nei test di utilità
+- nelle persone, sia nel cliente che nel compagno di pair programming
+La documentazione in exp diventa un sottoprodotto
+
+
+Quando non si puo usare XP
+- in ambienti che proibiscono l uso anche solo di uno degli approcci usati causati da
+	- Barriere tecnologiche che impediscono di testare ed avere un feedback in breve tempo
+	- niente feedback rapido
+- Barriere di tipo manageriali o burocratiche 
+	- team troppo numeroso o necessita di documentazione di certificazioni basati su di essa 
+	- Troppi stakeholders, quindi non riesco ad avere un cliente sul posto rappresentativo
+- Barriere di tipo fisico e logistico
+
+Critiche
+- Sottovalutazione up-front: cio che viene fatto prima di lavorare 
+- Sopravvalutazione User stories
+- Mancata evidenziazione dipendenze tra user stories: sull ordine e la complessita di sviluppo
+- TDD puo portare a visione troppa ridotta
+- Cross functional teams: difficile trovare dei team general purpose 
+
+
+Mesi/uomo: produttività, stime, costi, velocità
+per mesi/uomo sembra che il prodotto di questi due fattori ci diano una costante, la fatica.
+All'aumentare delle persone non diminuisco cosi tanto i mesi, perche aumenta la comunicazione necessaria nell organizzazione, devo formarle
+Alcuni task invece non sono parallelizzabili
+Nella realta invece sopra un certo n di persone, il tempo richiesto aumenta. Il dimensionamento del team è importante 
+
+SE la situazione peggiora in termini di ritardo, o prendo conto del ritardo facendo una nuova stima, o diminuisco la portata (diminuisco le funzionalita da realizzare) o diminuisco il testing
+
+
+Open source 
+- Cattedrale e Bazaar
+Raymond: Ogni buon lavoro SW inizia dalla frenesia personale di uno sviluppatore 
+Chiede ad amici o colleghi cosa sanno sull'argomento: nessuno ha una soluzione ma acluni hanno lo stesso problema o problemi simili
+Le persone interessate cominciano a scambiarsi pareri e conoscenze sull'argomento
+Le persone interessate che intendono spendere delle risorse sulla soluzione del problema danno il via ad un progetto informale 
+I membri del progetto lavorano al problema fino a che non riaggiungono dei risultati presentabili (qui diventano open source)
+E' utile che ci siano errori perche puo invogliare altra gente a partecipare
+...
+
+Alcune frasi
+- "Se dai a tutti il codice sorgente, ognuno di essi diventa un tuo ingegnere"
+- "Se ci sono abbastanza occhi, gli errori diventano di poco conto", il SW open source si dice essere piu sicuro 
+- ...
+- "Quando hai perso interesse in un programma, l'ultimo tuo dovere è passarlo a un successore competente"
+
+Confronto modelli: 
+...
+

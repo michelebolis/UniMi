@@ -252,8 +252,27 @@ In questo esempio definisco `card` che o è `Card` o è `Joker`.
 `Card` sarà un record di tipo `regular` ma non avendolo definito uso l'$and$ per definirlo "inline".
 La stessa cosa accade anche per `card_suit` e `card_name` che sono due tipi definiti "inline" con le Variants.
 
+---
 
+Moduli
+Il modulo è un modo per specificare un nostro tipo di dato in OCaml
+Parti: 
+- Interfaccia
+- Modulo implementativo
 
+$as$ per renaming
+esportare esclusivamente funzionalità che puo usare l utente
+
+l interfaccia mi permette di opacizzare il tipo e nascondere le operazioni che non devono essere visibili dall esterno 
+
+i moduli devono avere la lettera maiuscola 
+
+Funtore è una funzione da struttura a struttura 
+Vantaggi:
+- Evitare duplicazione (Generalizziamo sul dato)
+- Incrementare ortogonalità
+
+Functore istanzia due algoritmi diversi
 
 
 
