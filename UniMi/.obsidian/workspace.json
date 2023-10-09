@@ -18,22 +18,35 @@
             }
           },
           {
-            "id": "946f83893c790da0",
+            "id": "ecf34084e80f5edf",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas",
-                "viewState": {
-                  "x": 2806.3826223905103,
-                  "y": 424.13159164191717,
-                  "zoom": -0.25430112621843554
-                }
+                "file": "Ingegneria del software/Appunti.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "cb2fceb5650f7ecd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a7149c6d64b42d31",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Ingegneria del software/Slide/IS2023-L03.pdf"
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas",
+                "file": "Ingegneria del software/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas",
+                "file": "Ingegneria del software/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas"
+                "file": "Ingegneria del software/Appunti.md"
               }
             }
           },
@@ -170,13 +183,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "946f83893c790da0",
+  "active": "ecf34084e80f5edf",
   "lastOpenFiles": [
-    "Ingegneria del software/SWENG.md",
-    "Ingegneria del software/Slide/IS2023-L01.pdf",
-    "Reti di calcolatori/Appunti.md",
+    "Ingegneria del software/Slide/IS2023-L03.pdf",
     "Ingegneria del software/Appunti.md",
+    "Ingegneria del software/Slide/Index slide.md",
     "Ingegneria del software/Appunti lab.md",
+    "Reti di calcolatori/Appunti.md",
     "Sistemi embedded/Sistemi embedded.canvas",
     "Ingegneria del software/Riassunti",
     "Linguaggi di programmazione/Riassunti",
