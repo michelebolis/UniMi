@@ -18,12 +18,24 @@
             }
           },
           {
-            "id": "6f8f84e42f3d8e93",
+            "id": "db7ba04fd0d03280",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
+                "file": "Ingegneria del software/Riassunti/Processi di gestione del SW/Processi di gestione del SW.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4076e2756867152b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ingegneria del software/Riassunti/Processi di gestione del SW/Qualità/che mi faccia diventare ricco.md",
                 "mode": "source",
                 "source": false
               }
@@ -80,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -96,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
+                "file": "Ingegneria del software/Riassunti/Processi di gestione del SW/Processi di gestione del SW.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
+                "file": "Ingegneria del software/Riassunti/Processi di gestione del SW/Processi di gestione del SW.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md"
+                "file": "Ingegneria del software/Riassunti/Processi di gestione del SW/Processi di gestione del SW.md"
               }
             }
           },
@@ -153,7 +166,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -165,10 +179,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6f8f84e42f3d8e93",
+  "active": "db7ba04fd0d03280",
   "lastOpenFiles": [
-    "Linguaggi di programmazione/Riassunti/OCaml/Slide/Index slide.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Debito tecnico.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Qualità/che mi faccia diventare ricco.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Processi di gestione del SW.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Qualità/Qualità.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Qualità/che sia bello.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Qualità/Funzionamento.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Terminologia.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Problemi principali.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Storia.md",
+    "Ingegneria del software/Slide/IS2023-L01.pdf",
     "Linguaggi di programmazione/Appunti.md",
+    "Linguaggi di programmazione/Riassunti/OCaml/Slide/Index slide.md",
     "Linguaggi di programmazione/Riassunti/OCaml/Slide/03. modules in ml.4.pdf",
     "Linguaggi di programmazione/Linguaggi di programmazione.md",
     "Ingegneria del software/Appunti.md",
@@ -205,17 +229,7 @@
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modello spirale win-win.md",
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Meta-modello a spirale.md",
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modello trasformazionale.md",
-    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modello Pinball Life-Cycle.md",
-    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modello prototipale.md",
-    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modello a cascata con singola retroazione.md",
-    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modello a V.md",
-    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modello a cascata.md",
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli",
-    "Ingegneria del software/Riassunti/Progettazione del SW/Fasi/Progettazione.md",
-    "Ingegneria del software/Riassunti/Progettazione del SW/Fasi/Analisi e specifica dei requisiti.md",
-    "Ingegneria del software/Riassunti/Progettazione del SW/Fasi/Programmazione e test di utilità.md",
-    "Ingegneria del software/Riassunti/Progettazione del SW/Fasi",
-    "Ingegneria del software/Riassunti/Progettazione del SW/Fasi/Manutenzione e altre attività.md",
     "Reti di calcolatori/Reti di calcolatori.canvas"
   ]
 }
