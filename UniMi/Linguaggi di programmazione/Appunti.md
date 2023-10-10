@@ -362,8 +362,25 @@ L'implementazione $BoundedStack$ è aderente all'interfaccia $StackADT$
 
 Utilizzo del funtore
 
+---
 
+Polimorfismo
+Il polimorfismo permette di gestire diversi tipi usando un interfaccia uniforme
+- ..
+- ..
 
+OCaml supporta nativamente il polimorfismo 
+
+...
+
+\_ significa che il tipo è debole, è polimorfo ma non piu generico ma è stato legato da qualcosa
+
+\_a' vuol dire che esiste SOLO UN TIPO
+
+() necessarie quando una funzione non prende nessun argomento in quanto seno sarebbe naming
+
+argomenti di default 
+?nomeArgomento x
 
 
 
