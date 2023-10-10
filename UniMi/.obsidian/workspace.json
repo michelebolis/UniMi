@@ -16,33 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "db7ba04fd0d03280",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ingegneria del software/Riassunti/Processi di gestione del SW/Processi di gestione del SW.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4076e2756867152b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ingegneria del software/Riassunti/Processi di gestione del SW/Qualità/che mi faccia diventare ricco.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -92,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -109,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ingegneria del software/Riassunti/Processi di gestione del SW/Processi di gestione del SW.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ingegneria del software/Riassunti/Processi di gestione del SW/Processi di gestione del SW.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Ingegneria del software/Riassunti/Processi di gestione del SW/Processi di gestione del SW.md"
-              }
+              "state": {}
             }
           },
           {
@@ -166,8 +136,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,16 +148,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "db7ba04fd0d03280",
+  "active": "47136b92c595cdff",
   "lastOpenFiles": [
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Debito tecnico.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Qualità/che mi faccia diventare ricco.md",
+    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Processo di produzione del SW.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Qualità del processo.md",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Processi di gestione del SW.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Qualità/Qualità.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Qualità/che mi faccia diventare ricco.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Qualità/Qualità del SW.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Problemi principali.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Debito tecnico.md",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Qualità/che sia bello.md",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Qualità/Funzionamento.md",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Terminologia.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Problemi principali.md",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Storia.md",
     "Ingegneria del software/Slide/IS2023-L01.pdf",
     "Linguaggi di programmazione/Appunti.md",
@@ -208,7 +180,6 @@
     "Ingegneria del software/Progettazione del SW/Modelli/Pasted image 20231004102106.png.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli di ciclo di vita del SW.md",
-    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Riassunti/img/Immagine 2023-10-04 102924.png",
     "Ingegneria del software/Riassunti/img/Immagine 2023-10-04 102853.png",
     "Ingegneria del software/Riassunti/img/Immagine 2023-10-04 102813.png",
@@ -222,13 +193,10 @@
     "Ingegneria del software/Riassunti/img/Immagine 2023-10-04 101824.png",
     "Ingegneria del software/Riassunti/img",
     "Ingegneria del software/Nuova cartella",
-    "Ingegneria del software/Riassunti/Progettazione del SW/Progettazione del SW.md",
-    "Ingegneria del software/Riassunti/Progettazione del SW/Fasi/Fasi.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Fasi/Fasi del ciclo di vita del SW.md",
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Metodologie agili.md",
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modello COTS.md",
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modello spirale win-win.md",
-    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Meta-modello a spirale.md",
-    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modello trasformazionale.md",
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli",
     "Reti di calcolatori/Reti di calcolatori.canvas"
   ]

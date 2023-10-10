@@ -9,5 +9,3 @@
 		Studi dimostrano che all'aumentare del tempo dalla release, l'Evolvibilità diminuisca.
 		M.Lehman's Laws un sistema che è usato cambierà, quindi un sistema in evoluzione aumenterà la sua complessità a meno che il lavoro è fatto per ridurne.
 - #Perfettivibilità: capacità di miglioramento del codice, dal punto di vista interno o esterno, senza cambiarne i  requisiti, posso provare a fare cambiamenti volti a migliorare efficienza o usabilità. 
-	
-Metodo agili: se mi accorgo che nel mio codice si puo fare meglio qualcosa, lo posso lasciare li cambiandolo successivamente MA è come se stipulassi un debito, maturano infatti nel tempo degli "interessi" costandomi in termini di tempo.
