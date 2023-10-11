@@ -295,7 +295,6 @@ Funtore istanzia due algoritmi diversi
 Funtore es
 
  ```ocaml
-balanced() checks that a string uses balanced parenthesis. 
 let is_balanced str = let s = Stack.empty in try 
 	String.iter 
 		(fun c -> match c with 
