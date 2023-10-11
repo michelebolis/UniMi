@@ -18,12 +18,12 @@
             }
           },
           {
-            "id": "b17bdefb14053812",
+            "id": "d530e3261e6465f4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli di ciclo di vita del SW.md",
+                "file": "Ingegneria del software/Appunti.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli di ciclo di vita del SW.md",
+                "file": "Ingegneria del software/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli di ciclo di vita del SW.md",
+                "file": "Ingegneria del software/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli di ciclo di vita del SW.md"
+                "file": "Ingegneria del software/Appunti.md"
               }
             }
           },
@@ -165,10 +165,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b17bdefb14053812",
+  "active": "d530e3261e6465f4",
   "lastOpenFiles": [
-    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli di ciclo di vita del SW.md",
+    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli incrementali.md",
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli iterativi.md",
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli sequenziali.md",

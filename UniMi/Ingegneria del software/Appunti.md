@@ -478,3 +478,26 @@ Alcune frasi
 Confronto modelli: 
 ...
 
+
+---
+
+Core and Feeding of FOSS
+Preso un dominio applicativo, analizziamo le "ere" del SW
+1. Idea: qualcuno ha un'idea e la fa funzionare
+2. Espansione e innovazione: il mondo se ne accorge e la tecnologia inizia a espandersi
+3. Consolid amento: ... Altri progetti sono assorbiti o falliscono.
+4. Maturità: il mercato si riduce in un insieme di prodotti. L'innovazione rallenta in una pace moderata. E' difficile o impossibile per i nuovi competitor entrare nel mercato
+5. FOSS Domination 
+6. FOSS era (utopico): omologazione 
+
+The emerging Economic Paradigm Of Open Source
+Il SW per una azienda non è sempre un prodotto ma una tecnologia abilitante essenziale
+E' importante distinguere i casi di tecnologia differenziante o non differenziante
+E' differenziante se il cliente si accorge dei cambiamenti del SW e se il competitor non hanno accesso allo stesso SW, cioè abbiamo un vantaggio competitivo 
+
+Confronto
+Efficienza: quanti soldi per creare il prodotto do agli sviluppatori
+
+...
+
+Validare le impressioni
