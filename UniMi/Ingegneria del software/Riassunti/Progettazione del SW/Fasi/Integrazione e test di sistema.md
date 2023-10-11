@@ -1,4 +1,8 @@
-Ora è necessario unire i vari componenti realizzati
-- Test di integrazione: consideriamo un sottoinsieme dell'applicazione alla volta, sostituendo a mano i moduli di testing con i moduli reali
-	- top-down
-	- bottom-up
+I moduli singolarmente implementati e testati devono essere integrati. 
+Vengono svolti Test di integrazione in cui si sostituiscono i moduli stub e driver con i componenti reali in maniera incrementale, per evitare che si presentino diversi errori difficili da individuare 
+Questi test possono essere svolti con un approccio 
+- top-down
+- bottom-up
+
+Il testing finale in condizioni realistiche è detto alpha testing.
+Prima di rilasciarlo a tutti i clienti, si effettua beta testing, cioè un testing su un gruppo limitato di utenti per raccogliere un feedback.

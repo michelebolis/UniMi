@@ -1,15 +1,18 @@
+Per modello intendiamo una famiglia di processo di sviluppo che si distinguono nel modo in cui organizzano le fasi del ciclo di vita del SW
+
 Modelli
 - prescrittivi: da un modo per procedere, quella giusta (spesso in realtà incompleti)
 - descrittivi: rappresentano una situazione prendendone solo alcuni aspetti perché non direttamente utilizzabili 
 
 Modelli
-- incrementale: quando nelle iterazioni viene inclusa la consegna. Quello che viene fatto dopo la consegna fa parte del processo
-- iterativi
+- [[Modelli sequenziali]]: le varie fasi sono poste in un ordine prestabilito
+- [[Modelli iterativi]]: evoluzione dei modelli sequenziali in cui è permessa la ripetizione di una o piu fasi
+- [[Modelli incrementali]]: modelli in cui nelle iterazioni viene inclusa la consegna, permettendo così di rilasciare componenti di volta in volta
 
-es 
-- implementazione iterativa: stressa la modularizzazione e l'identificazione di sottosistemi e si ripetono fasi di coding ed integrazione
+
+- implementazione iterativa: dopo aver raccolto le specifiche, si eseguono le fasi di modularizzazione e identificazione di sottosistemi e si ripetono fasi di coding ed integrazione
 - sviluppo incrementale
-	- viene esteso a tutte le fasi, specifiche comprese
+	- viene esteso a tutte le fasi, specifiche comprese, riconoscendo la variabilità delle richieste
 	- la fase di manutenzione in senso stretto sparisce diventando semplice riciclo
 
 Problemi con i modelli incrementali
@@ -19,17 +22,5 @@ Problemi con i modelli incrementali
 	- rischio di voler mettere troppo nella prima iterazione
 	- rischio di overhead dovuto a troppe iterazioni
 	- rischio di avere un eccessivo overlapping tra le iterazioni in quanto non si hanno feedback dell'utente
-
-Elenco modelli:
-- [[Modello a cascata]]
-- [[Modello a V]]
-- [[Modello a cascata con singola retroazione]]
-- [[Modello a fontana]]
-- [[Modello prototipale]]
-- [[Modello Pinball Life-Cycle]]
-- [[Modello trasformazionale]]
-- [[Meta-modello a spirale]]
-- [[Modello spirale win-win]]
-- [[Modello COTS]]
 
 [[Metodologie agili]]
