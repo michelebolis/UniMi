@@ -298,7 +298,7 @@ Differenze
 
 ---
 
-Topologia punto punto 
+Reti punto punto : topologia magliata in cui i nodi sono collegati 
 Per affidabilità devo aggiungere delle funzioni in ogni nodo, a livello 2
 OSS abbiamo un unico processo di livello 3 MA tanti processi di livello 2 quante sono le porte I/O
 
@@ -403,4 +403,127 @@ SOLO in GO BACK N mentre in SELECTIVE REPEAT serve 2k
 
 4 bit seq --> al massimo 16 frame GBN --> finestra massima k=15
 4 bit seq --> al massimo 16 frame SR --> finestra massima k=8
+
+---
+
+Consideriamo ora le reti di accesso, che hanno una topologia broadcast
+Nel punto a punto, i nodi parlano in modo diretto ad un solo altro link 
+Nel broadcast tutti sono collegati allo stesso dispositivo fisico, es hub
+L' hub non appena A trasferisce un messaggio verso B, l hub propaga il messaggio a TUTTI i nodi collegati, anche al mittente
+Prodotto un messaggio, tutti gli interlocutori ricevono quel messaggio
+
+Nella magliata per fare broadcast dovrei mandare tanti messaggi quanti sono i nodi MA tutti riceverebbero il messaggio piu di una volta
+
+Avendo garanzia che tutti nodi possano fare un check sull indirizzo destinatario, ho la certezza che il messaggio arrivi al giusto destinatario
+
+Ethernet è una rete broadcast
+Per la parte fissa, inizialmente è nata come bus lineare
+
+Bus lineare: formato da un cavo corsiale, a cui si connettono i transiver di un nodo con un proprio cavo che tocca il mezzo conduttore interno 
+SE A trasmette il suo segnale si propaga a dx e sx, raggiungendo tutti i nodi (secondo le regole di propagazione)
+Nativamente il messaggio è ricevuto da tutti i nodi
+
+Gestire l accesso mutuamente esclusivo al canale (che sia esso un centro stella hub o un bus) comune
+
+Protocolli di accesso condiviso per reti broadcast
+- Approccio deterministico
+Protocollo token-ring (ideato da IBM)
+Eleggo una stazione a master, (es con un algoritmo distribuito) che conosce la composizione della rete, essa stessa fa parte di essa
+Il master genera un token attraverso un anello logico (es prima A poi B poi C) passando il token con round robin
+Ogni stazione è istruita in modo tale che invii solo se ha il token. SE ha frame da inviare nel buffer, lo invia sul canale passando anche il canale alla stazione successiva
+
+La rete deve essere configurata nel caso si aggiungano nuovi nodi alla rete in modo da includerli nell'anello
+
+Problemi
+- fairness: evitare che chiunque prenda il controllo del canale non ne approfitti
+- GIrare il token in modo sistematico, il token visiti tutte le stazioni, incluse quelle che non hanno frame da inviare, perdendo cosi tempo.
+- Caricando nel master la funzione centrale di generazione del token, nel momento in cui crasha la rete smette di funzionare e sarà necessario un reset
+
+- Approccio "casuale"
+Protocollo Ethernet
+Su reti distribuite il controllo deve essere totalmente distribuito
+
+Tecnologie dominante nelle reti locali
+Non esiste nessuna funzione di accesso che sia concentrata su una stazione.
+Ogni stazione è in grado di operare in autonomia: cio implica un accesso immediato in qualsiasi momento di un qualsiasi nuovo dispositivo
+
+Ethernet introduce un controllo di accesso probabilistico
+Una stazione A invia il suo messaggio: riesce a trasmettere quando è l'unico a tentare l'accesso al canale in quell'istante. SE nello stesso istante due stazioni tentano l accesso, i due messaggi collidono 
+Per rilevare la collisione le stazioni fanno complemento bit a bit di cio che inviano e cio che ricevono, sospendendo la trasmissione 
+
+Questo era il protocollo ALOHA
+
+SE il numero di stazioni è basso, le collissioni saranno in numero minore 
+Risultato di efficienza: la curva di ALOHA ha una forma di campana in quanto all'aumentare delle stazioni ho un utilizzo maggiore ma fino a un certo punto in cui ci sono troppe stazioni che causano collissioni. Il picco della curva è del 18%
+
+Il "vero" protocollo Ethernet 
+A vuole trasmettere, prima di farlo fa Carrier Sense: legge dal canale ciò che passa, capendo se è il canale è in idle o meno.
+Le collisioni ci sono quando SE B sta trasmettendo e C fa CS, quindi aspetta 1-persistent aspettando che B finisca MA se un 2o nodo fa CS, ora entrambi stanno aspettando la terminazione di comunicazione di B e entrambi faranno CS nello stesso momento
+
+Ha sempre una forma a campana la curva di utilizzo ma il punto di saturazione ora è al 91%
+
+SE applicassimo la stessa tecnica di ritrasmissione della finestra, avremmo nuovamente una collisione 
+
+La probabilita di collissione è tanto maggiore tanto piu stazioni ci sono sul canale 
+
+Soluzione: protocollo CSMA-CD Carrier Sense Multiple Access - Collision Detection (standardizzato come IEEE 802.3, es WiFi IEEE 802.11)
+Ritrasmissione dei frame coinvolti nella collisione facendo aspettare le stazioni coinvolte un tempo tau casuale. 
+La generazione del numero casuale non ha un range ampio, tecnica Binary Exponenzial BuckOff (BEB): (0-2^i)\*UT con i il numero di collissioni (1<i<16) della stazione e UT unita di tempo 
+
+Potrebbero ancora collidere se viene generato lo stesso numero di UT ma è probabilistico
+In condizioni ottimali il protocollo lavoro intorno al 90% di utilizzo
+
+E' un controllo completamente distribuito
+
+La fairness è smussato qui perche se A deve trasmettere molti frame va in collisioni con le altre stazioni non potendo trasmettere
+
+
+provando tutti i gradi di persistenza...: non persistente tanto che appena rilevo CS, genero subito un numero casuale in cui non controllo il CS
+
+
+Problema del tempo di propagazione
+A trasmette ma il CD arriva dopo tP a B che non vedendo il canale occupato, aveva iniziato a trasmettere cosi A, dopo aver finito di trasmettere, riceve dopo tP il frame corrotto di B
+A non è in grado di rilevare la collisione 
+CD quindi non funziona sempre --> sistema inaffidabile
+
+Soluzione: 
+lavorare sul Tx
+Imporre di usare la propria porta di I/O di trasmissione almeno pari a 2tP
+Tx >= 2tP
+A cosi sta ancora trasmettendo quando arriva il messaggio corrotto, rilevando cosi la collisione 
+
+La lunghezza del cavo di Ethernet è 2500mt a 10Mbps
+25\*10^2/2\*10^8 = 12,5 micro secondi
+2tp = 25 micro secondi
+L'ente standardizzatore l ha fatto diventare 51.2 micro secondi
+Al massimo produce 512 bit -> 64 Byte 
+Al minimo ogni frame ha 64 Byte 
+
+Dimensione di frame per lo standard Ethernet è 
+
+SE una rete LAN deve essere maggiore di piu di 2.5km, ne creo un altra e le compongo
+
+
+MA in BEB UT=51,2 micro secondi
+
+
+La stazione di rete Ethernet ha come tutte un L1 attaccato al cavo, con un clock, un codificatore di bit
+Il L2 di Ethernet è multi-layer, in particolare 2:
+- MAC M Access Control: funzionalita di Carrier Sense, BEB, Collision Control
+- LLC Logical Link Control: protocollo a finestra affidabile o meno 
+
+
+Bridge
+Supponiamo di avere una tratta Ethernet con tante stazioni, tanto che il tasso di collissione inizia ad aumentare. Troppe stazioni competono sullo stesso dominio di collisione
+Con il Bridge rimezzo la probabilità di accesso al canale
+Serve per separare domini di collisione, mettendo in contatto il dominio A con il dominio B
+
+Il Bridge si occupera di passera le frame destinate al dominio A dal dominio B e viceversa
+Il traffico generato all interno dell area A e B rimangono confinato se la destinazione è nella stessa area
+
+A livello fisico il bridge ha un transiver e un MAC level proprio come una stazione qualsiasi, è un CSMA-CD
+
+Requisito: che il bridge diventa egli stesso una stazione, quindi deve avere una scheda di rete
+
+---
 
