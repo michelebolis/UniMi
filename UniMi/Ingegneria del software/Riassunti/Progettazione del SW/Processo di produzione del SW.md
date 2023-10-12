@@ -12,8 +12,9 @@ Identificare i vari passi e le attività chiedendosi
 - cosa bisogna fare e fino a quando
 - chi le debba fare
 
-Inizialmente nello sviluppo SW si era adottato un modello code-and-fix che consisteva nello scrivere codice e poi sistemare gli errori, migliorare la funzionalita o aggiungere nuove funzionalita
+Inizialmente nello sviluppo SW si era adottato un modello code-and-fix che consisteva nello scrivere codice e poi sistemare gli errori, migliorare la funzionalità o aggiungere nuove funzionalità
 Tuttavia si è dimostrato essere inefficace in gruppi di lavoro complessi
 
 - [[Fasi del ciclo di vita del SW]]
 - [[Modelli di ciclo di vita del SW]]
+- [[Metodologie agili]]

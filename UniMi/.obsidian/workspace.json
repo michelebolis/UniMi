@@ -16,21 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "0529ebbb0708e9d0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reti di calcolatori/Appunti.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -80,7 +67,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -96,7 +84,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +100,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,9 +121,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Reti di calcolatori/Appunti.md"
-              }
+              "state": {}
             }
           },
           {
@@ -165,15 +149,32 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0529ebbb0708e9d0",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
-    "Ingegneria del software/Appunti.md",
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli di ciclo di vita del SW.md",
-    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli incrementali.md",
-    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli iterativi.md",
-    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli sequenziali.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli incrementali/Modello COTS.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli incrementali/Modelli incrementali.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli incrementali/Modello spirale win-win.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli incrementali/Meta-modello a spirale.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli incrementali/Modello trasformazionale.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli incrementali/Modello Pinball Life-Cycle.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli incrementali/Modello a fontana.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli iterativi/Modello prototipale.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli iterativi/Modello a cascata con singola retroazione.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli sequenziali/Modelli sequenziali.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli sequenziali/Modello a V.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli sequenziali/Modello a cascata.md",
     "Ingegneria del software/Riassunti/Progettazione del SW/Processo di produzione del SW.md",
+    "Ingegneria del software/Appunti.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli iterativi/Modelli iterativi.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Metodologie agili/Metodologie agili.md",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Metodologie agili",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli iterativi",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli incrementali",
+    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli sequenziali",
+    "Ingegneria del software/Slide/IS2023-L04.pdf",
+    "Reti di calcolatori/Appunti.md",
+    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Riassunti/Progettazione del SW/Fasi/Fasi del ciclo di vita del SW.md",
     "Ingegneria del software/Riassunti/Progettazione del SW/Fasi/Manutenzione e altre attività.md",
     "Ingegneria del software/Riassunti/Progettazione del SW/Fasi/Integrazione e test di sistema.md",
@@ -182,26 +183,12 @@
     "Ingegneria del software/Riassunti/Progettazione del SW/Fasi/Analisi e specifica dei requisiti.md",
     "Ingegneria del software/Riassunti/Progettazione del SW/Fasi/Studio di fattibilità.md",
     "Linguaggi di programmazione/Appunti.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Qualità del processo.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Processi di gestione del SW.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Qualità/che mi faccia diventare ricco.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Qualità/Qualità del SW.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Problemi principali.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Debito tecnico.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Qualità/che sia bello.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Qualità/Funzionamento.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Terminologia.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Storia.md",
     "Ingegneria del software/Slide/IS2023-L01.pdf",
-    "Linguaggi di programmazione/Riassunti/OCaml/Slide/Index slide.md",
     "Linguaggi di programmazione/Riassunti/OCaml/Slide/03. modules in ml.4.pdf",
-    "Linguaggi di programmazione/Linguaggi di programmazione.md",
     "Ingegneria del software/Slide/IS2023-L03.pdf",
     "Sistemi embedded/Sistemi embedded.canvas",
     "Ingegneria del software/Riassunti",
     "Linguaggi di programmazione/Riassunti",
-    "Reti di calcolatori/Riassunti",
-    "Sistemi embedded/Riassunti",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Ingegneria del software/Riassunti/img/Immagine 2023-10-04 102924.png",
     "Ingegneria del software/Riassunti/img/Immagine 2023-10-04 102853.png",
@@ -213,9 +200,6 @@
     "Ingegneria del software/Riassunti/img/Immagine 2023-10-04 102056.png",
     "Pasted image 20231004102106.png",
     "Ingegneria del software/Riassunti/img/Immagine 2023-10-04 101824.png",
-    "Ingegneria del software/Riassunti/img",
-    "Ingegneria del software/Nuova cartella",
-    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli",
     "Reti di calcolatori/Reti di calcolatori.canvas"
   ]
 }
