@@ -18,34 +18,19 @@
             }
           },
           {
-            "id": "946f83893c790da0",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas",
-                "viewState": {
-                  "x": -2192.41630466278,
-                  "y": 1057.2808374591586,
-                  "zoom": -0.5876344595517689
-                }
-              }
-            }
-          },
-          {
-            "id": "dda0536a018a2f1f",
+            "id": "70af7e65b219c4ab",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Reti di calcolatori/Appunti.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -74,7 +59,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Monoliticita",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -95,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -112,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Reti di calcolatori/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Reti di calcolatori/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "Reti di calcolatori/Appunti.md"
               }
             }
           },
@@ -169,8 +153,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,7 +165,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dda0536a018a2f1f",
+  "active": "70af7e65b219c4ab",
   "lastOpenFiles": [
     "Sistemi embedded/Sistemi embedded.canvas",
     "conflict-files-obsidian-git.md",

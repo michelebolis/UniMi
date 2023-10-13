@@ -284,7 +284,7 @@ Categorie:
 - STP Shielded, schematura sta in un foglio di alluminio attorno ai cavi
 
 
-- Cavo coaxial: cavo di rame
+- Cavo coassiale/coaxial: cavo di rame
 
 - Cavo fibra ottica
 E' formato da una parte di vetro in cui passa la luce
@@ -408,39 +408,39 @@ SOLO in GO BACK N mentre in SELECTIVE REPEAT serve 2k
 
 Consideriamo ora le reti di accesso, che hanno una topologia broadcast
 Nel punto a punto, i nodi parlano in modo diretto ad un solo altro link 
-Nel broadcast tutti sono collegati allo stesso dispositivo fisico, es hub
-L' hub non appena A trasferisce un messaggio verso B, l hub propaga il messaggio a TUTTI i nodi collegati, anche al mittente
+Nel broadcast tutti sono collegati allo stesso dispositivo fisico, es hub o bus
+L' hub non appena un nodo A trasferisce un messaggio verso B, l'hub propaga il messaggio a TUTTI i nodi collegati, anche al mittente
 Prodotto un messaggio, tutti gli interlocutori ricevono quel messaggio
 
-Nella magliata per fare broadcast dovrei mandare tanti messaggi quanti sono i nodi MA tutti riceverebbero il messaggio piu di una volta
+OSS nella topologia magliata per fare broadcast dovrei mandare tanti messaggi quanti sono i nodi MA tutti riceverebbero il messaggio piu di una volta
 
-Avendo garanzia che tutti nodi possano fare un check sull indirizzo destinatario, ho la certezza che il messaggio arrivi al giusto destinatario
+Avendo garanzia che tutti nodi possano fare un check sull'indirizzo destinatario, ho la certezza che il messaggio arrivi al giusto destinatario.
 
-Ethernet è una rete broadcast
+Ethernet è una rete broadcast.
 Per la parte fissa, inizialmente è nata come bus lineare
 
-Bus lineare: formato da un cavo corsiale, a cui si connettono i transiver di un nodo con un proprio cavo che tocca il mezzo conduttore interno 
-SE A trasmette il suo segnale si propaga a dx e sx, raggiungendo tutti i nodi (secondo le regole di propagazione)
+Bus lineare: formato da un cavo coassiale, a cui si connettono i transiver di un nodo con un proprio cavo che tocca il mezzo conduttore interno 
+SE A trasmette il suo segnale si propaga a dx e sx, raggiungendo tutti i nodi (secondo le regole di propagazione raggiunge tutti i nodi in momenti diversi in base alla loro distanza dal mittente)
 Nativamente il messaggio è ricevuto da tutti i nodi
 
-Gestire l accesso mutuamente esclusivo al canale (che sia esso un centro stella hub o un bus) comune
+
+E' necessario gestire l'accesso mutuamente esclusivo al canale (che sia esso un centro stella hub o un bus) comune
 
 Protocolli di accesso condiviso per reti broadcast
-- Approccio deterministico
-Protocollo token-ring (ideato da IBM)
-Eleggo una stazione a master, (es con un algoritmo distribuito) che conosce la composizione della rete, essa stessa fa parte di essa
-Il master genera un token attraverso un anello logico (es prima A poi B poi C) passando il token con round robin
-Ogni stazione è istruita in modo tale che invii solo se ha il token. SE ha frame da inviare nel buffer, lo invia sul canale passando anche il canale alla stazione successiva
+- Approccio deterministico: protocollo token-ring (ideato da IBM)
+Viene eletto una stazione a master, (es con un algoritmo distribuito): essa conosce la composizione della rete e ne fa parte.
+Il master genera un token e lo invia attraverso un anello logico (es prima A poi B poi C) passando il token con round robin
+Ogni stazione è istruita in modo tale che invii i suoi frame solo se ha il token. 
+SE una stazione con il token ha frame da inviare nel buffer, lo invia sul canale passando anche il token alla stazione successiva
 
-La rete deve essere configurata nel caso si aggiungano nuovi nodi alla rete in modo da includerli nell'anello
+La rete deve essere configurata nel caso si aggiungano nuovi nodi alla rete in modo da includerli nell'anello logico.
 
 Problemi
 - fairness: evitare che chiunque prenda il controllo del canale non ne approfitti
-- GIrare il token in modo sistematico, il token visiti tutte le stazioni, incluse quelle che non hanno frame da inviare, perdendo cosi tempo.
+- Girando il token in modo sistematico, esso arriva a tutte le stazioni, incluse quelle che non hanno frame da inviare, perdendo cosi tempo.
 - Caricando nel master la funzione centrale di generazione del token, nel momento in cui crasha la rete smette di funzionare e sarà necessario un reset
 
-- Approccio "casuale"
-Protocollo Ethernet
+- Approccio "casuale": protocollo Ethernet
 Su reti distribuite il controllo deve essere totalmente distribuito
 
 Tecnologie dominante nelle reti locali
