@@ -1,0 +1,6 @@
+1.  [[Studio di fattibilità]]
+2.  [[Analisi e specifica dei requisiti]]
+3. [[Progettazione]]
+4. [[Programmazione e test di utilità]]
+5. [[Integrazione e test di sistema]]
+6. [[Manutenzione e altre attività]]

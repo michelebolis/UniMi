@@ -233,63 +233,64 @@ Rischio di importare codice inutile
 
 - ### Metodologie agili: eXtreme Programming
 Principi
-- Valorizzare gli individui, responsabilizzare gli individui e il team non calando decisioni e deadline dall'alto 
+- Valorizzare gli individui, responsabilizzare gli individui e il team, senza imporre decisioni e deadline dall'alto 
 - Valorizzare un SW che funziona piuttosto che una documentazione esaustiva
 - Collaborazione del cliente come se fosse nel team
 - Capacita di rispondere ai cambiamenti piuttosto che seguire il piano predisposto
 
 ---
 
-Meyer analizza in maniera critica molti concetti metodologici su come si fa a parlare di un processo.
-Lean SW: nasce nella Toyota che punta a ridurre la spazzatura ("waste"), cioe lato SW quello che non interessa all'utente ma anche a livello strutturale.
+Bertrand Meyer analizza in maniera critica molti concetti metodologici su come si fa a parlare di un processo.
+Lean SW: nasce nella Toyota che punta a ridurre la spazzatura ("waste"), cioè lato SW quello che non interessa all'utente ma anche a livello strutturale.
 Si cerca di fidelizzare lo sviluppatore
 
 - Kanban
-si fa una schema a colonne con uno stato di avanzamento nel tempo
-Per Done si intende fatta, testata E accettata dal cliente
-minimizzare il lavoro in esecuzione: togliere l overhead di content switching
-se sono bloccato su una cosa e non posso fare altro non mi devo fermare, ma andare a supportare il collega che sta facendo il componente che mi serve per continuare
+Si fa una schema a colonne con uno stato di avanzamento nel tempo
+Per "Done" si intende fatta, testata E accettata dal cliente
+Obiettivo: minimizzare il lavoro in esecuzione, togliere l overhead di content switching
+Se sono bloccato su un task e non posso fare altro, non mi devo fermare, ma andare a supportare il collega che sta facendo il componente che mi serve per continuare
 
 - Scrum ("mischia")
-l intero team si concentra su un obiettivo comune chiaro in un breve tempo, bloccando i requisiti del cliente.
+L'intero team si concentra su un obiettivo comune chiaro in un breve tempo, bloccando i requisiti del cliente.
 Si arriva ad una win-win condition: io lavoro alle richieste mentre il cliente intanto pensa ad altri requisiti
 
 - Crystal
-comunicazione osmotica (spesso assunto nei metodi agili): il team è un concetto reale, un'entita con una conoscenza, quella del team; il codice è del team, non del singolo che lo ha scritto.
-MA ciò puo funzionare su un team piccolo (potrei dividere il mio team in team piu piccolo applicando metodi agili)
+Comunicazione osmotica (spesso assunto nei metodi agili): il team è un concetto reale, un'entita con una conoscenza, quella del team; il codice è del team, non del singolo che lo ha scritto.
+MA ciò può funzionare su un team piccolo (potrei dividere il mio team in team piu piccolo applicando metodi agili)
 
 
 - eXtreme Programming
 Incrementa poi semplifica, rendendo il codice piu leggibile, migliore (refactoring)
-Nella semplificazione le funzionalita rimangono uguali migliorando le proprieta interne del componente
+Nella semplificazione le funzionalità rimangono uguali migliorando le proprietà interne del componente
 
 - TDD Test Driven Development
-Red-Green-Refactor
-Nonostante ci sia scritto Test, in realta è un attività di design
-Sto scrivendo una specifica, ciò che deve fare il codice, e mi sto mettendo nei panni dell'utilizzatore del metodo.
+è una tecnica di progettazione che guida verso il design piu semplice: Red-Green-Refactor
+Nonostante ci sia scritto Test, in realtà è un attività di design
+Preparando il test, sto scrivendo una specifica, ciò che deve fare il codice, e mi sto mettendo nei panni dell'utilizzatore del metodo.
+Passi:
 - Scrivi un test che fallisce
 - Qual è la piu rapida ottimizzazione che mi permetta di ottenere il Green? Ottengo un test che passa
 - Refactor, attività di design pura
-Partire con un test è pericoloso perche ci si basa unicamente in quanto non sappiamo se sia un rappresentante abbastanza generico
-
 TDD = test-first + baby steps
 
-Devo avere il prima possibile un feedback rapido, ripetendo il tutto 2-10 minuti
+Partire con un test è in realtà pericoloso perché ci si basa unicamente su di esso in quanto non sappiamo se sia un rappresentante abbastanza generico
+
+L'obiettivo è avere il prima possibile un feedback rapido: ripeto il TDD ogni 2-10 minuti
 
 
 eXP variabili in gioco
-- La portata: la quantita di funzionalità che si vogliono implementare
-	- è delicata perche la fonte delle funzionalità è l'utente, i cui desideri sono mutevoli
-- Tempo che si puo dedicare al progetto
-- Qualità del progetto che si deve ottenere (correttezza e mantenibilità). MA questa dimensione si considera non trattabile, deve sempre essere al 100%
-- Costo: quante risorse finanziarie si possono impiegare per il progetto
+- La portata: la quantità di funzionalità che si vogliono implementare
+	- è delicata perché la fonte delle funzionalità è l'utente, i cui desideri sono mutevoli
+- Il tempo che si può dedicare al progetto
+- La qualità del progetto che si deve ottenere (correttezza e manutenibilità). MA questa dimensione si considera non trattabile, deve sempre essere al 100%
+- Il costo in termine di risorse finanziarie si possono impiegare per il progetto
 Queste non sono variabili indipendenti 
-Il cliente mi dice portata e tempo, per avere la qualita massima gli comunico il costo necessario. MA abbiamo detto che la portata è variabile.
+Il cliente mi comunica portata e tempo, e io per avere la qualità massima gli comunico il costo necessario. MA abbiamo detto che la portata è variabile.
 Non viene venduto il prodotto MA il tempo, garantendo che io stia lavorando al meglio
 
 principi: confronto
 XP 
- - feedback
+ - feedback rapido
  - presupporre la semplicità, attuale (contrapposta al design for change)
  - accettare il cambiamento (ma non è il primo obiettivo)
  - modifiche incrementali previste nel TDD
@@ -329,16 +330,267 @@ figure in gioco e responsabilità (in XP)
 - Ad ogni iterazione viene definito un tracker, di controllo e stimolo
 
 Approccio di XP: definizione di 12 pratiche che hanno influenze positive o negative tra di loro
-1. Planning game: avviene all inizio di ogni iterazione. Basato sulle storie scritte dall utente (versione semplificata degli Use Cases di UML). Vengono determinate le funzionalità del prossimo rilascio combinando priorita commerciali e valutazioni tecniche
-2. Planning game: cliente prepara delle carte con delle frasi brevi di descrizione, caso di test che funge da test di accettazione e il valore di business che ha per lui. Gli sviluppatori (team) invece qui stimeranno il tempo necessario. Il manager sulla base delle informazioni sulla scheda, la implementerà alla prossima interazione 
+1. Planning game: avviene all'inizio di ogni iterazione. Basato sulle storie scritte dall'utente (versione semplificata degli Use Cases di UML). Vengono determinate le funzionalità del prossimo rilascio combinando priorità commerciali e valutazioni tecniche
+
+	Il cliente prepara delle carte con delle frasi brevi di descrizione, caso di test che funge da test di accettazione e il valore di business che ha per lui. Gli sviluppatori (team) invece  stimeranno il tempo necessario. Il manager sulla base delle informazioni sulla scheda, la implementerà alla prossima interazione 
 	- Come si effettua una stima da parte del team
 		- Ci sono diverse stime possibili ore vs giorni
-		- è piu difficile che qualcosa sfugga all intero team piuttosto che al singolo, ho una stima piu accurata
+		- La stima è effettuata dal team, e non dal singolo dev perché risulta piu difficile che qualcosa sfugga all'intero team piuttosto che al singolo, ho una stima piu accurata
 		- In realta la ragione è che la stima deve essere del team, deve appartenere al team
 		- Problemi
 			- Richiede molto tempo, dovremo minimizzare le discussioni
-			- Effetto ancora / ancoraggio: il primo che dice la stima, confrontano la propria rispetto a quella detta per prima (da assoluto a relativo). Dovremo minimizzare questo effetto
-	- Planning poker: vengono presentate brevemente le carte con dei numeri che seguono una determinata scala (non lineari o qualitative). Il team puo fare domande, richiedere chiarimenti e discutere per chiarire assunzioni e rischi. Ognuno sceglie una carta senza farla vedere e si scopre la stima. In questo modo abbiamo minimizzato l effetto ancora mentre per minimizzare la discussione puo parlare solo la carta piu basse e piu alta. Si vota nuovamente e si convergerà piu velocemente all unanimità. Funziona perche le carte sono molto distanziate e l unita di misura non è reale ma piuttosto ore ideali (si usano anche i pomodori come unita di misura). SE ci sono tante carte ?, si divide la carte in piu carte semplici
-	- Team Estimation Game Si sfrutta una valutazione comparativa rispetto alla carta precedente, quindi rispetto alla stima del team non alla mia. Ogni developer svela una carta e la pone a sinistra se è piu facile di quella sul tavolo o a destra se è piu difficile. SE non sono d accordo con l ordine delle carte sul tavolo, muovo le carte spiegando al team. Pericolo dell'effetto ancora ma attenuato dal fatto che non c è un valore assoluto. Una volta definito un ordine, quantifico le distanze, sempre con numeri distanti come nel planning poker. ... . Metodo piu veloce se ho molte carte
-	- 
+			- Effetto ancora / ancoraggio: il primo che comunica la propria stima, induce negli altri un confronto con essa (da assoluto a relativo). Dovremo minimizzare questo effetto
+		Stime agili:
+	- Planning poker: 
+	1. vengono presentate brevemente le carte con dei numeri che seguono una determinata scala (non lineare o qualitative). Il team può fare domande, richiedere chiarimenti e discutere per chiarire assunzioni e rischi. 
+	2. Ognuno sceglie una carta senza farla vedere e si scopre la stima. In questo modo abbiamo minimizzato l'effetto mentre per minimizzare la discussione può parlare solo la carta piu basse e piu alta. SE ci sono tante carte ?, si divide la carte in piu carte semplici
+	3. Si vota nuovamente ed è dimostrato che si convergerà piu velocemente all'unanimità. Funziona perché le carte sono molto distanziate e l'unita di misura non è reale ma piuttosto ore ideali (si usano anche i pomodori come unita di misura). 
+
+	- Team Estimation Game Si sfrutta una valutazione comparativa rispetto alla carta precedente, quindi rispetto alla stima del team non alla mia. 
+		Prima fase: valutazione comparativa
+	1. Ogni dev si mette in fila e si pongono le carte in pila 
+	2. Ogni developer svela una carta, la legge, e la pone a sinistra se è piu facile di quella sul tavolo o a destra se è piu difficile o sotto se è equivalente. 
+	3. SE il prossimo dev non è d'accordo con l ordine delle carte sul tavolo, muovo le carte spiegando al team la propria motivazione. 
+		Pericolo dell'effetto ancora ma attenuato dal fatto che non c è un valore assoluto. 
+		Seconda fase: quantificare le distanze
+	1. Ci si mette di nuovo in fila utilizzando con carte del planning poker, posizionando la carta piu bassa nella prima colonna 
+	2. Il prossimo dev prende il valore successivo e lo posiziona su un ulteriore colonna oppure può spostare una carta valore precedentemente posizionata motivando tale scelta 
+		Una volta definito un ordine, cioè quando non ci sono piu carte e nessun dev vuole spostare una carta, sposto le colonne senza una carta sopra, assimilandole alla loro sinistra
+		Terza fase: scala assoluta
+		Si stima il tempo in ore di una delle carte piu semplici e si calcolano le altre come proporzione rispetto alla prima
 		
+		Risulta essere un metodo piu veloce se ho molte carte
+
+Velocity: capacità osservata di completare lavori da parte del team. Cio ci permette ad una nuova iterazione di sviluppare tanti punti quanti ne ha fatti all iterazione precedente, compensando stime sbagliate all'interno del team
+Tuttavia:
+- NON deve essere usato come metro di valutazione tra team o nel tempo
+- NON si devono considerare storie non finite
+- NON deve essere imposta
+
+---
+
+Probabilmente non serve mappare in ore reali, basta guardare l iterazione prima 
+...
+è necessario un progresso continuo grazie ad uno scheduling realistico
+
+2. Brevi cicli di rilascio
+	Per ridurre i rischi, la vita e lo sviluppo dell'applicazione sono scanditi rilasci di versione del prodotto funzionanti.
+	Ovviamente tali rilasci devono essere comunque significativi.
+3. Utilizzare una metafora
+	Obiettivo: fornire un nuovo vocabolario comune per comunicare con l'utente, permettendo di far comprendere gli elementi fondamentali e le loro relazioni
+	Permette inoltre di fornire nuovi elementi di discussione e si sostituisce all'architettura del sistema.
+4. Semplicità di progetto
+	Massimizzare il lavoro non fatto consegnando le cose utili
+	- One and once only: consegnare tutto e solo quello che serve senza duplicazioni
+	- KISS Keep It Simple Stupid
+	Questo va in contrapposizione con il Design for change 
+5. Testing: 
+	TDD
+	I clienti scrivono i test funzionali per aumentare la loro fiducia, ma la correttezza dei test non può dimostrare la correttezza certa di un programma.
+	Ciò facilita il refactoring in quanto si ha confidenza nelle modifiche che vengono apportate.
+6. Refactoring: 
+	Modifica al codice che NON modifica le funzionalità ma che puntano alla semplicità del progetto. 
+	Il refactoring deve essere fatto gradualmente 
+	es Tool di coverage per eliminare parti di codice inutile per i test attuali o per aggiungere un test che passi per quelle righe.
+7. Programmazione a coppie
+	Aiuta ad avere un controllo continuo del rispetto delle regole di XP
+	Aiuta l'inserimento di nuovo personale e la sua formazione
+	Aiuta a ottenere la proprietà collettiva, la conoscenza osmotica del team
+	Aiuta il refactoring in quanto mentre uno scrive codice, il compagno puo pensare a come semplificarlo.
+	Dati alcuni test, si è provato che una dimezzamento del personale ha una diminuzione del 25% della produttività in righe di codice, ma questa è una produttività istantanea
+	Anche se non ci fossero problemi, il lavoro fatto non viene congelato ma ha una sua vita successiva, correggendolo, ampliandolo. Bisognerebbe quindi usare un arco temporale piu ampio, notando un minore ritorno sul lavoro consegnato
+	Lavorare in coppie non è ispezione del codice (leggendo il codice si cercano errori) ma chi non sta scrivendo fa una prima fase embrionale di analisi 
+	(I commenti si scrivono per poi rimuoverli, se ho dovuto scrivere un commento non ho scritto codice leggibile )
+8. Proprietà collettiva 
+	Il codice non appartiene ad una persona sola ma non è neanche senza proprietà, dove tutti possono modificare tutto senza preoccupazioni
+	Ci si deve sentire responsabilizzati sull'intero codice anche se non si conosce tutto alla stessa maniera
+9. Integrazione continua 
+	Nell'ottica di avere feedback rapidi, l'integrazione va fatta piu volte al giorno 
+	La coppia, dopo avere risolto il suo problema in piccolo, è responsabile di risolvere anche i problemi di integrazione. L'azione nonostante sia frequente, è rapida perché nel frattempo il sistema non è cambiato molto. 
+	Parallelizziamo lo sviluppo e serializziamo l'integrazione. 
+	L'integrazione è aiutata molto dai tool di versioning. 
+10. Settimana di 40 ore
+	Cerca di risolvere 
+	- Problema di freschezza del team
+	- soddisfazione di lavorare nel team
+	- meno problemi familiari
+	- minor probabilità di perdere dipendenti e know-how
+11. Cliente sul posto
+	Coinvolgendo il cliente, la fase di specifica diventa piu leggera perché le scelte/test vengono forniti in tempo reale. 
+	Il problema sarà quanto questa figura sia rappresentativa di tutti gli stakeholders
+12. Standard di codifica
+	Enfatizza la comunicazione attraverso il codice in particolare l'aiuta il refactoring, la programmazione a coppie e la proprietà collettiva 
+13. Just rules: 
+	Tutti i punti precedenti sono solo regole che il team può modificare o applicarne solo un sottoinsieme
+
+Raggruppiamo per fasi
+- Requirements
+	- Gli utenti fanno parte del team di sviluppo
+	- Consegne incrementali e pianificazioni continue
+- Code
+	- Programmazione a coppie
+	- Proprieta collettiva 
+	- Integrazioni continue 
+	- Standard di codifica 
+- Design
+	- Una metafora come visione unificante di un progetto
+	- Refactoring
+	- Presumere la semplicità
+- Test
+	- testing di unita continuo
+	- test funzionale scritto dagli utenti 
+
+La documentazione in senso stretto non c'è ma è 
+- sul retro delle stories
+- nel codice tramite standard di codifica che permettono una maggiore leggibilità e soprattutto nei test di utilità
+- nelle persone, sia nel cliente che nel compagno di pair programming
+La documentazione in exp diventa quindi un sottoprodotto
+
+
+Quando non si può usare XP
+- in ambienti che proibiscono l'uso anche solo di uno degli approcci citati, impossibilità causata da
+	- Barriere tecnologiche che impediscono di testare ed avere un feedback in breve tempo, non ottenendo così il feedback rapido
+	- Barriere di tipo manageriali o burocratiche 
+		- team troppo numeroso o necessità di documentazione di certificazioni basati su di essa 
+		- Troppi stakeholders, quindi non riesco ad avere un cliente sul posto rappresentativo
+	- Barriere di tipo fisico e logistico
+		- Sistemazione degli spazi di lavoro che non permettono flessibilità nella formazione delle coppie di lavoro
+
+Critiche
+- Sottovalutazione up-front: cioè di tutto ciò che viene fatto prima di lavorare 
+- Sopravvalutazione User stories
+- Mancata evidenziazione delle dipendenze tra user stories: sull'ordine e la complessita di sviluppo
+- TDD puo portare a visione troppa ridotta
+- Cross functional teams: difficile trovare dei team general purpose 
+
+
+Mesi/uomo: produttività, stime, costi, velocità
+mesi/uomo: il prodotto di questi due fattori ci da una costante, la fatica.
+All'aumentare delle persone non diminuisco tanto i mesi, perché aumenta la comunicazione necessaria nell'organizzazione (es sarà necessario formarle, alcuni task invece non sono parallelizzabili)
+Nella realtà sopra un certo n di persone, il tempo richiesto aumenta. 
+Il dimensionamento del team diventa quindi importante 
+
+SE la situazione peggiora in termini di ritardo: 
+- prendo conto del ritardo facendo una nuova stima
+- diminuisco la portata (diminuisco le funzionalità da realizzare) 
+- diminuisco il testing
+
+
+Open source 
+- Cattedrale e Bazaar
+1. Raymond: "Ogni buon lavoro SW inizia dalla frenesia personale di uno sviluppatore" 
+2. Chiede ad amici o colleghi cosa sanno sull'argomento: nessuno ha una soluzione ma alcuni hanno lo stesso problema o problemi simili
+3. Le persone interessate cominciano a scambiarsi pareri e conoscenze sull'argomento
+4. Le persone interessate che intendono spendere delle risorse sulla soluzione del problema danno il via ad un progetto informale 
+5. I membri del progetto lavorano al problema finche non raggiungono dei risultati presentabili (qui diventano open source)
+6. Si rende noto il lavoro svolto e arrivano i primi suggerimenti esterni. E' utile che ci siano errori perché può invogliare altra gente a partecipare
+7. Iterazione tra vecchi e nuovi membri del gruppo
+8. Nuove informazioni vengono acquisite e ritorna al punto 5
+
+
+Alcune frasi
+- "Se dai a tutti il codice sorgente, ognuno di essi diventa un tuo ingegnere"
+- "Se ci sono abbastanza occhi, gli errori diventano di poco conto", il SW open source si dice essere piu sicuro 
+- "Se tratti i tuoi beta-tester come se fossero la tua risorsa più importante, essi risponderanno diventando la tua risorsa più importante”
+- "Quando hai perso interesse in un programma, l'ultimo tuo dovere è passarlo a un successore competente"
+
+Confronto modelli: 
+...
+
+
+---
+
+Core and Feeding of FOSS
+Preso un dominio applicativo, analizziamo le "ere" del SW
+1. Idea: qualcuno ha un'idea e la fa funzionare
+2. Espansione e innovazione: il mondo se ne accorge e la tecnologia inizia a espandersi
+3. Consolid amento: ... Altri progetti sono assorbiti o falliscono.
+4. Maturità: il mercato si riduce in un insieme di prodotti. L'innovazione rallenta in una pace moderata. E' difficile o impossibile per i nuovi competitor entrare nel mercato
+5. FOSS Domination 
+6. FOSS era (utopico): omologazione 
+
+The emerging Economic Paradigm Of Open Source
+Il SW per una azienda non è sempre un prodotto ma una tecnologia abilitante essenziale
+E' importante distinguere i casi di tecnologia differenziante o non differenziante
+E' differenziante se il cliente si accorge dei cambiamenti del SW e se il competitor non hanno accesso allo stesso SW, cioè abbiamo un vantaggio competitivo 
+
+Confronto
+Efficienza: quanti soldi per creare il prodotto do agli sviluppatori
+
+...
+
+Validare le impressioni
+...
+
+Vecchie sfide che si amplificano 
+- Integrazione del SW
+	- Modello a cascata: è una fase a sè stante
+	- Modello microsoft: stabilize and syncronize, tutti lavoravano da soli e a fine giornata si metteva insieme il lavoro
+	- Modello XP: piu volte al giorno, escludendosi a vicenda 
+	- F/LOSS: continuamente e senza coordinamento a priori
+
+Nuove sfide:
+- Il team si sfanda, come comunicare, tenersi uniti, coordinarsi, ottenere collaboratori...
+- Nascono nuovi strumenti di supporto:
+	- Comunicazione
+		- Internet
+		- Forum per mantenere la community unita e rispondere ai dubbi delle new entry
+	- Sincronizzazione del lavoro e versioning
+		- Sul codice: derivano molte conseguenze e eventuali problematiche
+		- Sulla documentazione
+	- Automatizzazione delle build: in un ambiente distribuito quando si fanno dei commit spesso github prova a compilare ed eseguire gli eventuali test.
+	- Bug tracking con un certo rigore per indicare versione, log
+
+SCM Source Code Management 
+Scenari possibili:
+- Sviluppatore che sta facendo un prodotto open-source da solo. Vuole distribuire il codice binario, e gli viene segnalato un bug di sicurezza in una versione precedente. E' necessario essere in grado di ritrovare qualsiasi versione precedente in qualsiasi momento dello sviluppo. 
+- Necessità di condivisione di lavori con altri e gestirne l accesso contemporaneo che potrebbe causare dei conflitti
+- Necessità della tracciabilità dell'autore del codice
+
+S Configuration M
+Pratiche che hanno l obiettivo di rendere sistematio il processo di sviluppo tenendo traccia dei cambiamenti in modo che il prodotto sia in ogni istante in uno stato ben definito
+
+Gli oggetti di cui si controlla l evoluzione sono detti configuration item o artifact
+Inizialmente si versionavano file 
+A volte fornisce supporto per la generazione del prodotto a partire da una determinata configurazione 
+Non si salvavano tutto il file ma solo il diff rispetto al precedente
+
+Le configurazioni sono l insieme delle versioni dei vari file che convergono in una configurazione in un dato momento
+
+Problemi:
+- Gli aggiornamenti se falliscono solo nell update di alcuni file, ho un inconsistenza non c è un concetto di transazione
+- Il renaming del file causa la perdita della storia del file 
+
+Il versioning viene oggi fatto su directory e sotto-directory
+
+Gli SCM sono per lo piu indipendenti da linguaggi di programmazione e applicazioni lavorando su file, preferibilmente su righe di testo
+...
+
+Passaggio da centralizzato a distribuito è avvenuto per 
+
+Qualunque sistema si usi, occorre prendere decisioni importanti che influenzano la replicabilità della produzione
+- Si traccia l'evoluzione anche di componenti esterni dal nostro controllo? (es librerie, compilatori)
+- Si archiviano i file che costituiscono e costruiscono il prodotto?
+Solitamente NO in quanto troppo costo e poco pratico, perdendo la perfetta replicabilità
+
+Meccanismo base
+- check-out: dichiara la volontà di lavorare partendo da una particolare revisione di un artifact
+- check-in: dichiara la volontà di registrarne una nuova (change-set)
+Queste operazioni vengono attivate rispetto a un repository, producendo spostamenti tra il repository e il mio workspace
+
+Il repository mantiene informazioni quali date, tag, versioni, diramazioni, autore...
+La repository puo salvare solo le differenze tra una versione e l'altra
+Puo essere centralizzata o distribuita (su qualunque pc c è sia la repo che il workspace. NON vuol dire che tutti hanno la stesso repo)
+
+Regolamento del lavoro concorrente
+Quando il repository è condiviso da un gruppo di lavoro, nasce il problema di gestirne l'accessi concorrente
+- Modello pessimistico RCS: accesso agli artifact con mutua esclusione attivando un lock al check-out
+- Modello ottimistico CVS: il sistema si disinteressa del problema e fornisce supporto per le attività di merge di change-set paralleli potenzialmente conflittuali
+	E' possibile regolarlo parzialmente tramite rami paralleli di sviluppo, branch
+
+SCM distribuit Vantaggi
+- lavoro offline
+- velocità
+- supporta diversi modi di lavorare 
+	- ...
+

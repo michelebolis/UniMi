@@ -295,3 +295,235 @@ Lato mittente, c è un laser o un diodo che manda gli 1 o 0 mentre lato destinat
 Differenze
 - costo
 - proprieta di attenuazione: la fibra ha attenuazione minore (attenuazione: diminuzione progressiva dell'intensità di un segnale) del doppino telefonico (doppino massimo teorico 100m)
+
+---
+
+Reti punto punto : topologia magliata in cui i nodi sono collegati 
+Per affidabilità devo aggiungere delle funzioni in ogni nodo, a livello 2
+OSS abbiamo un unico processo di livello 3 MA tanti processi di livello 2 quante sono le porte I/O
+
+Per rendere un canale affidabile da un nodo A a un nodo B, voglio un riscontro del ricevente con un ACK. Per far ciò mi serve pero un timer e un buffer (lato trasmissione) e un altro buffer (lato ricevitore)
+Lato trasmissione serve perche tengo il frame finche non ricevo ACK
+
+Dimensionamento del timer
+- sottodimensionamento: mi porta a ritrasmettere pacchetti in realtà già ricevuti dal destinatario
+- sovradimensionamento: perdo troppo tempo ad aspettare nel caso di ACK perso o di frame non arrivato
+T dovrà essere maggiore di tX + 2tP
+Timer inizializzato quando viene mandato F e resettato all'arrivo dell'ACK
+
+per tutto il tempo tX il driver sicuramente è occupato
+
+rame 2\*10^8
+fibra 3\*10^8
+
+F -> Frame 
+Ogni livello gerarchico processo le proprie unità dati
+Pacchetto al livello 3
+Frame al livello 2: oltre al header e al payload usa il CRC contenuto nella tail per rilevare eventuali errori
+
+Tra il livello 2 al livello 1 il trasmettitore aggiunge una sequenza di bit all'inizio e alla fine, flag formata da 8 bit: 0 111 111 0
+In idle il ricevitore legge tutti 1 o tutti 0, quindi quando riceve il flag il ricevitore inizia a sincronizzare il proprio clock in quanto sa che dopo lo 0 si deve aspettare 6 1 e poi lo 0.
+A livello fisico dopo aver ricevuto lo 0, processo bit a bit gli 1 contandoli con un contatore, sia all'inizio che alla fine 
+
+E' la flag di HTLC
+
+Il ricevitore sa che la sequenza finale di flag non è il payload grazie al bit staffing che aggiunge nelle sequenze che corrispondono al flag uno 0 dopo 5 1 (il ricevitore aggiunge un delay di un bit)
+Il transriver del ricevitore processa e toglie le flag all'inizio e alla fine, non arrivando quindi al 2o livello
+
+
+Ritornando alla trasmissione
+SE perdo l ACK, rinvio F dal buffer del mittente. Il destinatario capirà di avere gia quel frame nel buffer grazie al numero di sequenze nell'header, il sequence.
+Il campo sequence è anche presente nell'ACK
+
+Variabili di trasmissione
+- V(S): (mittente) indica qual è il prossimo frame da inviare. Lo incremento quando ricevo l ACK
+- V(R): (destinatario) indica qual è il numero di frame che si deve aspettare di ricevere. Lo incremento quando ricevo la sequence che mi stavo aspettando
+
+
+Il protocollo per la correttezza lo mette al livello 2 quando so che il canale è molto inaffidabile 
+Mettere HTLC al livello 2 costa molto in termini di tempo
+Ora il tasso di errore del canale è diminuito, lasciando che se ne occupi il livello 4
+Oggi usiamo un livello 2 affidabile sul canale radio e wireless 
+
+Un protocollo insieme di regole che tiene sincronizzate due macchine a stati, in modo che evolvano in modo coerente
+
+RTT Round Trip Time: tempo dall'invio di F all'arrivo dell'ACK
+
+Svantaggi: è inefficiente a causa di Tp, è tanto piu inefficiente quanto piu aumenta il rapporto tra la lunghezza del canale rispetto a Tx
+Utilizzo/efficienza della rete U = Tx / (Tx+2Tp)
+SE Tp è piccolo, U tende a 1
+SE Tp è grande, U tende a 0
+
+Appena ho mandato tutti i bit e sto aspettando ACK, posso gia mandare un altro frame, portando cosi U verso 1
+k \* U 
+k = o finestra di trasmissione / slamming window o numero di frame che il transceiver può trasmettere contemporaneamente 
+La finestra tuttavia non è facile da dimensionare 
+
+HTLC è un protocollo con trasmissione a finestra
+
+SE il trasmettitore è abilitato a mandare piu frame, sono necessari piu buffer. 
+Ci saranno almeno tanti buffer quanto è la dimensione della finestra
+
+$figura1.26$ 
+SE un frame N viene perso e mi arriva il successivo N+1, il ricevente non mando ACK del secondo, scartando cosi un frame corretto ma non nell'ordine corretto. Tutto quello che viene trasmesso dopo l'errore viene buttato
+Fonte di inefficienza
+
+HDLC per segnalare un errore, se lo rileva, può mandare un NACK (Negative ACK) del frame su cui è l'errore
+NACK introdotto in modo tale che il trasmettitore si accorga dell'errore prima della fine del timer, rinviando il frame e risparmiando tempo
+
+SE perdo ACK del tempo N, il ricevitore continua a ricevere i frame che vengono salvati, ma il mittente, quando non riceve l ACK del tempo N invierà nuovamente N ed i successivi frame che aveva gia mandato e che il ricevente aveva ricevuto corretti e conservato nei buffer 
+
+NACK non piace perché è un messaggio di controllo in piu e perché non serve a molto inducendo un ACK con semantica selettiva 
+
+Cambio di semantica:
+ACK(N) dice che ha ricevuto correttamente fino alla sequenza N, quindi rimando ACK N invece di NACK N+1
+Meglio un ACK cumulativo che un NACK selettivo
+Vantaggio ACK cumulativo: dopo aver ricevuto il frame che prima era in errore (es N+1) poi manderò un ACK cumulativo molto superiore (es N+4)
+
+Protocollo a finestra scorrevole di tipo GO BACK N: tecnica di trasmissione per protocollo a finestra scorrevole che prevede k buffer in Tx e 1 buffer in Rx
+(go back perche fino a n ho la sequenza giusta)
+
+Protocollo a finestra scorrevole di tipo SELECTIVE REPEAT: ha k buffer in Tx e k buffer in Rx
+Avendo k buffer, conservo i frame corretti anche se non in ordine chiedendo poi selettivamente al trasmettitore di inviarmi nuovamente il frame specifico
+
+TCP, lato trasmettitore BACK N mentre lato ricevitore SELECTIVE REPEAT
+
+
+Campo sequence: numero di sequenza
+Fisicamente è presente nell'header (in bit) MA quanto può essere grande una finestra a livello 2?
+es 2 bit di seq, ho una finestra di 4 frame al massimo
+in HTLC ci sono 4 bit di seq
+
+MA se tutti i frame sono arrivati, MA tutti gli ACK non sono arrivati, allora verranno rinviati MA il ricevitore non riesce ad disambiguare il frame 0, non campendo se sia la vecchia o la nuova sequenza
+
+MxSq (Max Sequence Number): data una finestra di trasmissione grande k, ho bisogno di k+1 numeri di sequenza 
+La nuova finestra partira da k+1, poi 0 
+es 2 bit di seq, ho MxSq = 4 e k=3
+SOLO in GO BACK N mentre in SELECTIVE REPEAT serve 2k
+
+4 bit seq --> al massimo 16 frame GBN --> finestra massima k=15
+4 bit seq --> al massimo 16 frame SR --> finestra massima k=8
+
+---
+
+Consideriamo ora le reti di accesso, che hanno una topologia broadcast
+Nel punto a punto, i nodi parlano in modo diretto ad un solo altro link 
+Nel broadcast tutti sono collegati allo stesso dispositivo fisico, es hub
+L' hub non appena A trasferisce un messaggio verso B, l hub propaga il messaggio a TUTTI i nodi collegati, anche al mittente
+Prodotto un messaggio, tutti gli interlocutori ricevono quel messaggio
+
+Nella magliata per fare broadcast dovrei mandare tanti messaggi quanti sono i nodi MA tutti riceverebbero il messaggio piu di una volta
+
+Avendo garanzia che tutti nodi possano fare un check sull indirizzo destinatario, ho la certezza che il messaggio arrivi al giusto destinatario
+
+Ethernet è una rete broadcast
+Per la parte fissa, inizialmente è nata come bus lineare
+
+Bus lineare: formato da un cavo corsiale, a cui si connettono i transiver di un nodo con un proprio cavo che tocca il mezzo conduttore interno 
+SE A trasmette il suo segnale si propaga a dx e sx, raggiungendo tutti i nodi (secondo le regole di propagazione)
+Nativamente il messaggio è ricevuto da tutti i nodi
+
+Gestire l accesso mutuamente esclusivo al canale (che sia esso un centro stella hub o un bus) comune
+
+Protocolli di accesso condiviso per reti broadcast
+- Approccio deterministico
+Protocollo token-ring (ideato da IBM)
+Eleggo una stazione a master, (es con un algoritmo distribuito) che conosce la composizione della rete, essa stessa fa parte di essa
+Il master genera un token attraverso un anello logico (es prima A poi B poi C) passando il token con round robin
+Ogni stazione è istruita in modo tale che invii solo se ha il token. SE ha frame da inviare nel buffer, lo invia sul canale passando anche il canale alla stazione successiva
+
+La rete deve essere configurata nel caso si aggiungano nuovi nodi alla rete in modo da includerli nell'anello
+
+Problemi
+- fairness: evitare che chiunque prenda il controllo del canale non ne approfitti
+- GIrare il token in modo sistematico, il token visiti tutte le stazioni, incluse quelle che non hanno frame da inviare, perdendo cosi tempo.
+- Caricando nel master la funzione centrale di generazione del token, nel momento in cui crasha la rete smette di funzionare e sarà necessario un reset
+
+- Approccio "casuale"
+Protocollo Ethernet
+Su reti distribuite il controllo deve essere totalmente distribuito
+
+Tecnologie dominante nelle reti locali
+Non esiste nessuna funzione di accesso che sia concentrata su una stazione.
+Ogni stazione è in grado di operare in autonomia: cio implica un accesso immediato in qualsiasi momento di un qualsiasi nuovo dispositivo
+
+Ethernet introduce un controllo di accesso probabilistico
+Una stazione A invia il suo messaggio: riesce a trasmettere quando è l'unico a tentare l'accesso al canale in quell'istante. SE nello stesso istante due stazioni tentano l accesso, i due messaggi collidono 
+Per rilevare la collisione le stazioni fanno complemento bit a bit di cio che inviano e cio che ricevono, sospendendo la trasmissione 
+
+Questo era il protocollo ALOHA
+
+SE il numero di stazioni è basso, le collissioni saranno in numero minore 
+Risultato di efficienza: la curva di ALOHA ha una forma di campana in quanto all'aumentare delle stazioni ho un utilizzo maggiore ma fino a un certo punto in cui ci sono troppe stazioni che causano collissioni. Il picco della curva è del 18%
+
+Il "vero" protocollo Ethernet 
+A vuole trasmettere, prima di farlo fa Carrier Sense: legge dal canale ciò che passa, capendo se è il canale è in idle o meno.
+Le collisioni ci sono quando SE B sta trasmettendo e C fa CS, quindi aspetta 1-persistent aspettando che B finisca MA se un 2o nodo fa CS, ora entrambi stanno aspettando la terminazione di comunicazione di B e entrambi faranno CS nello stesso momento
+
+Ha sempre una forma a campana la curva di utilizzo ma il punto di saturazione ora è al 91%
+
+SE applicassimo la stessa tecnica di ritrasmissione della finestra, avremmo nuovamente una collisione 
+
+La probabilita di collissione è tanto maggiore tanto piu stazioni ci sono sul canale 
+
+Soluzione: protocollo CSMA-CD Carrier Sense Multiple Access - Collision Detection (standardizzato come IEEE 802.3, es WiFi IEEE 802.11)
+Ritrasmissione dei frame coinvolti nella collisione facendo aspettare le stazioni coinvolte un tempo tau casuale. 
+La generazione del numero casuale non ha un range ampio, tecnica Binary Exponenzial BuckOff (BEB): (0-2^i)\*UT con i il numero di collissioni (1<i<16) della stazione e UT unita di tempo 
+
+Potrebbero ancora collidere se viene generato lo stesso numero di UT ma è probabilistico
+In condizioni ottimali il protocollo lavoro intorno al 90% di utilizzo
+
+E' un controllo completamente distribuito
+
+La fairness è smussato qui perche se A deve trasmettere molti frame va in collisioni con le altre stazioni non potendo trasmettere
+
+
+provando tutti i gradi di persistenza...: non persistente tanto che appena rilevo CS, genero subito un numero casuale in cui non controllo il CS
+
+
+Problema del tempo di propagazione
+A trasmette ma il CD arriva dopo tP a B che non vedendo il canale occupato, aveva iniziato a trasmettere cosi A, dopo aver finito di trasmettere, riceve dopo tP il frame corrotto di B
+A non è in grado di rilevare la collisione 
+CD quindi non funziona sempre --> sistema inaffidabile
+
+Soluzione: 
+lavorare sul Tx
+Imporre di usare la propria porta di I/O di trasmissione almeno pari a 2tP
+Tx >= 2tP
+A cosi sta ancora trasmettendo quando arriva il messaggio corrotto, rilevando cosi la collisione 
+
+La lunghezza del cavo di Ethernet è 2500mt a 10Mbps
+25\*10^2/2\*10^8 = 12,5 micro secondi
+2tp = 25 micro secondi
+L'ente standardizzatore l ha fatto diventare 51.2 micro secondi
+Al massimo produce 512 bit -> 64 Byte 
+Al minimo ogni frame ha 64 Byte 
+
+Dimensione di frame per lo standard Ethernet è 
+
+SE una rete LAN deve essere maggiore di piu di 2.5km, ne creo un altra e le compongo
+
+
+MA in BEB UT=51,2 micro secondi
+
+
+La stazione di rete Ethernet ha come tutte un L1 attaccato al cavo, con un clock, un codificatore di bit
+Il L2 di Ethernet è multi-layer, in particolare 2:
+- MAC M Access Control: funzionalita di Carrier Sense, BEB, Collision Control
+- LLC Logical Link Control: protocollo a finestra affidabile o meno 
+
+
+Bridge
+Supponiamo di avere una tratta Ethernet con tante stazioni, tanto che il tasso di collissione inizia ad aumentare. Troppe stazioni competono sullo stesso dominio di collisione
+Con il Bridge rimezzo la probabilità di accesso al canale
+Serve per separare domini di collisione, mettendo in contatto il dominio A con il dominio B
+
+Il Bridge si occupera di passera le frame destinate al dominio A dal dominio B e viceversa
+Il traffico generato all interno dell area A e B rimangono confinato se la destinazione è nella stessa area
+
+A livello fisico il bridge ha un transiver e un MAC level proprio come una stazione qualsiasi, è un CSMA-CD
+
+Requisito: che il bridge diventa egli stesso una stazione, quindi deve avere una scheda di rete
+
+---
+

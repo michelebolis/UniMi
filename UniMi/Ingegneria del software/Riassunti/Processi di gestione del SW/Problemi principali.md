@@ -1,0 +1,6 @@
+- Problemi di comunicazione tra le persone
+	- Tra il programmatore e il cliente: sono esperti di domini diversi ed è difficile comprendersi. Spesso il cliente non è una singola persona ma un gruppo avente necessità e problemi diversi
+	- Tra il programmatore e altri programmatori: gli sviluppatori del progetto non hanno sempre lo stesso stile di lavoro e hanno specializzazioni differenti.
+- Il numero e il tipo di persone coinvolte. Stakeholders diversi (sviluppatore, cliente, manager...)
+- La dimensione del SW che può assumere valori molti elevati in termini di righe di codice (es l'aumento delle persone coinvolte non implica un aumento in modo diretto della velocità di produzione del SW)
+- Il SW è SOFT cioè è malleabile, quindi porta a molteplici versioni ed evoluzioni
