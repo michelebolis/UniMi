@@ -18,12 +18,12 @@
             }
           },
           {
-            "id": "70af7e65b219c4ab",
+            "id": "001646ba84116be9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
+                "file": "Sistemi embedded/Sistemi embedded.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
+                "file": "Sistemi embedded/Sistemi embedded.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
+                "file": "Sistemi embedded/Sistemi embedded.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md"
+                "file": "Sistemi embedded/Sistemi embedded.md"
               }
             }
           },
@@ -165,22 +165,31 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "70af7e65b219c4ab",
+  "active": "47136b92c595cdff",
   "lastOpenFiles": [
+    "Reti di calcolatori/Libro/CAP9.pdf",
+    "Reti di calcolatori/Libro/Libro.md",
+    "Sistemi embedded/Sistemi embedded.md",
+    "Sistemi embedded/Libro.pdf",
+    "Reti di calcolatori/Appunti.md",
+    "Reti di calcolatori/Reti di calcolatori.md",
+    "Reti di calcolatori/Libro/CAP2.pdf",
+    "Reti di calcolatori/Libro/CAP3.pdf",
+    "Reti di calcolatori/Libro/CAP6.pdf",
+    "Reti di calcolatori/Libro/CAP7.pdf",
+    "Reti di calcolatori/Libro/CAP8.pdf",
+    "Reti di calcolatori/Libro/CAP1.pdf",
+    "Reti di calcolatori/Libro/LIBRO_RETI.pdf",
+    "Reti di calcolatori/Libro/Capitoli",
     "Sistemi embedded/Sistemi embedded.canvas",
     "conflict-files-obsidian-git.md",
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli iterativi/Modello prototipale.md",
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli iterativi/Modello a cascata con singola retroazione.md",
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli iterativi/Modelli iterativi.md",
-    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli iterativi",
-    "Linguaggi di programmazione/Riassunti/OCaml/Slide/03. modules in ml.4.pdf",
-    "Ingegneria del software/Slide/IS2023-L04.pdf",
-    "Ingegneria del software/Slide/IS2023-L03.pdf",
     "Ingegneria del software/Riassunti/Progettazione del SW/Processo di produzione del SW.md",
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli sequenziali/Modello a V.md",
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli sequenziali/Modello a cascata.md",
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli sequenziali/Modelli sequenziali.md",
-    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli sequenziali",
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli incrementali/Modello spirale win-win.md",
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli incrementali/Meta-modello a spirale.md",
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli incrementali/Modello trasformazionale.md",
@@ -188,16 +197,10 @@
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli incrementali/Modello COTS.md",
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli incrementali/Modello a fontana.md",
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli incrementali/Modelli incrementali.md",
-    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli incrementali",
     "Ingegneria del software/Riassunti/Progettazione del SW/Metodologie agili/Metodologie agili.md",
-    "Ingegneria del software/Riassunti/Progettazione del SW/Metodologie agili",
     "Ingegneria del software/SWENG.md",
-    "Ingegneria del software/Slide/IS2023-L01.pdf",
-    "Reti di calcolatori/Appunti.md",
     "Ingegneria del software/Appunti.md",
     "Ingegneria del software/Appunti lab.md",
-    "Ingegneria del software/Riassunti",
-    "Linguaggi di programmazione/Riassunti",
     "Ingegneria del software/Progettazione del SW/Modelli/Pasted image 20231004102106.png.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modelli di ciclo di vita del SW.md",
@@ -208,13 +211,10 @@
     "Ingegneria del software/Riassunti/img/Immagine 2023-10-04 102718.png",
     "Ingegneria del software/Riassunti/img/Immagine 2023-10-04 102615.png",
     "Ingegneria del software/Riassunti/img/Immagine 2023-10-04 102522.png",
-    "Ingegneria del software/Riassunti/Progettazione del SW/Modelli/Modello a fontana.md",
     "Ingegneria del software/Riassunti/img/Immagine 2023-10-04 102241.png",
     "Ingegneria del software/Riassunti/img/Immagine 2023-10-04 102056.png",
     "Pasted image 20231004102106.png",
     "Ingegneria del software/Riassunti/img/Immagine 2023-10-04 101824.png",
-    "Ingegneria del software/Riassunti/Progettazione del SW/Progettazione del SW.md",
-    "Ingegneria del software/Riassunti/Progettazione del SW/Fasi/Fasi.md",
     "Reti di calcolatori/Reti di calcolatori.canvas"
   ]
 }

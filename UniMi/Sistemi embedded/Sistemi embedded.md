@@ -9,15 +9,15 @@ Alcuni esempi per capire i settori di utilizzo e sviluppo di tali sistemi sono:
 * Elettrodomestici;
 * Smart TV o IoT.
  
-[[Concetti generali]]
-[[Concetti elettronica]]
-[[Architetture]]
-[[Device]]
-[[Componenti]]
-[[SO]]
-[[Protocolli]]
-[[Licenze]]
+- [[Concetti generali]]
+- [[Concetti elettronica]]
+- [[Architetture]]
+- [[Device]]
+- [[Componenti]]
+- [[SO]]
+- [[Protocolli]]
+- [[Licenze]]
 
 Mappa concettuale [[Sistemi embedded.canvas|Sistemi embedded]]
 
-Source: [[Appunti originali]]
+Source: [[Appunti originali]],  [[Libro.pdf]]
