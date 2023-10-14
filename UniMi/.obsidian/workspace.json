@@ -16,8 +16,24 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "9265241912847e8d",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Sistemi embedded/Sistemi embedded.canvas",
+                "viewState": {
+                  "x": 155.78256358146388,
+                  "y": -5332.219285065925,
+                  "zoom": -0.9209677928851021
+                }
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +138,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Sistemi embedded/Sistemi embedded.canvas"
+              }
             }
           },
           {
@@ -150,7 +170,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c1ce2ce19829fc50",
+  "active": "9265241912847e8d",
   "lastOpenFiles": [
     "Ingegneria del software/Slide/Index slide.md",
     "Reti di calcolatori/Appunti.md",
