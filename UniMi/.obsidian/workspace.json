@@ -31,19 +31,9 @@
                 }
               }
             }
-          },
-          {
-            "id": "0feb6e0d9f91f96b",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.16"
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -180,7 +170,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "0feb6e0d9f91f96b",
+  "active": "001646ba84116be9",
   "lastOpenFiles": [
     "Sistemi embedded/Sistemi embedded.md",
     "LAB.md/Exported image 20231013111609-3.png",
