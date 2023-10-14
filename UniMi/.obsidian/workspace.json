@@ -21,16 +21,29 @@
             "id": "001646ba84116be9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.md",
-                "mode": "source",
-                "source": false
+                "file": "Sistemi embedded/Sistemi embedded.canvas",
+                "viewState": {
+                  "x": 1148.696799661941,
+                  "y": -3793.7866718242794,
+                  "zoom": -0.25430112621843554
+                }
+              }
+            }
+          },
+          {
+            "id": "0feb6e0d9f91f96b",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.16"
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -96,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.md",
+                "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.md",
+                "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.md"
+                "file": "Sistemi embedded/Sistemi embedded.canvas"
               }
             }
           },
@@ -167,8 +180,9 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "47136b92c595cdff",
+  "active": "0feb6e0d9f91f96b",
   "lastOpenFiles": [
+    "Sistemi embedded/Sistemi embedded.md",
     "LAB.md/Exported image 20231013111609-3.png",
     "LAB.md/Exported image 20231013111609-2.png",
     "LAB.md/Exported image 20231013111609-1.png",
@@ -179,7 +193,6 @@
     "ESAME 2022218.md/Exported image 20231013111609-3.png",
     "ESAME 2022218.md/Exported image 20231013111609-2.png",
     "ESAME 2022218.md/Exported image 20231013111609-1.png",
-    "INTRO.md/Exported image 20231013111609-3.png",
     "ECO-1.md",
     "OneNote/Università/Basi di dati",
     "OneNote/Università/Aspetti etici/ECO-1.md",
