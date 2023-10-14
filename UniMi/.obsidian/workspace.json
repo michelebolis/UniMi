@@ -16,24 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "001646ba84116be9",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas",
-                "viewState": {
-                  "x": 1148.696799661941,
-                  "y": -3793.7866718242794,
-                  "zoom": -0.25430112621843554
-                }
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas"
-              }
+              "state": {}
             }
           },
           {
@@ -170,8 +150,12 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "001646ba84116be9",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
+    "Ingegneria del software/Slide/Index slide.md",
+    "Reti di calcolatori/Appunti.md",
+    "Sistemi embedded/Sistemi embedded.canvas",
+    "Reti di calcolatori/Riassunti/Router.md",
     "Sistemi embedded/Sistemi embedded.md",
     "LAB.md/Exported image 20231013111609-3.png",
     "LAB.md/Exported image 20231013111609-2.png",
@@ -207,9 +191,6 @@
     "OneNote/Università/Algoritmi e strutture dati/LAB.md",
     "ESAME 2022218.md",
     "OneNote/Università/Algoritmi e strutture dati/ESAME 2022218.md",
-    "INTRO.md",
-    "OneNote/Università/Algoritmi e strutture dati/INTRO.md",
-    "GRAFI.md",
     "OneNote/Università/Algoritmi e strutture dati",
     "OneNote/Università",
     "OneNote",
@@ -218,7 +199,6 @@
     "Reti di calcolatori/Libro/CAP2.pdf",
     "Reti di calcolatori/Libro/CAP3.pdf",
     "Reti di calcolatori/Libro/CAP6.pdf",
-    "Sistemi embedded/Sistemi embedded.canvas",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Reti di calcolatori/Reti di calcolatori.canvas"

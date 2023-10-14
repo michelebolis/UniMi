@@ -90,7 +90,7 @@ Sara quindi necessario una stima adattiva
 Trasmissione in banda base: quando trasmetto da 0 a Hz massimo 
 ogni canale fisico ha un certo data-rate, rate di immissione 
 es 1 Mbps
-attaccata alla porta di rete abbiamo il bus di comunicazione con la coda di uscita Tx, con delle word di una certa dimensione.
+attaccata alla porta di rete abbiamo il bus di comunicazione con la coda di uscita $T_x$, con delle word di una certa dimensione.
 Viene quindi fatta una prima conversione mandando in alternanza veloce i singoli bit (da LSB a MSB), grazie a un clock. 
 es di protocollo: Lato ricevitore si rappresenta l'1 con un livello alto di voltaggio e 0 un voltaggio basso. 
 Problemi: 
@@ -107,7 +107,7 @@ Nel caso in cui il pacchetto sia arrivato corretto, ma la consegna dei singoli p
 Potrò quindi anche riconoscere se ho ricevuto dei duplicati
 
 Il ricevente manda al mittente un Acknoledgement (ACK) ogni volta che riceve un pacchetto corretto.
-HA passa entra in uno stato di Wait una volta che ha mandato i bit da Tx; durante questo tempo il canale non è utilizzato.
+HA passa entra in uno stato di Wait una volta che ha mandato i bit da $T_x$; durante questo tempo il canale non è utilizzato.
 Il problema è che l'ACK potrebbe non arrivare, in quanto potrebbe essere perso o corrotto
 
 
@@ -123,22 +123,22 @@ Un protocollo è un insieme di regole e convenzioni che permettono la comunicazi
 
 
 Consideriamo A e B collegati da un solo cavo
-- Tempo di trasmissione Tx = datiDaTrasmettere/capacitaCanale 
+- Tempo di trasmissione $T_x = {datiDaTrasmettere \over capacitaCanale}$  
 	- dipende dalla capacita del canale e dalla velocità di immissione del mittente.
-- Tempo di propagazione Tp: distanza / velocità
+- Tempo di propagazione $T_p = {distanza \over velocita}$ 
 	- è il tempo che un pacchetto impiega da A a B
 	- dipende unicamente dalle caratteristiche fisiche del canale su cui viaggiano i dati (lunghezza e materiale fisico)
-- Tp+Tx tempo che intercorre da quando il primo bit esce a quando l ultimo bit arriva
-	- Tp aumenta molto fino a superare Tx quando le distanze aumentano (comunicazioni satellitari, continentali)
+- $T_p+T_x$ tempo che intercorre da quando il primo bit esce a quando l ultimo bit arriva
+	- $T_p$ aumenta molto fino a superare Tx quando le distanze aumentano (comunicazioni satellitari, continentali)
 
-Anche l'ACK è un pacchetto, che viaggia nella direzione opposta quindi dobbiamo considerare anche TxACK e il TpACK
-OSS Tp e TpACK sono uguali, perche è lo stesso canale e la stessa distanza 
-TxACK vogliamo che si minimizzi: per far cio minimizziamo il peso dell'ACK, tanto da risultare spesso irrilevante nella stima del tempo.
+Anche l'ACK è un pacchetto, che viaggia nella direzione opposta quindi dobbiamo considerare anche $T_xACK$ e il $T_pACK$
+OSS $T_p$ e $T_pACK$ sono uguali, perche è lo stesso canale e la stessa distanza 
+$T_xACK$ vogliamo che si minimizzi: per far ciò minimizziamo il peso dell'ACK, tanto da risultare spesso irrilevante nella stima del tempo.
 
-Per riconoscere che non sia arrivato un ACK, faccio trascorrere un tempo minimo calcolato come: Tx + 2 Tp
+Per riconoscere che non sia arrivato un ACK, faccio trascorrere un tempo minimo calcolato come: $T_x + 2*T_p$
 
 Una volta inviato un pacchetto, ne tengo una copia nel buffer del Kernel finchè non mi ricevo ACK. Stessa cosa anche il ricevente, tiene una copia del pacchetto nel buffer del Kernel finchè non riceve tutti i pacchetti del file.
-Una volta inviato un pacchetto, parte un timer per il Waiting che stima il tempo minimo, cioè Tx + 2 Tp sovrastimato
+Una volta inviato un pacchetto, parte un timer per il Waiting che stima il tempo minimo, cioè $T_x + 2*T_p$ sovrastimato
 
 SE ACK non arriva A non sa se è arrivato il pacchetto, quindi lo manda nuovamente. 
 L'Host ricevente riconosce se il pacchetto fosse gia arrivato nei buff. Nel caso ce l'abbia già lo scarta, mandando lo stesso l'ACK al mittente.
@@ -148,13 +148,13 @@ SE la rete è affidabile e succedono degli errori, siamo in grado di risolverli 
 
 ---
 
-In Tp consideriamo il tempo del singolo bit perche la capienza del messaggio totale è utilizzata nel calcolo di TxP1
+In $T_p$ consideriamo il tempo del singolo bit perche la capienza del messaggio totale è utilizzata nel calcolo di $T_xP_1$
 
-In un caso piu generale oltre al tempo di propagazione del canale in se abbiamo piu router coinvolti, ognuna con le proprie code che causano un tempo di coda Tq.
+In un caso piu generale oltre al tempo di propagazione del canale in se abbiamo piu router coinvolti, ognuna con le proprie code che causano un tempo di coda $T_q$.
 Il tempo complessivo è piu complicato da stimare
 
-Tempo di invio completo: Tx+ Tp + Tq + TxR1 + ...
-Tq: tempo di coda nel singolo router
+Tempo di invio completo: $T_x+ T_p + T_q + T_xR_1 +$ ...
+$T_q$: tempo di coda nel singolo router
 
 
 Obiettivi per la progettazione
@@ -170,7 +170,7 @@ Tipi di allocazione
 Controllo per garantire l'affidabilità della rete
 - Controllo di flusso: 
 Il protocollo tra A e B deve essere in grado di comunicare a A di aspettare perche B sta processando (o perche ha il buffer pieno) o di far negoziare tra A e B il tempo massimo di elaborazione in base all host piu lento
-es dopo poche interazione HB arriva ad avere il buffer pieno ed inizia a buttare via cio che gli arriva 
+es dopo poche interazione HB arriva ad avere il buffer pieno ed inizia a buttare via ciò che gli arriva 
 - Controllo di congestione: 
 La rete deve essere in grado di comunicare quando è congestionata. 
 Una congestione avviene quando si ha una saturazione delle code dei router o ci sono dei link che causano colli di bottiglia (che si notano con l aumento dei pacchetti inviati). 
@@ -308,13 +308,13 @@ Lato trasmissione serve perche tengo il frame finche non ricevo ACK
 Dimensionamento del timer
 - sottodimensionamento: mi porta a ritrasmettere pacchetti in realtà già ricevuti dal destinatario
 - sovradimensionamento: perdo troppo tempo ad aspettare nel caso di ACK perso o di frame non arrivato
-T dovrà essere maggiore di tX + 2tP
+T dovrà essere maggiore di $T_x + 2* T_p$
 Timer inizializzato quando viene mandato F e resettato all'arrivo dell'ACK
 
-per tutto il tempo tX il driver sicuramente è occupato
+per tutto il tempo $T_x$ il driver sicuramente è occupato
 
-rame 2\*10^8
-fibra 3\*10^8
+rame $2*10^8$
+fibra $3*10^8$
 
 F -> Frame 
 Ogni livello gerarchico processo le proprie unità dati
@@ -336,8 +336,8 @@ SE perdo l ACK, rinvio F dal buffer del mittente. Il destinatario capirà di ave
 Il campo sequence è anche presente nell'ACK
 
 Variabili di trasmissione
-- V(S): (mittente) indica qual è il prossimo frame da inviare. Lo incremento quando ricevo l ACK
-- V(R): (destinatario) indica qual è il numero di frame che si deve aspettare di ricevere. Lo incremento quando ricevo la sequence che mi stavo aspettando
+- $V(S)$: (mittente) indica qual è il prossimo frame da inviare. Lo incremento quando ricevo l ACK
+- $V(R)$: (destinatario) indica qual è il numero di frame che si deve aspettare di ricevere. Lo incremento quando ricevo la sequence che mi stavo aspettando
 
 
 Il protocollo per la correttezza lo mette al livello 2 quando so che il canale è molto inaffidabile 
@@ -349,10 +349,10 @@ Un protocollo insieme di regole che tiene sincronizzate due macchine a stati, in
 
 RTT Round Trip Time: tempo dall'invio di F all'arrivo dell'ACK
 
-Svantaggi: è inefficiente a causa di Tp, è tanto piu inefficiente quanto piu aumenta il rapporto tra la lunghezza del canale rispetto a Tx
-Utilizzo/efficienza della rete U = Tx / (Tx+2Tp)
-SE Tp è piccolo, U tende a 1
-SE Tp è grande, U tende a 0
+Svantaggi: è inefficiente a causa di $T_p$, è tanto piu inefficiente quanto piu aumenta il rapporto tra la lunghezza del canale rispetto a $T_x$
+Utilizzo/efficienza della rete $U = {T_x \over (T_x + 2* T_p)}$
+SE $T_p$ è piccolo, U tende a 1
+SE $T_p$ è grande, U tende a 0
 
 Appena ho mandato tutti i bit e sto aspettando ACK, posso gia mandare un altro frame, portando cosi U verso 1
 k \* U 
@@ -380,10 +380,10 @@ ACK(N) dice che ha ricevuto correttamente fino alla sequenza N, quindi rimando A
 Meglio un ACK cumulativo che un NACK selettivo
 Vantaggio ACK cumulativo: dopo aver ricevuto il frame che prima era in errore (es N+1) poi manderò un ACK cumulativo molto superiore (es N+4)
 
-Protocollo a finestra scorrevole di tipo GO BACK N: tecnica di trasmissione per protocollo a finestra scorrevole che prevede k buffer in Tx e 1 buffer in Rx
+Protocollo a finestra scorrevole di tipo GO BACK N: tecnica di trasmissione per protocollo a finestra scorrevole che prevede k buffer in $T_x$ e 1 buffer in $R_x$
 (go back perche fino a n ho la sequenza giusta)
 
-Protocollo a finestra scorrevole di tipo SELECTIVE REPEAT: ha k buffer in Tx e k buffer in Rx
+Protocollo a finestra scorrevole di tipo SELECTIVE REPEAT: ha k buffer in $T_x$ e k buffer in $R_x$
 Avendo k buffer, conservo i frame corretti anche se non in ordine chiedendo poi selettivamente al trasmettitore di inviarmi nuovamente il frame specifico
 
 TCP, lato trasmettitore BACK N mentre lato ricevitore SELECTIVE REPEAT
@@ -468,7 +468,8 @@ La probabilita di collisione è tanto maggiore tanto piu stazioni ci sono sul ca
 
 Soluzione: protocollo CSMA-CD Carrier Sense Multiple Access - Collision Detection (standardizzato come IEEE 802.3, es Wi-Fi IEEE 802.11)
 Ritrasmissione dei frame coinvolti nella collisione facendo aspettare le stazioni coinvolte un tempo tau casuale. 
-La generazione del numero casuale non ha un range ampio, tecnica Binary Exponenzial Backoff (BEB): (0-2^i)\*UT con i il numero di collisioni (1<i<16) della stazione e UT unita di tempo 
+La generazione del numero casuale non ha un range ampio, tecnica 
+$Binary$ $Exponenzial$ $Backoff$ $(BEB) = [0:2^i]*UT$ con i il numero di collisioni (1<i<16) della stazione e UT unita di tempo 
 
 Potrebbero ancora collidere se viene generato lo stesso numero di UT ma è probabilistico
 In condizioni ottimali il protocollo lavoro intorno al 90% di utilizzo
@@ -482,19 +483,19 @@ provando tutti i gradi di persistenza...: non persistente tanto che appena rilev
 
 
 Problema del tempo di propagazione
-A trasmette ma il CD arriva dopo tP a B che non vedendo il canale occupato, aveva iniziato a trasmettere cosi A, dopo aver finito di trasmettere, riceve dopo tP il frame corrotto di B
+A trasmette ma il CD arriva dopo $T_p$ a B che non vedendo il canale occupato, aveva iniziato a trasmettere cosi A, dopo aver finito di trasmettere, riceve dopo $T_p$ il frame corrotto di B
 A non è in grado di rilevare la collisione 
 CD quindi non funziona sempre --> sistema inaffidabile
 
 Soluzione: 
-lavorare sul Tx
-Imporre di usare la propria porta di I/O di trasmissione almeno pari a 2tP
-Tx >= 2tP
+lavorare sul $T_x$
+Imporre di usare la propria porta di I/O di trasmissione almeno pari a $2 * T_p$
+$T_x \geq 2 * T_p$
 A cosi sta ancora trasmettendo quando arriva il messaggio corrotto, rilevando cosi la collisione 
 
 La lunghezza del cavo di Ethernet è 2500mt a 10Mbps
-25\*10^2/2\*10^8 = 12,5 micro secondi
-2tp = 25 micro secondi
+${25*10^2 \over 2*10^8}$ = 12,5 micro secondi
+$2 * T_p$ = 25 micro secondi
 L'ente standardizzatore lo ha fatto diventare 51.2 micro secondi
 Al massimo produce 512 bit -> 64 Byte 
 Al minimo ogni frame ha 64 Byte 
@@ -504,7 +505,7 @@ Dimensione di frame per lo standard Ethernet è
 SE una rete LAN deve essere maggiore di piu di 2.5km, ne creo un altra e le compongo
 
 
-MA in BEB UT=51,2 micro secondi
+MA in BEB UT = 51,2 micro secondi
 
 
 La stazione di rete Ethernet ha come tutte un L1 attaccato al cavo, con un clock, un codificatore di bit
