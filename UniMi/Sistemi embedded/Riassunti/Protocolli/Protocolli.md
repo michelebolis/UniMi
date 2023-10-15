@@ -8,8 +8,8 @@
 - Tecnica di comunicazione SW: [[Bit banging]]
 - [[MQTT]]
 - [[IoT]]
-- [[ISO-OSI]]
-- [[TCP-IP]]
+- [[Sistemi embedded/Riassunti/Protocolli/ISO-OSI]]
+- [[Sistemi embedded/Riassunti/Protocolli/TCP-IP]]
 
 In generale la linea di CLOCK  può servire per:
 * abilitare la trasmissione di dati

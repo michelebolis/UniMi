@@ -16,24 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "9265241912847e8d",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas",
-                "viewState": {
-                  "x": 155.78256358146388,
-                  "y": -5332.219285065925,
-                  "zoom": -0.9209677928851021
-                }
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas"
-              }
+              "state": {}
             }
           },
           {
@@ -156,7 +136,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -170,12 +151,31 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "9265241912847e8d",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
-    "Ingegneria del software/Slide/Index slide.md",
+    "Reti di calcolatori/Riassunti/Principi di realizzazione.md",
+    "Reti di calcolatori/Riassunti/ISO-OSI.md",
+    "Reti di calcolatori/Riassunti/Livello Fisico.md",
+    "Reti di calcolatori/Riassunti/Cavi fisici.md",
+    "Reti di calcolatori/Riassunti/Tipi di rete.md",
+    "Reti di calcolatori/Riassunti/Rete punto punto.md",
+    "Reti di calcolatori/Riassunti/Rete.md",
+    "Reti di calcolatori/Riassunti/Rete di accesso.md",
+    "Reti di calcolatori/Riassunti/Rete broadcast.md",
+    "Reti di calcolatori/Riassunti/Bridge.md",
     "Reti di calcolatori/Appunti.md",
+    "Reti di calcolatori/Riassunti/Protocollo Ethernet.md",
+    "Reti di calcolatori/Riassunti/Protocollo token-ring.md",
+    "Reti di calcolatori/Riassunti/Rete fissa.md",
+    "Reti di calcolatori/Riassunti/Tipo di comunicazione.md",
+    "Reti di calcolatori/Riassunti/TCP-IP.md",
     "Sistemi embedded/Sistemi embedded.canvas",
+    "Reti di calcolatori/Riassunti/Comunicazione tra due nodi.md",
+    "Sistemi embedded/Riassunti/Protocolli/ISO-OSI.md",
+    "Reti di calcolatori/Riassunti/Requisiti della rete.md",
     "Reti di calcolatori/Riassunti/Router.md",
+    "Reti di calcolatori/Riassunti/Tempi della trasmissione.md",
+    "Ingegneria del software/Slide/Index slide.md",
     "Sistemi embedded/Sistemi embedded.md",
     "LAB.md/Exported image 20231013111609-3.png",
     "LAB.md/Exported image 20231013111609-2.png",
@@ -191,26 +191,7 @@
     "OneNote/Università/Basi di dati",
     "OneNote/Università/Aspetti etici/ECO-1.md",
     "SOC-2.md",
-    "OneNote/Università/Aspetti etici/SOC-2.md",
-    "SOC-5.md",
-    "OneNote/Università/Aspetti etici/SOC-5.md",
-    "ETH-1.md",
-    "OneNote/Università/Aspetti etici/ETH-1.md",
-    "LEG-1.md",
-    "OneNote/Università/Aspetti etici/LEG-1.md",
-    "LEG-2.md",
-    "OneNote/Università/Aspetti etici/LEG-2.md",
-    "ECO-2.md",
-    "OneNote/Università/Aspetti etici/ECO-2.md",
-    "GLI ALGORITMI.md",
     "OneNote/Università/Aspetti etici",
-    "OneNote/Università/Algoritmi e strutture dati/GLI ALGORITMI.md",
-    "ES.md",
-    "OneNote/Università/Algoritmi e strutture dati/ES.md",
-    "LAB.md",
-    "OneNote/Università/Algoritmi e strutture dati/LAB.md",
-    "ESAME 2022218.md",
-    "OneNote/Università/Algoritmi e strutture dati/ESAME 2022218.md",
     "OneNote/Università/Algoritmi e strutture dati",
     "OneNote/Università",
     "OneNote",

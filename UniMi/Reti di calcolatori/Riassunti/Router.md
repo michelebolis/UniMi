@@ -10,4 +10,6 @@ SE una delle code/buffer è pieno, butto via il contenuto. Uno dei problemi dei 
 Si decise quindi di ==frammentare il contenuto in dimensioni massime fisse== creando #pacchetti in modo da avere una gestione del traffico semplificata. 
 Questa frammentazione deve avvenire lato del mittente, aggiungendo un #header o intestazione con delle informazioni necessarie per il funzionamento della rete, quali l indirizzo. 
 
-Man mano che il pacchetto viene processato dai router  aumenta di dimensione, diminuendo quando arriva al destinatario (fragmentation-assembly-deassembly)
+Man mano che il pacchetto viene processato dai router, aumenta di dimensione, diminuendo quando arriva al destinatario (fragmentation-assembly-deassembly)
+
+[[Comunicazione tra due nodi]]
