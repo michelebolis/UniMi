@@ -1,25 +1,27 @@
 {
 	"nodes":[
-		{"id":"93bc7e8c05e8e7c9","type":"group","x":220,"y":-680,"width":3860,"height":3640,"label":"OCaml"},
-		{"id":"90a70fae5d31174b","type":"file","file":"Linguaggi di programmazione/Riassunti/Programmazione funzionale.md","x":-900,"y":-420,"width":980,"height":940},
-		{"id":"d06b3011641ea840","type":"file","file":"Linguaggi di programmazione/Riassunti/OCaml/Ricorsione.md","x":1120,"y":290,"width":940,"height":620},
-		{"id":"e403335f02064911","type":"file","file":"Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Datatypes.md","x":280,"y":720,"width":680,"height":920},
-		{"id":"84af42148e2feed9","type":"file","file":"Linguaggi di programmazione/Riassunti/OCaml/OCaml.md","x":240,"y":-250,"width":760,"height":760},
-		{"id":"7577c96a1763e1c1","type":"file","file":"Linguaggi di programmazione/Riassunti/OCaml/Composizione di funzioni.md","x":1120,"y":-640,"width":640,"height":300},
-		{"id":"0585123c9a0f7076","type":"file","file":"Linguaggi di programmazione/Riassunti/OCaml/Pattern matching.md","x":1120,"y":-280,"width":640,"height":480},
-		{"id":"380e235801797767","type":"file","file":"Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Collezioni/Collezioni.md","x":1120,"y":1360,"width":217,"height":50},
-		{"id":"3b26d21723603c02","type":"file","file":"Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Collezioni/Liste.md","x":1480,"y":985,"width":800,"height":700},
-		{"id":"c11bdee0b51c48c3","type":"file","file":"Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Collezioni/Record.md","x":1480,"y":1765,"width":640,"height":260},
-		{"id":"01568da233364663","type":"file","file":"Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Collezioni/Array.md","x":2420,"y":985,"width":660,"height":375},
-		{"id":"1663df6455f33027","type":"file","file":"Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Collezioni/Variants.md","x":1720,"y":2185,"width":680,"height":680},
-		{"id":"83b6911add2eab38","type":"file","file":"Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Collezioni/Tuple.md","x":2420,"y":1460,"width":800,"height":720},
-		{"id":"9045cdbd4488b16a","x":960,"y":2185,"width":720,"height":255,"type":"file","file":"Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Collezioni/Aliasing.md"}
+		{"id":"93bc7e8c05e8e7c9","type":"group","x":-320,"y":-720,"width":4740,"height":3640,"label":"OCaml"},
+		{"id":"d06b3011641ea840","type":"file","file":"Linguaggi di programmazione/Riassunti/OCaml/Ricorsione.md","x":1460,"y":250,"width":940,"height":620},
+		{"id":"380e235801797767","type":"file","file":"Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Collezioni/Collezioni.md","x":1460,"y":1320,"width":217,"height":50},
+		{"id":"3b26d21723603c02","type":"file","file":"Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Collezioni/Liste.md","x":1820,"y":945,"width":800,"height":700},
+		{"id":"01568da233364663","type":"file","file":"Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Collezioni/Array.md","x":2760,"y":805,"width":660,"height":375},
+		{"id":"83b6911add2eab38","type":"file","file":"Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Collezioni/Tuple.md","x":2760,"y":1280,"width":800,"height":720},
+		{"id":"84af42148e2feed9","type":"file","file":"Linguaggi di programmazione/Riassunti/OCaml/OCaml.md","x":580,"y":-290,"width":760,"height":760},
+		{"id":"0585123c9a0f7076","type":"file","file":"Linguaggi di programmazione/Riassunti/OCaml/Pattern matching.md","x":1569,"y":-290,"width":640,"height":480},
+		{"id":"7577c96a1763e1c1","type":"file","file":"Linguaggi di programmazione/Riassunti/OCaml/Composizione di funzioni.md","x":1569,"y":-680,"width":640,"height":300},
+		{"id":"89466f3c8310881f","type":"file","file":"Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Polimorfismo.md","x":729,"y":1645,"width":840,"height":1075},
+		{"id":"9045cdbd4488b16a","type":"file","file":"Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Collezioni/Aliasing.md","x":1680,"y":2183,"width":720,"height":255},
+		{"id":"c11bdee0b51c48c3","type":"file","file":"Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Collezioni/Record.md","x":1930,"y":1744,"width":640,"height":275},
+		{"id":"1663df6455f33027","type":"file","file":"Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Collezioni/Variants.md","x":2460,"y":2183,"width":680,"height":680},
+		{"id":"90a70fae5d31174b","type":"file","file":"Linguaggi di programmazione/Riassunti/Programmazione funzionale.md","x":-1440,"y":-380,"width":980,"height":940},
+		{"id":"dc8ebd4b64e2b0a2","x":-240,"y":680,"width":760,"height":2195,"type":"file","file":"Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Modulo.md"},
+		{"id":"e403335f02064911","type":"file","file":"Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Datatypes.md","x":640,"y":680,"width":680,"height":860}
 	],
 	"edges":[
 		{"id":"162af45b546ad90b","fromNode":"90a70fae5d31174b","fromSide":"right","toNode":"84af42148e2feed9","toSide":"left"},
 		{"id":"2384d60da4f8354e","fromNode":"84af42148e2feed9","fromSide":"right","toNode":"7577c96a1763e1c1","toSide":"left"},
 		{"id":"aa424802bd7da970","fromNode":"84af42148e2feed9","fromSide":"right","toNode":"0585123c9a0f7076","toSide":"left"},
-		{"id":"62bdbd5075b10cc5","fromNode":"84af42148e2feed9","fromSide":"bottom","toNode":"d06b3011641ea840","toSide":"left"},
+		{"id":"62bdbd5075b10cc5","fromNode":"84af42148e2feed9","fromSide":"right","toNode":"d06b3011641ea840","toSide":"left"},
 		{"id":"a4eae5409e0d0d92","fromNode":"84af42148e2feed9","fromSide":"bottom","toNode":"e403335f02064911","toSide":"top"},
 		{"id":"39115bcbfb625009","fromNode":"e403335f02064911","fromSide":"right","toNode":"380e235801797767","toSide":"left"},
 		{"id":"6c786fdec4f946a0","fromNode":"380e235801797767","fromSide":"right","toNode":"3b26d21723603c02","toSide":"left"},
@@ -27,6 +29,8 @@
 		{"id":"ef71eba45975633a","fromNode":"380e235801797767","fromSide":"right","toNode":"c11bdee0b51c48c3","toSide":"left"},
 		{"id":"6fe45177412307bf","fromNode":"3b26d21723603c02","fromSide":"right","toNode":"83b6911add2eab38","toSide":"left"},
 		{"id":"cc3664b7c207d8c0","fromNode":"c11bdee0b51c48c3","fromSide":"bottom","toNode":"1663df6455f33027","toSide":"top"},
-		{"id":"fbf2cbfa82f65892","fromNode":"c11bdee0b51c48c3","fromSide":"bottom","toNode":"9045cdbd4488b16a","toSide":"top"}
+		{"id":"fbf2cbfa82f65892","fromNode":"c11bdee0b51c48c3","fromSide":"bottom","toNode":"9045cdbd4488b16a","toSide":"top"},
+		{"id":"74f7bb71c4e9f5c6","fromNode":"e403335f02064911","fromSide":"bottom","toNode":"89466f3c8310881f","toSide":"top"},
+		{"id":"ea09048eca39527e","fromNode":"e403335f02064911","fromSide":"left","toNode":"dc8ebd4b64e2b0a2","toSide":"right"}
 	]
 }

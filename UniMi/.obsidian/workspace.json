@@ -16,8 +16,24 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "cc80f6913456261b",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+                "viewState": {
+                  "x": 1069.5729360044843,
+                  "y": 121.99858494114687,
+                  "zoom": -2.0419604503393596
+                }
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Riassunti/Cavi fisici.md",
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Riassunti/Cavi fisici.md",
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reti di calcolatori/Riassunti/Cavi fisici.md"
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas"
               }
             }
           },
@@ -148,8 +164,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -165,6 +180,13 @@
   },
   "active": "47136b92c595cdff",
   "lastOpenFiles": [
+    "Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Modulo.md",
+    "Linguaggi di programmazione/Appunti.md",
+    "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+    "Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Polimorfismo.md",
+    "Linguaggi di programmazione/Riassunti/OCaml/Slide/04. polymorphism in ml.4.pdf",
+    "Linguaggi di programmazione/Riassunti/OCaml/Slide/Index slide.md",
+    "Reti di calcolatori/Riassunti/Cavi fisici.md",
     "Reti di calcolatori/Riassunti/img",
     "Reti di calcolatori/Libro/CAP3.pdf",
     "Reti di calcolatori/Libro/CAP1.pdf",
@@ -194,14 +216,9 @@
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Processo di produzione del SW.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Progettazione e implementazione.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione",
-    "Ingegneria del software/Riassunti/Macroargomenti.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Processi di gestione del SW.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Qualità del processo.md",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Metodologie agili/Elenco metodologie agili.md",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Metodologie agili/eXP/eXP - Tecniche",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Metodologie agili/eXP",
-    "Ingegneria del software/Slide/IS2023-L05.pdf",
     "Sistemi embedded/Sistemi embedded.canvas",
     "LAB.md/Exported image 20231013111609-3.png",
     "LAB.md/Exported image 20231013111609-2.png",
@@ -212,8 +229,6 @@
     "LAB.md/Exported image 20231013111608-4.png",
     "ESAME 2022218.md/Exported image 20231013111609-3.png",
     "ESAME 2022218.md/Exported image 20231013111609-2.png",
-    "OneNote/Università/Basi di dati",
-    "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Reti di calcolatori/Reti di calcolatori.canvas"
   ]
 }

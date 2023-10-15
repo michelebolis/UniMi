@@ -33,3 +33,5 @@ Bytes.set b 0 'W'; Bytes.set b 7 'C';
  ```
 
 [[Collezioni]]
+[[Modulo]]
+[[Polimorfismo]]
