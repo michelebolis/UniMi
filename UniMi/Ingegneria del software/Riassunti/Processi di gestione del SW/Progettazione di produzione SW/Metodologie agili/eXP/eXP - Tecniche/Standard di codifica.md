@@ -1,0 +1,1 @@
+Enfatizza la comunicazione attraverso il codice in particolare l'aiuta il refactoring, la programmazione a coppie e la proprietà collettiva 

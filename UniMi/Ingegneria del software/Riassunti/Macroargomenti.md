@@ -1,4 +1,4 @@
 - [[Processi di gestione del SW]]
-- [[Processo di produzione del SW]]
+- [[Progettazione e implementazione]]
 - [[Verifica e convalida]]
 - [[Specifiche del SW]]

@@ -504,7 +504,7 @@ Core and Feeding of FOSS
 Preso un dominio applicativo, analizziamo le "ere" del SW
 1. Idea: qualcuno ha un'idea e la fa funzionare
 2. Espansione e innovazione: il mondo se ne accorge e la tecnologia inizia a espandersi
-3. Consolid amento: ... Altri progetti sono assorbiti o falliscono.
+3. Consolidamento: solo alcuni progetti hanno successo mentre altri sono assorbiti o falliscono.
 4. Maturità: il mercato si riduce in un insieme di prodotti. L'innovazione rallenta in una pace moderata. E' difficile o impossibile per i nuovi competitor entrare nel mercato
 5. FOSS Domination 
 6. FOSS era (utopico): omologazione 
@@ -530,8 +530,8 @@ Vecchie sfide che si amplificano
 	- F/LOSS: continuamente e senza coordinamento a priori
 
 Nuove sfide:
-- Il team si sfanda, come comunicare, tenersi uniti, coordinarsi, ottenere collaboratori...
-- Nascono nuovi strumenti di supporto:
+- Per evitare che il team si sfaldi, dobbiamo pensare a come comunicare, tenersi uniti, coordinarsi, ottenere collaboratori...
+- Nascono nuovi strumenti di supporto per:
 	- Comunicazione
 		- Internet
 		- Forum per mantenere la community unita e rispondere ai dubbi delle new entry
@@ -544,41 +544,42 @@ Nuove sfide:
 SCM Source Code Management 
 Scenari possibili:
 - Sviluppatore che sta facendo un prodotto open-source da solo. Vuole distribuire il codice binario, e gli viene segnalato un bug di sicurezza in una versione precedente. E' necessario essere in grado di ritrovare qualsiasi versione precedente in qualsiasi momento dello sviluppo. 
-- Necessità di condivisione di lavori con altri e gestirne l accesso contemporaneo che potrebbe causare dei conflitti
+- Necessità di condivisione di lavori con altri e gestirne l'accesso contemporaneo che potrebbe causare dei conflitti
 - Necessità della tracciabilità dell'autore del codice
 
-S Configuration M
-Pratiche che hanno l obiettivo di rendere sistematio il processo di sviluppo tenendo traccia dei cambiamenti in modo che il prodotto sia in ogni istante in uno stato ben definito
+SW Configuration Management
+Sono pratiche che hanno l'obiettivo di rendere sistematico il processo di sviluppo tenendo traccia dei cambiamenti in modo tale che il prodotto sia in ogni istante in uno stato ben definito
 
-Gli oggetti di cui si controlla l evoluzione sono detti configuration item o artifact
+Gli oggetti di cui si controlla l'evoluzione sono detti configuration item o artifact
 Inizialmente si versionavano file 
 A volte fornisce supporto per la generazione del prodotto a partire da una determinata configurazione 
 Non si salvavano tutto il file ma solo il diff rispetto al precedente
 
-Le configurazioni sono l insieme delle versioni dei vari file che convergono in una configurazione in un dato momento
+Le configurazioni sono l'insieme delle versioni dei vari file che convergono in una configurazione in un dato momento
 
 Problemi:
-- Gli aggiornamenti se falliscono solo nell update di alcuni file, ho un inconsistenza non c è un concetto di transazione
+- Gli aggiornamenti se falliscono solo nell'update di alcuni file, ho un inconsistenza: non c'è infatti un concetto di transazione
 - Il renaming del file causa la perdita della storia del file 
 
 Il versioning viene oggi fatto su directory e sotto-directory
 
 Gli SCM sono per lo piu indipendenti da linguaggi di programmazione e applicazioni lavorando su file, preferibilmente su righe di testo
-...
-
-Passaggio da centralizzato a distribuito è avvenuto per 
+Evoluzione
+- anni 80: strumenti locali
+- anni 90: strumenti client-server centralizzati
+- anni 2000: strumenti distribuiti peer-to-peer
 
 Qualunque sistema si usi, occorre prendere decisioni importanti che influenzano la replicabilità della produzione
 - Si traccia l'evoluzione anche di componenti esterni dal nostro controllo? (es librerie, compilatori)
 - Si archiviano i file che costituiscono e costruiscono il prodotto?
 Solitamente NO in quanto troppo costo e poco pratico, perdendo la perfetta replicabilità
 
-Meccanismo base
+Meccanismo base: ogni cambiamento è regolato da
 - check-out: dichiara la volontà di lavorare partendo da una particolare revisione di un artifact
 - check-in: dichiara la volontà di registrarne una nuova (change-set)
 Queste operazioni vengono attivate rispetto a un repository, producendo spostamenti tra il repository e il mio workspace
 
-Il repository mantiene informazioni quali date, tag, versioni, diramazioni, autore...
+Il repository mantiene informazioni quali date, tag, versioni, diramazioni/branches, autore...
 La repository puo salvare solo le differenze tra una versione e l'altra
 Puo essere centralizzata o distribuita (su qualunque pc c è sia la repo che il workspace. NON vuol dire che tutti hanno la stesso repo)
 
@@ -588,9 +589,16 @@ Quando il repository è condiviso da un gruppo di lavoro, nasce il problema di g
 - Modello ottimistico CVS: il sistema si disinteressa del problema e fornisce supporto per le attività di merge di change-set paralleli potenzialmente conflittuali
 	E' possibile regolarlo parzialmente tramite rami paralleli di sviluppo, branch
 
-SCM distribuit Vantaggi
+SCM distribuito
+Ogni peer ha una repository e non c'è sincronizzazione automatica 
+
+Vantaggi
 - lavoro offline
 - velocità
 - supporta diversi modi di lavorare 
-	- ...
+	- simil centralizzato con una repository di riferimento
+	- due peer che collaborano direttamente
+	- gerarchico a più livelli
+
+
 

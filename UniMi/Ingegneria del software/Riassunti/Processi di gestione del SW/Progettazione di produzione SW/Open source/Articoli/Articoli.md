@@ -1,0 +1,4 @@
+- [[The Cathedral and the Bazaar]]
+- [[Care and Feeding of FOSS]]
+- [[The Emerging Economic Paradigm Of Open Source]]
+- [[An empirical study of open-source and closed-source software products]]

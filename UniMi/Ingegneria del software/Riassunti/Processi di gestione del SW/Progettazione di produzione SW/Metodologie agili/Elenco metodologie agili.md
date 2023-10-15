@@ -1,0 +1,5 @@
+- [[Lean SW]]
+- [[Kanban]]
+- [[Scrum]]
+- [[Crystal]]
+- [[eXP - eXtreme Programming]]

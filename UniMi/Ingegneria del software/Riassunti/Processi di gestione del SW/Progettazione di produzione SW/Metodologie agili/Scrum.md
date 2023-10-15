@@ -1,0 +1,2 @@
+L'intero team si concentra su un obiettivo comune chiaro in un breve tempo, bloccando i requisiti del cliente.
+Si arriva ad una win-win condition: io lavoro alle richieste mentre il cliente intanto pensa ad altri requisiti

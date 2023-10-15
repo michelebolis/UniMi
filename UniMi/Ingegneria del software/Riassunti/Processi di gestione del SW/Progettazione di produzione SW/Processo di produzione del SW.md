@@ -18,3 +18,5 @@ Tuttavia si è dimostrato essere inefficace in gruppi di lavoro complessi
 - [[Fasi del ciclo di vita del SW]]
 - [[Modelli di ciclo di vita del SW]]
 - [[Metodologie agili]]
+- [[Open source]]
+- [[SCM - Source Configuration Management]]

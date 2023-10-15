@@ -1,0 +1,13 @@
+- Sottovalutazione up-front: cioè di tutto ciò che viene fatto prima di lavorare 
+- Sopravvalutazione User stories
+- Mancata evidenziazione delle dipendenze tra user stories: sull'ordine e la complessita di sviluppo
+- TDD puo portare a visione troppa ridotta
+- Cross functional teams: difficile trovare dei team general purpose 
+- Quando non si può usare XP
+	- in ambienti che proibiscono l'uso anche solo di uno degli approcci citati, impossibilità causata da
+		- Barriere tecnologiche che impediscono di testare ed avere un feedback in breve tempo, non ottenendo così il feedback rapido
+		- Barriere di tipo manageriali o burocratiche 
+			- team troppo numeroso o necessità di documentazione di certificazioni basati su di essa 
+			- Troppi stakeholders, quindi non riesco ad avere un cliente sul posto rappresentativo
+		- Barriere di tipo fisico e logistico
+			- Sistemazione degli spazi di lavoro che non permettono flessibilità nella formazione delle coppie di lavoro

@@ -15,3 +15,4 @@ La rete è quindi un insieme interconnesso di concentratori di traffico, [[Route
 Si parla di **rete a commutazione di pacchetti**
 
 [[Principi di realizzazione]]
+[[Tipo di comunicazione]]

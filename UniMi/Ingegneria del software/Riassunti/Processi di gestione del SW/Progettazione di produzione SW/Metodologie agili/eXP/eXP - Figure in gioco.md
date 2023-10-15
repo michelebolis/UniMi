@@ -1,0 +1,20 @@
+- Manager e/o cliente: 
+	- responsabilità di decidere
+		- la portata del progetti
+		- la priorita (business value) tra le funzionalità
+		- date dei rilasci
+	 - diritto di
+		 - sapere cosa puo essere fatto con quali tempi e quali costi
+		 - vedere progressi nel sistema provati dal superamento di test da lui definiti
+		 - cambiare idea, sostituire funzionalità e cambiare priorita
+- Lo sviluppatore 
+	- ha la responsabilità di decidere
+		- Le stime dei tempi per le singole funzionalità
+		- conseguenze di scelte tecnologiche e segnalare i possibili problemi tecnici
+		- pianificazione dettagliata (ogni 2-3 settimane decidono cosa fare ogni giorno)
+	- ha diritto di
+		- sapere cosa è necessario fare attraverso dei requisiti chiari attraverso scenari d uso, ognuno con la propria priorita
+		- cambiare stime dei tempi secondo la propria esperienza
+		- identificare e indicare le funzionalità pericolose
+		- produrre SW di qualità 
+- Ad ogni iterazione viene definito un tracker, di controllo e stimolo

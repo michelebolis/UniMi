@@ -1,0 +1,16 @@
+Raggruppiamo per fasi
+- Requirements
+	- Gli utenti fanno parte del team di sviluppo
+	- Consegne incrementali e pianificazioni continue
+- Code
+	- Programmazione a coppie
+	- Proprieta collettiva 
+	- Integrazioni continue 
+	- Standard di codifica 
+- Design
+	- Una metafora come visione unificante di un progetto
+	- Refactoring
+	- Presumere la semplicità
+- Test
+	- testing di unita continuo
+	- test funzionale scritto dagli utenti 

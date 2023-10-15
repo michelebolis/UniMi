@@ -1,0 +1,2 @@
+Comunicazione osmotica (spesso assunto nei metodi agili): il team è un concetto reale, un'entita con una conoscenza, quella del team; il codice è del team, non del singolo che lo ha scritto.
+MA ciò può funzionare su un team piccolo (potrei dividere il mio team in team piu piccolo applicando metodi agili)
