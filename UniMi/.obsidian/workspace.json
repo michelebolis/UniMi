@@ -18,19 +18,34 @@
             }
           },
           {
-            "id": "48a8278db6d60ae7",
+            "id": "2c3d6d292a6468fb",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "viewState": {
+                  "x": 3224.161005079097,
+                  "y": 1149.982968311013,
+                  "zoom": -1.2605927494819873
+                }
+              }
+            }
+          },
+          {
+            "id": "b54ccaf7d3009cfb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
+                "file": "Reti di calcolatori/Appunti.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -59,7 +74,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "CSMA",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -76,7 +91,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -96,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
+                "file": "Reti di calcolatori/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
+                "file": "Reti di calcolatori/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md"
+                "file": "Reti di calcolatori/Appunti.md"
               }
             }
           },
@@ -175,12 +191,12 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "48a8278db6d60ae7",
+  "active": "b54ccaf7d3009cfb",
   "lastOpenFiles": [
-    "Sistemi embedded/Sistemi embedded.canvas",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-    "Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Modulo.md",
     "Linguaggi di programmazione/Appunti.md",
+    "Sistemi embedded/Sistemi embedded.canvas",
+    "Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Modulo.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Polimorfismo.md",
     "Linguaggi di programmazione/Riassunti/OCaml/Slide/04. polymorphism in ml.4.pdf",
