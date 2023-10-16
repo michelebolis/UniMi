@@ -18,16 +18,16 @@
             }
           },
           {
-            "id": "cc80f6913456261b",
+            "id": "f914755e42304a10",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+                "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "viewState": {
-                  "x": 1069.5729360044843,
-                  "y": 121.99858494114687,
-                  "zoom": -2.0419604503393596
+                  "x": 987.98774878102,
+                  "y": -3622.11924237477,
+                  "zoom": -0.22005053726141527
                 }
               }
             }
@@ -79,7 +79,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -99,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+                "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+                "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas"
+                "file": "Sistemi embedded/Sistemi embedded.canvas"
               }
             }
           },
@@ -178,8 +179,9 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "47136b92c595cdff",
+  "active": "f914755e42304a10",
   "lastOpenFiles": [
+    "Sistemi embedded/Sistemi embedded.canvas",
     "Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Modulo.md",
     "Linguaggi di programmazione/Appunti.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
@@ -214,12 +216,10 @@
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source/Open source.md",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source/Articoli",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Processo di produzione del SW.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Progettazione e implementazione.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Metodologie agili/eXP/eXP - Tecniche",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Metodologie agili/eXP",
-    "Sistemi embedded/Sistemi embedded.canvas",
     "LAB.md/Exported image 20231013111609-3.png",
     "LAB.md/Exported image 20231013111609-2.png",
     "LAB.md/Exported image 20231013111609-1.png",
