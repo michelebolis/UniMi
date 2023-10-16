@@ -600,5 +600,16 @@ Vantaggi
 	- due peer che collaborano direttamente
 	- gerarchico a più livelli
 
+---
 
+SE voglio ripensare il commit, git commit --amend 
+
+git fetch per prendere dal repo remoto il diff rispetto al locale
+- o faccio git merge
+- o faccio git rebase 
+
+git salva qualsiasi cosa aggiunge dei metadati, l hash con il tipo, lunghezza e contenuto del file
+git checkout nomeBranch: sposta la HEAD, copia contenuto in index e nella Working directory pero magari parzialmente
+
+git merge other: unisce cio che è puntato da head, cio che è puntato da other e il primo antenato comune
 

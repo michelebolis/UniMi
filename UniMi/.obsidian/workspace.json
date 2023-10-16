@@ -21,31 +21,15 @@
             "id": "2c3d6d292a6468fb",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-                "viewState": {
-                  "x": 3224.161005079097,
-                  "y": 1149.982968311013,
-                  "zoom": -1.2605927494819873
-                }
-              }
-            }
-          },
-          {
-            "id": "b54ccaf7d3009cfb",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
+                "file": "Ingegneria del software/Appunti.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -74,7 +58,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "CSMA",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -91,8 +75,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -112,7 +95,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +111,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,9 +132,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Reti di calcolatori/Appunti.md"
-              }
+              "state": {}
             }
           },
           {
@@ -191,8 +170,10 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "b54ccaf7d3009cfb",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
+    "Ingegneria del software/Appunti.md",
+    "Reti di calcolatori/Appunti.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Linguaggi di programmazione/Appunti.md",
     "Sistemi embedded/Sistemi embedded.canvas",
@@ -206,7 +187,6 @@
     "Reti di calcolatori/Libro/CAP3.pdf",
     "Reti di calcolatori/Libro/CAP1.pdf",
     "Ingegneria del software/Slide/Index slide.md",
-    "Ingegneria del software/Appunti.md",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/SCM - Source Configuration Management.md",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Meccanismo di base.md",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/SCM distribuito.md",
