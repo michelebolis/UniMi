@@ -613,3 +613,11 @@ git checkout nomeBranch: sposta la HEAD, copia contenuto in index e nella Workin
 
 git merge other: unisce cio che è puntato da head, cio che è puntato da other e il primo antenato comune
 
+
+GitFlow \[AVH]
+Differenzia i brach in tipologie introducendo nuove operazioni guidate 
+
+branch
+- master/main: versione consegnata/deployata all'utente
+- develop: ramo di integrazione
+
