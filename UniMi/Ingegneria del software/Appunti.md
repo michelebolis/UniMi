@@ -621,3 +621,6 @@ branch
 - master/main: versione consegnata/deployata all'utente
 - develop: ramo di integrazione
 
+versioning solo del codice
+distribuzione del compilato per pacchettizzazione 
+
