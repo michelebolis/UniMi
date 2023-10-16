@@ -18,17 +18,14 @@
             }
           },
           {
-            "id": "f914755e42304a10",
+            "id": "48a8278db6d60ae7",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas",
-                "viewState": {
-                  "x": -1645.0766930456825,
-                  "y": -880.1705696037869,
-                  "zoom": -0.636717203928082
-                }
+                "file": "Linguaggi di programmazione/Appunti.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -79,8 +76,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -100,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas",
+                "file": "Linguaggi di programmazione/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas",
+                "file": "Linguaggi di programmazione/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas"
+                "file": "Linguaggi di programmazione/Appunti.md"
               }
             }
           },
@@ -179,10 +175,10 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "f914755e42304a10",
+  "active": "48a8278db6d60ae7",
   "lastOpenFiles": [
-    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Sistemi embedded/Sistemi embedded.canvas",
+    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Modulo.md",
     "Linguaggi di programmazione/Appunti.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",

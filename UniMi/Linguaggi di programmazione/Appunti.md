@@ -412,16 +412,35 @@ let rec map f l = match l with
 argomenti di default 
 ?nomeArgomento x
 
+---
 
+Currying è una tecnica per trasformare una funzione con argomenti multipli in una catena di funzioni ognuna con un singolo argomento
 
+Applicazione parziale porta ottimizzazione
+Si basa sulla posizione nella definizione
 
+OCaml si usa named parameters 
 
+Funzioni tipiche della programmazione funzionale
+- map: per applicare una funzione a tutti gli elementi
+- filter: filtrare fuori gli elementi secondo un predicato
+- reduce: aggrega secondo un operazione. In OCaml si chiama folding, c è right_fold e left_fold 
 
+Come usare argomenti opzionali: struttura generale per n argomenti
+- arg x = func y rest -> rest (op x y)
+- stop x = x
+- f g = g init
+let op = fun x y -> x+y
+let init = 0
 
+f (arg 1) stop;;
+rest (+ 1 0)
+stop (+ 1 0)
 
+f (arg 1) (arg 2) stop = 3
 
-
-
+per farlo piu generale
+let op = fun x y -> y @ \[x]
 
 
 
