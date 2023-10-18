@@ -577,3 +577,50 @@ ad ogni clock in ricezione leggo il canale di trasmissione
 per estrarre il clock in ricezione: il livello fisico aggiunge 7+1 byte di preambolo nel messaggio, in modo che riesca ad estrarre il clock e fare diventare il proprio come quello estratto. In particolare 10101010101010 e poi 011
 codificando manchester la sequenza di 1010... ottengo la stessa ma shiftata di mezzo colpo di clock, dando cosi la possibilità al ricevente, in base ai fronti della sequenza, di sincronizzare il proprio clock
 
+
+Nella realta abbiamo diversi hub (o hub repeater) che concentra stazioni 
+hub è comodo perche con un cavo punto punto (solitamente doppino telefonico) collego ogni stazione all hub. Il dominio di collissione in questo caso avviene all interno dell hub o tra gli hub
+
+l'hub è un dispositivo di livello fisico, quindi si comporta come totalmente broadcast
+il controllo di accesso è sempre nella singole stazioni, l hub semplicemente trasmette a tutti i transiver cio che riceve 
+
+Oggi la gran parte delle reti Ethernet è fatta con questa topologia
+
+il protocollo specifica anche il clock
+
+
+MA tutto quello che abbiamo fatto finora è per una rete a 10Mbit, se vado a 1Gbps?
+Cambia la dimensione minima del pacchetto perche cambia $T_x$, in particolare a 512 ns MA $T_p$ non è cambiato e quindi il protocollo non rileva le collissioni
+Nello standard sarà necessario cambiare la dimensione minima del frame, in particolare sarebbero necessari 50k bit, diminuendo U moltissimo (es segnale di ACK). 
+
+Un altra soluzione è quella di cambiare il mezzo
+La soluzione migliore è diminuire L, la lunghezza totale del canale
+
+Diminuendola da 2.5km a 25m (da nodo ad hub), quindi 25 andata all hub, 25 al nodo, 25 di ritorno da nodo destinazione e altri 25 per tornare al nodo destinazione
+$2*T_p$ = 10^2 / 2\*10^8 = 0.5 microsecondi
+
+Usiamo un compromesso
+- 200m di L massimo -> 2tp su 800m -> 2tp = 4 microsecondi
+- taglie minime di frame a 512Byte. Ho un padding duplice: uno che lo fa fino a 64B ma poi il mio livello fisico aggiunge 512-64 Byte 
+
+Inefficienza: 
+
+
+Soluzione alternativa: ha forzato la transizione tra bridge a switch
+
+
+Tornando sul bridge
+Bridge separa i domini di collissione
+MAC solo presente nei nodi e nel bridge tra gli hub
+quindi a bordo del bridge ci devono essere tante schede quanti domini di collissioni voglio avere 
+
+il bridge ha una tabella di forwarding che contiene un elenco di, data una stazione, in che dominio si trovano, quindi in che porta dovra usare
+ATT il bridge non si deve comportare come un hub, ma deve fare store and forward 
+SE arriva un frame in cui mittente e destinatario sono nella stessa porta, il bridge butta quanto ricevuto
+
+Problema della gestione della tabella: fa learning e se non sa dove sia, fa broadcast MA senza rimandare sulla linea in cui ha ricevuto (tecnica di fladding)
+velocita di learning data dal traffico
+
+Casi limite: aggiunta di un nuovo nodo o cambio di hub a cui era collegato il nodo. Nell'ultimo caso il bridge non lo propaga perche ha una tabella di forwarding sbagliata. Viene quindi introdotto un TTL Time To Leave ricominciando il learning 
+
+
