@@ -18,6 +18,16 @@
             }
           },
           {
+            "id": "f0bf860c22b63464",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.16"
+              }
+            }
+          },
+          {
             "id": "2c3d6d292a6468fb",
             "type": "leaf",
             "state": {
@@ -29,7 +39,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -170,7 +181,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c1ce2ce19829fc50",
+  "active": "f0bf860c22b63464",
   "lastOpenFiles": [
     "Ingegneria del software/Appunti.md",
     "Reti di calcolatori/Appunti.md",
