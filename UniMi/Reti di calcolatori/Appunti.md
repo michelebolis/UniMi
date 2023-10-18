@@ -528,3 +528,52 @@ Requisito: che il bridge diventa egli stesso una stazione, quindi deve avere una
 
 ---
 
+sempre livello 2 topologie broadcast
+il protocollo ci dice che il cavo puo essere max 2.5 km, ci possano essere al massimo 4 repeater 
+c è uno slot di contesa $T_x$ >= $2*T_p$
+Per il protocollo CSMA-CD la collisione è un evento possibile
+
+ogni stazione ha un contatore per generare il numero casuale, in particolare per l indice i 
+
+Quanto BEB incide sulle prestazioni: l algoritmo dilata l accesso NON garantendo la fairness
+è pero un algoritmo adattivo al traffico percepito, in quanto dipende daln umero di collissioni i
+OSS ogni stazione NON sa quante stazioni sono in contesa 
+
+Osservando U = tx / tx+2tp * 1/A
+1/A = Numero medio di stazioni che deve aspettare prima di accedere
+A= k\*p \* (1-p)^kp
+k numero di stazioni
+p probabilita che quella stazione possa accedere al canale 
+
+come min devo avere 64byte, e con DA, SA, L e CRC ho solo 18 byte
+Ho quindi un campo padding per arrivare ai 64byte: parte da 0 a 46 byte
+
+Pero come min il livello 3 mette un header di 20byte, quindi avremmo gia 38byte
+
+L ci dice quanto è lungo il payload, indicando quindi anche di qunato è il PAD
+Payload+PAD deve essere <= 1500 Byte (con rete a 10Mbps)
+
+il livello 2 di Ethernet è composto dal MAC e dal LLC. 
+A livello LLC sono interessato a ipotizzare la comunicazione da sorgente a destinatario
+A livello MAC invece 
+Ogni scheda ethernet ha un indirizzo MAC unico di 48 bit
+
+Anche il livello 1 è composto da due livelli funzionali
+- Livello Convergence: funzionalità di rete quali la trasmissioni dati, enable/disable della trasmissione, CS, collision detection (fisicamente qeuste funzionalita li fa il transiver, ma l'informazione deve essere passata al MAC)
+- Livello physical medium-dependent : dipende fortemente dal mezzo che sto utilizzando
+
+
+Problema: 3 stazioni su un cavo condiviso in contesa
+A invia e B e C ricevono
+B e C ricevono in modo asincrono ma è difficile da realizzare in quanto B e C devono attivare il clock di ricezione, dovendo quindi essere sincronizzato con quello del mittente MA non è dato sapere quando A trasmette
+
+In banda base, SE trasmetto 3 1, il segnale rimane alto
+In Ethernet invece i 3 1, viene garantito una transizione di stato da 1 a 0: codifica di Manchester
+SE ho un 1: transizione da 0 a 1
+SE ho uno 0: transizione da 1 a 0
+La transizione avviene sulla meta del segnale, shiftato
+
+ad ogni clock in ricezione leggo il canale di trasmissione
+per estrarre il clock in ricezione: il livello fisico aggiunge 7+1 byte di preambolo nel messaggio, in modo che riesca ad estrarre il clock e fare diventare il proprio come quello estratto. In particolare 10101010101010 e poi 011
+codificando manchester la sequenza di 1010... ottengo la stessa ma shiftata di mezzo colpo di clock, dando cosi la possibilità al ricevente, in base ai fronti della sequenza, di sincronizzare il proprio clock
+

@@ -624,3 +624,78 @@ branch
 versioning solo del codice
 distribuzione del compilato per pacchettizzazione 
 
+---
+
+per permettere ad altri di fare richieste per il mio progetto open-source, git request-pull start url end
+
+Gli ambienti di hosting hanno cercato soluzioni alternative
+- Fork: risolve un primo problema di autorizzazioni permettendo di mantenere legami tra repo su sito di hosting ma con owner e autorizzazioni diversi
+  Ottengo un'ottimizzazione grazie alla condivisione dello spazio degli oggetti
+- Pull request: permette di gestire interazioni lasche tra sviluppatori mediate dal sito di hosting
+	Problemi
+	- SE il develop avanza, le mie modifiche diventano incompatibili
+- Gerrit: il numero di pull request è troppo elevato quindi non mergio branch ma solo singoli commit parallelizzando questa operazioni dando permessi ad altre persone. Introduco i voti categorizzandoli in ruolo 
+	- Verifier: controlla che il cambiamento funzioni
+	- Approver: ha una conoscenza piu generale del progetto e dei suoi scopi, decidendo se sia coerente. 
+	Pensa git come due repo, uno in cui possono fare fetch e un altro in cui si possa fare push e su cui verranno fatte le revisioni
+
+Dobbiamo minimizzare il processo di review utilizzando il merge automatico
+
+...
+
+Ant: scritto in Java per progetti Java
+Permette non solo compilazione ma test e deploy
+
+...
+
+Gradle 
+usa linguaggi Groovy
+Approccio dichiarativo fortemente basato su convenzioni, build by convention 
+definisce un linguaggio specifico per le dipendenze 
+
+...
+
+per il plugin di java definisce dei sourceSet e dei task con delle dipendenze 
+
+...
+
+bug tracking sempre piu integrato con il versioning
+
+...
+
+Unified Process
+è una metodologia di organizzazione che utilizza UML
+è un processo che si definisce allo stesso 
+- sequenziale: in quanto esistono 4 fasi svolte in sequenza
+- iterativo: ogni fase è svolta in maniera iterativa 
+- incrementale in cui ogni cilo delle 4 fasi porta a una release 
+
+
+Progettazione
+refactoring: 
+Cambiare il design del codice senza cambiarne il funzionamento
+- migliorare un design tenuto inizialmente facile
+- preparare il design per una funzionalita che non si integra bene in quello esisstente
+- Eliminare le debolezza 
+
+Design knowledge
+Questa conoscenza nasce dalla nostra memoria, da documenti di design, da piattaforme di discussione / issue management / version control o da modelli specializzati (UML) (model driven design) o nel codice (difficile rappresentarne le ragioni)
+
+...
+
+OO Object Orientation 
+- Ereditarietà
+- Polimorfismo 
+- Composizione 
+- Ereditarietà
+- Dynamic Pipeling 
+
+Composizione >>>> Ereditarietà
+
+Principi SOLID
+- Single Responsability
+- Open close Principle: aperto ai cambiamento ma chiuso ai cambiamenti alla classe esistente
+- Liskov Substitution Principle: tutto quello che sapeva fare la classe base, deve saperlo fare anche la classe specializzata
+- Interface Segregation
+- Dependency Inversion: le cose astratte non dovrebbero dipendere da cose concrete
+
