@@ -680,3 +680,31 @@ Permetto alle stazioni di generare traffico untagged e appena arriva allo switch
 switch to switch viene chiamato trank, in questo caso passano frame di qualsiasi colore e sara lo switch destinatario a gestirlo
 
 (finendo il livello 2 ho gia fatto 1/5 del programma, RIP)
+es
+10km, 100Mb, U=50%, F=?
+U= tx/tx+2tp
+0.5\*(tx+2tp) = tx
+tx = F/D
+F=tx \* D
+
+0.5 (F/D + 2tp) = F/D
+tp=0.5F/D
+2D tp = F
+F = 2 \* 10^4 \* 10^4/2\*10^8  = 10^8 \* 10^-4 = 5 \* 10^-5
+
+(ES UGUALI A QUELLI SU ARIEL)
+
+
+dal livello 3 in su è dell host
+il livello 1 e 2 riguarda invece la rete 
+
+al livello 3 abbiamo 2 funzioni
+- Addressing: indirizzo numero per indentificarsi. Consente di indirizzare dei dispositivi remoti alla rete
+- Rowting / instradamento: cammino migliore per raggiungere la destinazione
+
+Ci sono delle code di input, delle code di output
+input: unita dati del livello 3: pacchetti
+Processo di forwarding: metta input in output in base a una tabella in cui per ogni destinazione esiste una linea di output. Tabella popolata non solo con le destinazioni della rete ma con tutte quelle di Internet
+Questo è possibile grazie al processo di rowting che raccoglie dati, li processa, e popola le tabelle di rowting. E' necessario che abbia conoscenza della topologia di rete grazie alla quale popola la tabella 
+
+
