@@ -18,21 +18,19 @@
             }
           },
           {
-            "id": "4f8ac01be066d2a8",
+            "id": "0b4ae01b35523b0b",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Sistemi embedded/Sistemi embedded.canvas",
-                "viewState": {
-                  "x": 3897.230606771349,
-                  "y": 70.16106794599995,
-                  "zoom": -0.6367172039280824
-                }
+                "file": "Reti di calcolatori/Appunti.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -98,6 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Reti di calcolatori/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,6 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Reti di calcolatori/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +135,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Reti di calcolatori/Appunti.md"
+              }
             }
           },
           {
@@ -174,7 +176,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c1ce2ce19829fc50",
+  "active": "47136b92c595cdff",
   "lastOpenFiles": [
     "Sistemi embedded/Sistemi embedded.canvas",
     "Reti di calcolatori/Appunti.md",

@@ -623,4 +623,60 @@ velocita di learning data dal traffico
 
 Casi limite: aggiunta di un nuovo nodo o cambio di hub a cui era collegato il nodo. Nell'ultimo caso il bridge non lo propaga perche ha una tabella di forwarding sbagliata. Viene quindi introdotto un TTL Time To Leave ricominciando il learning 
 
+---
 
+ATT ERRORE NEL BEB = 0 - 2^i -1
+
+-1 perche nel caso ci sia una sola collissione
+
+Il concetto di indirizzamento c è a quasi tutti i livello (1, 2, 3, 4) ognuno con un proprio indirizzamento
+- Livello 2: MAC address
+- Livello 3: IP
+- Livello 4 Port address
+
+
+Perche fare come il bridge per il broadcast sarebbe sbagliato? Dato che la scheda con CS e collision detection, non sapra mai se avra colliso
+
+Termine forwarding: processo in grado di trasferire unita dati da una porta di ingresso a una porta d uscita
+Il "forwarding" dal routing invece è che la tabella su cui faccio forwarding non è costruita solo in base alla rete locale, ma dalla conoscenza della topologia di tutta la rete
+
+
+Switch
+Differenza col bridge è che NON c è CSMA/CD ma c è un cavo dedicato dal nodo allo switch, quindi non ci saranno mai collisioni
+Sono quindi grandi accumulatori anche a grande velocita in quanto non ci sono vincoli di distanza
+Porte pero limitate a 32
+Spesso vengono collegati sia ai router che ad altri switch
+
+essendoci compatibilita con le frame posso sostituire in qualsiasi momento un bridge con uno switch
+In realta il CS verra sempre fatto ma non ci saranno mai collissioni
+Viene anche mantenuto la dimensione minima del frame anche se non serve
+
+in realta sto aggiungendo complessita nello switch che dovra gestire molte linea a grandi velocita
+
+Fast Ethernet NON STUDIARE
+
+
+A livello 2 VLAN Virtual LAN
+Aggregazione delle stazioni in gruppi omogenei
+Due stazioni di due gruppi diversi non possono comunicare
+E' uno strumento organizzativo molto utilizzato
+
+per poterla realizzare è necessario modificare il bridge in modo tale che nel processo di learning, impari anche il gruppo della stazione. 
+Inoltre è necessario cambiare le schede di rete delle stazioni in modo che includa anche il colore del gruppo a cui appartiene
+
+Standard IEEE 802.1Q
+Viene usato davvero il colore come discriminante tra i gruppi
+
+il frame del VLAN utilizza il campo gia esistente lunghezza che in realta dal protocollo è previsto essere anche type
+Il campo type per le frame 802.3 è 8100 in esadecimale, caratteristica di essere superipori a 1500
+Altrimenti si sa che si sta lavorando con la VLAN, aggiungendo dopo 2 byte per il colore 
+
+Opinione del Rossi: se cambia volendo una VLAN, dovro aprire il mio dispositivo, cambiare la scheda di rete per tutti i device, rischia di diventare oneroso
+
+Solitamente si prende uno switch non cambiando la scheda delle singole stazioni, lavorando solo sullo switch, taggando le porte a configuration time 
+Permetto alle stazioni di generare traffico untagged e appena arriva allo switch si ha il tag
+
+
+switch to switch viene chiamato trank, in questo caso passano frame di qualsiasi colore e sara lo switch destinatario a gestirlo
+
+(finendo il livello 2 ho gia fatto 1/5 del programma, RIP)
