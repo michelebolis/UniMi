@@ -18,14 +18,17 @@
             }
           },
           {
-            "id": "0b4ae01b35523b0b",
+            "id": "1370851975c04296",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
-                "mode": "source",
-                "source": false
+                "file": "Sistemi embedded/Sistemi embedded.canvas",
+                "viewState": {
+                  "x": 517.1986586432504,
+                  "y": -5322.576531828616,
+                  "zoom": -0.9209677928851021
+                }
               }
             }
           }
@@ -80,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -96,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
+                "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
+                "file": "Sistemi embedded/Sistemi embedded.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md"
+                "file": "Sistemi embedded/Sistemi embedded.canvas"
               }
             }
           },
@@ -156,8 +160,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -176,14 +179,10 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "47136b92c595cdff",
+  "active": "1370851975c04296",
   "lastOpenFiles": [
-    "Sistemi embedded/Sistemi embedded.canvas",
-    "Reti di calcolatori/Appunti.md",
-    "Ingegneria del software/Appunti.md",
-    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-    "Linguaggi di programmazione/Appunti.md",
     "Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Modulo.md",
+    "Linguaggi di programmazione/Appunti.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Polimorfismo.md",
     "Linguaggi di programmazione/Riassunti/OCaml/Slide/04. polymorphism in ml.4.pdf",
@@ -193,6 +192,8 @@
     "Reti di calcolatori/Libro/CAP3.pdf",
     "Reti di calcolatori/Libro/CAP1.pdf",
     "Ingegneria del software/Slide/Index slide.md",
+    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+    "Ingegneria del software/Appunti.md",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/SCM - Source Configuration Management.md",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Meccanismo di base.md",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/SCM distribuito.md",
@@ -213,10 +214,13 @@
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source/Articoli/Articoli.md",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source/Open source.md",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source/Articoli",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Processo di produzione del SW.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Progettazione e implementazione.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Metodologie agili/eXP/eXP - Tecniche",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Metodologie agili/eXP",
+    "Sistemi embedded/Sistemi embedded.canvas",
     "LAB.md/Exported image 20231013111609-3.png",
     "LAB.md/Exported image 20231013111609-2.png",
     "LAB.md/Exported image 20231013111609-1.png",
