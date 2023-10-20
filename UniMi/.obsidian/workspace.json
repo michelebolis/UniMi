@@ -161,8 +161,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -176,7 +175,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "47136b92c595cdff",
+  "active": "0b4ae01b35523b0b",
   "lastOpenFiles": [
     "Sistemi embedded/Sistemi embedded.canvas",
     "Reti di calcolatori/Appunti.md",
