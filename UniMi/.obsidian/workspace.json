@@ -18,14 +18,17 @@
             }
           },
           {
-            "id": "393c61b0815f8c85",
+            "id": "01196a05418e7b08",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Reti di calcolatori/Appunti lab.md",
-                "mode": "source",
-                "source": false
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "viewState": {
+                  "x": -3180,
+                  "y": 3407.5,
+                  "zoom": -3.649543759289976
+                }
               }
             }
           }
@@ -96,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Appunti lab.md",
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Appunti lab.md",
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reti di calcolatori/Appunti lab.md"
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas"
               }
             }
           },
@@ -161,8 +164,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -176,48 +178,48 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "393c61b0815f8c85",
+  "active": "47136b92c595cdff",
   "lastOpenFiles": [
+    "Ingegneria del software/backup canvas/Ingegneria del software (SWENG) v1.png",
+    "Ingegneria del software/backup canvas",
+    "Ingegneria del software/Appunti.md",
+    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+    "Ingegneria del software/SWENG.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Gitflow/Release.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Esigenze Open Source.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Problemi principali.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Debito tecnico.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Hosting centralizzato",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Gitflow",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Gitflow/Gerrit.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Gitflow/Feature branch.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Bug tracking.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Build automation.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Gradle.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Ant.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Makefile.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Make.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Hosting centralizzato/Continuous Integration CI.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Hosting centralizzato/Fork.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Hosting centralizzato/Pull request.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Hosting centralizzato/Hosting centralizzato.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Gitflow/Gitflow - limiti.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Gitflow/GitFlow.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Gitflow/Hotfix.md",
+    "Reti di calcolatori/Appunti.md",
     "Reti di calcolatori/Untitled.md",
     "Reti di calcolatori/Appunti lab.md",
     "Sistemi embedded/Sistemi embedded.canvas",
-    "Reti di calcolatori/Appunti.md",
     "conflict-files-obsidian-git.md",
-    "Ingegneria del software/Appunti.md",
-    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-    "Linguaggi di programmazione/Appunti.md",
-    "Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Modulo.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
-    "Linguaggi di programmazione/Riassunti/OCaml/Datatypes/Polimorfismo.md",
     "Linguaggi di programmazione/Riassunti/OCaml/Slide/04. polymorphism in ml.4.pdf",
-    "Linguaggi di programmazione/Riassunti/OCaml/Slide/Index slide.md",
-    "Reti di calcolatori/Riassunti/Cavi fisici.md",
     "Reti di calcolatori/Riassunti/img",
     "Reti di calcolatori/Libro/CAP3.pdf",
     "Reti di calcolatori/Libro/CAP1.pdf",
-    "Ingegneria del software/Slide/Index slide.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/SCM - Source Configuration Management.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Meccanismo di base.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/SCM distribuito.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Storia.md",
-    "Sistemi embedded/Riassunti/Device/Arduino/Storia.md",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source/Sfaldamento del team.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source/Integrazione del SW.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source/Articoli/Alcune frasi di Raymond.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source/Articoli/Timeline progetto open-source.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source/Sfide.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source/Articoli/An empirical study of open-source and closed-source software products.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source/Articoli/The Emerging Economic Paradigm Of Open Source.md",
     "Ingegneria del software/Riassunti/img/Pasted image 20231015114038.png",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source/Articoli/Care and Feeding of FOSS.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source/Articoli/The Cathedral and the Bazaar.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source/Articoli/Confronto tra modelli.md",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source/Articoli",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Metodologie agili/eXP/eXP - Tecniche",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Metodologie agili/eXP",
     "LAB.md/Exported image 20231013111609-3.png",
     "LAB.md/Exported image 20231013111609-2.png",
     "LAB.md/Exported image 20231013111609-1.png",

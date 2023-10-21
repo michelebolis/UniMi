@@ -614,54 +614,263 @@ git checkout nomeBranch: sposta la HEAD, copia contenuto in index e nella Workin
 git merge other: unisce cio che è puntato da head, cio che è puntato da other e il primo antenato comune
 
 
-GitFlow \[AVH]
-Differenzia i brach in tipologie introducendo nuove operazioni guidate 
+GitFlow 
+GitFlow è una tecnica di organizzazione dei branch e delle repository che prevede la creazione sia di diversi tipi di branch a vita limitata che il loro _merge_ guidato.
 
-branch
-- master/main: versione consegnata/deployata all'utente
-- develop: ramo di integrazione
+I branch e i tipi di branch previsti da GitFlow sono:
+- branch master;
+- branch develop;
+- feature branches;
+- release branches;
+- hotfix branches.
 
-versioning solo del codice
-distribuzione del compilato per pacchettizzazione 
+In GitFlow, ci sono due branch che hanno una durata più lunga rispetto ai branch temporanei utilizzati per lavorare su specifiche funzionalità o correzioni di bug:
+- **`master`**: contiene le versioni stabili del codice sorgente, pronte per essere consegnate o rilasciate al cliente o al pubblico. Queste versioni sono considerate _affidabili_ e _testate_, quindi possono essere utilizzate in produzione;
+- **`develop`**: è il ramo di integrazione in cui vengono integrati i contribuiti di tutti i gruppi; è anche il punto di partenza degli altri tipi di branch.
+
+Al termine di ogni rilascio, il contenuto del branch `develop` viene integrato nel branch `master`, che rappresenta la versione stabile del codice. Le _versioni notturne_, invece, sono versioni di sviluppo che vengono rilasciate periodicamente e contengono le ultime modifiche apportate al codice. Esse vengono create partendo dal branch `develop`, che rappresenta il punto di integrazione di tutti i contributi dei gruppi di lavoro.
+
+I **_feature branch_** sono branch temporanei utilizzati per sviluppare nuove funzionalità o per correggere bug. **Possono essere creati solo a partire dal branch `develop`** e vengono utilizzati per isolare il lavoro su una specifica funzionalità o problema dal resto del codice. Quando il lavoro è completato, il feature branch viene integrato di nuovo nel `develop` tramite un merge. 
+
+In questo modo, è possibile lavorare in modo organizzato su diverse funzionalità o problemi senza interferire tra loro. Per integrare il lavoro svolto in un feature branch nel branch `develop`, è necessario eseguire un merge del feature branch nel `develop`. Ci sono diversi modi di fare ciò, a seconda delle preferenze e delle esigenze specifiche. Un modo semplice di fare il merge è utilizzare il comando `git merge` dalla riga di comando. 
+Se il merge non è possibile a causa di conflitti, sarà necessario risolverli manualmente prima di poter completare l’operazione. Una volta risolti i conflitti, sarà necessario creare un nuovo commit per finalizzare il merge.
+
+
+Per iniziare una feature…
+
+```
+$ git checkout develop                  # entra nel branch develop 
+$ git branch feature/myFeature          # crea un branch di feature 
+$ git checkout feature/myFeature        # entra nel branch appena creato
+```
+
+Al termine della feature, integro:
+
+```
+$ git checkout develop                  # entra nel branch develop 
+$ git merge --no-ff feature/myFeature   # mergia il branch di feature 
+$ git branch -d feature/myFeature       # elimina il branch di feature
+```
+
+
+Di default, git risolve il merge di due branch con la stessa storia banalmente eseguendo il _fast forward_, ovvero spostando il puntatore del branch di destinazione all’ultimo commit del branch entrante.
+
+In GitFlow è preferibile esplicitamente **disabilitare il fast forward** (con l’opzione `--no-ff`) durante il merge in `develop` in quanto è più facile distinguere il punto di inizio e il punto di fine di una feature.
+
+Usando git è anche possibile eseguire in fase di merge lo _squashing_ dei commit, ovvero la fusione di tutti i commit del branch entrante in uno solo. Questa operazione è utile per migliorare la leggibilità della history dei commit su branch grossi (come `develop` o `master`) ma il suo uso in GitFlow è opinabile: il prof. Bellettini consiglia di non utilizzarlo, in modo da mantenere i commit originali.
+
+
+Lo scopo di creare una release è **cristalizzare l’insieme delle funzionalità** presente sul branch `develop` all’inizio di essa dedicandosi solo alla sistemazione degli errori o alle attività necessarie per il deploy (modifica del numero di versione, …). L’insieme delle funzionalità rilasciate è quello presente sul branch `develop` al momento di inizio di una release.
+
+I bug fix possono essere ri-mergiati in `develop`, anche utilizzando la funzionalità **cherry-pick** di git; essa permette di selezionare un commit specifico da un ramo e applicarlo in un altro ramo. 
+
+Ad esempio, se si ha un ramo di sviluppo (“`develop`”) e un ramo di release (“`release`”), è possibile utilizzare il cherry-pick per selezionare solo i commit che contengono bugfix e applicarli al ramo di release, senza dover fare un merge di tutto il ramo di sviluppo. 
+
+Ciò può essere utile in casi in cui si vuole mantenere la stabilità del ramo di release, includendo solo i bugfix considerati essenziali per la release.
+
+Per iniziare una nuova release è sufficiente creare un nuovo branch da `develop`:
+
+`$ git checkout -b release/v1.2.3 develop`
+
+Al termine della creazione della release, è necessario fare il merge della release nel branch `master` e nel branch `develop`. Il merge in `master` rappresenta il rilascio della nuova versione del codice, che diventa disponibile per il pubblico o per il cliente. Il merge in `develop`, invece, integra le modifiche apportate durante la creazione della release nel branch di sviluppo, in modo che siano disponibili per le release future. 
+In questo modo, è possibile gestire in modo organizzato il ciclo di vita del codice e il flusso di lavoro.
+
+```
+$ git checkout master               # entra nel branch master 
+$ git merge --no-ff release/v1.2.3  # mergia la feature 
+$ git tag -a v1.2.3                 # tagga sul branch master il rilascio 
+$ git checkout develop              # entra nel branch develop 
+$ git merge --no-ff release/v1.2.3  # mergia la feature 
+$ git branch -d release/v1.2.3      # elimina il branch della feature
+```
+
+In git, i tag sono etichette che possono essere applicate a un commit per segnalarne l’importanza o per marcare un punto specifico dello storico del repository. 
+Un **tag è un puntatore costante al commit** a cui è stato applicato, quindi non cambia mai e permette di fare riferimento in modo stabile a una versione specifica del codice. Al contrario, i branch sono puntatori dinamici che vanno avanti nel tempo, seguendo l’evoluzione del codice attraverso i nuovi commit
+
+In GitFlow, le release sono versioni stabili del codice che vengono rilasciate al pubblico o al cliente. Ogni release viene creata partendo dal branch `develop` e viene gestita come un branch a sé stante, che viene chiuso una volta che tutte le modifiche previste sono state integrate. 
+
+Al contrario, le feature sono branch temporanei utilizzati per sviluppare nuove funzionalità o per correggere bug. È possibile avere più feature aperte contemporaneamente, ma solo una release rimanere aperta in un dato istante.
+
+Hotfix
+Un _hotfix_ è una riparazione veloce di difetti urgenti senza dover aspettare la prossima release. È l’unico caso per cui non si parte da `develop`, ma dall’ultima - o una particolare - versione rilasciata su `master`.
+
+`$ git checkout -b hotfix/CVE-123 master # crea un branch di hotfix`
+
+Quando lo chiudo:
+
+```
+$ git checkout master                   # entra nel branch master 
+$ git merge --no-ff hotfix/CVE-123      # mergia l'hotfix 
+$ git tag -a hotfix/CVE-123             # tagga sul branch master il rilascio 
+$ git checkout develop                  # entra nel branch develop 
+$ git merge --no-ff hotfix/CVE-123      # mergia l'hotfix 
+$ git branch -d hotfix/CVE-123          # elimina il branch di hotfix
+```
+
+
+
+Limiti
+git e GitFlow come sono stati esposti presentano numerosi vincoli, tra cui:
+- la **mancanza di un sistema di autorizzazione granulare**, ovvero la possibilità di assegnare permessi in modo specifico e mirato a diverse funzionalità o risorse. Inoltre, non esiste una distinzione tra diversi livelli di accesso, quindi o si ha accesso completo a tutte le funzionalità o non si ha accesso a niente;
+- l’**assenza di code review**, ovvero il processo di revisione del codice sorgente da parte di altri sviluppatori prima che venga integrato nel codice base.
+
+Il tool `git request-pull` è un comando di git che serve per formattare e inviare una proposta di modifiche a un repository tramite una mailing list. Il comando crea un messaggio di posta elettronica che chiede al maintainer del repository di “pullare” le modifiche, ovvero di integrarle nel codice base. 
+Oggi, questa pratica è stata in molti progetti sostituita dalle pull request, che sono richieste di integrazione delle modifiche presentate attraverso un’interfaccia web. Le pull request offrono una serie di vantaggi rispetto alle richieste via email, come una maggiore trasparenza del processo di integrazione, una maggiore efficienza e una maggiore facilità di utilizzo.
+
+La sintassi del comando è la seguente:
+`git request-pull [-p] <start> <URL> [<end>]`
+
+Per esempio, i contributori Linux usano questo strumento per chiedere a Linus Torvalds di unire le modifiche nella sua versione. L’output generato mostra file per file le modifiche fatte e i commenti dei commit creati, raggruppati per autore.
+
+Questo modello è molto più _peer to peer_ delle pull request proposte dai sistemi semi-centralizzati spiegati in seguito.
+
 
 ---
 
-per permettere ad altri di fare richieste per il mio progetto open-source, git request-pull start url end
+Un hosting centralizzato Git è un servizio che fornisce una repository centrale per i progetti Git dove i contributi vengono integrati e gestiti, garantendo una maggiore trasparenza e controllo del processo di sviluppo e mantenendo molti vantaggi della decentralizzazione, come la possibilità di lavorare in modo asincrono e autonomo.
 
-Gli ambienti di hosting hanno cercato soluzioni alternative
-- Fork: risolve un primo problema di autorizzazioni permettendo di mantenere legami tra repo su sito di hosting ma con owner e autorizzazioni diversi
-  Ottengo un'ottimizzazione grazie alla condivisione dello spazio degli oggetti
-- Pull request: permette di gestire interazioni lasche tra sviluppatori mediate dal sito di hosting
-	Problemi
-	- SE il develop avanza, le mie modifiche diventano incompatibili
-- Gerrit: il numero di pull request è troppo elevato quindi non mergio branch ma solo singoli commit parallelizzando questa operazioni dando permessi ad altre persone. Introduco i voti categorizzandoli in ruolo 
-	- Verifier: controlla che il cambiamento funzioni
-	- Approver: ha una conoscenza piu generale del progetto e dei suoi scopi, decidendo se sia coerente. 
-	Pensa git come due repo, uno in cui possono fare fetch e un altro in cui si possa fare push e su cui verranno fatte le revisioni
+Gli hosting centralizzati come GitHub e GitLab nuovi meccanismi e provano a imporre nuovi workflow, come il GitHub Flow o il GitLab Flow, per semplificare e ottimizzare il processo di sviluppo. 
+Inoltre, molti servizi di hosting centralizzati offrono funzionalità aggiuntive, come la possibilità di eseguire il fork di un repository, inviare pull request per le modifiche e di utilizzare strumenti di Continuous Integration CI per testare automaticamente le modifiche apportate al codice.
 
-Dobbiamo minimizzare il processo di review utilizzando il merge automatico
 
-...
+Fork
+Il “fork” di un repository Git è una **copia del repository originale** che viene creata su un account di hosting diverso dal proprietario originale. 
+Questo permette a un altro sviluppatore di creare una copia del repository e di lavorare su di essa senza influire sul lavoro del proprietario originale e **senza la sua autorizzazione**. È possibile quindi mantenere una _connessione_ tra i due repository e condividere facilmente le modifiche apportate.
 
-Ant: scritto in Java per progetti Java
-Permette non solo compilazione ma test e deploy
+La maggioranza delle piattaforme di hosting centralizzato **ottimizza la condivisione dello spazio degli oggetti**, utilizzando un’unica _repository fisica_ per tutti i fork. 
 
-...
+Tuttavia, questo può comportare alcune problematiche di sicurezza, come ad esempio la difficoltà per la piattaforma di stabilire in quale fork si trova un determinato oggetto in caso di conflitto o la possibilità che un utente malintenzionato possa modificare o eliminare accidentalmente oggetti di altri fork. 
+Per questo motivo, è importante che le piattaforme implementino **misure di sicurezza adeguate** per proteggere i dati dei fork e garantire la tracciabilità delle modifiche
+
+
+Pull request 
+Tra la creazione di una pull request e il suo _merge_, specialmente nei progetti open source (dove chiunque può proporre qualsiasi patch) è fondamentale prevedere un processo di **review**.
+
+La funzionalità di _review/pull request_ permette di facilitare le interazioni tra gli sviluppatori utilizzando il sito di hosting come luogo comune per la discussione informale e la revisione delle modifiche.
+Problemi: SE il develop avanza, le mie modifiche diventano incompatibili
+
+CI
+Molti servizi di hosting centralizzati offrono strumenti di **continuous integration** (CI) che possono essere utilizzati per testare automaticamente le modifiche proposte nella pull request. 
+Questi strumenti consentono di verificare che le modifiche non introducano errori o vulnerabilità e di garantire che il codice sia pronto per essere integrato nel repository principale. 
+Possono essere utilizzati anche per eseguire automaticamente la _suite di test_ o automatizzare il deployment.
+
+
+Gerrit
+Gerrit è un **sistema di review** del codice sviluppato internamente da Google per gestire i progetti interni; si basa sul concetto di “peer review”: tutti gli sviluppatori sono autorizzati a fare review delle proposte di modifica di qualsiasi zona di codice.
+
+Pensa git come due repository, uno in cui possono fare fetch e un altro in cui si possa fare push e su cui verranno fatte le review.
+
+Nel processo di review di Gerrit, i **developer** possono sottoporre proposte di cambiamento utilizzando un sistema di “patch” che descrive le modifiche apportate al codice. 
+I **reviewer**, ovvero gli altri sviluppatori del progetto, possono quindi esaminare le patch e decidere se accettarle o rifiutarle. Una volta che una patch ha ricevuto un numero sufficiente di review positivi, viene automaticamente integrata nel **repository principale autoritativo** in cui tutti hanno accesso in sola lettura.
+
+Gerrit obbliga a strutturare le modifiche (_changeset_) in un unico commit (tecnica _squash_) al momento dell’accettazione. 
+Ciò significa che tutte le modifiche apportate devono essere fuse in un unico commit, in modo da rendere più facile la gestione del repository. 
+Al momento della review, invece, le modifiche rimangono separate in versioni singole, ovvero ogni modifica viene presentata come un commit separato, in modo che i reviewer possano esaminarle più facilmente.
+
+Il verifier è uno strumento o un processo che viene utilizzato in Gerrit per verificare che le modifiche proposte siano corrette e funzionino come dovrebbero. 
+In particolare, il verifier scarica la patch, la compila, esegue i test e controlla che ci siano tutte le funzioni necessarie. 
+Se il verifier rileva dei problemi, può segnalarli al team di sviluppo perché vengano corretti prima che la patch venga accettata.
+
+Una volta verificata, una proposta di modifiche deve essere anche approvata. 
+L’approvatore deve determinare la risposta alle seguenti domande riguardo la proposta di modifiche (questa figura ha una conoscenza piu generale del progetto e dei suoi scopi, decidendo se sia coerente):
+- _è valida per lo scopo del progetto?_
+- _è valida per l’architettura del progetto?_
+- _introduce nuove falle nel design che potrebbero causare problemi in futuro?_
+- _segue le best practices stabilite dal progetto?_
+- _è un buon modo per implementare la propria funzione?_
+- _introduce rischi per la sicurezza o la stabilità?_
+
+Se l’approver ritiene che la proposta di modifiche sia valida, può approvarla scrivendo “LGTM” (acronimo di _“Looks Good To Me”_) nei commenti della pull request.
+
+
+Build automation
+La build automation è un processo fondamentale nello sviluppo di software open source, che consiste nel creare un sistema automatizzato per compilare il codice sorgente in un eseguibile. 
+
+Questo processo è importante perché consente di risparmiare tempo e risorse, evitando di dover compilare manualmente il codice ogni volta che si apportano modifiche. Inoltre, la build automation garantisce una maggiore qualità e coerenza del software, poiché il processo di compilazione viene eseguito in modo uniforme ogni volta.
+
+Make
+`make` è uno strumento di build automation che viene utilizzato per automatizzare il processo di compilazione di un progetto. In particolare, `make` viene utilizzato per specificare come ottenere determinati _targets_ (obiettivi), ovvero file o azioni che devono essere eseguite, partendo dal codice sorgente. 
+
+Ad esempio, in un progetto di sviluppo software, un _target_ potrebbe essere il file eseguibile del programma, che viene ottenuto compilando il codice sorgente. `make` segue la filosofia _pipeline_, ovvero prevede l’utilizzo di singoli comandi semplici concatenati per svolgere compiti più complessi.
+
+È supportata la _compilazione incrementale_, ovvero il fatto di compilare solo le parti del progetto che sono state modificate dall’ultima volta, al fine di velocizzare il processo. 
+Inoltre, vengono gestite le _dipendenze_ tra file, ovvero le relazioni tra i diversi file che compongono il progetto: se un file sorgente dipende da un altro file, make assicura che il file dipendente venga compilato solo dopo che il file da cui dipende è stato compilato. 
+
+Ciò garantisce che il progetto venga compilato in modo coerente e che le modifiche apportate a un file siano considerate correttamente nella compilazione dei file dipendenti.
+
+Svantaggi:
+Tuttavia, make lavora a un livello molto basso, il che può rendere facile commettere errori durante la sua configurazione e utilizzo.
+Non c’è portabilità tra macchine (ambienti) diverse.
+
+
+Makefile
+Un _Makefile_ è un file di testo che contiene le istruzioni per il programma make su come compilare e linkare i file sorgente di un progetto. Ogni riga del Makefile definisce un obiettivo o una dipendenza, insieme ai comandi che devono essere eseguiti per raggiungerlo. 
+
+L’utilizzo del Makefile permette di automatizzare la compilazione e il linkaggio dei file sorgente, semplificando il processo di sviluppo di un progetto. 
+Sono stati creati dei tool (`automake`, `autoconf`, `imake`, …) che _generano_ `Makefile` ad-hoc per l’ambiente attuale.
+
+Il _mantra_:
+```
+$ ./configure 
+$ make all 
+$ sudo make install
+```
+era largamente utilizzato per generare un Makefile ad-hoc per l’ambiente attuale e installare il software sulla macchina in modo automatico. `automake`, `autoconf`, e `imake` sono strumenti che aiutano a questo scopo, generando Makefile che possono essere utilizzati per compilare e installare il software in modo automatico.
+
+
+Ant
+Ant nasce in Apache per supportare il progetto Tomcat. 
+Data una **definizione in XML** della struttura del progetto e delle dipendenze invocava comandi programmati tramite classi Java per compilare il progetto.
+
+Il vantaggio è che Java offre un livello d’astrazione sufficiente a rendere il sistema di build portabile su tutte le piattaforme.
+
+Non solo compila, ma fa anche deployment. 
+Il deployment consiste nell’installare e configurare un’applicazione o un sistema su uno o più server o ambienti di esecuzione. 
+Nel contesto di Ant, il deployment può includere l’invocazione di comandi per copiare i file del progetto sui server di destinazione, configurare le impostazioni di sistema o dell’applicazione, avviare o fermare servizi o processi, e così via. In questo modo, Ant può essere utilizzato non solo per compilare il progetto, ma anche per distribuirlo e rendere disponibile l’applicazione o il sistema ai suoi utenti.
+
+I target possono avere dipendenze da altri target. I target contengono task che fanno effettivamente il lavoro; si possono aggiungere nuovi tipi di task definendo nuove classi Java.
+
 
 Gradle 
-usa linguaggi Groovy
-Approccio dichiarativo fortemente basato su convenzioni, build by convention 
-definisce un linguaggio specifico per le dipendenze 
+Gradle è uno strumento di build automation che utilizza le repository Maven come punto di accesso alle librerie di terze parti. 
+Maven è una piattaforma di gestione delle dipendenze e della build automation per il linguaggio di programmazione Java. Le repository Maven sono archivi online che contengono librerie Java, plugin e altri componenti utilizzati nella build di progetti Java.
+Gradle utilizza queste repository per cercare e scaricare le librerie di cui ha bisogno per eseguire la build del progetto.
 
-...
+Gradle, che supporta Groovy o Kotlin come linguaggi di scripting, adotta un approccio dichiarativo e fortemente basato su convenzioni. 
+Ciò significa che tutto ciò che è già stato definito come standard non deve essere ridichiarato. 
+Inoltre, Gradle definisce un linguaggio specifico per la gestione delle dipendenze e permette di creare build multi-progetto.
 
-per il plugin di java definisce dei sourceSet e dei task con delle dipendenze 
+Gradle scala bene in complessità: permette di fare cose semplici senza usare le funzioni complesse. È estendibile tramite plugin che servono per trattare tool, situazioni, linguaggi definendo task e regole per lavorare più facilmente.
 
-...
+Il plugin _Java_ definisce:
+- una serie di **sourceSet**, ovvero dove è presente il codice e le risorse. Principalmente sono:
+    - `src/main/java`: sorgenti Java di produzione;
+    - `src/main/resources`: risorse di produzione;
+    - `src/test/java`: sorgenti Java di test;
+    - `src/test/resources`: risorse di test.
+- dei **task**, anche con dipendenze tra loro.
 
-bug tracking sempre piu integrato con il versioning
+Bug Tracking
+Il bug tracking è stato reso necessario nel mondo open source per via della numerosità dei contributi e della alta probabilità di avere segnalazioni duplicate.
 
-...
+Inoltre, per gestire le segnalazioni di bug nell’ambito dello sviluppo open source, esistono diversi strumenti come git-bug, BugZilla, Scarab, GNATS, BugManager e Mantis.
+
+L’obiettivo del bug tracking è avere più informazioni possibili su ogni bug per saperli riprodurre e quindi arrivare a una soluzione.
+
+È importante verificare i bug una volta che l’_issue_ è stato aperto, in modo da poter confermare la sua esistenza e la completezza delle informazioni fornite.
+
+Un _issue_ è un problema o una richiesta di funzionalità segnalata all’interno di un progetto di software. 
+Gli issue vengono solitamente utilizzati per tenere traccia dei problemi noti o delle richieste di nuove funzionalità all’interno di un progetto, e possono essere gestiti attraverso un sistema di bug tracking o gestione delle richieste. 
+Gli issue possono essere aperti da qualsiasi membro del team o dalla comunità, e possono essere risolti o chiusi da un membro del team responsabile.
+
+Ci sono diversi modi per cui può essere chiuso un bug:
+- **duplicate**: quando è stato già segnalato in precedenza e quindi non rappresenta un problema nuovo. In questo caso, viene solitamente fatto riferimento al numero del bug originale che ha già ricevuto una risoluzione;
+- **wontfix**: il bug viene chiuso come “non risolvibile” perché o rappresenta una funzionalità voluta dal progetto o è troppo complesso da risolvere per essere considerato conveniente farlo dal punto di vista dei progettisti;
+- **can’t reproduce**: non è stato possibile riprodurre il bug, ovvero che non è stato possibile ottenere lo stesso risultato o il comportamento segnalato dal bug. Ciò può essere dovuto a una mancanza di dettagli o a un errore nella segnalazione del bug stesso;
+- **fixed**: il bug è stato fixato; vs **fix verified**: il fix è stato integrato in una release passando tutti gli step di verifica.
+Il  bug tracking è sempre piu integrato con il versioning
+
+
 
 Unified Process
 è una metodologia di organizzazione che utilizza UML
@@ -672,30 +881,48 @@ Unified Process
 
 
 Progettazione
-refactoring: 
+Refactoring: 
 Cambiare il design del codice senza cambiarne il funzionamento
-- migliorare un design tenuto inizialmente facile
-- preparare il design per una funzionalita che non si integra bene in quello esisstente
-- Eliminare le debolezza 
+Durante il refactoring è opportuno rispettare le seguenti regole:
+- le **modifiche al codice non devono modificare le funzionalità**: il refactoring DEVE essere invisibile al cliente;
+- **non possono essere aggiunti test aggiuntivi** rispetto alla fase verde appena raggiunta.
+
+Se la fase di refactoring sta richiedendo troppo tempo allora è possibile fare rollback all’ultima versione verde e **pianificare meglio** l’attività di refactoring. 
+Vale la regola del _“do it twice”_: il secondo approccio a un problema è solitamente più veloce e migliore.
+
+Spesso le motivazioni dietro un refactoring sono:
+- precedente **design molto complesso e poco leggibile**, a causa della velocità del passare ad uno _scenario verde_;
+- **preparare il design di una funzionalità** che non si integra bene in quello esistente; dopo aver raggiunto uno _scenario verde_ in una feature, è possibile che la feature successiva sia difficile da integrare. In questo caso, se il _refactoring_ non è banale è bene fermarsi, tornare indietro e evolvere il codice per facilitare l’iterazione successiva (**design for change**).
+- presenza di **debito tecnico** su lavoro fatto in precedenza, ovvero debolezze e “scorciatoie” che ostacolano notevolmente evoluzioni future.
 
 Design knowledge
-Questa conoscenza nasce dalla nostra memoria, da documenti di design, da piattaforme di discussione / issue management / version control o da modelli specializzati (UML) (model driven design) o nel codice (difficile rappresentarne le ragioni)
+La design knowledge è la **conoscenza del design** architetturale di un progetto
+Questa conoscenza nasce da 
+- nostra memoria: non è efficace perché nel tempo si erode
+- documenti di design: se non viene aggiornato di pari passo con il codice rimane disallineato, risultando più dannoso che d’aiuto
+- piattaforme di discussione / issue management / version control: le informazioni sono sparse in luoghi diversi e di conseguenza difficili da reperire e rimane il problema di mantenere aggiornate queste informazioni. 
+- Modelli specializzati (UML) (model driven design): diagrammi UML si è cercato di sfruttare l’approccio _**generative programming**_, ovvero la generazione automatica del codice a partire da specificazioni di diagrammi. Con l’esperienza si è visto che non funziona.
+- codice: è possibile capire il design ma è difficile rappresentare le ragioni della scelta
 
-...
+
+Per condividere tali scelte di design (il _know how_) è possibile sfruttare:
+- **metodi**: con pratiche (come Agile) o addirittura l’object orientation stessa, che può essere un metodo astratto per condividere scelte di design.
+- **design pattern**: fondamentali per condividere scelte di design, sono utili anche per generare un vocabolario comune (sfruttiamo dei nomi riconosciuti da tutti per descrivere i ruoli dei componenti) e aiutano l’implementazione (i pattern hanno delle metodologie note per essere implementati). I pattern non si concentrano sulle prestazioni di un particolare sistema ma sulla generalità e la riusabilità di soluzioni a problemi comuni;
+- **principi**: per esempio i principi SOLID.
+
 
 OO Object Orientation 
-- Ereditarietà
-- Polimorfismo 
+- Ereditarietà: definire una classe ereditando proprietà e comportamenti di un’altra classe.
+- Polimorfismo: quando una classe può assumere diverse forme in base alle interfacce che implementa. Il collegamento tra capacità e oggetto è fatto **a tempo di compilazione**: non è importante quindi se la capacità non è ancora definita;
 - Composizione 
-- Ereditarietà
-- Dynamic Pipeling 
+- Dynamic Pipeling: in Java il tipo concreto degli oggetti e quindi il problema di stabilire _quale metodo chiamare_ viene risolto durante l’esecuzione
 
 Composizione >>>> Ereditarietà
 
 Principi SOLID
-- Single Responsability
-- Open close Principle: aperto ai cambiamento ma chiuso ai cambiamenti alla classe esistente
-- Liskov Substitution Principle: tutto quello che sapeva fare la classe base, deve saperlo fare anche la classe specializzata
-- Interface Segregation
-- Dependency Inversion: le cose astratte non dovrebbero dipendere da cose concrete
+- Single Responsability: una classe, un solo scopo. Così facendo, le classi rimangono semplici e si agevola la riusabilità.
+- Open close Principle: classe aperte ai cambiamento ma chiuse ai cambiamenti delle parti già in produzione.
+- Liskov Substitution Principle: si collega all’aspetto **contract-based** del metodo Agile: le _precondizioni_ di un metodo di una classe figlia devono essere ugualmente o meno restrittive del metodo della classe padre. Al contrario, le _postcondizioni_ di un metodo della classe figlia non possono garantire più di quello che garantiva il metodo nella classe padre. Fare _casting_ bypassa queste regole.
+- Interface Segregation: più le capacità e competenze di una classe sono frammentate in tante interfacce più è facile utilizzarla in contesti differenti. Meglio quindi avere **tante interfacce specifiche** e piccole (composte da pochi metodi), piuttosto che poche, grandi e generali.
+- Dependency Inversion: il codice dal quale una classe dipende non deve essere più **concreto** di tale classe. Le cose astratte non dovrebbero dipendere da classi concrete
 

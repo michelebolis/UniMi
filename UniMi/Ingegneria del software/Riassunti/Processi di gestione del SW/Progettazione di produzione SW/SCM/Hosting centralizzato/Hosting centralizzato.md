@@ -1,0 +1,5 @@
+Un hosting centralizzato Git è un servizio che fornisce una repository centrale per i progetti Git dove i contributi vengono integrati e gestiti, garantendo una maggiore trasparenza e controllo del processo di sviluppo e mantenendo molti vantaggi della decentralizzazione, come la possibilità di lavorare in modo asincrono e autonomo.
+
+Gli hosting centralizzati come GitHub e GitLab nuovi meccanismi e provano a imporre nuovi workflow, come il GitHub Flow o il GitLab Flow, per semplificare e ottimizzare il processo di sviluppo. 
+
+Inoltre, molti servizi di hosting centralizzati offrono funzionalità aggiuntive, come la possibilità di eseguire il [[Fork]] di un repository, inviare [[Pull request]] per le modifiche e di utilizzare strumenti di [[Continuous Integration CI]] per testare automaticamente le modifiche apportate al codice.

@@ -7,4 +7,3 @@ Il Software Configuration Management è l’insieme di pratiche che hanno l’ob
 
 [[Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Storia|Storia]]
 [[Meccanismo di base]]
-[[SCM distribuito]]

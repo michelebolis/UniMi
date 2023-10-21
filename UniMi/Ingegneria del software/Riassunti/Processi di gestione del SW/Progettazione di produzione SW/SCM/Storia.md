@@ -21,3 +21,5 @@ Evoluzione
 - anni 80: strumenti locali
 - anni 90: strumenti client-server centralizzati
 - anni 2000: strumenti distribuiti peer-to-peer
+
+[[SCM distribuito]]

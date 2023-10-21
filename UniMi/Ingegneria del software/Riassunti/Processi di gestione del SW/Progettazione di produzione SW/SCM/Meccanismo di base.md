@@ -21,3 +21,5 @@ Quando il repository è condiviso da un gruppo di lavoro, nasce il problema di g
 - Modello pessimistico RCS: accesso agli artifact con mutua esclusione attivando un lock al check-out. Questo approccio non puo funzionare nell'open-source
 - Modello ottimistico CVS: il sistema si disinteressa del problema e fornisce supporto per le attività di merge di change-set paralleli potenzialmente conflittuali
 	E' possibile regolarlo parzialmente tramite rami paralleli di sviluppo, branch. In Git, l’uso dei branch è talmente comune che a volte è necessario introdurre delle politiche (come GitFlow) sul loro utilizzo.
+
+[[GitFlow]]

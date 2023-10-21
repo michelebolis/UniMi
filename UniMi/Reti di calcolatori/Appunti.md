@@ -533,15 +533,15 @@ il protocollo ci dice che il cavo puo essere max 2.5 km, ci possano essere al ma
 c è uno slot di contesa $T_x$ >= $2*T_p$
 Per il protocollo CSMA-CD la collisione è un evento possibile
 
-ogni stazione ha un contatore per generare il numero casuale, in particolare per l indice i 
+ogni stazione ha un contatore per generare il numero casuale, in particolare per l'indice i 
 
-Quanto BEB incide sulle prestazioni: l algoritmo dilata l accesso NON garantendo la fairness
-è pero un algoritmo adattivo al traffico percepito, in quanto dipende daln umero di collissioni i
+Quanto BEB incide sulle prestazioni: l'algoritmo dilata l'accesso NON garantendo la fairness
+è pero un algoritmo adattivo al traffico percepito, in quanto dipende dal numero di collisioni i
 OSS ogni stazione NON sa quante stazioni sono in contesa 
 
-Osservando U = tx / tx+2tp * 1/A
-1/A = Numero medio di stazioni che deve aspettare prima di accedere
-A= k\*p \* (1-p)^kp
+Osservando $$U = {t_x \over t_x+2t_p * {1 \over A}}$$
+$1 \over A$ = Numero medio di stazioni che deve aspettare prima di accedere
+$A= k*p * (1-p)^{kp}$
 k numero di stazioni
 p probabilita che quella stazione possa accedere al canale 
 
@@ -550,8 +550,9 @@ Ho quindi un campo padding per arrivare ai 64byte: parte da 0 a 46 byte
 
 Pero come min il livello 3 mette un header di 20byte, quindi avremmo gia 38byte
 
-L ci dice quanto è lungo il payload, indicando quindi anche di qunato è il PAD
+L ci dice quanto è lungo il payload, indicando quindi anche di quanto è il PAD
 Payload+PAD deve essere <= 1500 Byte (con rete a 10Mbps)
+
 
 il livello 2 di Ethernet è composto dal MAC e dal LLC. 
 A livello LLC sono interessato a ipotizzare la comunicazione da sorgente a destinatario
@@ -559,7 +560,7 @@ A livello MAC invece
 Ogni scheda ethernet ha un indirizzo MAC unico di 48 bit
 
 Anche il livello 1 è composto da due livelli funzionali
-- Livello Convergence: funzionalità di rete quali la trasmissioni dati, enable/disable della trasmissione, CS, collision detection (fisicamente qeuste funzionalita li fa il transiver, ma l'informazione deve essere passata al MAC)
+- Livello Convergence: funzionalità di rete quali la trasmissioni dati, enable/disable della trasmissione, CS, collision detection (fisicamente queste funzionalità li fa il transiver, ma l'informazione deve essere passata al MAC)
 - Livello physical medium-dependent : dipende fortemente dal mezzo che sto utilizzando
 
 
@@ -579,10 +580,10 @@ codificando manchester la sequenza di 1010... ottengo la stessa ma shiftata di m
 
 
 Nella realta abbiamo diversi hub (o hub repeater) che concentra stazioni 
-hub è comodo perche con un cavo punto punto (solitamente doppino telefonico) collego ogni stazione all hub. Il dominio di collissione in questo caso avviene all interno dell hub o tra gli hub
+L'hub è comodo perche con un cavo punto punto (solitamente doppino telefonico) collego ogni stazione all'hub. Il dominio di collisione in questo caso avviene all'interno dell hub o tra gli hub
 
 l'hub è un dispositivo di livello fisico, quindi si comporta come totalmente broadcast
-il controllo di accesso è sempre nella singole stazioni, l hub semplicemente trasmette a tutti i transiver cio che riceve 
+il controllo di accesso è sempre nella singole stazioni, l hub semplicemente trasmette a tutti i transiver ciò che riceve 
 
 Oggi la gran parte delle reti Ethernet è fatta con questa topologia
 
@@ -590,31 +591,31 @@ il protocollo specifica anche il clock
 
 
 MA tutto quello che abbiamo fatto finora è per una rete a 10Mbit, se vado a 1Gbps?
-Cambia la dimensione minima del pacchetto perche cambia $T_x$, in particolare a 512 ns MA $T_p$ non è cambiato e quindi il protocollo non rileva le collissioni
+Cambia la dimensione minima del pacchetto perche cambia $T_x$, in particolare a 512 ns MA $T_p$ non è cambiato e quindi il protocollo non rileva le collisioni
 Nello standard sarà necessario cambiare la dimensione minima del frame, in particolare sarebbero necessari 50k bit, diminuendo U moltissimo (es segnale di ACK). 
 
 Un altra soluzione è quella di cambiare il mezzo
 La soluzione migliore è diminuire L, la lunghezza totale del canale
 
 Diminuendola da 2.5km a 25m (da nodo ad hub), quindi 25 andata all hub, 25 al nodo, 25 di ritorno da nodo destinazione e altri 25 per tornare al nodo destinazione
-$2*T_p$ = 10^2 / 2\*10^8 = 0.5 microsecondi
+$$2*T_p = {10^2 \over {2*10^8}} = 0.5 \micro s$$
 
 Usiamo un compromesso
-- 200m di L massimo -> 2tp su 800m -> 2tp = 4 microsecondi
+- 200m di L massimo -> 2$t_p$ su 800m -> 2$t_p$ = 4 microsecondi
 - taglie minime di frame a 512Byte. Ho un padding duplice: uno che lo fa fino a 64B ma poi il mio livello fisico aggiunge 512-64 Byte 
 
-Inefficienza: 
+Inefficienza
 
 
 Soluzione alternativa: ha forzato la transizione tra bridge a switch
 
 
 Tornando sul bridge
-Bridge separa i domini di collissione
+Bridge separa i domini di collisione
 MAC solo presente nei nodi e nel bridge tra gli hub
-quindi a bordo del bridge ci devono essere tante schede quanti domini di collissioni voglio avere 
+quindi a bordo del bridge ci devono essere tante schede quanti domini di collisioni voglio avere 
 
-il bridge ha una tabella di forwarding che contiene un elenco di, data una stazione, in che dominio si trovano, quindi in che porta dovra usare
+il bridge ha una tabella di forwarding che contiene, data una stazione, in che dominio si trovano, quindi in che porta dovra usare
 ATT il bridge non si deve comportare come un hub, ma deve fare store and forward 
 SE arriva un frame in cui mittente e destinatario sono nella stessa porta, il bridge butta quanto ricevuto
 
@@ -626,8 +627,7 @@ Casi limite: aggiunta di un nuovo nodo o cambio di hub a cui era collegato il no
 ---
 
 ATT ERRORE NEL BEB = 0 - 2^i -1
-
--1 perche nel caso ci sia una sola collissione
+-1 perche nel caso ci sia una sola collisione ...
 
 Il concetto di indirizzamento c è a quasi tutti i livello (1, 2, 3, 4) ognuno con un proprio indirizzamento
 - Livello 2: MAC address
@@ -635,23 +635,23 @@ Il concetto di indirizzamento c è a quasi tutti i livello (1, 2, 3, 4) ognuno c
 - Livello 4 Port address
 
 
-Perche fare come il bridge per il broadcast sarebbe sbagliato? Dato che la scheda con CS e collision detection, non sapra mai se avra colliso
+Perche fare come il bridge per il broadcast sarebbe sbagliato? Dato che la scheda con CS e collision detection, non saprà mai se avra colliso
 
 Termine forwarding: processo in grado di trasferire unita dati da una porta di ingresso a una porta d uscita
 Il "forwarding" dal routing invece è che la tabella su cui faccio forwarding non è costruita solo in base alla rete locale, ma dalla conoscenza della topologia di tutta la rete
 
 
 Switch
-Differenza col bridge è che NON c è CSMA/CD ma c è un cavo dedicato dal nodo allo switch, quindi non ci saranno mai collisioni
+Differenza col bridge è che NON c'è CSMA/CD ma c è un cavo dedicato dal nodo allo switch, quindi non ci saranno mai collisioni
 Sono quindi grandi accumulatori anche a grande velocita in quanto non ci sono vincoli di distanza
 Porte pero limitate a 32
 Spesso vengono collegati sia ai router che ad altri switch
 
-essendoci compatibilita con le frame posso sostituire in qualsiasi momento un bridge con uno switch
+Essendoci compatibilità con le frame posso sostituire in qualsiasi momento un bridge con uno switch
 In realta il CS verra sempre fatto ma non ci saranno mai collissioni
 Viene anche mantenuto la dimensione minima del frame anche se non serve
 
-in realta sto aggiungendo complessita nello switch che dovra gestire molte linea a grandi velocita
+In realta sto aggiungendo complessita nello switch che dovra gestire molte linea a grandi velocita
 
 Fast Ethernet NON STUDIARE
 
@@ -661,14 +661,14 @@ Aggregazione delle stazioni in gruppi omogenei
 Due stazioni di due gruppi diversi non possono comunicare
 E' uno strumento organizzativo molto utilizzato
 
-per poterla realizzare è necessario modificare il bridge in modo tale che nel processo di learning, impari anche il gruppo della stazione. 
+Per poterla realizzare è necessario modificare il bridge in modo tale che nel processo di learning, impari anche il gruppo della stazione. 
 Inoltre è necessario cambiare le schede di rete delle stazioni in modo che includa anche il colore del gruppo a cui appartiene
 
 Standard IEEE 802.1Q
 Viene usato davvero il colore come discriminante tra i gruppi
 
 il frame del VLAN utilizza il campo gia esistente lunghezza che in realta dal protocollo è previsto essere anche type
-Il campo type per le frame 802.3 è 8100 in esadecimale, caratteristica di essere superipori a 1500
+Il campo type per le frame 802.3 è 8100 in esadecimale, caratteristica di essere superiori a 1500
 Altrimenti si sa che si sta lavorando con la VLAN, aggiungendo dopo 2 byte per il colore 
 
 Opinione del Rossi: se cambia volendo una VLAN, dovro aprire il mio dispositivo, cambiare la scheda di rete per tutti i device, rischia di diventare oneroso
@@ -695,7 +695,7 @@ F = 2 \* 10^4 \* 10^4/2\*10^8  = 10^8 \* 10^-4 = 5 \* 10^-5
 (ES UGUALI A QUELLI SU ARIEL)
 
 
-dal livello 3 in su è dell host
+dal livello 3 in su è dell'host
 il livello 1 e 2 riguarda invece la rete 
 
 al livello 3 abbiamo 2 funzioni
