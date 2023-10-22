@@ -23,3 +23,5 @@ Lato mittente, c è un laser o un diodo che manda gli 1 o 0 mentre lato destinat
 Differenze
 - costo
 - proprieta di attenuazione: la fibra ha attenuazione minore (attenuazione: diminuzione progressiva dell'intensità di un segnale) del doppino telefonico (doppino massimo teorico 100m)
+	- rame $2*10^8$
+	- fibra $3*10^8$

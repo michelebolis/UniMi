@@ -1,7 +1,6 @@
-Topologia magliata in cui i nodi sono collegati 
+Reti punto punto : topologia magliata in cui i nodi sono collegati 
 Per affidabilità devo aggiungere delle funzioni in ogni nodo, a livello 2
 OSS abbiamo un unico processo di livello 3 MA tanti processi di livello 2 quante sono le porte I/O
-
 
 Per rendere un canale affidabile da un nodo A a un nodo B, voglio un riscontro del ricevente con un ACK. Per far ciò mi serve pero un timer e un buffer (lato trasmissione) e un altro buffer (lato ricevitore)
 Lato trasmissione serve perche tengo il frame finche non ricevo ACK
@@ -14,13 +13,6 @@ Timer inizializzato quando viene mandato F e resettato all'arrivo dell'ACK
 
 per tutto il tempo $T_x$ il driver sicuramente è occupato
 
-rame $2*10^8$
-fibra $3*10^8$
-
-F -> Frame 
-Ogni livello gerarchico processo le proprie unità dati
-Pacchetto al livello 3
-Frame al livello 2: oltre al header e al payload usa il CRC contenuto nella tail per rilevare eventuali errori
 
 Tra il livello 2 al livello 1 il trasmettitore aggiunge una sequenza di bit all'inizio e alla fine, flag formata da 8 bit: 0 111 111 0
 In idle il ricevitore legge tutti 1 o tutti 0, quindi quando riceve il flag il ricevitore inizia a sincronizzare il proprio clock in quanto sa che dopo lo 0 si deve aspettare 6 1 e poi lo 0.

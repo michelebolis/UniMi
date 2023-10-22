@@ -1,7 +1,5 @@
 Nel punto a punto, i nodi parlano in modo diretto ad un solo altro link 
 Nel broadcast tutti sono collegati allo stesso dispositivo fisico, es hub o bus
-L' hub non appena un nodo A trasferisce un messaggio verso B, l'hub propaga il messaggio a TUTTI i nodi collegati, anche al mittente
-Prodotto un messaggio, tutti gli interlocutori ricevono quel messaggio
 
 OSS nella topologia magliata per fare broadcast dovrei mandare tanti messaggi quanti sono i nodi MA tutti riceverebbero il messaggio piu di una volta
 

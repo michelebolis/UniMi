@@ -6,7 +6,6 @@
 		3. Rete cellulare: è mobile fino a che manda il traffico ad una rete locale wireless (antenna)
 	2. [[Rete fissa]]
 
-Non posso tirare un filo per ogni dispositivo
 Dobbiamo utilizzare dei concentratori
 Per collegare i concentratori delle due reti, dati i loro indirizzi R1 e R2, non posso usare direttamente un cavo ma userò altri concentratori
 
@@ -14,5 +13,9 @@ La rete è quindi un insieme interconnesso di concentratori di traffico, [[Route
 
 Si parla di **rete a commutazione di pacchetti**
 
+Termine forwarding: processo in grado di trasferire unita dati da una porta di ingresso a una porta d uscita
+Il "forwarding" dal routing invece è che la tabella su cui faccio forwarding non è costruita solo in base alla rete locale, ma dalla conoscenza della topologia di tutta la rete
+
+[[Dispositivi di rete]]
 [[Principi di realizzazione]]
 [[Tipo di comunicazione]]

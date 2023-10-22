@@ -18,16 +18,16 @@
             }
           },
           {
-            "id": "01196a05418e7b08",
+            "id": "006576f242d09c1c",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "viewState": {
-                  "x": -3180,
-                  "y": 3407.5,
-                  "zoom": -3.649543759289976
+                  "x": 1460.9860246578173,
+                  "y": 696.2972597913638,
+                  "zoom": -2.29289914708516
                 }
               }
             }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas"
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas"
               }
             }
           },
@@ -180,6 +180,24 @@
   },
   "active": "47136b92c595cdff",
   "lastOpenFiles": [
+    "Reti di calcolatori/Riassunti/Protocolli/Livello di Rete.md",
+    "Reti di calcolatori/Appunti.md",
+    "Reti di calcolatori/Riassunti/Rete 1Gbps.md",
+    "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/Riassunti/Protocolli/Data link.md",
+    "Reti di calcolatori/Riassunti/Jitter.md",
+    "Reti di calcolatori/Riassunti/Protocolli/Unità di misura.md",
+    "Reti di calcolatori/Riassunti/VLAN.md",
+    "Reti di calcolatori/Riassunti/Protocolli/Livello 2/Protocollo Ethernet.md",
+    "Reti di calcolatori/Riassunti/Dispositivi di rete/Hub.md",
+    "Reti di calcolatori/Riassunti/Dispositivi di rete/Dispositivi di rete.md",
+    "Reti di calcolatori/Riassunti/Dispositivi di rete/Switch.md",
+    "Reti di calcolatori/Riassunti/Requisiti della rete.md",
+    "Reti di calcolatori/Riassunti/Tipi di rete",
+    "Reti di calcolatori/Riassunti/Protocolli/Livello 2",
+    "Reti di calcolatori/Riassunti/Protocolli/Livello 1",
+    "Reti di calcolatori/Riassunti/Protocolli",
+    "Reti di calcolatori/Riassunti/Dispositivi di rete",
     "Ingegneria del software/backup canvas/Ingegneria del software (SWENG) v1.png",
     "Ingegneria del software/backup canvas",
     "Ingegneria del software/Appunti.md",
@@ -199,27 +217,10 @@
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Gradle.md",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Ant.md",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Makefile.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Make.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Hosting centralizzato/Continuous Integration CI.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Hosting centralizzato/Fork.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Hosting centralizzato/Pull request.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Hosting centralizzato/Hosting centralizzato.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Gitflow/Gitflow - limiti.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Gitflow/GitFlow.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Gitflow/Hotfix.md",
-    "Reti di calcolatori/Appunti.md",
-    "Reti di calcolatori/Untitled.md",
-    "Reti di calcolatori/Appunti lab.md",
     "Sistemi embedded/Sistemi embedded.canvas",
-    "conflict-files-obsidian-git.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Riassunti/OCaml/Slide/04. polymorphism in ml.4.pdf",
-    "Reti di calcolatori/Riassunti/img",
-    "Reti di calcolatori/Libro/CAP3.pdf",
-    "Reti di calcolatori/Libro/CAP1.pdf",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM",
     "Ingegneria del software/Riassunti/img/Pasted image 20231015114038.png",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source/Articoli",
     "LAB.md/Exported image 20231013111609-3.png",
     "LAB.md/Exported image 20231013111609-2.png",
     "LAB.md/Exported image 20231013111609-1.png",
@@ -227,8 +228,6 @@
     "LAB.md/Exported image 20231013111608-6.png",
     "LAB.md/Exported image 20231013111608-5.png",
     "LAB.md/Exported image 20231013111608-4.png",
-    "ESAME 2022218.md/Exported image 20231013111609-3.png",
-    "ESAME 2022218.md/Exported image 20231013111609-2.png",
-    "Reti di calcolatori/Reti di calcolatori.canvas"
+    "ESAME 2022218.md/Exported image 20231013111609-3.png"
   ]
 }

@@ -40,6 +40,5 @@ SE ACK non arriva, in quanto potrebbe essere perso o corrotto, A non sa se è ar
 L'Host ricevente riconosce se il pacchetto fosse gia arrivato nei buff. Nel caso ce l'abbia già lo scarta, mandando lo stesso l'ACK al mittente.
 
 
-La rete fornisce gli strumenti per essere configurata dalle varie applicazioni, quindi deve essere abbastanza flessibile da potersi adattare alle richieste degli applicativi.
 
-Un protocollo è un insieme di regole e convenzioni che permettono la comunicazione tra due entità. Ovviamente le due entità devono usare lo stesso protocollo.
+

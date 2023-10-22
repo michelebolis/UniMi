@@ -27,7 +27,7 @@
 	==Ogni destinatario o mittente deve essere indirizzabile==. 
 - #Instradamento: 
 - Qualità di servizio #QoS: deve riuscire ad erogare i servizi date le specifiche dell'applicazione (es tempo massimo, tolleranza degli errori...). 
-	La rete deve essere il piu possibile general purpose per offrire diverse qualità di servizi in base all applicazione utente
+	La rete deve essere il piu possibile general purpose per offrire diverse qualità di servizi in base all applicazione utente. La rete fornisce gli strumenti per essere configurata dalle varie applicazioni, quindi deve essere abbastanza flessibile da potersi adattare alle richieste degli applicativi.
 	
 	Le richieste/parametri di qualità di servizi sono il Jitter, il data rate, il massimo degli utenti...
 	SE non c è la possibilita di raggiungere le richieste, si attua una negoziazione

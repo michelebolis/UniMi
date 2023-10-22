@@ -3,7 +3,8 @@ Incapsulare le informazioni rendendole disponibili solo attraverso delle interfa
 
 - Stratificazione della rete (semplice)
 Mappatura 1:1 tra i 2 host che devono usare gli stessi protocolli
-A livello piu alto abbiamo i nostri utenti
+A livello piu alto abbiamo i nostri utenti.
+
 Mittente:
 - La richiesta viene incapsulata nel livello 5. Utilizza un protocollo di livello 5 (i due livelli sono peer) per aggiungere alla richiesta un header di livello 5. Passa al livello sottostante il messaggio
 - Il livello 4 espone delle interfacce/primitive al livello 5 (o un servizio affidabile o un servizio veloce ma non affidabile) che sceglie. Nell'header aggiunge quale servizio ha scelto il livello 5 
@@ -25,9 +26,11 @@ Due modalita di utilizzo di protocollo
 - Servizi orientati alla connessione: fare una connessione significare istaurare un canale (setup), il dialogo e infine una fase di rilascio. 
 - Servizi senza connessione: appena ho il dato lo mando, senza contrattare i QoS
 
-Standard:
-- [[Reti di calcolatori/Riassunti/ISO-OSI|ISO-OSI]]
-- [[Reti di calcolatori/Riassunti/TCP-IP|TCP-IP]]
+Un protocollo è un insieme di regole e convenzioni che permettono la comunicazione tra due entità. Ovviamente le due entità devono usare lo stesso protocollo.
+
+Protocolli di rete:
+- [[Reti di calcolatori/Riassunti/Protocolli/ISO-OSI|ISO-OSI]]
+- [[Reti di calcolatori/Riassunti/Protocolli/TCP-IP|TCP-IP]]
 
 Trasporto e Internet implementato nel SO
 Ente di standardizzazione IEEE 802.

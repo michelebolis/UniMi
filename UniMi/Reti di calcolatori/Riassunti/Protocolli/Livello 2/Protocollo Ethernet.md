@@ -29,7 +29,7 @@ La probabilita di collisione è tanto maggiore tanto piu stazioni ci sono sul ca
 Soluzione: protocollo CSMA-CD Carrier Sense Multiple Access - Collision Detection (standardizzato come IEEE 802.3, es Wi-Fi IEEE 802.11)
 Ritrasmissione dei frame coinvolti nella collisione facendo aspettare le stazioni coinvolte un tempo tau casuale. 
 La generazione del numero casuale non ha un range ampio, tecnica 
-$Binary$ $Exponenzial$ $Backoff$ $(BEB) = [0:2^i]*UT$ con i il numero di collisioni (1<i<16) della stazione e UT unita di tempo 
+$Binary$ $Exponenzial$ $Backoff$ $(BEB) = [0:2^i-1]*UT$ con i il numero di collisioni (1<i<16) della stazione e UT unita di tempo 
 
 Potrebbero ancora collidere se viene generato lo stesso numero di UT ma è probabilistico
 In condizioni ottimali il protocollo lavoro intorno al 90% di utilizzo
@@ -68,6 +68,48 @@ MA in BEB UT = 51,2 micro secondi
 
 
 La stazione di rete Ethernet ha come tutte un L1 attaccato al cavo, con un clock, un codificatore di bit
-Il L2 di Ethernet è multi-layer, in particolare 2:
-- MAC Media Access Control: funzionalità di Carrier Sense, BEB, Collision Control
-- LLC Logical Link Control: protocollo a finestra affidabile o meno 
+
+
+sempre livello 2 topologie broadcast
+il protocollo ci dice che il cavo puo essere max 2.5 km, ci possano essere al massimo 4 repeater 
+c è uno slot di contesa $T_x$ >= $2*T_p$
+Per il protocollo CSMA-CD la collisione è un evento possibile
+
+ogni stazione ha un contatore per generare il numero casuale, in particolare per l'indice i 
+
+Quanto BEB incide sulle prestazioni: l'algoritmo dilata l'accesso NON garantendo la fairness
+è pero un algoritmo adattivo al traffico percepito, in quanto dipende dal numero di collisioni i
+OSS ogni stazione NON sa quante stazioni sono in contesa 
+
+Osservando $$U = {t_x \over t_x+2t_p * {1 \over A}}$$
+$1 \over A$ = Numero medio di stazioni che deve aspettare prima di accedere
+$A= k*p * (1-p)^{kp}$
+k numero di stazioni
+p probabilita che quella stazione possa accedere al canale 
+
+come min devo avere 64byte, e con DA, SA, L e CRC ho solo 18 byte
+Ho quindi un campo padding per arrivare ai 64byte: parte da 0 a 46 byte
+
+Pero come min il livello 3 mette un header di 20byte, quindi avremmo gia 38byte
+
+L ci dice quanto è lungo il payload, indicando quindi anche di quanto è il PAD
+Payload+PAD deve essere <= 1500 Byte (con rete a 10Mbps)
+
+
+Problema: 3 stazioni su un cavo condiviso in contesa
+A invia e B e C ricevono
+B e C ricevono in modo asincrono ma è difficile da realizzare in quanto B e C devono attivare il clock di ricezione, dovendo quindi essere sincronizzato con quello del mittente MA non è dato sapere quando A trasmette
+
+In banda base, SE trasmetto 3 1, il segnale rimane alto
+In Ethernet invece i 3 1, viene garantito una transizione di stato da 1 a 0: codifica di Manchester
+SE ho un 1: transizione da 0 a 1
+SE ho uno 0: transizione da 1 a 0
+La transizione avviene sulla meta del segnale, shiftato
+
+ad ogni clock in ricezione leggo il canale di trasmissione
+per estrarre il clock in ricezione: il livello fisico aggiunge 7+1 byte di preambolo nel messaggio, in modo che riesca ad estrarre il clock e fare diventare il proprio come quello estratto. In particolare 10101010101010 e poi 011
+codificando manchester la sequenza di 1010... ottengo la stessa ma shiftata di mezzo colpo di clock, dando cosi la possibilità al ricevente, in base ai fronti della sequenza, di sincronizzare il proprio clock
+
+Oggi la gran parte delle reti Ethernet è fatta con questa topologia
+
+il protocollo specifica anche il clock
