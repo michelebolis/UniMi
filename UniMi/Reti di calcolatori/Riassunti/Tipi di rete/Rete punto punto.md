@@ -1,14 +1,7 @@
 Reti punto punto : topologia magliata in cui i nodi sono collegati 
-Per affidabilità devo aggiungere delle funzioni in ogni nodo, a livello 2
 OSS abbiamo un unico processo di livello 3 MA tanti processi di livello 2 quante sono le porte I/O
 
-Per rendere un canale affidabile da un nodo A a un nodo B, voglio un riscontro del ricevente con un ACK. Per far ciò mi serve pero un timer e un buffer (lato trasmissione) e un altro buffer (lato ricevitore)
-Lato trasmissione serve perche tengo il frame finche non ricevo ACK
 
-Dimensionamento del timer
-- sottodimensionamento: mi porta a ritrasmettere pacchetti in realtà già ricevuti dal destinatario
-- sovradimensionamento: perdo troppo tempo ad aspettare nel caso di ACK perso o di frame non arrivato
-T dovrà essere maggiore di $T_x + 2* T_p$
 Timer inizializzato quando viene mandato F e resettato all'arrivo dell'ACK
 
 per tutto il tempo $T_x$ il driver sicuramente è occupato

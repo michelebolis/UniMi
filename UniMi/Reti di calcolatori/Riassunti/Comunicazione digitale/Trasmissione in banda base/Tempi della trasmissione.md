@@ -7,7 +7,7 @@ Consideriamo A e B collegati da un solo cavo
 - $T_p+T_x$ tempo che intercorre da quando il primo bit esce a quando l ultimo bit arriva
 	- $T_p$ aumenta molto fino a superare Tx quando le distanze aumentano (comunicazioni satellitari, continentali)
 
-Anche l'ACK è un pacchetto, che viaggia nella direzione opposta quindi dobbiamo considerare anche $T_xACK$ e il $T_pACK$
+Anche l'ACK è un pacchetto, che viaggia nella direzione opposta quindi dobbiamo considerare anche $T_xACK$ e il $T_pACK$.
 OSS $T_p$ e $T_pACK$ sono uguali, perche è lo stesso canale e la stessa distanza 
 $T_xACK$ vogliamo che si minimizzi: per far ciò minimizziamo il peso dell'ACK, tanto da risultare spesso irrilevante nella stima del tempo.
 

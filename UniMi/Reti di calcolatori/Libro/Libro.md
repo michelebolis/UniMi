@@ -7,3 +7,4 @@ Capitoli:
 - [[CAP7.pdf]]
 - [[CAP8.pdf]]
 - [[CAP9.pdf]]
+[[Riassunto libro]]

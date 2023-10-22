@@ -15,7 +15,7 @@ Alcuni esempi per capire i settori di utilizzo e sviluppo di tali sistemi sono:
 - [[Device]]
 - [[Componenti]]
 - [[SO]]
-- [[Protocolli]]
+- [[Sistemi embedded/Riassunti/Protocolli/Protocolli]]
 - [[Licenze]]
 
 Mappa concettuale [[Sistemi embedded.canvas|Sistemi embedded]]
