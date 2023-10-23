@@ -926,3 +926,47 @@ Principi SOLID
 - Interface Segregation: più le capacità e competenze di una classe sono frammentate in tante interfacce più è facile utilizzarla in contesti differenti. Meglio quindi avere **tante interfacce specifiche** e piccole (composte da pochi metodi), piuttosto che poche, grandi e generali.
 - Dependency Inversion: il codice dal quale una classe dipende non deve essere più **concreto** di tale classe. Le cose astratte non dovrebbero dipendere da classi concrete
 
+---
+
+Reference escaping: accesso a un attributo privato fuori dalla classe
+Situazioni:
+- Getter che ritorna un riferimento 
+- Setter che assegna ad un attributo privato un riferimento che gli viene passato
+- Costruttore che assegna ad un attributo segreto un riferimento che gli viene passato
+
+Encapsulation e information hiding
+Parnas L8: solo cio che è nascosto puo essere cambiato liberamente e senza pericoli 
+Scopi:
+- facilitare la comprensione del codice, definendo le responsabilita
+- rendere piu facile modificarne una parte senza danni
+
+Immutabilita
+Classe in cui non c è modo di cambiare lo stato dell'oggetto dopo la sua inizializzazione
+Condizione:
+- NON fornire metodi che mutano lo stato
+- (non è obbligatorio che gli attributi siano privati)
+- ha TUTTI gli attributi final
+- Assicura l'accesso esclusivo a tutte le parti non immutabili
+
+Code smell:
+- codice duplicato
+- Metodo "troppo" lungi
+- Troppi livelli logici di indentazione 
+- Troppi attributi per classe
+- Lunghe sequenze di if-else o switch
+- classe troppo grande
+- lista di parametri troppo lunga
+- numeri magici
+- commenti 
+- nomi oscuri o inconsistenti
+- codice morto
+- getter e setter --> rinuncio a responsabilità
+
+es mazzo di carte da 52 carte, 4 semi, 13 valori
+
+
+type abstraction: diamo un nome ai concetti
+nel nostro es, al mazzo e alle carte
+
+un enum per ogni valore definisce un unico oggetto immutabile e condiviso
+List con Generico è piu difficile da gestire di un array

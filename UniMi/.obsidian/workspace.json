@@ -16,8 +16,36 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "ca037a4be1afd8da",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ingegneria del software/Appunti.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "49370cf8a0765cc6",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "viewState": {
+                  "x": -3237.858798482539,
+                  "y": 2266.3491340878263,
+                  "zoom": -3.7205535137653354
+                }
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,6 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Ingegneria del software/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Ingegneria del software/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +150,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Ingegneria del software/Appunti.md"
+              }
             }
           },
           {
@@ -159,9 +191,11 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c1ce2ce19829fc50",
+  "active": "ca037a4be1afd8da",
   "lastOpenFiles": [
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+    "Ingegneria del software/Appunti.md",
+    "Ingegneria del software/backup canvas/Ingegneria del software (SWENG) v1.png",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Trasmissione in banda base/Efficienza della rete.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI",
@@ -192,13 +226,11 @@
     "Reti di calcolatori/Riassunti/Rete 1Gbps.md",
     "Reti di calcolatori/Riassunti/Protocolli/Data link.md",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Trasmissione in banda base/Jitter.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Unità di misura.md",
     "Reti di calcolatori/Riassunti/Tipi di rete",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello 2",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello 1",
     "Reti di calcolatori/Riassunti/Protocolli",
     "Reti di calcolatori/Riassunti/Dispositivi di rete",
-    "Ingegneria del software/backup canvas/Ingegneria del software (SWENG) v1.png",
     "Sistemi embedded/Sistemi embedded.canvas",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Ingegneria del software/Riassunti/img/Pasted image 20231015114038.png",
