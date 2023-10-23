@@ -12,7 +12,6 @@ Bus lineare: formato da un cavo coassiale, a cui si connettono i transiver di un
 SE A trasmette il suo segnale si propaga a dx e sx, raggiungendo tutti i nodi (secondo le regole di propagazione raggiunge tutti i nodi in momenti diversi in base alla loro distanza dal mittente)
 Nativamente il messaggio è ricevuto da tutti i nodi
 
-
 E' necessario gestire l'accesso mutuamente esclusivo al canale (che sia esso un centro stella hub o un bus) comune
 
 Protocolli di accesso condiviso per reti broadcast

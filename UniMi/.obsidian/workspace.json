@@ -25,9 +25,9 @@
               "state": {
                 "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "viewState": {
-                  "x": 1038.7219533484613,
-                  "y": -103.27916412174795,
-                  "zoom": -2.6262324804184933
+                  "x": 3788.6487638753088,
+                  "y": -2290.55042629505,
+                  "zoom": -1.79289914708516
                 }
               }
             }
@@ -83,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -180,13 +181,14 @@
   },
   "active": "06f9b9c9154cf7d0",
   "lastOpenFiles": [
+    "Reti di calcolatori/Riassunti/Comunicazione digitale/Trasmissione in banda base/Efficienza della rete.md",
+    "Reti di calcolatori/Reti di calcolatori.canvas",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Trasmissione in banda base",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Error control",
     "Reti di calcolatori/Riassunti/Comunicazione digitale",
     "Reti di calcolatori/Riassunti/Rete introduzione",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Error control/Dimensionamento clock.md",
-    "Reti di calcolatori/Reti di calcolatori.canvas",
     "Reti di calcolatori/Riassunti/Comunicazione tra due nodi.md",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Manchester encoding.md",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Sliding window.md",
@@ -210,14 +212,12 @@
     "Reti di calcolatori/Riassunti/Protocolli/Data link.md",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Trasmissione in banda base/Jitter.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Unità di misura.md",
-    "Reti di calcolatori/Riassunti/VLAN.md",
     "Reti di calcolatori/Riassunti/Tipi di rete",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello 2",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello 1",
     "Reti di calcolatori/Riassunti/Protocolli",
     "Reti di calcolatori/Riassunti/Dispositivi di rete",
     "Ingegneria del software/backup canvas/Ingegneria del software (SWENG) v1.png",
-    "Ingegneria del software/backup canvas",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Sistemi embedded/Sistemi embedded.canvas",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",

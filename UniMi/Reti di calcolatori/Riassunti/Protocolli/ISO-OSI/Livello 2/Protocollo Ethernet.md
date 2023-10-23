@@ -1,33 +1,29 @@
 Approccio "casuale"
 
-
-Su reti distribuite il controllo deve essere totalmente distribuito
-
-Tecnologie dominante nelle reti locali
-Non esiste nessuna funzione di accesso che sia concentrata su una stazione.
+Su reti distribuite il controllo deve essere totalmente distribuito: non esiste nessuna funzione di accesso che sia concentrata su una stazione.
 Ogni stazione è in grado di operare in autonomia: ciò implica un accesso immediato in qualsiasi momento di un qualsiasi nuovo dispositivo
 
 Ethernet introduce un controllo di accesso probabilistico
-Una stazione A invia il suo messaggio: riesce a trasmettere quando è l'unico a tentare l'accesso al canale in quell'istante. SE nello stesso istante due stazioni tentano l accesso, i due messaggi collidono 
+- Protocollo ALOHA:
+Una stazione A invia il suo messaggio: riesce a trasmettere quando è l'unico a tentare l'accesso al canale in quell'istante. SE nello stesso istante due stazioni tentano l'accesso, i due messaggi collidono 
 Per rilevare la collisione le stazioni fanno complemento bit a bit di ciò che inviano e ciò che ricevono, sospendendo la trasmissione 
 
-Questo era il protocollo ALOHA
-
-SE il numero di stazioni è basso, le collisioni saranno in numero minore 
 Risultato di efficienza: la curva di ALOHA ha una forma di campana in quanto all'aumentare delle stazioni ho un utilizzo maggiore ma fino a un certo punto in cui ci sono troppe stazioni che causano collisioni. Il picco della curva è del 18%
 
-Il "vero" protocollo Ethernet 
-A vuole trasmettere, prima di farlo fa Carrier Sense: legge dal canale ciò che passa, capendo se è il canale è in idle o meno.
-Le collisioni ci sono quando SE B sta trasmettendo e C fa CS, quindi aspetta 1-persistent aspettando che B finisca MA se un 2o nodo fa CS, ora entrambi stanno aspettando la terminazione di comunicazione di B e entrambi faranno CS nello stesso momento
+- Protocollo Ethernet
+A vuole trasmettere, prima di farlo fa $Carrier Sense$: legge dal canale ciò che passa, capendo se è il canale è in idle o meno.
+Le collisioni ci sono quando SE B sta trasmettendo e C fa CS, quindi aspetta 1-persistent aspettando che B finisca MA se un nodo fa CS, ora entrambi stanno aspettando la terminazione di comunicazione di B e entrambi faranno CS nello stesso momento
 
-Ha sempre una forma a campana la curva di utilizzo ma il punto di saturazione ora è al 91%
+La curva di utilizzo ha sempre una forma a campana ma il punto di saturazione ora è al 91%
 
 SE applicassimo la stessa tecnica di ritrasmissione della finestra, avremmo nuovamente una collisione 
 
-La probabilita di collisione è tanto maggiore tanto piu stazioni ci sono sul canale 
+La probabilità di collisione è tanto maggiore tanto piu stazioni ci sono sul canale 
 
-Soluzione: protocollo CSMA-CD Carrier Sense Multiple Access - Collision Detection (standardizzato come IEEE 802.3, es Wi-Fi IEEE 802.11)
-Ritrasmissione dei frame coinvolti nella collisione facendo aspettare le stazioni coinvolte un tempo tau casuale. 
+Soluzione: 
+Protocollo CSMA-CD Carrier Sense Multiple Access - Collision Detection 
+Standardizzato come IEEE 802.3 (es Wi-Fi IEEE 802.11)
+Ritrasmissione dei frame coinvolti nella collisione facendo aspettare le stazioni coinvolte un tempo $\tau$ casuale. 
 La generazione del numero casuale non ha un range ampio, tecnica 
 $Binary$ $Exponenzial$ $Backoff$ $(BEB) = [0:2^i-1]*UT$ con i il numero di collisioni (1<i<16) della stazione e UT unita di tempo 
 
@@ -38,8 +34,6 @@ E' un controllo completamente distribuito
 
 La fairness è smussata qui perche se A deve trasmettere molti frame va in collisioni con le altre stazioni non potendo trasmettere
 
-
-provando tutti i gradi di persistenza...: non persistente tanto che appena rilevo CS, genero subito un numero casuale in cui non controllo il CS
 
 
 Problema del tempo di propagazione
@@ -102,13 +96,7 @@ B e C ricevono in modo asincrono ma è difficile da realizzare in quanto B e C d
 
 In banda base, SE trasmetto 3 1, il segnale rimane alto
 In Ethernet invece i 3 1, viene garantito una transizione di stato da 1 a 0: codifica di Manchester
-SE ho un 1: transizione da 0 a 1
-SE ho uno 0: transizione da 1 a 0
-La transizione avviene sulla meta del segnale, shiftato
 
-ad ogni clock in ricezione leggo il canale di trasmissione
-per estrarre il clock in ricezione: il livello fisico aggiunge 7+1 byte di preambolo nel messaggio, in modo che riesca ad estrarre il clock e fare diventare il proprio come quello estratto. In particolare 10101010101010 e poi 011
-codificando manchester la sequenza di 1010... ottengo la stessa ma shiftata di mezzo colpo di clock, dando cosi la possibilità al ricevente, in base ai fronti della sequenza, di sincronizzare il proprio clock
 
 Oggi la gran parte delle reti Ethernet è fatta con questa topologia
 
