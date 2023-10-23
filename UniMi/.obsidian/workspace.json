@@ -25,9 +25,9 @@
               "state": {
                 "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "viewState": {
-                  "x": 3788.6487638753088,
-                  "y": -2290.55042629505,
-                  "zoom": -1.79289914708516
+                  "x": 914.4411644063947,
+                  "y": -929.662748624013,
+                  "zoom": -3.04289914708516
                 }
               }
             }
@@ -165,7 +165,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,7 +180,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "06f9b9c9154cf7d0",
+  "active": "a036a027379b1f76",
   "lastOpenFiles": [
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Trasmissione in banda base/Efficienza della rete.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
