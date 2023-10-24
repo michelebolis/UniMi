@@ -970,3 +970,11 @@ nel nostro es, al mazzo e alle carte
 
 un enum per ogni valore definisce un unico oggetto immutabile e condiviso
 List con Generico è piu difficile da gestire di un array
+
+...
+
+Polimorfismo: l oggetto dice di poter accettare oggetti diverse forme
+Interface segmentation: un oggetto si presenta con piu forme
+
+Collegamento dinamico: permette di scrivere una chiamata che chiamera un codice che non esiste ancora
+
