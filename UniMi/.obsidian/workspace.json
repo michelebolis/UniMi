@@ -18,29 +18,14 @@
             }
           },
           {
-            "id": "ca037a4be1afd8da",
+            "id": "abccf1bbf44742fb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ingegneria del software/Appunti.md",
+                "file": "Reti di calcolatori/Appunti lab.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "49370cf8a0765cc6",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-                "viewState": {
-                  "x": -3237.858798482539,
-                  "y": 2266.3491340878263,
-                  "zoom": -3.7205535137653354
-                }
               }
             }
           }
@@ -111,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ingegneria del software/Appunti.md",
+                "file": "Reti di calcolatori/Appunti lab.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ingegneria del software/Appunti.md",
+                "file": "Reti di calcolatori/Appunti lab.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ingegneria del software/Appunti.md"
+                "file": "Reti di calcolatori/Appunti lab.md"
               }
             }
           },
@@ -191,10 +176,10 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "ca037a4be1afd8da",
+  "active": "abccf1bbf44742fb",
   "lastOpenFiles": [
-    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Appunti.md",
+    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/backup canvas/Ingegneria del software (SWENG) v1.png",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Trasmissione in banda base/Efficienza della rete.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",

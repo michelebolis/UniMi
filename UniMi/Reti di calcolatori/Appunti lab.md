@@ -39,3 +39,14 @@ ATT connection automatico NON funziona spesso
 Triangolo verde: pronto
 Cerchio arancione: si sta configurando, imparando
 
+---
+
+command prompt: ping è un comando di shell che ci da l interfaccia per una funzione del protocollo di rete 
+www.unimi.it è un alias
+
+content delivery network: specificare il contenuto che vogliamo visualizzare
+
+nella rete devo esplicitamente dire con chi devo parlare
+i sistemi distribuiti sono costruiti sopra la rete, nascondendola
+Applicazioni non devono quindi specificare con chi devo parlare
+
