@@ -1030,3 +1030,40 @@ Gang of Four Patterns: definisce 23 patter e li classifica in tre categorie
 - Comportamentali: interazioni tra gli oggetti
 - Strutturali: composizioni di classi e oggetti
 
+- Singleton pattern: si vuole avere un oggetto e non una classe
+Approccio lazy: ritardare la creazione dell oggetto
+...
+Brutta soluzione: NON è thread safe
+Soluzione: usare syncronized nel metodo getInstance, che implica un controllo se qualcuno ha gia il lock sul metodo della classe
+Problema: non è ottimale dal punto di vista delle prestazioni
+Soluzione: usare syncronized SOLO dentro all if del null facendo poi nuovamente il controllo: double check
+
+ATTTTTT In Java non facciamo cosi
+
+Idioma Java con cui si fa Singleton:
+...
+
+usando un enumerabile, quando lo utilizzo la prima volta la creazione è thread safe grazie alla VM e otteniamo quello che volevamo: un unico oggetto accessibile, condiviso e immutabile
+
+- Iterator pattern: fornisce un modo di accedere agli elementi di un oggetti in maniera sequenziale senza esporne la rappresentazione
+
+oltre a Iterator ho Iterable che dipende da Iterator
+
+Con il for each dico esplicitamente che non voglio fare il remove
+se voglio farlo iterabile su due cose: i tipi generici si vedono a tempo di  compilazione e poi spariscono quindi NON posso 
+
+Nullability
+ad una variabile che indica un riferimento a un oggetto allora possiamo assegnarci un valore null
+Problema: quando proviamo a deferenziare la variabile e non puntando a nulla, riceviamo un errore
+
+...
+
+come implementare attributi diversi da null: 
+assert attributo!=null;
+
+modalita sviluppo: faccio un if --> segnalo io l errore dell utilizzatore, programmazione difensiva
+modalita produzione: assert o notazione --> assumo l utilizzo corretto, programmazione con contratto
+
+
+
+
