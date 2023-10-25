@@ -18,19 +18,18 @@
             }
           },
           {
-            "id": "abccf1bbf44742fb",
+            "id": "8023587e8ebb0116",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reti di calcolatori/Appunti lab.md",
+                "file": "Ingegneria del software/Appunti.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +95,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Appunti lab.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +111,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Appunti lab.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,9 +132,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Reti di calcolatori/Appunti lab.md"
-              }
+              "state": {}
             }
           },
           {
@@ -176,9 +171,10 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "abccf1bbf44742fb",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
     "Ingegneria del software/Appunti.md",
+    "Reti di calcolatori/Appunti lab.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/backup canvas/Ingegneria del software (SWENG) v1.png",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Trasmissione in banda base/Efficienza della rete.md",

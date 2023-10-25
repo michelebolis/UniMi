@@ -978,3 +978,55 @@ Interface segmentation: un oggetto si presenta con piu forme
 
 Collegamento dinamico: permette di scrivere una chiamata che chiamera un codice che non esiste ancora
 
+---
+
+UML diagram
+Freccia: relazione tra classi/oggetti
+- freccia bianca tratteggiata da classe a interfaccia: la classe implementa l'interfaccia
+- freccia nera tratteggiata da classe a classe / da classe a interfaccia: la classe ha una dipendenza rispetto all'altra
+- freccia con rombo da classe a classe: legame tra istanze, (se bidirezionale non metto la freccia)
+	- associazione, 
+	- aggregazione (rombo bianco): legato a qualcosa di esterno che mi definisce
+		Metodo implementativo: l'attributo
+	- composizione (rombo nero): deve essere un contenimento fisico. Requisiti
+		- L'oggetto contenuto deve essere presente nella SOLA classe contenente 
+		- La vita dell oggetto contenuto sia legata al contenente 
+		Metodo implementativo: classe statica inner
+	minimo..massimo di istanze
+
+corsivo: oggetto non concreto (ATT classe che implementa un metodo in corsivo, sarà presente nell UML in quanto ha tale metodo come concreto)
+Per essere concreto: NON devo avere metodi astratti
+Per essere astratto: non c è un vincolo in quanto nonostante abbia tutti i metodi concreti potrei decidere di restare astratta
+
+\<\<stereotipo>>
+sottolineatura: quando un metodo/attributo è statico 
+
+Attributo: 
+- pubblico: verde
+- protected: giallo
+- private: rosso
+
+
+Pattern: sono soluzioni a problemi ricorrenti
+è uno strumento concettuale che cattura la soluzione per una famiglia di problemi e che esprime architetture vincenti
+
+Antipattern: denuncia di una soluzione sbagliata anche se ragionevole ad un problema
+
+Idioma: un modo di risolvere il pattern dipendente dal linguaggio
+
+Meta pattern: pattern con cui pensiamo i pattern, identifica due elementi base
+- HookMethod: metodo astratto che determina il comportamento specifico nelle sottoclassi
+	- Punto caldo in cui si puo intervenire per personalizzare, adattare lo schema 
+- TemplateMethod: metodo che coordina generalmente piu hook method
+	- Punto freddo di invaribilità del pattern
+
+Come si relazionano hook e template
+- Unification: template e hook sono nella stessa classe del framework
+- Connection: template e hook sono in classi separate tra di loro collegate da una associazione
+- Recursive connection: template e hook sono in classi tra di loro collegate anche tramite relazione di generalizzazione
+
+Gang of Four Patterns: definisce 23 patter e li classifica in tre categorie
+- Creazionali: creazione degli oggetti
+- Comportamentali: interazioni tra gli oggetti
+- Strutturali: composizioni di classi e oggetti
+
