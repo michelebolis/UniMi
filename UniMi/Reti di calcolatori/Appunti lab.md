@@ -50,3 +50,16 @@ nella rete devo esplicitamente dire con chi devo parlare
 i sistemi distribuiti sono costruiti sopra la rete, nascondendola
 Applicazioni non devono quindi specificare con chi devo parlare
 
+Appenda accendo un interfaccia di rete, il dispositivo manda un segnale di portante per segnalare che il dispositivo è accesso
+
+freccia rossa verso il basso --> cavo sbagliato
+
+FastEthernet e Ethernet vanno bene perche sono protocolli compatibili
+
+Hub c è solo un numero nel nome
+Switch invece ha 2 numeri nel nome in quanto il primo numero è della scheda mentre il secondo l identificatore della porta sulla scheda
+Si contano le interfacce da dx a sx
+
+il router implementa il livello 3: il router esigono che ognuno delle interfacce sia su una rete differente. 
+il router resta rosso perche gli dobbiamo dire esplicitamente di usare l interfaccia: config --> portStatus on
+
