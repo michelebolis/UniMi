@@ -708,3 +708,135 @@ Processo di forwarding: metta input in output in base a una tabella in cui per o
 Questo è possibile grazie al processo di rowting che raccoglie dati, li processa, e popola le tabelle di rowting. E' necessario che abbia conoscenza della topologia di rete grazie alla quale popola la tabella 
 
 
+---
+
+Moduli logici:
+IP: Addressing
+OSPL: Routing
+
+
+Addressing
+Indirizzo IP vale su tutta la rete internet a differenza di MAC
+Caratteristica: indirizzo unico su tutto il pianeta
+Problema: dato un indirizzo destinazione, dobbiamo capire quale sia il cammino migliore per raggiungere tale destinazione
+unita dati L3: pacchetto
+
+- Total lenght su 16bit
+- TTL Time To Live per 
+- Source IPv4 su 32bit
+- Destination IPv4 su 32bit
+- Option
+- Payload
+
+IPv6 invece ha 128bit
+
+Problema frammentazione: se ho un host con TCP che produce dati da 7000B MA devo farceli stare su un token ring che li fa passare su 4kB e magari nella lan destinazione ne fa passare al massimo 1kB
+
+Deve frammentare i 7k in 4k e 3k: non viene frammentato in questo modo
+Bisogna tener presente che al payload bisogna aggiungere gli IP delle due macchine e altre info che in totale pesano 20B.
+Il IP non gestisce una byte stream: si utilizza un fragment offset su 13bit MA la lenght è su 16bit. L'offset non viene contato sui byte ma sugli ottetti
+QUINDI la dimensione deve essere un multiplo di 8
+nel nostro caso è 3976 (?497?)
+
+Primo pacchetto
+PKT ID (Identification): 20
+Fragment Offset: 0
+Tot length: 7000B
+Dati: 3976B
+Mid: 1 (1 se il frammento è seguito da altri)
+
+Frammentazione del primo pacchetto per la seconda rete nel router del destinatario
+PKT ID (Identification): 20
+Fragment Offset: 0
+Tot length: 7000B
+Dati: 1480B (numero piu vicino a 1500-20 e divisibile per 8)
+Mid: 1
+
+PKT ID (Identification): 20
+Fragment Offset: 185 (=1480/8)
+Tot length: 7000B
+Dati: 1480B (numero piu vicino a 1500-20 e divisibile per 8)
+Mid: 1
+
+PKT ID (Identification): 20
+Fragment Offset: 370
+Tot length: 7000B
+Dati: 1016B 
+Mid: 1
+
+Secondo pacchetto
+PKT ID (Identification): 20
+Fragment Offset: 497
+Tot length: 7000B
+Dati: 3024B
+Mid: 0
+
+Frammentazione
+PKT ID (Identification): 20
+Fragment Offset: 497 
+Tot length: 7000B
+Dati: 1480B 
+Mid: 1
+
+PKT ID (Identification): 20
+Fragment Offset: 682 
+Tot length: 7000B
+Dati: 1480B 
+Mid: 1
+
+PKT ID (Identification): 20
+Fragment Offset: 807
+Tot length: 7000B
+Dati: 64B 
+Mid: 0
+
+Chi ricompone i due frammenti IP: la destinazione, in particolare l'IP del destinatario
+Vantaggio: non sovraccarichiamo i router intermedi
+
+Nel caso di perdita del segmento, l IP se ne accorge 
+E' il TCP che nel caso ritrasmetta i dati MA rimanda tutto, non solo quello che manca perche è il livello 3 che sa quale non è arrivato
+
+In internet il livello 2 non fa cose affidabili dal punto di vista prestazionale, delegandolo a livello 4
+
+I 32 bit del campo IP address
+
+Ogni rete in internet ha un NET ID. Ognuna delle quali ha delle macchine interconnessi, ognuna delle quali ha un host ID
+La gerarchia è utile per i router intermedi di rete che non devono quindi ispezionare tutti i 32 bit, ma SOLO il NET ID
+Grazie alla gerarchia nelle tabelle di instradamento dei router intermedi conservo solo i NET ID
+
+- Unicast
+	- Classe A: 7 bit per NET ID e 24 bit per Host ID
+	- Classe B: 14 bit per NET ID e 16 bit per Host ID
+	- Classe C: 21 bit per NET ID e 8 per Host ID
+- Multicast: Classe F: 28 bit per Multicast address
+- Reserved: Classe E
+
+255.255.255.255 per indicare tutti gli host
+192.16.8.0 = 11000000.00010000.00001000.00000000
+
+Problema: spreco di indirizzi
+Soluzione: subnetting
+NET ID - SubNET ID - Host ID
+L'organizzazione in subnet non è definita da uno standard, ma è demandata al livello IP che sceglie quanti bit degli host ID demandare al subnet ID
+Per discriminare SubNet e host id, aggiungo ad ogni entry nella tabella di routing la SubNet Mask, tanti 1 quanti bit sono usati dal SubNet ID. Facendo l'AND tra il mio indirizzo e la mask, maschero i bit dell host id
+es 16bit NET ID - 6bit SubNet ID - 10 Host ID
+11111111 11111111 111111 0000000000 = /22 cioè ha bisogno di 22 1
+
+130.50.15.6
+xxx . xxx . 000011 11.00000110
+111..111. 111111 00.00000000
+
+Come risultato rimarranno solo i bit del SubNet: 000011 = SubNet ID 3
+
+Quindi: 
+- Viene analizzato il NET ID
+- SE è lo stesso della rete a cui è collegato il router, manda li il pacchetto
+	- Viene controllato il SubNet ID
+		- Viene controllatol Host ID
+
+Svantaggio: complica le tabelle di routing
+
+CIDR Classless Inter Domain Routing
+Sono state scartate le varie classi
+A varie organizzazioni vengono dati una certa porzione di indirizzamento libera
+ogni entry nei router dovra avere un indirizzo di partenza e una maschera che filtrera i bit di host ID
