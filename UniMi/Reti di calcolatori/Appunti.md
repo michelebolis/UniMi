@@ -840,3 +840,123 @@ CIDR Classless Inter Domain Routing
 Sono state scartate le varie classi
 A varie organizzazioni vengono dati una certa porzione di indirizzamento libera
 ogni entry nei router dovra avere un indirizzo di partenza e una maschera che filtrera i bit di host ID
+
+---
+
+es 
+Milano 194.24.0.\_ -> 194.24.7.\_ = 2048 indirizzi
+base 1100 0010 0001 1000 0000 0000 0000 0000
+maschera \\21 : 21 bit a 1 e 11 bit a 0
+
+Roma 194.24.16.\_ -> 194.24.31 = 4096 indirizzi
+
+Torino: 194.24.8.0 -> 194.24.11.\_ = 1024 indirizzi
+
+Arriva pacchetto con indirizzo 194.24.17.4
+Prova a mappare l indirizzo su Milano
+1100 0010 0001 1000 0001 0001 0000 0100 
+1111 1111 1111 1111 1111 1000 0000 0000
+SE Ottengo l indirizzo base di Milano -> Indirizzo appartiene al blocco di milano
+11 00 0010 0001 1000 0001 0000 0000 0000
+
+Non ottengo la base di milano
+Facendo la stessa cosa con Roma, ottengo l indirizzo base di Roma
+Il pacchetto viene quindi instradato verso il SubNet di Roma
+
+Le tabelle di routing contengono quindi l indirizzo base, quanti bit utilizza la maschera, la maschera stessa MA l elaborazione della tabella è piu costosa in quanto devo potenzialmente scorrere tutte le entry per trovare il SubNet giusto
+
+CIDR ha liberato molto indirizzi IPv4
+
+Vantaggio vero dell IPv4: NAT Network Address Traslation 
+Dispotivo (router) che si occupa di tradurre indirizzi
+Separo internet con il NAT da un insieme che è in grado di concentrare un numero elevato di macchine
+Gli Host non utilizzano un indirizzo IP pubblico MA un indirizzo IP privato
+L'indirizzo pubblico è unico al mondo mentre quello privato è assegnato dall amministratore della rete locale
+Quando un Host della rete deve comunicare attraverso Internet, dovra utilizzare un indirizzo pubblico trasformando il proprio indirizzo privato a pubblico attraverso il NAT
+
+10.0.0.0 - 10.255.255.255
+...
+
+Basta un indirizzo IPv4 pubblico per rappresentare centinaia di dispositivi privati
+
+es 
+host: 10.0.0.1 
+NAT: 194.24.16.0
+Server: 200.10.0.0
+
+Tabella NAT
+
+| IP sorgente | IP NAT      | IP destinazione | # Porta Sorgente | # Porta destinazione |  Porta NAT   |
+| ----------- | ----------- | --------------- | ---------------- | -------------------- | --- |
+| 10.0.0.1    | 194.24.16.0 | 200.10.0.0      | 10               | 80                   |10     |
+| 10.0.0.4    | 194.24.16.0 | 200.10.0.0      | 15               | 80                   | 11    |
+
+Identificatore logico ricavato dal livello 4 
+TCP comunica con i processi applicativi grazie alla porta logica, un identificatore numerico univoco logico all interno della macchina
+La porta logica è l'"indirizzo" del livello 4, viene salvata nell header di TCP
+La porta è un descrittore di socket
+
+Da standard quindi il livello 3 guarda l header del livello 4
+Avra bisogno di avere anche una maschera del livello superiore
+
+Porta destinazione 80 = Internet
+
+MA se due macchine usano la stessa porta sorgente non funzione. Il NAT crea quindi un altra entry in cui è il NAT che da il numero di porta sorgente, evitando quindi sovrapposizioni
+
+Lato destinatario: per aprire il mio sito all esterno, apro la porta di servizio 80 sull'indirizzo del server
+
+Problema: Access Gateway non conosce il MAC address della macchina destinataria, o in generale su una rete che instrada con un indirizzamento diverso
+Soluzione: ARP
+Address Resolution Protocol 
+Risolve un indirizzo IP in un indirizzo MAC mandando un ARP request in broadcast e la macchina destinataria rispondera con una ARP reply (ma essendoci specifica l IP address, solo la macchina giusta rispondera) 
+Sara conservata una tabella con un time to leave in cui vengono salvati gli IP e il MAC address
+
+SE ho piu LAN interconnesse, vi è il Proxy ARP nella macchina (per forza un router perche serve che lavori a livello 3) che collega le due LAN cosicche quando riceve l'ARP request propaga la richiesta (se il SubNet ID è il suo) e risponde specificando pero il MAC address del proxy
+
+RARP Reverse ARP
+
+
+formato pacchetti 802.3
+
+| Campo            |  Bytes   | Note    |
+| ----------- | --- | --- |
+| DA          | 6   |     |
+| SA          | 6   |     |
+| Type/lenght | 2   | 0806 = ARP    |
+
+formato pacchetto ARP 
+
+| Campo                               | bit |     |
+| ----------------------------------- | ----- | --- |
+| HW type                             |  16     |     |
+| Protocol Type                       |    16   |     |
+| ...                                 |       |     |
+| Operator                            |      16 |     |
+| Sender HW address | 16      |  MAC del gateway   |
+| Sender IP address                   |   16    |     |
+| Target HW address                   |     16  |     |
+| target IP address                                    |  16     |     |
+
+
+Figura 6.26
+Problema: macchine che entrano nella rete locale, non portandosi dietro l IP address dell organizzazione precedente. 
+Gli IP non sempre sono assegnati statisticamente
+IP vengono assegnati dinamicamente con DHCP Dynamic Host Configuration Protocol
+Devo ovviamente garantire che l'IP che assegno dinamicamente rimane unico per il periodo di utilizzo
+Le macchine si rivolgono automaticamente al server DHCP della rete, solitamente il gateway della rete
+
+Nelle organizzazioni piu complesse, ci possono essere diversi DHCP server 
+
+Protocollo DHCP
+Il client fa una richiesta, DHCP Discover. Campi: IP sorgente (0.0.0.0), IP destinazione del DHCP server (255.255.255.255), TID transaction ID (generato dal client)
+Il server associa MAC address - TID, mandando una DHCP Offer che manda al client. Campo: IP Sorgente (IP Server), ..., TID
+Per verificare che IP address non sia gia in utilizzo dagli altri, il server fa un ping con l IP address che sta offrendo
+Il client prende atto dell offerta, potenzialmente piu di una (se ci sono piu server).
+Il client produce una DHCP request. Campi: IP Sorgente (0.0.0.0), IP Destinazione (IP Server sempre in broadcast), TID
+Da quel momento in poi al client è assegnato quell IP, il server manda quindi un DHCP ACK
+Da quando ricevo ACK il client diventa indirizzabile MA prima il client fa check attravero un ARP request (non dovrebbe rispondermi nessuno)
+
+DHCP funziona a 4 vie (Discover-Offer-Request-ACK) perche i server sono piu di uno
+
+Vengono inseriti controlli per la discover e la request, ripetendo nel caso la ritrasmissione per al massimo k tentativi
+
