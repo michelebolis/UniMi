@@ -713,12 +713,11 @@ Questo è possibile grazie al processo di rowting che raccoglie dati, li process
 Moduli logici:
 IP: Addressing
 OSPL: Routing
-
+Problema: dato un indirizzo destinazione, dobbiamo capire quale sia il cammino migliore per raggiungere tale destinazione
 
 Addressing
 Indirizzo IP vale su tutta la rete internet a differenza di MAC
 Caratteristica: indirizzo unico su tutto il pianeta
-Problema: dato un indirizzo destinazione, dobbiamo capire quale sia il cammino migliore per raggiungere tale destinazione
 unita dati L3: pacchetto
 
 - Total lenght su 16bit
@@ -732,78 +731,49 @@ IPv6 invece ha 128bit
 
 Problema frammentazione: se ho un host con TCP che produce dati da 7000B MA devo farceli stare su un token ring che li fa passare su 4kB e magari nella lan destinazione ne fa passare al massimo 1kB
 
-Deve frammentare i 7k in 4k e 3k: non viene frammentato in questo modo
+Deve frammentare i 7k in 4k e 3k (non viene frammentato in questo modo)
 Bisogna tener presente che al payload bisogna aggiungere gli IP delle due macchine e altre info che in totale pesano 20B.
 Il IP non gestisce una byte stream: si utilizza un fragment offset su 13bit MA la lenght è su 16bit. L'offset non viene contato sui byte ma sugli ottetti
 QUINDI la dimensione deve essere un multiplo di 8
-nel nostro caso è 3976 (?497?)
+nel nostro caso è 3976 
 
-Primo pacchetto
-PKT ID (Identification): 20
-Fragment Offset: 0
-Tot length: 7000B
-Dati: 3976B
-Mid: 1 (1 se il frammento è seguito da altri)
+MID = 0 SE il frammento è l ultimo del pacchetto
 
-Frammentazione del primo pacchetto per la seconda rete nel router del destinatario
-PKT ID (Identification): 20
-Fragment Offset: 0
-Tot length: 7000B
-Dati: 1480B (numero piu vicino a 1500-20 e divisibile per 8)
-Mid: 1
+| Nome         | PKT ID | Fragment Offset | Tot length | Dati  | MID |
+| ------------ | ------ | --------------- | ---------- | ----- | --- |
+| 1° pacchetto | 20     | 0               | 7000B      | 3976B | 1   |
+| 2° pacchetto             |  20      |  497               |  7000B          | 3024B      |    0 |
 
-PKT ID (Identification): 20
-Fragment Offset: 185 (=1480/8)
-Tot length: 7000B
-Dati: 1480B (numero piu vicino a 1500-20 e divisibile per 8)
-Mid: 1
+Frammentazione dei due pacchetti per la seconda rete nel router del destinatario
 
-PKT ID (Identification): 20
-Fragment Offset: 370
-Tot length: 7000B
-Dati: 1016B 
-Mid: 1
+| Nome         | PKT ID | Fragment Offset | Tot length | Dati  | MID |
+| ------------ | ------ | --------------- | ---------- | ----- | --- |
+| 1° PKT 1a PT | 20     | 0               | 7000B      | 1480B | 1   |
+| 1° PKT 2a PT | 20     | 185               | 7000B      | 1480B | 1   |
+| 1° PKT 3a PT | 20     | 370               | 7000B      | 1016B | 1   |
+| 2° PKT 1a PT | 20     | 497               | 7000B      | 1480B | 1   |
+| 2° PKT 2a PT | 20     | 682               | 7000B      | 1480B | 1   |
+| 2° PKT 2a PT | 20     | 807               | 7000B      | 64B | 0   |
 
-Secondo pacchetto
-PKT ID (Identification): 20
-Fragment Offset: 497
-Tot length: 7000B
-Dati: 3024B
-Mid: 0
-
-Frammentazione
-PKT ID (Identification): 20
-Fragment Offset: 497 
-Tot length: 7000B
-Dati: 1480B 
-Mid: 1
-
-PKT ID (Identification): 20
-Fragment Offset: 682 
-Tot length: 7000B
-Dati: 1480B 
-Mid: 1
-
-PKT ID (Identification): 20
-Fragment Offset: 807
-Tot length: 7000B
-Dati: 64B 
-Mid: 0
+Note: 
+- Dati: 1480B (numero piu vicino a 1500-20 e divisibile per 8)
+- Fragment Offset: 185 (=1480/8)
 
 Chi ricompone i due frammenti IP: la destinazione, in particolare l'IP del destinatario
 Vantaggio: non sovraccarichiamo i router intermedi
 
 Nel caso di perdita del segmento, l IP se ne accorge 
-E' il TCP che nel caso ritrasmetta i dati MA rimanda tutto, non solo quello che manca perche è il livello 3 che sa quale non è arrivato
+E' il TCP che nel caso ritrasmetta i dati MA rimanda tutto, non solo quello che manca perché è il livello 3 che sa quale non è arrivato
 
-In internet il livello 2 non fa cose affidabili dal punto di vista prestazionale, delegandolo a livello 4
+In Internet il livello 2 non fa cose affidabili dal punto di vista prestazionale, delegandolo a livello 4
 
 I 32 bit del campo IP address
-
+- Cosa contiene
 Ogni rete in internet ha un NET ID. Ognuna delle quali ha delle macchine interconnessi, ognuna delle quali ha un host ID
 La gerarchia è utile per i router intermedi di rete che non devono quindi ispezionare tutti i 32 bit, ma SOLO il NET ID
 Grazie alla gerarchia nelle tabelle di instradamento dei router intermedi conservo solo i NET ID
 
+- Divisione in classi: 
 - Unicast
 	- Classe A: 7 bit per NET ID e 24 bit per Host ID
 	- Classe B: 14 bit per NET ID e 16 bit per Host ID
@@ -816,6 +786,7 @@ Grazie alla gerarchia nelle tabelle di instradamento dei router intermedi conser
 
 Problema: spreco di indirizzi
 Soluzione: subnetting
+- Subnetting
 NET ID - SubNET ID - Host ID
 L'organizzazione in subnet non è definita da uno standard, ma è demandata al livello IP che sceglie quanti bit degli host ID demandare al subnet ID
 Per discriminare SubNet e host id, aggiungo ad ogni entry nella tabella di routing la SubNet Mask, tanti 1 quanti bit sono usati dal SubNet ID. Facendo l'AND tra il mio indirizzo e la mask, maschero i bit dell host id
@@ -836,43 +807,45 @@ Quindi:
 
 Svantaggio: complica le tabelle di routing
 
-CIDR Classless Inter Domain Routing
+- CIDR Classless Inter Domain Routing
 Sono state scartate le varie classi
 A varie organizzazioni vengono dati una certa porzione di indirizzamento libera
 ogni entry nei router dovra avere un indirizzo di partenza e una maschera che filtrera i bit di host ID
 
 ---
 
-es 
-Milano 194.24.0.\_ -> 194.24.7.\_ = 2048 indirizzi
-base 1100 0010 0001 1000 0000 0000 0000 0000
-maschera \\21 : 21 bit a 1 e 11 bit a 0
+es Tabella di instradamento
 
-Roma 194.24.16.\_ -> 194.24.31 = 4096 indirizzi
+| Location | IP inizio    | IP fine      | Tot indirizzi | Base                                    | Maschera |
+| -------- | ------------ | ------------ | ------------- | --------------------------------------- | -------- |
+| Milano   | 194.24.0.\_  | 194.24.7.\_  | 2048          | 1100 0010 0001 1000 0000 0000 0000 0000 | \\21     |
+| Roma     | 194.24.16.\_ | 194.24.31.\_ | 4096          |                                         |          |
+| Torino         | 194.24.8.0             | 194.24.11.\_             |   1024            |                                         |          |
 
-Torino: 194.24.8.0 -> 194.24.11.\_ = 1024 indirizzi
+Maschera \\n = n bit a 1 e 31-n bit a 0
 
 Arriva pacchetto con indirizzo 194.24.17.4
+SE applicando la maschera all'address ottengo l'indirizzo base della location, l'indirizzo appartiene a tale rete
 Prova a mappare l indirizzo su Milano
-1100 0010 0001 1000 0001 0001 0000 0100 
-1111 1111 1111 1111 1111 1000 0000 0000
-SE Ottengo l indirizzo base di Milano -> Indirizzo appartiene al blocco di milano
-11 00 0010 0001 1000 0001 0000 0000 0000
+1100 0010 0001 1000 0001 0001 0000 0100 base
+1111 1111 1111 1111 1111 1000 0000 0000 maschera
+1100 0010 0001 1000 0001 0000 0000 0000 base AND maschera
 
 Non ottengo la base di milano
-Facendo la stessa cosa con Roma, ottengo l indirizzo base di Roma
+Facendo la stessa cosa con Roma, ottengo l'indirizzo base di Roma
 Il pacchetto viene quindi instradato verso il SubNet di Roma
 
-Le tabelle di routing contengono quindi l indirizzo base, quanti bit utilizza la maschera, la maschera stessa MA l elaborazione della tabella è piu costosa in quanto devo potenzialmente scorrere tutte le entry per trovare il SubNet giusto
+Le tabelle di routing contengono quindi l'indirizzo base, quanti bit utilizza la maschera, la maschera stessa MA l'elaborazione della tabella è piu costosa in quanto devo potenzialmente scorrere tutte le entry per trovare il SubNet giusto
 
 CIDR ha liberato molto indirizzi IPv4
 
-Vantaggio vero dell IPv4: NAT Network Address Traslation 
-Dispotivo (router) che si occupa di tradurre indirizzi
+Vantaggio vero dell IPv4: 
+- NAT Network Address Traslation 
+Dispositivo (router) che si occupa di tradurre indirizzi
 Separo internet con il NAT da un insieme che è in grado di concentrare un numero elevato di macchine
 Gli Host non utilizzano un indirizzo IP pubblico MA un indirizzo IP privato
-L'indirizzo pubblico è unico al mondo mentre quello privato è assegnato dall amministratore della rete locale
-Quando un Host della rete deve comunicare attraverso Internet, dovra utilizzare un indirizzo pubblico trasformando il proprio indirizzo privato a pubblico attraverso il NAT
+L'indirizzo pubblico è unico al mondo mentre quello privato è assegnato dall'amministratore della rete locale
+Quando un Host della rete deve comunicare attraverso Internet, dovrà utilizzare un indirizzo pubblico trasformando il proprio indirizzo privato a pubblico attraverso il NAT
 
 10.0.0.0 - 10.255.255.255
 ...
@@ -906,8 +879,8 @@ MA se due macchine usano la stessa porta sorgente non funzione. Il NAT crea quin
 Lato destinatario: per aprire il mio sito all esterno, apro la porta di servizio 80 sull'indirizzo del server
 
 Problema: Access Gateway non conosce il MAC address della macchina destinataria, o in generale su una rete che instrada con un indirizzamento diverso
-Soluzione: ARP
-Address Resolution Protocol 
+Soluzione: 
+- ARP Address Resolution Protocol 
 Risolve un indirizzo IP in un indirizzo MAC mandando un ARP request in broadcast e la macchina destinataria rispondera con una ARP reply (ma essendoci specifica l IP address, solo la macchina giusta rispondera) 
 Sara conservata una tabella con un time to leave in cui vengono salvati gli IP e il MAC address
 
@@ -947,7 +920,7 @@ Le macchine si rivolgono automaticamente al server DHCP della rete, solitamente 
 
 Nelle organizzazioni piu complesse, ci possono essere diversi DHCP server 
 
-Protocollo DHCP
+- Protocollo DHCP
 Il client fa una richiesta, DHCP Discover. Campi: IP sorgente (0.0.0.0), IP destinazione del DHCP server (255.255.255.255), TID transaction ID (generato dal client)
 Il server associa MAC address - TID, mandando una DHCP Offer che manda al client. Campo: IP Sorgente (IP Server), ..., TID
 Per verificare che IP address non sia gia in utilizzo dagli altri, il server fa un ping con l IP address che sta offrendo

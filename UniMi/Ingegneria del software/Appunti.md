@@ -937,10 +937,10 @@ Situazioni:
 Encapsulation e information hiding
 Parnas L8: solo cio che è nascosto puo essere cambiato liberamente e senza pericoli 
 Scopi:
-- facilitare la comprensione del codice, definendo le responsabilita
+- facilitare la comprensione del codice, definendo le responsabilità
 - rendere piu facile modificarne una parte senza danni
 
-Immutabilita
+Immutabilità
 Classe in cui non c è modo di cambiare lo stato dell'oggetto dopo la sua inizializzazione
 Condizione:
 - NON fornire metodi che mutano lo stato

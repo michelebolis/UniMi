@@ -3,7 +3,7 @@
 3. [[Utilizzare una metafora]]
 4. [[Semplicità di progetto]]
 5. [[Testing]]
-6. [[Refactoring]] 
+6. [[Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Metodologie agili/eXP/eXP - Tecniche/Refactoring]] 
 7. [[Programmazione a coppie]]
 8. [[Proprietà collettiva ]]
 9. [[Integrazione continua ]]

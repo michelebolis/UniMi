@@ -1,0 +1,5 @@
+- [[Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Refactoring|Refactoring]]
+- [[Design knoledge]]
+- [**Principio Tell-Don’t-Ask**](https://marcobuster.github.io/sweng/07_progettazione/04_tell-dont-ask.html)
+- [**Interface segregation**](https://marcobuster.github.io/sweng/07_progettazione/05_interface-segregation.html)
+- [**Analisi del testo naturale**](https://marcobuster.github.io/sweng/07_progettazione/07_analisi-testo-naturale.html) con _noun extraction_

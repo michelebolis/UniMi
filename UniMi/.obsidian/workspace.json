@@ -4,9 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "f3a0bf6795f4041c",
+        "id": "8679139479939665",
         "type": "tabs",
         "children": [
+          {
+            "id": "f522ecd1dcda1af2",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "viewState": {
+                  "x": -2087.416377696948,
+                  "y": -1749.9753569202758,
+                  "zoom": -4
+                }
+              }
+            }
+          },
           {
             "id": "c1ce2ce19829fc50",
             "type": "leaf",
@@ -15,18 +30,6 @@
               "type": "graph",
               "state": {},
               "pinned": true
-            }
-          },
-          {
-            "id": "22b8260d302c4372",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reti di calcolatori/Appunti.md",
-                "mode": "source",
-                "source": false
-              }
             }
           }
         ],
@@ -80,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -96,7 +100,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +116,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,9 +137,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Reti di calcolatori/Appunti.md"
-              }
+              "state": {}
             }
           },
           {
@@ -157,12 +157,11 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -176,12 +175,34 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "22b8260d302c4372",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
-    "Reti di calcolatori/Appunti.md",
     "Ingegneria del software/Appunti.md",
-    "Reti di calcolatori/Appunti lab.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Untitled",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Unified process - funzionamento.md",
+    "img/unific.md",
+    "img",
+    "Ingegneria del software/Riassunti/img/06_unified-process-phases.png",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Unified process.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Iterator.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Singleton.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Meta pattern.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Design pattern.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/UML diagram.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Immutabilita.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Encapsulation and infomation hiding.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Code smell.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/SOLID.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/OO Object Orientation.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Design knoledge.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Refactoring.md",
+    "Reti di calcolatori/Appunti.md",
+    "Reti di calcolatori/Appunti lab.md",
     "Ingegneria del software/backup canvas/Ingegneria del software (SWENG) v1.png",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Trasmissione in banda base/Efficienza della rete.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
@@ -189,34 +210,12 @@
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Trasmissione in banda base",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Error control",
     "Reti di calcolatori/Riassunti/Comunicazione digitale",
-    "Reti di calcolatori/Riassunti/Rete introduzione",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Error control/Dimensionamento clock.md",
     "Reti di calcolatori/Riassunti/Comunicazione tra due nodi.md",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Manchester encoding.md",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Sliding window.md",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Error control/Go back-N.md",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Selective repeat.md",
-    "Reti di calcolatori/Riassunti/Comunicazione digitale/Error control/Continuous RQ.md",
-    "Reti di calcolatori/Riassunti/Comunicazione digitale/Error control/Idle RQ.md",
-    "Reti di calcolatori/Riassunti/Comunicazione digitale/Error control/Error control.md",
-    "Reti di calcolatori/Riassunti/Comunicazione digitale/Trasmissione in banda base/Trasmissione in banda base.md",
-    "Reti di calcolatori/Riassunti/Comunicazione digitale/Comunicazione digitale.md",
-    "Reti di calcolatori/Riassunti/Protocolli/Protocolli.md",
-    "Sistemi embedded/Riassunti/Protocolli/Protocolli.md",
-    "Reti di calcolatori/Riassunti/Rete introduzione/Controllo di congestione.md",
-    "Reti di calcolatori/Riassunti/Rete introduzione/Controllo di flusso.md",
-    "Reti di calcolatori/Riassunti/Rete introduzione/Affidabilita.md",
-    "Reti di calcolatori/Libro/Libro.md",
-    "Reti di calcolatori/Libro/Riassunto libro.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete.md",
-    "Reti di calcolatori/Riassunti/Rete 1Gbps.md",
-    "Reti di calcolatori/Riassunti/Protocolli/Data link.md",
-    "Reti di calcolatori/Riassunti/Comunicazione digitale/Trasmissione in banda base/Jitter.md",
-    "Reti di calcolatori/Riassunti/Tipi di rete",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello 2",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello 1",
-    "Reti di calcolatori/Riassunti/Protocolli",
-    "Reti di calcolatori/Riassunti/Dispositivi di rete",
     "Sistemi embedded/Sistemi embedded.canvas",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Ingegneria del software/Riassunti/img/Pasted image 20231015114038.png",
@@ -226,7 +225,6 @@
     "LAB.md/Exported image 20231013111609-0.png",
     "LAB.md/Exported image 20231013111608-6.png",
     "LAB.md/Exported image 20231013111608-5.png",
-    "LAB.md/Exported image 20231013111608-4.png",
-    "ESAME 2022218.md/Exported image 20231013111609-3.png"
+    "LAB.md/Exported image 20231013111608-4.png"
   ]
 }
