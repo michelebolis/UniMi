@@ -63,3 +63,35 @@ Si contano le interfacce da dx a sx
 il router implementa il livello 3: il router esigono che ognuno delle interfacce sia su una rete differente. 
 il router resta rosso perche gli dobbiamo dire esplicitamente di usare l interfaccia: config --> portStatus on
 
+---
+
+In automatico mettendo l indirizzo nel router, viene messo la netmask che equivale ad una classe C
+Nel PX -> Setting -> Default gateway deve essere settato all indirizzo del router
+
+Simulazione : mi permette di visualizzare gli eventi dei vari protocolli
+ICMP affianca IP per il servizio ping
+per fare la simulazione devo prima fare un ping (icona busta chiusa tra pc e server)
+
+Ci sono in realta due buste:
+- Uno ICMP 
+- Uno ARP
+
+cliccando sulla busta ho i dettagli della PDU Protocol Data Unit
+in OSI model posso vedere ogni passaggio che viene effettuato
+
+Croce rossa sulla busta perche il ruoter non sa dove sia (guardare ARP table usando la lente di ingrandimento sul router)
+pero mentre il router ha imparato l indirizzo del server, ICMP è stato buttato
+Quando faccio il ping, il primo fallisce
+
+![[Pasted image 20231027143014.png]]
+
+simulazione di 2 ping contemporanei tra due coppie di computer collegati da uno hub tra i 4 dispositivi
+
+dominio di broadcast: SE indirizzo a livello Ethernet, tutti gli endsystem lo ricevono
+dominio di collisione: 
+
+Collisione tra i due ping nell hub
+
+Usando 4 bridge con i 4 endsystem e un hub collegato ai 4 bridge, viene fatta pulizia evitando collisioni
+
+![[Pasted image 20231027150227.png]]
