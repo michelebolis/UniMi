@@ -33,3 +33,5 @@ MA -1 non è una costante, ma una funzione seguita da 1 QUINDI sto dando a $succ
 - [[Pattern matching]]
 - [[Linguaggi di programmazione/Riassunti/OCaml/Ricorsione|Ricorsione]]
 - [[Datatypes]]
+- [[Funzioni tipiche]]
+- [[Argomenti opzionali]]

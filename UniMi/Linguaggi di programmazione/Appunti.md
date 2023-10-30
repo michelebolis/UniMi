@@ -421,27 +421,60 @@ Si basa sulla posizione nella definizione
 
 OCaml si usa named parameters 
 
+```ocaml
+ let compose ~f ~g x = f (g x) 
+ let compose' = compose ~g: (fun x -> x**3.)
+```
+
 Funzioni tipiche della programmazione funzionale
-- map: per applicare una funzione a tutti gli elementi
+- map: per applicare una funzione a tutti gli elementi di una lista
+
+```ocaml
+let rec map f = function 
+	h::l1 -> f h::map f l1 
+	| _ -> [];;
+```
+
 - filter: filtrare fuori gli elementi secondo un predicato
-- reduce: aggrega secondo un operazione. In OCaml si chiama folding, c è right_fold e left_fold 
+
+```ocaml
+let rec filter p = function
+	[] -> [] 
+	| h::l -> if p h then h :: filter p l else filter p l
+```
+
+- reduce: aggregare secondo un operazione. In OCaml si chiama folding, c è right_fold e left_fold 
+
+```ocaml
+let rec reduce acc op = function 
+	[] -> acc 
+	| h::tl -> reduce (op acc h) op tl ;;
+```
+
+Da queste si possono definire
+- exists che restituisce true SE almeno un elemento rispetta il predicato
+
+```ocaml
+let exists p l = reduce false (||) (map p l);;
+```
+
+- forall che restituisce true SE tutti gli elementi rispettano il predicato
+
+```ocaml
+let forall p l = reduce true (&&) (map p l);;
+```
 
 Come usare argomenti opzionali: struttura generale per n argomenti
-- arg x = func y rest -> rest (op x y)
-- stop x = x
-- f g = g init
+```ocaml
+let arg x = func y rest -> rest (op x y)
+let stop x = x
+let f g = g init
+
+(* es *)
 let op = fun x y -> x+y
 let init = 0
-
-f (arg 1) stop;;
-rest (+ 1 0)
-stop (+ 1 0)
-
-f (arg 1) (arg 2) stop = 3
-
-per farlo piu generale
-let op = fun x y -> y @ \[x]
-
+f (arg 1) (arg 2) stop (* = 3*)
+``` 
 
 
 
