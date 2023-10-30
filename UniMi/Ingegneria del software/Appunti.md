@@ -1066,6 +1066,11 @@ modalita produzione: assert o notazione --> assumo l utilizzo corretto, programm
 
 ---
 
+@ParamerizedTest 
+	@CsvSource {"1, 1 <- Top", "1 2, 1 2 <- Top"}
+void test(String program, String output){
+...
+}
 
 
 
