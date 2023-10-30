@@ -83,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas"
-              }
+              "state": {}
             }
           },
           {
@@ -162,10 +158,10 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "47136b92c595cdff",
+  "active": "a036a027379b1f76",
   "lastOpenFiles": [
-    "Linguaggi di programmazione/Riassunti/OCaml/Argomenti opzionali.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+    "Linguaggi di programmazione/Riassunti/OCaml/Argomenti opzionali.md",
     "Linguaggi di programmazione/Appunti.md",
     "Linguaggi di programmazione/Riassunti/OCaml/Funzioni tipiche.md",
     "Linguaggi di programmazione/Riassunti/OCaml/Slide/05. currying, map-filter-reduce, ... .4 copy.pdf",
