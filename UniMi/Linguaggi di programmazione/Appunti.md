@@ -476,24 +476,79 @@ let init = 0
 f (arg 1) (arg 2) stop (* = 3*)
 ``` 
 
+---
+
+Erlang
+Linguaggio di programmazione orientato alla concorrenza
+Le VM sono l ambiente su cui faremo girare il nostro programma
+
+Concorrenza: processi/thread sulla stessa macchina, sono concorrenti per una risorsa, in particolare per il tempo della CPU
+Parallelismo: se nelle CPU abbiamo piu core e quindi 
+
+La base di ogni computazione è il processo
+Adotta un modello attore per la concorrenza con 
+- scambio di messaggi asincrono
+- non c è la condivisione di memoria 
+
+Erlang è un linguaggio funzionale dinamicamente tipato
+Ogni attore ha una coda di messaggi
+
+```erlang
+- module(nomeModulo).
+- export(nomeFunzione/numParametri)
+``` 
+
+```erlang
+- module(fact).
+- export([fact/1]).
+fact(0) -> 1;
+fact(N) -> N * fact(N-1).
+``` 
+
+Numeri interi e float sono illimitati
+
+c(fact). permette di compilare e di importare nell'interprete
+
+...
+
+Un atomo è un etichetta con iniziale minuscola che puo contenere qualcosa
+Per avere un atomo con lettera maiuscola servono le '...'
+
+Strutture dati
+- Tupla
+{123, "walter", cazzola}
+Possono subire un pattern matching strutturale
+{{1, 2}, 3} == {1, {2, 3}}.
+Non posso aggiungere elementi
+
+- Lista 
+\[1 | \[2]]
+
+...
+
+A = 1
+A NON è una variabile ma un nome/alias per 1
+A = 2
+
+= non fa una selezione ma un pattern matching
+
+\[B | L] = \[a, b, c]
+B sarà la testa della lista mentre L sara il resto della lista
+
+quello che non mi interessa lo rappresentero con \_
 
 
+Funzione
+nomeFunzione(pattern1, pattern2, ...) when guardia -> body ;
+nomeFunzione(pattern1, pattern2, ...) when guardia -> body .
 
+La guardia puo essere
+- atomo
+- operazioni aritmetiche/booleane
+- andalso/orelse
+- permitted BIFs
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+List comprehension 
 
 
 
