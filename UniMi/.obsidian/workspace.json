@@ -158,8 +158,15 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c1ce2ce19829fc50",
+  "active": "47136b92c595cdff",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Reti di calcolatori/img/Pasted image 20231027155933.png",
+    "Reti di calcolatori/img/Pasted image 20231027155658.png",
+    "Linguaggi di programmazione/Riassunti/OCaml/Slide/06. ml in action.4 copy.pdf",
+    "Linguaggi di programmazione/Riassunti/OCaml/Slide/05. currying, map-filter-reduce, ... .4 copy.pdf",
+    "Linguaggi di programmazione/Riassunti/OCaml/Funzioni tipiche.md",
+    "Linguaggi di programmazione/Riassunti/OCaml/Argomenti opzionali.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Singleton.md",
@@ -185,8 +192,6 @@
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Trasmissione in banda base",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Error control",
-    "Reti di calcolatori/Riassunti/Comunicazione digitale",
-    "Reti di calcolatori/Riassunti/Rete introduzione",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Error control/Dimensionamento clock.md",
     "Reti di calcolatori/Riassunti/Comunicazione tra due nodi.md",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Manchester encoding.md",
@@ -198,16 +203,12 @@
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Error control/Error control.md",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Trasmissione in banda base/Trasmissione in banda base.md",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Comunicazione digitale.md",
-    "Reti di calcolatori/Riassunti/Protocolli/Protocolli.md",
-    "Sistemi embedded/Riassunti/Protocolli/Protocolli.md",
     "Ingegneria del software/backup canvas/Ingegneria del software (SWENG) v1.png",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Sistemi embedded/Sistemi embedded.canvas",
     "Ingegneria del software/Riassunti/img/Pasted image 20231015114038.png",
     "LAB.md/Exported image 20231013111609-3.png",
     "LAB.md/Exported image 20231013111609-2.png",
-    "LAB.md/Exported image 20231013111609-1.png",
-    "LAB.md/Exported image 20231013111609-0.png",
-    "LAB.md/Exported image 20231013111608-6.png"
+    "LAB.md/Exported image 20231013111609-1.png"
   ]
 }

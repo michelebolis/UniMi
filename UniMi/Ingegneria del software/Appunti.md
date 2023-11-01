@@ -1064,6 +1064,16 @@ assert attributo!=null;
 modalita sviluppo: faccio un if --> segnalo io l errore dell utilizzatore, programmazione difensiva
 modalita produzione: assert o notazione --> assumo l utilizzo corretto, programmazione con contratto
 
+---
 
+@ParamerizedTest 
+	@CsvSource {"1, 1 <- Top", "1 2, 1 2 <- Top"}
+void test(String program, String output){
+...
+}
 
+cercare plugin per regex
+imparare le regex sulle stringhe
+
+...
 

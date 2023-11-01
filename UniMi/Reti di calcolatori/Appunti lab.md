@@ -95,3 +95,23 @@ Collisione tra i due ping nell hub
 Usando 4 bridge con i 4 endsystem e un hub collegato ai 4 bridge, viene fatta pulizia evitando collisioni
 
 ![[Pasted image 20231027150227.png]]
+
+Quando un dispositivo si accende, viene fatta un ARP request sul proprio indirizzo per verificare l unicita del proprio ip e per mettere nelle ARP table degli altri dispositivi la mia corrispondenza ip-MAC
+
+ATT SE due PC hanno lo stesso IP, il ping ha successo 
+![[Pasted image 20231027155658.png]]
+
+1 switch = bridge per ogni endsystem + 1 hub
+![[Pasted image 20231027155933.png]]
+
+Protocollo di Spanning Tree (livello 2): durante la fase di leaning dei bridge, viene imposta una struttura ad albero capiscono la topologia tanto da tagliare i loop 
+Un triangolo di bridge non fa diventare tutti i cavi verdi, ma volontariamente viene disattivata un interfaccia di un bridge per evitare il loop
+
+La stessa cosa accade anche con gli switch
+
+Posso mettere lo ip in due reti diverse e se poi collego gli switch non si accorge dell errore
+Quando provo la simulazione tra i pc con i due indirizzi uguali, il ping funziona ma perche arriva a se stesso
+
+NON posso usare un solo cavo tra due switch che collegano pc di due vlan, devo avere un cavo collegato tra gli switch per ogni VLAN
+Il nome delle VLAN non è solo un colore, ma con un numero 
+Nello switch --> config --> VLAN database

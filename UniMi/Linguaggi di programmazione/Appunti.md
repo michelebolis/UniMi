@@ -421,46 +421,134 @@ Si basa sulla posizione nella definizione
 
 OCaml si usa named parameters 
 
+```ocaml
+ let compose ~f ~g x = f (g x) 
+ let compose' = compose ~g: (fun x -> x**3.)
+```
+
 Funzioni tipiche della programmazione funzionale
-- map: per applicare una funzione a tutti gli elementi
+- map: per applicare una funzione a tutti gli elementi di una lista
+
+```ocaml
+let rec map f = function 
+	h::l1 -> f h::map f l1 
+	| _ -> [];;
+```
+
 - filter: filtrare fuori gli elementi secondo un predicato
-- reduce: aggrega secondo un operazione. In OCaml si chiama folding, c è right_fold e left_fold 
+
+```ocaml
+let rec filter p = function
+	[] -> [] 
+	| h::l -> if p h then h :: filter p l else filter p l
+```
+
+- reduce: aggregare secondo un operazione. In OCaml si chiama folding, c è right_fold e left_fold 
+
+```ocaml
+let rec reduce acc op = function 
+	[] -> acc 
+	| h::tl -> reduce (op acc h) op tl ;;
+```
+
+Da queste si possono definire
+- exists che restituisce true SE almeno un elemento rispetta il predicato
+
+```ocaml
+let exists p l = reduce false (||) (map p l);;
+```
+
+- forall che restituisce true SE tutti gli elementi rispettano il predicato
+
+```ocaml
+let forall p l = reduce true (&&) (map p l);;
+```
 
 Come usare argomenti opzionali: struttura generale per n argomenti
-- arg x = func y rest -> rest (op x y)
-- stop x = x
-- f g = g init
+```ocaml
+let arg x = func y rest -> rest (op x y)
+let stop x = x
+let f g = g init
+
+(* es *)
 let op = fun x y -> x+y
 let init = 0
+f (arg 1) (arg 2) stop (* = 3*)
+``` 
 
-f (arg 1) stop;;
-rest (+ 1 0)
-stop (+ 1 0)
+---
 
-f (arg 1) (arg 2) stop = 3
+Erlang
+Linguaggio di programmazione orientato alla concorrenza
+Le VM sono l ambiente su cui faremo girare il nostro programma
 
-per farlo piu generale
-let op = fun x y -> y @ \[x]
+Concorrenza: processi/thread sulla stessa macchina, sono concorrenti per una risorsa, in particolare per il tempo della CPU
+Parallelismo: se nelle CPU abbiamo piu core e quindi 
+
+La base di ogni computazione è il processo
+Adotta un modello attore per la concorrenza con 
+- scambio di messaggi asincrono
+- non c è la condivisione di memoria 
+
+Erlang è un linguaggio funzionale dinamicamente tipato
+Ogni attore ha una coda di messaggi
+
+```erlang
+- module(nomeModulo).
+- export(nomeFunzione/numParametri)
+``` 
+
+```erlang
+- module(fact).
+- export([fact/1]).
+fact(0) -> 1;
+fact(N) -> N * fact(N-1).
+``` 
+
+Numeri interi e float sono illimitati
+
+c(fact). permette di compilare e di importare nell'interprete
+
+...
+
+Un atomo è un etichetta con iniziale minuscola che puo contenere qualcosa
+Per avere un atomo con lettera maiuscola servono le '...'
+
+Strutture dati
+- Tupla
+{123, "walter", cazzola}
+Possono subire un pattern matching strutturale
+{{1, 2}, 3} == {1, {2, 3}}.
+Non posso aggiungere elementi
+
+- Lista 
+\[1 | \[2]]
+
+...
+
+A = 1
+A NON è una variabile ma un nome/alias per 1
+A = 2
+
+= non fa una selezione ma un pattern matching
+
+\[B | L] = \[a, b, c]
+B sarà la testa della lista mentre L sara il resto della lista
+
+quello che non mi interessa lo rappresentero con \_
 
 
+Funzione
+nomeFunzione(pattern1, pattern2, ...) when guardia -> body ;
+nomeFunzione(pattern1, pattern2, ...) when guardia -> body .
 
+La guardia puo essere
+- atomo
+- operazioni aritmetiche/booleane
+- andalso/orelse
+- permitted BIFs
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+List comprehension 
 
 
 
