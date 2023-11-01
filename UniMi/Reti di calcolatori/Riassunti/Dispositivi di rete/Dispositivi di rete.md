@@ -2,3 +2,4 @@
 - [[Switch]]
 - [[Bridge]]
 - [[Hub]]
+- [[Bus seriale]]

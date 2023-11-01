@@ -7,3 +7,4 @@ Nel caso in cui il pacchetto sia arrivato corretto, ma la consegna dei singoli p
 [[Trasmissione in banda base]]
 [[Modalita di comunicazione]]
 [[Sliding window]]
+[[HDLC]]

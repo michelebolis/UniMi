@@ -16,8 +16,24 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "b663c5fa6c77425d",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "viewState": {
+                  "x": -4715.0215987163665,
+                  "y": -3999.4781584410016,
+                  "zoom": -0.6666666666666665
+                }
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -67,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -83,6 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +139,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas"
+              }
             }
           },
           {
@@ -144,7 +165,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -158,8 +180,18 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "47136b92c595cdff",
+  "active": "b663c5fa6c77425d",
   "lastOpenFiles": [
+    "Pasted image 20231101090915.png",
+    "Pasted image 20231101090817.png",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Principio tell don't ask.md",
+    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Reference escaping.md",
+    "Reti di calcolatori/Riassunti/Comunicazione digitale/HDLC.md",
+    "Ingegneria del software/Slide/IS2023-L06.pdf",
+    "Ingegneria del software/Slide/IS2023-L07.pdf",
+    "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/Riassunti/Dispositivi di rete/Bus seriale.md",
     "conflict-files-obsidian-git.md",
     "Reti di calcolatori/img/Pasted image 20231027155933.png",
     "Reti di calcolatori/img/Pasted image 20231027155658.png",
@@ -168,7 +200,6 @@
     "Linguaggi di programmazione/Riassunti/OCaml/Funzioni tipiche.md",
     "Linguaggi di programmazione/Riassunti/OCaml/Argomenti opzionali.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
-    "Reti di calcolatori/Reti di calcolatori.canvas",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Singleton.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Iterator.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Meta pattern.md",
@@ -190,25 +221,16 @@
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Code smell.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI",
-    "Reti di calcolatori/Riassunti/Comunicazione digitale/Trasmissione in banda base",
-    "Reti di calcolatori/Riassunti/Comunicazione digitale/Error control",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Error control/Dimensionamento clock.md",
     "Reti di calcolatori/Riassunti/Comunicazione tra due nodi.md",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Manchester encoding.md",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Sliding window.md",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Error control/Go back-N.md",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Selective repeat.md",
-    "Reti di calcolatori/Riassunti/Comunicazione digitale/Error control/Continuous RQ.md",
-    "Reti di calcolatori/Riassunti/Comunicazione digitale/Error control/Idle RQ.md",
-    "Reti di calcolatori/Riassunti/Comunicazione digitale/Error control/Error control.md",
-    "Reti di calcolatori/Riassunti/Comunicazione digitale/Trasmissione in banda base/Trasmissione in banda base.md",
-    "Reti di calcolatori/Riassunti/Comunicazione digitale/Comunicazione digitale.md",
     "Ingegneria del software/backup canvas/Ingegneria del software (SWENG) v1.png",
-    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Sistemi embedded/Sistemi embedded.canvas",
     "Ingegneria del software/Riassunti/img/Pasted image 20231015114038.png",
     "LAB.md/Exported image 20231013111609-3.png",
-    "LAB.md/Exported image 20231013111609-2.png",
-    "LAB.md/Exported image 20231013111609-1.png"
+    "LAB.md/Exported image 20231013111609-2.png"
   ]
 }
