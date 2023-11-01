@@ -16,24 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "b663c5fa6c77425d",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-                "viewState": {
-                  "x": -4715.0215987163665,
-                  "y": -3999.4781584410016,
-                  "zoom": -0.6666666666666665
-                }
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -83,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -100,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas"
-              }
+              "state": {}
             }
           },
           {
@@ -165,8 +144,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,12 +158,21 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "b663c5fa6c77425d",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
-    "Pasted image 20231101090915.png",
-    "Pasted image 20231101090817.png",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Principio tell don't ask.md",
+    "Reti di calcolatori/Reti di calcolatori.md",
+    "Linguaggi di programmazione/Riassunti/OCaml/Slide/Index slide.md",
+    "Ingegneria del software/Slide/Index slide.md",
+    "Ingegneria del software/Riassunti/img/Pasted image 20231101090817.png",
+    "Ingegneria del software/Riassunti/img/Pasted image 20231101090915.png",
+    "Pasted image 20231101110234.png",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Iterator.md",
+    "Ingegneria del software/Riassunti/img/Pasted image 20231101111104.png",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Singleton.md",
+    "Ingegneria del software/Riassunti/img/Pasted image 20231101110239.png",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Nullability.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Principio tell don't ask.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Reference escaping.md",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/HDLC.md",
     "Ingegneria del software/Slide/IS2023-L06.pdf",
@@ -200,8 +187,6 @@
     "Linguaggi di programmazione/Riassunti/OCaml/Funzioni tipiche.md",
     "Linguaggi di programmazione/Riassunti/OCaml/Argomenti opzionali.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Singleton.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Iterator.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Meta pattern.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Design pattern.md",
@@ -224,13 +209,6 @@
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Error control/Dimensionamento clock.md",
     "Reti di calcolatori/Riassunti/Comunicazione tra due nodi.md",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Manchester encoding.md",
-    "Reti di calcolatori/Riassunti/Comunicazione digitale/Sliding window.md",
-    "Reti di calcolatori/Riassunti/Comunicazione digitale/Error control/Go back-N.md",
-    "Reti di calcolatori/Riassunti/Comunicazione digitale/Selective repeat.md",
-    "Ingegneria del software/backup canvas/Ingegneria del software (SWENG) v1.png",
-    "Sistemi embedded/Sistemi embedded.canvas",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231015114038.png",
-    "LAB.md/Exported image 20231013111609-3.png",
-    "LAB.md/Exported image 20231013111609-2.png"
+    "Sistemi embedded/Sistemi embedded.canvas"
   ]
 }

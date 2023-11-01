@@ -2,13 +2,13 @@
 	"nodes":[
 		{"id":"a57e91548309e350","type":"group","x":-9280,"y":-960,"width":12240,"height":10118,"label":"Proceassi di gestione del SW"},
 		{"id":"fcdf50994a92303e","type":"group","x":-2180,"y":1443,"width":5120,"height":4473,"color":"2","label":"Progettazione del SW"},
-		{"id":"847d6a6b158b798e","type":"group","x":-6880,"y":-4800,"width":5801,"height":3760,"label":"Progettazione e implementazione"},
 		{"id":"33877314d1b22b2c","type":"group","x":-9260,"y":-800,"width":6793,"height":3051,"color":"#81bbb7","label":"SCM"},
 		{"id":"bbde6c5a6501ee20","type":"group","x":-7533,"y":5283,"width":5066,"height":3855,"color":"6","label":"Metodologie agili"},
+		{"id":"847d6a6b158b798e","type":"group","x":-5280,"y":-5080,"width":4201,"height":4040,"label":"Progettazione e implementazione"},
 		{"id":"dc2e1e9dc7e3e184","type":"group","x":-7180,"y":2563,"width":4480,"height":2600,"color":"#565714","label":"Open source"},
 		{"id":"0f78c09f017840d2","type":"group","x":-2180,"y":-584,"width":3840,"height":1738,"color":"#0e5328","label":"Processi di gestione del SW: introduzione"},
 		{"id":"cccd9499c30b9802","type":"group","x":-5015,"y":-3040,"width":3051,"height":1960,"color":"#a97575","label":"Design knoledge"},
-		{"id":"9b9d3cad6fdd8c53","type":"group","x":-5015,"y":-4680,"width":1725,"height":1520,"color":"#900fcc","label":"Design pattern"},
+		{"id":"9b9d3cad6fdd8c53","type":"group","x":-5015,"y":-5040,"width":2175,"height":1880,"color":"#900fcc","label":"Design pattern"},
 		{"id":"d9ffc8782165b977","type":"file","file":"Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Metodologie agili/eXP/eXP - Tecniche/Planning poker.md","x":-6940,"y":5326,"width":686,"height":684},
 		{"id":"dfb072106e574c5b","type":"file","file":"Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source/Sfaldamento del team.md","x":-6804,"y":3056,"width":670,"height":474},
 		{"id":"b13231f2a14098c9","type":"file","file":"Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Hosting centralizzato/Continuous Integration CI.md","x":-5870,"y":1783,"width":542,"height":326},
@@ -112,10 +112,8 @@
 		{"id":"646df649d006cda3","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Refactoring.md","x":-2784,"y":-1864,"width":800,"height":640},
 		{"id":"37556eda720799bd","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Design knoledge.md","x":-2784,"y":-2680,"width":800,"height":705},
 		{"id":"9af44fe4f4001e68","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/OO Object Orientation.md","x":-3592,"y":-2327,"width":594,"height":527},
-		{"id":"0d7282a92f799de8","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Singleton.md","x":-4995,"y":-4360,"width":567,"height":520},
 		{"id":"fa5ee87c17b155fc","type":"text","text":"type abstraction: diamo un nome ai concetti\nnel nostro es, al mazzo e alle carte\n\nun enum per ogni valore definisce un unico oggetto immutabile e condiviso\nList con Generico è piu difficile da gestire di un array\n","x":-4711,"y":-1643,"width":392,"height":229,"color":"1"},
-		{"id":"a81c101d5f15cef5","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Design pattern.md","x":-4170,"y":-3960,"width":860,"height":780},
-		{"id":"088ca1b7882a32d8","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Iterator.md","x":-4995,"y":-3760,"width":567,"height":310},
+		{"id":"a81c101d5f15cef5","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Design pattern.md","x":-4170,"y":-3960,"width":860,"height":540},
 		{"id":"ca4fbaf243dafe50","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/UML/UML diagram.md","x":-2784,"y":-4427,"width":660,"height":935},
 		{"id":"a15bf2cd7fdf0a63","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Encapsulation and infomation hiding.md","x":-4356,"y":-2500,"width":616,"height":300},
 		{"id":"caf3c43de87d38d5","x":-4951,"y":-2525,"width":480,"height":725,"type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Reference escaping.md"},
@@ -123,7 +121,10 @@
 		{"id":"f1115be3e74b5f5f","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Code smell.md","x":-3489,"y":-1740,"width":536,"height":620},
 		{"id":"89eb8f756ca790fc","x":-4100,"y":-1575,"width":541,"height":290,"type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Principio tell don't ask.md"},
 		{"id":"a0acda14cabc2290","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/SOLID.md","x":-3592,"y":-2998,"width":594,"height":636},
-		{"id":"9db028e54eb9ecfb","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Meta pattern.md","x":-4077,"y":-4640,"width":675,"height":620}
+		{"id":"84a92e875d905219","x":-4880,"y":-3660,"width":567,"height":420,"type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Nullability.md"},
+		{"id":"9db028e54eb9ecfb","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Meta pattern.md","x":-3560,"y":-4737,"width":675,"height":620},
+		{"id":"0d7282a92f799de8","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Singleton.md","x":-4232,"y":-5000,"width":640,"height":920},
+		{"id":"088ca1b7882a32d8","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Iterator.md","x":-4880,"y":-5007,"width":567,"height":1160}
 	],
 	"edges":[
 		{"id":"2b5b30c34a79acbe","fromNode":"a2ed117451add2c3","fromSide":"left","toNode":"432ce7ecdf2a72f4","toSide":"right","label":"6"},
@@ -233,11 +234,12 @@
 		{"id":"a78e4abcac209660","fromNode":"37556eda720799bd","fromSide":"top","toNode":"ca4fbaf243dafe50","toSide":"bottom","label":"2"},
 		{"id":"be6313891e3abfc2","fromNode":"37556eda720799bd","fromSide":"top","toNode":"a81c101d5f15cef5","toSide":"right","label":"1"},
 		{"id":"9e1dfae8332cf5df","fromNode":"a81c101d5f15cef5","fromSide":"top","toNode":"9db028e54eb9ecfb","toSide":"bottom"},
-		{"id":"2feaa9830248bca4","fromNode":"a81c101d5f15cef5","fromSide":"left","toNode":"0d7282a92f799de8","toSide":"right"},
-		{"id":"e689bd21a0135b04","fromNode":"a81c101d5f15cef5","fromSide":"left","toNode":"088ca1b7882a32d8","toSide":"right"},
+		{"id":"2feaa9830248bca4","fromNode":"a81c101d5f15cef5","fromSide":"top","toNode":"0d7282a92f799de8","toSide":"bottom"},
+		{"id":"e689bd21a0135b04","fromNode":"a81c101d5f15cef5","fromSide":"left","toNode":"088ca1b7882a32d8","toSide":"bottom"},
 		{"id":"36d950a20422f5b1","fromNode":"bd13326128f63a07","fromSide":"left","toNode":"b9a21cb783978859","toSide":"right","label":"3"},
 		{"id":"e9434e427813c320","fromNode":"b9a21cb783978859","fromSide":"left","toNode":"c015f04b5e6883c5","toSide":"right"},
 		{"id":"9c6eff7af60c8f90","fromNode":"a15bf2cd7fdf0a63","fromSide":"left","toNode":"caf3c43de87d38d5","toSide":"right"},
-		{"id":"9c6164f1f82384ea","fromNode":"f1115be3e74b5f5f","fromSide":"left","toNode":"89eb8f756ca790fc","toSide":"right"}
+		{"id":"9c6164f1f82384ea","fromNode":"f1115be3e74b5f5f","fromSide":"left","toNode":"89eb8f756ca790fc","toSide":"right"},
+		{"id":"1a30d885fb2b5f75","fromNode":"a81c101d5f15cef5","fromSide":"left","toNode":"84a92e875d905219","toSide":"right"}
 	]
 }
