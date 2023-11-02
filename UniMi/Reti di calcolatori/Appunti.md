@@ -694,6 +694,7 @@ F = 2 \* 10^4 \* 10^4/2\*10^8  = 10^8 \* 10^-4 = 5 \* 10^-5
 
 (ES UGUALI A QUELLI SU ARIEL)
 
+RISSUNTI FINE
 
 dal livello 3 in su è dell'host
 il livello 1 e 2 riguarda invece la rete 
@@ -932,4 +933,91 @@ Da quando ricevo ACK il client diventa indirizzabile MA prima il client fa check
 DHCP funziona a 4 vie (Discover-Offer-Request-ACK) perche i server sono piu di uno
 
 Vengono inseriti controlli per la discover e la request, ripetendo nel caso la ritrasmissione per al massimo k tentativi
+
+---
+
+ICMP Protocol (livello 3)
+Si occupa della rilevazione degli errori, verifica la raggiungibilità (server utilizzano ICMP per verificare che l IP che si vuole assegnare non sia gia utilizzato), controllo di congestione (trasmette chock packet che segnalano verso i nodi vicini, la situazione congestionata del nodo in modo che venga evitato quel nodo), misura prestazioni...
+
+| Message type            | descrizione |
+| ----------------------- | ----------- |
+| Destination unreachable |             |
+| Echo request            |             |
+| Echo reply              |             |
+| Timestamp request       |             |
+| Timestamp reply         |             |
+| ...                        |             |
+
+figura 6.31
+
+
+Routing
+Nel router abbiamo una coda di ingresso per ogni porta di I/O e una coda di uscita per porta porta di I/O
+I pacchetti vengono processati da un processo Forwarder e smistati nella specifica coda di uscita, scegliendo in base ad una tabella che in base ad un indirizzo IP destinazione, viene indicata una porta di I/O
+Avro tante entry quante sono gli IP conosciuti
+
+IP della sorgente è necessaria ma utilizzata solo dal destinatario
+
+Processo di routing popola la tabella 
+è asincrono rispetto al processo di Forwarding
+Vediamo il router diviso in 2
+- piano dati
+- piano controllo
+
+Il processo di routing deve avere una certa conoscenza di tutta la rete in modo tale da costruirsi il cammino minimo anche se nella tabella non troviamo tutto il percoso ma solo il successivo nodo da raggiungere per raggiungere l IP destinazione
+Per il cammino minimo come metriche utilizzeremo il delay e il numero di hop 
+
+Il forwarder fa la stessa cosa del Bridge (invece del MAC c è l IP)
+
+
+Come costruire un processo che fa routing
+- DV Distance Vector
+- LS Link State
+
+DV
+Protocollo RIP
+I vari router si scambiano dei vettori di distanze. Con distanza intendiamo la metrica che vogliamo utilizzare come costo per raggiungere un nodo
+
+I costi dei link sono derivanti da un ICMP 
+Ipotizziamo che i costi rilevati siano omogenei dai nodi collegati
+
+nelle code di I/O oltre al traffico ci sono anche i pacchetti di controllo del processo di Routing
+Tabella nei routing osno chiamate tabella di adiacenza in quanto con gli echo scopre i costi solo dei nodi adiacenti
+
+Vettore delle distanze viene propagato ai nodi adiacenti in modo da trasmettere la conoscenza della rete, inizialmente cio che c è nella tabella di adiacenza (gli indirizzi dei nodi ed i costi associati MA non si dice il link utilizzato in quanto è un info locale inutile)
+
+Ricevendo il distant vector, il nodo scopre nuovi indirizzi raggiungibili (senza comprenderne la topologia) e capisce quanto costa arrivare ai nuovi indirizzi e quindi aggiugendo una nuova entry nella tabella di routing, dato dall indirizzi e dal costo uguale alla somma tra il costo nel distant vector e il costo per raggiungere il nodo da cui proviene il distant vector 
+Il diametro della rete influenza il tempo con cui si viene a conoscenza degli indirizzi da un nodo
+La conoscenza si diffonde in base al diametro della rete
+
+Quando per un entry gia esistente, si ottiene un costo minore, si cancella la entry e aggiorna costo e link.
+E' quindi anche migliorativo
+
+Il Distant Vector viene mandato periodicamente MA l'invio non è sincronizzato tra i link (ed è meglio cosi)
+Quindi non è detto che le tabelle di routing convergano immediatamente per il cammino minimo
+
+Problema: errore/guasto in un link
+Con il ping periodico viene rilevato il guasto, assegnando un costo infinito (in realta un valore intero massimo che indica infinito)
+L'informazione viene quindi propagata attraverso il DV
+SE pero un altro nodo A propaga il DV prima che il nodo B mandi il DV con il costo infinito, allora viene rilevato che A riesca a raggiungere il nodo con un costo minore di infinito, e B cambia la sua entry creando un loop in cui il pacchetto rimbalza tra i due nodi (bouncing effect)
+Quando ad A poi arrivera DV di B, A aumentera il costo continuamente perche rileva che il costo da B alla destinazione è aumentato (count to infinity)
+
+Questo limite del DV è generato dalla mancanza di sincronizzazione e dalla perdita ...
+
+In realta il bouncing effect si fermera prima dell infinito grazie al raggiungimenro del nodo da un altro nodo
+
+Soluzione: split horizon 
+Convenzione che prevede che ogni nodo quando propaga il proprio costo per una destinazione, propaga il costo reale su tutte le adiacenze che non intende usare per raggiungere la destinazione mentre infinito sulle adiacenze che intende utilizzare per raggiungere la destinazione 
+
+
+Protocollo RIP: implementazione del DV
+RIP usa una policy triggered update: ogni nodo la usa tutte le volte che rileva una destinazione tra le adiacenti non raggiungibili mettendo nella propria tabella la entry a infinito. INVECE di aspettare la scandenza di timer per la ritrasmissione del DV, il DV viene mandato immediatamente 
+Come metrica RIP utilizza hop count
+L'infinito è >16 (non si utilizza quindi RIP per reti con diametro maggiore di 16)
+Usa un random per il trigger, tutte le volte che rilevo un costo infinito non faccio un update instantaneo ma aspetto un tempo casuale per evitare storm the ...
+
+
+LS
+Protocollo OSPF Open Shortest Path First
+Gran parte di internet è OSPF
 

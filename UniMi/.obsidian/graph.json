@@ -1,5 +1,5 @@
 {
-  "collapse-filter": true,
+  "collapse-filter": false,
   "search": "",
   "showTags": true,
   "showAttachments": true,
@@ -41,6 +41,13 @@
         "a": 1,
         "rgb": 16777215
       }
+    },
+    {
+      "query": "path:\"Ricerca operativa\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 5431478
+      }
     }
   ],
   "collapse-display": true,
@@ -49,10 +56,10 @@
   "nodeSizeMultiplier": 1.65677083333333,
   "lineSizeMultiplier": 0.967708333333333,
   "collapse-forces": false,
-  "centerStrength": 0.395833333333333,
+  "centerStrength": 0.351111111111111,
   "repelStrength": 20,
   "linkStrength": 1,
   "linkDistance": 143,
-  "scale": 0.03998376275435159,
-  "close": true
+  "scale": 0.05169136733454353,
+  "close": false
 }

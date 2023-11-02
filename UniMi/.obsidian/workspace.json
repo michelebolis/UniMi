@@ -18,12 +18,12 @@
             }
           },
           {
-            "id": "098ff3be9de8939d",
+            "id": "c6c743563e4ba12d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ricerca operativa/Appunti.md",
+                "file": "Reti di calcolatori/Appunti.md",
                 "mode": "source",
                 "source": false
               }
@@ -80,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -97,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ricerca operativa/Appunti.md",
+                "file": "Reti di calcolatori/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ricerca operativa/Appunti.md",
+                "file": "Reti di calcolatori/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ricerca operativa/Appunti.md"
+                "file": "Reti di calcolatori/Appunti.md"
               }
             }
           },
@@ -162,8 +161,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -177,9 +175,12 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "098ff3be9de8939d",
+  "active": "c6c743563e4ba12d",
   "lastOpenFiles": [
+    "Reti di calcolatori/Appunti.md",
     "Ricerca operativa/Appunti.md",
+    "Index.md",
+    "Ricerca operativa/Ricerca operativa.md",
     "Ricerca operativa",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "conflict-files-obsidian-git.md",
@@ -223,10 +224,7 @@
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/SOLID.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/OO Object Orientation.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Design knoledge.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Refactoring.md",
-    "Reti di calcolatori/Appunti.md",
     "Ingegneria del software/backup canvas/Ingegneria del software (SWENG) v1.png",
-    "Reti di calcolatori/Riassunti/Comunicazione digitale/Trasmissione in banda base/Efficienza della rete.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Sistemi embedded/Sistemi embedded.canvas"
   ]
