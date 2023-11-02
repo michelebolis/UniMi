@@ -83,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -100,7 +99,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +115,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -179,14 +176,22 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "adb872b4dd542a85",
+  "active": "47136b92c595cdff",
   "lastOpenFiles": [
+    "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+    "conflict-files-obsidian-git.md",
+    "Ingegneria del software/Slide/IS2023-L07.pdf",
+    "Ingegneria del software/Slide/IS2023-L06.pdf",
+    "Ingegneria del software/Riassunti/img/Pasted image 20231101111104.png",
+    "Ingegneria del software/Riassunti/img/Pasted image 20231101110239.png",
+    "Ingegneria del software/Riassunti/img/Pasted image 20231101090915.png",
+    "Ingegneria del software/Riassunti/img/Pasted image 20231101090817.png",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Nullability.md",
     "Ingegneria del software/Appunti lab.md",
     "Reti di calcolatori/img/Pasted image 20231027155933.png",
     "Reti di calcolatori/img/Pasted image 20231027155658.png",
     "Ingegneria del software/Appunti.md",
     "Linguaggi di programmazione/Appunti.md",
-    "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Riassunti/OCaml/Argomenti opzionali.md",
     "Linguaggi di programmazione/Riassunti/OCaml/Funzioni tipiche.md",
     "Linguaggi di programmazione/Riassunti/OCaml/Slide/05. currying, map-filter-reduce, ... .4 copy.pdf",
@@ -203,7 +208,6 @@
     "Ingegneria del software/Riassunti/Progettazione e implementazione/UML",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Unified process - funzionamento.md",
-    "img",
     "Ingegneria del software/Riassunti/img/06_unified-process-phases.png",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Unified process.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Iterator.md",
@@ -222,14 +226,6 @@
     "Ingegneria del software/backup canvas/Ingegneria del software (SWENG) v1.png",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/Trasmissione in banda base/Efficienza della rete.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI",
-    "Reti di calcolatori/Riassunti/Comunicazione digitale/Error control/Dimensionamento clock.md",
-    "Reti di calcolatori/Riassunti/Comunicazione tra due nodi.md",
-    "Reti di calcolatori/Riassunti/Comunicazione digitale/Manchester encoding.md",
-    "Sistemi embedded/Sistemi embedded.canvas",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231015114038.png",
-    "LAB.md/Exported image 20231013111609-3.png",
-    "LAB.md/Exported image 20231013111609-2.png",
-    "LAB.md/Exported image 20231013111609-1.png"
+    "Sistemi embedded/Sistemi embedded.canvas"
   ]
 }

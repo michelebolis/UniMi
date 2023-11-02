@@ -1,5 +1,7 @@
 - Single Responsability: una classe, un solo scopo. Così facendo, le classi rimangono semplici e si agevola la riusabilità.
 - Open close Principle: classe aperte ai cambiamento ma chiuse ai cambiamenti delle parti già in produzione.
 - Liskov Substitution Principle: si collega all’aspetto **contract-based** del metodo Agile: le _precondizioni_ di un metodo di una classe figlia devono essere ugualmente o meno restrittive del metodo della classe padre. Al contrario, le _postcondizioni_ di un metodo della classe figlia non possono garantire più di quello che garantiva il metodo nella classe padre. Fare _casting_ bypassa queste regole.
-- Interface Segregation: più le capacità e competenze di una classe sono frammentate in tante interfacce più è facile utilizzarla in contesti differenti. Meglio quindi avere **tante interfacce specifiche** e piccole (composte da pochi metodi), piuttosto che poche, grandi e generali.
+- Interface Segregation: più le capacità e competenze di una classe sono frammentate in tante interfacce più è facile utilizzarla in contesti differenti. Meglio quindi avere **tante interfacce specifiche** e piccole (composte da pochi metodi), piuttosto che poche, grandi e generali. Le interfacce possono nascere:
+	- up front: scrivendole direttamente
+	- down front: scrivendo prima il codice e poi cercare di estrarne un'interfaccia (si adatta meglio al TDD)
 - Dependency Inversion: il codice dal quale una classe dipende non deve essere più **concreto** di tale classe. Le cose astratte non dovrebbero dipendere da classi concrete

@@ -3,4 +3,4 @@
 
 Mappa concettuale: [[Reti di calcolatori.canvas|Reti di calcolatori]]
 
-Source: [[Reti di calcolatori/Appunti|Appunti]], [[Libro]]
+Source: [[Reti di calcolatori/Appunti|Appunti]], [[Libro]], [[Reti di calcolatori/Appunti lab|Appunti lab]]

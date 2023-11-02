@@ -2,3 +2,5 @@
 - [[02. datatypes in ml.4.pdf]]
 - [[03. modules in ml.4.pdf]]
 - [[04. polymorphism in ml.4.pdf]]
+- [[05. currying, map-filter-reduce, ... .4 copy.pdf]]
+- [[06. ml in action.4 copy.pdf]]
