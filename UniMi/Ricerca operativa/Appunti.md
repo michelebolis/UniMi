@@ -104,4 +104,130 @@ Degenerazione
 Quando una variabile in base risulta avere valore nullo, si ha degenerazione in quanto piu soluzioni di base coincidono
 Piu di n vincoli sono attivi nello stesso punto in uno spazio ad n dimensioni
 
--15min
+Teorema fondamentale della PL
+Dato un problema lineare in forma standard
+z = min{c^T x : Ax = b, x>=0} 
+con A di rango m
+SE esiste una soluzione ammissibile, esiste anche una soluzione ammissibile di base 
+(SE un poliedro non è vuoto, deve avere almeno un vertice)
+SE esiste una soluzione ottima, esiste anche una soluzione ottima di base 
+(SE il poliedro non è illimitato verso la direzione di ottimizzazione, ci deve essere un vertice del poliedro che ha il valore ottimo)
+
+Perciò un problema lineare nel continuo può essere risolto come problema combinatorio discreto, limitandosi a considerare solo le soluzioni di base.
+
+
+La complessita della programmazione lineare è polinomiale (all'aumentare di n e m) tramite l algoritmo dell'ellissoide (Khachiyan 1979)
+Il metodo piu utilizzato per risolvere i problemi di PL è l'algoritmo del simplesso (Dantzig 1947)
+
+L'algoritmo del simplesso non da garanzia di terminare in un numero di iterazioni limitato da un polinomio MA è molto veloce 
+
+L'algoritmo garantisce di terminare in un numero finito di passi, garantendo una di queste tre situazioni
+- la soluzione corrente è ottima
+- NON esiste una soluzione ammissibile
+- NON esiste soluzione ottima finita
+
+L'algoritmo del simplesso procede iterativamente da una soluzione di base ad una adiacente
+
+
+L'algoritmo del simplesso
+Forma canonica
+- Dalla forma standard del problema di PL
+minimize z = c^T x
+subject to Ax = b
+x>=0
+
+- Scegliendo una base e permutando le colonne di conseguenza si ha
+minimize z = c^TB xB + c^TN xN
+subject to BxB + NxN = b
+xB, xN >= 0
+
+- Moltiplicando a sinistra per B^-1
+minimize z = c^TB xB + c^TN xN
+subject to IXB + (B^-1 N) xN = B^-1 b
+xB, xN >=0
+con I matrice di identità
+
+la soluzione di base xB = B^-1 b - (B^-1 N) xN
+
+- Sostituendo xB = B^-1 b - (B^-1 N) xN in z
+minimize z = c^TB B^-1 b + (c^TN - B^-1 N) xN
+subject to IXB + (B^-1 N) xN = B^-1 b
+xB, xN >=0
+
+- Riscrivendo z
+minimize z = zB + ...
+
+con zB costante che dipende da B, come abbiamo scelta la base
+con c segnato perche sono diversi dai c coefficienti iniziali
+
+- Quando si pone xN = 0 si ha xB = B^-1 n = bsegnato
+SE b segnato >= 0 ALLORA la soluzione di base è ammissibile 
+
+Esistono quindi un numero combinatorio di forme canoniche, tante quante le possibili scelte della base
+Un problema di PL è in forma canonica SE e SOLO SE
+- i coefficienti delle variabili di base, xB, formano una matrice identità m x m
+- le variabili di base xB NON compaiono nella funzione obiettivo
+
+La forma canonica è forte SE e SOLO SE i termini noti dei vincoli sono non negativi, bsegnato >=0
+Una forma canonica debole implica una soluzione di base non ammissibile 
+
+
+Una volta posto in forma canonica un problema di PL si puo rappresentare in una matrice, tableau.
+E' una struttura dati fondamentale sulla quale opera l'algoritmo del simplesso
+
+es
+...
+
+```c
+while (!Infeasible(b,c)) AND (!FeasibleBase(b)) do
+	Pivot(A,b,c)
+if Infeasible(b, c) then
+	"Stop: problema inammissibile"
+else 
+	while (!Optimal(c)) AND (!Unbounded(A, c)) do
+		Pivot(A, b, c)
+	if Optimal(c) then 
+		"Stop: soluzione ottima"
+	else 
+		"Stop: problema illimitato"
+```
+
+Nella prima parte si trova una soluzione di base ammissibile.
+Wile finche la base non è Ammissibile e non abbiamo dimostrato che il problema è Infeasible
+L'iterazione fondamentale del simplesso è il Pivot step
+
+SE il problema è inammissibile, allora l algoritmo termina
+Nella seconda parte si cerca una soluzione ottima
+Ogni iterazione conserva l ammissibilita
+O si trova la soluzione ottima o si scopre che il problema è illimitato
+
+Infeasible = Ammissibile
+Unbounded = Test che verifica che il problema sia illimitato
+
+- Pivot(A, b, c)
+Ogni iterazione consiste in un cambio di base
+Una variabile in base esce dalla base e una variabile fuori base entra in base 
+Geometricamente è come se ci muovessimo dal un vertice a un vertice adiacente
+
+1. Si scegli un elemento pivot positivo posto su una colonna fuori base
+2. Divido la riga del pivot per il pivot, in modo che il pivot diventi 1
+3. Sottraggo ad ogni riga diversa da quella del pivot, la riga del pivot moltiplicata per aic cioè il coefficiente sulla riga i-esimo e sulla colonna del pivot. Nella colonna del pivot compariranno tutti 0 tranne il pivot. entra quindi in base la conolla del pivot ed esce di base la colonna corrispondente alal riga del pivot
+
+Interpretazione
+- Algebrica
+Il tableau è un sistema di equazioni
+L'iterazione corrisponde a riformare in modo equivalente il sistema di m equazioni e n variabili
+Si prende la riga del pivot riscrivendo l equazione nuova incognita =... e poi per sostituzione ottieniamo un nuovo sistema
+
+- Geometrica
+Associato ad ogni vincolo un indice, la corrispondente variabile che quando è a 0, il vincolo è attivo
+indice 1 è associato a x2 e 2 a x1 perche quando x1=0, allora è attivo x2
+
+es
+...
+
+Facendo un Pivot, ottengo il punto B
+
+
+Test di ottimalità: Optimal(c)
+-20m

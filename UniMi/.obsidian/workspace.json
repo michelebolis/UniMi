@@ -16,24 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "cc86f79e3cafcba0",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-                "viewState": {
-                  "x": -4501.638540582125,
-                  "y": -4288.047833388012,
-                  "zoom": -0.4878344927035632
-                }
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -83,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -100,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas"
-              }
+              "state": {}
             }
           },
           {
@@ -180,12 +159,12 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "cc86f79e3cafcba0",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
+    "Ricerca operativa/Appunti.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/SWENG.md",
     "Reti di calcolatori/Appunti.md",
-    "Ricerca operativa/Appunti.md",
     "Index.md",
     "Ricerca operativa/Ricerca operativa.md",
     "Ricerca operativa",
