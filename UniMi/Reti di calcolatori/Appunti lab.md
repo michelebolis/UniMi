@@ -115,3 +115,76 @@ Quando provo la simulazione tra i pc con i due indirizzi uguali, il ping funzion
 NON posso usare un solo cavo tra due switch che collegano pc di due vlan, devo avere un cavo collegato tra gli switch per ogni VLAN
 Il nome delle VLAN non è solo un colore, ma con un numero 
 Nello switch --> config --> VLAN database
+
+---
+
+CLI di Cisco
+Noi lavoreremo senza password
+modalita 
+- privilegiata/root
+- utente
+
+Modalita privilegiata SE termina col segno \#
+Modalità utente SE termina col segno >
+
+se devi fare qualcosa come root, fai quello che devi fare e poi torna utente normale
+
+comand ?: permette di avere i comandi possibili
+comando clean: 
+comando connect: servizio connection-oriented dice che i dati inviati alla destinazione devono arrivare in ordine 
+comando disconnect fa il contrario di connect
+
+
+comando telnet: permette di collegarsi ad un terminale remoto e di operare come se stessimo lavorando in presenza
+Apre una shell con il terminale i cui comandi vengono ridirezionati verso il terminale reale 
+ATT non è sicura perche tutto viaggia in chiaro
+
+Bisognerebbe usare SSH 
+
+comando traceroute: interfaccia del protocollo ICMP (lavora insieme a IP che notifica condizioni di errore), traccia il percorso verso un alias di un indirizzo per un massimo di 30 hop
+
+\* in traceroute vuol dire che ci siano degli errori o per nascondere il route se i dispositivi di rete sono stati settati per cio
+
+comando show: 
+- arp table
+- interfaces (le da tutte)
+	- interfaces tipo nome es (interfaces fastethernet 1/1)
+- mac-address-table
+
+comando enable: passa nella modalita privilegiata
+- copia, cancellazione di un file 
+- disable o exit per uscire dal root
+
+La configurazione da GUI in realta è in RAM, quindi se resetto il device perdo tutto
+Serve usare il comando write per far diventare la configurazione di boot
+
+
+documento su ariel
+
+
+
+nslookup aliasIndirzzo ci restituisce l indirizzo 
+
+CTRL SHIFT 6 per fermare CLI
+
+
+Come si configura uno switch via CLI
+- Configurare il VLAN database
+comando vlan database è deprecato quindi 
+Si usa invece configure 
+Si puo eseguire un comando non disponibile nel set di comando attuali con do ...
+per tornare a una situazione precedente dopo aver fatto un comando, no ...
+
+vlan 100 entro in config-vlan
+name rosa100
+
+- Configurare la VLAN dell interface
+in modalita config, interface nomeInterfaccia 
+ora siamo in config-if
+
+switchport mode access vlan 100
+in realta access come mode di default
+
+switchport trunk allowed vlan add 100
+
+
