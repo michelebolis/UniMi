@@ -1,3 +1,4 @@
+CAP 1
 Modalità di comunicazione
 - Simplex: i dati fluiscono in un'unica direzione
 - half-duplex: i dati fluiscoon in entrambe le direzione MA in modo alternato
@@ -128,3 +129,106 @@ TCP/IP protocol stack
 	- Link control LC: riguarda l'implementazione del controllo degli errori e di flusso che sono usati indipendentemente dalla modalità di controllo della trasmissione
 	- Medium accesso control MAC: riguarda la trasmissione di blocchi usando una modalità di controllo della trasmissione che puo variare a secondo della rete
 - Il livello fisico comprende i circuiti per la codifica del clock e dei bit, i circuiti per la ricezione
+
+CAP 2
+
+
+CAP 3
+Le LAN sono utilizzato per interconnettere insiemi di end sistem, stazioni
+LAN standard serie IEEE 802
+
+Le LAN Ethernet operano usando CSMA/CD, standard IEEE 802.3
+Le LAN Token Ring operano usando il control token, standard IEEE 802.5
+
+
+CSMA/CD
+Dato che tutte le stazioni lavorano sullo stesso cavo/bus, si dice che operano in multiple  access MA mode
+Il bus operano in broadcast in quanto ogni frame trasmesso è ricevuto da tutte le stazione connesse al bus
+
+Una collissione si verifica quando due o piu stazioni provano a trasmettere un frame sul bus nello stesso tempo
+Viene quindi introdotto il carrier sensed con cui la stazione, dopo aver rilevato una possibile collisione (collision detection CD), rimanda la sua trasmissione finche il frame corrente non è stato trasmesso, e solo poi prova a inviare il proprio 
+
+Lo slot time serve ad assicurare che una stazione riesco a rilevare la collisione prima di inviare il suo frame
+Dopo la rilevazione della collisione, viene  atteso un tempo randomico prima di ritrasmettere il proprio frame
+La probabilita di collisione aumenta con l aumentare del traffico della rete 
+
+Il processo di binary exponential backoff viene utilizzato per definire il tempo da attendere prima della ritrasmissione, che aumenta in modo esponenziale dopo ogni nuovo ritrasmissione
+Il tempo da aspettare è da 0 a 2n - 1 UT
+
+CSMA/CD NON garantisce che il frame che arriva senza collisioni sia senza errori
+
+Formato dei dframe
+Tutti i frame sono trasmessi usando la codifica di Manchester
+Il SFD Start Of Frame Delimiter è composto da un singolo byte 10101011
+L'indirizzo del destinatario e del mittente sono indirizzi MAC, che identificano l'interfaccia HW del destinatario e del mittente
+Vi sono poi due byte dedicati alla lunghezza/type che indica la lunghezza del payload
+SE questa lunghezza è minore del minimo richiesto per un frame valido, allora viene aggiunta una sequenza di byte, padding
+La massima dimensione del payload è invece di 1500bytes
+Infine FCS contiene un CRC value per rilevare l errore
+
+
+Hub
+Ripetono ogni frame ricevuto su ogni porta
+
+Bridge
+Tutti i frame ricevuto sono prima bufferizzati e poi ripetuto come nell'hub tranne dalla porta in cui è arrivato
+Il bridge mantiene una forwarding database che indica, per ogni porta, la porta di uscita da utilizzare per mandare il frame a quella porta
+
+Quando un bridge si avvia, la sua forwarding database è vuota.
+Quando riceve un frame, legge quindi l'indirizzo della sorgente e aggiunta la entry alla sua tabella 
+Invia quindi una copia del frame a tutte le altre porte
+Ad ogni entry della tabella è associato un timer che le resetta periodicamente
+
+
+Switch
+Gli switch lavorano in duplex sui cavi
+I frame ricevuti sono conservati in una coda FIFO
+
+Il processo leggera l'header per ottenere il MAC address e trasmettere il frame alla coda di uscita corretta.
+Ha un processo di apprendimento simile al bridge
+In questo caso vi è un delay associato allo store-and-forward
+
+
+Gigabit
+Sono cavi che possono operare fino a 1000 Mbps
+Inizialmente la lunghezza massima del cavo era stata proposta a 15 m ma poi era stata rigettata, optando per 200m.
+La size minima del frame è stata invece standardizzata a 512 bytes (da 64bytes)
+
+Quando un frame con meno di 512 bytes viene trasmesso, la MAC interface del mittente gli aggiungera un padding per raggiungere la grandezza minima
+
+
+VLAN
+Standard associato: IEEE 802.1Q
+Il campo type/length presente nell'header di Ethernet viene sostituito da un campo type settato a 8100Hex, che indica il VLAN protocol ID
+I successivi 2 byte indica altre informazioni tra cui gli ultimi 12 bit rappresentano il VLAN identifier che permette l'identificazione della VLAN del mittente
+I successivi 2 byte sono invece per il campo length che conterra la lunghezza del payload (campo type/length di Ethernet)
+
+In ogni tabella di routing viene quindi aggiunto una colonna per le VLAN
+I frame nelle VLAN non vengono solo instradate secondo il loro MAC address ma anche secondo il proprio VLAN identifier in quanto end system di due VLAN diverse non possono comunicare
+
+
+
+Le differenze nelle varie LAN avvengono solo a livello fisico
+Il logical link control sublayer viene quindi diviso in
+- Physical layer
+Grazie alla media-independent interface MMI permette l utilizzo di diversi tipi di media e diversi bit rate in modo trasparente al MAC layer
+Quando il bit rate supera i 10Mbps non è piu possibile utilizzare la codifica di Manchester
+- MAC sublayer
+Definisce delle primitive 
+- LLC sublayer
+Il protocollo LLC si base su HDLC 
+Supporta sia la modalita best-effort connectionless sia quella affidabile connection-oriented
+Il network layer utilizzera i servizi concessi dal MAC sublayer
+
+
+
+
+
+
+
+
+
+
+
+
+

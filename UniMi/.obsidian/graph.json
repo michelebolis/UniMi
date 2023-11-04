@@ -46,7 +46,7 @@
       "query": "path:\"Ricerca operativa\"  ",
       "color": {
         "a": 1,
-        "rgb": 5431478
+        "rgb": 3485342
       }
     }
   ],
@@ -56,10 +56,10 @@
   "nodeSizeMultiplier": 1.65677083333333,
   "lineSizeMultiplier": 0.967708333333333,
   "collapse-forces": false,
-  "centerStrength": 0.351111111111111,
+  "centerStrength": 0.713541666666667,
   "repelStrength": 20,
   "linkStrength": 1,
   "linkDistance": 143,
-  "scale": 0.051691367334543575,
+  "scale": 0.10160227957267202,
   "close": false
 }
