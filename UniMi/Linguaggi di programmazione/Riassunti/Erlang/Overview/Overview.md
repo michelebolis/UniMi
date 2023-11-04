@@ -1,0 +1,5 @@
+[[Sintassi base]]
+[[Tipi base]]
+[[Strutture dati]]
+[[Funzioni]]
+[[List comprehension]]

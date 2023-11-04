@@ -29,3 +29,4 @@ es
 MNP = (MN)P
 
 - [[OCaml]]
+- [[Erlang]]
