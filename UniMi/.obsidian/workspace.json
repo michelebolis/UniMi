@@ -16,24 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "9d687fea8a29e675",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
-                "viewState": {
-                  "x": 4786.117203788912,
-                  "y": -2026.4420561625266,
-                  "zoom": -1.5440651156214793
-                }
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -63,7 +47,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -83,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 243.5
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -100,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas"
-              }
+              "state": {}
             }
           },
           {
@@ -165,8 +144,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,8 +158,13 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "9d687fea8a29e675",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
+    "Reti di calcolatori/Riassunti/Comunicazione broadcast/ALOHA.md",
+    "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/Riassunti/Comunicazione broadcast",
+    "Reti di calcolatori/Riassunti/Comunicazione broadcast/Standard rete a 10Mbps.md",
+    "Reti di calcolatori/Riassunti/Comunicazione broadcast/CSMA-CD.md",
     "Reti di calcolatori/Libro/Riassunto libro.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.md",
     "Linguaggi di programmazione/Riassunti/Programmazione funzionale.md",
@@ -219,18 +202,12 @@
     "Ingegneria del software/Riassunti/img/Pasted image 20231101090915.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231101090817.png",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Nullability.md",
-    "Ingegneria del software/Appunti lab.md",
     "Reti di calcolatori/img/Pasted image 20231027155933.png",
     "Reti di calcolatori/img/Pasted image 20231027155658.png",
-    "Ingegneria del software/Appunti.md",
-    "Linguaggi di programmazione/Riassunti/OCaml/Argomenti opzionali.md",
-    "Linguaggi di programmazione/Riassunti/OCaml/Funzioni tipiche.md",
-    "Linguaggi di programmazione/Riassunti/OCaml/Slide/05. currying, map-filter-reduce, ... .4 copy.pdf",
     "Reti di calcolatori/img/Pasted image 20231027150227.png",
     "Reti di calcolatori/img/Pasted image 20231027143014.png",
     "Ingegneria del software/Riassunti/img/06_unified-process-phases.png",
     "Ingegneria del software/backup canvas/Ingegneria del software (SWENG) v1.png",
-    "Reti di calcolatori/Reti di calcolatori.canvas",
     "Sistemi embedded/Sistemi embedded.canvas"
   ]
 }
