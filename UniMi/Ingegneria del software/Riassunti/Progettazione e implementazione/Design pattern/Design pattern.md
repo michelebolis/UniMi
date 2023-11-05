@@ -15,3 +15,4 @@ Gang of Four Patterns: definisce 23 patter e li classifica in tre categorie
 - [[Singleton]]
 - [[Iterator]] 
 - [[Nullability]]
+- [[Chain of responsability]]
