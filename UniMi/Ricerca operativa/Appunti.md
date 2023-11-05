@@ -218,43 +218,44 @@ L'algoritmo del simplesso procede iterativamente da una soluzione di base ad una
 L'algoritmo del simplesso
 Forma canonica
 - Dalla forma standard del problema di PL
-minimize z = c^T x
-subject to Ax = b
-x>=0
+minimize $z = c^T x$
+subject to $Ax = b$
+$x>=0$
 
 - Scegliendo una base e permutando le colonne di conseguenza si ha
-minimize z = c^TB xB + c^TN xN
-subject to BxB + NxN = b
-xB, xN >= 0
+minimize $z = c^{T}_B x_B + c^T_N x_N$
+subject to $Bx_B + Nx_N = b$
+$x_B, x_N >= 0$
 
-- Moltiplicando a sinistra per B^-1
-minimize z = c^TB xB + c^TN xN
-subject to IXB + (B^-1 N) xN = B^-1 b
-xB, xN >=0
-con I matrice di identità
+- Moltiplicando a sinistra per $B^{-1}$
+minimize $z = c^{T}_B x_B + c^T_N x_N$
+subject to $I_{X_B} + (B^{-1} N) x_N = B^{-1} b$
+$x_B, x_N >=0$
+con $I$ matrice di identità
 
-la soluzione di base xB = B^-1 b - (B^-1 N) xN
+La soluzione di base $x_B = B^{-1} b - (B^{-1} N) x_N$
 
-- Sostituendo xB = B^-1 b - (B^-1 N) xN in z
-minimize z = c^TB B^-1 b + (c^TN - B^-1 N) xN
-subject to IXB + (B^-1 N) xN = B^-1 b
-xB, xN >=0
+- Sostituendo $x_B = B^{-1} b - (B^{-1} N) x_N$ in z
+minimize $z = c^T_B B^{-1} b + (c^T_N - c^T_B B^{-1} N) x_N$
+subject to $I_{X_B} + (B^{-1} N) x_N = B^{-1} b$
+$x_B, x_N >=0$
 
 - Riscrivendo z
-minimize z = zB + ...
+minimize $z = z_B + \overline{c}^T_N x_N$
+subject to $I_{x_B} + \overline{N}x_N = \overline{b}$
 
-con zB costante che dipende da B, come abbiamo scelta la base
-con c segnato perche sono diversi dai c coefficienti iniziali
+con $z_B$ costante che dipende da B, come abbiamo scelta la base
+con $\overline{c}$ perche sono diversi dai c coefficienti iniziali
 
-- Quando si pone xN = 0 si ha xB = B^-1 n = bsegnato
-SE b segnato >= 0 ALLORA la soluzione di base è ammissibile 
+- Quando si pone $x_N = 0$ si ha $x_B = B^{-1} b = \overline{b}$
+SE $\overline{b}$ >= 0 ALLORA la soluzione di base è ammissibile 
 
 Esistono quindi un numero combinatorio di forme canoniche, tante quante le possibili scelte della base
 Un problema di PL è in forma canonica SE e SOLO SE
-- i coefficienti delle variabili di base, xB, formano una matrice identità m x m
-- le variabili di base xB NON compaiono nella funzione obiettivo
+- i coefficienti delle variabili di base, $x_B$, formano una matrice identità $m * m$
+- le variabili di base $x_B$ NON compaiono nella funzione obiettivo
 
-La forma canonica è forte SE e SOLO SE i termini noti dei vincoli sono non negativi, bsegnato >=0
+La forma canonica è forte SE e SOLO SE i termini noti dei vincoli sono non negativi, $\overline{b} >=0$
 Una forma canonica debole implica una soluzione di base non ammissibile 
 
 
@@ -262,8 +263,28 @@ Una volta posto in forma canonica un problema di PL si puo rappresentare in una 
 E' una struttura dati fondamentale sulla quale opera l'algoritmo del simplesso
 
 es
-...
 
+| Item       | $x_1$   | $x_2$   | $x_3$   | $x_4$   | $x_5$ | Vincolo |
+| ---------- | ------- | ------- | ------- | ------- | ----- | ------- |
+| minimize z | $-x_1$  | $-2x_2$ |         |         |       |         |
+| subject to | $-x_1$  | $+2x_2$ | $+x_3$  |         |       | = 8     |
+|            | $x_1$   | $+x_2$  |         | $+x_4$  |       | = 10    |
+|            | $x_1$   |         |         |         | $x_5$ | = 7     |
+|            | $x_1$ , | $x_2$ , | $x_3$ , | $x_4$ , | $x_5$ | >= 0    |
+
+Forma canonica
+
+| $-z_B$ | $\overline{c}^T_N$    | 0    |
+| ------ | --- | --- |
+|   $\overline{b}$     | $\overline{N}$    | $I$    |
+
+| 0   | -1  | -2  | 0   | 0   | 0   |
+| --- | --- | --- | --- | --- | --- |
+| 8   | -1  | 2   | 1   | 0   | 0   |
+| 10  | 1   | 1   | 0   | 1   | 0   |
+| 7   | 1   | 0   | 0   | 0   | 1   |
+
+Pseudocodice algoritmo del simplesso
 ```c
 while (!Infeasible(b,c)) AND (!FeasibleBase(b)) do
 	Pivot(A,b,c)
@@ -297,22 +318,74 @@ Geometricamente è come se ci muovessimo dal un vertice a un vertice adiacente
 
 1. Si scegli un elemento pivot positivo posto su una colonna fuori base
 2. Divido la riga del pivot per il pivot, in modo che il pivot diventi 1
-3. Sottraggo ad ogni riga diversa da quella del pivot, la riga del pivot moltiplicata per aic cioè il coefficiente sulla riga i-esimo e sulla colonna del pivot. Nella colonna del pivot compariranno tutti 0 tranne il pivot. entra quindi in base la conolla del pivot ed esce di base la colonna corrispondente alal riga del pivot
+3. Sottraggo ad ogni riga diversa da quella del pivot, la riga del pivot moltiplicata per $a_{ic}$ cioè il coefficiente sulla riga i-esimo e sulla colonna del pivot. Nella colonna del pivot compariranno tutti 0 tranne il pivot. entra quindi in base la colonna del pivot ed esce di base la colonna corrispondente alla riga del pivot
+
+es
+
+| 0   | -1  | -2  | 0   | 0   | 0   |
+| --- | --- | --- | --- | --- | --- |
+| 8   | -1  | 2   | 1   | 0   | 0   |
+| 10  | 1   | 1   | 0   | 1   | 0   |
+| 7   | 1   | 0   | 0   | 0   | 1   |
+
+1. Scelgo 2, quindi riga = 1, colonna=2
+
+| 0   | -1  | -2  | 0   | 0   | 0   |
+| --- | --- | --- | --- | --- | --- |
+| 8   | -1  | ==2==   | 1   | 0   | 0   |
+| 10  | 1   | 1   | 0   | 1   | 0   |
+| 7   | 1   | 0   | 0   | 0   | 1   |
+
+2. Divido la riga 1 per il pivot, quindi 2
+
+| 0   | -1  | -2  | 0   | 0   | 0   |
+| --- | --- | --- | --- | --- | --- |
+| 4   | -1/2  | ==1==   | 1/2   | 0   | 0   |
+| 10  | 1   | 1   | 0   | 1   | 0   |
+| 7   | 1   | 0   | 0   | 0   | 1   |
+
+3. Sottraggo ad ogni riga tranne la 1, la riga 1 moltiplicata per 
+
+| 8   | -2  | 0  | 1   | 0   | 0   |
+| --- | --- | --- | --- | --- | --- |
+| 4   | -1/2  | ==1==   | 1/2   | 0   | 0   |
+| 6  | 3/2   | 1   | -1/2   | 1   | 0   |
+| 7   | 1   | 0   | 0   | 0   | 1   |
+
+Entra in base la colonna del pivot, quindi la 2 ed esce dalla base la colonna corrispondente alla riga del pivot, cioe la 1
+
+| Vettore delle x | |  z   |  |
+| --------------- | ---| --- | --- |
+| prima | dopo | prima | dopo | 
+| 0     | 0    | 0 | -8 | 
+| 0     | 4    | | |
+| 8     | 0    | | |
+| 10    | 6    | | |
+| 7     | 7    |                |     |
+
+
+
 
 Interpretazione
 - Algebrica
 Il tableau è un sistema di equazioni
 L'iterazione corrisponde a riformare in modo equivalente il sistema di m equazioni e n variabili
-Si prende la riga del pivot riscrivendo l equazione nuova incognita =... e poi per sostituzione ottieniamo un nuovo sistema
+Si prende la riga del pivot riscrivendo l'equazione nuova incognita =... e poi per sostituzione otteniamo un nuovo sistema
+
+es
+Da $x_3 = 8+x_1-2x_2$  
+a $x_2 = 4+\frac{1}{2}x_1 -\frac{1}{2}x_3$
+
+Applico poi la sostituzione di $x_2$ nel sistema
 
 - Geometrica
 Associato ad ogni vincolo un indice, la corrispondente variabile che quando è a 0, il vincolo è attivo
-indice 1 è associato a x2 e 2 a x1 perche quando x1=0, allora è attivo x2
+indice (1) è associato a $x_2$ e (2) a $x_1$ perche quando $x_1=0$, allora è attivo $x_2$
 
 es
-...
+![[Pasted image 20231105152510.png]]
 
-Facendo un Pivot, ottengo il punto B
+Per determinare l'elemento pivot sono necessarie una regola di scelta della colonna e una regola di scelta della riga
 
 
 Test di ottimalità: Optimal(c)

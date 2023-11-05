@@ -21,21 +21,14 @@
             "id": "c52d390cf957fba2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Ricerca operativa/Appunti.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6e25d9c4c4f380ff",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Ricerca operativa/Slide/03 - Algoritmo del simplesso.pdf"
+                "file": "Ricerca operativa/Ricerca operativa.canvas",
+                "viewState": {
+                  "x": 1308.781851729982,
+                  "y": 977.4524908784763,
+                  "zoom": -1.9999999999999998
+                }
               }
             }
           }
@@ -90,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 256.5
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -107,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ricerca operativa/Appunti.md",
+                "file": "Ricerca operativa/Ricerca operativa.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ricerca operativa/Appunti.md",
+                "file": "Ricerca operativa/Ricerca operativa.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ricerca operativa/Appunti.md"
+                "file": "Ricerca operativa/Ricerca operativa.canvas"
               }
             }
           },
@@ -172,8 +164,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -187,10 +178,41 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c52d390cf957fba2",
+  "active": "47136b92c595cdff",
   "lastOpenFiles": [
-    "Ricerca operativa/Slide/03 - Algoritmo del simplesso.pdf",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot",
+    "Ricerca operativa/Riassunti/Basi PL",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso",
+    "Ricerca operativa/Riassunti/Forme/ES",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Pivot(A, b, c).md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Interpretazione.md",
     "Ricerca operativa/Appunti.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Es Pivot.md",
+    "Ricerca operativa/Ricerca operativa.canvas",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pseudocodice algoritmo del simplesso.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Algoritmo del simplesso.md",
+    "Ricerca operativa/Riassunti/Forme/ES/Es forma canonica.md",
+    "Ricerca operativa/Riassunti/Forme/Forma canonica.md",
+    "Ricerca operativa/Riassunti/Metodi risolutivi PL.md",
+    "Ricerca operativa/Riassunti/Teorema fondamentale della PL.md",
+    "Ricerca operativa/Riassunti/Basi PL/Soluzione di base.md",
+    "Ricerca operativa/Riassunti/Basi PL/Degenerazione.md",
+    "Ricerca operativa/Riassunti/Forme/ES/Es forma standard.md",
+    "Ricerca operativa/Riassunti/Forme/Forma standard.md",
+    "Ricerca operativa/Riassunti/Basi PL/Interpretazione geometrica.md",
+    "Ricerca operativa/Riassunti/Basi PL/Soluzione, casi possibili.md",
+    "Ricerca operativa/Riassunti/Basi PL/Regione ammissibile.md",
+    "Ricerca operativa/Riassunti/Forme/Forme.md",
+    "Ricerca operativa/Riassunti/Forme/Forma alle disuguaglianze.md",
+    "Ricerca operativa/Riassunti/Forme/Rappresentazione matriciale.md",
+    "Ricerca operativa/Riassunti/Forme/ES/Es forma alle disuguaglianze.md",
+    "Ricerca operativa/Riassunti/Forme/Forma generale.md",
+    "Ricerca operativa/Riassunti/Programmazione lineare.md",
+    "Ricerca operativa/Riassunti/Forme",
+    "Ricerca operativa/Riassunti",
+    "Ricerca operativa/Ricerca operativa.md",
+    "Pasted image 20231105152510.png",
+    "Ricerca operativa/Slide/03 - Algoritmo del simplesso.pdf",
     "Ricerca operativa/Img/Pasted image 20231105105024.png",
     "Ricerca operativa/Img",
     "Ricerca operativa/Img/Pasted image 20231105104952.png",
@@ -203,40 +225,11 @@
     "Ricerca operativa/Slide",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Chain of responsability.md",
-    "Ingegneria del software/Slide/IS2023-L09.pdf",
-    "Ingegneria del software/Slide/IS2023-L08.pdf",
-    "Ingegneria del software/Slide/Index slide.md",
-    "Reti di calcolatori/Riassunti/Comunicazione broadcast/ALOHA.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
-    "Reti di calcolatori/Riassunti/Comunicazione broadcast",
-    "Reti di calcolatori/Riassunti/Comunicazione broadcast/Standard rete a 10Mbps.md",
-    "Reti di calcolatori/Riassunti/Comunicazione broadcast/CSMA-CD.md",
-    "Reti di calcolatori/Libro/Riassunto libro.md",
-    "Linguaggi di programmazione/Linguaggi di programmazione.md",
-    "Linguaggi di programmazione/Riassunti/Programmazione funzionale.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
-    "Linguaggi di programmazione/Riassunti/Erlang/Concorrenza/Concorrenza.md",
-    "Linguaggi di programmazione/Riassunti/Erlang/Concorrenza",
-    "Linguaggi di programmazione/Riassunti/Erlang/Erlang.md",
-    "Linguaggi di programmazione/Riassunti/Erlang/Overview/Overview.md",
-    "Linguaggi di programmazione/Riassunti/Erlang/Overview",
-    "Linguaggi di programmazione/Appunti.md",
-    "Linguaggi di programmazione/Riassunti/Erlang/Overview/List comprehension.md",
-    "Linguaggi di programmazione/Riassunti/Erlang/Overview/Funzioni.md",
-    "Linguaggi di programmazione/Riassunti/Erlang/Overview/Map, Filter e Reduce.md",
-    "Linguaggi di programmazione/Riassunti/Erlang/Overview/Strutture dati.md",
-    "Linguaggi di programmazione/Riassunti/Erlang/Overview/Tipi base.md",
-    "Linguaggi di programmazione/Riassunti/Erlang/Overview/Assegnamenti.md",
-    "Linguaggi di programmazione/Riassunti/Erlang/Overview/Sintassi base.md",
-    "Linguaggi di programmazione/Riassunti/Erlang/Slide/Index slide.md",
-    "Ingegneria del software/SWENG.md",
-    "Reti di calcolatori/Appunti.md",
-    "Index.md",
-    "Ricerca operativa/Ricerca operativa.md",
     "Ingegneria del software/Riassunti/img/Pasted image 20231101111104.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231101110239.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231101090915.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231101090817.png",
     "Sistemi embedded/Sistemi embedded.canvas"
   ]
 }
