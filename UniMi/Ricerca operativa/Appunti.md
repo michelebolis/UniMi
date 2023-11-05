@@ -18,7 +18,7 @@ Per passare dalla forma generale alla forma alle disuguaglianze occorre eliminar
 
 Si puo sempre passare da un problema in forma generale a forma alle disuguaglianze
 
-Eliminazione vincoli di uguaglianza: sotituzione
+Eliminazione vincoli di uguaglianza: sostituzione
 Eliminazione variabili libere: sostituisco ogni variabile libera con la differenza tra due variabili non libere che introduco
 
 es
@@ -65,7 +65,7 @@ Vincolo ridondante: $2x_3 >=-1$
 
 E' semplice identificare i vincoli ridondanti 
 Possiamo poi togliere i termini noti o costanti nella funzione obiettivo perche non cambia il ranking delle soluzioni (poi correggeremo il valore ottimo)
-Rendiamo poi coerenti tutte le disequazioni: (tranne quello di condizione di non negativita)
+Rendiamo poi coerenti tutte le disequazioni: (tranne quello di condizione di non negatività)
 - <= SE obiettivo di massimizzazione
 - >= SE obiettivo di minimizzazione
 
@@ -316,4 +316,104 @@ Facendo un Pivot, ottengo il punto B
 
 
 Test di ottimalità: Optimal(c)
--20m
+I test di otttimalita Optimal(c) riguarda i coefficienti di costo ridotto
+z = zB + csegnato^T N * xN
+I coefficienti csegnato indicano di quanto aumenterebbe la funzione obiettivo da minimizzare SE le variabili fuori base xN aumentassero di valore, cioè entrassero in base
+
+Quando tutti i coefficienti di costo ridotto sono non negativi, non esistono direzioni ammissibili miglioranti e questo garantisce l'ottimalità della soluzione correte, SE è ammissibile
+z* = zB
+
+OSS possono esistere soluzioni degeneri nelle quali la condizione di ottimalità risulta verificata o meno a seconda della scelta della base
+
+
+Regola di scelta della colonna
+Per ogni iterazione dell'algoritmo del simplesso si sceglie una colonna, variabile entrante in base, che abbia costo ridotto negativo. Facendo entrare tale variabile la funzione obiettivo migliora (passi sempre miglioranti)
+
+Ci possono essere diversi modi per effettuare tale scelta, quando ho piu colonne con costo ridotto negativo
+
+es
+...
+
+Dobbiamo stare attenti ai casi degeneri che potrebbe causare dei cicli infiniti
+La regola di scelta della colonna garantisce che l'algoritmo del simplesso raggiunge l'ottimalità
+Diverse strategie
+- colonna scelta casualmente tra quelle con costo ridotto negativo
+- colonna col minimo coefficiente di costo ridotto
+- colonna che produce il maggior miglioramento di z (passi di Pivot piu efficaci)
+- la prima colonna con costo ridotto negativo (regola di Bland permette di NON generare mai cicli infiniti) 
+
+Regola di scelta della riga
+Scelta la variabile che entra in base, è necessario scegliere la variabile uscente dalla base. Tale scelta deve garantire l'ammissibilità
+Data la variabile entrante xj, cioe lo spigolo del poliedro lungo il quale la soluzione cambia, l unica possibilita corretta è
+- muoversi verso l'interno del poliedro
+	- considerare solo candidati pivot aij positivi
+- fermarsi appena si incontra una soluzione di base
+	- tra le righe i ad essi corrispondenti, scegliere quella che rende minimo il rapporto tra il termine noto bi e il candidato pivot aij
+
+Nel caso di parità di rapporto minimo, la regola di Bland impone di scegliere la riga di indice minimo (garanzia di assenza di cicli negativi)
+
+
+Test di illimitatezza
+SE non esistono candidati pivot positivi su una colonna con costo ridotto negativo, il problema è illimitato
+
+
+Variabili limitate
+Le variabili puo essere limitate sia inferiormente che superiormente
+I vincoli x >= I e x <= U possono essere trattati come vincoli qualsiasi aumentando pero le dimensioni del modello
+
+Estendiamo la definizione di soluzione di base, considerando che una variabile fuori base:
+Una soluzione di base estesa SE è una soluzione nella quale n variabili hanno valore pari al loro limite inferiore/superiore e le altre m formano un sistema lineare indipendente cioe una base
+
+L'algoritmo del simplesso puo lavorare con le soluzione di base estese
+
+
+Inizializzazione
+L'algoritmo del simplesso mantiene l'ammissibilità e cerca l'ottimalita quando è inizializzato con una soluzione di base ammissibile MA puo accadere che la soluzione di base iniziale non si ammissibile
+Modi
+- Metodo delle variabili artificiali
+Sato un modello PL in forma standard (anche in forma non canonica) con n variabili e m vincoli
+Si introduce una variabile artificiale ui >= 0 con coefficiente unitario in ogni vincolo i=1, ..., m definendo cosi un problema artificiale
+
+Tutte le variabili artificiali u compaiono in e^T con coefficiente 1
+
+Vale la prima condizione per la forma canonica ma non la seconda
+I coefficienti di u formano una matrice identita MA le variabili u non hanno coefficienti nulli nell'obiettivo
+Per ottenere una forma canonica si effettua la sostituzione nell'obiettivo
+ui = bi - somma da j=1 a n aijxj 
+Ottengo la riga 0 del tableau in forma canonica
+
+La soluzione iniziale x=0, u=b è ammissibile per costruzione e quindi si puo eseguire l'algoritmo del simplesso sul problema artificiale
+
+SE il valore ottimo del problema artificiale è nullom allora si è trovata una soluzione ammissibile per il problema originario (tutto le u=0 e le x invece hanno dei valori)
+ALTRIMENTI si è dimostrata l'inammissibilita del problema originario
+
+Vantaggio: si puo sempre applicare
+Svantaggio: puo comportare nella prima fase molti passi di pivot, almeno n passi di pivot e inoltre lavora su un tablue piu grande
+
+- Metodo delle variabili artificiali
+partendo da un problema in forma alle disuguaglianze, riscrivo in modo che il termine noto b sia >= 0.
+Posso usare le variabili di slack o surplus come variabili artificiali
+
+Per i vincoli di <=: introduco variabili di slack positive
+Per i vincoli di >=: introduco variabili di slack negative
+
+Le variabili di slack per i vincoli soddisfano gia la prima condizione per la forma canonica
+
+Sia h l indice del vincolo col massimo valore del termine noto.
+Sottraggo ad ogni vincolo >= h
+Nel vincolo i-esimo, compare col segno positivo, formando cosi una matrice identita
+
+Bisognera introdurre variabili artificiali per il vincolo h e per i vincoli in I3
+
+- Metodo big M
+Anziche eliminare dalla formulazione del problema artificiale le variabili x, è possibile mantenerle e penalizzare nell'obiettivo le variabili u con coefficienti molto grandi
+
+Vantaggio: non serve una fase di inizializzazione
+Svantaggio:
+- il valore M potrebbe provocare instabilità numerica
+- non è detto che sia facile determinare il valore appropriato per M
+
+- Metodo di Blainskki-Gomory
+L'algoritmo trascura temporaneamente la funzione obiettivo e minimizza una misura dell'ammissibilita risoetto ad un vincolo violato, ripetendo l operazione per tutti i vincoli violati finche non raggiunge un abse ammissibile oppore dimostra che il proble è inammissibile
+
+Per ogni vincolo violato una misura della violazione è data dal valore assoluto della corrispettiva variabile, valore negativo
