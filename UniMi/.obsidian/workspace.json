@@ -18,17 +18,14 @@
             }
           },
           {
-            "id": "c52d390cf957fba2",
+            "id": "cfb1ea5f6aefcd4d",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Ricerca operativa/Ricerca operativa.canvas",
-                "viewState": {
-                  "x": 1308.781851729982,
-                  "y": 977.4524908784763,
-                  "zoom": -1.9999999999999998
-                }
+                "file": "Ricerca operativa/Slide/Index slide.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -98,7 +95,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Appunti lab.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +111,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Appunti lab.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +132,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Reti di calcolatori/Appunti lab.md"
-              }
+              "state": {}
             }
           },
           {
@@ -179,6 +172,10 @@
   },
   "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
+    "Ricerca operativa/Slide/Index slide.md",
+    "Ricerca operativa/Ricerca operativa.md",
+    "Ricerca operativa/Img/Pasted image 20231105152510.png",
+    "Ricerca operativa/Ricerca operativa.canvas",
     "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot",
     "Ricerca operativa/Riassunti/Basi PL",
     "Ricerca operativa/Riassunti/Algoritmo del simplesso",
@@ -187,7 +184,6 @@
     "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Interpretazione.md",
     "Ricerca operativa/Appunti.md",
     "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Es Pivot.md",
-    "Ricerca operativa/Ricerca operativa.canvas",
     "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pseudocodice algoritmo del simplesso.md",
     "Ricerca operativa/Riassunti/Algoritmo del simplesso/Algoritmo del simplesso.md",
     "Ricerca operativa/Riassunti/Forme/ES/Es forma canonica.md",
@@ -209,8 +205,6 @@
     "Ricerca operativa/Riassunti/Programmazione lineare.md",
     "Ricerca operativa/Riassunti/Forme",
     "Ricerca operativa/Riassunti",
-    "Ricerca operativa/Ricerca operativa.md",
-    "Pasted image 20231105152510.png",
     "Ricerca operativa/Slide/03 - Algoritmo del simplesso.pdf",
     "Ricerca operativa/Img/Pasted image 20231105105024.png",
     "Ricerca operativa/Img",
@@ -221,7 +215,6 @@
     "Ricerca operativa/Img/Pasted image 20231105105039.png",
     "Ricerca operativa/Slide/02 - Programmazione lineare.pdf",
     "Ricerca operativa/Slide/01 - Introduzione.pdf",
-    "Ricerca operativa/Slide",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Chain of responsability.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
