@@ -483,15 +483,17 @@ Linguaggio di programmazione orientato alla concorrenza
 Le VM sono l ambiente su cui faremo girare il nostro programma
 
 Concorrenza: processi/thread sulla stessa macchina, sono concorrenti per una risorsa, in particolare per il tempo della CPU
-Parallelismo: se nelle CPU abbiamo piu core e quindi 
+Parallelismo
 
 La base di ogni computazione è il processo
-Adotta un modello attore per la concorrenza con 
-- scambio di messaggi asincrono
-- non c è la condivisione di memoria 
+Erlang adotta un modello attore per la concorrenza con 
+- scambio di messaggi asincrono (ogni attore ha una coda di messaggi)
+- assenza della condivisione di memoria 
 
-Erlang è un linguaggio funzionale dinamicamente tipato
-Ogni attore ha una coda di messaggi
+Erlang è un linguaggio funzionale dinamicamente typato
+Erlang supporta distribuzione, fault tolerance e hot-swapping
+
+Sintassi base
 
 ```erlang
 - module(nomeModulo).
@@ -505,42 +507,94 @@ fact(0) -> 1;
 fact(N) -> N * fact(N-1).
 ``` 
 
+```cmd
+erl // entro nella Eshell
+c(fact) // compilazione del modulo fact e importazione nell'interprete
+fact:fact(7) // utilizzo della funzione fact del modulo fact
+```
+
 Numeri interi e float sono illimitati
+Numeri formati
+- k. Con k intero
+- k#base con k intero e base la base in cui è k, trasforma k in base 10
+- $char con char un carattere restituisce il codice ascii corrispondente
+- notazione scientifica
 
-c(fact). permette di compilare e di importare nell'interprete
-
-...
+es
+```cmd
+10. -> 10
+16#FF. -> 255
+$A. -> 65
+-12.35e-2. -> -0.1235
+```
 
 Un atomo è un etichetta con iniziale minuscola che puo contenere qualcosa
 Per avere un atomo con lettera maiuscola servono le '...'
 
+
 Strutture dati
 - Tupla
-{123, "walter", cazzola}
+
+```erlang
+{}. %tupla vuota
+{123, "walter", cazzola}. %tupla con cazzola un atomo
+```
+
 Possono subire un pattern matching strutturale
-{{1, 2}, 3} == {1, {2, 3}}.
-Non posso aggiungere elementi
+```erlang
+{{1, 2}, 3} == {1, {2, 3}}. %false perche non hanno la stessa struttura
+```
+
+Non posso aggiungere elementi: numero fissato di oggetti
 
 - Lista 
-\[1 | \[2]]
+```erlang
+[]. %lista vuota
+[1 | [2]]. %lista [1, 2]
+length([{1, 2}, ok, []]). %3
+A = [$a, $b], B = [$b, $c].
+A ++ "" ++ B. % ++ operatore di concatenazione tra liste. Ris: "abbc"
+A -- B. % -- operatore di sottrazione tra liste. Ris: "ac"
+```
 
-...
+Assegnamenti
+Le variabili invece hanno la lettera maiuscola, in realta sono degli alias ai valori che gli assegniamo
+ATT i valori assegnati NON possono essere modificati
 
-A = 1
-A NON è una variabile ma un nome/alias per 1
-A = 2
+```erlang
+A = 1. 
+A = 2. %A NON è una variabile ma un nome/alias per 1
+```
 
 = non fa una selezione ma un pattern matching
 
-\[B | L] = \[a, b, c]
-B sarà la testa della lista mentre L sara il resto della lista
+```erlang
+[B | L] = [a, b, c].
+{X, X} = {B, B}. % Ris: {a, a}
+{A1, _, [B1|_], {B1}} = {abc, 23, [22,x], {22}}.
+```
 
-quello che non mi interessa lo rappresentero con \_
+B sarà la testa della lista mentre L sarà il resto della lista
+Quello che non considero nel pattern matching lo rappresenterò con \_
 
+Usate per conservare un numero variabile di oggetti, infatti hanno una dimensione dinamica
 
 Funzione
-nomeFunzione(pattern1, pattern2, ...) when guardia -> body ;
-nomeFunzione(pattern1, pattern2, ...) when guardia -> body .
+```erlang
+nomeFunzione(pattern_1, ..., pattern_k) when guardia_1 -> body_1 ;
+nomeFunzione(pattern_1, ..., pattern_k) when guardia_2 -> body_2 .
+```
+
+Le clausole sono scannerizzate sequenzialmente finche non viene trovato un match
+
+es
+```erlang
+-module(ex_module). 
+-export([double/1]). % rendiamo disponibile SOLO double/1 e non double/2
+
+double(X) -> double(X, 2);
+double(X, N) -> X * N.
+```
 
 La guardia puo essere
 - atomo
@@ -548,41 +602,204 @@ La guardia puo essere
 - andalso/orelse
 - permitted BIFs
 
+Map, Filter e Reduce
+Disponibili nel modulo lists
+
+```erlang
+-module(mfr). 
+-export([map/2,filter/2,reduce/2]). 
+map(_, []) -> []; 
+map(F, [H|TL]) -> [F(H)|map(F,TL)]. 
+
+filter(_, []) -> []; 
+filter(P, [H|TL]) -> filter(P(H), P, H, TL). 
+filter(true, P, H, L) -> [H|filter(P, L)]; 
+filter(false, P, _, L) -> filter(P, L). 
+
+reduce(F, [H|TL]) -> reduce(F, H, TL). 
+reduce(_, Q, []) -> Q; 
+reduce(F, Q, [H|TL]) -> reduce(F, F(Q,H), TL).
+```
+
+Es utilizzo
+```cmd
+mfr:map(fun(X) -> X*X end, [1,2,3,4,5,6,7]).
+mfr:filter(fun(X) -> (X rem 2)==0 end, [1,2,3,4,5,6,7]).
+mfr:reduce(fun(X,Y) -> X+Y end, [1,2,3,4,5,6,7]).
+```
+
 List comprehension 
+Forma generale: \[X || Qualifier1, ..., Qualifiern]
+I Qualifier sono generatori o filtri booleani
+
+es quicksort
+```erlang
+-module(sort). 
+-export([qsort/2]). 
+qsort(_, []) -> []; 
+qsort(P, [Pivot|TL]) -> 
+	qsort(P, [X||X<-TL, P(X,Pivot)]) ++ [Pivot] ++ qsort(P, [X||X<-TL, not P(X,Pivot)]).
+	% 1a List comprehension: in X ci sono tutti gli elementi di TL che rispettano il predicato P. 
+	% 2a List comprehension: in X ci sono tutti gli elementi di TL che NON rispettano il predicato P.
+```
+
+Es utilizzo
+```cmd
+sort:qsort(fun(X, Y) -> X<Y end, [13, 1, -1, 8, 9, 0, 3.14]). // ordine crescente
+sort:qsort(fun(X, Y) -> X>Y end, [13, 1, -1, 8, 9, 0, 3.14]). // ordine decrescente
+```
+
+es genera numeri primi minori di N
+```erlang
+-module(prime). 
+-export([primes/1]). 
+primes(N) when N>1 -> 
+	[X|| X <- lists:seq(2,N), 
+		(length([Y || Y <- lists:seq(2, trunc(math:sqrt(X))), ((X rem Y) == 0)]
+		) == 0)
+	]; 
+primes(_) -> [].
+% Metto in X i numeri generati da 2 a N t.c. la lunghezza della lista Y sia 0.
+% La lista Y, fissato un elemento di X, contiene i numeri generati da 2 alla radice di X trocata, t.c. il resto tra X e Y sia 0.
+```
 
 
+---
 
+Actor Model Concurrency
+I thread sono il modo tipico per ottenere la concorrenza.
+L'esecuzione del programma è diviso in task concorrenti, operando su memoria condivisa
 
+Problemi:
+- update loss
+- deadlock
 
+Erlang utilizza un approccio in cui
+- Ogni oggetto è un attore che ha una mailbox e un comportamento
+- Gli attori comunicano tramite messaggi bufferizzati nella mailbox
 
+La computazione è data-driven in quanto appena l'attore riceve un messaggio
+- puo mandare un numero di messaggi ad altri attori
+- puo creare un numero di attore
+- puo assume un comportamento diverso per il prossimo messaggio nella sua mailbox
 
+Ogni attore è caratterizzato da un indirizzo che lo identifica e da una mailbox.
+I messaggi sono ordinati secondo il tempo di arrivo
 
+Nota
+- tutta la comunicazione è asincrona in quanto il mittente non aspetta che il ricevente confermi di aver ricevuto il messaggio e non viene garantito l'ordine di arrivo
+- NON c è stato condiviso tra gli attori
+- gli attori lavorano in modo concorrente e sono implementati come user-space threads
 
+...
 
+Overview della concorrenza in Erlang
+I 3 elementi base della concorrenza sono
+- Spawn
+Funzione spawn() per creare un nuovo attore
 
+```erlang
+-module(processes_demo). 
+-export([start/2, loop/2]). 
+start(N,A) -> spawn (processes_demo, loop, [N,A]). 
+% spawn(nomeModulo, funzione, parametriFunzione)
 
+loop(0,A) -> io:format("~p(~p) ~p~n", [A, self(), stops]); 
+loop(N,A) -> io:format("~p(~p) ~p~n", [A, self(), N]), loop(N-1,A).
+% funzione self() ritorna il PID del processo
+```
 
+- Sending message
+Per mandare un messaggio l'attore deve
+- Sapere l'indirizzo PID del target
+- Mandare il proprio PID al target con il messaggio SE una risposta è necessaria
+- usare !
+L'operatore Exp1 ! Exp2 si usa per mandare messaggi ad altri attori
+- Exp1 deve identificare un attore
+- Exp2 è ogni espressione di Erlang valida; il risultato del send expressione is  one of Exp2
 
+Nota
+- L'invio non fallisce MAI anche se il target non esiste o non è raggiungibile
+- L'invio non è bloccante per il mittente
 
+- Receiving message
+Meccanismo di pattern matching dei messaggi dalla mailbox
+L'attore prende dalla mailbox il messaggio piu vecchio. 
+- SE la mailbox è vuota, allora è bloccato e aspetta
+- SE il pattern matching fallisce, si blocca aspettando un messaggio (nessuna eccezione)
 
+```erlang
+receive 
+	Pattern1 [when GuardSeq1 ] -> Body1 ; 
+	... 
+	Patternn [when GuardSeqn ] -> Bodyn 
+	[after Exprt -> Bodyt ] 
+end
+```
 
+Per evitare un attesa infinita, la clausola after è usata in modo che dopo Exprt l'attore si svegli
 
+es 
+```erlang
+-module(converter). 
+-export([t_converter/0]). 
+t_converter() -> 
+	receive 
+		{toF, C} -> io:format("~p `°`C is ~p `°`F~n", [C, 32+C*9/5]), t_converter();
+		{toC, F} -> io:format("~p `°`F is ~p `°`C~n", [F, (F-32)*5/9]), t_converter();
+		{stop} -> io:format("Stopping`!`~n"); 
+		Other -> io:format("Unknown: ~p~n", [Other]), t_converter() 
+	end.
+```
 
+```cmd
+Pid = spawn(converter, t_converter, []). 
+Pid ! {toC, 32}.
+Pid ! {stop}. 
+Pid ! {toF, 100}. // quando un attore è stoppato, i messaggi vengono ignorati
+```
 
+Actor scheduling
+Gli attori NON sono processi e quindi NON sono toccati dal SO
+Il BEAM usa uno scheduling preemtive: quando un attore lavora per troppo tempo o quando entra in uno stato di receive e non ci sono messaggi, l'attore è fermato e viene messo nella coda di scheduling
 
+I processi del OS e gli attori hanno diversi scheduling
+Il BEAM supporta il multiprocessing simmetrico cioè puo eseguire processi in parallelo su piu CPU MA non puo eseguire attori in parallelo su piu CPU
 
+Timing the Spawning Process
 
+```erlang
+-module(processes). 
+-export([max/1]). 
+max(N) -> 
+	Max = erlang:system_info(process_limit), 
+	io:format("Maximum allowed processes:~p~n",[Max]), 
+	statistics(runtime), statistics(wall_clock), 
+	L = for(1, N, fun() -> spawn(fun() -> wait() end) end), 
+	{_, Time1} = statistics(runtime), 
+	{_, Time2} = statistics(wall_clock), 
+	lists:foreach(fun(Pid) -> Pid ! die end, L), 
+	U1 = Time1 * 1000 / N, U2 = Time2 * 1000 / N, 
+	io:format("Process spawn time = ~p (~p) microseconds~n", [U1, U2]). 
+wait() -> receive die -> void end. 
+for(N, N, F) -> [F()]; 
+for(I, N, F) -> [F()|for(I+1, N, F)].
+```
 
+Dare un nome agli attori
+Erlang permette con la registrazione di un attore di rendere il suo PID pubblico agli altri processi
+Una volta registrato è possibile mandare un messaggio in modo diretto: name ! messaggio
 
-
-
-
-
-
-
-
-
-
-
-
-
+es
+```erlang
+-module(clock). 
+-export([start/2, stop/0]). 
+start(Time, Fun) -> register(clock, spawn(fun() -> tick(Time, Fun) end)). 
+stop() -> clock ! stop. 
+tick(Time, Fun) -> 
+	receive 
+		stop -> void 
+	after 
+		Time -> Fun(), tick(Time, Fun) 
+	end.
+```

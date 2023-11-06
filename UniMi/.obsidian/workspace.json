@@ -18,14 +18,17 @@
             }
           },
           {
-            "id": "aa132acc0c229fc8",
+            "id": "c52d390cf957fba2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Reti di calcolatori/Appunti lab.md",
-                "mode": "source",
-                "source": false
+                "file": "Ricerca operativa/Ricerca operativa.canvas",
+                "viewState": {
+                  "x": 1308.781851729982,
+                  "y": 977.4524908784763,
+                  "zoom": -1.9999999999999998
+                }
               }
             }
           }
@@ -60,7 +63,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -80,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 256.5
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -161,8 +164,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,54 +180,56 @@
   },
   "active": "aa132acc0c229fc8",
   "lastOpenFiles": [
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot",
+    "Ricerca operativa/Riassunti/Basi PL",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso",
+    "Ricerca operativa/Riassunti/Forme/ES",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Pivot(A, b, c).md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Interpretazione.md",
     "Ricerca operativa/Appunti.md",
-    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-    "Ingegneria del software/SWENG.md",
-    "Reti di calcolatori/Appunti.md",
-    "Index.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Es Pivot.md",
+    "Ricerca operativa/Ricerca operativa.canvas",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pseudocodice algoritmo del simplesso.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Algoritmo del simplesso.md",
+    "Ricerca operativa/Riassunti/Forme/ES/Es forma canonica.md",
+    "Ricerca operativa/Riassunti/Forme/Forma canonica.md",
+    "Ricerca operativa/Riassunti/Metodi risolutivi PL.md",
+    "Ricerca operativa/Riassunti/Teorema fondamentale della PL.md",
+    "Ricerca operativa/Riassunti/Basi PL/Soluzione di base.md",
+    "Ricerca operativa/Riassunti/Basi PL/Degenerazione.md",
+    "Ricerca operativa/Riassunti/Forme/ES/Es forma standard.md",
+    "Ricerca operativa/Riassunti/Forme/Forma standard.md",
+    "Ricerca operativa/Riassunti/Basi PL/Interpretazione geometrica.md",
+    "Ricerca operativa/Riassunti/Basi PL/Soluzione, casi possibili.md",
+    "Ricerca operativa/Riassunti/Basi PL/Regione ammissibile.md",
+    "Ricerca operativa/Riassunti/Forme/Forme.md",
+    "Ricerca operativa/Riassunti/Forme/Forma alle disuguaglianze.md",
+    "Ricerca operativa/Riassunti/Forme/Rappresentazione matriciale.md",
+    "Ricerca operativa/Riassunti/Forme/ES/Es forma alle disuguaglianze.md",
+    "Ricerca operativa/Riassunti/Forme/Forma generale.md",
+    "Ricerca operativa/Riassunti/Programmazione lineare.md",
+    "Ricerca operativa/Riassunti/Forme",
+    "Ricerca operativa/Riassunti",
     "Ricerca operativa/Ricerca operativa.md",
-    "Ricerca operativa",
+    "Pasted image 20231105152510.png",
+    "Ricerca operativa/Slide/03 - Algoritmo del simplesso.pdf",
+    "Ricerca operativa/Img/Pasted image 20231105105024.png",
+    "Ricerca operativa/Img",
+    "Ricerca operativa/Img/Pasted image 20231105104952.png",
+    "Ingegneria del software/Riassunti/img/Pasted image 20231105100957.png",
+    "Ricerca operativa/Img/Pasted image 20231105110734.png",
+    "Ricerca operativa/Img/Pasted image 20231105105130.png",
+    "Ricerca operativa/Img/Pasted image 20231105105039.png",
+    "Ricerca operativa/Slide/02 - Programmazione lineare.pdf",
+    "Ricerca operativa/Slide/01 - Introduzione.pdf",
+    "Ricerca operativa/Slide",
+    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Chain of responsability.md",
+    "Reti di calcolatori/Reti di calcolatori.canvas",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
-    "conflict-files-obsidian-git.md",
-    "Ingegneria del software/Slide/IS2023-L07.pdf",
-    "Ingegneria del software/Slide/IS2023-L06.pdf",
     "Ingegneria del software/Riassunti/img/Pasted image 20231101111104.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231101110239.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231101090915.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231101090817.png",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Nullability.md",
-    "Ingegneria del software/Appunti lab.md",
-    "Reti di calcolatori/img/Pasted image 20231027155933.png",
-    "Reti di calcolatori/img/Pasted image 20231027155658.png",
-    "Ingegneria del software/Appunti.md",
-    "Linguaggi di programmazione/Appunti.md",
-    "Linguaggi di programmazione/Riassunti/OCaml/Argomenti opzionali.md",
-    "Linguaggi di programmazione/Riassunti/OCaml/Funzioni tipiche.md",
-    "Linguaggi di programmazione/Riassunti/OCaml/Slide/05. currying, map-filter-reduce, ... .4 copy.pdf",
-    "Linguaggi di programmazione/Riassunti/OCaml/Slide/06. ml in action.4 copy.pdf",
-    "Reti di calcolatori/Appunti lab.md",
-    "Reti di calcolatori/img",
-    "Reti di calcolatori/img/Pasted image 20231027150227.png",
-    "Reti di calcolatori/img/Pasted image 20231027143014.png",
-    "img/unific.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Untitled",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Unified process - funzionamento.md",
-    "Ingegneria del software/Riassunti/img/06_unified-process-phases.png",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Unified process.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Iterator.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Singleton.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Meta pattern.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Design pattern.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/UML diagram.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Immutabilita.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Encapsulation and infomation hiding.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Code smell.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/SOLID.md",
-    "Ingegneria del software/backup canvas/Ingegneria del software (SWENG) v1.png",
-    "Reti di calcolatori/Reti di calcolatori.canvas",
     "Sistemi embedded/Sistemi embedded.canvas"
   ]
 }

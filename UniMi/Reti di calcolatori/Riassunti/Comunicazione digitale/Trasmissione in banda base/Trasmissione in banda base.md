@@ -12,4 +12,4 @@ Quando si trasmette ogni tipo di segnale elettrico su una linea di trasmissione,
 
 Dobbiamo considerare che sono presenti sempre dei [[Tempi della trasmissione]]
 
-Essendo pero due sistemi distribuiti, hanno due clock diversi: è necessario capire quando inizia e quando finisce un bit, saranno quindi necessari algoritmi di sincronizzazione, [[Manchester encoding]]
+Essendo pero due sistemi distribuiti, hanno due clock diversi: è necessario capire quando inizia e quando finisce un bit, saranno quindi necessari algoritmi di sincronizzazione, [[Codifica di Manchester]]

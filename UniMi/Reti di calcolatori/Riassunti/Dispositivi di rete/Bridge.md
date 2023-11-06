@@ -9,17 +9,14 @@ A livello fisico il bridge ha un transciver e un MAC level proprio come una staz
 
 Requisito: che il bridge diventa egli stesso una stazione, quindi deve avere una scheda di rete
 
-Bridge separa i domini di collisione
-MAC solo presente nei nodi e nel bridge tra gli hub
-quindi a bordo del bridge ci devono essere tante schede quanti domini di collisioni voglio avere 
+Bridge separa i domini di collisione e a bordo del bridge ci devono essere tante schede quanti domini di collisioni voglio avere 
 
 il bridge ha una tabella di forwarding che contiene, data una stazione, in che dominio si trovano, quindi in che porta dovra usare
-ATT il bridge non si deve comportare come un hub, ma deve fare store and forward 
+Tutti i frame ricevuto sono prima bufferizzati e poi ripetuto come nell'hub tranne dalla porta in cui è arrivato
 SE arriva un frame in cui mittente e destinatario sono nella stessa porta, il bridge butta quanto ricevuto
 
-Problema della gestione della tabella: fa learning e se non sa dove sia, fa broadcast MA senza rimandare sulla linea in cui ha ricevuto (tecnica di fladding)
+Learning: quando riceve un frame, legge quindi l'indirizzo della sorgente e aggiunta la entry alla sua tabella e se la destinazione non è ancora presente nella tabella, fa broadcast MA senza rimandare sulla linea in cui ha ricevuto (tecnica di fladding)
 velocita di learning data dal traffico
 
-Casi limite: aggiunta di un nuovo nodo o cambio di hub a cui era collegato il nodo. Nell'ultimo caso il bridge non lo propaga perche ha una tabella di forwarding sbagliata. Viene quindi introdotto un TTL Time To Leave ricominciando il learning 
-
-Perche fare come il bridge per il broadcast sarebbe sbagliato? Dato che la scheda con CS e collision detection, non saprà mai se avra colliso
+Casi limite: aggiunta di un nuovo nodo o cambio di hub a cui era collegato il nodo. Nell'ultimo caso il bridge non lo propaga perche ha una tabella di forwarding sbagliata. 
+Viene quindi introdotto un TTL Time To Leave ad ogni entry della tabella ricominciando il learning 
