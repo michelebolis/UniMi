@@ -790,12 +790,14 @@ for(I, N, F) -> [F()|for(I+1, N, F)].
 Dare un nome agli attori
 Erlang permette con la registrazione di un attore di rendere il suo PID pubblico agli altri processi
 Una volta registrato è possibile mandare un messaggio in modo diretto: name ! messaggio
+Errore SE registro un attore con un atomo gia registrato 
 
 es
 ```erlang
 -module(clock). 
 -export([start/2, stop/0]). 
 start(Time, Fun) -> register(clock, spawn(fun() -> tick(Time, Fun) end)). 
+					% register(atomo, PID)
 stop() -> clock ! stop. 
 tick(Time, Fun) -> 
 	receive 
