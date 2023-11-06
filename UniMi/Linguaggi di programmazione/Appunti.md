@@ -689,7 +689,7 @@ I messaggi sono ordinati secondo il tempo di arrivo
 Nota
 - tutta la comunicazione è asincrona in quanto il mittente non aspetta che il ricevente confermi di aver ricevuto il messaggio e non viene garantito l'ordine di arrivo
 - NON c è stato condiviso tra gli attori
-- gli attori lavorano in modo concorrente e sono implementati come user-space threads
+- gli attori lavorano in modo concorrente e sono implementati come user-space threads (thread all'interno della VM di Erlang)
 
 ...
 
@@ -711,7 +711,7 @@ loop(N,A) -> io:format("~p(~p) ~p~n", [A, self(), N]), loop(N-1,A).
 
 - Sending message
 Per mandare un messaggio l'attore deve
-- Sapere l'indirizzo PID del target
+- Sapere l'indirizzo PID del target (non posso usarlo esplicitamente)
 - Mandare il proprio PID al target con il messaggio SE una risposta è necessaria
 - usare !
 L'operatore Exp1 ! Exp2 si usa per mandare messaggi ad altri attori
@@ -721,6 +721,7 @@ L'operatore Exp1 ! Exp2 si usa per mandare messaggi ad altri attori
 Nota
 - L'invio non fallisce MAI anche se il target non esiste o non è raggiungibile
 - L'invio non è bloccante per il mittente
+- PID <0.numeroAttore.infoAggiuntive> il primo numero nel PID è l'id del nodo Erlang (es PC virtuale)
 
 - Receiving message
 Meccanismo di pattern matching dei messaggi dalla mailbox
@@ -737,7 +738,7 @@ receive
 end
 ```
 
-Per evitare un attesa infinita, la clausola after è usata in modo che dopo Exprt l'attore si svegli
+Per evitare un attesa infinita, la clausola after è usata in modo che dopo Exprt l'attore si svegli. Solitamente si usa solo in debugging o alternativamente si mette Any -> stampaMessaggio. SE non fa pattern matching, viene lasciato nella coda aspettando altri messaggi
 
 es 
 ```erlang
