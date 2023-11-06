@@ -5,7 +5,7 @@
   "showAttachments": true,
   "hideUnresolved": true,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "path:\"Ingegneria del software\"  ",
@@ -67,6 +67,6 @@
   "repelStrength": 18.0100740740741,
   "linkStrength": 1,
   "linkDistance": 30,
-  "scale": 0.1016022795726726,
+  "scale": 0.06660012697119429,
   "close": false
 }
