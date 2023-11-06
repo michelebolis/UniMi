@@ -32,8 +32,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -178,7 +177,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "aa132acc0c229fc8",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
     "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot",
     "Ricerca operativa/Riassunti/Basi PL",
