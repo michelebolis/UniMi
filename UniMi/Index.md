@@ -3,3 +3,4 @@
 - [[Linguaggi di programmazione]]
 - [[Reti di calcolatori]]
 - [[Ricerca operativa]]
+- [[Sistemi biometrici]]

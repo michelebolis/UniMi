@@ -5,7 +5,7 @@
   "showAttachments": true,
   "hideUnresolved": true,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "path:\"Ingegneria del software\"  ",
@@ -48,6 +48,13 @@
         "a": 1,
         "rgb": 3485342
       }
+    },
+    {
+      "query": "path:\"Sistemi biometrici\" ",
+      "color": {
+        "a": 1,
+        "rgb": 4692595
+      }
     }
   ],
   "collapse-display": true,
@@ -60,6 +67,6 @@
   "repelStrength": 18.0100740740741,
   "linkStrength": 1,
   "linkDistance": 30,
-  "scale": 0.0666001269711941,
+  "scale": 0.1016022795726726,
   "close": false
 }

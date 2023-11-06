@@ -67,7 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 256.5
+    "width": 200
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -83,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ricerca operativa/Slide/Index slide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ricerca operativa/Slide/Index slide.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Ricerca operativa/Slide/Index slide.md"
-              }
+              "state": {}
             }
           },
           {
@@ -164,56 +160,56 @@
   },
   "active": "47136b92c595cdff",
   "lastOpenFiles": [
+    "Ricerca operativa/Ricerca operativa.canvas",
+    "Ricerca operativa/Riassunti/Forme/Rappresentazione matriciale.md",
+    "Ricerca operativa/Riassunti/Forme/Forma canonica.md",
+    "Ricerca operativa/Riassunti/Forme/Forme.md",
+    "Ricerca operativa/Riassunti/Forme/Forma standard.md",
+    "Ricerca operativa/Riassunti/Forme/Forma generale.md",
+    "Ricerca operativa/Riassunti/Forme/Forma alle disuguaglianze.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Interpretazione.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Pivot(A, b, c).md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Es Pivot.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pseudocodice algoritmo del simplesso.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Algoritmo del simplesso.md",
+    "Ricerca operativa/Riassunti/Basi PL/Soluzione di base.md",
+    "Ricerca operativa/Riassunti/Basi PL/Soluzione, casi possibili.md",
+    "Ricerca operativa/Riassunti/Basi PL/Regione ammissibile.md",
+    "Ricerca operativa/Riassunti/Basi PL/Interpretazione geometrica.md",
+    "Ricerca operativa/Riassunti/Basi PL/Degenerazione.md",
+    "Sistemi biometrici/Riassunto unico.md",
+    "Sistemi biometrici/Img",
+    "Sistemi biometrici/Img/Pasted image 20231106110405.png",
+    "Sistemi biometrici/Img/Pasted image 20231106105555.png",
+    "Sistemi biometrici/Img/Pasted image 20231106104941.png",
+    "Sistemi biometrici/Img/Pasted image 20231106104914.png",
+    "Sistemi biometrici/Img/Pasted image 20231106104751.png",
+    "Sistemi biometrici/Img/Pasted image 20231106104720.png",
+    "Sistemi biometrici/Img/Pasted image 20231106104641.png",
+    "Sistemi biometrici/Img/Pasted image 20231106104554.png",
+    "Sistemi biometrici/Img/Pasted image 20231106104541.png",
+    "Sistemi biometrici/Img/Pasted image 20231106104456.png",
+    "Index.md",
+    "Sistemi biometrici/Sistemi biometrici.md",
+    "Sistemi biometrici/Riassunti",
+    "Sistemi biometrici/Sistemi biometrici.canvas",
+    "Ricerca operativa/Slide/Index slide.md",
     "Sistemi biometrici",
     "Reti di calcolatori/Libro/Libro.md",
     "Linguaggi di programmazione/Riassunti/Erlang/Slide/Index slide.md",
     "Linguaggi di programmazione/Riassunti/OCaml/Slide/Index slide.md",
     "Ingegneria del software/Slide/Index slide.md",
-    "Ricerca operativa/Slide/Index slide.md",
     "Ricerca operativa/Ricerca operativa.md",
-    "Ricerca operativa/Img/Pasted image 20231105152510.png",
-    "Ricerca operativa/Ricerca operativa.canvas",
     "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot",
     "Ricerca operativa/Riassunti/Basi PL",
     "Ricerca operativa/Riassunti/Algoritmo del simplesso",
     "Ricerca operativa/Riassunti/Forme/ES",
-    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Pivot(A, b, c).md",
-    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Interpretazione.md",
-    "Ricerca operativa/Appunti.md",
-    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Es Pivot.md",
-    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pseudocodice algoritmo del simplesso.md",
-    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Algoritmo del simplesso.md",
-    "Ricerca operativa/Riassunti/Forme/ES/Es forma canonica.md",
-    "Ricerca operativa/Riassunti/Forme/Forma canonica.md",
-    "Ricerca operativa/Riassunti/Metodi risolutivi PL.md",
-    "Ricerca operativa/Riassunti/Teorema fondamentale della PL.md",
-    "Ricerca operativa/Riassunti/Basi PL/Soluzione di base.md",
-    "Ricerca operativa/Riassunti/Basi PL/Degenerazione.md",
-    "Ricerca operativa/Riassunti/Forme/ES/Es forma standard.md",
-    "Ricerca operativa/Riassunti/Forme/Forma standard.md",
-    "Ricerca operativa/Riassunti/Basi PL/Interpretazione geometrica.md",
-    "Ricerca operativa/Riassunti/Basi PL/Soluzione, casi possibili.md",
-    "Ricerca operativa/Riassunti/Basi PL/Regione ammissibile.md",
-    "Ricerca operativa/Riassunti/Forme/Forme.md",
-    "Ricerca operativa/Riassunti/Forme/Forma alle disuguaglianze.md",
     "Ricerca operativa/Riassunti/Forme",
     "Ricerca operativa/Riassunti",
     "Ricerca operativa/Slide/03 - Algoritmo del simplesso.pdf",
-    "Ricerca operativa/Img/Pasted image 20231105105024.png",
-    "Ricerca operativa/Img",
-    "Ricerca operativa/Img/Pasted image 20231105104952.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231105100957.png",
-    "Ricerca operativa/Img/Pasted image 20231105110734.png",
-    "Ricerca operativa/Img/Pasted image 20231105105130.png",
-    "Ricerca operativa/Img/Pasted image 20231105105039.png",
-    "Ricerca operativa/Slide/02 - Programmazione lineare.pdf",
-    "Ricerca operativa/Slide/01 - Introduzione.pdf",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231101111104.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231101110239.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231101090915.png",
     "Sistemi embedded/Sistemi embedded.canvas"
   ]
 }
