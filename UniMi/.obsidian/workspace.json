@@ -16,18 +16,6 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "cfb1ea5f6aefcd4d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ricerca operativa/Slide/Index slide.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ]
       }
@@ -95,6 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Ricerca operativa/Slide/Index slide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,6 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Ricerca operativa/Slide/Index slide.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,7 +122,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Ricerca operativa/Slide/Index slide.md"
+              }
             }
           },
           {
@@ -170,8 +162,13 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c1ce2ce19829fc50",
+  "active": "47136b92c595cdff",
   "lastOpenFiles": [
+    "Sistemi biometrici",
+    "Reti di calcolatori/Libro/Libro.md",
+    "Linguaggi di programmazione/Riassunti/Erlang/Slide/Index slide.md",
+    "Linguaggi di programmazione/Riassunti/OCaml/Slide/Index slide.md",
+    "Ingegneria del software/Slide/Index slide.md",
     "Ricerca operativa/Slide/Index slide.md",
     "Ricerca operativa/Ricerca operativa.md",
     "Ricerca operativa/Img/Pasted image 20231105152510.png",
@@ -199,10 +196,6 @@
     "Ricerca operativa/Riassunti/Basi PL/Regione ammissibile.md",
     "Ricerca operativa/Riassunti/Forme/Forme.md",
     "Ricerca operativa/Riassunti/Forme/Forma alle disuguaglianze.md",
-    "Ricerca operativa/Riassunti/Forme/Rappresentazione matriciale.md",
-    "Ricerca operativa/Riassunti/Forme/ES/Es forma alle disuguaglianze.md",
-    "Ricerca operativa/Riassunti/Forme/Forma generale.md",
-    "Ricerca operativa/Riassunti/Programmazione lineare.md",
     "Ricerca operativa/Riassunti/Forme",
     "Ricerca operativa/Riassunti",
     "Ricerca operativa/Slide/03 - Algoritmo del simplesso.pdf",
@@ -216,7 +209,6 @@
     "Ricerca operativa/Slide/02 - Programmazione lineare.pdf",
     "Ricerca operativa/Slide/01 - Introduzione.pdf",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Chain of responsability.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Ingegneria del software/Riassunti/img/Pasted image 20231101111104.png",

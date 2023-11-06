@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "IbTrashWithLines",
       "IbGraphLineUp",
       "IbPencil",
       "IbHeartbeatMonitor",
-      "IbConnectivity",
-      "IbLightning"
+      "IbConnectivity"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -26,5 +26,6 @@
   "Reti di calcolatori": "IbConnectivity",
   "Ingegneria del software": "IbHeartbeatMonitor",
   "Linguaggi di programmazione": "IbPencil",
-  "Ricerca operativa": "IbGraphLineUp"
+  "Ricerca operativa": "IbGraphLineUp",
+  "Sistemi biometrici": "IbTrashWithLines"
 }
