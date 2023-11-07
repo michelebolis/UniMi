@@ -187,4 +187,104 @@ in realta access come mode di default
 
 switchport trunk allowed vlan add 100
 
+---
+
+IPv4
+32bit unsigned long con dotted notation
+
+ogni ottetto non puo superare 255
+
+Modo di assegnazione indirizzi
+- classi vs CIDR
+- subnetting
+
+Class-based
+indirizzo base della rete: hostID = 0
+indirizzo che riguarda la rete locale: netID = 0
+tutti 1: broadcast sulla rete
+broadcast sulla rete destinataria: hostID tutti 1
+
+classe A 
+da 1.0.0.0
+a 127.255.255.255
+
+Classe B
+da 128.0.0.0
+a 191.255.255.255
+
+Classe C
+da 192.0.0.0
+a 223.255.255.255
+
+
+Usando x bit per il netID avro 32-x bit per l hostID
+MA cosi per percorrere la tabella di instradamento ci impiegherei in media 2^32/2 = 2^31
+
+tutti bit 1 a sx e tutti bit 0 a dx con in mezzo un punto di taglio dove inizia l hostID
+
+l indirizzi destinazione AND bit a bit con la netmask: cancello bit a destra trovando il netID
+tra i flag dello header c è anche un flag per nascondere amministrativamente una rotta, ICMP non ritorna niente ma \*
+
+Ricorda
+1111111
+128 64 32 16 8 4 2 1
+es
+127.128.129.192
+01111111.1000000.1000001.11000000
+
+218.160.179.60
+11011010.1010000.10110011.00111100
+
+20.148.67.123
+00010100.10010100.01000011.01111011
+
+87.194.104.77
+01010111.11000010.01101000.01001101
+
+01011011.01110110.00101111.10011111
+64+16+8+2+1 = 91
+64+32+16+4+2 = 118
+32+8+4+2+1 = 47
+128+16+8+4+2+1 = 159
+
+10011011.00011011.01010001.00100010
+128+16+8+2+1 = 155
+16+8+2+1 = 27
+64+16+1 = 81
+32+2= 34
+
+Indirizzo broadcast, netmask e 2 indirizzi accettabili
+15.0.0.0 Classe A -> 8
+00001111.00000000.00000000.00000000
+Netmask
+11111111.00000000.00000000.00000000
+255.0.0.0
+Broadcast
+00001111.11111111.11111111.11111111
+15.255.255.255
+2 indirizzi accettabili (minimo; massimo)
+00001111.00000000.00000000.00000001 MIN 15.0.0.1
+00001111.11111111.11111111.11111110 MAX 15.255.255.254
+
+137.149.0.0 Classe B -> 16
+10001001.10010101.00000000.00000000
+Netmask
+11111111.11111111.00000000.00000000
+Broadcast
+10001001.10010101.11111111.11111111
+137.149.255.255
+2 indirizzi accettabili (minimo; massimo)
+10001001.10010101.00000000.00000001 MIN 137.149.0.1
+10001001.10010101.11111111.11111110 MAX 137.149.255.254
+
+215.151.59.0 Classe C -> 24
+11010011.10010111.00111011.00000000
+Netmask
+11111111.11111111.11111111.00000000
+Broadcast
+11010011.10010111.00111011.11111111
+215.151.59.255
+2 indirizzi accettabili (minimo; massimo)
+11010011.10010111.00111011.00000001 MIN 215.151.59.1
+11010011.10010111.00111011.11111110 MAX 215.151.59.254
 
