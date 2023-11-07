@@ -18,14 +18,12 @@
             }
           },
           {
-            "id": "95aebd25e2702f23",
+            "id": "bbe0a79d06681f96",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Reti di calcolatori/Appunti lab.md",
-                "mode": "source",
-                "source": false
+                "file": "Linguaggi di programmazione/Riassunti/Erlang/Slide/07. starting with erlang.4.pdf"
               }
             }
           }
@@ -59,7 +57,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Classe",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -76,8 +74,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -97,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Appunti lab.md",
+                "file": "Linguaggi di programmazione/Riassunti/Erlang/Slide/07. starting with erlang.4.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Appunti lab.md",
+                "file": "Linguaggi di programmazione/Riassunti/Erlang/Slide/07. starting with erlang.4.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reti di calcolatori/Appunti lab.md"
+                "file": "Linguaggi di programmazione/Riassunti/Erlang/Slide/07. starting with erlang.4.pdf"
               }
             }
           },
@@ -176,10 +173,11 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "95aebd25e2702f23",
+  "active": "bbe0a79d06681f96",
   "lastOpenFiles": [
-    "Reti di calcolatori/Appunti.md",
+    "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Reti di calcolatori/Appunti lab.md",
+    "Reti di calcolatori/Appunti.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Ingegneria del software/Appunti.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
@@ -220,7 +218,6 @@
     "Ricerca operativa/Slide/Index slide.md",
     "Sistemi biometrici",
     "Reti di calcolatori/Libro/Libro.md",
-    "Linguaggi di programmazione/Riassunti/Erlang/Slide/Index slide.md",
     "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot",
     "Ricerca operativa/Riassunti/Basi PL",
     "Ricerca operativa/Riassunti/Algoritmo del simplesso",
@@ -228,7 +225,6 @@
     "Ricerca operativa/Riassunti/Forme",
     "Ricerca operativa/Riassunti",
     "Ricerca operativa/Slide/03 - Algoritmo del simplesso.pdf",
-    "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Sistemi embedded/Sistemi embedded.canvas"
   ]
 }
