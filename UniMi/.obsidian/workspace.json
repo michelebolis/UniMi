@@ -18,12 +18,12 @@
             }
           },
           {
-            "id": "04149c7d6f19ee20",
+            "id": "3000565c18ed98b8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
+                "file": "Ingegneria del software/Appunti.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
+                "file": "Ingegneria del software/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
+                "file": "Ingegneria del software/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md"
+                "file": "Ingegneria del software/Appunti.md"
               }
             }
           },
@@ -175,8 +175,12 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "04149c7d6f19ee20",
+  "active": "3000565c18ed98b8",
   "lastOpenFiles": [
+    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+    "Ingegneria del software/Appunti.md",
+    "Sistemi biometrici/Riassunto unico.md",
+    "Linguaggi di programmazione/Appunti.md",
     "Sistemi biometrici/Img/Pasted image 20231106095212.png",
     "Ricerca operativa/Ricerca operativa.canvas",
     "Ricerca operativa/Riassunti/Forme/Rappresentazione matriciale.md",
@@ -195,7 +199,6 @@
     "Ricerca operativa/Riassunti/Basi PL/Regione ammissibile.md",
     "Ricerca operativa/Riassunti/Basi PL/Interpretazione geometrica.md",
     "Ricerca operativa/Riassunti/Basi PL/Degenerazione.md",
-    "Sistemi biometrici/Riassunto unico.md",
     "Sistemi biometrici/Img",
     "Sistemi biometrici/Img/Pasted image 20231106110405.png",
     "Sistemi biometrici/Img/Pasted image 20231106105555.png",
@@ -206,7 +209,6 @@
     "Sistemi biometrici/Img/Pasted image 20231106104641.png",
     "Sistemi biometrici/Img/Pasted image 20231106104554.png",
     "Sistemi biometrici/Img/Pasted image 20231106104541.png",
-    "Sistemi biometrici/Img/Pasted image 20231106104456.png",
     "Index.md",
     "Sistemi biometrici/Sistemi biometrici.md",
     "Sistemi biometrici/Riassunti",
@@ -216,8 +218,6 @@
     "Reti di calcolatori/Libro/Libro.md",
     "Linguaggi di programmazione/Riassunti/Erlang/Slide/Index slide.md",
     "Linguaggi di programmazione/Riassunti/OCaml/Slide/Index slide.md",
-    "Ingegneria del software/Slide/Index slide.md",
-    "Ricerca operativa/Ricerca operativa.md",
     "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot",
     "Ricerca operativa/Riassunti/Basi PL",
     "Ricerca operativa/Riassunti/Algoritmo del simplesso",
@@ -225,7 +225,6 @@
     "Ricerca operativa/Riassunti/Forme",
     "Ricerca operativa/Riassunti",
     "Ricerca operativa/Slide/03 - Algoritmo del simplesso.pdf",
-    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Sistemi embedded/Sistemi embedded.canvas"
