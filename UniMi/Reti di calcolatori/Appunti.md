@@ -1023,3 +1023,89 @@ Gran parte di internet è OSPF
 
 ---
 
+Link State Routing
+1. Costruzione adiacenza
+Le tabelle di adiacenza avviene nello stesso modo del DV 
+
+2. Diffusione LS
+Una volta misurato il costo delle diacenze
+Questa informazione non viene propagata ai nodi adiacenti, MA a tutti i nodi della reta
+
+Questo viene fatto con il Floodind: evoluzione del broadcast che permette di propagare in un unica direzione 
+Flooding viene implementato in modo che i nodi che ricevono le info di un nodo A vengono inviate in tutti i link di uscita tranne quello in cui l ho ricevuto
+Ogni nodo appena riceve un LS da un nodo adiacente, manda un segnale di ACK. Questo cerca di garantire la consistenza. SE non ricevo l ACK, viene ritrasmesso il LS (ridondanza locale) ma non viene rinviato all infinito in quanto sappiamo che nelle altre direzioni verra ripropagato (ridondanza temporale)
+Creo inevitabilmente dell overhead, della ridondanza di alcune info
+
+SE ho N nodi, ho N^2 messaggi che girano
+
+LS composto da: Sorgente, Sequence, TimeToLive, NumeroHop, 
+Sequence: assegnato dalla sorgente che permettono di evitare le coppie di LS gia ricevuti
+
+Inondando la rete di traffico di controllo TUTTI conoscono esattamente la topologia della rete
+Questo ci permette di superare il problema dei DV, count to infinity
+
+LSR 
+Per ogni link ho un costo bidirezionale
+
+OSPF Open Shortest Path First
+Algoritmo che ogni nodo della rete esegue tutte le volte che riceve un update di un LS
+in particolare usa l algoritmo di Dijkstra
+
+Maggiore flessibilita
+Convergenza sicura
+MA pago in traffico e costo computazionale
+
+Come ragiona un nodo
+Livelli di tabelle
+- Tabella di adiacenze che popolo attraverso le ICMP
+- Tabella di routing
+- Tabella NET ID
+
+Uso combinazione routing (guardo le 3 tabelle) e forwarding (faccio un hop)
+
+Architettura di rete OSPF: topologia che prevede un area0 / backbone (OSPF) collegate ad altre sottoaree (RIP / OSPF). NON ci sono collegamenti tra sottoaree
+
+SE aree0 molto grandi, avremo grandi costi di traffico e computazione
+Un nodo viene eletto come Designated Router per fare OSP in modo che il costo computazione sia centralizzato. QUINDI tutti i router della rete non si scambiano in flooding ma mandano i LS solo al Designated Router
+Il Designated Router propaghera poi le tabelle specifiche per ogni nodo
+Problema di vulnabilita della rete: il Designated Router viene duplicato per sicurezza
+Problema di convergenza del traffico verso il Designated Router: i link verso il Designated Router devono essere robusti e veloci 
+
+Oggi si sposta la funzione di rounting all interno di un datacenter (SDN SW Defined Networking)
+In questo modo disaccoppio piano dati e di controllo. I nodi fanno solo forwarding
+OPEN FLOW: protocollo che regola la comunicazione tra ogni apparato di rete e il "datacenter" associato
+
+Internet: collezione di AS Atonomous System
+Le varie aree0 sono collegate a Internet Backbone (pochi nodi ad altissima velocita; protocollo BGP)
+Tier 1: Internet Backbone
+Tier 2: AS
+Tier 3: reti di accesso / reti periferiche
+
+
+BGP Border G Protocol = Path Vector
+Assomiglia a DV
+Vengono propagati vettori delle distanze senza fare flooding.
+In questo caso i DV contengono anche per ogni destinazione, il costo e il cammino per raggiungere la destinazione (per evitare count to infinity)
+
+Costo inferiore del LS
+MA i nodi devono conoscere il Path a configuration time o run time
+BGP funziona SOLO tra router di Tier 1
+
+
+I router devono rispettare i QoS
+Oltre ai pacchetti con il payload ci sono anche pacchetti di controllo 
+Il resto dei pacchetti va nel flusso dati
+Estratto il packet classifier (TOS bit) dall header, viene fatto uno scheduling sulla coda in base alla politica di scheduling
+
+Il classifier decide in quale coda inviare il pacchetto
+Le code di I/O per ogni porta di I/O sono diverse in base alla qualita di servizio che vogliono offrire
+Un router ha tante code quanti sono i servizi che puo offrire
+
+
+Tipo di traffico in funzione dell affidabilità, delay, Jitter e B
+- email es FTP
+- web
+- audio streaming
+- video streaming
+- ...
+- video conference

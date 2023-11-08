@@ -1248,11 +1248,23 @@ Svantaggi: Minore possibilita di controllo su che tipo di oggetti possono essere
 
 
 Decorator pattern
-Aggiungere nuove funzionalita o caratteristiche dinamicamente
+Aggiungere nuove funzionalità o caratteristiche dinamicamente
 Antipattern:
 - gerarchia di classi, cioe creo una classe per ogni possibile combinazione di decorazioni
 - unica classe (God class)
 
-il decorator pattern attacca nuove responsabilita tramite l aggiunta di nuovi oggeti
+il decorator pattern attacca nuove responsabilità tramite l aggiunta di nuovi oggetti
 
+creo una classe astratta Decorator che implementa la classe a cui ci vogliamo aggiungere cose in modo tale che overridiamo tutti i metodi cosicche le decorazioni che utilizzamo non dovrenno riscrivere i metodi che non cambiano
+potrei aggiungere un metodo protected che rappresenta la azione specifica del decorator che verra ridefinito
 
+...
+
+Observer pattern
+Problema: visualizzare in diversi modi un dato
+Antipattern:
+- Pairwise dependencies
+mettiamo lo stato in un oggetto a parte e gli Observer osserveranno tale stato
+
+observer push
+lo stato modificato viene passato come argomento alla callback

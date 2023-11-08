@@ -18,12 +18,12 @@
             }
           },
           {
-            "id": "cf6a9cab7e9a28f3",
+            "id": "50cdb2950465ca43",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ingegneria del software/Appunti.md",
+                "file": "Reti di calcolatori/Appunti.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ingegneria del software/Appunti.md",
+                "file": "Reti di calcolatori/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ingegneria del software/Appunti.md",
+                "file": "Reti di calcolatori/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ingegneria del software/Appunti.md"
+                "file": "Reti di calcolatori/Appunti.md"
               }
             }
           },
@@ -175,8 +175,11 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "cf6a9cab7e9a28f3",
+  "active": "50cdb2950465ca43",
   "lastOpenFiles": [
+    "2023-11-08.md",
+    "Reti di calcolatori/Appunti.md",
+    "Ingegneria del software/Appunti.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/RIP.md",
@@ -196,11 +199,9 @@
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/Pacchetto, formato.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/Addressing.md",
     "Reti di calcolatori/Riassunti/Temp",
-    "Reti di calcolatori/Appunti.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Riassunti/Erlang/Slide/07. starting with erlang.4.pdf",
     "Reti di calcolatori/Appunti lab.md",
-    "Ingegneria del software/Appunti.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Sistemi biometrici/Riassunto unico.md",
     "Linguaggi di programmazione/Appunti.md",
