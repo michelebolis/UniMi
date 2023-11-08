@@ -21,9 +21,14 @@
             "id": "bbe0a79d06681f96",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "canvas",
               "state": {
-                "file": "Linguaggi di programmazione/Riassunti/Erlang/Slide/07. starting with erlang.4.pdf"
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+                "viewState": {
+                  "x": -2033.7779364163557,
+                  "y": 2570.0863530844263,
+                  "zoom": -0.6702596170163253
+                }
               }
             }
           }
@@ -94,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linguaggi di programmazione/Riassunti/Erlang/Slide/07. starting with erlang.4.pdf",
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linguaggi di programmazione/Riassunti/Erlang/Slide/07. starting with erlang.4.pdf",
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linguaggi di programmazione/Riassunti/Erlang/Slide/07. starting with erlang.4.pdf"
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas"
               }
             }
           },
@@ -175,6 +180,7 @@
   },
   "active": "bbe0a79d06681f96",
   "lastOpenFiles": [
+    "Linguaggi di programmazione/Riassunti/Erlang/Slide/07. starting with erlang.4.pdf",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Reti di calcolatori/Appunti lab.md",
     "Reti di calcolatori/Appunti.md",
