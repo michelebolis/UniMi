@@ -16,24 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "352c562e7d0a97e0",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
-                "viewState": {
-                  "x": 732.5199061124354,
-                  "y": 1084.192562630029,
-                  "zoom": -3.5833333333333335
-                }
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas"
-              }
+              "state": {}
             }
           },
           {
@@ -178,11 +158,11 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "a036a027379b1f76",
+  "active": "47136b92c595cdff",
   "lastOpenFiles": [
+    "Reti di calcolatori/Reti di calcolatori.canvas",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/RIP.md",
-    "Reti di calcolatori/Reti di calcolatori.canvas",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/LS Link State.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/DV Distance Vector.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/Routing.md",
@@ -230,7 +210,6 @@
     "Sistemi biometrici",
     "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot",
     "Ricerca operativa/Riassunti/Basi PL",
-    "Ricerca operativa/Riassunti/Algoritmo del simplesso",
     "Sistemi embedded/Sistemi embedded.canvas"
   ]
 }
