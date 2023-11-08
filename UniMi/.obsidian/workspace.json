@@ -18,16 +18,16 @@
             }
           },
           {
-            "id": "bbe0a79d06681f96",
+            "id": "352c562e7d0a97e0",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "viewState": {
-                  "x": -2033.7779364163557,
-                  "y": 2570.0863530844263,
-                  "zoom": -0.6702596170163253
+                  "x": -4841.182419868821,
+                  "y": 1084.192562630029,
+                  "zoom": -2.7500000000000004
                 }
               }
             }
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 235.5110321044922
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas"
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas"
               }
             }
           },
@@ -178,13 +178,31 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "bbe0a79d06681f96",
+  "active": "47136b92c595cdff",
   "lastOpenFiles": [
-    "Linguaggi di programmazione/Riassunti/Erlang/Slide/07. starting with erlang.4.pdf",
-    "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
-    "Reti di calcolatori/Appunti lab.md",
-    "Reti di calcolatori/Appunti.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/RIP.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/LS Link State.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/DV Distance Vector.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/Routing.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/ICMP.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/DHCP.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/ARP.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/NAT.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/CIDR.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/Subnetting.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/Classi NET ID.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/Problema frammentazione.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/Pacchetto, formato.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/Addressing.md",
+    "Reti di calcolatori/Riassunti/Temp",
+    "Reti di calcolatori/Appunti.md",
+    "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+    "Linguaggi di programmazione/Riassunti/Erlang/Slide/07. starting with erlang.4.pdf",
+    "Reti di calcolatori/Appunti lab.md",
     "Ingegneria del software/Appunti.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Sistemi biometrici/Riassunto unico.md",
@@ -197,16 +215,6 @@
     "Ricerca operativa/Riassunti/Forme/Forma standard.md",
     "Ricerca operativa/Riassunti/Forme/Forma generale.md",
     "Ricerca operativa/Riassunti/Forme/Forma alle disuguaglianze.md",
-    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Interpretazione.md",
-    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Pivot(A, b, c).md",
-    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Es Pivot.md",
-    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pseudocodice algoritmo del simplesso.md",
-    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Algoritmo del simplesso.md",
-    "Ricerca operativa/Riassunti/Basi PL/Soluzione di base.md",
-    "Ricerca operativa/Riassunti/Basi PL/Soluzione, casi possibili.md",
-    "Ricerca operativa/Riassunti/Basi PL/Regione ammissibile.md",
-    "Ricerca operativa/Riassunti/Basi PL/Interpretazione geometrica.md",
-    "Ricerca operativa/Riassunti/Basi PL/Degenerazione.md",
     "Sistemi biometrici/Img",
     "Sistemi biometrici/Img/Pasted image 20231106110405.png",
     "Sistemi biometrici/Img/Pasted image 20231106105555.png",
@@ -217,20 +225,12 @@
     "Sistemi biometrici/Img/Pasted image 20231106104641.png",
     "Sistemi biometrici/Img/Pasted image 20231106104554.png",
     "Sistemi biometrici/Img/Pasted image 20231106104541.png",
-    "Index.md",
-    "Sistemi biometrici/Sistemi biometrici.md",
     "Sistemi biometrici/Riassunti",
     "Sistemi biometrici/Sistemi biometrici.canvas",
-    "Ricerca operativa/Slide/Index slide.md",
     "Sistemi biometrici",
-    "Reti di calcolatori/Libro/Libro.md",
     "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot",
     "Ricerca operativa/Riassunti/Basi PL",
     "Ricerca operativa/Riassunti/Algoritmo del simplesso",
-    "Ricerca operativa/Riassunti/Forme/ES",
-    "Ricerca operativa/Riassunti/Forme",
-    "Ricerca operativa/Riassunti",
-    "Ricerca operativa/Slide/03 - Algoritmo del simplesso.pdf",
     "Sistemi embedded/Sistemi embedded.canvas"
   ]
 }
