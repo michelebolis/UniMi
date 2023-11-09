@@ -1268,3 +1268,6 @@ mettiamo lo stato in un oggetto a parte e gli Observer osserveranno tale stato
 
 observer push
 lo stato modificato viene passato come argomento alla callback
+
+---
+
