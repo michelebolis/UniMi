@@ -1102,10 +1102,130 @@ Le code di I/O per ogni porta di I/O sono diverse in base alla qualita di serviz
 Un router ha tante code quanti sono i servizi che puo offrire
 
 
-Tipo di traffico in funzione dell affidabilità, delay, Jitter e B
-- email es FTP
-- web
-- audio streaming
-- video streaming
-- ...
-- video conference
+| Tipo di traffico - Esigenze  | Affidabilita | Delay | Jitter | Banda |
+| ------------------ | ------------ | ----- | ------ | ----- |
+| email              | Alta         | Basso | Basso  | Basso |
+| web (come FTP)     | Alta         | Basso | Basso  | Medio |
+| FTP                | Alto         | Basso | Basso  | Medio |
+| audio streaming    | Basso        | Medio | Alto   | Basso |
+| video streaming    | Basso        | Alto      | Alto       | Alto      |
+| Internet telephone | Basso        |       |        |       |
+| video conference   | Basso        | Alto      | Alto       | Alto      |
+
+Jitter: tempo da quando il messaggio parte a quando arriva al destinatario
+NON tutti i pacchetti hanno lo stesso ritardo
+
+La digitalizzazione di un segnale analogico passa da campionamenti. Decido una frequenza di osservazione e ad ogni bit campione il valore di tensione, producendo un byte 
+Piu è la frequenza di campionamento maggiore è la qualita
+
+
+8000 campioni al secondo ( uno ogni 125microsecondi) per garantire...
+Dato che ogni campione produce un byte, al secondo produco 64KB (minimo di banda per avere una qualita minima). Alternativa 16000 campioni al secondi quindi 128KB
+PCM Pulse Code Modulation
+Anche in ricezione dovro avere la stessa frequenza di arrivo dei messaggi, quindi uno orgni 125microsecondi (CBR Constant Bit Rate in ricezione)
+
+Anche perche audio e video hanno un Jitter sensibile
+Per garantire questo requisito su Internet, viene delegato al SW: Buffer di playout, permette di bufferizzare e risolvere la scarsa qualita della rete (dimensionamento in base alla qualita della rete)
+
+
+La coda di output dei router è gestita con due blocchi
+- Servizio affidabile: solitamente pacchetti generati dal TCP
+- FIFO
+Questa coda viene gestita con un algoritmo di scheduling FIFO
+Problema della provenienza
+
+SE TCP rileva traffico intenso, potrebbe droppare tutti i pacchetti in arrivo nella coda.
+MA poi quando viene rispreso il traffico, ci sarebbe ancora un brust di pacchetti 
+
+- RED Random Early Detection
+Cerco di prevenire l insorgenza del problema di traffico a burst
+Vnegono prese due soglie
+- MIN Thrashold
+- MAX Thrashhold
+Viene definita una LengthAverage
+LAVG = alpha^LOLD + (1-alpha)\*LCURRENT
+0.5 < alpha < 0.8
+
+Quando arriva un pacchetto, guardo SE la LengthAverage è sotto la min, in tal caso accodo mentre se è sopra la max, allora scarto
+SE è tra le due soglie accodo secondo una probabilita p
+
+Droppo casualmente pacchetti in coda
+Droppando pacchetti anche se il nuovo pacchetto ci starebbe nella coda, permette di evitare preventivamente il problema del traffico a burst
+
+
+- Servizio sensibile al delay (UTP)
+WFQ Waited Fair Q
+SE voglio differenziare le code in base a diverssi livelli di sensibilita del delay, associo ad ogni coda un peso, l equivalente della frazione di canale che assegna al traffico
+Scheduling con round robin
+
+(wi / somma k wk) \* RateDisponibile
+peso della coda / totale pesi * Rate
+
+es 
+con i=1 a 4 wi=4, 2, 2, 2 peso della coda
+w1 = 4/10 = 2/5 R
+w2,3,4 = 2/10 = 1/5 R
+
+SE canale è da 1Mbps, a w1 assegno 500kb e a ognuno degli altri 125kb
+w1 si svuotera prima delle altre code
+
+
+Non discrimina secondo il Jitter o il delay richiesto
+Tiene conto anche della lunghezza dei pacchetti, restando Fair: ad ogni pacchetti viene dato un timestamp in funzione della categoria e ...
+Le code vengono schedulate in base a tale timestamp
+
+
+SE un router gestisce una coda come WFQ, la slice del canale è determinato dal peso
+Alcuni router (solitamente di accesso) fanno shaping, cioè se viene dichiarato all ingresso 1/4 del canale viene verificato se viene prodotto effettivamente 1/4
+Tecnica token bucket: ho un timer che mi determina la Rate in base alla quale rempio il bucket di token. Qualsiasi quantita di dati la sorgente generi, dalla coda prendo il pacchetto SOLO se c è un token nel bucket
+SE finisco i token, sto andando a una Rate superiore a quanto dichiarato
+
+La coda che va in overflow eventualmente sara quella di input
+
+
+Tunneling
+Dato un Host che lavora su una rete IP e un altro host che lavora su una rete IP, SE le due reti sono collegate da una rete NON IP, non posso mandare l IPHeader e l'IPPayload
+Il Tunneling consente di creare un tunnel NON IP che permette di trasportare, senza modificarlo, il pacchetto IP originale, incapsulandolo in un pacchetto IP, aggiungendo l'header della rete.
+
+Ovviamente la rete NON IP dovro sapere la corrispondenza dell IP destinazione rispetto all'indirizzo del gateway destinazione
+
+
+
+Nella realizzazione delle aree0 si richiede l efficienza dei router
+Tecnica MPLS Multi Protocol Label Switching utilizzata nelle aree0
+Si ragiona attraverso le etichette, sovrapponendosi all indirizzo IP, MA che vale solo all interno del singolo router
+Lo switching lo avevamo conosciuto a livello 2, mappando una porta di ingresso in una di uscita
+
+MPLS agisce sulla parte del router che si occupa del forwarder, facendolo operare come uno switch
+Trasformo il router in un apparato che fa forwarding SENZA curarsi del routing
+
+il LS continua ad essere a bordo del router, MA è funzionale a far funzionare il router come uno switch
+Il router di gateway dell area0 si chiamano Area Border Router: qui si compie la trasformazione da LS a MPLS
+
+
+Router non convenzionale (MPLS)
+OSPF è ancora li
+differenze:
+- le informazioni di routing popolano anche la Label switching table
+- l'IP header e l'IP payload vengono trasformati in un MPLS pacchetto. Questo avviene tramite tunneling, incapsulando quindi il pacchetto IP
+- labeling: assegnamento della label al pacchetto
+- Gestisco le code in base all etichetta
+
+Il ruoter ragiona solo in base alla porta di ingresso - etichettaRilevata - etichettaNuova - porta di uscita. Ci sara una tabella per ogni porta
+l'unica cosa che si porta dietro per tutta la rete sono i QoS
+
+Le tabelle inizialmente NON sono vuote, ma i router si ritrovano le tabelle gia costruite da un processo centralizzato (forma di designated router)
+
+MPLS formato pacchetto
+l'header di MPLS contiene
+- label su 20bit
+- CoS Class of Service 
+- TTL time to leave
+
+In questo modo otteniamo aree0 il piu veloce possibili perche non si deve ispezionare l IP MA viene fatto tutto piu velocemente come se fosse uno switch
+
+
+
+BGP funzionalmente è a livello 3 MA in realtà nell'implementazione è un protocollo a livello 7 utilizzando TCP
+
+

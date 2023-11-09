@@ -16,17 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "252bc85f04c41d77",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -153,8 +144,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -168,8 +158,9 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "252bc85f04c41d77",
+  "active": "47136b92c595cdff",
   "lastOpenFiles": [
+    "Reti di calcolatori/Appunti.md",
     "Ricerca operativa/Slide/Index slide.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Decorator - Antipattern.md",
@@ -193,7 +184,6 @@
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Nullability.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Delegation.md",
-    "Reti di calcolatori/Appunti.md",
     "2023-11-08.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete",
