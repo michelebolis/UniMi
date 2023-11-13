@@ -18,12 +18,12 @@
             }
           },
           {
-            "id": "9c26bae58eeb1f76",
+            "id": "eb6cc2006e147563",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
+                "file": "Ingegneria del software/Appunti.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
+                "file": "Ingegneria del software/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
+                "file": "Ingegneria del software/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md"
+                "file": "Ingegneria del software/Appunti.md"
               }
             }
           },
@@ -175,8 +175,9 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "9c26bae58eeb1f76",
+  "active": "eb6cc2006e147563",
   "lastOpenFiles": [
+    "Linguaggi di programmazione/Appunti.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Spy Object.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Mock Object.md",

@@ -1271,3 +1271,10 @@ lo stato modificato viene passato come argomento alla callback
 
 ---
 
+Per ogni test ci dovrebbe essere un unico componente reale SUT
+Mentre i vari DOC implementati tramite mocking
+
+...
+
+@Injectstock
+	
