@@ -1,5 +1,6 @@
 Immaginiamo di voler modellare con degli oggetti una grande varietà di pizze differenti sia per la base (_es. normale, integrale, senza glutine…_) che per gli ingredienti che vi si trovano sopra. Per ogni diversa varietà di pizza vorremmo ottenere un oggetto aderente a un’interfaccia comune `Pizza` il cui metodo `toString()` elenchi la base e gli ingredienti che la compongono.
 
+- Gerarchia di classi
 Un primo approccio _statico_ a questo problema consiste nel creare una gerarchia di classi che contenga una classe per ogni possibile combinazione di base e ingredienti, che d’ora in avanti chiameremo “**decorazioni**”.
 
 ```java
@@ -12,8 +13,11 @@ public class BaseIntegrale implements Pizza {
 }  
 ```
 
-Come è subito ovvio, però, questo approccio risulta assolutamente da evitare per una serie di motivi: in primo luogo l’esplosione combinatoria dovuta all’accoppiamento di ogni possibile base e insieme di decorazioni, e in secondo luogo l’estrema difficoltà che comporterebbe una futura aggiunta di decorazioni.
+Problemi: 
+- esplosione combinatoria dovuta all’accoppiamento di ogni possibile base e insieme di decorazioni
+- estrema difficoltà che comporterebbe una futura aggiunta di decorazioni.
 
+- God class
 L’ideale sarebbe invece poter **aggiungere funzionalità e caratteristiche dinamicamente**, restringendo la gerarchia ad un’unica classe le cui istanze possano essere “decorate” su richiesta al momento dell’esecuzione.  
 La soluzione più semplice a questo nuovo problema parrebbe quella che viene definita una GOD CLASS (o _fat class_), ovvero un’unica classe in cui tramite attributi booleani e `switch` vengono attivate o disattivate diverse decorazioni.
 
@@ -35,4 +39,6 @@ public class GodPizza {
 }
 ```
 
-Si tratta però questo di un chiaro anti-pattern, una soluzione che sebbene invitante e semplice in un primo momento da realizzare nasconde delle criticità non trascurabili. Si tratta infatti di una chiara violazione dell’Open-Close Principle, in quanto per aggiungere un decoratore è necessario modificare la God Class; inoltre, tale classe diventa molto velocemente gigantesca, zeppa di funzionalità tra loro molto diverse (_scarsa separazione delle responsabilità_) e decisamente infernale da leggere, gestire e debuggare in caso di errori.
+Problemi: 
+- chiara violazione dell’Open-Close Principle, in quanto per aggiungere un decoratore è necessario modificare la God Class
+- diventa molto velocemente gigantesca, zeppa di funzionalità tra loro molto diverse (_scarsa separazione delle responsabilità_) e decisamente infernale da leggere, gestire e debuggare in caso di errori.
