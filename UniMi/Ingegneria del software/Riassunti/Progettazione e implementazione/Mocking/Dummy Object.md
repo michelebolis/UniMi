@@ -20,6 +20,6 @@ In questi casi, si può passare come argomento un **dummy object**. Questi ogge
 
 Vantaggio: eliminare la necessità di costruire gli oggetti reali.
 
-[[Dummy objects - Mockito]]
+[[Dummy Object - Mockito]]
 
 Si noti che un dummy object non è la stessa cosa di un _null object_. Un dummy object non viene utilizzato dal SUT, quindi il suo comportamento è irrilevante. Al contrario, un null object viene utilizzato dal SUT, ma è progettato per non fare nulla o produrre un risultato sempre “innocuo”.

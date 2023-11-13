@@ -15,7 +15,8 @@ Per il cammino minimo come metriche utilizzeremo il delay e il numero di hop
 
 Il forwarder fa la stessa cosa del Bridge (invece del MAC c è l IP)
 
-
 Come costruire un processo che fa routing
 - [[DV Distance Vector]]
 - [[LS Link State]]
+
+[[BGP]]

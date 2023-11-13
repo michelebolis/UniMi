@@ -1228,4 +1228,4 @@ In questo modo otteniamo aree0 il piu veloce possibili perche non si deve ispezi
 
 BGP funzionalmente è a livello 3 MA in realtà nell'implementazione è un protocollo a livello 7 utilizzando TCP
 
-
+---
