@@ -806,3 +806,20 @@ tick(Time, Fun) ->
 		Time -> Fun(), tick(Time, Fun) 
 	end.
 ```
+
+---
+
+Error in concurrency
+Quando i due attori sono collegati, gli errori di uno affetta il comportamento dell altro
+link(PID) function aiuta a monitorare un attore attraverso lo scambio di messaggio
+
+SE abbiamo piu processi linkati, abbiamo un link set
+
+process_flag(trap.exit, true)
+Permette di flaggare il processo come di sistema, consentendolo di non morire quando riceve l exit del processo a cui è linkato
+
+...
+
+I link sono simmetrici
+
+Link asimmetrici: monitor
