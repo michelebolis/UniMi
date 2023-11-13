@@ -1277,4 +1277,3 @@ Mentre i vari DOC implementati tramite mocking
 ...
 
 @Injectstock
-	
