@@ -294,3 +294,100 @@ lezione 10/11
 
 ---
 
+Per controllare che i calcoli siano corretti, converto l ultimo ottetto del min e del max range di indirizzi
+per essere corretto devono avere i numeri di netid e subnetid uguali tranne l ultimo
+
+in caso errato il subnetid sara diverso
+Il router se il pacchetto non è nei subnet, dara un segnale di errore
+
+Il campo CRC è il resto della divisione tra due polinomi rappresentanti dai dati/polinomioComunePerCRC 
+10110 = $x^4 + x^2 + x$
+SE i due resti non sono uguali, allora c è stata un errore
+
+
+Proprieta aritmetica binaria
+- Allineamento
+Una rete di dimensione 2^n puo iniziare solo a intervalli regolari multipli di 2^n, cioe a posizioni pari a k * 2^n, 
+Il primo indirizzo disponibile nello host addres range deve essere composto da tutti 0 negli ultimi n bit per qualsiasi sottorete
+
+es n = 64 (taglia è il massimo numero di dispositivi)
+puo iniziare a 0, 64, 128, 192
+n = 32
+puo iniziare a 0, 32, 64, 96, 128, 160, 192, 224
+
+
+indirizzo base: pari
+indirizzo broadcast: dispari
+
+
+Alternativa: euristica
+Dandomi l indirizzo base, mi sta anche dando l indirizzo massimo
+da 011 | 00000 = 96 
+a 011 | 11111 = 127
+
+Si inizia dalla subnet piu grande fino alla piu piccola
+S2 con 14 apparati + broadcast + base = 16 indirizzi -> 4 bit (n=16)
+base rete 192.168.20.96/28
+netmask 255.255.255.240
+broadcast 192.168.20.11
+range 192.168.20.97 - 192.168.20.110
+97 = 011 | 0 | 0001
+110 = 011 | 0 | 1110
+
+S1 con 5 apparati + broadcast + base = 7 indirizzi -> 3 bit (n=8)
+Base 192.168.20.112/29
+netmask 255.255.255.248
+Broadcast 192.168.20.119
+range 192.168.20.113 -  192.168.20.118
+113 = 011 | 10 | 001
+118 = 011 | 10 | 110
+
+OSS S2 e S1 non sono sovrapponibili, come le classi di indirizzi infatti S2 ha solo 1 bit per il subnet mentre S2 ha 2 bit
+
+...
+
+ATT seguire la tecnica che chiede all esame in quanto seno le reti non vanno bene 
+
+es
+indirizzo base 10.11.260.0/24
+A 25 host
+G 14 host
+K 28 host
+M 9 host
+R 58 host
+
+Usare la regola dell allineamento nell ordine alfabetico
+- A 25+1+1 = 27 indirizzi -> (bit=5, n=32)
+base 10.11.260.0/
+broadcast 10.11.260.27
+range 10.11.260.1 - 10.11.260.26
+1 = 00000001
+26 = 00011010
+
+- G 14+1+1 = 16 indirizzi -> (bit=4, n=16)
+base 10.11.260.32/
+broadcast 10.11.260.48
+range 10.11.260.33 - 10.11.260.47
+33 = 00010001
+47 = 00010111
+
+- K 28+1+1 = 30 indirizzi -> (bit=5, n=32)
+base 10.11.260.64
+broadcast 10.11.260.94
+range 10.11.260.65 - 10.11.260.93
+65 = 01000001
+93 = 01011101
+
+- M 9+1+1 = 11 indirizzi -> (bit=4, n=16)
+base 10.11.260.96
+broadcast 10.11.260.107
+range 10.11.260.97 - 10.11.260.106
+97 = 
+106 = 
+
+- R 58+1+1 = 60 indirizzi -> (bit=6, n=64)
+base 10.11.260.128
+broadcast 10.11.260.188
+range 10.11.260.129 - 10.11.260.187
+129 = 10000001
+187 = 
