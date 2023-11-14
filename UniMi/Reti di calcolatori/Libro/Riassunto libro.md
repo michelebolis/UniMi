@@ -221,9 +221,26 @@ Supporta sia la modalita best-effort connectionless sia quella affidabile connec
 Il network layer utilizzera i servizi concessi dal MAC sublayer
 
 
+CAP 6
+Il routing e il forwarding vengono associate al livello di network
+in TCP/IP viene utilizzato il protocollo Internet (IP), che da un servizio best-efford
 
+Il protocollo IP in ogni host ha un indirizzo unico all interno di Internet
+Ogni indirizzo IP ha due parti 
+- NetID 
+- HostID
 
+L'allocazione dei NetID è gestita dal ICANN
 
+La tabella di instradamento permette di ruotare ogni pacchetto ad ogni altro network in Internet
+Alla ricezione del pacchetto, il router legge semplicemente il NetID dall header e lo usa nella tabella di instradamento per mandare il pacchetto al destinatario
+
+SE la dimensione del pacchetto è maggiore della dimensione massima del frame (MTU Maximum Transmission Unit), lo divide in piu blocchi con la frammentazione.
+
+Protocolli
+- ARP Address Resolution Protocol: usato da IP negli host attaccati ad una LAN per determinare il MAC address dato un IP
+- OSPF Open Shortest Path First: è un protocollo di routing 
+- ICMP
 
 
 

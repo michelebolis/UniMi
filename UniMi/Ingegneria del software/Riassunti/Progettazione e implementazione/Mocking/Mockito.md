@@ -1,17 +1,31 @@
 Libreria che usa pesantemente la reflection
 
-es
-MyClass dummy = mock(MyClass.class)
+```java
+when(oggettoMockato.metodo(args)).then_(value);
+```
 
-MyClass stub = mock(MyClass.class)
-when(stub.getValue(0)).thenReturn(4)
-when(stub.getValue(1)).thenReturn(7, 3)
+- args: possono essere valori, matchers...
+- then_: thenReturn, thenThrows, thenAnswer, thenCallRealMethod
 
-InOrder io = inOrder(mock)
-io.verify(mock).getValue(0);
-io.verify(mock, times(2)).getValue(1)
+Quando i metodi ritornano void:
+```java
+do_(values).when(oggettoMockato.metodo(args)).then_(value);
+```
 
+Per verificare l'occorrenza di una chiamata con certi parametri 
+```java
+verify(mockedClass, howmany).method(args)
+```
+- howmany: times(n), never, atLeast(n), atMost(n)
 
-MyClass spy = spy(new MyClass())
+Per verificare l'ordine delle occorrenze delle chiamate
+```java
+InOrder inO = inOrder(mock1, mock2, ...)
+inO.verify(...)...
+```
 
-...
+Per catturare un parametro su cui fare asserzioni
+```java
+ArgumentCaptor<Person> arg = ArgumentCaptor.forClass(Person.class); verify(mock).doSomething(arg.capture()); 
+assertEquals("John", arg.getValue().getName());
+```

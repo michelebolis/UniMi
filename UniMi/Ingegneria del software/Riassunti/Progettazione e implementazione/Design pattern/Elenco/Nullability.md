@@ -28,20 +28,3 @@ public Card(@NotNull Rank rank, @NotNull Suit suit) {
 	this.suit = suit; 
 }
 ```
-
-NullObject pattern
-
-```java
-public interface CardSource { 
-	Card draw(); 
-	boolean isEmpty(); 
-	public static CardSource NULL = new CardSource() { 
-		public boolean isEmpty() { return true; } 
-		public Card draw() { 
-			assert !isEmpty(); return null; 
-		} 
-	}; 
-}
-```
-
-NULL diventa un oggetto valido della classe di tipo anonimo che aderisce alla stessa interfaccia

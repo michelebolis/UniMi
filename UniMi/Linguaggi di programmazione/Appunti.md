@@ -864,3 +864,4 @@ Server
 erl -sname nomeTerminale
 permette di avere un terminale server con un nome specifico che poi richiamero da un altro terminale client
 
+---
