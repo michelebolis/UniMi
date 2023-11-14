@@ -823,3 +823,44 @@ Permette di flaggare il processo come di sistema, consentendolo di non morire qu
 I link sono simmetrici
 
 Link asimmetrici: monitor
+
+---
+
+Distribution in Erlang
+Stesso servizio replicato su piu macchine/VM
+2 modelli
+- Distributed Erlang
+Si basa sul concetto di Erlang nodes, singola VM che comunica con altra VM in eseguzione sullo stesso pc o su altri
+
+
+rpc:call libreria standard
+
+cookie (per comunicazione ssh quindi non ci interessa)
+
+SE abbiamo tanti nodi, abbiamo un cluster
+le primitive nei sistemi distribuiti, hanno un argomento in piu, cioè il Node
+
+apply(M, F, A) permette di eseguire la funzione F del modulo M con parametri A
+guardare in libreria rpc e global
+
+due Node per comunicare devo avere lo stesso cookie
+erl -setcookie "Cookie"
+erlang:set_cookie(node(), "Cookie")
+
+Problema: posso eseguire qualsiasi cosa
+
+
+- Socket-Based Distribution
+Controllo piu granulare, posso decidere quali processo posso fare cosa...
+
+si usa libreria lib_chan, un modulo che permette di esplicitare quale processo possono essere spawati 
+
+notUsed per specificare nel file di config che la funzione non prende argomenti
+
+lib_chan non lo chiede all esame
+
+
+Server
+erl -sname nomeTerminale
+permette di avere un terminale server con un nome specifico che poi richiamero da un altro terminale client
+
