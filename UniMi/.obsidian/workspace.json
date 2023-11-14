@@ -21,11 +21,14 @@
             "id": "eb6cc2006e147563",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Ingegneria del software/Appunti.md",
-                "mode": "source",
-                "source": false
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
+                "viewState": {
+                  "x": -5933.116526428449,
+                  "y": 4239.157994201378,
+                  "zoom": -1.773468090775961
+                }
               }
             }
           }
@@ -96,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ingegneria del software/Appunti.md",
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ingegneria del software/Appunti.md",
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ingegneria del software/Appunti.md"
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas"
               }
             }
           },
@@ -177,6 +180,9 @@
   },
   "active": "eb6cc2006e147563",
   "lastOpenFiles": [
+    "Reti di calcolatori/Libro/Riassunto libro.md",
+    "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Ingegneria del software/Appunti.md",
     "Linguaggi di programmazione/Appunti.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Spy Object.md",
@@ -186,7 +192,6 @@
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Dummy Object.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Untitled.md",
-    "Reti di calcolatori/Reti di calcolatori.canvas",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/Tecnica Token Bucket.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/UTP.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/TCP.md",
@@ -197,7 +202,6 @@
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/OSPF.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/LS Link State.md",
     "Reti di calcolatori/Appunti.md",
-    "Ingegneria del software/Appunti.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Spy Object - Mockito.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Mock Object - Mockito.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Stub Object - Mockito.md",
@@ -205,7 +209,6 @@
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Stub Object.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Test Double.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Mocking.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Decorator -Esempio.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Observer",
     "Ingegneria del software/Riassunti/img/Pasted image 20231109094033.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231109093716.png",
