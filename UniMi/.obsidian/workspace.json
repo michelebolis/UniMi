@@ -18,22 +18,18 @@
             }
           },
           {
-            "id": "eb6cc2006e147563",
+            "id": "3bc526bea5052b4f",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
-                "viewState": {
-                  "x": -5933.116526428449,
-                  "y": 4239.157994201378,
-                  "zoom": -1.773468090775961
-                }
+                "file": "Reti di calcolatori/Appunti lab.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +95,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +111,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,9 +132,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas"
-              }
+              "state": {}
             }
           },
           {
@@ -178,10 +170,11 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "eb6cc2006e147563",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
-    "Reti di calcolatori/Libro/Riassunto libro.md",
+    "Reti di calcolatori/Appunti lab.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/Libro/Riassunto libro.md",
     "Ingegneria del software/Appunti.md",
     "Linguaggi di programmazione/Appunti.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
@@ -208,7 +201,6 @@
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Mockito.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Stub Object.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Test Double.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Mocking.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Observer",
     "Ingegneria del software/Riassunti/img/Pasted image 20231109094033.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231109093716.png",
