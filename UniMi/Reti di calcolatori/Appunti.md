@@ -1268,5 +1268,7 @@ Come far interagire macchine IPv4 e IPv6
 
 
 Domande esame
-Quali paccheti in piu vengono mandati in un LS? Deve essere inviato anche un ACK e per ogni nodo faccio fludding
-Quali informazioni sono presenti in un LS e NON in un DV? Nel LS è presente anche la conoscenza della topologia della rete grazie al fludding
+- Quali paccheti in piu vengono mandati in un LS? Deve essere inviato anche un ACK e per ogni nodo faccio fludding
+- Quali informazioni sono presenti in un LS e NON in un DV? Nel LS è presente anche la conoscenza della topologia della rete grazie al fludding
+- Dovendo scegliere tra uno schema GoBackN e uno Selective Repeat quali elementi considero? Considero la memoria lato ricezione del buffer e preferisco Selective Repeat quando ho un collegamento instabile (Parametri: Memoria disponibile e canale affidabile)
+- ARP: come ci si comporta nel caso la macchina destinazione NON appartiene alla stessa rete di quella sorgente? Sara necessario un proxy ARP il quale essendo collegato alla LAN riceve il broadcast ed essendo di livello 3 capisce che la destinazione è in un altra rete (grazie al NetID) propagando la ARPrequest e risolvendo il problema facendo una reply con il proprio MAC

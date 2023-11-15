@@ -28,6 +28,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "027b6ad8d84bcb8a",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
+                "viewState": {
+                  "x": 4897.100262211065,
+                  "y": 976.3150492724459,
+                  "zoom": -0.17623717970833513
+                }
+              }
+            }
           }
         ],
         "currentTab": 1
@@ -177,6 +192,8 @@
   },
   "active": "232e693d04c04960",
   "lastOpenFiles": [
+    "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/Appunti.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Appunti.md",
     "Sistemi biometrici/Riassunto unico.md",
@@ -197,7 +214,6 @@
     "Reti di calcolatori/Libro/Riassunto libro.md",
     "Reti di calcolatori/Appunti lab.md",
     "Linguaggi di programmazione/Appunti.md",
-    "Reti di calcolatori/Reti di calcolatori.canvas",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Spy Object.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Mock Object.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Fake Object.md",
@@ -214,7 +230,6 @@
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/BGP.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/OSPF.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/LS Link State.md",
-    "Reti di calcolatori/Appunti.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Spy Object - Mockito.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Mock Object - Mockito.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Observer",
