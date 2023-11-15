@@ -21,14 +21,11 @@
             "id": "232e693d04c04960",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-                "viewState": {
-                  "x": -8638.740802444096,
-                  "y": -2069.2736544932263,
-                  "zoom": -0.9971196238844179
-                }
+                "file": "Reti di calcolatori/Appunti.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -99,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "file": "Reti di calcolatori/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "file": "Reti di calcolatori/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas"
+                "file": "Reti di calcolatori/Appunti.md"
               }
             }
           },
@@ -180,6 +177,7 @@
   },
   "active": "232e693d04c04960",
   "lastOpenFiles": [
+    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Appunti.md",
     "Sistemi biometrici/Riassunto unico.md",
     "Sistemi biometrici/Img/Pasted image 20231115100500.png",
@@ -193,7 +191,6 @@
     "Sistemi biometrici/Img/Pasted image 20231115093102.png",
     "Sistemi biometrici/Img/Pasted image 20231115092923.png",
     "Ingegneria del software/Slide/Index slide.md",
-    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Slide/IS2023-L11.pdf",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Nullability.md",
     "Ingegneria del software/Slide/IS2023-L12.pdf",
@@ -220,7 +217,6 @@
     "Reti di calcolatori/Appunti.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Spy Object - Mockito.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Mock Object - Mockito.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Stub Object - Mockito.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Observer",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing",

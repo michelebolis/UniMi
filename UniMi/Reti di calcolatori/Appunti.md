@@ -1229,3 +1229,44 @@ In questo modo otteniamo aree0 il piu veloce possibili perche non si deve ispezi
 BGP funzionalmente è a livello 3 MA in realtà nell'implementazione è un protocollo a livello 7 utilizzando TCP
 
 ---
+
+Spanning Tree
+Costruire l albero dei cammini minimi per fare oltre la comunicazione punto-punto, ma anche il broadcast (facile su CSMA-CD MA non su una rete magliata)
+
+NO ALGORITMO
+
+Per lo spannign tree devo avere rete con OSPF che ci permette di raccogliere i costi e formare le tabelle in ogni nodo
+Un router root nello spanning tree viene eletto come root (un modo è eseguendo un algoritmo di elezione o dall indirizzo inferiore) 
+Ogni nodo definisce le porte di output che permettono di raggiungere le destinazioni
+RootPort se i nodi sono sui rami  cioe sono sul path per le foglie
+
+Come evitare i loop: se due porte hanno lo stesso costo, sceglie etichetta inferiore
+
+
+IPv6
+Abbiamo come min 40Byte per l header
+Address da 16 byte l uno
+
+Notiamo la divisione quasi geografica anche nel pacchetto
+TLA -> NLA -> SLA
+
+Upper bound del payload sempre di 64K
+ToS rinominato in TrafficClass consente di classificare in base alle qualita di servizio richiesto mentre FlowLevel viene inserita dalla sorgente al proprio specifico flusso dati
+
+NextHeader contiene l header di TCP di default
+SE è invece un header diverso da quello TCP, vuol dire che è uno di quelli previsti dello standard
+- Step by step (0)
+- Source routing (43) (al massimo posso specificare 24 indirizzi nel campo opzione, quindi 48; avro poi un array di 24 bit che è 0 SE l IP deve essere raggiunto in modo approssimato mentre 1 in modo esatto)
+	- Esatto
+	- Approssimato
+
+Notare che mancano i campi per la frammentazione, ma viene inclusa nella option
+
+
+Come far interagire macchine IPv4 e IPv6
+- Mettere un gategay v4-v6: PT ProtocolTransformation per trasformare un header in un altro header. Il NAT mappa da v4 a v6 e viceversa grazie a un pull da cui preleva degli IPv4/v6 da assegnare
+
+
+Domande esame
+Quali paccheti in piu vengono mandati in un LS? Deve essere inviato anche un ACK e per ogni nodo faccio fludding
+Quali informazioni sono presenti in un LS e NON in un DV? Nel LS è presente anche la conoscenza della topologia della rete grazie al fludding
