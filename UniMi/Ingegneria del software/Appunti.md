@@ -1277,3 +1277,20 @@ Mentre i vari DOC implementati tramite mocking
 ...
 
 @Injectstock
+
+---
+
+State pattern
+Permette di modellare cambiamenti di comportamento al cambiare dello stato dell'oggetto
+
+Dipendenza tra ConcreteState e Context perche dato uno stato e un azione, potrei dover cambiare stato
+MA quindi uno stato deve poter conoscere gli altri stati
+
+Factory method
+Definisce una interfaccia per creare un oggetto ma lascia alle sottoclassi cosa creare
+
+Abstract Factory pattern
+Citiamo piu create
+
+
+Kata musica 
