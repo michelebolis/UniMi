@@ -1921,3 +1921,818 @@ I test di vitalità iniziano solo oggi a diffondersi, molti sitemi commerciali b
 
 ---
 
+Perche utilizzare l'iride come tratto di riconoscimento rispetto ad altri ?
+- Viene considerato come il tratto biometrico più accurato in assoluto dopo il DNA.
+- Oltre ad essere molto accurato, l'iride, presenta delle  numerose caratteristiche molto stabili nel tempo. Inizia a crearsi dal terzo mese nel feto, processo completo al 7 mese ma stabili dal secondo anno in poi.
+- Il tratto biometrico corrisponde ad un organi interno, generalmente sempre protetto e presente largamente in tutta la popolazione.
+- Tuttavia anche se è il tratto biometrico più accurato è anche quello meno gradito, a causa della sua percepita invasività.
+- Sistema piuttosto complesso e costoso ma difficile da frodare. Tutta via esistono sistemi di acquisizione e matching del tratto molto veloce, inoltre l'acquisizione avviene senza contatto.
+
+Svantaggi nell'utilizzo dell'iride come tratto biometrico :
+- Difficile acquisire un target in movimento
+- L'iride è piatta ma è dietro ad una superfice curva e bagnata la cornea
+- Una buona parte dell'iride è nascosta da ciglie e palpebre
+- Il pattern dell'iride si deforma elasticamente con la variazione della dimensione della pupilla
+- Invecchiando possono apparire delle pigmentazioni non presenti precedentemente
+- L'utente deve essere collaborativo e stare esattamente ad una predeterminata distanza dal sensore
+- Le immagini possono essere di bassa qualità e provocano errori di "failure to enroll"
+- In recenti testi si arriva circa al 7% di scansioni fallite dovute a particolari condizioni dell'iride.
+
+Composizione dell'iride
+L'iride è la parte colorata, ovvero la membrana piatta che sta tra la cornea e il cristallino
+![[Pasted image 20231115092901.png]]
+Controlla il livello di intensità luminosa che deve entrare nell'occhio ( funziona come il diaframma di una macchina fotografica).
+Al centro dell'iride è situata la pupilla.
+
+Composizione dell'iride :
+L'iride è una membrana ricca di fibre muscolari è in gradi di dilatarsi e contrarsi in modo da variare il diametro della pupilla :
+- Il muscolo che contrae è sul bordo della pupilla è agisce quando c'è troppo luce
+- I muscoli che dilatano sono radiali dentro l'iride e agiscono quando la luce è troppo flebile.
+![[Pasted image 20231115092923.png]]
+- Sclera = La parte bianca esterna
+- Congiuntiva = La superficie esterna della sclera
+- Cornea = struttura trasparente a forma di cupola posizionata nella parte anteriore al centro delle sclera e della congiuntiva.
+- Coroide = Tessuto posizionato dietro la sclera, è ricco di vasi sanguinei che riforniscono la retina di ossigeno e sostanze nutritive. Nella parte anteriore la coroide si ispessice formando il corpo ciliare. Nella sezione anteriore del corpo ciliare si diparte un area circolare di fibre muscolari, l'iride.
+- Corpo cristallino = situato dietro la pupilla. Si tratta di una lente elastica trasparente, le cui contrazioni muscolari ne permettono l'inspessimento o il restringimento, in modo che l'occhio possa mettere a fuoco oggetti posti a distanze diverse.
+- Umore acqueo = lo spazio tra la lente e la cornea è riempito con un liquido
+
+L'iride è una membrana mediamente larga 12 mm e spessa 0.3 mm, inoltre presenta una struttura stratificata :
+- Strato epiteliale interno : = ricco di pigmento assume un colore molto scuro e da la tonalità al colore principale dell'iride.
+- Stroma = strato ricco di vasi sanguigni che alimentano l'iride di pigmento. Per effetti difrattivi l'occhio prende il colore di questo strato, se contiene invece pochi pigmenti all'esterno si vede il colore dell'epitelio ( occhio scuro o nero)
+
+Esattamente come le impronte digitali, non esistono due iridi uguali.
+Durante la formazione dell'iride si hanno delle componenti casuali che produco un pattern di righe, tagli, pieghe ( le feature iridee) assolutamente unico e distinguibile.
+
+Anche i gemelli omozigoti hanno iridi diversi.
+
+Notare inoltre come l'occhio per proteggersi dalla luce sia in grado di chiudersi più velocemente di quanto impieghi per aprirsi. 
+
+
+Sensoristica per acquisire l'iride
+Prima di parlare sei sensori in commercio, andiamo a stabilire quale luce è meglio per acquisire l'iride :
+- Luce visibile
+	- Si vedono gli strati che compongono l'iride
+	- Si vede meno la tessitura ( più interessante per il sistema biometrico)
+	- La melanina dei pigmenti assorbe la luce visibile ( quindi se non irradia non la vediamo)
+	- Inoltre con la luce visibili abbiamo una maggiore variabilità intraclasse , rendendo il problema del riconoscimento ancora più complesso
+	- Gli occhi scuri sono più problematici e offrono meno dettagli utili al riconoscimento
+	- La fonte di luce utilizzata non può essere troppo intensa, altrimenti darebbe fastidio all'utente.
+- Luce infrarossa (IR)
+	- La melanina riflette molto meglio la luce IR
+	- Si vedono meglio i pattern casuali e distintivi tipici dell'iride
+
+Le feature maggiormente interessanti per il sistema biometrico si vedono meglio con la luce IR ( infrarossi) piuttosto che con la luce visibile.
+
+Per catturare i complessi dettagli dell'iride, il sistema di acquisizione deve poter risolvere con almeno 70 px il raggio dell'iride ( di solito 100-140 px).
+Si usano CDD monocromatici ( almeno 640*480 ) capaci di acquisire ad infrarossi.
+
+L'illuminazione migliore per rilevare i dettagli deve cadere nella banda di 700-900 nm ( non visibile all'occhio) , è quindi necessario utilizzare telecamere con ottiche variabili per trova-re l'occhio nel volto e poi zoomare verso l'occhio per acquisirlo alla massima risoluzione possibile :
+
+- In alcuni casi si usano 2 telecamere con due ottiche diverse al posto di uno zoom.
+
+Esempi di sistemi
+Una delle più grandi applicazioni dei sistemi biometrici basati sull'iride è il sistema nazionale delle frontiere degli emirati arabi :
+- 17 aeroporti e tutti i porti di mare
+- 3.8 milioni di comparazioni eseguite ogni giorno
+- Un singolo match eseguito in una frazione di secondo
+
+Altri esempi di applicazione di riconoscimento dell'iride :
+- Computer login ( l'iride è una password vivente)
+- Frontiere nazionali (l'iride è un passaporto vivente)
+- Accesso sicuro ad ATM
+- Autenticazioni per le carte di credito
+- Anti terrorismo
+
+Esempio di ATM :
+- Il gruppo bancario americano Citgroup, usa un ATM con riconoscimento dell'iride
+- Si prevede un tempo per prelevare del denaro da 45 secondo a 15 secondi
+- Anche in una versione senza schermo e tastiera che usa lo smart phone del cliente per I/0
+
+Struttura dei moduli secondo Dougam
+![[Pasted image 20231115093102.png]]
+I più moderni sistemi per il riconoscimento basati sull'iride rappresentano l'iride come una stringa di bit, spesso chiamata IRISCODE . Di conseguenza si passa dall'immagine dell'iride al template (IRIS CODE).
+
+Si tratta di un problema molto complesso, affinché la conversione avvenga correttamente moltissimi fattori sono da tenere in conto.
+
+Passi che ci permettono di passare da una immagine di un occhio ad un IRISCODE:
+- Individuare dei centri e raggi della pupilla e dell'iride :
+	- Per prima cosa bisogna andare ad identificare l'occhio in un immagine del volto.
+	- Eseguire una acquisizione corretta dell'iride ( almeno 70 pixel a fuoco, lungo il raggio)
+	- Trovare la pupilla
+	- Trovare il raggio esterno dell'iride e rifinire le stime.
+- Rimozione della parte non utile occupata dalle iridi e dalle ciglia :
+	- Solo una parte dell'iride è utile al riconoscimento
+	- Occore segmentare la parte utile dell'iride "marcando" l'immagine dove invece sono presenti ciglia, palpebre, riflessi esterni, ecc..
+	- Se manca più del 50% dell'iride occorre riacquisirla
+- Linearizzazione dell'iride :
+	- Individuati i raggi e centri si procede alla fase i unwrapping dell'iride ( linearizzazione)
+	- Si fissano le dimensione dei settori dell'iride
+	- Ogni pixel dell'iride linearizzata nasce da una interpolazione del corrispondente settore dell'iride .
+- Trasformazione della iride linearizzata in IRSCODE :
+	- Avendo l'iride linearizzata I espressa nelle coordinate P(raggio) e Teta (angolo), si calcolo attraverso una specifica formula la convulazione dell'iride con delle funzioni gaussiane.
+	Vengono utilizzate delle wavevelt come filtro.
+	- Il modello dettagliato dell'iride è codificato in un "IrisCode" di 256 byte  
+	    demodulandolo con 2D Gabor wavelet. Viene trovato un quadrante per  
+	    ogni elemento locale dell'iride modello,  questa operazione è  
+	    ripetuto in tutto l'iride, a molte scale diverse
+
+Sempre partendo dalla linearizzazione dell’iride esistono altri modi di produrre tipi diversi di “iriscode” rispetto a quello di Dougman (SmartSensors LTD)
+
+
+Proprietà dell'IRIS CODE :
+La codifica dell'iride è eseguita in uno spazio 2D a-dimensionale di coordinate polari, questo permette di rendere la codifica invariante rispetto :
+- Alla dimensione dell'iride
+- Allo zoom dei sistemi ottici
+- Alla dilatazione dell'iride dovuta alla luce
+
+Le funzioni wavelet usate in demodulazione sono parametrizzate con 4 grandi libertà ( dimensione, orientamento) che possono variare in alcune ottave ( raddoppio della dimensione). Questo permette di garantire più scale di dettagli che verranno colte nella codifica.
+
+Si tratta di una codifica molto compatta, in genere bastano 256 byte per rappresentare un iride, tutta via bisogna aggiungere 256 bit di controllo per escludere i bit nati da artefatti, dovuti a :
+- Riflessi delle luci ambientali sull'iride ( in realtà sulla coronea)
+- Ciglia sovrapposte
+- Palpebre
+- Regioni con troppo poco contrasto.
+
+L'iris Code è inoltre un codice a massima entropia, la probabilità di ogni bit dell'IRIS CODE di essere 1 è del 50%
+
+
+Non esiste solo IRISCODE per rappresentare un iride
+Metodi di rappresentazioni dell’iride in un sistema biometrico in letteratura:
+- Daugman Gabor Demodulation (PAMI 1993)
+- Lim, Lee, Byeon , Kim, Wavelet Features (ETRIJ 2001)
+
+In letteratura stanno iniziando ad essere usati approcci di segmentazione, estrazione template e matching basati su reti di Deep Learning (performanti, ma non adatti a usi in dispositivi embedded o con DB di grandi dimensioni)
+- Abdolrashidi DeepIris : Iris Recognition Using A Deep Learning Approach (CVPR 2019)
+
+---
+
+Andiamo ora ad analizzare la struttura dei moduli seconda Dougam.
+Modulo quality Checker
+La probabilità di avere una iride già a fuoco è tutta via molto bassa perché :
+- L'ingrandimento del sistema ottico è molto spinto
+- L'occhio si muove rapidamente eseguendo spesso micro-movimenti non controllabili.
+- L'illuminazione è limitata ( non possiamo usare lampade con troppi watt, altrimenti accecheremo l'utente che si vuole identificare).
+
+Per poter avere un tempo di integrazione breve, occorre fare entrare molta luce nell'obbiettivo, ma questo implica una focale non adatta a riprendere bene a fuoco l'iride. Il fuoco dell'iride viene quindi controllato con dei filtri via software :
+
+L'effetto di sfocatura di una immagine dovuto ad un sistema ottico può essere parzialmente riconvertito applicando un filtro di deblur, esso si comporta al contrario rispetto alla parte del sistema ottico che produce la sfocatura. 
+
+Il filtro di deblur tende ad aumentare le frequenze alte dell'immagine che erano state attenuate dal blur. La maschera del filtro (kernel) è caratterizzata da una matrice 8 * 8. 
+Il controllo impiega circa 15 ms, può essere eseguito a livello di frame.
+
+Se l'immagine dell'iride acquisita è troppo mossa occore scartarla in quanto l'iris code risultante sarebbe composto solo da bit casuali dipendenti dal rumore del CCD. Se fosse eseguito un enroll con un immagine di bassa qualità, si avrebbe quasi sicuramene un false-not match.
+
+A differenza delle impronte digitali, non si usano particolari pre-filtraggi nel caso dell'iride:
+- In alcuni casi si applica un contrast stretching per migliorare il contrasto e quindi la intellegibilità della immagine da parte degli operatori. Tuttavia questa operazione non modifica sostanzialmente il funzionamento complessivo del sistema.
+
+
+Feature Extraction Module
+La grande variabilità delle immagini  dell'iride, fanno fallire la maggior parte degli approccio di filtraggio visti per le impronte digitali. Approcci come segmentazione, binarizzazione non funzioneranno.
+
+Dougman invece propone il seguente approccio :
+Cercare nell'immagine ( estrazione di un massimo), I centri dei contorni di variazioni di grigio di forma circolare ( l'integrale lungo un cammino circolare di derivata radiale).
+
+Esiste una formula che prende il nome di operatore integro differenziale di Dougman :
+- G ( r ) = Rappresenta il pre filtraggio dell'immagine. SI tratta di un filtro gaussiano passa basso di raggio teta. Si eliminano dalla ricerca i cerchi dei piccoli riflessi iù piccoli di una certa soglia teta.
+- I(x,y ) rappresenta l'immagine raw dell'iride
+- L'operatore nel modulo si comporta complessivamente come un filtro di circular detection, ossia un riconoscitore di bordi circolari, esso produce valori alti quando incontra un cerchio vicino al perimetro di esplorazione circolare in x0, y0 di raggio r.
+
+È possibile modificare l'operatore integro differenziale per le iridi, andando cosi a trovare le palpebre. Le palpebre vengono viste come una parte di parabola, il cammino di integrazione diventa una parabola e non più un cerco. 
+
+Estrazione delle ciglia :
+Le ciglia si possono individuare, secondo delle conoscenze note a priori :
+- Le ciglia devono  partire dalla posizione individuata delle palpebre  ( partenza fissa)
+- Le ciglia risultano sempre più scure rispetto all' iride
+- La loro dimensione minore ( larghezza) è facilmente stimabile
+
+È importante individuare ogni parte dell'immagine che non sia iride per non inserire in enroll una informazione errata.
+
+
+Algoritmi di matching
+Ma che correlazione c'è tra i bit che compongono un IRIS CODE :
+La probabilità che un bit all'interno dell' IRIS CODE sia zero oppure uno è del 50%, significa che l'iris code è (quasi) un codice a massima entropia. 
+
+Questo significa che sono presenti delle correlazioni fra i bit all'interno dell'iris code, in quanto la struttura è auto-predittiva .
+
+Queste correlazioni fra bit tutta via, limitano i veri gradi di libertà di un irisCode :
+- In altre parole non è vero che l'IRIS code nasce come un numero binario del tutto casuale.
+- Alcuni gruppi di bit portano ad incontrare nell'iris code una maggiore probabilità  di incontrare atri gruppi di bit.
+
+Alcuni fattori che aumentano la variabilità intraclasse :
+- Rotazioni della testa
+- Variazioni dello zoom nelle ottiche
+- Dilatazione della pupilla
+
+Algoritmi di matching per gli irisCode :
+La comparazione è effettuata fra IRIS CODE di 256 byte attraverso il calcolo della distanza di hamming :
+La distanza di hamming (HD) fra due stringhe A e B è il numero di bit in disaccordo fra le due stringhe, normalizzati al numero totale di N bit.
+Normalmente N = 2048 bit, se non vi sono occlusioni dell'iride
+
+Se vi sono occlusioni dell'iride, riflessi, ciglia, occorre preparare delle maschere di oscuramento delle zone dove non vi è un informazione utile. Andremo a togliere dal calcolo della distanza di hamming le zone dove non vi è informazione utile.
+
+Velocità del matching :
+L'esecuzione degli And e degli Xor può avvenire a blocchi di bit pari alla lunghezza di parola del processore ( tipicamente almeno 32 bit).
+
+Questo rende il matching estremamente veloce. È possibile parallelizzare la ricerca anche su DB di grosse dimensioni.
+
+Esempio :
+- Su un processore 300 Mhz, si riescono ad eseguire ad eseguire 100.000 comparazioni al secondo
+- Su un server a 3Ghz si arriva ad 1 milione di Irscode comparati in un secondo
+- Server dedicati con software proprietari citano 25 milioni di occhi al secondo. NEC dichiara 230 Milioni match al secondo.
+
+Distribuzioni dell'IRIS CODE
+- In teoria, due irisCode calcolati dall'iride della stessa persona dovrebbero avere distanza di Hamming = 0.
+- Nella realtà fra due acquisizioni perfettamente eseguite a pochi istanti una dall'altra si può osservare uno spostamento di +- 1 posizioni del pattern  nei due template ( scarto di +- 2 bit)
+
+Per i seguenti motivi, vengono eseguite 3 comparazioni e si sceglie il minimo valore di distanza di hamming nelle 3 comparazioni, come valore finale.
+![[Pasted image 20231115093538.png]]
+Miglior fitting della distribuzione della distanza di hamming degli impostori con iriscode da 20148 bit con 7 shift.
+
+Se la soglia t viene abbassata di poco sotto a 0,3 la probabilità di avere un impostore distante da me di Hd bit diventa irrisoria.
+
+Si tratta di distribuzioni ideali per un sistema biometrico, in quanto le distribuzioni sono perfettamente separabili.
+
+---
+
+Tassi di errore del sistema :
+- In lettura sono presenti studi sia teorici sia applicativi che dimostrano che i tassi di errori siano nulli FMR = 0.
+- Altri studi indicano FTE = 7%
+- FNMR in verifica = 6 %   FNMR identificazione su 1,4 milioni di individui < 0.001
+
+Come varia il tasso di errori al variare del numero di tentativi :
+- Al primo tentativo di verifica dell'identità in un sistema di riconoscimento dell'iride, avremo un FTE del 7% al primo tentativo. (FNMR = 4% FMR = 0 )
+- Dopo 3 tentativi non cambia assolutamente nulla, avremo sempre un FMR pari a 0, ma avremo un miglioramento del FNMR = 0,4 %
+
+Ad oggi, probabilmente esite solo la stima "ufficiale" di quanto sia l'accuratezza dell'iride aggiornata al 2018 :
+Ad oggi,  l'attuale record  è di un tasso di errore nella identificazione dello 0,5 % ( con 12 milioni di persone), mentre un accuratezza del matching di circa 99.33%.
+- le stime viste in tabella sono OTTIMISTICHE e la vera probabilità di False Match in realtà dipende dalla qualità delle ottiche! Occorre procedere ad un test sul campo sempre!
+- In ogni caso, ad oggi, i sistemi basati su Iriscode sono i sistemi biometrici “livescan” più accurati esistenti
+
+Numero di bit significativi nell' IRIS code :
+Gli iris code mediamente distano un numero di bit come delle stringhe casuali di 249 bit.
+Fissiamo una certa soglia, la probabilità che due persone abbiano in comune il 31 % di 249 bit casuali è infinitesima. La soglia è perfettamente aderente ad un binomiale con 249 gradi di libertà e p = 0.5. 
+
+Il  numero di bit significatici nell'iris code dipende dalla condizioni operative :
+- Il tipo di distribuzione degli impostori ottenuta usano l'iris Code non cambia di solito
+- Cambiano i parametri sulla curva, ovvero cambia il numero di bit significativi, rimangono comunque molti.
+
+Se riusciamo a stimare la distanza di hamming fra IRIS code di diversi impostori, possiamo calcolare quanti tentativi dovremmo fare per trovare il primo false match( ovvero un impostore che entra). Il numero di tentativi è infinitesimo e cresce all'aumentare della distanza di Hamming soglia per considerare un match positivo o meno.
+
+La soglia della distanza di hamming che meglio divide le distribuzioni può essere calcolata come segue :
+- Adattamento del criterio  in base alla dimensione N del DB, per evitare accumulazione delle probabilità di false match.
+- Ri-normalizzazione della distanza di hamming quando solo n bit  dell'IRiS code sono disponibili a causa delle occlusioni
+
+
+Distribuzioni di occhi geneticamente uguali :
+Partendo dal presupposto che nel DNA non ci siano dei geni per l'occhio destro e quello sinistro, possiamo supporre che l'occhio Destro e quello Sinistro nascano dagli stessi geni.
+
+Sono gli occhi più vicini fra loro che possiamo trovare in natura, ma quandi qual è la loro distanza di hamming ?
+
+Sono stati confrontati fra loro le due iridi di 324 persone, ottenendo una distribuzione del tutto uguale a quella dei confronti fra persone diverse.
+
+Questo significa che , a parte il colore degli occhi Dx E SX sono diversi tanto quanto quelli di persone diverse per L'IRIS CODE .
+
+
+Tecniche di spoofing per iride
+Se i problemi delle carte di credito rubate e delle frodi legate al furto di identità sembrano poter essere risolte efficacemente con le impronte digitali, l’iride si presta meglio ad applicazioni con livelli di sicurezza e dimensioni maggiori
+
+In particolare, il bassissimo tasso di FMR (“dire che tu sei un altro”) dei sistemi basati sull’iride rende la tecnica perfetta per la scansione di enormi DB anche a livello nazionale
+
+Attualmente l’iride è l’unico sistema che offre la scansione realtime di una singola iride (pochi secondi) con un DB di milioni di iridi, o di una watch list centralizzata
+
+Tutta via con questo sistema abbiamo e avremo dei grossi problemi di privacy :
+
+L’exploit di Daugman (riconoscimento con iride da foto ad alta risoluzione nel visibile a 18 anni di distanza) mostra la possibilità del pericolo di screenig di massa dagli archivi di foto (governativi, social, …). Questo fenomeno inoltre è in continua evoluzione grazie a i seguenti fattori :
+- Miglioramento delle tecniche di segmentazione estrazione iriscode
+- Foto a ottiche dedicate sempre di maggiore risoluzione e perfetto fuoco sul volto ( selfie)
+- Capacità delle tecniche di iris code di avere un FMR quasi nullo.
+
+Le frodi attuabili sul sistema sono molte e possono essere le seguenti :
+- Attaccare i canali di comunicazione del sistema ( replay attacks) specialmente il canale di comunicazione dal sensore al sistema.
+- Attaccare dei moduli specifici.
+- Attaccare il DB con tutti i dati di enrollment
+- Ingannare il sensore, di solito presentando un iride finta
+
+Attacchi al sensore :
+Un attacco piuttosto semplice può consistere nel proporre una fotografia, alcuni sistemi basati sull'iride non hanno alcun tipo di test di liveness ( possono essere ingannati).
+
+Una iride falsificata mediante una lente a contatto stampata presenta molte delle caratteristiche di liveness ( spostamenti pupilla di dimensioni variabili, materiale biologico ). Il processo di stampa della lente porta una periodicità nella trama della stampa che si rileva nello spetto 2d del segnale.
+
+Generazione sintetica di iridi :
+Sono disponibili tecniche per la generazione sintetica di iridi mediante algoritmi basati su "Markov random Fields". Iterativi.
+Sono tecniche di generazione sintetica di pattern  :
+- Si parte da piccole porzioni di immagine reale ( primitive)
+- Si crea una matrice casuale
+- Le primitive vengono mischiate casualmente agendo su un indipendent random field in modo iterativo.
+
+Sono disponibili anche tecniche multistrato :
+- Si prepara un modello 3d dell'iride
+- Si preparano con vari algoritmi gli strati con delle tipologie di texture orientate in modo pseudo casuale.
+- Si sovrappongono gli strati tenendo contro delle trasparenze
+- Si adatta l'immagine degli strati al modello 3d e si calcolano le luci e el ombre
+
+In entrambi casi sono possibili dei nuovi sviluppi attraverso l'utilizzo delle CNN ( convilutional neural network). Tale tecnologia inoltre permette la creazione di iridi 3D.
+
+Possibili controlli :
+- La pupilla reagisce alle variazioni di luce ambientali, un occhio finto no. Inoltre la velocità di contrazione e dilatazione sono diverse ed hanno un andamento prefissato.
+- Sprettrometria e termografia :
+Usando illuminatori a frequenze ottiche diverse è possibile avere in tempo reale una spretografia dell'iride.
+
+Attraverso dei sistemi di classificazione che analizzano lo spettogramma dell'iride si stima il materiale di cui è composta. Questo permette di controllare se è di tipo organico, plastico se contiene acqua, grassi pigmenti oppure è una pellicola fotografica.
+
+Anche un immagine termografica permette di capire se abbiamo di fronte tessuti a temperatura corretta. 
+- Permutazioni
+Dall'iris CODE non si può ricostruire l'iride ( completamente).
+
+Si possono usare 256! = 10^507 possibili schemi di permutazione ( sulle due iridi da comparare), facendo diventare di fatto il vecchio IRIS CODE inservibile.
+
+È possibile creare IrisCode specifici o permutazioni per ogni singola :
+- Applicazione
+- Sensore
+- Intervallo di tempo….
+
+---
+
+Biometria del volto
+Il tratto biometrico del volto viene impiegato sia per la verifica che per l'identificazione, ma non solo. Molti degli algoritmi non servono solo per produrre sistemi biometrici, ma anche per :
+- Riconoscimento facciale delle espressioni
+- Riconoscimento del movimento delle labbra  ( anche per multimodalità e controllo anti-spofing)
+- Applicazioni di computer grafica
+- Creazioni di protesi
+
+Quindi uso non solo biometrics ma anche biometry.
+
+Passive biometrics identification :
+Normale telecamere da video sorveglianza  + Surv-tool + face tracking + identification.
+
+La classificazione del volto è divisa in due categorie :
+- 2D
+	- Immagine fissa
+	- Video o tante immagini fisse
+	- Colori
+	- Toni di grigio
+- 3D
+	- Scansione laser
+	- Illuminazione controllata
+Vantaggi :
+- Ottimo compromesso fra accettabilità da parte dell'utente e prestazioni in accuratezza.
+- Dispositivi di Input facilmente posizionabili ed adatti a molte condizioni operative.
+- Risultati direttamente verificabili da un operatore umano
+- Permette l'acquisizione non conseziente ( video-sorveglianza)
+
+Svantaggi :
+- Alta variabilità intraclasse
+	- Illuminazione
+	- Posa
+	- Occlusioni
+	- Sensori
+	- Variazioni dell'aspetto dell'individuo  (invecchiamento).  Le variazioni si verificano se consideriamo volti a distanza di decenni, se invece consideriamo un periodo di tempo limitato ( paio di anni) le variazioni sono limitate.
+	- Similitudini intraclasse per il volto :
+		- Gemelli
+		- Fratelli, genitori ( enrollati distanti nel tempo)
+		- Sosia: Il DNA contribuisce al 50%, tutta via questo non aiuta, aiuta invece la differenza di età, favorisce la distinzione.
+- Un importante competizione indipendente fra algoritmi di FC( face recognition) ha evidenziato il fortissimo impatto delle differenze di illuminazione e posa sulle performance
+- Possibile ingannare i sensori non dotati di meccanismi di anti-spofing
+- Solo recentemente le accuratezze sono diventate interessanti per sistemi su larga scala.
+- Tecnologia matura per i sensori, ma non per gli algoritmi che sono in continua evoluzione.
+
+Fasi Principali, la catena di enroll/ verifica o identificazione di solito consiste nei seguenti passaggi :
+- Face Detection ( trovare i volti nelle immagini)
+- Face segmentation ( separare il volto dallo sfondo)
+- Face tracking ( se in un video deve essere inseguito)
+- Face normalization ( crop e normalizzazione della immagine)
+- Feature extraction ( grafi, segmenti)
+- Matching
+
+Le tecniche di deeplearning ( Convolutinal neural networks), hanno permesso ulteriori passi avanti nelle fasi di :
+- Identificazione dei volti ( anche in ambianti non controllati)
+- Segmentazione del volto
+- Matching
+
+Oggi inoltre trovare un sosia è più facile che mai ( attraverso i social) :
+
+Nel 2022 si sono analizzati i valori di score di 32 coppie di sosia trovate da Brunelle con 3 FR ( Face recognition)  in commercio :
+![[Pasted image 20231115094037.png]]
+
+Standard per il template di un volto
+L'ICAO e moltissimi governi, hanno iniziato a dettare stringenti regole sulla acquisizione del tratto biometrico ( per passaporti ecc..). Lo scopo è quello di diminuire la varianza intra-classe, arrivando ad impiegare anche per il volto sistemi sempre più accurati.
+
+Tutti i venditori di sitemi biometrici, hanno il loro algoritmo per la creazione del template, spesso segreto e/o sotto brevetto. Di conseguenza non è possibile interoperabilità fra i sistemi , a meno che due stati si passino le foto originali e non il template ( caso opposto di quello delle impronte digitali nel caso delle minuzie) .
+
+L'ICAO, impone da molti anni regole/standard sul formato delle foto per i Machine Redeable Travel Document ( MRTD), per immagini facciali lo standard è il seguente :
+- Se è una fotografia a colori scannerizzata, almeno 300 dpi con almeno 90 pixel fra gli occhi.
+- Dimensione ridotta a 112 kb con una minima compressione.
+
+Compressione per le immagini facciali :
+Il sistema di compressone delle immagini facciali utilizzati sono gli standard JPEG e JPEG2000.
+
+Con questi due algoritmi di compressione si riesce ad avere lo standard di risoluzione di dimensione richiesto della ICAO con 12kb :
+
+Sotto queste dimensioni di memoria, l'immagine è troppo degradata per essere usata con efficacia da un sistema biometrico.
+Nei futuri E-passort l'immagine dovrebbe aggirarsi intorno a 15kb-20kb.
+
+Usano la compressione più opportuna di arriva a questi valori per il sample compresso ( non il template) :
+- Volto per epassport con JPEG2000: 15kb - 20kb
+- Impronte compresse con WSQ 10kb
+- Iride compressa : 30kb
+
+
+VeriLook SDK
+Si tratta di un applicazione stand-alone di face recognition. Utilizzata principalmente in applicazioni web ( come modulo).
+
+Permette una identificazione di tipo live-detection, non solo di una faccia ma anche di facce multiple. Presenta una buona accuratezza e una velocità di matching (40.000 volti al secondo)  molto alta sia in verifica ( 1:1) che in identificazione (1;N).
+
+Inoltre i template delle facce, pesano solamente dai 4 ai 7 KB.
+Permette inoltre :
+- Riconoscimento delle emozioni
+- Stima di età
+- Tolleranza alla posizione della faccia
+
+Dato che si tratta di un applicazione stand-alone, permette un alta portabilità tra i vari sistemi operativi (utilizzata in più  di 1 milione di applicazioni)
+
+
+Sensori per i volti 2d
+I sensori per la scansione del volto (2D) sono tipicamente basati su CCD ( Charge-coupled device, sensore integrato che converte le immagini in segnali elettrici ). in questa categoria rientrano  :
+- Fotocamere
+- Telecamere
+- Webcam
+- Scanner per acquisizioni off-line
+- Termografi
+- Dispositivi multi-sprettali.
+
+Compariamo la visione della telecamera a colori con quella della telecamera IR, in contesti difficili per il volto ( scarsa luminosità ad esempio)
+
+
+Face detection
+Primo passo della catena, occorre rintracciare il volto/i volti da una scena senza alcun prerequisito particolare. Si tratta di un problema molto complesso, in quanto nell'immagine possono cambiare :
+- Condizioni di luce
+- Colore
+- Posizione dei volti
+- Espressione dei volti
+- Posa dei volti
+
+I risultati ad oggi migliori si ottengono con degli algoritmi di deep learning. Tutta via è bene notare che non tutte le applicazioni possono permettersi di usare modelli di deep learnign.
+Per questo motivo, abbiamo anche bisogno di approcci più "basilari".
+Molti approcci sono basati su modelli molto semplici del volto :
+- In termini geometrici
+- O di texture
+
+Questi modelli permettono di trovare nelle immagini le regioni che fittano meglio il modello dove è maggiore probabilità che vi sia un volto.
+
+L'obbiettivo è quello di individuare il volto / i volti nella scena per arrivare a ricostruire l'immagine sul piano normale a  quello osservazionale attraverso quali :
+- Stima dei parametri del volto
+- Correzione di scala e traslazione
+- Rotazione
+
+
+Face-Detection Color based :
+Nel caso di immagini a colori uno degli schemi più diffusi è il seguente :
+- Lightin compensation
+- Skin tone detection :
+La skin tone detection viene effettuata controllando quali  bit dell'immagine appartengono ad una regione determinata dello spazio colore che evidenza meglio le differenze.
+
+Vengono messi a 1 i pixel che appartengono a una regione dello spazio colore. In questo modo si riesce ad evidenziare il contorno della faccia.
+![[Pasted image 20231115094210.png]]
+
+- Localization of facial features ( occhi. Bocca, contorno del viso) :
+La rilevazione della posizione degli occhi e della bocca viene effettuata sottraendo immagini espresse in appositi spazi colore ( Y,Cr,Cb) che ne possano mettere in evidenza le caratteristiche cromatiche peculiari insieme a filtraggi morfologici.
+- Aggregazione dei risultati
+
+
+Face detection - Harr feature :
+Si tratta di un metodo basato sulle funzioni di haar. Consiste nel cercare nelle immagini, delle regioni che presentano particolari valor delle trasformate di haar.
+
+Solitamente i volti sono caratterizzati da particolari valori e quindi si possono trovare mediante dei classificatori. Le trasformate di haar sono funzioni che prendono il valore di differenze fra i valori di grigio di 2/3 zone ( di area, posizione ed orientamento diverso).
+
+Le posizioni dei massimi ed i massimi delle trasformate sono caratteristiche utili per decidere se è presente un volto nell'immagine di partenza.
+Esistono varie trasformate con diversa forma e orientamento.
+
+Quando invece abbiamo un video in input e non più un immagine, allora si parla di face tracking. Non è esattamente come fare face detection in ogni frame, in quanto si hanno maggiori informazioni.
+Avendo almeno due frame è possibile effettuare una previsione sullo spostamento del volto.
+
+---
+
+Estrazione delle features :
+Feature estratte dalla immagine totale :
+- Principal Component Analysis (PCA)
+- Indipendent Component Analysis (ICA)
+- Linear Discriminat Analysis (LDA)
+- Support Vector Machines (SVM)
+- Kernel Methods
+- Trace traform
+- PCANET, CNN
+
+Feature estratte dalla regioni del volto/locali nella immagine :
+- Local feature analysis ( LFA)
+- Gabor wavelet
+
+Metriche per il matching :
+- Distanze euclidee
+- Reti neurali
+- Elastich brunch graph
+- Template matching.
+
+
+Rappresentazione del volto
+Ogni immagine p * q pixel viene rappresentata con un punto nello spazio 
+Il problema di tale spazio è che ha un altissima dimensionalità :
+
+Un DB di facce di dimensione p * q crea uno spazio delle facce in !
+I metodi di tipo "Apparance based" analizzano la distribuzione delle facce nel face space.
+
+Lo spazio delle facce costruito con immagini row (p*q) ha una dimensionalità troppo elevata, le facce possono risiedere in un sotto spazio limitato. Il modo di stabilire il sottospazio crea il metodo di analisi:
+
+$X_{PCA} = W^tX$
+
+Trovare una trasformazione lineare W che mappa il vettore delle di immagini X in Rn in un sotto spazio di dimensione l molto più limitata l <<n. 
+Il matching avverrà sulle feature $X_{PCA}$ e non sulle immagini X. 
+
+Problema : Come possiamo ridurre le dimensione dello spazio e allo steso tempo "separare meglio i punti ?
+Prima soluzione è utilizzare la tecnica Principal Component Analysis Pca : O analisi lineare ( nelle domande)
+
+La PCA parte dal riquadro del volto  la mando nello spazio trasformato dalla PCA e vado a togliere alcuni assi meno importanti riducendo la dimensionalità
+
+La PCA per prima cosa cerca una rotazione dello spazio ( ancora la  dimensionalità non cambia) che permette di separare meglio le classi.
+In altra parole la PCA cerca una rototraslazione che permette di mettere la variabilità dei dati tutta nei primi parametri.
+
+Notare come varia la distribuzione degli stessi punti sugli assi X = (x1,x2) e Xpca ( Xpca 1, Xpca 2).
+
+La PCA è una tecnica utilissima in molti contesti biometrici. In genere serve a ridurre lo spazio dei dati in ingresso senza bisogno di sapere la label dei dati ( come invece serve nella classificazione).
+Permette, partendo da molti dati anche molto diversi fra di loro,  di ottenere un numero minore di nuove variabili molto descrittive.
+
+Vantaggi :
+- Decorrela massimamente qualunque insieme di punti nello spazio di uscita Xpca
+- Minimizza l'errore quadratico medio tra i dati ricostruiti Xpca e i dati originali X.
+
+Svantaggi :
+- Non ci sono algoritmi veloci per la sua implementazione
+- È un algoritmo costoso in termini di risorse computazionali per il calcolo degli autovalori e auto-vettori.
+- Non usano l'informazione di classe e lavorano solo sulla distribuzione dei punti nello spazio dell facce, indipendementemente se appartengono alla stessa classe o no. Linear discriminat analysis, tecnica basata sulle autofacce che tiene conto della classe di appartenenza.
+- Soffrono della variazione di :
+	- Illuminazione
+	- Posa della testa
+	- Alineamento
+	- Espressioni facciali
+
+Formulazione della PCA :
+Trovare $X_{PCA} = W^tX$ t.c. $W^tSW = V$
+Dove :
+- X = matrice facce * feauture
+- S = matrice di covarianza dei dati
+- W = matrice di auto-vettori
+- V = matrice di covarianza trasformata, gli autovalori sono $v = [v1,v2,..vn]$
+
+Le facce contenuto nel face space, possono essere analizzate in uno spazio di dimensionalità ridotta.
+Inizialmente la PCA esegue una rototraslazione in uno spazio con lo stesso numero di dimensioni, ma gli autovettori non hanno la stessa importanza.
+Più è grande il valore dell'auto vettore, maggiore è la sua importanza nella ricostruzione dei dati nello spazio delle feature della PCA ( Xpca)
+
+Autofacce algoritmo :
+![[Pasted image 20231115095343.png]]
+La PCA ci permettere di calcolare una soglia di distanza fra i punti (facce) nello spazio delle feature utile per il sistema di riconoscimento:
+- Dmax = la distanza fra gli utenti più diversi nel DB
+- Dmin = la distanza fra i due utenti più simili
+
+Formule :
+- Distanza massima fra gli utenti del DB :
+$$d_{max} = max(|X_{PCAi}-X_{PCAj}|) \text{ con } i,j =1,2,...,M$$
+- Distanza minima fra utenti del DB
+$$d_{max} = min(|X_{PCAi}-X_{PCAj}|) \text{ con } i,j =1,2,...,M$$
+- Calcoliamo la distanza con l'utente più  vicino fra tutti gli altri utenti del DB (XPCA è l'utente in ingresso)
+$$d_{max} = min(|X_{PCA}-X_{PCAi}|) \text{ con } i =1,2,...,M$$
+
+PCA immagine nuova :
+Supponiamo che nel nostro sistema biometrico venga fatto l'enrolment di una nuova immagine Z nel sistema :
+- Se La distanza dz fra Z e il primo vicino ( C ) è oltre dmax ovvero la distanza mai osservata fra gli utenti nel DB -> non è una zebra.
+
+PCA caso impostore :
+Supponiamo che al sistema si presenti un certo utente F ( il quale non è autorizzato ad accedere).
+La distanza $d_F$ fra F e il primo vicino ( C ) è :
+- Al di sotto di dmax -> Ok, infatti è una zebra
+- Ma oltre dimin -> è un impostore.
+
+PCA caso genuino :
+Supponiamo che al sistema si presenti un utente D2, il quale è già registrato nel sistema come D e di conseguenza è autorizzato all'accesso.
+
+La distanza dD2 fra D2 e il primo vicino ( D)  è sotto il Dmax ( è una zebra) ed è minore di dmin ( è un genuino con identità D)
+
+È possibile inoltre lavorare nello spazio delle facce :
+- Ricostruire una faccia utilizzando le autofaccie :
+- Calcolare la distanza dalla faccia ricostruita da quella iniziale :
+	L'errore indica quanto l'immagine iniziale era vicina alla immagini con le quali abbiamo calcolato le autofacce.
+	Se ricostruisco bene l’immagine nuova (errore basso) allora probabilmente era una faccia somigliante a una di quelle memorizzate, se invece l’errore di ricostruzione è alto allora significa che il volto è troppo diverso rispetto a tutti i volti usati per creare il DB delle autofacce ( genuini)
+
+Enroll  :
+Nella fase di enroll a partire dai volti si calcolano le autofacce con la tecnica della PCA.
+
+Verification := Ogni volto del DB può essere riscostruito come una combinazione lineare delle autofacce. Se un nuovo volto viene ricostruito male, allora :
+- Non è un volto
+- È un impostore
+
+
+Analisi locale
+Lavorano invece sul riconoscimento, misurazione e confronto dei dettagli del volto :
+- Misurazione del naso
+- Della bocca
+- Occhi
+- Valori ritornati da particolari funzioni di trasformazione ( gabor wavelet)
+
+Model based
+I modelli model based, non estraggono una feautrue singola, ma addatano un modello sulla faccia, ne trovano i coefficenti e vanno a confrontarli con quelli delle facce usare in enrollment
+![[Pasted image 20231115095733.png]]
+Rientrano nella categoria dei metodi graph matching, in questi modello il volto è rappresentano come una rete di nodi ( feature vectors) sui punti peculiari del volto. Trovato attraverso gabor welvet con diverso orientamento e scala.
+![[Pasted image 20231115095746.png]]
+Servono almeno due immagini per trovare il modello del volto ( grafo).
+La comparazione di due facce è eseguita misurando quanto sforzo è necessario per adattare un grafo tirando i nodi.
+
+
+Spoofing e anti-spoofing
+Il volto può essere coperto da peli o indumenti ( in enrollement o verification). È quindi importante nella fase di enrolment non accettare acquisizioni se la percentuale coperta supera quella necessaria per garantire l'accuratezza certificata dal sistema.
+
+Analizziamo ora i vari tipi di attacchi che possono essere portati :
+- Utilizzo di un immagine stampate o di un video.
+	Supponiamo di avere un immagine proiettata su uno schermo o stampata di un volto, tecniche di anti-spoofing :
+	- Controllo tridimensionalità
+	- Controllo sincronia tratti biometrici indipendenti ( esempio variazioni volto e voce durante parlato)
+	
+	Con un video di un volto proiettato con audio potremmo applicare :
+	- Controllo tridimensionalità
+	
+	In entrambi casi sono possibili le seguenti tecniche difensive :
+	- Rilevazione della matrice di stampa o pixel mediante l'analisi della trasformazione di fourier
+	- Usare tecniche termografiche o sprettometriche basate su illuminazione a diverse lunghezze d'onda per controllare la presenza di pelle.
+
+- Hill Climbing
+	Problema generale : È possibile ricreare un sample da dei template memorizzati in un sistema ?
+	Risposta : SI, basta avere accesso al match score
+	
+	Si usa la tecnica hill climbing :
+	- Si inizia con un sample del tutto casuale
+	- Si portano delle piccole modifiche di volta in volta che incrementino il match score
+	- Si prosegue finchè si riesce ad aumentare il match score.
+	
+	Supponiamo di partire da un database locale LD di immagini ( alcuni accessi trafugati). Il nostro obbiettivo è quello di manipolare una immagine di partenza per farla matchare con un'altra ingannando il sistema, elenchiamo ora i passi :
+	- Partendo dalla immagini Ld creiamo l'insieme di  immagini Efi ( autofacce)
+	- Iniziamo dalla immagine che vogliamo Im0 e quella di target Imtarget
+	- Facciamo partire l'algoritmo iterativo che modificherà IM0 in IM1, … Imk per assomigliare dal punto del matching a IMtarget
+	
+	Confidence = la probabilità di corretta verifica per un dato matchscore
+	
+	Alcuni test mostrarono che è possibile superare il matching con l'immagine generata con probabilità del 99.9 %, qualunque sia il valore di soglia settato per il matching con n iterazioni prima o poi si entrerà.
+	Ripetendo per N volte l'algoritmo e creando l'immagine media dai vari risultati si ottiene un sample sempre più vicino a quello di target.
+	
+	Partendo da una faccia diversa posso ottenere una immagine simile a quella usata in enroll.
+	
+	Per contrastare l'attacco è stato proposto lo standard BIOAPI :
+	- L'idea di base è che molte modifiche all'immagine non produrrebbero cambiamenti nel match score, quindi l'algoritmo non saprebbe come arrampicarsi sulla collina.
+	- Risultato : le tecniche modified hill climbing funzionano lo stesso
+
+- Controllo istogrammi colore : Il controllo avviene controllando al distribuzione dei colori negli istogrammi.
+
+
+Alcuni metodi anti-spoofing
+Il sitema chiede all'utente di fronte al sensore di pronunciare una frase ( casuale ) richiesta dal sistema.
+Il sistema misura la variazione dei movimenti delle labbra nel tempo controllando se si sta cercando di ingannare il sistema con un fantoccio/maschera/immagine proiettata.
+
+Esistono anche delle variazioni di questi sitemi ( volto + labbra). Il sistema BIOID aumenta l'accuratezza della identificazione controllando i movimenti delle labbra mediante il flusso ottico fra 2 frame adiacenti.
+
+Facial Fingerpting :
+Si iniziano a sviluppare progetti per sensori e tecnologie per il facial fingerprinting ( non near IR).
+Viene costruita una mappa dei capillari al di sotto del volto, essa può essere rilevata da telecamere ad infrarosso ad alta risoluzione, diventando un nuovo tipo di tratto biometrico :
+- Assolutamente unico
+- Difficilmente falsificabile
+- Non intrusivo
+- Assolutamente accurato
+
+Può funzionare come mappa 2D ma sarà possibile arrivare alla mappa 3d
+
+Utilizzo di telecamere IR :
+La diffusione di telecamere nel vicino infrarosso è piuttosto elevata.
+La visione IR offre un punto di vista diverso e più robusto rispetto alle condizioni ambientali.
+
+I display o le superfici stampate in visibile diventano non usabili per attacchi con camere near IR
+
+---
+
+Sistemi 3D
+I sistemi biometrici sul volto 3D attualmente disponibili sono in grado di gestire correttamente :
+- Acquisizioni frontali
+- Con espressione neutra
+
+Altri studi sono attivi per fare riconoscimento a distanza ( long-range 3D face recognition).
+L'acquisizione 3D di un volto può svolgersi nei seguenti modi :
+- Scanner laser
+Una lama di luce laser scandisce il volto del soggetto durante una ripresa video.
+Attraverso la geometria spaziale del sistema, si ricostruisce la superfice dalle "fettine" presenti in ogni frame filmato.
+Occhi chiusi
+
+- Luce strutturata
+Si illumina il volto da riprendere, con un proiettore in grado di produrre una fascio di luce strutturata ed una/due telecamere.
+
+Con i sistemi code light, si proiettano in successione tanti pattern binari con bande sempre più fini. Il sistema ricostruisce la tridimensionalità usando la deformazione delle bande nell'immagine.
+
+Per aumentare l'area della superficie 3d acquisita si possono usare due tecniche :
+- Si usano due telecamere
+- Si producono due acquisizioni indipendenti "coded light". Ottenute due diverse code light si uniscono per ottenere un'unica superficie 3d.
+
+- Mediante viste
+I sistemi chiamati 2,5d, riescono a riprodurre la superficie 3d del volto da tane immagini del volto prese da angoli diversi, usando una normale telecamera.
+Con un passaggio successivo, altri sistemi riescono a ricostruire un vero modello 3D del volto partendo dalle immagini 5D.
+
+N.B = i face modeler che applicano la faccia 2D su un modello 3D standard uguale per tutti non possono essere utilizzati per scopi biometrici. Ecco perché costano poco.
+Vengono utilizzati nel campo del 3D per prove e scelta di accessori.
+
+
+Vantaggi del 3d :
+- Invarianza alla luce e all'ambiente ( usano luce IR propria), posa e makeup
+- Sono maggiormente tolleranti rispetto a colori di sfondo, accessori, trucco del viso
+- Invarianti rispetto a piccoli spostamenti angolari del volto
+- La precisione di alcuni sistemi permette di distinguere due gemelli omozigoti.
+- Capcità realtime
+- Bassi valori di FRR ( false reject rate), anche se il false match rate è molto basso
+- Dislocazione del sensore : Esistono in commercio dei sensori base di dimensioni ridotte che possono essere alloggiati in ogni situazione, muro, porta/cancello, sensore portatile.
+
+Svantaggi del 3D:
+- Costo dei sensori e dei sistemi maggiori
+- Il soggetto deve essere collaborativo
+
+Esempi di sistemi in commercio :
+- RealSense D435 camera
+Riconoscimento biometrico : 3D, colore, punti fiduciari.
+Permette il riconoscimento delle emozioni e delle espressioni ( ottenuto combinando  il sensore con librerie come openCV).
+- Face id di apple
+- Macchina vision 3D + 2D ICAO
+Si tratta di un sistema usato per enrollment, verification e identification di immagini facciali 3D e 2D.
+Il sensore acquisisce simultaneamente il 3D e il 2D rispettando le specifiche ISO.
+
+
+2D vs 3D
+
+I sitemi 3D pur non garantendo una completa invarianza rispetto alle variazioni del volto presentano una situazione migliore. Nessun sistema basato sul volto assicura una completa invarianza rispetto a i fattori temporali.
+![[Pasted image 20231115100358.png]]
+
+Tabella delle tolleranze.
+Alcuni parametri per la scelta di un sistema 3D oppure 2D :
+- I sistemi proposti hanno costi e accuratezze diversi.
+Il costo dei sensori varia da poche centinaia di euro a oltre 10.000 euro
+
+- Un medico potrebbe avere bisogno di una ricostruzione al decimo di millimetro di un volto per fare una protesi (3D)
+Un sistema biometrico al contrario può richiedere meno errore sulla misura, ma maggiore sarà la misura, migliore sarà l'accuratezza del sistema finale .
+
+- I sistemi si scelgono tenendo conto di :
+	- Risoluzione in mm sulla superficie
+	- Della accuratezza in mm della superficie
+	- Tempo di acquisizione e di elaborazione
+	- Del tipo di luce richiesta sia ambientale che per la proezione
+	- Del gradimento da parte dell'utente
+
+Algoritmi di matching 3D
+Avendo a disposizione sensori 2D e 3D non è detto che non si possano usare congiuntamente
+
+Schema delle possibilità attualmente possibili :
+![[Pasted image 20231115100500.png]]
+Il confronto fra due volti con tecniche 3D presenta i seguenti passaggi :
+- Se il volto 3D non è direttamente acquisito dal sensore, allora da multiple stils si ottiene la rappresentazione 3D dei volti da confrontare ( tipicamente uno dei volti è già stato memorizzato in fase di enroll)
+- I volti vengono sovrapposti (rototraslati) fino a trovare la migliore sovrapposizione delle superficie
+- Si valuta il grado di sovrapposizione con una soglia. Il match prevede l'individuazione di 3 punti di riferimento nelle immagini per facilitare la corretta sovrapposizione.
+
+Per approfondire i risultati ottenibili da queste tecniche ci dobbiamo riferire solo a prove comparative indipendenti (dai produttori) sui dati pubblici e non rilasciati prima dei test ( secretati). In ogni caso abbiamo i seguenti risultati :
+- FAR (false accept rate) fissato a 0.001 tra tutti i partecipanti. Viene misurato il tasso in verifica. Quante volte il sistema sbaglia nel dire tu sei tu.
+- Windows hello face autentication FAR = 0.001% 5% FRR  :
+Alcuni aspetti interessati di questo sistema :
+- Vengono utilizzate delle caratteristiche facciali locali, l'algoritmo prende centinaia di sample da aeree differenti della faccia. Nessuna immagine della faccia viene memorizzata. Si tratta di un sistema a feauture locali
+- La rappresentazione deve passare un modello di machine learning prima che l'algoritmo di matching lo identifichi come genuino. In caso di autenticazione ( con pochi utenti del sistema) la soglia di matching viene alzata.
+
+I passi futuri riguardano la funzione multimodale e l'uso delle reti neurali.
+
+
+Confronto con umani
+Uno degli obbiettivi è quello di arrivare a eguagliare o superare il tasso di riconoscimenti degli umani.
+Si è creato il seguente insieme di confronti :
+- 240 coppie di facce, 120 maschi e 120 donne 50% facili e 50% difficili
+- Diverso colore e lunghezza dei capelli
+- Diverse condizioni dello sfondo
+
+Gli umani potevano rispondere con :
+- Sono sicuro che siano la stessa persona
+- Penso siano la stessa persona
+- Not sure
+- Penso non siano la stessa persona
+- Non sono la stessa persona
+
+3 algoritmi su 7 sono stati capaci di fare meglio dei supervisori umani sul dataset difficile.
+
+Mentre tutti hanno fatto meglio dell'uomo su dataset facili.
+
+
+Critiche verso il Face recognition
+Nel FR si stanno notando grandi miglioramenti in :
+- Accuratezza
+- Usabilità
+- Numero e tipo di dispositivi dove poterlo applicare
+
+Tutta via l'utenza è preocupata riguardo alla sua diffusione e alla privacy :
+- Molte associazioni di utenti stanno chiedendo di rifiutare l'uso della sorveglianza biometrica negli spazi pubblici
+- Alcuni fornitori come ibm, hanno deciso di non fornire più le tecnologie di FR di massa a organi di polizia e municipalità.
+
+Gli errori ( FNMR, FMR, CMC) sono tutta via ancora abbastanza alti da creare un effetto di protezione da "errore del sistema" su schedature a scala metropolitana e nazionali nel FR.
+In EU, tutta via, è ancora aperto il dibattito se utilizzare o meno queste tecnologie in screening di massa.

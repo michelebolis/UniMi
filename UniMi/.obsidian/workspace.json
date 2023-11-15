@@ -67,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -159,12 +158,21 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "a036a027379b1f76",
+  "active": "47136b92c595cdff",
   "lastOpenFiles": [
+    "Sistemi biometrici/Riassunto unico.md",
+    "Sistemi biometrici/Img/Pasted image 20231115100500.png",
+    "Sistemi biometrici/Img/Pasted image 20231115100358.png",
+    "Sistemi biometrici/Img/Pasted image 20231115095746.png",
+    "Sistemi biometrici/Img/Pasted image 20231115095733.png",
+    "Sistemi biometrici/Img/Pasted image 20231115095343.png",
+    "Sistemi biometrici/Img/Pasted image 20231115094210.png",
+    "Sistemi biometrici/Img/Pasted image 20231115094037.png",
+    "Sistemi biometrici/Img/Pasted image 20231115093538.png",
+    "Sistemi biometrici/Img/Pasted image 20231115093102.png",
+    "Sistemi biometrici/Img/Pasted image 20231115092923.png",
     "Ingegneria del software/Slide/Index slide.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231114162800.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231114162744.png",
     "Ingegneria del software/Slide/IS2023-L11.pdf",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Nullability.md",
     "Ingegneria del software/Slide/IS2023-L12.pdf",
@@ -193,24 +201,15 @@
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Spy Object - Mockito.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Mock Object - Mockito.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Stub Object - Mockito.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Mockito.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Observer",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231109094033.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231109093716.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231109091949.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231109091535.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231109091133.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231109090922.png",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing",
     "Reti di calcolatori/Riassunti/Temp",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Riassunti/Erlang/Slide/07. starting with erlang.4.pdf",
-    "Sistemi biometrici/Img/Pasted image 20231106095212.png",
     "Ricerca operativa/Ricerca operativa.canvas",
     "Sistemi biometrici/Img",
-    "Sistemi biometrici/Img/Pasted image 20231106110405.png",
     "Sistemi biometrici/Sistemi biometrici.canvas",
     "Sistemi embedded/Sistemi embedded.canvas"
   ]
