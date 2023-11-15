@@ -84,7 +84,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ingegneria del software/Slide/Index slide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +100,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ingegneria del software/Slide/Index slide.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,9 +121,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Ingegneria del software/Slide/Index slide.md"
-              }
+              "state": {}
             }
           },
           {
@@ -163,8 +159,9 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "47136b92c595cdff",
+  "active": "a036a027379b1f76",
   "lastOpenFiles": [
+    "Ingegneria del software/Slide/Index slide.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Riassunti/img/Pasted image 20231114162800.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231114162744.png",
