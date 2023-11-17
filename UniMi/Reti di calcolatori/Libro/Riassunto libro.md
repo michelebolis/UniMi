@@ -420,3 +420,28 @@ E' quindi un protocollo client-server che segue 4 fasi
 3. DHCP request: è la riposta all'offerta e  contiene gli stessi parametri dell'offerta
 4. DHCP ACK: risposta del server che contiene gli stessi parametri in modo che il client comprenda che ora il suo nuovo IP è valido
 
+OSPF
+Open Shortest Path First
+Tipi di router
+- Router interni: localizzati in aree NON backbone
+- Router backbone: localizzati nei backbone degli AS
+- Router di frontiera dell'area
+- Router di frontiera: collegato il backbone dell'AS all'Internet Backbone
+
+Ogni router usa l'algoritmo del cammino minimo.
+OSPF permette di eguagliare il traffico su due path con lo stesso costo
+Una volta che l'albero SPF è stato creato, ogni router crea la propria tabella di routing
+Un router è assegnato come designated router per l'AS backbone e tutti i router adiacenti.
+Lo scambio di informazioni per il routing avviene SOLO tra i ruoter e il designated router
+
+
+BGP
+BGP NON comunica i costi ai suoi router adiacenti MA condivide il path da seguire
+In questo caso il costo viene determinato anche in base a problemi politici
+
+
+ICMP
+Dato che IP è un servizio best-efford, i pacchetti potrebbero essere scartati mentre sono in transito.
+SE un pacchetto è scartato per qualsiasi motivo tranne la corruzione di informazioni, ICMP Internet Control Message Protocol nell'host che scarta il pacchetto, genera un messaggio di errore che viene mandato al mittente, in particolare all'ICMP del mittente
+
+SE un'amministratore di rete riceve come messaggio che una destinazione non risponde, la causa puo essere determinata utilizzando la funzione di reachability testing implementata con il ping. Viene inviata una echo request che una volta ricevuta dall'ICMP, ritorna una echo reply
