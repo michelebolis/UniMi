@@ -240,12 +240,183 @@ SE la dimensione del pacchetto è maggiore della dimensione massima del frame (M
 Protocolli
 - ARP Address Resolution Protocol: usato da IP negli host attaccati ad una LAN per determinare il MAC address dato un IP
 - OSPF Open Shortest Path First: è un protocollo di routing 
-- ICMP
+- ICMP: usato da IP in un host/gateway per scambiarsi messaggi con un altro IP in un altro host/gateway
 
 
+IP
+Composizione pacchetto IP
+- Campo version: specifica se sia un IPv4 o IPv6
+- Campo IHL Intermediate Header Length specifica la lunghezza dell'header come multiplo di 32 bit. La lunghezza minima senza opzioni è di 5, mentre il massimo permesso è 15.
+- Campo TOS Type Of Service specifica la priorita dell'applicativo e gli attributi relativi al path da seguire
+- Campo Total length (16 bit): definisce la lunghezza totale del pacchetto (header+payload). La lunghezza massima del pacchetto è di 64k-1 bytes. Questo campo sarà utilizzato dalla destinazione per riassemblare il payload
+- Campo Flag bits (3 bit): 
+	- -
+	- D bit indica se il pacchetto è stato frammentato o meno
+	- M bit More fragment indica SE se ci sono altri frammenti dfel pacchetto (sara 0 sull ultimo frammento)
+- Campo Fragment Offset: indica l'offset, in multipli di 8 bytes, rispetto all inizio del pacchetto
+- Campo Time To Leave: definisce il tempo massimo per il pacchetto in transito, verra decrementato in ogni gateway/router. E' usato per rilevare eventuali loop
+- Campo Protocol: usato per permettere alla destinazione IP di passare il all'interno di ogni pacchetto ricevuto allo stesso protocollo che ha mandato i dati (es ICMP or TCP or UDP)
+- Campo Header checksum: per rilevare errori
+- Campo Source IP address e Destination IP address (entrambi su 32 bit)
+- Campo Options: puo contenere per esempio il path da seguire per raggiungere la destinazione 
 
 
+Frammentazione
+SE la dimensione del pacchetto è superiore al MTU del network di destinazione, è necessario dividere il payload in un numero di pacchetto con dimensione ridotta, i frammenti
+Sara l'IP destinazione a riassemblare i pacchetti.
+
+Il valore del campo Identification è uguale in tutti i frammenti, in modo che l'IP destinazione li associ allo stesso pacchetto originario 
+Il campo Total length è il numero di bytes del pacchetto originario (inclusi i 20byte di header)
+Il campo Fragment offset indica la posizione dei dati in ogni frammento rispetto all'inizio del payload (in multipli di 8 bytes)
+Il campo M-bit è 1 in ogni frammento e 0 nell'ultimo
 
 
+IP address
+Dato l'aumento degli utilizzatori di Internet, si è dovuto pensare a modi piu efficienti di gestire i 32bit degli indirizzi
+- Class-based addresses: vengono definite delle classi per gli indirizzi con una diversa divisione tra NetID e HostID
+- Subnetting
+- Classless addresses: la parte della rete di un indirizzo IP puo essere rappresentata da un qualsiasi numero di bit, portando ad utilizzo piu efficiente dello spazio di indirizzamento
+- NAT Network address translation: alloca un singolo indirizzo IP ad ogni rete di accesso utilizzato da tutti gli host di quella rete
+- IPv6
 
+
+Class-based addresses
+I 32 bit degli indirizzi vengono divisi in 5 formati, ognuno con intento di utilizzo in base alla dimensione della rete
+- Classe A 7 bit per NetID e 24 per l'HostID
+- Classe B 14 bit per il NetID e 16 per l'HostID
+- Classe C 21 bit per il NetID e 8 per l'HostID
+
+Casi particolare
+- NetID di soli 0: indica la stessa rete del mittente
+- Indirizzo a tutti 1: broadcast nella stessa rete del mittente
+- HostID di soli 1: broadcast sulla rete destinazione
+- Un indirizzo di classe A di soli 1 è utilizzato per il test, loopback address
+
+
+Subnetting
+Disaccoppiare i router associati ad una rete con le funzioni di routing della rete globale
+Ogni LAN è considerata una subnet ed è indentificata dall'HostID. Quest'ultimo sara diviso in una parte di subnetid e da una che identifica  l'HostID locale
+Il NetID è considerato per il routing all'interno di Internet
+
+Per identificare i limiti del subaddress viene utilizzata una maschera dell'indirizzo
+
+
+Classless addresses
+CIDR Classless Inter domain routing
+Vantaggi: uso piu efficiente dello spazio di indirizzamento
+Svantaggio: complicazione del routing dei pacchetti
+
+Il punto di divisione tra NetID e HostID è definito da una maschera dell'indirizzo
+Ogni router della rete contiene una copia della maschera in modo che un router, leggendo l'IP destinazione, lo metta in AND e controlli se c è una corrispondenza con gli indirizzi salvati nella RT
+
+
+NAT Network Address Translation
+Per ogni rete di accesso, viene assegnato un solo indirizzo IP
+All'interno dell'header TCP vi è il numero della porta dell'origine che identifica l'applicazione che ha fatto la richiesta e il numero di porta della destinazione che identifica la corrispondente applicazione del computer remote
+Associato al router NAR, vi è una NAT table in modo che contenga per ogni sessione due entry.
+- Lato richiedente, l'entry comprende l'IP privato dell'interfaccia dell'host e il numero di porta d'origine allocato
+- Lato ISP, l'entry è composta dall'IP e da un numero di porta assegnato dal NAT router
+In questo modo si evita che si utilizza la stessa porta TCP in diversi host
+
+
+Routing algorithms
+Rappresentazione del grafo della rete: ogni linea è rappresentata da due numero (IDLinea, costoAssociato)
+Il costo associato a una linea è usato duranti il routing come metrica del routing/path cost (es numero di hop)
+
+DV Distance Vector routing
+L'algoritmo distribuito di instradamento DV permette ad ogni router di costruire una tabella di instradamento (il vettore) che contiene il costo del cammino (la distanza) per ogni NetID raggiungibile
+
+1. Inizialmente ogni router conosce solo i NetID connessi direttamente ed i relativi costi: queste informazioni vengono salvate in una tabella delle adiacenze
+2. Ad un intervallo di tempo prefissato, ogni router manda una copia del proprio DV ad ogni vicino.
+3. In base alle informazioni ricevute, ogni router procede ad aggiornare la propria tabella di instradamento in base al DV
+
+RIP Routing Information Protocol usa l'algoritmo DV 
+
+
+LS Link State
+L'algoritmo LS è usato per permettere ad ogni router di determinare la topologia della rete ed i costi associati ad ogni link in modo che ogni router possa eseguire autonomamente l'algoritmo di Shortest-Path-First (Dijkstra)
+
+1. Inizialmente ogni router conosce solo le informazioni dei linkk adiacenti
+2. Ad intervalli regolari, ogni router fa broadcast del proprio LS (quindi lo invia a TUTTI), che contiene l'ID del router e le informazioni associate
+3. Dato che ogni router ha eseguito la stessa procedura, ognuno avra derivato la propria topologia e avra determinato ogni NetID connesso ad ogni router
+4. A questo punto ogni router puo eseguire l'algoritmo di Shortest-Path-First per determinare il cammino minimo da se stesso a tutti gli altri router
+
+Per evitare che uno stesso LS sia ripetuto, alla creazione viene assegnato un sequence number 
+Viene inoltre aggiunto un valore di timeout che viene decrementato da ogni router in modo da poter scartare il LS se è a 0
+
+
+Tunneling
+Il Tunneling viene utilizzato quando IP deve comunicare con una rete con un protocollo diverso da IP.
+Viene quindi introdotto un device, un router multiprotocollo, connesso ad ogni LAN.
+Questo router utilizza due protocol stack, l'IP e l'altro protocollo della rete.
+La rete IP quindi manda il pacchetto al router multiprotocollo che riconosce che il NetID nella destinazione è per la rete non IP. Procede a incapsulare il pacchetto nel protocollo utilizzato dalla rete destinataria in modo che la presenza di questo ulteriore protocollo sia trasparente ad entrambi gli host
+
+
+Broadcast routing
+- Broadcast limitato: manda una copia del pacchetto in ogni host della stessa LAN, per far cio l'IP destinazione è settato a 255.255.255.255
+- Broadcast nella subnet: usato per mandare una copia del pacchetto in ogni host attaccato alla subnet specificata, per far ciò l'HostID deve essere di tutti 1
+
+
+Spanning tree broadcast
+Consideriamo una rete che usa LS e che è composta da diverse subnet
+Con l'algoritmo di spanning tree, ogni router deriva una spanning tree dalla topologia corrente per evitare il loop di frame nella rete globale
+
+Vengono definite le porte associate ad ogni subnet come Root Ports RP o Designated Ports DS
+Tutte le porte RP/DS vengono settato in uno stato di forwarding mentre le altre in uno stato di non forwarding
+
+Il numero di porta associato ad ogni subnet è determinato dall'identificato della subnet
+Ogni SR ha una Root Port associata che è la porta con il cammino minimo per il root
+Per ogni subnet, c è una DP che è la porta con il cammino minimo dalla root
+Solo una copia del pacchetto viene mandato in broadcast nella rete
+
+
+Routing in Internet
+La struttura di Internet è una rete di reti, in particolare sono definiti diversi Tier
+- Tier 3: reti di accesso
+- Tier 2: gateway della rete regionale
+- Tier 1: backbone network
+
+I backbone regionali sono connessi insieme da degli NAP Network Access Point
+La struttura generale è di tipo gerarchico: coinvolge un numero elevato di AS Autonomous Systems che sono a loro volta interconnessi con il backbone intercontinentale
+Ogni Tier 3 e Tier 2 in una AS è chiamata area
+Il protocollo di ruoting all'interno degli AS è il RIP o l'OSPF
+Il protocollo di routing per far comunicare gli AS (nel Tier 1) è il BGP
+
+
+ARP e RARP
+ARP è usato da IP negli host collegati a una LAN
+ARP è infatti utilizzato per determinare l'indirizzo MAC di un host della rete LAN dato l'indirizzo IP
+Ogni host ha infatti associato un indirizzo IP e un indirizzo MAC in una ARP cache
+
+1. Alla ricezione di un pacchetto IP, l'ARP legge l'IP destinazione e determina se l'indirizzo MAC sia gia presente o meno nella sua cache 
+2. SE non è presente, fara un broadcast dei una ARP request nella LAN, che contiene sia l'IP/MAC dell'host ARP che l'IP destinazione di cui si sta richiedendo l'indirizzo MAC
+3. L'host di cui si sta richiedendo l'indirizzo MAC, riconoscere il proprio IP nella ARP request e mandera un ARP reply contenente il proprio indirizzo MAC
+4. L'host riceve l'ARP reply e aggiunge una entry nella propria cache
+
+L'ARP nel gateway della rete è conosciuto come proxy ARP
+
+RARP Reverse Address Resolution Protocol è utilizzato dagli host non appena entrano in servizio in modo che inviino con un broadcast e quindi anche al server ARP il proprio MAC address.
+Il server, riconoscendo che è un messaggio RARP, crea una RARP reply contenente la coppia MAC/IP
+
+Sia ARP che RARP hanno una lunghezza fissa d i28bytes
+- Campo HW Type: specifica il tipo di indirizzo MAC 
+- Campo Protocol Type: indirca il tipo di indirizzo di rete usato (es per IP  è 0800 in HEX)
+- Campo Operation:
+	- ARP request: 0001
+	- ARP reply: 0002
+	- RARP request: 0003
+	- RARP reply: 0004
+- Campo Indirizzo MAC del mittente
+- Campo Indirizzo IP del mittente
+- Campo Indirizzo MAC della destinazione
+- Campo Indirizzo IP della destinazione
+
+
+DHCP
+DHCP Dynamic Host Configuration Protocol permette di ottenere un indirizzo IP a nome dell'host
+E' quindi un protocollo client-server che segue 4 fasi
+1. DHCP discovery: mandato dal client a tutti gli host in broadcast (255.255.255.255) e l'indirizzo mittente di 0.0.0.0. Il messaggi contiene un ID della transazione cosi che il client riconosca la sua richiesta una volta che riceve una risposta dal server
+2. DHCP offer: restituita dal server, contiene il ID della transazione, una proposta di un IP, la maschera per l'IP e la durata della validità dell'indirizzo.
+3. DHCP request: è la riposta all'offerta e  contiene gli stessi parametri dell'offerta
+4. DHCP ACK: risposta del server che contiene gli stessi parametri in modo che il client comprenda che ora il suo nuovo IP è valido
 
