@@ -445,3 +445,118 @@ Dato che IP è un servizio best-efford, i pacchetti potrebbero essere scartati m
 SE un pacchetto è scartato per qualsiasi motivo tranne la corruzione di informazioni, ICMP Internet Control Message Protocol nell'host che scarta il pacchetto, genera un messaggio di errore che viene mandato al mittente, in particolare all'ICMP del mittente
 
 SE un'amministratore di rete riceve come messaggio che una destinazione non risponde, la causa puo essere determinata utilizzando la funzione di reachability testing implementata con il ping. Viene inviata una echo request che una volta ricevuta dall'ICMP, ritorna una echo reply
+
+
+QoS Support
+Una congestione avviene quando la domanda per una risorsa della rete eccede il livello che concede.
+SE un burst di pacchetti arriva al router su un numero differenziato di linee di input, l'output si congestionerà SE il rate d'arrivo è maggiore di quello di uscita
+
+Ogni linea di output ha una politica FIFO
+Ogni pacchetto ha una serie di parametri che definiscono i suoi requisiti di QoS
+
+Integrated services
+Inizialmente i servizi erano text-based, insensibili a delay e jitter (es FTP e email)
+Ora con servizi come speech e video, i pacchetti richiedono di viaggiare in real time
+Per definire che tipo di servizio viene richiesto, vengono modirficati i bit del campo Type of service
+
+Token bucket filter
+Utilizzato per garantire i requisiti di banda, delay e jitter
+Ad ogni flusso viene associato un contenitore, bucket, di token che vengono immessi ad un rate determinato dalla larghezza di banda richiesta
+La dimensione del bucket è la stessa del massimo spazio della coda
+In questo modo SE ci sono sufficienti token, il pacchetto è messo in coda e il corrispondente numero di token viene prelevato 
+mentre SE non ci sono abbastanza token, il pacchetto viene scartato
+
+WFQ Weighted Fair Queuing
+Per assicurare che il limite di delay per ogni flow sia rispettato, l'ordine di trasmissione, quindi la coda, viene modificato ogni volta che un pacchetto arriva
+Quando un nuovo pacchetto arriva, gli viene assegnato un time-stamp determinato dal tempo di arrivo e dal tempo di partenza previsto
+Il time-stamp è utilizzato per compararlo a quello degli altri pacchetti in coda, inviando quello con time-stamp piu piccolo
+In questo modo vengono rispettati i limiti sul delay
+
+RED Random Early Detection
+Usato con le code best-efford
+Un router normalmente scarta i pacchetti se la coda è piena
+Con TCP ogni volta che un pacchetto è perso, la sorgente lo rileva e dimezza il suo rate per nuovi pacchetti. Questo pero causa un riempimento dello code e una perdita di pacchetti 
+
+Con RED quando un pacchetto arriva e la coda è piena, un pacchetto che è nella coda viene selezionato randomicamente e scartato. In questo modo un numero ridotto di diversi applicativi è coinvolto e viene migliorato l'utilizzo di banda
+vengono definiti un minimum threshold MinTH e un maximum threshold MaxTH e viene continuamente monitorato la lunghezza media della coda AvrLEN
+Casi:
+- SE AvrLEN < MinTH: il nuovo pacchetto entra nella coda
+- SE AvrLEN < MaxTH: il nuovo pacchetto è scartato
+- SE MaxTH < AvrLEN < MinTH: un pacchetto nella coda viene randomicamente selezione, scartato e il nuovo pacchetto entra nella coda
+
+Differentiated services
+Flow singoli in ogni classe di servizio vengono aggregati
+I pacchetti in arrivo vengono classificati dai router 
+Il campo TOS è sostituito da un nuovo campo chiamato differetiated services DS
+In una rete DiffServ, un livello di risorse definito in termini di memoria delle code viene allocato ad ogni classe di traffico usando per es il token bucket filter
+
+
+MPLS
+Come un pacchetto viene inviato in una rete IP standard
+Alla ricezione del pacchetto da una linea di  input, il router legge l'IP destinazione nell'header pe determinare il NetID utilizzando la maschera
+Usa il NetID per determinare la porta di uscita hrazie alla tabella di instradamento
+Il campo ToS nell'header viene passato al classificatore di pacchetti che determina la coda e le regole di scheduling da applicare al pacchetto. Cio determina la porta di uscita da utilizzare per mandare il pacchetto al prossimo hop.
+Una regola di coda e scheduling vengono usate per ogni classe per assicurare che i requisiti di QoS vengano rispettati
+
+MPLS MultiProtocol Label Switching è una tecnica  utilizzato dai router in una backbone area
+Una volta che il traffico è stato classificato e messo in coda, il AG scheduler separa i vari traffici, fa shaping
+
+Ogni area border router ABR riceve pacchetti da una serie di access gateway e è anche un LER Label Edge Router in quanto aggiungono e rimuovono MPLS header
+Difatti le label MPLS hanno significato SOLO nel singolo hop, in modo che i pacchetti siano forzati a seguire uno specifico path (LSP label switched path)
+I backkbone routers nel AS leggono semplicemente la label e mandano il pacchetto alla porta di output con una nuova label, label switching
+
+- La lunghezza dell'header MPLS è di 20bit per la label
+- 3bit per CoS usato per selezionare la specifica coda 
+- 8 bit di time to live per riscontrare loop
+
+Viene utilizzato un approccio CR Constraint Routed LSP in modo che ci sia un Network Management che riempie le tabelle utilizzate per fare label switching
+
+
+IPv6
+Nonostante CIDR abbiamo esteso lo spazio di indirizzo di IPv4, si è introdotto l'IPv6
+Feature
+- Spazio di indirizzamento aumentato da 32 a 128 bits
+- Header semplificato permette ai router di processare e instradare i pacchetti piu velocemente
+- migliorata la sicurezza
+
+Formato:
+Header di 40 bytes
+- Campo Version 4 bit: settato a 6
+- Campo Traffic class 4 bit: simile a ToS. Permette al mittente IP di allocare una diversa priorita ai pacchetti
+- Campo Flow label 20 bit: settato a 0 SE è un pacchetto best-efford altrimenti è usato per permettere al router di identificare i pacchetti di una stessa sessione
+- Campo Payload length: indica il numero di bytes che seguo l'header di 40 bytes (ATT nell'IPv4 questo campo comprendeva anche l'header). MIN: 536 bytes, MAX 64kk bytes
+- Campo Next header: IPv6 comprende un header principale seguito da altri header tra cui quello di TCP/UDP, oppure da extensions headers inserti tra quello principale e l'header del livello di trasporto
+- Campo Hop limit: simile a time to leave ma stavolta vengono contati gli hop, venendo decrementato di 1 ogni volta che viene inviato
+- Campo Source/Destination address 128 bit: IPv6 è assegnato all'interfaccia fisica NON all'host o router
+
+
+Extension headers
+Tipi previsti
+- hop-by-hop options: informazioni per i ruoter visitati durante il path
+- routing
+- fragment: informazioni per permettere alla destinazione di riassemblare il pacchetto
+
+Hop-by-hop options
+Informazioni che devono essere esaminate da ogni router che il pacchetto visita
+Next header = 0
+Quando è necessario trasferire pacchetto molto superiori al MTU, i pacchetti che contengono questo header si chiamano jumbograms
+Questa option contiene solo il campo jombo payload length
+
+Routing
+Next header = 43
+Contiene 24 bit di stirct/loose map i quali SE il bit = 1, l'indirizzo specificato deve essere raggiunto in modo diretto, mentre SE bit = 0, l'indirizzo puo essere raggiunto passando da altri indirizzi.
+Contiene poi al massimo 24 indirizzi a cui fa riferimento la mappa
+
+
+IPv6/IPv4 interoperability
+E' necessario permettere di lavorare tra due reti con indirizzi di livello diverso
+1. Dual protocols
+Sono presenti host con IPv4 e altri con IPv6. Il server ha sia un protocollo IPv4 e IPv6  in modo che riesca a leggere il campo version dei vari pacchetti e passare i pacchetti al corretto IP
+
+2. Dual stacks and tunneling
+Per interconnettere reti con rispettivamente IPv4 e IPv6, è necessario che il server, avendo sia un protocollo IPv4 che IPv6, applichi un tunneling dell'IPv6 in un IPv4
+
+3. Translators
+Alla ricezione di un pacchetto IPv6/IPv4, questo viene convertito in un pacchetto IPv4/IPv6 grazie a una NAT con un PT protocol translator
+SE la NAT è utilizzata come gateway della rete, allora è una NAT-PT gateway
+Per l'assegnazione degli IPv4, solitamente la NAT alloca un certo numero di hostid per le destinazioni, applicando un timeout a tali indirizzi
