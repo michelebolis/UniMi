@@ -1017,3 +1017,5 @@ notUsed per specificare nel file di config che la funzione non prende argomenti
 lib_chan non lo chiede all esame
 
 ---
+
+IRC lite
