@@ -1,2 +1,5 @@
 ![[07. starting with erlang.4.pdf]]
 ![[08. actors in erlang.4.pdf]]
+![[09. error-handling.4.pdf]]
+![[10. distribution.4.pdf]]
+![[11. erlang in action.4.pdf]]

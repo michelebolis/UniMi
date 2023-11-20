@@ -810,35 +810,192 @@ tick(Time, Fun) ->
 ---
 
 Error in concurrency
-Quando i due attori sono collegati, gli errori di uno affetta il comportamento dell altro
-link(PID) function aiuta a monitorare un attore attraverso lo scambio di messaggio
+Quando i due attori sono collegati, gli errori di uno affetta il comportamento dell'altro
 
+`link(PID)` function aiuta a monitorare un attore attraverso lo scambio di messaggio
+SE A è linkato a B, quando B muori, viene mandato un messaggio di uscita `{'EXIT', PID}`
 SE abbiamo piu processi linkati, abbiamo un link set
 
-process_flag(trap.exit, true)
-Permette di flaggare il processo come di sistema, consentendolo di non morire quando riceve l exit del processo a cui è linkato
+I segnali di uscita sono generati da un processo che muore e sono mandati in broadcast a tutti i processi linkati
+Il segnale di uscita può essere esplicitato con `exit(PID, X)`
 
-...
+es
+```Erlang
+-module(dies). 
+-export([on_exit/2]). 
+on_exit(Pid, Fun) -> 
+	spawn(fun() -> 
+		process_flag(trap_exit, true), 
+		link(Pid), 
+		receive {'EXIT', Pid, Why} -> Fun(Why) end 
+	end).
+```
 
-I link sono simmetrici
+```cmd
+Pid = spawn(fun() -> receive X -> list_to_atom(X) end end).
+dies:on_exit(Pid, fun(Why) -> io:format("~p died with:~p~n",[Pid, Why]) end).
+```
 
-Link asimmetrici: monitor
+`process_flag(trap.exit, true)`
+Permette di flaggare il processo come di sistema, consentendolo di non morire quando riceve l'exit del processo a cui è linkato
+
+| **`trap_exit`** | **Exit signal** | **Action**                                |
+| ----------- | ----------- | ------------------------------------- |
+| true        | kill        | muore e propaga                       |
+| true        | qualsiasi   | aggiunge {'EXIT, PID, X'} ai messaggi |
+| false       | normal      | continua (NO propagazione)            |
+| false       | kill        | muore e propaga                       |
+| false            | qualsiasi            | muore e propaga                                      |
+
+Situazioni:
+- NON mi interessa se un processo crasha
+```Erlang
+PID = spawn(fun() -> ... end).
+```
+- Voglio che l'errore si propaghi
+```Erlang
+PID = spawn_link(fun() -> ... end).
+```
+- Voglio gestire l'errore
+```Erlang
+process_flag(trap_exits, true).
+PID = spawn_link(fun() -> ... end).
+```
+
+es
+```Erlang
+-module(edemo1). 
+-export([start/2]). 
+start(Bool, M) -> 
+	A = spawn(fun() -> a() end), 
+	B = spawn(fun() -> b(A, Bool) end), 
+	C = spawn(fun() -> c(B, M) end), 
+	sleep(1000), status(b, B), status(c, C). 
+a() -> process_flag(trap_exit, true), wait(a). 
+b(A, Bool) -> process_flag(trap_exit, Bool), link(A), wait(b). 
+c(B, M) -> link(B), 
+	case M of 
+		{die, Reason} -> exit(Reason); 
+		{divide, N} -> 1/N, wait(c); 
+		normal -> true 
+	end.
+wait(Prog) -> 
+	receive 
+		Any -> io:format("Process ~p received ~p~n", [Prog, Any]),
+		wait(Prog) 
+	end. 
+sleep(T) -> 
+	receive after T -> true end. 
+status(Name, Pid) -> 
+	case erlang:is_process_alive(Pid) of 
+		true -> io:format("process ~p (~p) is alive~n", [Name, Pid]); 
+		false -> io:format("process ~p (~p) is dead~n", [Name, Pid]) 
+	end.
+```
+
+A processo di sistema linkato a B, B processo di sistema SE Bool è True e C muore con ragione M
+
+- Quando C muore in modo normale, B non muore e quindi neanche A
+```cmd
+edemo1:start(false, {die, normal}).
+```
+- B non essendo di sistema, quando C muore per una ragione non normale, allora anche B muore MA A rimane viva perché è di sistema
+```cmd
+edemo1:start(false, {die, abc}).
+```
+- B non essendo di sistema, quando C muore per `{badarith, ...}` muore anche lui propagando a A
+```cmd
+edemo1:start(false, {divide, 0}).
+```
+- B essendo di sistema, cattura l'errore che non verrà propagato ad A
+```cmd
+edemo1:start(true, {divide, 0}).
+```
+
+Nota
+`erlang:is_process_alive(Pid)` SE il processo è vivo, True ALTRIMENTI False
+
+
+Monitor
+I link sono simmetrici; per ottenere link asimmetrici si utilizzano i monitor
+SE A monitora B, quando B muore A riceverà un segnale di uscita MA SE A muore, B non riceverà un segnale
+
+Creazione di un monitor per un processo A su un B: `erlang:monitor(process, B)`
+Quando B muore con segnale di uscita Reason, `{'Down', Ref, process, B, Reason}` viene mandato a A, con Ref il riferimento al monitor
 
 ---
 
 Distribution in Erlang
 Stesso servizio replicato su piu macchine/VM
+Vantaggi
+- Performance: grazie all'esecuzione parallela
+- Affidabilità: per distribuire la fault tollerance
+- Scalabilità: aggiungendo un altra macchina, duplico le risorse
+- Applicazione intrinsecamente distribuite: es chat, multi-user game
+
 2 modelli
 - Distributed Erlang
-Si basa sul concetto di Erlang nodes, singola VM che comunica con altra VM in eseguzione sullo stesso pc o su altri
+Si basa sul concetto di Erlang nodes, singola VM che comunica con altra VM in esecuzione sullo stesso pc o su altri
 
+es
+```Erlang
+-module(kvs). 
+-export([start/0, store/2, lookup/1]). 
+start() -> register(kvs, spawn(fun() -> loop() end)). 
+store(Key, Value) -> rpc({store, Key, Value}). 
+lookup(Key) -> rpc({lookup, Key}). 
+rpc(Q) -> 
+	kvs ! {self(), Q}, 
+	receive 
+		{kvs, Reply} -> Reply 
+	end. 
+loop() -> 
+	receive 
+		{From, {store, Key, Value}} -> 
+			put(Key, {ok, Value}), From ! {kvs, true}, loop(); 
+		{From, {lookup, Key}} -> From ! {kvs, get(Key)}, loop() 
+	end.
+```
 
-rpc:call libreria standard
+```cmd1
+erl -sname server
+kvs:start().
+kvs:lookup(weather).
+```
 
-cookie (per comunicazione ssh quindi non ci interessa)
+```cmd2
+erl -sname client
+rpc:call(server@surtur, kvs, store, [weather, sunny]).
+rpc:call(sif@surtur, kvs, lookup, [weather]).
+```
 
+`rpc:call` libreria standard
+I cookie si utilizzano per comunicazione ssh
+
+Erlang Node è una VM Erlang con il proprio indirizzo e set di processi
 SE abbiamo tanti nodi, abbiamo un cluster
-le primitive nei sistemi distribuiti, hanno un argomento in piu, cioè il Node
+Le primitive nei sistemi distribuiti, hanno un argomento in piu, cioè il Node
+- `spawn(Node, Mod, Func, ArgList)-> Pid`
+- `spawn_link(Node, Mod, Func, ArgList)-> Pid`
+- `disconnect_node(Node) -> bools() | ignored`
+- `monitor_node(Node, Flag) -> true`
+- `{RegName, Node} ! Msg`
+
+es
+```Erlang
+-module(ddemo). 
+-export([rpc/4, start/1]). 
+start(Node) -> spawn(Node, fun() -> loop() end). 
+rpc(Pid, M, F, A) -> 
+	Pid ! {rpc, self(), M, F, A}, 
+	receive {Pid, Response} -> Response end. 
+loop() -> 
+	receive 
+		{rpc, Pid, M, F, A} -> 
+			Pid ! {self(), (catch apply(M, F, A))},
+			loop() 
+	end.
+```
 
 apply(M, F, A) permette di eseguire la funzione F del modulo M con parametri A
 guardare in libreria rpc e global
@@ -846,7 +1003,6 @@ guardare in libreria rpc e global
 due Node per comunicare devo avere lo stesso cookie
 erl -setcookie "Cookie"
 erlang:set_cookie(node(), "Cookie")
-
 Problema: posso eseguire qualsiasi cosa
 
 
