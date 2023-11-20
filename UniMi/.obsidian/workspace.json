@@ -16,45 +16,6 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "82e82f38dae988c8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "0de185bb1a9c2592",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "8250a0222c34df4d",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Linguaggi di programmazione/Riassunti/Erlang/Slide/10. distribution.4.pdf"
-              }
-            }
-          },
-          {
-            "id": "ed229e69506f60c8",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Linguaggi di programmazione/Riassunti/Erlang/Slide/11. erlang in action.4.pdf"
-              }
-            }
           }
         ]
       }
@@ -106,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -123,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Linguaggi di programmazione/Appunti.md"
-              }
+              "state": {}
             }
           },
           {
@@ -184,7 +140,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -203,10 +159,18 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "82e82f38dae988c8",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
-    "Linguaggi di programmazione/Riassunti/Erlang/Slide/10. distribution.4.pdf",
+    "Linguaggi di programmazione/Riassunti/Erlang/Concorrenza/Concorrenza.md",
+    "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Appunti.md",
+    "Linguaggi di programmazione/Riassunti/Erlang/Distributed Erlang.md",
+    "Linguaggi di programmazione/Riassunti/Erlang/Socket-Based Distribution.md",
+    "Linguaggi di programmazione/Riassunti/Erlang/Distribuzione.md",
+    "Linguaggi di programmazione/Riassunti/Erlang/Concorrenza/Monitor.md",
+    "Linguaggi di programmazione/Riassunti/Erlang/Concorrenza/Situazioni.md",
+    "Linguaggi di programmazione/Riassunti/Erlang/Concorrenza/Link e Flag.md",
+    "Linguaggi di programmazione/Riassunti/Erlang/Slide/10. distribution.4.pdf",
     "Linguaggi di programmazione/Riassunti/Erlang/Slide/09. error-handling.4.pdf",
     "Linguaggi di programmazione/Riassunti/Erlang/Slide/11. erlang in action.4.pdf",
     "Linguaggi di programmazione/Riassunti/Erlang/Slide/Index slide.md",
@@ -241,18 +205,10 @@
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/Tecnica Token Bucket.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/UTP.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/TCP.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/QoS.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/MPLS.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/Tunneling.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/BGP.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/OSPF.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/LS Link State.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Spy Object - Mockito.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Observer",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing",
-    "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Ricerca operativa/Ricerca operativa.canvas",
     "Sistemi biometrici/Sistemi biometrici.canvas",
     "Sistemi embedded/Sistemi embedded.canvas"

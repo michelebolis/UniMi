@@ -969,6 +969,7 @@ rpc:call(server@surtur, kvs, store, [weather, sunny]).
 rpc:call(sif@surtur, kvs, lookup, [weather]).
 ```
 
+`erl -sname nomeTerminale`: permette di avere un terminale server con un nome specifico che poi richiamerò da un altro terminale client
 `rpc:call` libreria standard
 I cookie si utilizzano per comunicazione ssh
 
@@ -1014,10 +1015,5 @@ si usa libreria lib_chan, un modulo che permette di esplicitare quale processo p
 notUsed per specificare nel file di config che la funzione non prende argomenti
 
 lib_chan non lo chiede all esame
-
-
-Server
-erl -sname nomeTerminale
-permette di avere un terminale server con un nome specifico che poi richiamero da un altro terminale client
 
 ---
