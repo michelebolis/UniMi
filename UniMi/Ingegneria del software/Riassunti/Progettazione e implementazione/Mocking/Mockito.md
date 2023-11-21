@@ -9,7 +9,7 @@ when(oggettoMockato.metodo(args)).then_(value);
 
 Quando i metodi ritornano void:
 ```java
-do_(values).when(oggettoMockato.metodo(args)).then_(value);
+do_(values).when(oggettoMockato).metodo(args).then_(value);
 ```
 
 Per verificare l'occorrenza di una chiamata con certi parametri 

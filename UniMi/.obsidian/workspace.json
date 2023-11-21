@@ -18,14 +18,17 @@
             }
           },
           {
-            "id": "e07c439e16e181d0",
+            "id": "896e346609956fea",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
-                "mode": "source",
-                "source": false
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "viewState": {
+                  "x": -1187.5745620443479,
+                  "y": -3027.645270747766,
+                  "zoom": -0.2500000000000003
+                }
               }
             }
           }
@@ -96,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md"
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas"
               }
             }
           },
@@ -176,11 +179,14 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "e07c439e16e181d0",
+  "active": "896e346609956fea",
   "lastOpenFiles": [
-    "Linguaggi di programmazione/Riassunti/Erlang/Concorrenza/Concorrenza.md",
+    "Ingegneria del software/Slide/IS2023-L11.pdf",
+    "Ingegneria del software/Slide/IS2023-L12.pdf",
+    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Appunti.md",
+    "Linguaggi di programmazione/Riassunti/Erlang/Concorrenza/Concorrenza.md",
     "Linguaggi di programmazione/Riassunti/Erlang/Distributed Erlang.md",
     "Linguaggi di programmazione/Riassunti/Erlang/Socket-Based Distribution.md",
     "Linguaggi di programmazione/Riassunti/Erlang/Distribuzione.md",
@@ -193,7 +199,6 @@
     "Linguaggi di programmazione/Riassunti/Erlang/Slide/Index slide.md",
     "Reti di calcolatori/Appunti.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
-    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Appunti.md",
     "Sistemi biometrici/Riassunto unico.md",
     "Sistemi biometrici/Img/Pasted image 20231115100500.png",
@@ -207,9 +212,7 @@
     "Sistemi biometrici/Img/Pasted image 20231115093102.png",
     "Sistemi biometrici/Img/Pasted image 20231115092923.png",
     "Ingegneria del software/Slide/Index slide.md",
-    "Ingegneria del software/Slide/IS2023-L11.pdf",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Nullability.md",
-    "Ingegneria del software/Slide/IS2023-L12.pdf",
     "Reti di calcolatori/Libro/Riassunto libro.md",
     "Reti di calcolatori/Appunti lab.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Spy Object.md",
