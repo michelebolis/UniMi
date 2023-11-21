@@ -1019,3 +1019,5 @@ lib_chan non lo chiede all esame
 ---
 
 IRC lite
+\_Variabile evita il warning quando non utilizzo la variabile
+
