@@ -391,3 +391,29 @@ broadcast 10.11.260.188
 range 10.11.260.129 - 10.11.260.187
 129 = 10000001
 187 = 
+
+
+---
+
+Aggiungiamo un end system con DHCP
+Appena collegato alla rete gia esistente, si da un indirizzo casuale controllando se non sia gia presente con un ARP request MA sara su un altra rete in realta
+MA non appena compare un DHCP server, questo indirizzo casuale viene sostituito con quello dato dal server
+
+I server tipicamente non hanno indirizzi dinamici
+Andare sul server -> Services -> DHCP -> ...
+Parametro sbagliati:
+- Default gateway
+- base IP: 
+- maximum number of users: 
+OSS lo spazio di indirizzi per la VLAN in realta questo contiene sia gli indirizzi statici che dinamici
+
+DHCP proxy quando non c è un server DCHCP in una rete, permette di farsi inviare i MAC e non avere un DHCP server per ogni rete
+
+Aggiungere un altro pool al DHCP server
+Ora serve configurare il router con CLI configurando l interfaccia dell VLAN dove non c è il server
+ip helper-address indirizzoDHCPServer
+
+![[Pasted image 20231124143432.png]]
+
+Routing
+Rotte statiche

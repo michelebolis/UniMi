@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
+                "file": "Reti di calcolatori/Appunti lab.md",
                 "mode": "source",
                 "source": false
               }
@@ -59,7 +59,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "rpc",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -76,8 +76,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -97,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
+                "file": "Reti di calcolatori/Appunti lab.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
+                "file": "Reti di calcolatori/Appunti lab.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md"
+                "file": "Reti di calcolatori/Appunti lab.md"
               }
             }
           },
@@ -177,13 +176,14 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "9b6c455a2a7c4332",
+  "active": "47136b92c595cdff",
   "lastOpenFiles": [
+    "Reti di calcolatori/img/Pasted image 20231124143432.png",
+    "Linguaggi di programmazione/Appunti.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Slide/IS2023-L11.pdf",
     "Ingegneria del software/Slide/IS2023-L12.pdf",
-    "Linguaggi di programmazione/Appunti.md",
     "Linguaggi di programmazione/Riassunti/Erlang/Concorrenza/Concorrenza.md",
     "Linguaggi di programmazione/Riassunti/Erlang/Distributed Erlang.md",
     "Linguaggi di programmazione/Riassunti/Erlang/Socket-Based Distribution.md",
