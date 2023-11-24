@@ -18,17 +18,14 @@
             }
           },
           {
-            "id": "896e346609956fea",
+            "id": "9b6c455a2a7c4332",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-                "viewState": {
-                  "x": -1187.5745620443479,
-                  "y": -3027.645270747766,
-                  "zoom": -0.2500000000000003
-                }
+                "file": "Linguaggi di programmazione/Appunti.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -62,7 +59,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "pattern",
+                "query": "rpc",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,7 +76,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -99,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "file": "Linguaggi di programmazione/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "file": "Linguaggi di programmazione/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas"
+                "file": "Linguaggi di programmazione/Appunti.md"
               }
             }
           },
@@ -179,12 +177,12 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "896e346609956fea",
+  "active": "9b6c455a2a7c4332",
   "lastOpenFiles": [
+    "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Slide/IS2023-L11.pdf",
     "Ingegneria del software/Slide/IS2023-L12.pdf",
-    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-    "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Appunti.md",
     "Linguaggi di programmazione/Riassunti/Erlang/Concorrenza/Concorrenza.md",
     "Linguaggi di programmazione/Riassunti/Erlang/Distributed Erlang.md",
