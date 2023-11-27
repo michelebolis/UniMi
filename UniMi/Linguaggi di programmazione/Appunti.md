@@ -1021,3 +1021,20 @@ lib_chan non lo chiede all esame
 IRC lite
 \_Variabile evita il warning quando non utilizzo la variabile
 
+---
+
+Scala
+sintassi flessibile
+String* è come in Java String...
+
+object è usato per le classi statiche (in realta Singleton)
+la classe stessa è un costruttore
+per avere un altro costruttore, uso this(...)
+
+parte delle librerie standard sono quelli di Java
+nella gerarchia abbiamo anche un bottom: null e nothing
+
+
+val: variabile immutabile
+var: variabile mutabile
+

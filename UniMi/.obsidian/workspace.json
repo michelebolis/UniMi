@@ -16,8 +16,21 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "29c7ea8d4b18b521",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linguaggi di programmazione/Appunti.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,6 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Linguaggi di programmazione/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Linguaggi di programmazione/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +135,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Linguaggi di programmazione/Appunti.md"
+              }
             }
           },
           {
@@ -159,7 +176,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c1ce2ce19829fc50",
+  "active": "29c7ea8d4b18b521",
   "lastOpenFiles": [
     "Linguaggi di programmazione/Riassunti/Erlang/Slide/10. distribution.4.pdf",
     "Linguaggi di programmazione/Riassunti/Erlang/Slide/11. erlang in action.4.pdf",
