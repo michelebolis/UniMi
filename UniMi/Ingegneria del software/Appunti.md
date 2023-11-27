@@ -1293,4 +1293,61 @@ Abstract Factory pattern
 Citiamo piu create
 
 
-Kata musica 
+---
+
+Verifica e convalida
+- Malfunzionamento/Failure: dal punto di vista esterno, il funzionamento non è corretto (NON guardo il codice). OSS il malfunzionamento è soggettivo
+- Difetto/Anomalia/Fault: problema nel codice che causa un malfunzionamento (condizione non necessaria ma non sufficiente per un malfunzionamento es due anomalie che si annullano a vicenda)
+- Sbaglio/Mistake: errore umano concettuale/di battitura/conoscenza
+
+Tecniche statiche: basate sull'analisi del codice 
+- metodi formali
+- analisi data flow
+- modelli statistici
+
+Tecniche dinamiche: basate sull'esecuzione del programma eseguibile (MA esplode facilmente nel numero di stati possibili)
+- Testing 
+- Debugging
+
+
+Metodi formali
+Obiettivo: provare l assenza di anomalie nel prodotto
+es Analisi dataflow
+
+Inaccuratezza pessimistica: SE non riesce a dimostrare l assenza del problema si dice che non va bene
+
+Testing
+Rilevare malfunzionamenti o fornire fiducia nel prodotto
+es Back/White/Gray Box
+
+Inaccuratezza ottimistica: SE non riesce a dimostrare la presenza di problemi si dice che va bene
+
+Debugging
+Tecniche che si prefiggono di localizzare le anomalie che causano malfunzionamenti rilevati in precedenza 
+
+es approccio incrementale: limitare la parte in cui ricercare il difetto
+
+
+Testing
+P è corretto SE e SOLO SE $\forall d \in D, ok(P, d)$
+Un test T per un programma P è un sottoinsieme (finito) di D
+Un elemento t di un test T è detto caso di test
+L'esecuzione di un test consiste nell'esecuzione del programma $\forall t \in T$
+Un programma passa o supera un test: $ok(P, T) <-> \forall t \in T, ok(P,t)$
+
+Un test ha successo SE rileva uno o piu malfunzionamenti (non ancora noti) presenti nel programma P
+$successo(T, P) <-> \exists t \in T, !ok(P, t)$
+
+T è ideale per P SE e SOLO SE $!successo(T, P) -> ok(P, D)$
+SE il superamento del test implica la correttezza del programma
+Impossibile trovare un test ideale
+
+Test di Dijkstra: il test di un programma puo rilevare la presenza di malfunzionamenti MA non esiste un algoritmo che dato un programma arbitrario P generi un test ideale finiti
+
+
+Criterio di selezione per il sottoinsieme di D
+Criterio affidabile: un criterio C si dice affidabile SE presi T1 e T2 in base al criterio C ALLORA o hanno entrambi successi o nessuno
+$$affidabile(C, P)<->(\forall T_1 \in C, \forall T_2 \in C, successo(T_1, C) <->successo(T_2, C) )$$
+Criterio valido: un criterio C si dice valide SE, qualora P non sia corretto, ALLORA esiste almeno un T selezionato in base a C, che ha successo per il programma P
+$$valido(C, P) ...$$
+

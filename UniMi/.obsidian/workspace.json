@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
+                "file": "Ingegneria del software/Appunti.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
+                "file": "Ingegneria del software/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
+                "file": "Ingegneria del software/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md"
+                "file": "Ingegneria del software/Appunti.md"
               }
             }
           },
@@ -178,6 +178,7 @@
   },
   "active": "29c7ea8d4b18b521",
   "lastOpenFiles": [
+    "Linguaggi di programmazione/Appunti.md",
     "Linguaggi di programmazione/Riassunti/Erlang/Slide/10. distribution.4.pdf",
     "Linguaggi di programmazione/Riassunti/Erlang/Slide/11. erlang in action.4.pdf",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
@@ -192,7 +193,6 @@
     "Linguaggi di programmazione/Riassunti/Erlang/Slide/Pasted image 20231127085607.png",
     "Linguaggi di programmazione/Riassunti/Erlang/img",
     "Reti di calcolatori/img/Pasted image 20231124143432.png",
-    "Linguaggi di programmazione/Appunti.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Slide/IS2023-L11.pdf",
     "Ingegneria del software/Slide/IS2023-L12.pdf",
