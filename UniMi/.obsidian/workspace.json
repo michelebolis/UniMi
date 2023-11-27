@@ -16,44 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "0954a6f00fc5807f",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
-                "viewState": {
-                  "x": -7976.208707906126,
-                  "y": 2258.7806159941965,
-                  "zoom": 1
-                }
-              }
-            }
-          },
-          {
-            "id": "30c2ad255aae965f",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Linguaggi di programmazione/Riassunti/Erlang/Slide/11. erlang in action.4.pdf"
-              }
-            }
-          },
-          {
-            "id": "f42883e82a592b6f",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Linguaggi di programmazione/Riassunti/Erlang/Slide/10. distribution.4.pdf"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -119,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas"
-              }
+              "state": {}
             }
           },
           {
@@ -199,11 +159,11 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "0954a6f00fc5807f",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
+    "Linguaggi di programmazione/Riassunti/Erlang/Slide/10. distribution.4.pdf",
     "Linguaggi di programmazione/Riassunti/Erlang/Slide/11. erlang in action.4.pdf",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
-    "Linguaggi di programmazione/Riassunti/Erlang/Slide/10. distribution.4.pdf",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/Server - Group manager.md",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/Server - Chat server.md",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/Server - Chat controller.md",
