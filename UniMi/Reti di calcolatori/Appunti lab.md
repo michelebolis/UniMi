@@ -417,3 +417,8 @@ ip helper-address indirizzoDHCPServer
 
 Routing
 Rotte statiche
+
+...
+
+---
+
