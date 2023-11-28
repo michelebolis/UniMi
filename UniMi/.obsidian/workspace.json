@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reti di calcolatori/Appunti lab.md",
+                "file": "Linguaggi di programmazione/Appunti.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Appunti lab.md",
+                "file": "Linguaggi di programmazione/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Appunti lab.md",
+                "file": "Linguaggi di programmazione/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reti di calcolatori/Appunti lab.md"
+                "file": "Linguaggi di programmazione/Appunti.md"
               }
             }
           },
@@ -178,6 +178,7 @@
   },
   "active": "815a7f91d117f0fa",
   "lastOpenFiles": [
+    "Reti di calcolatori/Appunti lab.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Riassunti/Erlang/Slide/11. erlang in action.4.pdf",
     "Ingegneria del software/Appunti.md",
@@ -218,7 +219,6 @@
     "Ingegneria del software/Slide/Index slide.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Nullability.md",
     "Reti di calcolatori/Libro/Riassunto libro.md",
-    "Reti di calcolatori/Appunti lab.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Spy Object.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Mock Object.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Fake Object.md",

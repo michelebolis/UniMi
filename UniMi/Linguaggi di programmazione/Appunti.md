@@ -1038,3 +1038,9 @@ nella gerarchia abbiamo anche un bottom: null e nothing
 val: variabile immutabile
 var: variabile mutabile
 
+---
+
+Traits
+interfaccia con implementazione MA non è instanziabile e NON vi è un vincolo di classe-sottoclasse
+Ereditarita multipla
+
