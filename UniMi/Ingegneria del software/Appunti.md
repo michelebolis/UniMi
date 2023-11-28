@@ -1351,3 +1351,36 @@ $$affidabile(C, P)<->(\forall T_1 \in C, \forall T_2 \in C, successo(T_1, C) <->
 Criterio valido: un criterio C si dice valide SE, qualora P non sia corretto, ALLORA esiste almeno un T selezionato in base a C, che ha successo per il programma P
 $$valido(C, P) ...$$
 
+Come ragionare:
+- Partire dalla specifiche 
+- Partire dal codice
+
+Ad ogni criterio è associata una metrica che misuri la copertura che ci permetta di 
+- decidere quando smettere
+- decidere quale altro caso di test è opportuno aggiungere
+- confrontare bonta di Test diversi
+
+
+Quando un anomalia diventa un malfunzionamento
+Un caso di test per poter portare a un malfunzionamento è necessario eseguire il comando che contiene l anomalia
+l'esecuzione del comando contenente l anomalia deve portare il sistema in uno stato scorretta
+lo stato scorretto deve propagarsi fino all uscita del codice in esame in modo da produrre un output diverso da quello atteso
+
+Copertura dei comandi
+Un test T soddisfa il criterio di coperura dei comandi SE e SOLO SE ogni comando eseguibile del programma è eseguito in corrispodenza di almeno un caso di test t contenuto in T
+La metrica è la frazione dei comandi eseguiti su quelli eseguibili
+
+Copertura delle decisioni
+Un test t soddisfa il criterio di copertura delle decisioni SE e SOLO SE ogni decisione effettiva viene resa sia vera che falsa in corrispondenza ...
+
+Copertura delle condizioni
+Un test t soddisfa il criterio di copertura delle condizioni SE e SOLO SE ogni singola condizione viene resa sia vera che falsa in corrispondenza di almeno un caso di test t in T
+
+Copertura decisioni e condizioni
+...
+
+
+Copertura condizioni composte
+...
+
+

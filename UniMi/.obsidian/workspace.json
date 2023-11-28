@@ -16,21 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "29c7ea8d4b18b521",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ingegneria del software/Appunti.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ingegneria del software/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ingegneria del software/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Ingegneria del software/Appunti.md"
-              }
+              "state": {}
             }
           },
           {
@@ -176,8 +159,9 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "29c7ea8d4b18b521",
+  "active": "47136b92c595cdff",
   "lastOpenFiles": [
+    "Ingegneria del software/Appunti.md",
     "Linguaggi di programmazione/Appunti.md",
     "Linguaggi di programmazione/Riassunti/Erlang/Slide/10. distribution.4.pdf",
     "Linguaggi di programmazione/Riassunti/Erlang/Slide/11. erlang in action.4.pdf",
@@ -206,7 +190,6 @@
     "Linguaggi di programmazione/Riassunti/Erlang/Slide/09. error-handling.4.pdf",
     "Reti di calcolatori/Appunti.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
-    "Ingegneria del software/Appunti.md",
     "Sistemi biometrici/Riassunto unico.md",
     "Sistemi biometrici/Img/Pasted image 20231115100500.png",
     "Sistemi biometrici/Img/Pasted image 20231115100358.png",
