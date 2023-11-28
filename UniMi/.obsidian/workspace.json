@@ -21,11 +21,14 @@
             "id": "815a7f91d117f0fa",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
-                "mode": "source",
-                "source": false
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+                "viewState": {
+                  "x": -893.9936728958858,
+                  "y": 2027.8722734464852,
+                  "zoom": -0.1356384256342527
+                }
               }
             }
           }
@@ -96,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md"
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas"
               }
             }
           },
@@ -178,11 +181,11 @@
   },
   "active": "815a7f91d117f0fa",
   "lastOpenFiles": [
+    "Linguaggi di programmazione/Appunti.md",
     "Reti di calcolatori/Appunti lab.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Riassunti/Erlang/Slide/11. erlang in action.4.pdf",
     "Ingegneria del software/Appunti.md",
-    "Linguaggi di programmazione/Appunti.md",
     "Linguaggi di programmazione/Riassunti/Erlang/Slide/10. distribution.4.pdf",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/Server - Group manager.md",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/Server - Chat server.md",

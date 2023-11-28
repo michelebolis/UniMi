@@ -1044,3 +1044,4 @@ Traits
 interfaccia con implementazione MA non è instanziabile e NON vi è un vincolo di classe-sottoclasse
 Ereditarita multipla
 
+---
