@@ -422,3 +422,32 @@ Rotte statiche
 
 ---
 
+SE ci sono cammini di uguale costo, la banda viene sommata e quindi viene distribuito 
+
+Routing dinamico
+Come configurare RIP (v1 è classfull): NON LO CHIEDE ALL'ESAME
+- config
+- router rip
+- network reteCheConosco
+
+Dico agli altri che reti conosco e quindi mi propongo come hop
+lo devo fare per ogni router perche se non lo configuro mutta i DV
+
+Problema: SE ho dei / particolari, non vengono riconosciute dal RIPv1
+
+RIP(v2 classless)
+- config
+- router rip
+- version 2 (ATT NON si vede quale sia la version)
+- network reteCheConosco (non gli dico la netmask perche è collegato direttamente alla LAN e quindi conosco la netmask)
+
+redistribute: redistribuire le informazioni di un altro protocollo di instradamento (es per i boundary router negli AS)
+OGNI router deve avere la stessa versione
+
+
+OSPF (SOLO via CLI)
+- config
+- router ospf 1 (1 è l istanza di OSPF)
+- area 1 stub (noi consideriamo tutti i router nella stessa area; stub: area non è utilizzata per attraversamento di traffico per altre aree)
+- network reteCheConosco \<wildcard> area 1 (wildcard è la negazione della netmask perche or bit a bit è piu veloce che fare l and con la netmask)
+
