@@ -1272,3 +1272,104 @@ Domande esame
 - Quali informazioni sono presenti in un LS e NON in un DV? Nel LS è presente anche la conoscenza della topologia della rete grazie al fludding
 - Dovendo scegliere tra uno schema GoBackN e uno Selective Repeat quali elementi considero? Considero la memoria lato ricezione del buffer e preferisco Selective Repeat quando ho un collegamento instabile (Parametri: Memoria disponibile e canale affidabile)
 - ARP: come ci si comporta nel caso la macchina destinazione NON appartiene alla stessa rete di quella sorgente? Sara necessario un proxy ARP il quale essendo collegato alla LAN riceve il broadcast ed essendo di livello 3 capisce che la destinazione è in un altra rete (grazie al NetID) propagando la ARPrequest e risolvendo il problema facendo una reply con il proprio MAC
+
+---
+
+...
+
+---
+
+TCP/IP
+TCP è al livello di trasporto, affidabile: deve essere consegnato tutto in ordine
+
+header: (foto del libro antiquata)
+- porta sorgente 16bit: scelta dall Host (solitamente >1000 perche sono per lo user)
+- porta destinazione 16bit: porta nota 
+- Sequence number 32 bit: indica l inizio dei byte che vengono trasmessi in un segmento TCP
+- ACK number 32 bit: identifica il byte successivo che mi aspetto (es 10 vuol dire che ho mandato correttamente i primi 9 quindi mi asoetto il 10)
+- TCP header length variabile: quante parole da 32 bit sono contenute nell'header
+- Flag:
+	- URG: urgent
+	- ACK: 1 SE il campo ACK number deve essere controllato
+	- PSH: push 1 SE non bisogna aspettare che il buff sia piena per mandare i messaggi
+	- RST: reset: abort
+	- SYN: sync usato in fase di creazione della connessione
+	- FIN fine usato in fase di chiusura della connessione
+- Window size: quanto al massimo puo trasmettere, cio dipende dal buffer ricevente della socket
+- Checksum per verificare se il segmento è corretto
+- Urgent pointer 16bit: usato un tempo per mandare CTRL C prima del comando che voglio annullare, è l offset dei dati dove iniziano i dati urgent
+
+All'inizio della connessione i due host contrattano il MSS Max Segment Size. SE non viene definito esplicitamente, è di 536byte perche si evita una frammentazione
+
+Il checksum non viene calcolato solo sul TCP ma sullo pseudo header: sul source IP, sul destination IP (dal DNS), protocol selector (6 per il TCP), la lunghezza del segmento + TCP header, opzioni dati ed eventualmente un padding
+
+
+Come aprire una connessione (dal punto di vista di TCP non della socket)
+dobbiamo decidere un sequence number 
+Non posso sempre partire da 0 per evitare che pacchetti di una vecchia connessione ancora in giro causino sovrapposizione
+
+Anche nella destinazione ci sara un contatore interno per il SEQ number
+
+1. La sorgente invia una richiesta di connessione, un segmento in cui SYN=1 comunicando la nostra SEQ(X) (ACK non verra guardato perche il flag è a 0). Il sorgente è in stato di SYN SEN (Sent)
+2. Il ricevitore controlla il checksum e risponde con un segmento in cui SYN=1 e ACK=1 comunicando il proprio SEQ(Y) e ACK che sara X+1. Il ricevente è in stato di SYN RECV (Received)
+3. Il ricevitore è ora in stato di connessione established. MA il ricevente non sa se la sorgente ha ricevuto il segmento precendete, quindi viene inviato un segmento al ricevente con ACK=1 e ACK=Y+1
+4. Ora entrambi hanno una connessione bidirezione indipendente (indipendente perche ci sono due SEQ indipendenti)
+
+Oggi non viene piu usato un approccio incrementale ma viene usata una funzione crittografica
+
+Problemi possibili:
+- Non c è una porta in ascolto nella socket ricevente. Viene mandato quindi un segmento con RST=1
+- ACK da ricevente a mittente non arriva in tempo. Nel mittente qiando viene inviato il suo SEQ, viene settato un RTO Round Time Trip (cioe un timer). MA inviando nuovamente la SEQ con un altra X, la prima in realta era arrivata al ricevente e riesce ad arrivare al mittente che la interpreta come errata e quindi abortisce la connessione al ricevente con un RST=1.
+
+
+Come inviare dati da sorgente a destinazione (non è un flusso bidirezionale)
+Assumiamo che non ci siano errori nella connessione e che la dimensione dei messaggi al livello applicazione sia maggiore della dimensione del segmento
+
+Sorgente con messaggio da scrivere di 600byte
+Sorgente con SEQ = X e destinazione con SEQ = Y
+MSS = 500byte
+
+L'applicazione del sorgente scrive il messaggio nel buffer della socket
+E' necessario fare due segmenti: uno da 500 e uno da 100
+
+1. Mando il primo segmento con SEQ = X, che conservo nel buffer TCP del mittente con tutti gli altri segmenti
+2. Il ricevente controlla che sia il SEQ che si aspettava e lo mette nel buffer ricezione del TCP. Coi suoi tempi i segmenti vengono inviati dal buffer TCP a quello del receiver
+3. Il ricevente manda un segmento con ACK=1, ACK = X + 500
+4. Il mittente, ricevuto il segmento di ACK, cancello nel buffer TCP il primo segmento e mando il secondo segmento con SEQ=X+500
+5. Ricevente ripete passo 2 mandando un ACK=X+600
+6. Alla ricezione dell ACK, tutti i segmenti sono stati inviati
+
+Per ottimizzare la trasmissione possono essere inviati piu segmenti e lato ricezione, non viene inviato subito ACK in modo che quando mi arrivi il secondo segmento (quindi in ordine), il ricevente manda un singolo ACK con SEQ dato dalla somma dei due (Cumulative ACK)
+
+NON sempre il cumulative ACK è possibile 
+
+
+Come mandare dati continuamente (es Secure Shell)
+in questi casi hanno nel segmento PSH=1
+Lato ricevente, una volta ricevuto il dato, oltre il segmento con ACK, viene mandato un altro segmento al mittente con PSH=1 con lo stesso dato che ha ricevuto
+
+MA è inefficiente
+
+Delay ACK, SE il ricevente ha qualcosa da inviare, mando sia il dato che l ACK del segmento precenìdente.
+Quindi il segmento avra PSH=1, ACK=1, Ack=X+1, SEQ=Y, Data='d'
+
+MA viene aggiunto cosi del delay aggiuntivo in cui si aspetta che l applicazione debba inviare qualcosa
+
+
+Algoritmo di Nagle
+Lato sorgente solo quando mi arriva l ACK del primo segmento mando insieme sia il nuovo segmento successivo che l'ACK del segmento precedente
+
+Va bene se l applicazione non debba essere responsive
+
+
+Manteniamo una variabile sia nel mittente che nel destinatario (Vs/Vr) con la Initial Sequence number 
+Assumiamo ACK immediato, che quando arriva alla sorgente questa aggiorna il proprio Vs con X+500
+Mandando un secondo messaggio, questo viene perso MA ho trasmesso un terzo messaggio che è arrivato alla destinazione.
+Il SEQ è diverso da quello che si aspetta il ricevente, quindi lo conservo nel buffer di TCP SENZA passarlo al buffer dell applicazione
+MA non posso rispondere con un ACK X+1000, quindi rispondo con un ACK X+500 perche è quello che mi aspetto
+Lato mittente, si aspettava un X+1500, MA non glielo rinvio subito in quanto potrebbe arrivare in ritardo alla destinazione. Nel caso non arrivi pero, viene ignorato il problema e vengono inviati altri segmenti SENZA togliere pero dal buffer il 2o e 3o dal buffer perche non sono arrivati in ordine. Se altri messaggi arrivano al ricevente, verra inviato lo stesso ACK errato precedente, quindi viene ritrasmesso il segmento X+500 (Fast Retrasmitt) che stavolta arriva al ricevente
+Il ricevente ha quindi nel buffer i segmenti in "ordine", mandando un ACK cumulativo. La sorgente quando riceve l ACK cumulativo, ripulisce il proprio buffer 
+
+In questo modo lato mittente 3 ACK duplicati triggera il rinvio del primo segmento che stavo aspettando
+Questo sistema funziona finche ho qualcosa da trasmettere, difatti non verra mai mandato un ACK al mittente. Per risolvere cio viene introdotto un timer RTO per ogni trasmissione.
+Se entro RTO ricevo un altri 3 ACK, allora triggero prima della scadenza del RTO (per questo è un Fast Retrasmission) 
