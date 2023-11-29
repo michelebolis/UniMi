@@ -1442,3 +1442,5 @@ Criterio di copertura delle definizioni
 Copertura degli usi
 ...
 
+Spesso l unico criterio utilizzato è quello del budget
+
