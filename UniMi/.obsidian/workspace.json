@@ -18,17 +18,14 @@
             }
           },
           {
-            "id": "815a7f91d117f0fa",
+            "id": "03d3d1a9a61a8fa0",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
-                "viewState": {
-                  "x": -7024.063670227328,
-                  "y": 1746.9107319021264,
-                  "zoom": -0.1356384256342527
-                }
+                "file": "Ingegneria del software/Appunti.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -99,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+                "file": "Ingegneria del software/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+                "file": "Ingegneria del software/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas"
+                "file": "Ingegneria del software/Appunti.md"
               }
             }
           },
@@ -179,11 +176,11 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "815a7f91d117f0fa",
+  "active": "03d3d1a9a61a8fa0",
   "lastOpenFiles": [
+    "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Appunti.md",
     "Reti di calcolatori/Appunti lab.md",
-    "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Riassunti/Erlang/Slide/11. erlang in action.4.pdf",
     "Ingegneria del software/Appunti.md",
     "Linguaggi di programmazione/Riassunti/Erlang/Slide/10. distribution.4.pdf",

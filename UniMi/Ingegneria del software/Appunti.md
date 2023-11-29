@@ -1384,3 +1384,57 @@ Copertura condizioni composte
 ...
 
 
+---
+
+I criteri visti finora non considerano i cicli
+Copertura dei cammini
+La metrica è la frazione dei cammini percorsi su quelli percorribili
+
+N-copertura dei cicli
+Si limita il numero massimo di percorrenze dei cicli
+Errore Offbyone potrebbe non essere rilevato
+
+il caso N=2 è il minimo perche altrimenti sarebbe indistinguibile da un if
+
+N-copertura cicli implica Decisioni e condizioni (NON è sicuro)
+
+
+Consideriamo il flusso dei dati
+...
+Analisi statica nasce dai compilatori
+Identifica il tipo di operazione che un comando esegue su una variabile
+- definizione: SE il comando assegna un valore alla variabile
+- uso: SE il comando richiede il valore della variabile
+- annullamento: SE al termine dell esecuzione, il valore della variabile non è significamente affidabile (es dichiarazione o ritorno di puntatore/uscita dallo scoop)
+
+Per ogni variabile definisco un cammino 
+es
+x: auua
+Prima di usare x non la ho definita
+x2:ddd
+le prime due d non venivano incluse dal compilatore perche non la usa
+
+l uso di una variabile deve sempre essere preceduto in ogni sequenza da una definizione senza annullamenti intermedi
+Analisi a finestra: guardo solo due simboli alla volta
+Quando c è a non ci deve essere dopo una u
+
+la definizione di una variabile deve sempre essere seguita da un uso prima di un suo annullamento o definizione
+
+L'annullamento di un variabile deve essere sempre seguito da una definizione prima di un uso o di un altro annullamento
+
+ERR dipende dal linguaggio, potrebbe essere un Warning
+
+P(p, a) indica la sequenza ottenuta per la variabile a eseguendo il cammino p
+Per rappresentare P in caso di cammini con cicli e decisioni, posso usare espressioni regolari
+
+...(whike-body)\*...
+
+a|b come alternativa tra a e b
+
+...
+
+
+Criterio di copertura delle definizioni
+
+...
+
