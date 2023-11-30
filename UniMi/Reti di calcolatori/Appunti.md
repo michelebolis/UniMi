@@ -1373,3 +1373,87 @@ Il ricevente ha quindi nel buffer i segmenti in "ordine", mandando un ACK cumula
 In questo modo lato mittente 3 ACK duplicati triggera il rinvio del primo segmento che stavo aspettando
 Questo sistema funziona finche ho qualcosa da trasmettere, difatti non verra mai mandato un ACK al mittente. Per risolvere cio viene introdotto un timer RTO per ogni trasmissione.
 Se entro RTO ricevo un altri 3 ACK, allora triggero prima della scadenza del RTO (per questo è un Fast Retrasmission) 
+
+---
+
+TCP è orientato allo stream di byte continuo 
+
+
+Calibrazione RTO Retrasmission Time Out 
+Quando si apre una connessione, non abbiamo informazioni sulla rete, quindi ci si basa sullo standard RFC 2988
+Avere una buona stima del tempo medio in cui mi arriva l ACK e come outliner il caso in cui l ACK si perda
+Utilizziamo una distribuzione normale con media e deviazione standard
+Considero l RTO come un outliner: $\mu + k*\sigma$
+
+- $T_0$ Momento in cui la connessione viene aperta: non ho informazioni sul RTT (Round Trip Time: da quando mando il segmento a quando ricevo l ACK). Imposto RTO a 3 secondi. Mantengono due variabili: SRTT = Null (Smoothing RTT$stima \mu$) e RTTVAR = NULL (RTT Variance stima $\sigma$) e poi G <= 100ms (G è la granularita del clock)
+- Momento in cui $T_0$ scade, raddoppio l RTO (Exponential Backoff) in quanto non ho informazioni
+- $T_1$ Momento in cui ricevo un segmento di ACK con un round trip time di R, imposto SRTT = R e RTTVAR = R/2. $RTO = R + max(G, k*RTTVAR)$, con k = 4 (suggerito)
+es R = 10 ms, $RTO = 10ms + 4*5ms = 30ms$, quindi da 3 secondi siamo passati a 30ms
+Non possiamo sempre usare questa formula 
+- $T_k, k>2$, quando arriva un round trip time R, imposto $RTTVAR = (1-\beta)*RTTVAR + \beta*|SRTT-R|, con 0<\beta<1$, piu $\beta$ è vicino a 0 piu tenderò ad aggiornare meno il mio valore (Standard $\beta=1/4$)
+	- Piu $\beta$ è alto, piu sono sensibile agli sbalzi di R MA se è solo un rumore temporaneo rischio di cambiare troppo
+	- Piu \beta è basso, piu RTTVAR è smussato MA non cattura una variazione
+  $SRTT = (1-\alpha)*SRTT + \alpha*R, con 0<\alpha<1$, (Standard $\alpha=1/8$)
+  Aggiornamento $RTO = SRTT + max(G, k*RTTVAR)$ con k = 4
+  SE RTO scade, raddoppio e poi quando ricevero R faro di nuovo la stima
+
+Problemi:
+- Quando l RTO scade, viene raddoppiato E viene ritrasmesso il segmento. MA se l ACK del segmento precedente arriva molto dopo, ho un ambiguita perche non si capisce a quale trasmissione del segmento appartiene. L'algoritmo di Karn dice che ogni volta che raddoppio RTO non considero RTT di nessuno dei due segmenti, non aggiornando quindi ne la media ne la varianza.
+
+
+Controllo di flusso
+Quanti segmenti possiamo mandare alla destinazione e la velocita di processamento alla destinazione
+Lavoriamo a livello dei buffer delle socket (ricordiamo a livello kernel)
+
+Introduciamo 2 variabili: W_S (Finestra di invio) e W_R (Finestra di ricezione) che utilizzeremo nell header del TCP in window size
+Lato ricezione, notifica che la W_R = 2000, cioe ho un buffer di 2000byte (Window adv...) con un segmento con window size = 2000
+Essendo a livello di trasporto, non sapro quando l applicazione leggera dal buffer (in generale utilizzera le primitive)
+Quando la destinazione invia il secondo messaggio nello start della connessione, viene inclusa anche la window size, cioe la $W_R$
+
+Ipotizziamo di avere nella sorgente un W_S= 2000
+Dopo l invio di un messaggio da 500, diminuisco W_S di 500 a 1500
+Invio un secondo messaggio quindi W_S=1000, e un terzo messaggio W_S=500 e un quarto arrivando con un W_S = 0.
+La sorgente blocca l invio dei segmenti che avrebbe ancora da spedire aspettando che il buffer lato ricezione si svuoti
+
+Lato destinazione, i segmenti vengono conservati nei buffer di TCP (e poi inviati al buffer dell applicazione) e l ACK (ipotizzando sia cumulativo) viene mandato alla ricezione dell ultimo segmento CON window size a 0 perche il buffer dell applicazione è pieno 
+
+Dopo del tempo, l applicazione legge 1000 byte, quindi nel buffer dell applicazione vengono tolti 2 segmenti. Il ricevente manda quindi un segmento di ACK (con l ACK dell ultimo segmento) e con WIN=1000
+
+Problema: l unico modo in cui riavvio l invio di segmenti è con l ACK con WIN = ...
+SE tale segmento viene perso, e non c è una soluzione, si va in deadlock
+
+La soluzione è utilizzare un Persist Timer al cui scadere il mittente mando un segmento con 1 byte di data. SE perdo tale segmento, potro inviarlo nuovamente allo scadere del Timer.
+Alla ricezione, viene riconosciuto come messaggio Window Probe e viene inviato nuovamente l ACK con WIN = ... e ACK = X + 2001 
+
+
+Silly Window Syndrome
+Lato ricevente, ipotizziamo che l applicazione legga un byte alla volta.
+MA ogni volta che si libera la finestra dovrei inviare un ACK solo per notificare una finestra di 1 byte e la sorgente invierebbe un segmento solo per un byte (con un header da ... byte)
+
+Soluzione: algoritmo di Clark
+Evitare di annunciare la nuova disponibilita di window aspettando o di raggiungere il MSS o se ho almeno meta buffer vuoto
+
+
+Controllo di congestione
+La congestione è un fattore della rete: è determinata dal riempimento delle code nei router e causa la perdita di segmenti
+TCP vede la congestione come un errore di trasmissione
+thougthput: utilizzamento del canale nel tempo
+goodput: thougthput - ritrasmissioni
+
+l obiettivo del TCP quando viene utilizzato per l invio di grandi quantita di dati, è mandare in parallelo piu segmenti possibili
+
+Ipotizziamo di avere la trasmissione di segmenti verso una destinazione in cui in un primo tratto, ho una trasmissione veloce MA poi dal router alla destinazione ho un canale lento (collo di bottiglia). 
+SE la rete ce la fa, si nota solo un aumento di RTT
+SE i buffer del router si saturano, elimina i segmenti e TCP rileva l errore di trasmissione MA la sorgente come stima quanti segmenti inviare nell unita di tempo?
+
+Finestra di congestione: quanti byte si possono immettere nella rete 
+La sorgente sa che se inviato un segmento, ne ricevo l ACK, so che il segmento ha lasciato la rete 
+L'unica cosa sicura è l'ACK arrivano con il tempo piu lento della rete, essendo di piccole dimensioni
+
+Variabile $W_C$ (Finestra di congestione) viene aggiunta solo nella sorgente
+Caso rete senza congestion
+- Ogni volta che ricevo un ACK aumento di uno la $W_C$, risultando in un aumento veloce della finestra (in realta Slow Start con Slow come cauto) fino ad una soglia, slow start threshold
+- Ora aumento W_C ogni numero della threshold ACK
+- Continuo ad aumentare W_C fino a raggiungere una fase di crociera in cui non lo aumento piu 
+
+$NumeroDiByteChePossoTrasmettere = min(W_C, W_S)$

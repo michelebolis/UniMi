@@ -18,7 +18,7 @@
             }
           },
           {
-            "id": "2aa1510de06daa9a",
+            "id": "fe848e6eccc2f12b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -29,8 +29,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +95,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +111,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,9 +132,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Reti di calcolatori/Appunti.md"
-              }
+              "state": {}
             }
           },
           {
@@ -175,8 +170,9 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "2aa1510de06daa9a",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
+    "Reti di calcolatori/Appunti.md",
     "Ingegneria del software/Appunti.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Appunti.md",
@@ -205,7 +201,6 @@
     "Linguaggi di programmazione/Riassunti/Erlang/Concorrenza/Situazioni.md",
     "Linguaggi di programmazione/Riassunti/Erlang/Concorrenza/Link e Flag.md",
     "Linguaggi di programmazione/Riassunti/Erlang/Slide/09. error-handling.4.pdf",
-    "Reti di calcolatori/Appunti.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Sistemi biometrici/Riassunto unico.md",
     "Sistemi biometrici/Img/Pasted image 20231115100500.png",
