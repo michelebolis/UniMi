@@ -28,8 +28,24 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "fdc07031d181cf92",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+                "viewState": {
+                  "x": -1064.614603616883,
+                  "y": 1922.678544593458,
+                  "zoom": -0.666666666666667
+                }
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -95,6 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,6 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,7 +150,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas"
+              }
             }
           },
           {
@@ -170,7 +190,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c1ce2ce19829fc50",
+  "active": "fdc07031d181cf92",
   "lastOpenFiles": [
     "Reti di calcolatori/Appunti.md",
     "Ingegneria del software/Appunti.md",
