@@ -1444,3 +1444,15 @@ Copertura degli usi
 
 Spesso l unico criterio utilizzato è quello del budget
 
+---
+
+Modelli statistici
+L'80% degli errori saranno nel 20% del codice
+
+Debugging
+NON deve essere usato per rilevare malfunzionamenti
+L'attività è definita per un programma e un insieme di dati che causano malfunzionamenti nel programma
+Si basa sulla riproducibilità del malfunzionamento
+
+...
+
