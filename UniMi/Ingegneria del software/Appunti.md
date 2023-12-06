@@ -1456,3 +1456,41 @@ Si basa sulla riproducibilità del malfunzionamento
 
 ...
 
+Specifiche formali
+Reti di Petri
+Lo stato non è piu atomico
+Le transizioni lavorano su stati parziali
+
+...
+
+Informalmente
+Ci sono dei posti e delle transizioni che non sono piu archi ma dei nodi
+Gli archi connettono nodi di tipologie diversi (NO posto-posto o transizione-transizione)
+Ci sono poi token nei posti che identificano il cambiamento di stato che avviene con una transizione
+
+Condizione di abilitazione: transizione è abilitata se ha sufficiente token nei posti collegati (NON sposta i gettoni, ma li distrugge e li crea in altri posti)
+La transizione lavoro SOLO con i posti collegati
+
+Una reti di Petri è una 5-upla \[P, T; F, W, $M_0$]
+P insieme dei Posti
+T insieme delle transizioni
+P U T != vuoto
+P intersec T = vuoto
+F relazione di flusso F sottoinsieme (P x T) U (T x P)
+W funzione peso: assegna ad ogni flusso un $F -> N^+$
+$M_0$ funzione marcatura iniziale $M_0: P -> N$
+
+pre(a) = ...
+post(a) = ...
+
+I gettoni non hanno un identità
+
+Una transizione t \in T è abilitata in M SE e SOLO SE $\forall p \in pre(t), M(p) >= W(<p, t>)$
+M\[t> = t è abilitato in M
+
+Lo scatto di una transizione t in una marcatura M produce una nuova marcatura M'
+M\[t>M' = scatto di t in M produce M'
+$\forall p \in pre(t) - post(t)$, $M'(p)=M(p)-W(<p,t>)$
+$\forall p \in post(t) - pre(t)$, $M'(p)=M(p)+W(<p,t>)$
+...
+
