@@ -7,3 +7,4 @@ Composizione >>>> Ereditarietà
 
 - [[Encapsulation and infomation hiding]]
 - [[Immutabilita]]
+- [[Come identificare classi-relazioni]]

@@ -10,6 +10,8 @@ Può risultare assai difficile testare un SUT che dipende da componenti software
 
 Il mocking è la tecnica di testing che ci permette di sostituire i DOC reali con i vari [[Test Double]]. Effettuare mocking permette di ottenere test più efficienti, affidabili e puliti, consentendo agli sviluppatori di isolare il SUT in un ambiente più controllato.
 
+In generale per ogni test ci deve essere un unica `new` per il SUT e tutti i restanti DOC devono essere mockati
+
 - [[Dummy Object]]
 - [[Stub Object]]
 - [[Mock Object]]

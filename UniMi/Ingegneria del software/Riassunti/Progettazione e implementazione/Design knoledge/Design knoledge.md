@@ -11,3 +11,5 @@ Per condividere tali scelte di design (il _know how_) è possibile sfruttare:
 - **metodi**: con pratiche (come Agile) o addirittura l’object orientation stessa, che può essere un metodo astratto per condividere scelte di design.
 - [[Design pattern]]: fondamentali per condividere scelte di design, sono utili anche per generare un vocabolario comune (sfruttiamo dei nomi riconosciuti da tutti per descrivere i ruoli dei componenti) e aiutano l’implementazione (i pattern hanno delle metodologie note per essere implementati). I pattern non si concentrano sulle prestazioni di un particolare sistema ma sulla generalità e la riusabilità di soluzioni a problemi comuni;
 - **principi**: per esempio i principi del [[OO Object Orientation]] o [[SOLID]].
+
+Concetto di [[Stato]]

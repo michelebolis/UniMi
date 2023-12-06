@@ -1,0 +1,3 @@
+| Passaggi                                                                                                                                                               | Rappresentazione                     |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
+| L'utente interagisce con una vista che passa le chiamate ad un Presenter che manipola il Model, che as sua volta chiama gli eventi del Presenter che aggiorna la vista | ![[Pasted image 20231206102650.png]] |

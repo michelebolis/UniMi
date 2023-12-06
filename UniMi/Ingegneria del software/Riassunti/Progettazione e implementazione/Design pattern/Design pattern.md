@@ -12,6 +12,7 @@ Gang of Four Patterns: definisce 23 patter e li classifica in tre categorie
 - Comportamentali: interazioni tra gli oggetti
 - Strutturali: composizioni di classi e oggetti
 
+Pattern
 - [[Singleton]]
 - [[Iterator]] 
 - [[NullObject]]
@@ -22,3 +23,7 @@ Gang of Four Patterns: definisce 23 patter e li classifica in tre categorie
 - [[Composite]]
 - [[Adapter]]
 - [[Decorator]]
+- [[State]]
+- [[Factory method]]
+- [[Model View]]
+- [[Builder]]

@@ -21,4 +21,4 @@ Si noti come l’uso della visibilità `protected` renda l’override del meto
 
 Volendo vedere un esempio concreto di utilizzo di questo pattern è sufficiente guardare alla libreria standard di Java: in essa infatti gli `InputStream` sono realizzati seguendo tale schema.
 
-[[Decorator -Esempio]]
+[[Decorator - Esempio]]

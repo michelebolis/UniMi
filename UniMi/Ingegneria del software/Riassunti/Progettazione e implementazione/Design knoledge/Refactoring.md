@@ -11,3 +11,4 @@ Spesso le motivazioni dietro un refactoring sono:
 - **preparare il design di una funzionalità** che non si integra bene in quello esistente; dopo aver raggiunto uno _scenario verde_ in una feature, è possibile che la feature successiva sia difficile da integrare. In questo caso, se il _refactoring_ non è banale è bene fermarsi, tornare indietro e evolvere il codice per facilitare l’iterazione successiva (**design for change**).
 - presenza di [[Debito tecnico]] su lavoro fatto in precedenza, ovvero debolezze e “scorciatoie” che ostacolano notevolmente evoluzioni future.
 - [[Code smell]]
+
