@@ -1457,3 +1457,132 @@ Caso rete senza congestion
 - Continuo ad aumentare W_C fino a raggiungere una fase di crociera in cui non lo aumento piu 
 
 $NumeroDiByteChePossoTrasmettere = min(W_C, W_S)$
+
+---
+
+Problemi:
+- RTO scade, NON riceve gli ACK: congestione molto grave in quanto lo scadere del RTO è calcolato come un evento raro
+Quando scade l RTO, si riparte con W_C = 1 quindi con uno slow start MA la SlowStartThreshold viene diminuita (in particolare alla meta della finistra in cui è scaduta l RTO)
+
+- Riceve 3 ACK duplicati: alla destinazione cio che mando arriva MA arriva fuori ordine. C'è una congestione ma non è una situazione grave
+con $W_C = k$ appena ricevo 3 ACK duplicati, dimezzo la finestra e riprendo ad aumentare la finestra in modo lineare
+
+3 ACK potrebbero essere molti
+La sorgente una volta capito di aver ricevuto le cose non in ordine, puo utilizzare un SACK (SelectiveACK) per specificare il segmento che ho ricevuto insieme al ACK che rappresenta invece quello che mi aspettavo
+
+
+Explicit Congestion Notification
+SE sappiamo che i buffer si stanno riempendo e si sta per causare una congestione, i router protrebberlo notificarlo in modo da far diminuire le finestre 
+
+A livello IP, ci sono 2 bit che se settati a 11, vuol dire che è stato sperimentata una congestione (i router devono pero essere abilitati a gestire ECN)
+Poi verra gestita dai router che non cambieranno questa informazione in modo che arriva alle destinazioni
+Il router marca quindi ECE (ECN Echo) a 1 in modo che tutti gli ACK che manda lo avranno in modo da notificare il router
+
+Le primitive IP informano il TCP riducendo cosi la finestra nelle destinazioni
+Il bit CWR (CongestionWindowReduced) viene quindi settato a 1 nei successivi segmenti in modo che la destinazione informi i router di aver ridotto la finestra
+
+
+
+Come chiudiamo la connessione 
+(Chiusura simultanea da saltare)
+- Chiusura normale (4 vie/4 way close): client ha ricevuto tutti gli ACK e il sever non ha niente da fare in sospeso
+Abbiamo un TCP Client e un TCP Server
+Abbiamo inizialmente EST, EST (EST = Established) da entrambi i lati
+
+L'applicazione chiama la primitiva close()
+Viene mandato il segmento al server con FIN=1 e SEQ = X
+Il client entra in stato di FIN_WAIT1 mentre il server quando riceve il segmento (in particolare l'applicazione receive(EOF)), entra in stato CLOSE_WAIT
+Il server manda un segmento con ACK, ACK=X+1 (facendo entrare il client in FIN_WAIT2) e dopo un certo tempo l'applicazione del server chiama la close(), mandando un segmento con FIN e SEQ=Y
+Quando lo riceve il client entra in TIMEDWAIT in un loop e manda un segmento ACK, ACK = Y
+Il server ricevendo l ACK, fa la close  
+Lato client dopo 2MSL (Max Segment Lifetime) la socket viene chiusa
+
+- Chiusura a 3 vie: il client chiede la chiusura nonostante non abbia ricevuto tutti gli ACK
+MA nel server ho ancora dei segmenti di cui devo mandare l ACK
+L'applicazione del server, ricevendo EOF, fa la close()
+
+MA dato che devo mandare al client un ACK, mando FIN, ACK, ACK=X+N (con N ACK mancanti)
+Client mandera ACK, ACK = Y+1
+
+Sia chiusura a 3 che a 4 vie NON ho dati (NON ACK) da inviare
+
+- Chiusura Half-Close: client ha finito di inviare dati MA server deve ancora inviare dati al client
+Si usa la primitiva shoutdown() per notificare che si è finito di inviare dati
+Anche in questo caso AP del server riceve EOF MA il server non ha finito di inviare, cosi continua con le proprie send(NByte) mandandoli insieme a ACK, ACK = X+1, SEQ = Y, NByte. 
+Lato server, avra ora X, EST e lato client avra X, EST
+Il canale Server-Client è ancora attivo, riuscendo quindi a mandare l ACK al server per il segmento ricevuto
+Si ripete finche l AP del server chiama shoutdown() chiudendo la parte di stream rimanente, mandando un segmento con FIN, SEQ=Y+N
+In risposta il client mandera ACK, ACK=Y+N+1
+
+
+SE il client muore prima di mandare l ACK di chiusura, il server aspetta 2 ore e poi inizia a inviare per 10 volte un KA prob con seq = X-1 ogni 75secondi, SE non risponde, il server chiude la connessione
+
+
+TCP option
+Le opzioni sono multipli interi di 32 bit nell header TCP
+Max Segment Size Option
+- Campo che identifica l opzione es Kind=2 -> Max Segment Size Option
+- Campo che identifica la lunghezza in byte es lenght = 4 
+- Option
+
+
+Inefficienza SE banda/RTT alta, posso mandare molti dati, molti piu dei 16 byte della window size
+Window scale option: kind = 1, Kind = 3, Length = 3, Shift count
+Kind = 1 è una NOT Option per fare padding e raggiungere i 32 byte
+Lo shift count = 0 SE non viene fatto uno scaling
+è = 1 SE multiplico per 2^1
+...
+
+
+Time stamp option: deve essere abilitata durante l apertura della connessione
+Kind = 1, Kind = 1, Kind = 8, Length = 10
+Time stamp value (quando è stato inviato il segmento dalla sorgente)
+Time stamp echo reply 
+
+Serve nei casi in cui la finestra sia abbastanza grande e quindi la stima dell RTT deve essere precisa
+SE pensiamo ad una sorgente che manda quasi instantaneamente N messaggi ma questi non arrivano insieme alla destinazione ma dilatati. SE mando un ACK cumulativo sto in realta sovrastimando a causa dell ultimo segmento
+
+Con i timestamp invece, quando ricevo il primo segmento dopo un ACK, salvo il timestamp in TSRecent e cosi nell ACK cumulativo usero TSE = TSRecent. 
+Nella sorgente al tempo t3 stima RTT = t3-FirstTS (e quindi non t3-t2)
+
+
+Riassunto RCP
+Controllo dell errore
+Controllo del flusso
+Controllo di congestion
+
+Timer:
+RTO 
+Persistent Time 
+KeepAlive Timer
+TimeAwaitFin
+
+Option
+SACK
+WindowScale
+TimeStamp
+
+
+
+UTP UserTProtocol
+in TCP si perde la divisione dei messaggi perche è tutto uno stream
+Unico controllo in UTP è il checksum
+
+UTP è orientato al messaggio (al massimo 64kByte) (NON uno stream di byte)
+Stesse cose che garantisce IP ma al livello 4
+
+es DNS e protocolli real time usano UTP 
+Vantaggi: non c è apertura della connessione (usato proprio quando non si vuole la parte di connessione), non c è la finestra di congestione
+
+
+Protocollo QUIC Quick UDP Internet Connections
+Voglio usare il protocollo HTTP, sia HTTP 1.1 che 2 usano TCP
+- Quando cambio rete, cambia indirizzo IP e quindi la connessione TCP viene rotta, chiusa e riaperta con il nuovo IP. Ho quindi nuovamente uno slow start percepibile
+- SE si vogliono fare piu richieste TCP per parallelizzare, devo aprire N connessioni che possono appesantire il server
+- Anche se utilizzassi una connessione, TCP non distingue i tipi di richieste (testo, immagini) quindi se nel buffer ho molti segmenti MA ne manca una parte di una richiesta (perche non distinguendo i messaggi ha diviso lo stream male), resteranno bloccati senza arrivare all applicazione. (es devo mandare M1 e M2 MA vengono divisi in 3 segmenti con il secondo che ha un parte di M1 e una di M2, che quando viene perso blocca anche gli altri due anche se sono arrivati) 
+
+QUIC a livello di trasporto permette di avere piu stream concorrenti e indipendenti, ognuno con un controllo di flusso, ... tutte in un unica connessione QUIC
+Visto che UDP non garantisce nulla, QUIC fa tutti i controlli che fa TCP
+Mentre TCP e UDP lavoro a livello Kernel, QUIC lavora a livello User 
+
+
