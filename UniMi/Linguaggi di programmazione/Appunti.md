@@ -1045,3 +1045,12 @@ interfaccia con implementazione MA non è instanziabile e NON vi è un vincolo d
 Ereditarita multipla
 
 ---
+
+Algoritmo di Linearizzazione per evitare classi doppie
+Estensione valutata da destra verso sinistra
+
+Si possono overiddare anche i campi
+
+quando faccio un object se definisco un apply e unapply, senza costruttore se scrivo Pair(1, "one"), sta usando l apply 
+type Pair(+A, +B) = Tuple2(A, B) con + la covarianza tra A e +A
+
