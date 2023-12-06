@@ -158,49 +158,10 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "floating": {
-    "id": "39e0ac24af9cfa45",
-    "type": "floating",
-    "children": [
-      {
-        "id": "39b53405822935ae",
-        "type": "window",
-        "children": [
-          {
-            "id": "7d32503936c6ffe2",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "0913a1dec083f3eb",
-                "type": "leaf",
-                "state": {
-                  "type": "canvas",
-                  "state": {
-                    "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-                    "viewState": {
-                      "x": 3428.4156889361243,
-                      "y": -2911.1958585430907,
-                      "zoom": -0.6666666666666663
-                    }
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 1584,
-        "y": -11,
-        "width": 600,
-        "height": 704,
-        "maximize": true,
-        "zoom": 0.5
-      }
-    ]
-  },
   "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+    "Linguaggi di programmazione/Riassunti/Erlang/img/Pasted image 20231127085722.png",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Copertura delle decisioni-condizioni modificate.md",
     "Copertura delle decisioni/condizioni modificate.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Criteri di selezione.md",
@@ -245,7 +206,6 @@
     "Ingegneria del software/Riassunti/img/Pasted image 20231206100406.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231206095956.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231206095229.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231206093809.png",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Ricerca operativa/Ricerca operativa.canvas",
