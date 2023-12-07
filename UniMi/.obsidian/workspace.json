@@ -16,8 +16,36 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "779e9a79cc198060",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reti di calcolatori/Appunti.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "21f29a5dbf492e35",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
+                "viewState": {
+                  "x": 4256.100202026813,
+                  "y": -2158.852462795504,
+                  "zoom": -1.3333333333333333
+                }
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -67,7 +95,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 283.5
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -83,6 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +150,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas"
+              }
             }
           },
           {
@@ -144,8 +176,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -159,11 +190,28 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c1ce2ce19829fc50",
+  "active": "21f29a5dbf492e35",
   "lastOpenFiles": [
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Invio.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Controllo dell'errore.md",
+    "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Chiusura connessione.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Apertura connessione.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Controllo di congestione.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Controllo del flusso.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Option.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Formato.md",
+    "Reti di calcolatori/Appunti.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/UDP.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/TCP (Livello 3).md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Livello di Trasporto.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/ISO-OSI.md",
+    "Reti di calcolatori/Libro/Riassunto libro.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/IPv6.md",
     "Root.md",
     "Ricerca operativa/Slide/Index slide.md",
-    "Reti di calcolatori/Reti di calcolatori.canvas",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/img/Pasted image 20231127085607.png",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/Index ES.md",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/img/Pasted image 20231127085722.png",
@@ -180,30 +228,13 @@
     "Linguaggi di programmazione/Riassunti/Scala/Slide/14. advance in object-orientation.4.pdf",
     "Linguaggi di programmazione/Riassunti/Scala/OO/Scala - Es Case Classes.md",
     "Linguaggi di programmazione/Riassunti/Scala/OO/Scala - Companion Object.md",
-    "Linguaggi di programmazione/Riassunti/Scala/OO/Scala - Override.md",
-    "Linguaggi di programmazione/Riassunti/Scala/OO/Linearization Algorithm.md",
-    "Linguaggi di programmazione/Riassunti/Scala/OO/Scala - Traits.md",
-    "Linguaggi di programmazione/Riassunti/Scala/OO/Scala - Stackable Traits.md",
-    "Linguaggi di programmazione/Riassunti/Scala/OO/Scala - Es Traits.md",
     "Linguaggi di programmazione/Riassunti/Scala/Slide/13. traits.4.pdf",
     "Linguaggi di programmazione/Riassunti/Scala/OO",
-    "Linguaggi di programmazione/Riassunti/Scala/Scala - Comprehension e Generators.md",
-    "Linguaggi di programmazione/Riassunti/Scala/Scala - Es Known Functions.md",
     "Linguaggi di programmazione/Riassunti/Scala/Slide/12. scala overview.4.pdf",
-    "Linguaggi di programmazione/Riassunti/Scala/OO/Scala - Option.md",
-    "Linguaggi di programmazione/Riassunti/Scala/OO/Scala - Types.md",
-    "Linguaggi di programmazione/Riassunti/Scala/OO/Scala - Case classes.md",
-    "Linguaggi di programmazione/Riassunti/Scala/Scala - Keyword base.md",
-    "Linguaggi di programmazione/Riassunti/Scala/Scala - Esempi base.md",
-    "Linguaggi di programmazione/Riassunti/Scala/Scala.md",
-    "Linguaggi di programmazione/Appunti.md",
-    "Reti di calcolatori/Appunti.md",
-    "Ingegneria del software/Appunti.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Copertura delle decisioni",
     "Ingegneria del software/Slide/IS2023-L17.pdf",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Debugging",
     "Ingegneria del software/Riassunti/img/Pasted image 20231206103953.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231206102650.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231206102337.png",

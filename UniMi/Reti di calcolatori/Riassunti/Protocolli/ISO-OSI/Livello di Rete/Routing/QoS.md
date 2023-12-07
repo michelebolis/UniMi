@@ -34,5 +34,5 @@ Anche perche audio e video hanno un Jitter sensibile
 Per garantire questo requisito su Internet, viene delegato al SW: Buffer di playout, permette di bufferizzare e risolvere la scarsa qualita della rete (dimensionamento in base alla qualita della rete)
 
 La coda di output dei router è gestita con due blocchi
-- Servizio affidabile: solitamente pacchetti generati dal [[TCP]]
-- Servizio sensibile al delay, [[UTP]]
+- Servizio affidabile: solitamente pacchetti generati dal [[TCP (Livello 3)]]
+- Servizio sensibile al delay, [[UTP (Livello 3)]]

@@ -1,7 +1,7 @@
 Indirizzo IP vale su tutta la rete internet a differenza di MAC
 Caratteristica: indirizzo unico su tutto il pianeta
 
-[[Pacchetto, formato]]
+[[IPv4 - Formato]] e [[IPv6]]
 [[Problema frammentazione]]
 [[NAT]]
 
