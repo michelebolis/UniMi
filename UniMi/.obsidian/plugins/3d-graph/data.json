@@ -1,0 +1,44 @@
+{
+  "filters": {
+    "doShowOrphans": true,
+    "doShowAttachments": true
+  },
+  "groups": {
+    "groups": [
+      {
+        "query": "Ingegneria del software",
+        "color": "#bc2929"
+      },
+      {
+        "query": "Sistemi embedded",
+        "color": "#33bfc1"
+      },
+      {
+        "query": "Linguaggi di programmazione",
+        "color": "#c02fca"
+      },
+      {
+        "query": "Reti di calcolatori",
+        "color": "#d96e17"
+      },
+      {
+        "query": "Ricerca operativa",
+        "color": "#262aab"
+      },
+      {
+        "query": "Sistemi biometrici",
+        "color": "#0e4007"
+      },
+      {
+        "query": "Root",
+        "color": "#ffffff"
+      }
+    ]
+  },
+  "display": {
+    "nodeSize": 4,
+    "linkThickness": 4,
+    "particleSize": 4,
+    "particleCount": 5
+  }
+}

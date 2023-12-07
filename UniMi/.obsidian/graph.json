@@ -36,7 +36,7 @@
       }
     },
     {
-      "query": "file:Index",
+      "query": "file:Root",
       "color": {
         "a": 1,
         "rgb": 16777215
@@ -63,10 +63,10 @@
   "nodeSizeMultiplier": 1.65677083333333,
   "lineSizeMultiplier": 0.967708333333333,
   "collapse-forces": true,
-  "centerStrength": 0.574874074074074,
-  "repelStrength": 18.0100740740741,
-  "linkStrength": 1,
-  "linkDistance": 30,
-  "scale": 0.07827291029242636,
+  "centerStrength": 0.322916666666667,
+  "repelStrength": 16.5625,
+  "linkStrength": 0.395833333333333,
+  "linkDistance": 101,
+  "scale": 0.039822273430151,
   "close": false
 }
