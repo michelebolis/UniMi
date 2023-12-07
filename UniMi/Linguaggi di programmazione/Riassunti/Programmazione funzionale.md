@@ -30,3 +30,4 @@ MNP = (MN)P
 
 - [[OCaml]]
 - [[Erlang]]
+- [[Scala]]

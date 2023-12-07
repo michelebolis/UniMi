@@ -16,21 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "a52993769ccc1397",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reti di calcolatori/Appunti.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -80,7 +67,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 339.5110321044922
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -96,7 +84,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +100,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,9 +121,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Reti di calcolatori/Appunti.md"
-              }
+              "state": {}
             }
           },
           {
@@ -161,7 +145,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -175,8 +160,23 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "47136b92c595cdff",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
+    "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+    "Linguaggi di programmazione/Riassunti/Scala/Scala - Comprehension e Generators.md",
+    "Linguaggi di programmazione/Riassunti/Scala/Scala - Es Known Functions.md",
+    "Linguaggi di programmazione/Riassunti/Scala/Slide/12. scala overview.4.pdf",
+    "Linguaggi di programmazione/Riassunti/Scala/Scala - OO.md",
+    "Linguaggi di programmazione/Riassunti/Scala/Scala - Option.md",
+    "Linguaggi di programmazione/Riassunti/Scala/Scala - Types.md",
+    "Linguaggi di programmazione/Riassunti/Scala/Scala - Case classes.md",
+    "Linguaggi di programmazione/Riassunti/Scala/Scala - Keyword base.md",
+    "Pasted image 20231207102600.png",
+    "Linguaggi di programmazione/Riassunti/Scala/Scala - Esempi base.md",
+    "Linguaggi di programmazione/Riassunti/Scala/Slide/14. advance in object-orientation.4.pdf",
+    "Linguaggi di programmazione/Riassunti/Scala/Slide/13. traits.4.pdf",
+    "Linguaggi di programmazione/Riassunti/Scala/Scala.md",
+    "Linguaggi di programmazione/Appunti.md",
     "Reti di calcolatori/Appunti.md",
     "Ingegneria del software/Appunti.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
@@ -199,23 +199,9 @@
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Criterio di selezione.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Test ideale.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Test - definizioni.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Correttezza di un programma.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Testing.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Debugging/Debugging.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Metodologie agili/eXP/eXP - Tecniche/Testing.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Metodi formali.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche di verifica e convalida.md",
     "Ingegneria del software/Riassunti/img/Pasted image 20231206103953.png",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Tecniche dinamiche.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Tecniche statiche.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Verifica e convalida - Terminologia.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Terminologia.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Model View",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Meta pattern.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Decorator",
     "Ingegneria del software/Riassunti/img/Pasted image 20231206102650.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231206102337.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231206101300.png",
@@ -223,8 +209,6 @@
     "Ingegneria del software/Riassunti/img/Pasted image 20231206100617.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231206100406.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231206095956.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231206095229.png",
-    "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Ricerca operativa/Ricerca operativa.canvas",
     "Sistemi biometrici/Sistemi biometrici.canvas",
