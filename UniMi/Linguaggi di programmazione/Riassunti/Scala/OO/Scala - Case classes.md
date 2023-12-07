@@ -21,3 +21,5 @@ True or bottom() // object True = True
 ```
 
 Data la classe astratta Bool, si decide quale object (quale istanza singola) utilizzare in base al case 
+
+[[Scala - Es Case Classes]]

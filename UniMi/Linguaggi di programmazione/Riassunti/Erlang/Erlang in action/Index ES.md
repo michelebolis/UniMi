@@ -1,0 +1,8 @@
+[[Server - Chat server]]
+[[Server - Group manager]]
+[[Server - Chat controller]]
+[[Client]]
+[[Config]]
+[[Pasted image 20231127085722.png]]
+[[Pasted image 20231207102600.png]]
+[[Pasted image 20231127085607.png]]
