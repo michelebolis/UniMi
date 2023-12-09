@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "+",
+                "query": "pattern",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -72,11 +72,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 283.5
+    "width": 283.5,
+    "collapsed": true
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -178,7 +180,7 @@
       "3d-graph:3D Graph": false
     }
   },
-  "active": "009bfdf535e8d335",
+  "active": "bdd78e7dc8a45cb1",
   "lastOpenFiles": [
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Reti di calcolatori/Appunti.md",
