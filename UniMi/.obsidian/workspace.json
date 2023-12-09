@@ -33,24 +33,9 @@
             "id": "08403e35f298f433",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
-                "viewState": {
-                  "x": -5318.636843483043,
-                  "y": -1838.070808125935,
-                  "zoom": -2.0326189877052707
-                }
-              }
-            }
-          },
-          {
-            "id": "caec20124794441d",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/QUIC.md",
+                "file": "Reti di calcolatori/Appunti.md",
                 "mode": "source",
                 "source": false
               }
@@ -123,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
+                "file": "Reti di calcolatori/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
+                "file": "Reti di calcolatori/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas"
+                "file": "Reti di calcolatori/Appunti.md"
               }
             }
           },
@@ -215,6 +200,7 @@
   },
   "active": "08403e35f298f433",
   "lastOpenFiles": [
+    "Reti di calcolatori/Libro/Riassunto libro.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/QUIC.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Invio continuo.md",
@@ -233,7 +219,6 @@
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Algoritmo di Clark.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Persistent Timer.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/Spanning tree broadcast.md",
-    "Reti di calcolatori/Libro/Riassunto libro.md",
     "Reti di calcolatori/Libro/CAP1.pdf",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/Architettura della rete.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/Interazione IPv4 - IPv6.md",

@@ -560,3 +560,5 @@ Per interconnettere reti con rispettivamente IPv4 e IPv6, è necessario che il s
 Alla ricezione di un pacchetto IPv6/IPv4, questo viene convertito in un pacchetto IPv4/IPv6 grazie a una NAT con un PT protocol translator
 SE la NAT è utilizzata come gateway della rete, allora è una NAT-PT gateway
 Per l'assegnazione degli IPv4, solitamente la NAT alloca un certo numero di hostid per le destinazioni, applicando un timeout a tali indirizzi
+
+CAP 7
