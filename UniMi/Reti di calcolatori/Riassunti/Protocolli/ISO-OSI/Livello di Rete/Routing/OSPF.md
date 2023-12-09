@@ -16,3 +16,5 @@ Uso combinazione routing (guardo le 3 tabelle) e forwarding (faccio un hop)
 
 Un router è assegnato come designated router per l'AS backbone e tutti i router adiacenti.
 Lo scambio di informazioni per il routing avviene SOLO tra i ruoter e il designated router
+
+[[Spanning tree broadcast]]

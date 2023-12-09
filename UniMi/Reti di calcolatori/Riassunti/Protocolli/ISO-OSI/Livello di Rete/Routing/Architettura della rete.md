@@ -1,4 +1,4 @@
-Architettura di rete OSPF: topologia che prevede un area0 / backbone (OSPF, MPLS) collegate ad altre sottoaree (RIP / OSPF). NON ci sono collegamenti tra sottoaree
+La struttura di Internet è una rete di reti: topologia che prevede un area0 / backbone (OSPF, MPLS) collegate ad altre sottoaree (RIP / OSPF). NON ci sono collegamenti tra sottoaree
 
 SE aree0 molto grandi, avremo grandi costi di traffico e computazione
 Un nodo viene eletto come Designated Router per fare OSPF in modo che il costo computazione sia centralizzato. QUINDI tutti i router della rete non si scambiano in flooding ma mandano i LS solo al Designated Router
@@ -13,5 +13,5 @@ OPEN FLOW: protocollo che regola la comunicazione tra ogni apparato di rete e il
 Internet: collezione di AS Atonomous System
 Le varie aree0 sono collegate a Internet Backbone 
 - Tier 1: Internet Backbone -> [[BGP]]
-- Tier 2: AS -> router backbone [[MPLS]]
+- Tier 2: AS gateway della rete regionale -> router backbone [[MPLS]]
 - Tier 3: reti di accesso / reti periferiche -> [[DV Distance Vector|DV]] o [[LS Link State|LS]]
