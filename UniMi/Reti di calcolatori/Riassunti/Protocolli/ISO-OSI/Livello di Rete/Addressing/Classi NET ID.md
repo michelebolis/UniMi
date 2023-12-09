@@ -1,6 +1,0 @@
-- Unicast
-	- Classe A: 7 bit per NET ID e 24 bit per Host ID
-	- Classe B: 14 bit per NET ID e 16 bit per Host ID
-	- Classe C: 21 bit per NET ID e 8 per Host ID
-- Multicast: Classe F: 28 bit per Multicast address
-- Reserved: Classe E

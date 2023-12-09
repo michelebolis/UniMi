@@ -1,10 +1,7 @@
 Link State Routing
-1. Costruzione adiacenza
-Le tabelle di adiacenza avviene nello stesso modo del DV 
+1. Costruzione adiacenza: le tabelle di adiacenza vengono costruite nello stesso modo del DV 
 
-2. Diffusione LS
-Una volta misurato il costo delle diacenze
-Questa informazione non viene propagata ai nodi adiacenti, MA a tutti i nodi della reta
+2. Diffusione LS: una volta misurato il costo delle adiacenze, questa informazione non viene propagata ai nodi adiacenti, MA a tutti i nodi della rete
 
 Questo viene fatto con il Floodind: evoluzione del broadcast che permette di propagare in un unica direzione 
 Flooding viene implementato in modo che i nodi che ricevono le info di un nodo A vengono inviate in tutti i link di uscita tranne quello in cui l ho ricevuto

@@ -252,7 +252,7 @@ Composizione pacchetto IP
 - Campo Flag bits (3 bit): 
 	- -
 	- D bit indica se il pacchetto è stato frammentato o meno
-	- M bit More fragment indica SE se ci sono altri frammenti dfel pacchetto (sara 0 sull ultimo frammento)
+	- M bit More fragment indica SE se ci sono altri frammenti del pacchetto (sara 0 sull ultimo frammento)
 - Campo Fragment Offset: indica l'offset, in multipli di 8 bytes, rispetto all inizio del pacchetto
 - Campo Time To Leave: definisce il tempo massimo per il pacchetto in transito, verra decrementato in ogni gateway/router. E' usato per rilevare eventuali loop
 - Campo Protocol: usato per permettere alla destinazione IP di passare il all'interno di ogni pacchetto ricevuto allo stesso protocollo che ha mandato i dati (es ICMP or TCP or UDP)
@@ -313,7 +313,7 @@ Ogni router della rete contiene una copia della maschera in modo che un router, 
 NAT Network Address Translation
 Per ogni rete di accesso, viene assegnato un solo indirizzo IP
 All'interno dell'header TCP vi è il numero della porta dell'origine che identifica l'applicazione che ha fatto la richiesta e il numero di porta della destinazione che identifica la corrispondente applicazione del computer remote
-Associato al router NAR, vi è una NAT table in modo che contenga per ogni sessione due entry.
+Associato al router NAT, vi è una NAT table in modo che contenga per ogni sessione due entry.
 - Lato richiedente, l'entry comprende l'IP privato dell'interfaccia dell'host e il numero di porta d'origine allocato
 - Lato ISP, l'entry è composta dall'IP e da un numero di porta assegnato dal NAT router
 In questo modo si evita che si utilizza la stessa porta TCP in diversi host
@@ -400,7 +400,7 @@ Il server, riconoscendo che è un messaggio RARP, crea una RARP reply contenente
 
 Sia ARP che RARP hanno una lunghezza fissa d i28bytes
 - Campo HW Type: specifica il tipo di indirizzo MAC 
-- Campo Protocol Type: indirca il tipo di indirizzo di rete usato (es per IP  è 0800 in HEX)
+- Campo Protocol Type: indica il tipo di indirizzo di rete usato (es per IP è 0800 in HEX)
 - Campo Operation:
 	- ARP request: 0001
 	- ARP reply: 0002
@@ -493,12 +493,12 @@ In una rete DiffServ, un livello di risorse definito in termini di memoria delle
 
 MPLS
 Come un pacchetto viene inviato in una rete IP standard
-Alla ricezione del pacchetto da una linea di  input, il router legge l'IP destinazione nell'header pe determinare il NetID utilizzando la maschera
-Usa il NetID per determinare la porta di uscita hrazie alla tabella di instradamento
+Alla ricezione del pacchetto da una linea di input, il router legge l'IP destinazione nell'header per determinare il NetID utilizzando la maschera
+Usa il NetID per determinare la porta di uscita grazie alla tabella di instradamento
 Il campo ToS nell'header viene passato al classificatore di pacchetti che determina la coda e le regole di scheduling da applicare al pacchetto. Cio determina la porta di uscita da utilizzare per mandare il pacchetto al prossimo hop.
 Una regola di coda e scheduling vengono usate per ogni classe per assicurare che i requisiti di QoS vengano rispettati
 
-MPLS MultiProtocol Label Switching è una tecnica  utilizzato dai router in una backbone area
+MPLS MultiProtocol Label Switching è una tecnica utilizzato dai router in una backbone area
 Una volta che il traffico è stato classificato e messo in coda, il AG scheduler separa i vari traffici, fa shaping
 
 Ogni area border router ABR riceve pacchetti da una serie di access gateway e è anche un LER Label Edge Router in quanto aggiungono e rimuovono MPLS header

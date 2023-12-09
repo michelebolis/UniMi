@@ -1,7 +1,10 @@
 Classless Inter Domain Routing
-Sono state scartate le varie classi
 A varie organizzazioni vengono dati una certa porzione di indirizzamento libera
-ogni entry nei router dovrà avere un indirizzo di partenza e una maschera che filtrerà i bit di host ID
+
+Le tabelle di routing contengono l'indirizzo base, quanti bit utilizza la maschera (che definisce la divisione tra NetID e HostID), la maschera stessa 
+
+Vantaggi: uso piu efficiente dello spazio di indirizzamento
+Svantaggio: complicazione del routing dei pacchetti in quanto devo potenzialmente scorrere tutte le entry per trovare il SubNet giusto
 
 es Tabella di instradamento
 
@@ -24,6 +27,3 @@ Non ottengo la base di Milano
 Facendo la stessa cosa con Roma, ottengo l'indirizzo base di Roma
 Il pacchetto viene quindi instradato verso il SubNet di Roma
 
-Le tabelle di routing contengono quindi l'indirizzo base, quanti bit utilizza la maschera, la maschera stessa MA l'elaborazione della tabella è piu costosa in quanto devo potenzialmente scorrere tutte le entry per trovare il SubNet giusto
-
-CIDR ha liberato molto indirizzi IPv4

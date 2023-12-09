@@ -18,7 +18,7 @@
             }
           },
           {
-            "id": "009bfdf535e8d335",
+            "id": "218360fd270ca8ad",
             "type": "leaf",
             "state": {
               "type": "3d_graph_view",
@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "pattern",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -72,13 +72,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 283.5,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -180,9 +178,26 @@
       "3d-graph:3D Graph": false
     }
   },
-  "active": "bdd78e7dc8a45cb1",
+  "active": "218360fd270ca8ad",
   "lastOpenFiles": [
     "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/Architettura della rete.md",
+    "Reti di calcolatori/Libro/Riassunto libro.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/Interazione IPv4 - IPv6.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/IPv6 - Extensions headers.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/Differentiated services.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/RED Random Early Detection.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/QoS - FIFO.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/WFQ Weighted Fair Queuing.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/QoS (L3) da TCP.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/QoS (L3) da UDP.md",
+    "Reti di calcolatori/Libro/CAP6.2.pdf",
+    "Reti di calcolatori/Libro/CAP6.1.pdf",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/Audio streaming.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/Esempio Frammentazione.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/NetID.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/IPv4 - Formato.md",
+    "Reti di calcolatori/Untitled.md",
     "Reti di calcolatori/Appunti.md",
     "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Gitflow/Gerrit.md",
     "Sistemi biometrici/Img/Pasted image 20231115095746.png",
@@ -194,37 +209,20 @@
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Controllo del flusso.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Option.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Formato.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/UDP.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/TCP (Livello 3).md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Livello di Trasporto.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/ISO-OSI.md",
-    "Reti di calcolatori/Libro/Riassunto libro.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/IPv6.md",
-    "Root.md",
-    "Ricerca operativa/Slide/Index slide.md",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/img/Pasted image 20231127085607.png",
-    "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/Index ES.md",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/img/Pasted image 20231127085722.png",
-    "Linguaggi di programmazione/Linguaggi di programmazione.md",
     "Linguaggi di programmazione/Riassunti/Erlang/ES",
-    "Linguaggi di programmazione/Riassunti/Erlang/Erlang.md",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/ES.canvas",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
-    "Linguaggi di programmazione/Riassunti/Scala/Slide/Slide index.md",
-    "Linguaggi di programmazione/Riassunti/Scala/OO/Scala - OO.md",
     "Linguaggi di programmazione/Riassunti/Scala/img/Pasted image 20231207102600.png",
     "Linguaggi di programmazione/Riassunti/Scala/img",
-    "Ricerca operativa/Appunti.md",
     "Linguaggi di programmazione/Riassunti/Scala/Slide/14. advance in object-orientation.4.pdf",
     "Linguaggi di programmazione/Riassunti/Scala/Slide/13. traits.4.pdf",
     "Linguaggi di programmazione/Riassunti/Scala/OO",
     "Linguaggi di programmazione/Riassunti/Scala/Slide/12. scala overview.4.pdf",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Copertura delle decisioni",
-    "Ingegneria del software/Slide/IS2023-L17.pdf",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione",
     "Ingegneria del software/Riassunti/img/Pasted image 20231206103953.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231206102650.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231206102337.png",
