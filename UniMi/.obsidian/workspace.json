@@ -16,33 +16,6 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "c16c936cd3e91325",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1f4845186d4140e6",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
-                "viewState": {
-                  "x": 1128.4062058800246,
-                  "y": -443.0378189238054,
-                  "zoom": -1.9999999999999993
-                }
-              }
-            }
           }
         ]
       }
@@ -198,14 +171,16 @@
   },
   "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
+    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+    "Ingegneria del software/Ingegneria del software - Riassunto.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/Reti di calcolatori.md",
     "Reti di calcolatori/Reti di calcolatori - Riassunto.md",
     "Reti di calcolatori/Riassunti/Comunicazione broadcast/BEB -Binary Exponential Backoff.md",
     "Reti di calcolatori/img/Pasted image 20231210103041.png.~tmp",
     "Reti di calcolatori/img/Pasted image 20231210103041.png",
     "Reti di calcolatori/Libro/CAP2.pdf",
     "Reti di calcolatori/Libro/CAP3.pdf",
-    "Reti di calcolatori/Reti di calcolatori.md",
     "Reti di calcolatori/Riassunti/Rete introduzione/Affidabilita.md",
     "Reti di calcolatori/Libro/Riassunto libro.md",
     "Reti di calcolatori/Appunti.md",
@@ -228,7 +203,6 @@
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/Spanning tree broadcast.md",
     "Reti di calcolatori/Libro/CAP1.pdf",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/Architettura della rete.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/Interazione IPv4 - IPv6.md",
     "Reti di calcolatori/Libro/CAP6.2.pdf",
     "Reti di calcolatori/Libro/CAP6.1.pdf",
     "Sistemi biometrici/Img/Pasted image 20231115095746.png",
@@ -241,7 +215,6 @@
     "Linguaggi di programmazione/Riassunti/Scala/img/Pasted image 20231207102600.png",
     "Linguaggi di programmazione/Riassunti/Scala/img",
     "Linguaggi di programmazione/Riassunti/Scala/Slide/14. advance in object-orientation.4.pdf",
-    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Riassunti/img/Pasted image 20231206103953.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231206102650.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231206102337.png",
