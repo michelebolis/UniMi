@@ -44,8 +44,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -111,7 +110,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +126,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,9 +147,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas"
-              }
+              "state": {}
             }
           },
           {
@@ -201,10 +196,10 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "1f4845186d4140e6",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
-    "Reti di calcolatori/Reti di calcolatori - Riassunto.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/Reti di calcolatori - Riassunto.md",
     "Reti di calcolatori/Riassunti/Comunicazione broadcast/BEB -Binary Exponential Backoff.md",
     "Reti di calcolatori/img/Pasted image 20231210103041.png.~tmp",
     "Reti di calcolatori/img/Pasted image 20231210103041.png",
