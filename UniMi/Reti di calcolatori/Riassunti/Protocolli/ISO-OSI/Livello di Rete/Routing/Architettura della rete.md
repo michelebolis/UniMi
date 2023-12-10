@@ -14,4 +14,4 @@ Internet: collezione di AS Atonomous System
 Le varie aree0 sono collegate a Internet Backbone 
 - Tier 1: Internet Backbone -> [[BGP]]
 - Tier 2: AS gateway della rete regionale -> router backbone [[MPLS]]
-- Tier 3: reti di accesso / reti periferiche -> [[DV Distance Vector|DV]] o [[LS Link State|LS]]
+- Tier 3: reti di accesso / reti periferiche -> [[DV - Distance Vector|DV]] o [[LS - Link State|LS]]

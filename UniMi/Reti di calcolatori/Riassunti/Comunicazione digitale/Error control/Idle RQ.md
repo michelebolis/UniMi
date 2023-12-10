@@ -1,5 +1,5 @@
 Questo schema viene anche chiamato send-and-wait o stop-and-wait
-Opera in una modalità half-duplex
+Opera in modalità half-duplex
 
 Il mittente invia solo un I-frame alla volta, facendo partire un timer ogni volta che ne invia uno.
 - Il ricevente informa il mittente della corretta ricezione del frame con un acknowledgment o ACK-frame, in modo che il mittente resetti il timer e invii il successivo.
@@ -9,5 +9,3 @@ Il mittente invia solo un I-frame alla volta, facendo partire un timer ogni volt
 Per fare in modo che il destinatario determini che il frame ricevuto sia o meno un duplicato, ogni frame contiene un identificativo numerico di sequenza come anche ogni ACK associato all'i-esimo frame
 
 NACK non piace perché è un messaggio di controllo in piu e perché non serve a molto inducendo un ACK con semantica selettiva 
-
-[[Dimensionamento clock]]

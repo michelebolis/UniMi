@@ -18,26 +18,29 @@
             }
           },
           {
-            "id": "b2b46f900b39ee19",
+            "id": "c16c936cd3e91325",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reti di calcolatori/Libro/Riassunto libro.md",
+                "file": "Reti di calcolatori/Reti di calcolatori.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "08403e35f298f433",
+            "id": "1f4845186d4140e6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
-                "mode": "source",
-                "source": false
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
+                "viewState": {
+                  "x": 1128.4062058800246,
+                  "y": -443.0378189238054,
+                  "zoom": -1.9999999999999993
+                }
               }
             }
           }
@@ -108,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md"
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas"
               }
             }
           },
@@ -194,15 +197,24 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-importer:Open Importer": false,
-      "3d-graph:3D Graph": false
+      "3d-graph:3D Graph": false,
+      "obsidian-importer:Open Importer": false
     }
   },
-  "active": "08403e35f298f433",
+  "active": "1f4845186d4140e6",
   "lastOpenFiles": [
-    "Reti di calcolatori/Libro/Riassunto libro.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/QUIC.md",
+    "Reti di calcolatori/Reti di calcolatori - Riassunto.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/Riassunti/Comunicazione broadcast/BEB -Binary Exponential Backoff.md",
+    "Reti di calcolatori/img/Pasted image 20231210103041.png.~tmp",
+    "Reti di calcolatori/img/Pasted image 20231210103041.png",
+    "Reti di calcolatori/Libro/CAP2.pdf",
+    "Reti di calcolatori/Libro/CAP3.pdf",
+    "Reti di calcolatori/Reti di calcolatori.md",
+    "Reti di calcolatori/Riassunti/Rete introduzione/Affidabilita.md",
+    "Reti di calcolatori/Libro/Riassunto libro.md",
+    "Reti di calcolatori/Appunti.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/QUIC.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Invio continuo.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Fast Retrasmission.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Algoritmo di Nagle.md",
@@ -222,11 +234,6 @@
     "Reti di calcolatori/Libro/CAP1.pdf",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/Architettura della rete.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/Interazione IPv4 - IPv6.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/IPv6 - Extensions headers.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/Differentiated services.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/RED Random Early Detection.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/QoS - FIFO.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/WFQ Weighted Fair Queuing.md",
     "Reti di calcolatori/Libro/CAP6.2.pdf",
     "Reti di calcolatori/Libro/CAP6.1.pdf",
     "Sistemi biometrici/Img/Pasted image 20231115095746.png",
@@ -239,16 +246,12 @@
     "Linguaggi di programmazione/Riassunti/Scala/img/Pasted image 20231207102600.png",
     "Linguaggi di programmazione/Riassunti/Scala/img",
     "Linguaggi di programmazione/Riassunti/Scala/Slide/14. advance in object-orientation.4.pdf",
-    "Linguaggi di programmazione/Riassunti/Scala/Slide/13. traits.4.pdf",
-    "Linguaggi di programmazione/Riassunti/Scala/OO",
-    "Linguaggi di programmazione/Riassunti/Scala/Slide/12. scala overview.4.pdf",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Riassunti/img/Pasted image 20231206103953.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231206102650.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231206102337.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231206101300.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231206100955.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231206100617.png",
     "Ricerca operativa/Ricerca operativa.canvas",
     "Sistemi biometrici/Sistemi biometrici.canvas",
     "Sistemi embedded/Sistemi embedded.canvas"

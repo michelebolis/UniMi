@@ -1,2 +1,2 @@
 - [[QoS - FIFO]]
-- [[RED Random Early Detection]]
+- [[RED - Random Early Detection]]

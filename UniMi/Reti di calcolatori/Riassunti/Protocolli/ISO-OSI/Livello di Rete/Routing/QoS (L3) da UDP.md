@@ -1,1 +1,1 @@
-[[WFQ Weighted Fair Queuing]]
+[[WFQ - Weighted Fair Queuing]]

@@ -1,6 +1,6 @@
 Approccio deterministico
 
-Viene eletto una stazione a master, (es con un algoritmo distribuito): essa conosce la composizione della rete e ne fa parte.
+Viene eletto una stazione a `master`, (es con un algoritmo distribuito): essa conosce la composizione della rete e ne fa parte.
 Il master genera un token e lo invia attraverso un anello logico (es prima A poi B poi C) passando il token con round-robin
 Ogni stazione è istruita in modo tale che invii i suoi frame solo se ha il token. 
 SE una stazione con il token ha frame da inviare nel buffer, lo invia sul canale passando anche il token alla stazione successiva

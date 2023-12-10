@@ -10,6 +10,6 @@ Le reti LAN usano la trasmissione in banda base
 
 Quando si trasmette ogni tipo di segnale elettrico su una linea di trasmissione, il segnale è attenuato e distorto dal mezzo trasmissivo. Inoltre è sempre presente del rumore.
 
-Dobbiamo considerare che sono presenti sempre dei [[Tempi della trasmissione]]
-
-Essendo pero due sistemi distribuiti, hanno due clock diversi: è necessario capire quando inizia e quando finisce un bit, saranno quindi necessari algoritmi di sincronizzazione, [[Codifica di Manchester]]
+Problemi: 
+- Dobbiamo considerare che sono presenti sempre dei [[Tempi della trasmissione|tempi di trasmissione]]
+- Essendo pero due sistemi distribuiti, hanno due clock diversi: è necessario capire quando inizia e quando finisce un bit, saranno quindi necessari algoritmi di sincronizzazione, [[Codifica di Manchester]]

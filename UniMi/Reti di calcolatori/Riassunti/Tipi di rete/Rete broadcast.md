@@ -1,9 +1,9 @@
-Nel punto a punto, i nodi parlano in modo diretto ad un solo altro link 
-Nel topologia broadcast tutti sono collegati allo stesso dispositivo fisico, es [[Hub]] o bus, comunicando in broadcast
+Nella topologia punto a punto, i nodi parlano in modo diretto ad un solo altro link.
+Nel topologia `broadcast` tutti sono collegati allo stesso dispositivo fisico, es [[Hub]] o bus, comunicando in broadcast
 
-OSS nella topologia magliata per comunicare in broadcast dovrei mandare tanti messaggi quanti sono i nodi MA tutti riceverebbero il messaggio piu di una volta
+OSS nella topologia magliata/punto punto per comunicare in broadcast dovrei mandare tanti messaggi quanti sono i nodi MA tutti riceverebbero il messaggio piu di una volta
 
-Avendo garanzia che tutti nodi possano fare un check sull'indirizzo destinatario, ho la certezza che il messaggio arrivi al giusto destinatario.
+Nel broadcast, avendo garanzia che tutti nodi possano fare un check sull'indirizzo destinatario, ho la certezza che il messaggio arrivi al giusto destinatario.
 
 Ethernet è una rete broadcast.
 Per la parte fissa, inizialmente è nata come bus lineare

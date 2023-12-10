@@ -1,7 +1,9 @@
-Pacchetto al livello 3
-Frame al livello 2: oltre al header e al payload usa il CRC contenuto nella tail per rilevare eventuali errori
+- Livello 4: segmento
+- Livello 3: pacchetto
+- Livello 2: frame 
 
-Il concetto di indirizzamento c è a quasi tutti i livello (1, 2, 3, 4) ognuno con un proprio indirizzamento
-- Livello 2: MAC address
-- Livello 3: IP
+Il concetto di indirizzamento c è a quasi tutti i livello ognuno con un proprio indirizzamento
+
 - Livello 4 Port address
+- Livello 3: IP
+- Livello 2: MAC address
