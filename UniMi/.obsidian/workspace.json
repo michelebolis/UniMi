@@ -16,8 +16,48 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "35bc71883271b21c",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "viewState": {
+                  "x": 3409.7985297462474,
+                  "y": -2124.343094371931,
+                  "zoom": -1.4725056774438867
+                }
+              }
+            }
+          },
+          {
+            "id": "38b601db5e4cfdc9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Tecniche dinamiche.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "005a4b17ed3678cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/SW inspection.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -67,7 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 206.51103591918945
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -83,6 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/SW inspection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/SW inspection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +162,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/SW inspection.md"
+              }
             }
           },
           {
@@ -154,7 +198,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -169,57 +214,58 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c1ce2ce19829fc50",
+  "active": "005a4b17ed3678cd",
   "lastOpenFiles": [
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Tecniche dinamiche.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/SW inspection.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-    "Ingegneria del software/Ingegneria del software - Riassunto.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Category partition.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Test di frontiera.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Classi di equivalenza.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing delle interfacce.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Modelli statistici.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Test funzionale.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Black-White Box.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche per OO - Class Testing.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche per OO.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche per OO - Criteri di copertura.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Analisi mutazionale.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Analisi mutazione - Schema.md",
+    "Pasted image 20231211103116.png",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Analisi mutazionale - Operatori mutanti.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Analisi mutazionale - Generazione dei mutanti.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/BeBugging.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Copertura del budget.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Criteri di selezione.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Analisi Data Flow - File.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Copertura dei cammini DU.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Copertura degli usi.md",
+    "Ingegneria del software/Riassunti/img/Pasted image 20231211095048.png",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Copertura delle definizioni.md",
+    "Ingegneria del software/Riassunti/img/Pasted image 20231211094809.png",
+    "Ingegneria del software/Riassunti/img/Pasted image 20231211092708.png",
+    "Ingegneria del software/Riassunti/img/Pasted image 20231211090517.png",
+    "Ingegneria del software/Riassunti/img/Pasted image 20231211085348.png",
+    "Ingegneria del software/Riassunti/img/Pasted image 20231211093847.png",
     "Reti di calcolatori/Reti di calcolatori.canvas",
-    "Reti di calcolatori/Reti di calcolatori.md",
-    "Reti di calcolatori/Reti di calcolatori - Riassunto.md",
-    "Reti di calcolatori/Riassunti/Comunicazione broadcast/BEB -Binary Exponential Backoff.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Analisi Data Flow - Introduzione.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Sequenze Data Flow.md",
+    "Pasted image 20231211092102.png",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Regole Data Flow.md",
     "Reti di calcolatori/img/Pasted image 20231210103041.png.~tmp",
     "Reti di calcolatori/img/Pasted image 20231210103041.png",
     "Reti di calcolatori/Libro/CAP2.pdf",
     "Reti di calcolatori/Libro/CAP3.pdf",
-    "Reti di calcolatori/Riassunti/Rete introduzione/Affidabilita.md",
-    "Reti di calcolatori/Libro/Riassunto libro.md",
-    "Reti di calcolatori/Appunti.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/QUIC.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Invio continuo.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Fast Retrasmission.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Algoritmo di Nagle.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Cumulative ACK.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Calibrazione RTO.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Chiusura Half-Close.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Chiusura a 3 vie - 3 way close.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Chiusura a 4 vie - 4 way close.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/RTO.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/RTO expires.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/3 ACK duplicati.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Explicit Congestion Notification.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Dimensionamento della finestra di congestione.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Algoritmo di Clark.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Persistent Timer.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/Spanning tree broadcast.md",
     "Reti di calcolatori/Libro/CAP1.pdf",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/Architettura della rete.md",
     "Reti di calcolatori/Libro/CAP6.2.pdf",
     "Reti di calcolatori/Libro/CAP6.1.pdf",
     "Sistemi biometrici/Img/Pasted image 20231115095746.png",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto",
-    "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/img/Pasted image 20231127085607.png",
-    "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/img/Pasted image 20231127085722.png",
     "Linguaggi di programmazione/Riassunti/Erlang/ES",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/ES.canvas",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
-    "Linguaggi di programmazione/Riassunti/Scala/img/Pasted image 20231207102600.png",
     "Linguaggi di programmazione/Riassunti/Scala/img",
     "Linguaggi di programmazione/Riassunti/Scala/Slide/14. advance in object-orientation.4.pdf",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231206103953.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231206102650.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231206102337.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231206101300.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231206100955.png",
     "Ricerca operativa/Ricerca operativa.canvas",
     "Sistemi biometrici/Sistemi biometrici.canvas",
     "Sistemi embedded/Sistemi embedded.canvas"

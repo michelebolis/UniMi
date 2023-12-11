@@ -1,0 +1,2 @@
+Gli errori tendono ad accumularsi ai limiti del dominio, dovremmo quindi selezionare casi di test che esercitano i valori limite
+Il test di frontiera è complementare alle classi di equivalenza in quanto non seleziono un elemento a caso della classe MA un elemento ai confini

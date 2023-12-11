@@ -1,0 +1,4 @@
+- Coprire tutti i nodi: cioè coprire tutti gli stati del nostro oggetto
+- Coprire tutti gli archi: cioè coprire tutti i metodi per ogni stato
+- Coprire tutti i cammini identificabili nel grafo
+- Coprire tutte le coppie di archi in/out: considerando anche come sono arrivato in uno stato
