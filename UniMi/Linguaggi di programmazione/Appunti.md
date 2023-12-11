@@ -1054,3 +1054,19 @@ Si possono overiddare anche i campi
 quando faccio un object se definisco un apply e unapply, senza costruttore se scrivo Pair(1, "one"), sta usando l apply 
 type Pair(+A, +B) = Tuple2(A, B) con + la covarianza tra A e +A
 
+---
+
+Domain Specific Language 
+es HTML
+DLS interni sono una maniera ideomatica di scrivere codice nel linguaggio general purpose
+Vantaggi
+- non è necessario un parser perche uso quello del general purpose
+...
+
+DLS esterno
+
+...
+
+1 + Money
+compilatore controlla se ci sono metodi implicit da BigDecimal a Money
+

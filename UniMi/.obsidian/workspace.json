@@ -50,7 +50,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/SW inspection.md",
+                "file": "Linguaggi di programmazione/Appunti.md",
                 "mode": "source",
                 "source": false
               }
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/SW inspection.md",
+                "file": "Linguaggi di programmazione/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/SW inspection.md",
+                "file": "Linguaggi di programmazione/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/SW inspection.md"
+                "file": "Linguaggi di programmazione/Appunti.md"
               }
             }
           },
@@ -216,8 +216,8 @@
   },
   "active": "005a4b17ed3678cd",
   "lastOpenFiles": [
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Tecniche dinamiche.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/SW inspection.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Tecniche dinamiche.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Category partition.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Test di frontiera.md",
