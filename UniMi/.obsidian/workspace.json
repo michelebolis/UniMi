@@ -25,9 +25,9 @@
               "state": {
                 "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "viewState": {
-                  "x": 3409.7985297462474,
-                  "y": -2124.343094371931,
-                  "zoom": -1.4725056774438867
+                  "x": 3954.4303850622027,
+                  "y": -4558.0720031594665,
+                  "zoom": -1.8226845614012654
                 }
               }
             }
@@ -57,7 +57,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md",
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linguaggi di programmazione/Appunti.md"
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas"
               }
             }
           },
@@ -214,8 +214,9 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "005a4b17ed3678cd",
+  "active": "35bc71883271b21c",
   "lastOpenFiles": [
+    "Linguaggi di programmazione/Appunti.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/SW inspection.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Tecniche dinamiche.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
@@ -251,7 +252,6 @@
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Analisi Data Flow - Introduzione.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Sequenze Data Flow.md",
     "Pasted image 20231211092102.png",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Regole Data Flow.md",
     "Reti di calcolatori/img/Pasted image 20231210103041.png.~tmp",
     "Reti di calcolatori/img/Pasted image 20231210103041.png",
     "Reti di calcolatori/Libro/CAP2.pdf",

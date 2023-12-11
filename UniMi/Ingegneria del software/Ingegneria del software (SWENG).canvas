@@ -13,7 +13,7 @@
 		{"id":"0f78c09f017840d2","type":"group","x":-2180,"y":-584,"width":3840,"height":1738,"color":"#0e5328","label":"Processi di gestione del SW: introduzione"},
 		{"id":"cccd9499c30b9802","type":"group","x":-5782,"y":-7320,"width":3051,"height":2157,"color":"#a97575","label":"Design knoledge"},
 		{"id":"f1f01b7c1e86ddf6","type":"group","x":-2620,"y":-8860,"width":2301,"height":2502,"label":"UML"},
-		{"id":"c23ad30d2f18932a","type":"group","x":160,"y":-4593,"width":1580,"height":1543,"label":"Data Flow"},
+		{"id":"c23ad30d2f18932a","type":"group","x":160,"y":-4520,"width":1580,"height":1470,"label":"Data Flow"},
 		{"id":"cc5e888b9e49dc6d","type":"file","file":"Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Metodologie agili/eXP/eXP - Tecniche/Proprietà collettiva.md","x":-7320,"y":8311,"width":520,"height":251},
 		{"id":"c93ca060b5c4a816","type":"file","file":"Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Metodologie agili/eXP/eXP - Tecniche/Integrazione continua.md","x":-7379,"y":8619,"width":638,"height":291},
 		{"id":"dcae5b1ffdc70be0","type":"file","file":"Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Metodologie agili/eXP/eXP - Tecniche/Standard di codifica.md","x":-5858,"y":8517,"width":343,"height":205},
@@ -177,7 +177,6 @@
 		{"id":"62bc12a917b916f1","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/UML/UML - Scenari.md","x":-879,"y":-7280,"width":540,"height":900,"color":"1"},
 		{"id":"3a039260b4d47b58","type":"file","file":"Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Metodologie agili/eXP/eXP - Tecniche/Testing.md","x":-7453,"y":7070,"width":653,"height":240},
 		{"id":"0d37f6ef212e0cb8","type":"file","file":"Ingegneria del software/Riassunti/Macroargomenti.md","x":-200,"y":-1480,"width":300,"height":50},
-		{"id":"645667bc1c2850cc","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Sequenze Data Flow.md","x":1280,"y":-4573,"width":360,"height":739},
 		{"id":"bdfb5f5b8e839212","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Regole Data Flow.md","x":740,"y":-4294,"width":500,"height":460},
 		{"id":"c2fd1f48d00c28b4","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Compilatori - Analisi.md","x":180,"y":-4211,"width":520,"height":377},
 		{"id":"016092f7c142ae94","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche di verifica e convalida.md","x":1140,"y":-2556,"width":400,"height":480,"color":"1"},
@@ -196,8 +195,8 @@
 		{"id":"151320ee3bbc1efc","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche per OO - Criteri di copertura.md","x":2000,"y":-1399,"width":640,"height":251},
 		{"id":"702eca9c702a71fd","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Copertura dei cammini.md","x":4782,"y":-5476,"width":614,"height":268,"color":"1"},
 		{"id":"9f759fdb07eefff4","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/N-Copertura dei cicli.md","x":4782,"y":-5137,"width":614,"height":328,"color":"1"},
-		{"id":"37029beecaf145a1","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Copertura degli usi.md","x":4823,"y":-4433,"width":520,"height":1185},
-		{"id":"ab9426f7628d9c77","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Copertura delle definizioni.md","x":5436,"y":-5229,"width":520,"height":1185},
+		{"id":"37029beecaf145a1","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Copertura degli usi.md","x":4823,"y":-4433,"width":520,"height":1033},
+		{"id":"ab9426f7628d9c77","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Copertura delle definizioni.md","x":5436,"y":-5229,"width":520,"height":1042},
 		{"id":"c300c8a5d93ff9e9","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Copertura delle condizioni composte.md","x":3796,"y":-5937,"width":520,"height":455,"color":"1"},
 		{"id":"cbb6707d9e71b946","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Copertura del budget.md","x":3923,"y":-4113,"width":553,"height":200},
 		{"id":"e30efa2c33be27d8","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Copertura dei cammini DU.md","x":4203,"y":-4433,"width":546,"height":246},
@@ -223,7 +222,8 @@
 		{"id":"f9d0d7118d494cf0","x":4903,"y":-2683,"width":533,"height":212,"type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Test di frontiera.md"},
 		{"id":"1fd684b7469b5e19","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Analisi mutazionale - Operatori mutanti.md","x":4100,"y":-3207,"width":580,"height":630},
 		{"id":"fad72ace9d5bceab","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Analisi mutazionale - Generazione dei mutanti.md","x":3463,"y":-3200,"width":580,"height":260},
-		{"id":"ae7899f3d5d94d32","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Test funzionale.md","x":4147,"y":-2417,"width":533,"height":537}
+		{"id":"ae7899f3d5d94d32","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Test funzionale.md","x":4147,"y":-2417,"width":533,"height":537},
+		{"id":"645667bc1c2850cc","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Sequenze Data Flow.md","x":1280,"y":-4447,"width":360,"height":613}
 	],
 	"edges":[
 		{"id":"2b5b30c34a79acbe","fromNode":"a2ed117451add2c3","fromSide":"left","toNode":"432ce7ecdf2a72f4","toSide":"right","label":"6"},

@@ -9,7 +9,7 @@ Un test T soddisfa il criterio di copertura delle definizioni SE e SOLO SE per o
 $T \in C$ SE e SOLO SE $\forall i \in P, \forall x \in def(i), \exists j \in du(x,i), \exists t \in T$ che esegue un cammino da $i$ a $j$ senza definizioni di $x$
 
 es 
-![[Pasted image 20231211093847.png]]
+![[Pasted image 20231211093847.png|300x400]]
 
 Considerando la variabile a:
 $du(a, 5) = \{7, 8, 9, 11, 12\}$
