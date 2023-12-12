@@ -45,6 +45,21 @@
             }
           },
           {
+            "id": "88b1cb1c1b76dd2d",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+                "viewState": {
+                  "x": -3369.103728272633,
+                  "y": -586.1600230268508,
+                  "zoom": -0.10267572705388589
+                }
+              }
+            }
+          },
+          {
             "id": "98cede34521ab459",
             "type": "leaf",
             "state": {
@@ -57,7 +72,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -123,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Introduzione.md",
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Introduzione.md",
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Introduzione.md"
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas"
               }
             }
           },
@@ -213,8 +228,9 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c434c209ddc4ccd2",
+  "active": "88b1cb1c1b76dd2d",
   "lastOpenFiles": [
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Introduzione.md",
     "Pasted image 20231212133154.png",
     "Pasted image 20231212132724.png",
     "Pasted image 20231212132707.png",
@@ -222,7 +238,6 @@
     "Pasted image 20231212132459.png",
     "Pasted image 20231212132446.png",
     "Pasted image 20231212132403.png",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Introduzione.md",
     "Pasted image 20231212132345.png",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Pasted image 20231212132144.png",
@@ -257,7 +272,6 @@
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Modelli statistici.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Test funzionale/Test funzionale.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Tecniche per OO/Black-White Box.md",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231211095048.png",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Reti di calcolatori/img/Pasted image 20231210103041.png.~tmp",
     "Reti di calcolatori/Libro/CAP2.pdf",
