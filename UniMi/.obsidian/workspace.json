@@ -18,19 +18,46 @@
             }
           },
           {
-            "id": "b322fa342ba6f75c",
+            "id": "85e330778f818e46",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "viewState": {
+                  "x": 4919.03247131756,
+                  "y": -306.20066444687563,
+                  "zoom": -1.4166666666666663
+                }
+              }
+            }
+          },
+          {
+            "id": "c434c209ddc4ccd2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reti di calcolatori/Appunti lab.md",
+                "file": "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Introduzione.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "98cede34521ab459",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ingegneria del software/Appunti.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -96,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Appunti lab.md",
+                "file": "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Introduzione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Appunti lab.md",
+                "file": "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Introduzione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reti di calcolatori/Appunti lab.md"
+                "file": "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Introduzione.md"
               }
             }
           },
@@ -186,17 +213,28 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "b322fa342ba6f75c",
+  "active": "c434c209ddc4ccd2",
   "lastOpenFiles": [
-    "Ingegneria del software/Riassunti/img/Pasted image 20231211103116.png",
+    "Pasted image 20231212133154.png",
+    "Pasted image 20231212132724.png",
+    "Pasted image 20231212132707.png",
+    "Pasted image 20231212132524.png",
+    "Pasted image 20231212132459.png",
+    "Pasted image 20231212132446.png",
+    "Pasted image 20231212132403.png",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Introduzione.md",
+    "Pasted image 20231212132345.png",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+    "Pasted image 20231212132144.png",
+    "Ingegneria del software/Appunti.md",
+    "Reti di calcolatori/Appunti lab.md",
+    "Ingegneria del software/Riassunti/img/Pasted image 20231211103116.png",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Tecniche per OO",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Analisi Data Flow",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/SW Inspection",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Test funzionale",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Analisi mutazionale",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Introduzione.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Debugging/Debugging.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Debugging/Debugging - Debugging per prova.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Debugging/Debugging - Debugging simbolico.md",
@@ -219,22 +257,12 @@
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Modelli statistici.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Test funzionale/Test funzionale.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Tecniche per OO/Black-White Box.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Tecniche per OO/Tecniche per OO - Class Testing.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Tecniche per OO/Tecniche per OO.md",
     "Ingegneria del software/Riassunti/img/Pasted image 20231211095048.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231211094809.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231211092708.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231211090517.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231211085348.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231211093847.png",
     "Reti di calcolatori/Reti di calcolatori.canvas",
-    "Pasted image 20231211092102.png",
     "Reti di calcolatori/img/Pasted image 20231210103041.png.~tmp",
-    "Reti di calcolatori/img/Pasted image 20231210103041.png",
     "Reti di calcolatori/Libro/CAP2.pdf",
     "Reti di calcolatori/Libro/CAP3.pdf",
     "Reti di calcolatori/Libro/CAP1.pdf",
-    "Sistemi biometrici/Img/Pasted image 20231115095746.png",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/ES.canvas",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Ricerca operativa/Ricerca operativa.canvas",
