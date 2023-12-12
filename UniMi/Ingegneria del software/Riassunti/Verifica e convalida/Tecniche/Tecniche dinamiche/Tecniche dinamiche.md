@@ -4,4 +4,4 @@ Tecniche dinamiche sono basate sull'esecuzione del programma eseguibile (MA espl
 - [[Debugging]]
 - [[Analisi mutazionale]]
 - [[Test funzionale]]
-- [[SW inspection]]
+- [[SW Inspection - Introduzione]]

@@ -2,3 +2,4 @@
 [[Tecniche statiche]]
 [[Tecniche dinamiche]]
 [[Tecniche per OO]]
+[[Confronto tecniche di verifica e convalida]]
