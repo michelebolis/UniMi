@@ -37,7 +37,7 @@ ES abilitazioni
 
 Regola abilitazioni: $\forall p \in Pre(t), M(p) \geq W(<p,t>)$
 
-Relazioni: sequenza
+Relazione di sequenza
 Una transizione $t_1$ è in sequenza con una transizione $t_2$ in una marcatura $M$ SE e SOLO SE
 $M[t_1 > \wedge \neg M[t_2 \wedge M[t_1t_2 >$
 - $t_1$ è abilitata in $M$
@@ -50,4 +50,25 @@ $T_0$ è in sequenza con $T_1$
 $T_0$ è in sequenza con $T_2$
 $T_3$ è in sequenza con $T_2$
 
-Relazioni: conflitto
+Relazione di conflitto
+Due transizioni $t_1$ e $t_2$ sono in conflitto
+- Strutturale SE e SOLO SE $pre(t_1) \cap pre(t_2) \neq \emptyset$
+- Effettivo in una marcatura M SE e SOLO SE 
+$$M[t_1 > \wedge \text{ }M[t_2 > \wedge\text{ } \exists p \in pre(t_1) \cap pre(t_2),\text{ }M(p) < W(<p, t_1>) + W(<p, t_2>)$$
+$t_1$ e $t_2$ sono abilitate in $M$ e esiste un posto $p$ in ingresso a entrambe le transizioni che non ha abbastanza token per farle scattare entrambe
+
+![[Pasted image 20231212154844.png]]
+
+Relazione di concorrenza
+Due transizioni $t_1$ e $t_2$ sono in concorrenza
+- Strutturale SE e SOLO SE $pre(t_1) \cap pre(t_2) \neq \emptyset$
+- Effettiva in una marcatura M SE e SOLO SE
+$$M[t_1 > \wedge \text{ }M[t_2 > \wedge\text{ } \forall p \in pre(t_1) \cap pre(t_2),\text{ }M(p) \geq W(<p, t_1>) + W(<p, t_2>)$$
+$t_1$ e $t_2$ sono abilitate in $M$ e tutti i posti in ingresso a entrambe le transizioni che hanno abbastanza token per farle scattare entrambe
+
+![[Pasted image 20231212155127.png]]
+
+Insieme di raggiungibilità
+L'insieme di raggiungibilità di una rete, a partire da una marcatura $M$, è il piu piccolo insieme di marcature t.c.
+$M \in R(P / T, M)$
+$(M' \in R(P/T,\text{ }M) \wedge \exists t \in T,\text{ }M'[t > M'') \implies M'' \in R(P/T,\text{ }M)$
