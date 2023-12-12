@@ -451,3 +451,8 @@ OSPF (SOLO via CLI)
 - area 1 stub (noi consideriamo tutti i router nella stessa area; stub: area non è utilizzata per attraversamento di traffico per altre aree)
 - network reteCheConosco \<wildcard> area 1 (wildcard è la negazione della netmask perche or bit a bit è piu veloce che fare l and con la netmask)
 
+---
+
+Java Socket
+ATT alcune entita potrebbero essere server per altre entita e contemporaneamente client per altre
+
