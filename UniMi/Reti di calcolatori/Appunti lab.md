@@ -464,3 +464,7 @@ Parametri
 - protocollo: TCP o UDP (lo diciamo implicitamente usando la classe che implementa o uno o l altro)
 
 socket definita da una quintupla \<protocollo, IP(src), porta(src), IP(dest), port(dest)>
+
+InetAddresses da libreria standard di Java
+getLocalHost() restituisce l'indirizzo dell host locale, in particolare l interfaccia ET(0) (window ipconfig; Unix ipconf)
+getByName("localhost") = 127.0.0.X indirizzo di loopback usato in fase di bootstrap (NON USARE perche non arriva mai al livello 3 ma torna indietro)
