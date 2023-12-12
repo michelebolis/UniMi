@@ -456,3 +456,11 @@ OSPF (SOLO via CLI)
 Java Socket
 ATT alcune entita potrebbero essere server per altre entita e contemporaneamente client per altre
 
+Le socket sono librerie di funzioni che permettono di accedere ai servizi di kernel per la rete
+Parametri
+- dominio:
+	- Unix
+	- Internet
+- protocollo: TCP o UDP (lo diciamo implicitamente usando la classe che implementa o uno o l altro)
+
+socket definita da una quintupla \<protocollo, IP(src), porta(src), IP(dest), port(dest)>
