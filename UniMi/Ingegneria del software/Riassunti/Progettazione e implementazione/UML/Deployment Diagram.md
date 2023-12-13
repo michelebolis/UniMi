@@ -1,10 +1,9 @@
 Permette di specificare la dislocazione fisica delle istanza di componenti
 Permette di avere un vista statica della configurazione a run-time
-Utile agli installatori
+Utile per il deployer, ovvero che si occupa dell'installazione fisica del sistema.
 
-Permette di specificare
-- I nodi del sistema, cioe le macchine fisiche
-- I collegamenti tra i nodi, es RMI, HTTP...
-- La dislocazione delle istanze di componenti all'interno dei nodi e le loro relazioni (simile al component diagram MA tra istanza)
+Specifiche
+- I nodi del sistema indicano le macchine fisiche
+- I collegamenti tra i nodi indicano le modalità di comunicazione, es RMI, HTTP...
 
-![[Pasted image 20231206101300.png]]
+![[Pasted image 20231206101300.png|350x300]]

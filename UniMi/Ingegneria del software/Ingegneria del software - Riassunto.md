@@ -148,4 +148,4 @@
 		![[Spy Object]]
 			![[Spy Object - Mockito]]
 		![[Fake Object]]
-	![[UML diagram]]
+	![[UML Diagram]]
