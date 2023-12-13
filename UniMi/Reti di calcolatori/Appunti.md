@@ -1585,4 +1585,128 @@ QUIC a livello di trasporto permette di avere piu stream concorrenti e indipende
 Visto che UDP non garantisce nulla, QUIC fa tutti i controlli che fa TCP
 Mentre TCP e UDP lavoro a livello Kernel, QUIC lavora a livello User 
 
+---
 
+Head Of Line Blocking
+Immaginiamo di avere 3 messaggi che, essendo visti come un unico byte stream, quest'ultimo viene segmentato a prescindere da cosa sia contenuto nei sgementi ottenuti
+es 
+Segmento 3: M3 | M2
+Segmento 2: M2 | M1
+Segmento 1: M1
+
+SE viene perso S2, alla ricezione se riceve S3 non puo mandare l ACK MA dal punto di vista dell'applicazione in S3 ci sarebbe tutto il messaggio 3 in quanto indipendente dal Segmento 2
+
+
+Livello applicazione
+DNS
+Come funzionano le mail SMTP (IMAP)
+HTTP 1/2/3
+
+DNS Domain Name System
+Per contattare il server di una pagina web potrei utilizzare il suo IP MA è ovviamente piu semplice utilizzare il suo nome simbolico
+DNS traduce un nome in un indirizzo IP
+
+Utilizzi:
+- modo semplice per indirizzare un host a un server nella rete
+- disaccoppiare nome-server per il load balancing: smistare le varie richieste sui vari server in base alla posizione geografica (o in round roubin per bilanciare le richieste per il sito)
+
+Schema: 
+- unico file: subito scartato
+- gerarchico
+0. root domain rappresenta dei DNS che riesce a dare info sui domini di primo livello 
+1. domini di primo livello: gestiti da un ente, ICANN Internet Corporation for Assigned Names and Numbers 
+- domini generici: es edu, gov, org...
+- domini dei paesi: es uk, us, ...
+
+2. domini delle associazioni (delega della gestione): es comsoc.ieee.org -> ieee gestisce comsoc
+
+un nome DNS è identificato da un fully qualified domain name
+1. Per essere human readable è rappresentata in dot notation es \www.di.unimi.it. (ATT a livello di standard c è un `.` finale ma in realtà è messo automaticamente)
+2. Dal punto di vista della macchina è rappresentato come una stringa di byte, mettendo il numero di byte di ogni label es 3www2di5unimi2it0
+
+Obiettivo: da \www.unimi.it vogliamo avere 159.149.141.141:80
+Vengono fatte delle query SQL mandando dei messaggi con il protocollo DNS
+- Lato host: il browser chiede a un resolver di tradurre le stringhe in numeri attraverso il SO. Viene fatta una cache temporanea per memorizzare i risultati delle query DNS fatte precedentemente
+- Local name server: ha un servizio aperto sulla porta 53 che utilizza UDP. Il resolver manda un query DNS al local name server (al primario, secondario per ridondanza). 
+	- SE la risposta è nota al local name server viene mandata una response DNS con il record corrispondente (includendo un TTL). 
+	- SE la risposta non è nota, utilizza una porta X utilizzando UDP per richiedere la stessa traduzione ad altri DNS
+
+Formato record:
+- Numero variabile di parole a 32 bit di FullyQualifiedDomainName
+- 16 bit di type in quanto ci sono diverse tipologie di record
+	- SOA Start of authority: da i parametri della zona che sya gestendo il server
+	- A: IPv4
+	- AAAA: IPv6
+	- MX: Mail Exchange
+	- NS: Name server restituisce l IP del server DNS
+	- CNAME: alias del server
+	- Pointer: per la mappatura da indirizzo IP a nome
+- 16 bit di class, sempre = 1 cioè Internet
+- 32 bit di TTL in secondi di memorizzazione del record in cache
+- 16 bit length
+- record data cioè l'indirizzo richiesto
+
+Formato query
+- 32 bit query header
+- 32 bit query domain name
+- 16 bit query type -> record type 
+- 16 bit query class
+DNS response message: alla query vengono aggiunti 32 bit di Resource record
+
+Risoluzione
+1. Host host.di.uni.it manda una DNS query chiedendo www.google.com al local name server all indirizzo ns.di.unimi.it (per configurazione). Si opera iterativamente, cercando la risorsa partendo dal dominio piu esterno (ITERATIVO = RICORSIVO)
+2. mando a root una DNS query chiedendo www.google.com. La root non conoscendo tale nome, risponde con l indirizzo IP del domain name server di .com
+3. mando a .com una DNS query chiedendo www.google.com. Il domain name server .com non riesce a risolvere, quindi manda l'indirizzo IP di google.com
+4. mando a google.com una DNS query chiedendo www.google.com e stavolta risponde con un record A con l IP 
+
+Invece di contattare la root avremmo potuto chiedere a un DNS piu vicino, cioè a .com
+
+
+SMTP Simple Mail Transport Protocol
+Protocollo per l invio di mail tra due soggetti
+
+Email client - Email server nella rete ISP Internet Server Provider - AG - Global Internet - AG - Email server - Email client
+
+MS locale: è nel file system
+MS server mail: è nei dischi del server
+
+UA User Agent client si interfaccia con un altro UA sul Email server
+UA prende la mail e la mette code e poi arriva al MTA Mail Transfer Agent che mandera la mail al nome@dominio utilizzando DNS per risolvere il nome simbolico del destinatario. Il trasferimento viene fatto con SMTP a livello 5 e TCP al livello 4
+Il destinatario usera IMAP/POP 3 per aggiornare le mail in arrivo (Si occupa della ricezione e sincronizzazione)
+
+Protocollo | Numero di porta
+POP 3 110/995 Post Office Protocol
+IMAP 143/993 (socket non sicure/socket sicure)
+STMP 25/2525/587 (TLS esplicito cioe connessione sicura)/465 (TLS implicito)
+
+
+Formato logico
+Separazione tra header e body fatta da UA con una linea vuota (\\n\\n), usando TCP non c è una separazione ma è tutto byte stream quindi viene fatto al livello 5
+- Usato MTS System: 
+	- Messi dallo UA: from, to, Cc (Carbon copy), BCC (Blind Carbon Copy non è esplicito agli altri che ho ricevuto anche io la mail)
+	- Messi nell header man mano che la mail procede: received (per avere la traccia che ha percorsa la mail), Return-Past (ultimo MTA)
+- Usato da UA: sender, date, message-id (id messo dallo UA), reply-to (usera questa mail invece che from se il destinatario vuole rispondere), oggetto
+- X-...: header definiti dall'utente es X-PhoneNumber
+
+I campi dell'header sono letteralmente "To: nome@dominio"
+
+UA vuole mandare una mail. Contatta lo UA server il cui IP è noto. La parte client del MTA preleva dalla coda in cui c è la mail. Legge from, to e Cc e SE non conosce il dominio, usa il resolver per ottenere l indirizzo IP con DNS (in partizolare MX). Una volta risolto con una porta X apro una connessione TCP con l altro email server con HELO Mailserver-name.
+Viene mandato MAIL FROM: \<email del sender>
+Viene mandato RCPT TO: \<email>
+Vengono aggiunti la riga vuota
+Data
+QUIT
+La mail arrivata all altro server, viene messa nell IN Mailbox. Periodicamente l'UA client chiede se ci sono nuove mail all'UA del server e dato che c è, viene inviata al client
+
+
+Contenuto
+MIME Multipurpose Internet Mail Extensions permette di diversificare il tipo di contenuto dando a chi riceve la possibilita di riconoscere cio che è contenuto in modo da poterlo decodificare
+
+Header
+...
+Content-type: che tipo di contenuto c è ; Boundary = "delimitatore"
+Content-Transfer-Encoding: la codifica utilizzata
+Content-length:
+
+Type (Tipo/sottotipo es Text/Plain)
+Multipart/Mized quando allego qualcosa
