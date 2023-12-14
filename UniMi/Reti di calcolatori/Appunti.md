@@ -1713,3 +1713,144 @@ Multipart/Mized quando allego qualcosa
 
 ---
 
+Codifica Base64
+I file allegati sono file binari che possono contenere qualsiasi cosa e quindi non abbiamo controllo sui possibili caratteri (potrebbe contenere \\n o un boundary)
+Si attua quindi una codifica Base64
+I caratteri ammessi in Base64 sono un sottoinsieme di quello ASCII
+
+Vantaggio: ogni bit non andra a interferire con i caratteri speciali delle mail
+
+Procedimento: si prende lo stream di bit, lo si converte in gruppi da 6 bit (si fa eventualmente padding con il carattere = (0111101) ), lo si riporta al carattere ASCII e infine lo si converte ai bit corrispondenti
+
+es
+Codifica
+0. File binario: 10010101 11011100 00111011 01011000
+1. Aggiungiamo come padding: 00111101 00111101
+2. Dividiamo in gruppi da 6 bit:
+10010101 11011100 00111011 | 01011000 00111101 00111101
+24 bit | 24 bit
+
+Primo gruppo:
+100101 | 011101 | 110000 | 111011 
+3. Passiamo in esadecimale 100101 -> 10 | 0101
+2 5 | 1 D | 3 0 | 3 B
+4. Codifico l'HEX nel carattere della tabella
+`l` | `d` | `w` | `7`
+5. Riporto in bit i caratteri usando la codifica ASCII (primo bit sempre a 0)
+01101100 | 01100100 | 01110111 | 00110111
+
+Secondo gruppo: 
+010110 | 000011 | 110100 | 111101  
+3. Passiamo in esadecimale
+1 6 | 0 3 | 3 4 | 3 D
+4. Codifico l'HEX nel carattere della tabella
+`W` | `D` | `0` | `9`
+5. Riporto in bit i caratteri usando la codifica ASCII
+01010111 | 01000100 | 00110000 | 00111001
+
+Quello che viene inviato è quindi 
+01101100 01100100 01110111 00110111 01010111 01000100 00110000 00111001
+Da 32 bit mandiamo 64 bit
+
+
+Decodifica
+0. Ricevo: 01101100 01100100 01110111 00110111 01010111 01000100 00110000 00111001
+1. Divido in gruppi di 8 bit
+01101100 | 01100100 | 01110111 | 00110111 | 01010111 | 01000100 | 00110000 | 00111001
+2. Passo da bit a ASCII
+`l` | `d` | `w` | `7` | `W` | `D` | `0` | `9`
+3. Uso la tabella e traduco in HEX
+2 5 | 1 D | 3 0 | 3 B | 1 6 | 0 3 | 3 4 | 3 D
+4. Passiamo in binario
+100101 | 011101 | 110000 | 111011 | 010110 | 000011 | 110100 | 111101 
+5. Dividiamo in gruppi da 8 bit
+10010101 | 11011100 | 00111011 | 01011000 | 00111101 | 00111101 
+6. Tolgo il padding individuandolo come codifica in binario del carattere =
+10010101 | 11011100 | 00111011 | 01011000
+Ho ottenuto lo stream iniziale
+
+
+HTTP Hyper Text Transfer Protocol
+E' utilizzato oggi non solo per gli hyper text ma oggi anche per la parte di API REST
+Da HTTP/1 a HTTP/2 utilizzano TCP
+HTTP/3 invece usa CUIC-UDP
+
+- HTTP/1.0 1996 da Berners-Lee RFC-1945
+- HTTP/1.1 1997 RFC-2068
+- HTTP/2 2015 RFC-7540
+- HTTP/3 2022 RFC-9114
+
+HTTPS quando si usano socket TLS
+TLS Transport Layer Security: quando c è una richiesta HTTP, si chiede all entita TCP/UDP mentre con TLS HTTP passa prima per TLS, che aggiunge un proprio header, e poi si passa a TCP/UDP
+
+HTTP e HTTPS incompatibili
+
+
+HTTP 1.X
+E' un protocollo pensato per richiesta-risposta da client a server 
+Tutto in ASCII
+Formato dei messaggi
+- header: composto da N linee simboleggiate da un \\n
+	- prima linea distingue richiesta e risposta
+		- Richiesta: \<metodo HTTP> \<URL> \<versioneProtocollo> 
+		- es GET /index.html HTTP/1.1 (metodi: GET/POST/PUT/DELETE/...)
+		- Risposta: \<codice> \<testo del codice>
+		- es 200 OK / 404 NOT FOUND
+	- Header per la richiesta
+		- User-Agent: informazioni sul browser (versione) e la piattaforma (PC, desktop)
+		- Accept: tipi di pagine che puo gestire
+		- Accept-Charset: es UTF8
+		- Accept-Ecoding: che encoding usa
+		- Accept-Language: il inguaggio natura che gestisce
+		- If-Modified-Since: risponde solo se è modificato dalla data
+		- Host: nome del DNS
+		- Authorization: per mettere utente-password
+		- Referrer: SE richiesta arriva da richiesta precedente
+		- Cookie: per informazioni di stato
+	- Header per la risposta
+		- Server: info sul server
+		- Content-..: informazioni sul contenuto
+		- Last-Modified
+		- Expires: da quando non è piu valida la pagina
+		- Location: per redirect
+	- Header user defined X-...
+- body
+Header e body delimitati da linea vuota
+Body termina con linea vuota
+
+
+Cookie
+Sono piccoli file che il server invia al client al fine di memorizzare informazioni che serviranno in seguito
+Nella risposta c è Set-Cookie: cookie1=...; cookie2=...;
+settati come chiave=valore
+
+Quando il client effettua una richiesta, nell'header invia anche i Cookie
+
+
+HTTP schema
+...
+
+HTTP 1.1
+SE devo trasferire tanti dati su una connessione TCP, inizialmente ho uno slow start MA se dopo pochi secondi faccio un altra richiesta, si apre una nuova connessione ricominciando con lo slow start
+Con l opzione KeepAlive possiamo mantenere aperta la connessione per un certo tempo
+Dalla fine dell inizio della connessione, uso la stessa connessione, anche se inutilizzata, finche non chiudo la pagina o non finisce il KeepAlive
+
+SE so che devo inviare N richieste, è inutile che ne invii una alla volta aspettandone la risposta
+Request pipeline: invio tutte le richieste e aspetto tutte le risposte
+Limite: l ordine con cui restituisco le risposte deve essere lo stesso con cui ho ricevuto le richieste (a livello di protocollo il client non riesco a riconoscere le richieste che ha fatto)
+Svantaggi: l'ordinamento cosi definito non ottimizza le risposte in quanto SE invio A e B, e A è piu pesante di B, A "rallenta" B (complica la gestione delle risorse)
+
+Per ottimizzare il client apre piu connessioni parallelizzando
+Problema lato server 
+
+
+HTTP 2
+Risolve il problema di HeadOfLine a livello applicazione 
+Feature
+- Le informazioni sono mandati in binario compresso
+Vantaggio: risparmiando banda
+Svantaggio: richiede la compressione e la decompressione
+- Creazione, sulla stessa connessione, di piu stream paralleli indipendenti
+- Il server sa gia che quando manda una pagina HTML, il client gli mandera delle richieste 
+QUINDI il server oltre alla pagina, manda gia le risorse (risposta senza richiesta)
+
