@@ -1,5 +1,5 @@
 Standard teorico
-- Applicazione: protocollo che mette in comunicazione due applicazioni (es http, DNS, IMAP, REST)
+- [[Livello Applicazione]]: protocollo che mette in comunicazione due applicazioni (es HTTP, DNS, IMAP, REST)
 - Presentazione: fare in modo che i dati siano presentati opportunamente, quindi i dati sono compressi e decompressi
 - Sessione: mantenimento di una connessione virtuale tra i due host
 - [[Livello di Trasporto]]

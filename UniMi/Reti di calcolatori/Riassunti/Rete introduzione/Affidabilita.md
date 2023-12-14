@@ -8,8 +8,8 @@ Tipi di allocazione
 	- time division multiplexing TDM: usata nell'ambito delle reti fisse, in particolare per l upload. MA non tiene conto della priorità
 
 Controllo per garantire l'affidabilità della rete
-- [[Controllo di flusso]]
-- [[Controllo di congestione]]
+- [[Controllo di flusso - Introduzione]]
+- [[Controllo di congestione - Introduzione]]
 
 La maggior parte delle rete mette a disposizione:
 - Servizio non affidabile o best-try / best-efford

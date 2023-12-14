@@ -1,5 +1,3 @@
-![[Pasted image 20231211103116.png]]
-
 Schema: 
 - unico file: subito scartato
 - gerarchico

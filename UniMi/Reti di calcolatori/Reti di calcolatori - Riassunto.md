@@ -2,8 +2,8 @@
 ![[Rete]]
 ![[Requisiti della rete]]
 	![[Affidabilita]]
-		![[Controllo di flusso]]
-		![[Controllo di congestione]]
+		![[Controllo di flusso - Introduzione]]
+		![[Controllo di congestione - Introduzione]]
 
 ![[Dispositivi di rete]]
 Livello 1:
