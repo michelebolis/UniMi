@@ -18,14 +18,17 @@
             }
           },
           {
-            "id": "98978598e333e276",
+            "id": "54fecf2d2835156f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
-                "mode": "source",
-                "source": false
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "viewState": {
+                  "x": -4273.857987638061,
+                  "y": -3505.167261385853,
+                  "zoom": 0.16666666666666685
+                }
               }
             }
           }
@@ -80,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 208.51103591918945
+    "width": 200
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -96,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md"
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas"
               }
             }
           },
@@ -179,7 +182,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -194,8 +198,10 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "98978598e333e276",
+  "active": "47136b92c595cdff",
   "lastOpenFiles": [
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Sequence Diagram.md",
+    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Reti di calcolatori/Appunti.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Design pattern.md",
     "Sistemi biometrici/Riassunto unico.md",
@@ -214,7 +220,6 @@
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Livello Applicazione.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione",
-    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Introduzione.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Use cases Diagram/Use cases Diagram - Fasi.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Class Diagram/Class Diagram - Legenda Classi.md",
@@ -229,7 +234,6 @@
     "Ingegneria del software/Riassunti/img/Pasted image 20231213113007.png",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Superstate.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Class Diagram/Class Diagram.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Sequence Diagram.md",
     "Ingegneria del software/Slide/IS2023-L15.pdf",
     "Ingegneria del software/Slide/IS2023-L14.pdf",
     "Ingegneria del software/Slide/IS2023-L13.pdf",
