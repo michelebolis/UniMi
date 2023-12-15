@@ -7,5 +7,5 @@ Ad ogni criterio è possibile associare una metrica che ne misuri la copertura e
 
 Un caso di test per poter portare a evidenziare un malfunzionamento causato da un'anomalia, è necessario 
 - eseguire il comando che contiene l'anomalia
-- l'esecuzione del comando contenente l anomalia deve portare il sistema in uno stato scorretta
-- lo stato scorretto deve propagarsi fino all'uscita del codice in esame in modo da produrre un output diverso da quello atteso
+- l'esecuzione del comando contenente l anomalia deve portare il sistema in uno stato scorretto/inconsistente
+- lo stato inconsistente deve propagarsi fino all'uscita del codice in esame in modo da produrre un output diverso da quello atteso

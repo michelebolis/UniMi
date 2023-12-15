@@ -2,4 +2,4 @@ Un test T soddisfa il criterio di copertura delle decisioni e condizioni SE e SO
 
 La copertura delle decisioni e condizioni IMPLICA la copertura delle decisioni e la copertura delle condizioni
 
-(Potrebbe non rilevare tutte le anomalie)
+[[Copertura delle decisioni e condizioni - Esempio ]]

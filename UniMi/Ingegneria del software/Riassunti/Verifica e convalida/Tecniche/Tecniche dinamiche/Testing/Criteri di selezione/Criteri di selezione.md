@@ -7,7 +7,4 @@
 - [[Copertura delle decisioni-condizioni modificate]]
 - [[Copertura dei cammini]]
 - [[N-Copertura dei cicli]]
-- [[Copertura delle definizioni]]
-- [[Copertura degli usi]]
-- [[Copertura dei cammini DU]]
-- [[Copertura del budget]]
+- [[Criteri di selezione da analisi statica]]

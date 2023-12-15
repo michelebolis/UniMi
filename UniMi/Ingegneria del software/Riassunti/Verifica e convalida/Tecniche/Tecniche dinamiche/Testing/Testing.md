@@ -1,7 +1,7 @@
-Sono tecniche che hanno l'obiettivo di rilevare malfunzionamenti o fornire fiducia nel prodotto
-es Back/White/Gray Box
+Il testing è l'insieme di tecniche che hanno l'obiettivo di rilevare malfunzionamenti o fornire fiducia nel prodotto ai clienti
+es [[Black Box]]/[[White Box]]/[[Gray Box]]
 
-Inaccuratezza ottimistica: SE non riesce a dimostrare la presenza di problemi si dice che va bene
+Si basano sull'inaccuratezza ottimistica
 
 [[Correttezza di un programma]]
 [[Criterio di selezione]]

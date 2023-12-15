@@ -4,4 +4,4 @@ La metrica è la frazione delle decisioni che sono state rese sia vere che false
 
 La copertura delle decisioni IMPLICA la copertura dei comandi
 
-(Una decisione puo contenere PIU condizioni che potrebbero non farmi rilevare TUTTI i malfunzionamenti)
+[[Copertura delle decisioni - Esempio]]

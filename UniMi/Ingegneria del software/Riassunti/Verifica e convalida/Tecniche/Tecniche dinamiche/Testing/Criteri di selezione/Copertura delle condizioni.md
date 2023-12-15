@@ -2,4 +2,6 @@ Un test T soddisfa il criterio di copertura delle condizioni SE e SOLO SE `ogni 
 
 La metrica è la frazione delle condizioni che sono state rese sia vere che false su quelle per cui è possibile farlo
 
-(Potrebbe non rilevare tutte le anomalie se viene presa sempre la stessa decisione)
+Rispetto al criterio di copertura delle decisioni è robusto rispetto alle condizioni composte
+
+[[Copertura delle condizioni - Esempio]]
