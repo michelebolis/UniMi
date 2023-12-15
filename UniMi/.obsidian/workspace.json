@@ -18,17 +18,14 @@
             }
           },
           {
-            "id": "f732b273bc55b2e3",
+            "id": "d57c107cf98ea27d",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-                "viewState": {
-                  "x": 3993.091582602647,
-                  "y": -3789.365554016129,
-                  "zoom": -1.9999999999999993
-                }
+                "file": "Reti di calcolatori/Seminario.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -99,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "file": "Reti di calcolatori/Seminario.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "file": "Reti di calcolatori/Seminario.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas"
+                "file": "Reti di calcolatori/Seminario.md"
               }
             }
           },
@@ -199,8 +196,11 @@
   },
   "active": "47136b92c595cdff",
   "lastOpenFiles": [
-    "Ingegneria del software/Riassunti/img/Pasted image 20231213104553.png",
+    "Ingegneria del software/Appunti.md",
+    "Reti di calcolatori/Seminario.md",
+    "Reti di calcolatori/Appunti.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+    "Ingegneria del software/Riassunti/img/Pasted image 20231213104553.png",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Tecniche dinamiche.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Processi di review.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Copertura degli usi - Esempio.md",
@@ -226,13 +226,11 @@
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche di verifica e convalida - Degenerazione.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Tecniche statiche.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Sequence Diagram.md",
-    "Reti di calcolatori/Appunti.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Design pattern.md",
     "Sistemi biometrici/Riassunto unico.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/IPv4 - Formato.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/IPv6.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Email - Contenuto.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Use cases Diagram",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Activity Diagram",
