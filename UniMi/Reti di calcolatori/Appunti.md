@@ -1594,7 +1594,7 @@ Segmento 3: M3 | M2
 Segmento 2: M2 | M1
 Segmento 1: M1
 
-SE viene perso S2, alla ricezione se riceve S3 non puo mandare l ACK MA dal punto di vista dell'applicazione in S3 ci sarebbe tutto il messaggio 3 in quanto indipendente dal Segmento 2
+SE viene perso S2, alla ricezione se riceve S3 non può mandare l'ACK MA dal punto di vista dell'applicazione in S3 ci sarebbe tutto il messaggio 3 in quanto indipendente dal Segmento 2
 
 
 Livello applicazione
@@ -1615,12 +1615,11 @@ Schema:
 - gerarchico
 0. root domain rappresenta dei DNS che riesce a dare info sui domini di primo livello 
 1. domini di primo livello: gestiti da un ente, ICANN Internet Corporation for Assigned Names and Numbers 
-- domini generici: es edu, gov, org...
-- domini dei paesi: es uk, us, ...
+	- domini generici: es edu, gov, org...
+	- domini dei paesi: es uk, us, ...
+1. domini delle associazioni (delega della gestione): es comsoc.ieee.org -> ieee gestisce comsoc
 
-2. domini delle associazioni (delega della gestione): es comsoc.ieee.org -> ieee gestisce comsoc
-
-un nome DNS è identificato da un fully qualified domain name
+Un nome DNS è identificato da un fully qualified domain name
 1. Per essere human readable è rappresentata in dot notation es \www.di.unimi.it. (ATT a livello di standard c è un `.` finale ma in realtà è messo automaticamente)
 2. Dal punto di vista della macchina è rappresentato come una stringa di byte, mettendo il numero di byte di ogni label es 3www2di5unimi2it0
 

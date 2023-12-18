@@ -8,3 +8,5 @@ Content-length:
 
 Type (Tipo/sottotipo es Text/Plain)
 Multipart/Mized quando allego qualcosa
+
+[[Codifica Base64]]

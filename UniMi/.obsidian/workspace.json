@@ -18,17 +18,29 @@
             }
           },
           {
-            "id": "c332505592563d5d",
+            "id": "d2a785ce8ce6059a",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "viewState": {
-                  "x": -7463.300206336243,
-                  "y": -684.2054434325242,
-                  "zoom": -0.11706897628222097
+                  "x": -1553.8403580737445,
+                  "y": -4954.043786431453,
+                  "zoom": -2.9166666666666665
                 }
+              }
+            }
+          },
+          {
+            "id": "1e651a15aaac5175",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reti di calcolatori/Appunti.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,8 +95,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -100,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas"
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas"
               }
             }
           },
@@ -179,7 +190,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -199,8 +210,15 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c332505592563d5d",
+  "active": "d2a785ce8ce6059a",
   "lastOpenFiles": [
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 2.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 1.1.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 1.X.md",
+    "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/Appunti.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Codifica Base64.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Riassunti/Scala/Slide/16. parser combinators.4.pdf",
     "Linguaggi di programmazione/Riassunti/Scala/DSL/ES External DSL - v2 Builder.md",
@@ -220,7 +238,6 @@
     "Linguaggi di programmazione/Riassunti/Scala/Slide/Slide index.md",
     "Ingegneria del software/Appunti.md",
     "Reti di calcolatori/Seminario.md",
-    "Reti di calcolatori/Appunti.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Riassunti/img/Pasted image 20231213104553.png",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Tecniche dinamiche.md",
@@ -229,17 +246,12 @@
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Copertura delle definizioni - Esempio.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Criteri di selezione.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Analisi Data Flow/Regole Data Flow.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Criteri di selezione da analisi statica.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Copertura delle decisioni e condizioni - Esempio.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Copertura delle condizioni - Esempio.md",
     "Ingegneria del software/Riassunti/img/Pasted image 20231215101431.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231215101413.png",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Criterio di copertura delle condizioni.md",
     "Ingegneria del software/Riassunti/img/Pasted image 20231215100239.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231215100223.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231215095605.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231215095543.png",
-    "Reti di calcolatori/Reti di calcolatori.canvas",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Use cases Diagram",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Activity Diagram",
