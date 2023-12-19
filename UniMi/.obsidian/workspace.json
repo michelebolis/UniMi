@@ -16,34 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "d2a785ce8ce6059a",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
-                "viewState": {
-                  "x": -4794.925121004346,
-                  "y": 1060.237811633971,
-                  "zoom": -1.5
-                }
-              }
-            }
-          },
-          {
-            "id": "a8efe0c2651b162f",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Reti di calcolatori/Libro/CAP6.2.pdf"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas"
-              }
+              "state": {}
             }
           },
           {
@@ -188,7 +158,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -207,25 +177,28 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "d2a785ce8ce6059a",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/IPv4 - IPv6 Translators.md",
+    "Reti di calcolatori/img/Pasted image 20231219092822.png",
+    "Reti di calcolatori/Seminario EOLO.md",
+    "Reti di calcolatori/Reti di calcolatori.md",
+    "Reti di calcolatori/Seminario Rete UniMi.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/IPv4 - IPv6 Translators.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/IPv4 - IPv6 Dual stacks and tunneling.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/IPv4 - IPv6 Dual protocols.md",
-    "Pasted image 20231219093227.png",
+    "Reti di calcolatori/img/Pasted image 20231219093227.png",
     "Reti di calcolatori/Libro/CAP6.2.pdf",
-    "Pasted image 20231219093119.png",
-    "Pasted image 20231219093016.png",
-    "Pasted image 20231219092858.png",
-    "Pasted image 20231219092831.png",
-    "Pasted image 20231219092822.png",
+    "Reti di calcolatori/img/Pasted image 20231219093119.png",
+    "Reti di calcolatori/img/Pasted image 20231219093016.png",
+    "Reti di calcolatori/img/Pasted image 20231219092858.png",
+    "Reti di calcolatori/img/Pasted image 20231219092831.png",
     "Reti di calcolatori/Libro/CAP6.1.pdf",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/ARP-RARP.md",
-    "Pasted image 20231219092315.png",
-    "Pasted image 20231219092147.png",
+    "Reti di calcolatori/img/Pasted image 20231219092315.png",
+    "Reti di calcolatori/img/Pasted image 20231219092147.png",
     "Reti di calcolatori/Libro/CAP3.pdf",
-    "Pasted image 20231219091112.png",
+    "Reti di calcolatori/img/Pasted image 20231219091112.png",
     "Linguaggi di programmazione/Riassunti/Scala/img/Pasted image 20231218091700.png",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/IPv6.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/IPv4 - Formato.md",
@@ -249,9 +222,6 @@
     "Linguaggi di programmazione/Riassunti/Scala/DSL/External DSL.md",
     "Linguaggi di programmazione/Riassunti/Scala/DSL/Internal DSL.md",
     "Linguaggi di programmazione/Riassunti/Scala/DSL",
-    "Linguaggi di programmazione/Riassunti/Scala/DSL/DSL.md",
-    "Linguaggi di programmazione/Riassunti/Scala/Slide/Slide index.md",
-    "Ingegneria del software/Appunti.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Use cases Diagram",
