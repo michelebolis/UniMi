@@ -1,4 +1,5 @@
 NET ID - SubNet ID - Host ID
+![[Pasted image 20231219132636.png|300]]
 L'organizzazione in SubNet non è definita da uno standard, ma è demandata al livello IP che sceglie quanti bit degli host ID demandare al SubNet ID
 Per discriminare SubNet e host id, aggiungo ad ogni entry nella tabella di routing la SubNet Mask, tanti 1 quanti bit sono usati dal SubNet ID. Facendo l'AND tra il mio indirizzo e la mask, maschero i bit dell'host id
 

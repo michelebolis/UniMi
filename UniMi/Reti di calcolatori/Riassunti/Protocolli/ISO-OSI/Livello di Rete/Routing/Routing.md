@@ -16,3 +16,5 @@ Il processo di routing deve avere una certa conoscenza di tutta la rete in modo 
 Per il cammino minimo come metriche utilizzeremo il delay e il numero di hop.
 
 [[Architettura della rete]]
+
+![[Pasted image 20231219132337.png|600]]

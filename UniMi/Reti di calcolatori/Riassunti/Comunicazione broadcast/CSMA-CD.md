@@ -13,11 +13,18 @@ Quanto aspettare prima di una ritrasmissione: [[BEB -Binary Exponential Backoff]
 Tutti i frame sono trasmessi usando la [[Codifica di Manchester]]
 
 Formato dei frame
-- Il SFD Start Of Frame Delimiter è composto da un singolo byte 10101011
-- L'indirizzo del destinatario e del mittente come indirizzi MAC, che identificano l'interfaccia HW del destinatario e del mittente
-- Vi sono poi due byte dedicati alla lunghezza/type che indica la lunghezza del payload
-	SE questa lunghezza è minore del minimo richiesto per un frame valido, allora viene aggiunta una sequenza di byte, padding
-- Infine FCS contiene un CRC value per rilevare l errore
+
+| Campo            | Dimensione | Descrizione                                                                                                                |
+| ---------------- | ---------- | -------------------------------------------------------------------------------------------------------------------------- |
+| SFD              | 10101011   | Start Of Frame Delimiter indica l'inizio                                                                                   |
+| MAC destinatario | 48 bit     |                                                                                                                            |
+| MAC sorgente     | 48 bit     |                                                                                                                            |
+| Type/length      | 16 bit     | SE questa lunghezza è minore del minimo richiesto per un frame valido, allora viene aggiunta una sequenza di byte, padding |
+| Data             |            |                                                                                                                            |
+| FCS              | 32 bit     | contiene un CRC value per rilevare l errore                                                                                |
+
+
+![[Pasted image 20231219133605.png]]
 
 [[Standard rete a 10Mbps]]
 [[Standard rete a 1Gbps]]
