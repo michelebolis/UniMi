@@ -14,4 +14,4 @@ Si occupa della rilevazione degli errori, verifica la raggiungibilità (server u
 | Timestamp reply         |             |
 | ...                        |             |
 
-figura 6.31
+![[Pasted image 20231219091724.png| 300]]

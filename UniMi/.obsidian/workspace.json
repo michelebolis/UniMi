@@ -25,22 +25,20 @@
               "state": {
                 "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "viewState": {
-                  "x": -1553.8403580737445,
-                  "y": -4954.043786431453,
-                  "zoom": -2.9166666666666665
+                  "x": -4794.925121004346,
+                  "y": 1060.237811633971,
+                  "zoom": -1.5
                 }
               }
             }
           },
           {
-            "id": "1e651a15aaac5175",
+            "id": "a8efe0c2651b162f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Reti di calcolatori/Appunti.md",
-                "mode": "source",
-                "source": false
+                "file": "Reti di calcolatori/Libro/CAP6.2.pdf"
               }
             }
           }
@@ -194,8 +192,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -212,11 +209,30 @@
   },
   "active": "d2a785ce8ce6059a",
   "lastOpenFiles": [
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/IPv4 - IPv6 Translators.md",
+    "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/IPv4 - IPv6 Dual stacks and tunneling.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/IPv4 - IPv6 Dual protocols.md",
+    "Pasted image 20231219093227.png",
+    "Reti di calcolatori/Libro/CAP6.2.pdf",
+    "Pasted image 20231219093119.png",
+    "Pasted image 20231219093016.png",
+    "Pasted image 20231219092858.png",
+    "Pasted image 20231219092831.png",
+    "Pasted image 20231219092822.png",
+    "Reti di calcolatori/Libro/CAP6.1.pdf",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/ARP-RARP.md",
+    "Pasted image 20231219092315.png",
+    "Pasted image 20231219092147.png",
+    "Reti di calcolatori/Libro/CAP3.pdf",
+    "Pasted image 20231219091112.png",
+    "Linguaggi di programmazione/Riassunti/Scala/img/Pasted image 20231218091700.png",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/IPv6.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/IPv4 - Formato.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 2.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 1.1.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 1.X.md",
-    "Reti di calcolatori/Reti di calcolatori.canvas",
     "Reti di calcolatori/Appunti.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Codifica Base64.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
@@ -228,7 +244,6 @@
     "Linguaggi di programmazione/Riassunti/Scala/DSL/Combinators sintax.md",
     "Linguaggi di programmazione/Riassunti/Scala/DSL/ES External DSL - v1.md",
     "Linguaggi di programmazione/Riassunti/Scala/DSL/ES External DSL - Grammatica.md",
-    "Pasted image 20231218091700.png",
     "Linguaggi di programmazione/Riassunti/Scala/DSL/ES External DSL.md",
     "Linguaggi di programmazione/Riassunti/Scala/Slide/15. dsl.4.pdf",
     "Linguaggi di programmazione/Riassunti/Scala/DSL/External DSL.md",
@@ -237,30 +252,11 @@
     "Linguaggi di programmazione/Riassunti/Scala/DSL/DSL.md",
     "Linguaggi di programmazione/Riassunti/Scala/Slide/Slide index.md",
     "Ingegneria del software/Appunti.md",
-    "Reti di calcolatori/Seminario.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231213104553.png",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Tecniche dinamiche.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Processi di review.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Copertura degli usi - Esempio.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Copertura delle definizioni - Esempio.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Criteri di selezione.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Analisi Data Flow/Regole Data Flow.md",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231215101431.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231215101413.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231215100239.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231215100223.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231215095605.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231215095543.png",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Use cases Diagram",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Activity Diagram",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Class Diagram",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231213113217.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231213113007.png",
-    "Ingegneria del software/Slide/IS2023-L15.pdf",
-    "Ingegneria del software/Slide/IS2023-L14.pdf",
-    "Ingegneria del software/Slide/IS2023-L13.pdf",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/ES.canvas",
     "Ricerca operativa/Ricerca operativa.canvas",
     "Sistemi biometrici/Sistemi biometrici.canvas",
