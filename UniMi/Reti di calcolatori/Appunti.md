@@ -1853,3 +1853,128 @@ Svantaggio: richiede la compressione e la decompressione
 - Il server sa gia che quando manda una pagina HTML, il client gli mandera delle richieste 
 QUINDI il server oltre alla pagina, manda gia le risorse (risposta senza richiesta)
 
+---
+
+POP 3 e IMAP lavorano entrambi tra UA client e UA agent per la lettera delle mail
+POP 3 fa operazioni elementali come prendere la posta dal server. Unica coda delle mail
+IMAP permette, oltre alle funzionalita di POP 3, di avere una gestione in cartelle permanenti sul server. Permette inoltre di scaricare non tutta la mail ma solo l header e poi quando accedero alla mail vera scaricato l header.
+E' inoltre garantita la sincronizzazione tra diversi dispositivi
+Svantaggio: maggior consumo sullo UA server
+
+
+In HTTP 1.X si lavora con messaggi atomici (header+body)
+L'header è tutto testuale occupando molto e si ripetono senza compressione 
+
+HTTP 2 frame
+Un frame rappresenta un pezzo di un messaggio. 
+Ogni frame è formato da un header (DEL FRAME) e un payload
+
+Tipi di frame:
+- header: contengono gli header HTTP, il suo payload sono i vari header
+- data: contengono le informazioni della mail
+- setting: per cambiare informazioni durante lo scambio di messaggio
+- window update
+- push_promise: permette di informare il client che arriveranno delle info (risposta senza richiesta)
+
+multiplexing: avere piu stream sulla stessa connessione TCP
+per farlo si introducono gli stream, canali eventualmente bidirezionali, a livello applicazione (quali stream far passare, quale stream leggere...)
+a livello TCP abbiamo quindi un demultiplexing
+
+Formato frame (di un qualsiasi tipo)
+- Header
+Length 24 bit: il ricevente sa quando termina il messaggio
+Type 8 bit
+Flags 8 bit: dipendono dal tipo di frame
+bit riservato
+Stream identifier 31 bit: identifica in quale stream mettere il messaggio
+Payload
+
+Il numero dello stream viene deciso da chi crea lo stream (numero pari generati dal client mentre dispari generati dal server)
+
+- Frame Header: Type 0x1
+Flag type 
+END_STREAM: se devo mandare solo il frame header e poi termino lo stream
+END_HEADER: se ci sono piu blocchi di header 
+PADDED
+PRIORITY
+
+Payload
+Padding length
+bit E
+Stream Dependency 31 bit: a quale stream dipendo
+Weigth 8 bit: identifica il peso per il controllo di flusso
+Header Block Fragment: sono contenuti gli header HTTP
+Padding
+
+- Frame Data: Type 0x0
+Payload
+Padlength
+Data
+Padding
+
+- Frame PUSH_PROMISE: Type 0x5
+Padding length
+Reserved bit
+Promised Stream ID: oltre ai frame header e data, restituisco anche un frame push promise in cui è contenuto l id dello stream su cui il server mandera i dati (DIVERSO da quello dell header: creato dal server)
+Header Block Fragment: es Content-Type: img
+Padding
+
+Vantaggio: risparmio tempo 
+
+- Frame SETTING: Type: 0x4
+Numero variabile di 
+- Identifier 16 bit
+	- Initial window size
+	- max concurrent streams
+- Value 32 bit
+
+- Frame PING: Type: 0x6
+- ...
+- Continuation: Type 0x9 continuo con gli stessi tipi di dati
+
+Vantaggio di avere piu stream: posso cambiare priorita di invio in base allo stream e non dover aspettare che venga inviato tutto di uno stream prima di inviare un altro stream
+Unico vincolo: all interno dello stream l ordinamento è FIFO
+
+Trasparenza tra 1 e 2 nell URL e nella porta utilizzata
+E' il client HTTP che determina SE il server supporta HTTP/2
+- Richiesta con GET / HTTP / 1.1; Connetion: Upgrade, HTTP2-Settings; Upgrade: h2c; HTTP2-Settings: ...
+SOLO i server che supportano HTT2 comprendono HTTP2-Settings
+- SE NON supporta: ritorna 200 OK
+- SE lo supporta risponde sempre con HTTP 1.1 MA Connetion: Upgrade, Upgrade: h2c
+
+Riassunto:
+connessione HTTP 2 puo contenere piu stream
+Uno stream puo essere creato e utilizzato uniteralmente
+uno stream puo essere chiudo da entrambi gli endpiint
+l ordine dei frame nello stream è significativo
+
+
+Ciclo di vita dello stream
+- Idle: non è allocato ne sul server ne sul client
+- Open: SE faccio SEND Header oppure RECEIVE Header. Rimane aperto fin quando non ricevo o mando un qualunque frame con flag RESET
+- Closed
+
+A seconda che io riceva o mandi una PUSH PROMISE cambiano gli scenari
+- Reserved local: quando faccio SEND PUSH PROMISE
+	- Half Closed Remote: quando faccio SEND HEADER. SIgnifica che questo stream è utilizzato SOLO da chi l ha creato per inviare (stream unidirezionale)
+- Reserved remote: quando recevo RECEIVE PUSH PROMISE
+
+HTTP 3 gestisce piu efficientemente le funzionalita del 2 demandando a CUIC e utilizzando UDP
+
+
+Come funzionano i video on demand
+All'inizio la qualità è bassa e se ci sono problemi di rete, la qualita è adattiva
+
+Client: decodifica i frame, solitamente sono definiti come differenze in pixel rispetto al precedente. Gestisce inoltre perdita dei pacchetti e il jitter (Tipicamente vengono bufferizzate parti del video)
+
+
+Standard DASH Dynamic Adaptive Streaming over HTTP
+E' adattivo rispetto alle condizioni di rete e utilizza HTTP
+Lo stesso stream di bit, che rappresenta il video, viene codificato con diverse qualita partendo da una qualita "massima" es in FULL HD con 1Mb/s, FULL HD con 4 Mb/s...
+Viene diviso lo stream in Chunk, tipicamente di 5/10 secondi
+
+All'inizio dello stream, viene scaricato un manifest MPD (Media Presentation Description) contenente le versioni disponibili per il video (stessa cosa per l audio) fornendo gli URL base, quanto sono lunghi i singoli Chunk (per dimensionare il proprio buffer e per gestirlo in modo dinamico) 
+Obiettivo: evitare buffering ("pause")
+
+All'interno del playback buffer si cerca di mantenere un certo tempo di visualizzazione (l avanzamento della barra si ferma quando è in pausa il video in modo da non scaricare piu del necessario). MA quando il numero di chunk va sotto la soglia, si richiede altri chunk.
+La parte Dynamic è del client che decide la qualita di chunk da richiedere, cioe gradualmente si cerca di ottimizzare il buffer garantendo un qualita decente evitando il buffering scegliando a quale URL del manifest richiedere i chunk n-esimi.
