@@ -16,24 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "13f971ec228b38c0",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
-                "viewState": {
-                  "x": -5895.856185798994,
-                  "y": 1584.400132720475,
-                  "zoom": -3
-                }
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -182,8 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -198,22 +181,22 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "13f971ec228b38c0",
+  "active": "47136b92c595cdff",
   "lastOpenFiles": [
-    "photo_5769355704325488905_y.jpg",
-    "photo_5769355704325488902_y.jpg",
+    "Reti di calcolatori/img/photo_5769355704325488905_y.jpg",
+    "Reti di calcolatori/img/photo_5769355704325488902_y.jpg",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/DV - Distance Vector.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/Split Horizon.md",
-    "photo_57693557043254888915_y.jpg",
-    "photo_5769355704325488895_y.jpg",
+    "Reti di calcolatori/img/photo_57693557043254888915_y.jpg",
+    "Reti di calcolatori/img/photo_5769355704325488895_y.jpg",
     "photo_5769355704325488882_y.jpg",
     "Reti di calcolatori/Reti di calcolatori.canvas",
-    "photo_5769355704325488878_y.jpg",
-    "photo_5769355704325488877_y.jpg",
-    "photo_5769355704325488874_y.jpg",
+    "Reti di calcolatori/img/photo_5769355704325488878_y.jpg",
+    "Reti di calcolatori/img/photo_5769355704325488877_y.jpg",
+    "Reti di calcolatori/img/photo_5769355704325488874_y.jpg",
     "Reti di calcolatori/img/Pasted image 20231219134937.png",
-    "photo_5769355704325488871_y.jpg",
-    "photo_5769355704325488870_y.jpg",
+    "Reti di calcolatori/img/photo_5769355704325488871_y.jpg",
+    "Reti di calcolatori/img/photo_5769355704325488870_y.jpg",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello 1/Mezzi trasmissivi.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello 1/Mezzi trasmissivi - Differenze.md",
     "Reti di calcolatori/Libro/CAP3.pdf",
