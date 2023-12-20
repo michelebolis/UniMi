@@ -15,5 +15,7 @@ SE arriva un frame in cui mittente e destinatario sono nella stessa porta, il br
 Fase di Learning: quando riceve un frame, legge l'indirizzo della sorgente e aggiunte la entry alla sua tabella e SE la destinazione non è ancora presente nella tabella, fa broadcast MA senza rimandare sulla linea in cui ha ricevuto 
 La velocita di learning dipende dal traffico
 
+![[photo_5769355704325488867_y.jpg|500]]
+
 Problema: aggiunta di un nuovo nodo o cambio di hub a cui era collegato il nodo, il bridge non lo propaga perche ha una tabella di forwarding sbagliata. 
 Viene quindi introdotto un TTL Time To Leave ad ogni entry della tabella al cui scadere viene riavviata la fase di learning 

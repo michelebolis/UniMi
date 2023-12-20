@@ -6,6 +6,7 @@ SE una rete LAN deve essere maggiore di piu di 2.5km, ne creo un altra e le comp
 Problema:
 Stazione A trasmette ma il CS arriva dopo $T_p$ alla stazione B che, non vedendo il canale occupato, aveva iniziato a trasmettere cosi A, dopo aver finito di trasmettere, riceve dopo $T_p$ il frame corrotto di B
 A non è in grado di rilevare la collisione 
+![[photo_5769355704325488864_y.jpg|400]]
 
 Soluzione: 
 Imporre di usare la propria porta di I/O di trasmissione almeno per $2 * T_p$
@@ -28,7 +29,7 @@ Con:
 - $1 \over A$ = Numero medio di stazioni che deve aspettare prima di accedere
 - $A= k*p * (1-p)^{kp}$
 - $k$ numero di stazioni
-- $p$ probabilita che quella stazione possa accedere al canale 
+- $p$ probabilità che quella stazione possa accedere al canale 
 
 Come min devo avere 64byte, MA con DA, SA, L e CRC ho solo 18 byte
 Ho quindi un campo padding per arrivare ai 64byte: parte da 0 a 46 byte

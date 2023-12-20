@@ -18,3 +18,5 @@ Man mano che il pacchetto viene processato dai router, aumenta di dimensione, di
 
 La sequenza prelevamento-decodifica-forward deve essere effettuata il piu velocemente possibile. 
 Difatti l'header è posizionato nei primi bit cosi il router sia piu veloce nella lettura
+
+![[photo_5769355704325488878_y.jpg|400]]

@@ -12,4 +12,4 @@ Opinione del Rossi: se cambia volendo una VLAN, dovro aprire il mio dispositivo,
 Solitamente si prende uno switch non cambiando la scheda delle singole stazioni, lavorando solo sullo switch, taggando le porte a configuration time 
 Permetto alle stazioni di generare traffico untagged e appena arriva allo switch si ha il tag
 
-![[Pasted image 20231219134937.png|500]]
+![[photo_5769355704325488874_y.jpg]]

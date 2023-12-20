@@ -12,3 +12,5 @@ In realta il CS (del CSMA/CD) verra sempre fatto ma non ci saranno mai collision
 Viene anche mantenuto la dimensione minima del frame anche se non serve
 
 In realta sto aggiungendo complessita nello switch che dovra gestire molte linee a grandi velocita
+
+![[photo_5769355704325488871_y.jpg|500]]

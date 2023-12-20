@@ -6,9 +6,11 @@ Quando una stazione vuole trasmettere, prima di farlo fa $Carrier Sense$, cioè 
 Una collisione si verifica quando due o piu stazioni provano a trasmettere un frame sul bus nello stesso tempo. 
 La probabilità di collisione è tanto maggiore tanto piu stazioni ci sono sul canale.
 
-Le collisioni si possono ancora verificare quando SE una stazione B sta trasmettendo e una stazione C fa CS, quest'ultima aspetta che B finisca. Tuttavia se un altro nodo A fa CS, sia A che C stanno aspettando la terminazione della comunicazione di B ed causando ancora una collisione
+Le collisioni si possono ancora verificare quando SE una stazione B sta trasmettendo e una stazione C fa CS, quest'ultima aspetta che B finisca. Tuttavia se un altro nodo A fa CS, sia A che C stanno aspettando la terminazione della comunicazione di B e cio causa ancora una collisione
 
-Quanto aspettare prima di una ritrasmissione: [[BEB -Binary Exponential Backoff]]
+![[photo_5769355704325488862_y.jpg|600]]
+
+Per risolvere la collisione, prima di ritrasmettere, ogni nodo aspetta un tempo determinato dal  [[BEB -Binary Exponential Backoff]]
 
 Tutti i frame sono trasmessi usando la [[Codifica di Manchester]]
 
@@ -24,7 +26,7 @@ Formato dei frame
 | FCS              | 32 bit     | contiene un CRC value per rilevare l errore                                                                                |
 
 
-![[Pasted image 20231219133605.png]]
+![[Pasted image 20231219133605.png|500]]
 
 [[Standard rete a 10Mbps]]
 [[Standard rete a 1Gbps]]
