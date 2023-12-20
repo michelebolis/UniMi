@@ -16,21 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "0fdec2369dfbe07e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ingegneria del software/Appunti.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ingegneria del software/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ingegneria del software/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Ingegneria del software/Appunti.md"
-              }
+              "state": {}
             }
           },
           {
@@ -194,8 +177,10 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "0fdec2369dfbe07e",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
+    "Ingegneria del software/Appunti.md",
+    "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Reti di calcolatori/img/photo_5769355704325488905_y.jpg",
     "Reti di calcolatori/img/photo_5769355704325488902_y.jpg",
@@ -236,9 +221,7 @@
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 1.X.md",
     "Reti di calcolatori/Appunti.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Codifica Base64.md",
-    "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Riassunti/Scala/Slide/16. parser combinators.4.pdf",
-    "Linguaggi di programmazione/Riassunti/Scala/DSL/ES External DSL - v2 Builder.md",
     "Linguaggi di programmazione/Riassunti/Scala/Slide/15. dsl.4.pdf",
     "Linguaggi di programmazione/Riassunti/Scala/DSL",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
