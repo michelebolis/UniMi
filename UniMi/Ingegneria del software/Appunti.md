@@ -1494,4 +1494,5 @@ $\forall p \in pre(t) - post(t)$, $M'(p)=M(p)-W(<p,t>)$
 $\forall p \in post(t) - pre(t)$, $M'(p)=M(p)+W(<p,t>)$
 ...
 
-il peso sull arco indica quanti elementi vengono usati ad ogni transizione
+il peso sull'arco indica quanti elementi vengono usati ad ogni transizione
+
