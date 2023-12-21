@@ -1978,3 +1978,50 @@ Obiettivo: evitare buffering ("pause")
 
 All'interno del playback buffer si cerca di mantenere un certo tempo di visualizzazione (l avanzamento della barra si ferma quando è in pausa il video in modo da non scaricare piu del necessario). MA quando il numero di chunk va sotto la soglia, si richiede altri chunk.
 La parte Dynamic è del client che decide la qualita di chunk da richiedere, cioe gradualmente si cerca di ottimizzare il buffer garantendo un qualita decente evitando il buffering scegliando a quale URL del manifest richiedere i chunk n-esimi.
+
+---
+
+CDN Content Delivery Network
+Oggi non è di interesse quale server eroga il servizio, ma ricevere il servizio stesso
+
+Obiettivo: migliorare le prestazioni di consegna del contenuto
+Problema: i contenuti hanno diversa "popolarità"
+
+George Zipf 1949 ha analizzata la frequenza delle parole in un testo
+Stessa distribuzione per i contenuti web
+Se consideriamo la distribuzione logaritmica, ne esce una linea retta decrescente
+Un 20% del contenuto occupa l 80% del traffico
+
+La rete Internet ha sviluppato due modalita per gestire i due tipi di contenuti
+Le CDN si concentrano sui contenuti popolari, considerando anche la variabilita della popolarita anche circoscritta in una certa area geografica
+La variazione di popolarita puo essere data dalla viralita del contenuto
+Vincolo permanente è quello del posizionamento geografico ($t_P$) che causano perdita prestazionale
+
+Prima delle CDN sono necessarie infrastrutture per gestire una mole elevata di contenuti: Server farm
+C'è un server che bilancia il carico tra i vari server (scalabilità orizzontale e elasticità nel fornire un servizio (SE il servizio ha poche richieste, viene fornita una sola macchina MA se diventa popolare, allora viene replicato il servizio su piu istanze))
+
+Data una richiesta di contenuto, come faccio a indicare diversi server? Uso DNS in modo che risponda con diversi indirizzi IP
+Alternativa è usare un approccio front end nascondendo gli indirizzi IP dei vari server. Una volta ricevuta la richiesta o faccio round robin o invio a tutti i server la richiesta e ogni server decidera se prendere in carico tale richiesta
+
+Il servizio viene erogato in modo diverso in base alla posizione rilevata della sorgente
+Modalita
+- Anycast: permette ai router di annunciare lo stesso indirizzo IP da punti diversi. 
+- DNS: diversi DNS risponderanno con diversi IP.
+- Diversi URL per recuperare risorse 
+
+Fasi meccanismo basato su DNS
+1. Fase di distribuzione dei contenuti
+2. Fase di richiesta del contenuto al DNS che decide l IP del datacenter migliore per me
+
+es CDN: AKAMAI, DYN, CLOUDFLARE, LINELIGHT 
+
+
+
+SDN SW Defined Networking: sposta gli algoritmi di controllo dal livello di rete in su a un controller centralizzato che puo istanziare su ciasciun device le regole da seguire
+Controllore di rete dialoga con tutti gli apparati 
+Vantaggio: visione completa della rete permette un ottimizzazione e poter cambiare le regole in tempo reale 
+
+NFV Network Function Virtualization virtualizzazione delle funzionalita di rete 
+EDGE computing: stessa logica di un cloud computing as a service MA locale, all edge. Oltre ai datacenter, ci sono anche piccoli datacenter locali per servizi a bassissima latenza
+
+Sabrina ... per data science
