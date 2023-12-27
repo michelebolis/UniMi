@@ -16,8 +16,24 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "64b6f27775f20f7e",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "viewState": {
+                  "x": -10182.314308118941,
+                  "y": -3323.37614310998,
+                  "zoom": 0.9999999999999998
+                }
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +138,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas"
+              }
             }
           },
           {
@@ -177,7 +197,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c1ce2ce19829fc50",
+  "active": "64b6f27775f20f7e",
   "lastOpenFiles": [
     "Reti di calcolatori/Appunti.md",
     "Ingegneria del software/Appunti.md",
