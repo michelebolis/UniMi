@@ -562,3 +562,51 @@ SE la NAT è utilizzata come gateway della rete, allora è una NAT-PT gateway
 Per l'assegnazione degli IPv4, solitamente la NAT alloca un certo numero di hostid per le destinazioni, applicando un timeout a tali indirizzi
 
 CAP 7
+TCP Transmission Control Protocol fornisce un servizio addidabile orientato alla connessione
+UDP User Datagram Protocol fornisce un servizio best-efford senza connessione
+
+TCP deve convertire il servizio best-efford di IP in un servizio affidabile
+Un nuovo numero di porta è allocato ad ogni nuova richiesta di trasferimento
+In particolare si allocano le porte da 1024 a 5000
+Le porte da 1 a 1023 sono tipicamente riservate (es porta 21 riservata a FTP)
+
+TCP divide lo stream di byte in blocchi chiamati  segmenti
+Le due entita TCP accordano un MSS Maximum Segment Size che di standard è di 536byte
+
+Il protocollo TCP ha 3 operazioni distinte:
+- Apertura della connessione
+- Trasferimento dei segmenti
+- Chiusura della connessione 
+
+Apertura
+Alla ricezione della primitiva connest() dall'applicativo, inizia la fase di apertura della connessione
+1. TCP manda manda un segmento al server con flag SYN e SEQ=X con X numero di inizio sequenza. Il mittente entra nello stato di SYN_SENT
+2. Alla ricezione del segmento, SE il server non è in ascolto, la connessione viene abortita mandando un segmento con il flag RST. In caso contrario il server manda un segmento con il flag SYN, la propria SEQ, il flag ACK e come ACK X+1 per segnalare di aver ricevuto il segmento X al client. Il server entra in stato di SYN_RCVD
+3. Alla ricezione del segmento, il client manda un segmento con ACK, ACK = Y+1. La connessione lato client è ESTABLISHED
+4. Lato server, alla ricezione dell ACK, entra in stato di ESTABLISHED
+
+In ogni segmento TCP è inclusa la window size, cioè il massimo numero di byte che è disposto a ricevere, window size advertisement
+
+Per ridurre il numero di segmenti inviati, TCP NON ritorna immediatamento l ACK quando riceve un segmento senza errori MA aspetta, tipicamente 200ms, per vedere se ci sono dati che vengono messi nel buffer send: delayed acknowledgments
+
+Una variazione del delayed acknowledgement, è l'algoritmo di Nagle
+TCP in questo caso aspetta solo un segmento che receve l ACK. Quando l ACK arriva, tutti i caratteri nel buffer, vengono inviati in un unico segmento
+
+Controllo degli errori
+TCP ritrasmette un segmento SOLO quando riceve 3 ACK duplicati per lo stesso segmento
+Quando si rileva la perdita di un segmento, un RTO inizia per il nuovo segmento che deve essere trasmesso
+Quando la ritrasmissione avviene prima dello scadere dell RTO, in quanto ho ricevuto 3 ACK duplicati, si parla di Fast Retrasmission
+
+La scelta del dimensionamento dell RTO è un fattore critico delle performance
+La scelta dell RTO deve essere dinamica
+L'approccio iniziale deriva dall utilizzo dell'Exponential Backoff
+Viene settato RTO inizialmente a 1,5s, e viene duplicato quando avviene una ritrasmissione per un massimo di RTO=2m
+
+Successivamente RTO si deriva dal RTT
+RTO viene aggiornata per ogni misurazione del RTT
+$$RTT = \alpha * RTT + (1-\alpha ) *M$$
+con M la misura dell RTT e alpha un fattore
+
+Nella maggior parte delle implementazione, TCP restituisce un ACK per ogni segmento che riceve corretto. Quando invia un ACK, un timer, delayed ACK timer, viene avviato e un secondo segmento non dovrebbe essere ricevuto prima che scada
+
+Flow control
