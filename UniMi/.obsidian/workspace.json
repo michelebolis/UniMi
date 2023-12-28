@@ -18,17 +18,14 @@
             }
           },
           {
-            "id": "64b6f27775f20f7e",
+            "id": "34d6867af34fab15",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-                "viewState": {
-                  "x": -10182.314308118941,
-                  "y": -3323.37614310998,
-                  "zoom": 0.9999999999999998
-                }
+                "file": "Reti di calcolatori/Libro/Riassunto libro.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -99,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "file": "Reti di calcolatori/Libro/Riassunto libro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "file": "Reti di calcolatori/Libro/Riassunto libro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas"
+                "file": "Reti di calcolatori/Libro/Riassunto libro.md"
               }
             }
           },
@@ -197,8 +194,9 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "64b6f27775f20f7e",
+  "active": "34d6867af34fab15",
   "lastOpenFiles": [
+    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Reti di calcolatori/Appunti.md",
     "Ingegneria del software/Appunti.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
@@ -244,7 +242,6 @@
     "Linguaggi di programmazione/Riassunti/Scala/Slide/16. parser combinators.4.pdf",
     "Linguaggi di programmazione/Riassunti/Scala/Slide/15. dsl.4.pdf",
     "Linguaggi di programmazione/Riassunti/Scala/DSL",
-    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Use cases Diagram",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/ES.canvas",

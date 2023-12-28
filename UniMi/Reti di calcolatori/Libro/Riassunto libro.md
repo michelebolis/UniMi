@@ -561,6 +561,7 @@ Alla ricezione di un pacchetto IPv6/IPv4, questo viene convertito in un pacchett
 SE la NAT è utilizzata come gateway della rete, allora è una NAT-PT gateway
 Per l'assegnazione degli IPv4, solitamente la NAT alloca un certo numero di hostid per le destinazioni, applicando un timeout a tali indirizzi
 
+
 CAP 7
 TCP Transmission Control Protocol fornisce un servizio addidabile orientato alla connessione
 UDP User Datagram Protocol fornisce un servizio best-efford senza connessione
@@ -609,4 +610,45 @@ con M la misura dell RTT e alpha un fattore
 
 Nella maggior parte delle implementazione, TCP restituisce un ACK per ogni segmento che riceve corretto. Quando invia un ACK, un timer, delayed ACK timer, viene avviato e un secondo segmento non dovrebbe essere ricevuto prima che scada
 
-Flow control
+
+Controllo di flusso
+Il campo window size di ogni segmento indica il numero di byte che il TCP ricevente puo ricevere nel buffer. In questo modo si garantisce che ci sia sempre spazio libero nel buffer del destinatario prima che la sorgente mandi i dati.
+
+Associata ad ogni direzione vengono mantenute due variabili, la finestra di invio W_S, e la finestra di ricezione W_R
+Il flusso si ferma quando W_S = 0 
+W_R invece è aumentata quando riceve dei dati privi di errore e viene diminuita quando AP destinatario legge dei byte dal buffer
+
+Controllo di congestione
+Un segmento potrebbe essere scartato durante il suo viaggio perche sono presenti degli errori o perche un router/gateway è diventato congestionato.
+Ogni RCP ha quindi una variabile chiamata finestra di congestione W_C
+
+Inizialmente non si conosce lo stato delle rete quindi si individuano 3 fasi:
+- Slow start: in cui W_C viene aumentato di 1 per ogni ACK ricevuto in modo da aumentare rapidamente. Questa fase prende il nome di slow start in quanto W_C inizialmente è uguale a 1
+- Fase di prevenzione della congestione: lo slow start si ferma quando raggiunge lo Slow Start Threshold SST (tipicamente a 64kbytes). Nella nuova fase W_C viene incrementato di 1 ogni W_C ACK ricevuti 
+- Fase costante in cui W_C non aumenta
+
+Tipi di congestione:
+- Ricezione di ACK duplicati: indica che la destinazione è raggiungibile quindi si presume un livello di congestione basso. Alla ricezione di 3 ACK duplicati, W_C viene dimezzato e viene utilizzato l incremento della fase di prevenzione della  congestione (fast recovery)
+- RTO scade: assumendo che lo scadere dell RTO sia un evento raro, cio indica una congestione grave. W_C è quindi resettato a 1 e si riparte con lo slow start
+
+Chiusura della connessione
+- 4 way close
+In tutti gli esempi di chiusura di connessione, entrambe le entita sono in uno stato di ESTABLISHED EST
+- AP dell host manda una primitiva close(), cosi il suo TCP manda un segmento con FIN=1 e SEQ=X (con V(S) = X) entrando in uno stato di FIN_WAIT1
+- Il TCP che riceve il segmento FIN, ritorna il segmento con ACK = 1 e ACK = X+1, entrando nella fase di CLOSE_WAIT in cui dopo aver usato la primitiva receive(EOF), sta aspettando dall AP la primitiva close()
+- Nel frattempo l'altro host, alla ricezione dell ACK, entra in uno stato di FIN_WAIT2 attendendo il segmento con FIN dall altro host
+- Quando l'AP dell altro host fa la close(), viene mandato un segmento con FIN=1 e SEQ= Y (con V(R) = Y) entrando in uno stato di LAST_ACK
+- Alla ricezione del FIN, il TCP ritorna un ACK e fa partire un timer di 2 MSL entrando in una fase di TIMED_WAIT in cui allo scadere del timer considera la connessione chiusa (MSL Maximum Segment Lifetime)
+- L'altro host, alla ricezione dell ACK, chiude la connessione
+
+- 3 way close
+La procedura è simile al 4 way MA il primo ACK viene mandato congiuntamente al secondo segmento con FIN, quindi un unico segmento con FIN=1, ACK = 1, ACK = X+N+1
+
+- half-close
+Potrebbe succedere che nonostante un AP abbia finito la trasmissione e voglia chiudere la connessione, si aspetti comunque di ricevere altri dati
+- Non viene utilizzata la primitiva close(), MA shutdown(). TCP infatti con tale primitiva lascia il path EST in ricezione, mandando il segmento FIN e entrando in FIN_WAIT1.
+- Alla ricezione del segmento, TCP manda una receive(EOF) alla propria AP in modo da indicare che non ricevera altre informazioni. Entra in uno stato di CLOSE_WAIT, potendo ancora inviare dati per cui ricevere un ACK
+- Quando avra terminato l invio dei dati, l AP usera a sua volta la primitiva shutdown, e il TCP mandera un segmento di FIN = 1, SEQ =  Y + N.
+- L'altro Host alla ricezione del segmento, mandera una primitiva con receive(EOF) e mandera un segmento con ACK=1, ACK= Y+N+1. Entra cosi in una fase di TIMED_WAIT in cui allo scadere del timer di 2MSL, chiude la connessione
+- L'altro Host alla ricezione dell ACK, chiude la connessione
+
