@@ -652,3 +652,102 @@ Potrebbe succedere che nonostante un AP abbia finito la trasmissione e voglia ch
 - L'altro Host alla ricezione del segmento, mandera una primitiva con receive(EOF) e mandera un segmento con ACK=1, ACK= Y+N+1. Entra cosi in una fase di TIMED_WAIT in cui allo scadere del timer di 2MSL, chiude la connessione
 - L'altro Host alla ricezione dell ACK, chiude la connessione
 
+Additional features
+- Persist Timer
+Il pacchetto con il Window update potrebbe andare perso MA cosi la finestra resterebbe a 0 e ri rimarrebbe in un deadlock
+Per risolvere cio quando viene settata la finestra W_S, parte il persist timer che SE prima del suo scadere non viene ricevuto un segmento con WIN = ..., allora TCP manda un window probe
+
+- Keepalive timer
+Quando una connessione è stabilita tra due entità, questa persiste finche una delle due non la chiude. MA SE il client viene spente, la connessione rimane anche se è inattivo.
+Il server TCP tiene quindi un keepalive timer di 2 ore al cui scadere verra inviato un segmento di cui si aspetta un ACK. SE non lo si riceve, si riprova per 10 ogni ogni 75s e nel caso si termina la connessione
+
+- Silly window syndrome
+In alcune AP si potrebbe richiedere di leggere o inviare un basso numero di byte, intansando la rete con moltissimi segmenti
+Per evitare cio, un TCP ricevente non invia la window update finche non c è sufficiente spazio nel buffer 
+
+- Window scale option
+Il campo window size nell header è di 16 bit, permettendo una dimensione massima di 2^16.
+Tuttavia per avere una dimensione maggiore, si utilizza la window scale option (inclusa nel segmento SYN)
+Formato:
+- NOP option: 8 bit con valore 1 usato come padding
+- Kind = 3
+- length = 3
+- Shift count: il window size è ottenuto moltiplicando per 2^n con n il valore nello shift count. es shift count = 14 (il suo max), $65 535 * 2^{14}$
+
+- Time stamp option
+Utilizzato per ottenere una stima piu accurata del RTT
+Ad ogni invio di dati, il TCP legge il current time e scrive nel campo time stamp value e quando il TCP restituisce un ACK, scrive il time stamp nel time stamp echo reply
+
+- SACK permitted option
+Simile al selective repeat nel L2 ma il segmento contiene una lista dei segmenti mancanti in modo che tutti i segmenti siano trasmessi in un unico RTT
+
+
+UDP
+Ogni messaggio UDP è trasmesso direttamente al singolo IP datagram infatti viene demandato al layer IP su Internet
+NON ci sono controllo dell'errore, di flusso e non c è una fase di setup della connessione 
+
+Formato
+- source/destination port su 16 bit: numero di porta del protocollo applicazione 
+- length: numero di byte header (8 byte) + dati
+- checksum
+- dati
+
+
+CAP 8
+DNS Domain Name System
+Permette ad ogni host in Internet di allocare un nome simbolico ad un indirizzo IP
+Viene utilizzata una struttura gerarchica in cui al livello piu alto c è la root domain seguita dai codici dei paesi o generic domain, seguiti dal codice dell area e cosi via.
+L'assegnamento del codice dei paesi avviene a livello internazionale.
+La struttura gerarchica permette di partizionare il DNS in maniera locale
+
+Formato
+Il domain name è il nome del dominio a cui il record si riferisce
+Il FQDN Fully Qualified Domain Name deve essere meno di 256 caratteri con l ultimo byte a 0 (la root)
+Il campo type indica il tipo di record es type-A = IPv4, type-AAAA = IPv6, type-MX = nome dell host che attende la mail
+Il campo class è sempre a 1 perche indica l utilizzo di Internet
+Time to live indica i secondi di validita del IP che si riceve (es 2 giorni = 172 800)
+
+Per instanziare una query ad un DNS, si aggiunge l header di 12 byte  alla quey ottenendo un DNS query message. Il DNS response message invece si otterra accodando alla query una serie di record
+
+Ogni zona ha associato un server primario e una secondario per il DNS
+
+Ogni root server tiene il nome e l'IP di ogni server di secondo livello della gerarchia e cosi via
+
+Un AP ottiene un indirizzo IP da un nome dell host attraverso un SW chiamato resolver
+Il risolver, a cui è dato l indirizzo IP del server primario e secondario del DNS, puo richiedere l'IP del domain name, sapendo la porta nota sui server (53)
+
+Risoluzione ricorsiva
+Quando un local name server non contiene l IP per il domain name richiesto, richiede ricorsivamente tale informazione facendo a sua volta una DNS query in modo gerarchico (root -> country -> ...)
+
+
+Email
+Un email client è un SW chiamato UA User Agent. Fornisce un interfaccia utente per creare, inviare e ricevere mail 
+
+UA mantiene una mailbox in IN e OUT. Il SW associato alla funzione di invio è chiamato MTA Message Transfer Agent
+Il protocollo POP3 è utilizzato per fare il fetch dei messaggio in IN
+Il protocollo SMTP Simple Mail Transfer Protocol è invece utilizzato per l'invio 
+
+L'indirizzo mail è considerato come un domain name formato da due parti  separate dalla @
+
+Il messaggio è composta da un header e da un body
+Ogni campo nell'header comprende una singola linea di un testo ASCII con il nome del campo (standardizzato) mentre una singola linea è usata per separare l header dal body
+Per rappresentare la EOL si utilizza un CR Carriage return e un LF Line Feed
+Per permettere l'invio di diversi materiali multimediali, si utilizza il protocollo MIME Multipurpose Internet Mail Extension
+
+Content-Description: descrizione testuale
+Content-Id
+Content-Type: definisce il tipo di informazioni nel body
+
+Il base64 è usato per mandare blocchi di dati in binario, aumentando pero la dimensione del messaggio
+
+Trasferimento del messaggio
+- Quando un utente preme sul tasto SEND, lo UA formatta il messaggio e lo invia allo UA del server nel suo server di mail locale
+- Alla ricezione, deposita il messaggio nella coda del MTA che controlla a intervalli regolari la sua coda. Una volta relevato il messaggio legge il campo From e To e li scrive in MAIL FROM e RCPT TO.
+- Prima di mandare il messaggio, l MTA deve risolvere l indirizzo mail del destinatario grazie al DNS
+- Una volta ottenuto l IP, ogni messaggio è trasferito con una connessione TCP sulla porta 25 (SMTP)
+
+CAP 9 
+HTTP è il protocollo standard a livello applicazione.
+E' usato per ottenere informazioni 
+La porta di HTTP è la 80
+Quando un browser ha una richiesta HTTP, inizializza una connessione HTTP alla porta 80 del server con domain name nell URL
