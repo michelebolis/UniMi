@@ -18,24 +18,29 @@
             }
           },
           {
-            "id": "34d6867af34fab15",
+            "id": "7d7f62ab86710147",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Reti di calcolatori/Libro/Riassunto libro.md",
-                "mode": "source",
-                "source": false
+                "file": "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+                "viewState": {
+                  "x": -6031.695300075647,
+                  "y": -581.9716257604563,
+                  "zoom": -0.9909922611350952
+                }
               }
             }
           },
           {
-            "id": "dae075101877b638",
+            "id": "0ee14c980b1b4dad",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.5.3"
+                "file": "Linguaggi di programmazione/Riassunti/Scala/DSL/Sintassi Regex.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -106,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Libro/Riassunto libro.md",
+                "file": "Linguaggi di programmazione/Riassunti/Scala/DSL/Sintassi Regex.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Libro/Riassunto libro.md",
+                "file": "Linguaggi di programmazione/Riassunti/Scala/DSL/Sintassi Regex.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reti di calcolatori/Libro/Riassunto libro.md"
+                "file": "Linguaggi di programmazione/Riassunti/Scala/DSL/Sintassi Regex.md"
               }
             }
           },
@@ -206,12 +211,14 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "dae075101877b638",
+  "active": "0ee14c980b1b4dad",
   "lastOpenFiles": [
+    "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
+    "Linguaggi di programmazione/Riassunti/Scala/DSL/Sintassi Regex.md",
+    "Reti di calcolatori/Libro/Riassunto libro.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Reti di calcolatori/Appunti.md",
     "Ingegneria del software/Appunti.md",
-    "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Reti di calcolatori/img/photo_5769355704325488905_y.jpg",
     "Reti di calcolatori/img/photo_5769355704325488902_y.jpg",
@@ -249,8 +256,6 @@
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 2.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 1.1.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 1.X.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Codifica Base64.md",
     "Linguaggi di programmazione/Riassunti/Scala/Slide/16. parser combinators.4.pdf",
     "Linguaggi di programmazione/Riassunti/Scala/Slide/15. dsl.4.pdf",
     "Linguaggi di programmazione/Riassunti/Scala/DSL",

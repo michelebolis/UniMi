@@ -6,3 +6,5 @@
 - Repetitive Composition: 
 	- rep/repsep matcha 0 o piu ripetizioni
 	- opt metodo per termini opzionali
+
+[[Sintassi Regex]]
