@@ -14,7 +14,7 @@
 		{"id":"cef87d0f41de24a2","type":"file","file":"Reti di calcolatori/Riassunti/Comunicazione broadcast/ALOHA.md","x":2807,"y":-1265,"width":765,"height":591},
 		{"id":"fa191df7ee8fe7a6","type":"file","file":"Reti di calcolatori/Riassunti/Comunicazione digitale/Error control/Controllo dell'errore (L2).md","x":2506,"y":713,"width":600,"height":346},
 		{"id":"b57c19001e2ae034","type":"file","file":"Reti di calcolatori/Riassunti/Comunicazione digitale/Trasmissione in banda base/Efficienza della rete.md","x":4263,"y":-355,"width":423,"height":260},
-		{"id":"6020d567e686450c","type":"file","file":"Reti di calcolatori/Riassunti/Comunicazione digitale/Trasmissione in banda base/Jitter.md","x":4263,"y":454,"width":707,"height":576},
+		{"id":"6020d567e686450c","type":"file","file":"Reti di calcolatori/Riassunti/Comunicazione digitale/Trasmissione in banda base/Jitter.md","x":4263,"y":454,"width":707,"height":546},
 		{"id":"990cfc779d59d466","type":"file","file":"Reti di calcolatori/Riassunti/Comunicazione digitale/Error control/Dimensionamento clock.md","x":4311,"y":-49,"width":612,"height":442},
 		{"id":"2cf4768985f6ed55","type":"file","file":"Reti di calcolatori/Riassunti/Comunicazione digitale/Selective repeat.md","x":4261,"y":1126,"width":612,"height":518},
 		{"id":"6506a8addb6cd077","type":"file","file":"Reti di calcolatori/Riassunti/Comunicazione digitale/Trasmissione in banda base/Trasmissione in banda base.md","x":2506,"y":-205,"width":700,"height":575},
@@ -23,12 +23,11 @@
 		{"id":"7f41888b2788c23e","type":"file","file":"Reti di calcolatori/Riassunti/Comunicazione broadcast/Standard rete a 1Gbps.md","x":3715,"y":-1040,"width":765,"height":529},
 		{"id":"a146f89d8d22abc8","type":"file","file":"Reti di calcolatori/Riassunti/Comunicazione digitale/Modalita di comunicazione.md","x":1747,"y":30,"width":560,"height":320},
 		{"id":"b98ebdff0e88170d","type":"file","file":"Reti di calcolatori/Riassunti/Comunicazione digitale/Comunicazione digitale (L2).md","x":1747,"y":470,"width":560,"height":416},
-		{"id":"9aa6d8a99a9f26bd","type":"file","file":"Reti di calcolatori/Riassunti/Comunicazione digitale/HDLC.md","x":1717,"y":1030,"width":620,"height":876},
-		{"id":"4da2698affb93a48","type":"file","file":"Reti di calcolatori/Riassunti/Comunicazione digitale/Sliding window.md","x":2506,"y":1159,"width":600,"height":698},
+		{"id":"9aa6d8a99a9f26bd","type":"file","file":"Reti di calcolatori/Riassunti/Comunicazione digitale/HDLC.md","x":1717,"y":1030,"width":620,"height":990},
 		{"id":"3e85ff9a6c2d772e","type":"file","file":"Reti di calcolatori/Riassunti/Comunicazione digitale/Trasmissione in banda base/Tempi della trasmissione.md","x":3347,"y":-275,"width":760,"height":592},
 		{"id":"a407921bb8b8f9e9","type":"file","file":"Reti di calcolatori/Riassunti/Comunicazione digitale/Codifica di Manchester.md","x":3347,"y":370,"width":760,"height":418},
 		{"id":"c7cd44fc1042d07a","type":"file","file":"Reti di calcolatori/Riassunti/Comunicazione digitale/Error control/Idle RQ.md","x":3351,"y":845,"width":760,"height":540},
-		{"id":"c7c8f90250ab8c3b","type":"file","file":"Reti di calcolatori/Riassunti/Comunicazione digitale/Error control/Continuous RQ.md","x":3351,"y":1422,"width":756,"height":583},
+		{"id":"c7c8f90250ab8c3b","type":"file","file":"Reti di calcolatori/Riassunti/Comunicazione digitale/Error control/Continuous RQ.md","x":3351,"y":1422,"width":756,"height":598},
 		{"id":"3413b88815e25a40","type":"file","file":"Reti di calcolatori/Riassunti/Comunicazione digitale/Error control/Go back-N.md","x":4261,"y":1685,"width":612,"height":320},
 		{"id":"d0e4e897d3e28c35","type":"file","file":"Reti di calcolatori/Riassunti/Tipi di rete/Rete broadcast.md","x":1081,"y":-1840,"width":580,"height":800},
 		{"id":"0faa431941203b5e","type":"file","file":"Reti di calcolatori/Riassunti/Tipi di rete/Rete di accesso.md","x":1081,"y":-840,"width":580,"height":200},
@@ -140,7 +139,8 @@
 		{"id":"1a32e7dba15744b8","type":"file","file":"Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Codifica Base64.md","x":-850,"y":-6730,"width":900,"height":1101},
 		{"id":"a088fa9a4f01c8e8","type":"file","file":"Reti di calcolatori/Riassunti/Rete introduzione/Introduzione.md","x":-840,"y":-510,"width":740,"height":511},
 		{"id":"2f8a5a425dbb61db","type":"file","file":"Reti di calcolatori/Riassunti/Rete introduzione/Requisiti della rete.md","x":15,"y":-1280,"width":859,"height":621},
-		{"id":"eb9c7629b2564220","type":"file","file":"Reti di calcolatori/Riassunti/Rete introduzione/Controllo di flusso - Introduzione.md","x":-700,"y":-2180,"width":594,"height":260}
+		{"id":"eb9c7629b2564220","type":"file","file":"Reti di calcolatori/Riassunti/Rete introduzione/Controllo di flusso - Introduzione.md","x":-700,"y":-2180,"width":594,"height":260},
+		{"id":"4da2698affb93a48","type":"file","file":"Reti di calcolatori/Riassunti/Comunicazione digitale/Sliding window.md","x":2506,"y":1160,"width":600,"height":746}
 	],
 	"edges":[
 		{"id":"74048ade0b63d09f","fromNode":"1875cdd354f1d938","fromSide":"top","toNode":"2f8a5a425dbb61db","toSide":"bottom","label":"1"},

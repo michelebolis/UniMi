@@ -2,7 +2,7 @@ Le linee di accesso usano tutte una trasmissione seriale bit a bit (da LSB a MSB
 Il segnale in output dalla NIC varia tra due livello di voltaggio \[-V; +V], secondo un bit rate
 Considerando -V per lo 0 e +V per l'1.
 
-Uso un modulatore, un device che modula un onda sinusoidale per darle una forma approssimata, a banda limitata cioe considerando un certo numero di armoniche (ognuna una frequenza in Hz). 
+Uso un `modulatore`, un device che modula un onda sinusoidale per darle una forma approssimata, a banda limitata cioe considerando un certo numero di armoniche (ognuna una frequenza in Hz). 
 Se uso poca banda (poche armoniche), la forma del segnale non approssima bene. 
 Diminuendo banda perdo quindi la definizione del mio sistema 
 

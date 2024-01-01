@@ -1,4 +1,4 @@
-Assumiamo che l'I-frane N+1 sia corrotto e che il destinatario abbia ricevuto il frame N+2 fuori sequenza. 
+Assumiamo che l'I-frame N+1 sia corrotto e che il destinatario abbia ricevuto il frame N+2 fuori sequenza. 
 Il destinatario invia al mittente un $NACK(N+1)$, causando la sospensione dell'invio di nuovi frame. 
 Il destinatario scarta nuovi frame finchè non riceve l'$ACK(N+1)$.
 

@@ -25,9 +25,9 @@
               "state": {
                 "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "viewState": {
-                  "x": 804.6140099861675,
-                  "y": 1045.6875321469295,
-                  "zoom": -0.3333333333333334
+                  "x": 3853.516895212289,
+                  "y": 768.0466336856125,
+                  "zoom": -1.6666666666666665
                 }
               }
             }
@@ -202,13 +202,14 @@
   },
   "active": "fc59673f9b60df79",
   "lastOpenFiles": [
+    "Reti di calcolatori/Riassunti/Comunicazione digitale/HDLC.md",
+    "Reti di calcolatori/Reti di calcolatori.canvas",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Riassunti/Scala/DSL/Sintassi Regex.md",
     "Reti di calcolatori/Libro/Riassunto libro.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Reti di calcolatori/Appunti.md",
     "Ingegneria del software/Appunti.md",
-    "Reti di calcolatori/Reti di calcolatori.canvas",
     "Reti di calcolatori/img/photo_5769355704325488905_y.jpg",
     "Reti di calcolatori/img/photo_5769355704325488902_y.jpg",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/DV - Distance Vector.md",
@@ -244,7 +245,6 @@
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/IPv4 - Formato.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 2.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 1.1.md",
     "Linguaggi di programmazione/Riassunti/Scala/Slide/16. parser combinators.4.pdf",
     "Linguaggi di programmazione/Riassunti/Scala/Slide/15. dsl.4.pdf",
     "Linguaggi di programmazione/Riassunti/Scala/DSL",

@@ -6,7 +6,7 @@ Il destinatario, anche in questo caso, invierà un ACK per ogni frame ricevuto c
 Alla ricezione del ACK, viene rimosso dalla lista il corrispettivo frame
 
 - Il mittente conserva una variabile di sequenza $V(S)$ che indica il prossimo frame da trasmettere: viene incrementato quando riceve l'ACK
-- Il destinatario invece conserva una variabile di sequenza $V(R)$ che indica il prossimo frame che sta aspettando: viene incrementato quando riceve il frame che stava aspettando
+- Il destinatario invece conserva una variabile di sequenza $V(R)$ che indica il prossimo frame che sta aspettando: viene incrementato quando riceve il frame che stava aspettando, senza errori
 
 Strategie di ritrasmissione:
 - [[Selective repeat]]
