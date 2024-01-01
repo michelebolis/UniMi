@@ -40,8 +40,8 @@ Livello 3:
 	![[ALOHA]]
 	![[CSMA-CD]]
 		![[BEB -Binary Exponential Backoff]]
-		![[Standard rete a 10Mbps]]
-		![[Standard rete a 1Gbps]]
+		![[Standard rete a 10Mbps - Ragionamento]]
+		![[Standard rete a 1Gbps - Ragionamento]]
 	![[VLAN]]
 
 ![[Rete - Principi di realizzazione]]

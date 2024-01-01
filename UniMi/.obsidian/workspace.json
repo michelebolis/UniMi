@@ -16,8 +16,24 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "de2c9f3fa2a4faa4",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
+                "viewState": {
+                  "x": 1117.3649456335174,
+                  "y": -1792.1931288048484,
+                  "zoom": -1.9999999999999993
+                }
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -63,8 +79,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -84,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Livello di Rete.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,6 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Livello di Rete.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +138,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Livello di Rete.md"
+              }
             }
           },
           {
@@ -180,9 +199,17 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c1ce2ce19829fc50",
+  "active": "de2c9f3fa2a4faa4",
   "lastOpenFiles": [
+    "Reti di calcolatori/Libro/CAP3.pdf",
     "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/Libro/CAP2.pdf",
+    "Reti di calcolatori/Libro/CAP1.pdf",
+    "Reti di calcolatori/Riassunti/Comunicazione broadcast/Standard rete a 1Gbps.md",
+    "Reti di calcolatori/Riassunti/Comunicazione broadcast/Standard rete a 10Mbps.md",
+    "Reti di calcolatori/Riassunti/Comunicazione broadcast/CSMA-CD.md",
+    "Reti di calcolatori/Riassunti/Comunicazione broadcast/Standard rete a 10Mbps - Ragionamento.md",
+    "Reti di calcolatori/Riassunti/Comunicazione broadcast/CSMA-CD - Formato.md",
     "Reti di calcolatori/Riassunti/Comunicazione digitale/HDLC.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Riassunti/Scala/DSL/Sintassi Regex.md",
@@ -204,12 +231,8 @@
     "Reti di calcolatori/img/photo_5769355704325488871_y.jpg",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello 1/Mezzi trasmissivi.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello 1/Mezzi trasmissivi - Differenze.md",
-    "Reti di calcolatori/Libro/CAP3.pdf",
     "Reti di calcolatori/Riassunti/Comunicazione broadcast/VLAN.md",
     "Reti di calcolatori/Riassunti/Comunicazione broadcast/VLAN - Formato.md",
-    "Reti di calcolatori/Riassunti/Comunicazione broadcast/CSMA-CD.md",
-    "Reti di calcolatori/Libro/CAP2.pdf",
-    "Reti di calcolatori/Libro/CAP1.pdf",
     "Reti di calcolatori/Libro/CAP6.1.pdf",
     "Reti di calcolatori/Libro/CAP6.2.pdf",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/MPLS.md",
@@ -221,10 +244,6 @@
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/IPv4 - IPv6 Dual stacks and tunneling.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/IPv4 - IPv6 Dual protocols.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/ARP-RARP.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/IPv6.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/IPv4 - Formato.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 2.md",
     "Linguaggi di programmazione/Riassunti/Scala/Slide/16. parser combinators.4.pdf",
     "Linguaggi di programmazione/Riassunti/Scala/Slide/15. dsl.4.pdf",
     "Linguaggi di programmazione/Riassunti/Scala/DSL",

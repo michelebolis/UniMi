@@ -40,4 +40,4 @@ formato pacchetto ARP/RARP
 | Target MAC address      | 16   |                                                                     |
 | target IP address       | 16   |                                                                     |
 
-![[Pasted image 20231219092315.png]]
+![[Pasted image 20231219092315.png|500]]
