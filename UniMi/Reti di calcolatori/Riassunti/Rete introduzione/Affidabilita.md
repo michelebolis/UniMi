@@ -13,4 +13,4 @@ Controllo per garantire l'affidabilità della rete
 
 La maggior parte delle rete mette a disposizione:
 - Servizio non affidabile o best-try / best-efford
-- Servizio affidabile: che permesse l'invio di un blocco mancate del pacchetto, portando pero ad un overhead necessario nei pacchetti
+- Servizio affidabile: permette il rinvio di un blocco mancate del pacchetto, portando pero ad un overhead necessario nei pacchetti

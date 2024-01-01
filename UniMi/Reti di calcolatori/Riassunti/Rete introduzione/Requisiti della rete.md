@@ -1,4 +1,4 @@
-- [[Affidabilita]]: se A manda un contenuto a S o viceversa, quel trasferimento è privo di errori. 
+- [[Affidabilita]]: se un nodo A manda un contenuto a un nodo S o viceversa, quel trasferimento è privo di errori. 
 - Sicurezza: ma non è un problema di chi progetta la rete, è di chi progetta l'applicazione
 - Prestazioni: misurabili 
 	- nella **velocità di trasferimento** in funzione del bit rate dei canali
