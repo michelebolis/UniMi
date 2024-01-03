@@ -6,7 +6,7 @@ L'indirizzo pubblico è unico al mondo mentre quello privato è assegnato dall'a
 Quando un Host della rete deve comunicare attraverso Internet, dovrà utilizzare un indirizzo pubblico trasformando il proprio indirizzo privato a pubblico attraverso il NAT
 
 All'interno dell'header TCP vi è il numero della porta dell'origine che identifica l'applicazione che ha fatto la richiesta e il numero di porta della destinazione che identifica la corrispondente applicazione del computer remoto
-Associato al router NAT, vi è una NAT table in modo che contenga per ogni sessione due entry.
+Associato al router NAT, vi è una NAT table che contiene per ogni sessione due entry.
 - Lato richiedente, l'entry comprende l'IP privato dell'interfaccia dell'host e il numero di porta d'origine allocato
 - Lato ISP, l'entry è composta dall'IP e da un numero di porta assegnato dal NAT router
 In questo modo si evita che si utilizza la stessa porta TCP in diversi host
