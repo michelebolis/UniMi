@@ -1,6 +1,6 @@
-Nel router abbiamo una coda di ingresso per ogni porta di I/O e una coda di uscita per porta porta di I/O
+Nel router abbiamo una coda di ingresso per ogni porta di I/O e una coda di uscita per ogni porta di I/O
 I pacchetti vengono processati da un processo Forwarder e smistati nella specifica coda di uscita, scegliendo in base ad una tabella di instradamento permette di ruotare ogni pacchetto ad ogni altro network in Internet in base ad un indirizzo IP destinazione, indicando una porta di I/O
-Il processo di routing che popola la tabella è asincrono rispetto al processo di Forwarding
+Il processo di routing che popola la tabella in modo asincrono rispetto al processo di Forwarding
 
 Come un pacchetto viene inviato in una rete IP standard
 Alla ricezione del pacchetto da una linea di input, il router legge l'IP destinazione nell'header per determinare il NetID utilizzando la maschera

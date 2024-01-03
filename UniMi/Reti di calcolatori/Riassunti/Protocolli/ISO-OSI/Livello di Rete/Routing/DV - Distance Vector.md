@@ -1,4 +1,4 @@
-I vari router si scambiano dei vettori di distanze. 
+I vari router si scambiano dei `vettori di distanze`. 
 Con distanza intendiamo la metrica che vogliamo utilizzare come costo per raggiungere un nodo
 
 I costi dei link sono derivanti da un ICMP 
