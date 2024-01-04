@@ -563,7 +563,7 @@ Per l'assegnazione degli IPv4, solitamente la NAT alloca un certo numero di host
 
 
 CAP 7
-TCP Transmission Control Protocol fornisce un servizio addidabile orientato alla connessione
+TCP Transmission Control Protocol fornisce un servizio affidabile orientato alla connessione
 UDP User Datagram Protocol fornisce un servizio best-efford senza connessione
 
 TCP deve convertire il servizio best-efford di IP in un servizio affidabile
@@ -580,7 +580,7 @@ Il protocollo TCP ha 3 operazioni distinte:
 - Chiusura della connessione 
 
 Apertura
-Alla ricezione della primitiva connest() dall'applicativo, inizia la fase di apertura della connessione
+Alla ricezione della primitiva connect() dall'applicativo, inizia la fase di apertura della connessione
 1. TCP manda manda un segmento al server con flag SYN e SEQ=X con X numero di inizio sequenza. Il mittente entra nello stato di SYN_SENT
 2. Alla ricezione del segmento, SE il server non è in ascolto, la connessione viene abortita mandando un segmento con il flag RST. In caso contrario il server manda un segmento con il flag SYN, la propria SEQ, il flag ACK e come ACK X+1 per segnalare di aver ricevuto il segmento X al client. Il server entra in stato di SYN_RCVD
 3. Alla ricezione del segmento, il client manda un segmento con ACK, ACK = Y+1. La connessione lato client è ESTABLISHED
@@ -605,8 +605,8 @@ Viene settato RTO inizialmente a 1,5s, e viene duplicato quando avviene una ritr
 
 Successivamente RTO si deriva dal RTT
 RTO viene aggiornata per ogni misurazione del RTT
-$$RTT = \alpha * RTT + (1-\alpha ) *M$$
-con M la misura dell RTT e alpha un fattore
+$$RTO = \alpha * RTT + (1-\alpha ) *M$$
+con M la misura dell RTT e $\alpha$ un fattore
 
 Nella maggior parte delle implementazione, TCP restituisce un ACK per ogni segmento che riceve corretto. Quando invia un ACK, un timer, delayed ACK timer, viene avviato e un secondo segmento non dovrebbe essere ricevuto prima che scada
 

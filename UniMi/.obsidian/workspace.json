@@ -16,8 +16,75 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "1de0f9af943164c9",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
+                "viewState": {
+                  "x": -6984.343000509351,
+                  "y": -1939.3304632183163,
+                  "zoom": 0.33333333333333365
+                }
+              }
+            }
+          },
+          {
+            "id": "a2f1107c80c6c2c5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Calibrazione RTO.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "65f13d5d1b83d54e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "84557da965ac77c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reti di calcolatori/Libro/Riassunto libro.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b43c45d2e99de15e",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Reti di calcolatori/Libro/CAP6.1.pdf"
+              }
+            }
+          },
+          {
+            "id": "6135686a65264ddb",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Reti di calcolatori/Libro/CAP6.2.pdf"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -67,7 +134,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 247.5
+    "width": 200
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -83,6 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Reti di calcolatori/Libro/CAP6.1.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +167,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Reti di calcolatori/Libro/CAP6.1.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +189,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Reti di calcolatori/Libro/CAP6.1.pdf"
+              }
             }
           },
           {
@@ -159,8 +230,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -180,8 +250,17 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c1ce2ce19829fc50",
+  "active": "b43c45d2e99de15e",
   "lastOpenFiles": [
+    "Reti di calcolatori/Libro/CAP6.2.pdf",
+    "Reti di calcolatori/Libro/CAP6.1.pdf",
+    "Reti di calcolatori/Libro/Riassunto libro.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Calibrazione RTO.md",
+    "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Algoritmo di Nagle.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Invio.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Delayed Acknowledgments.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Algoritmo di Nagle.md",
     "Reti di calcolatori/Esami/Esami indice.md",
     "Reti di calcolatori/Esami/DomandeRetiEx.pdf",
     "Reti di calcolatori/Esami/2018-02-27.md",
@@ -196,7 +275,6 @@
     "Reti di calcolatori/Esami/2023-06-20.md",
     "Reti di calcolatori/Esami",
     "Reti di calcolatori/Libro/CAP3.pdf",
-    "Reti di calcolatori/Reti di calcolatori.canvas",
     "Reti di calcolatori/Libro/CAP2.pdf",
     "Reti di calcolatori/Libro/CAP1.pdf",
     "Reti di calcolatori/Riassunti/Comunicazione broadcast/Standard rete a 1Gbps.md",
@@ -207,14 +285,11 @@
     "Reti di calcolatori/Riassunti/Comunicazione digitale/HDLC.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Riassunti/Scala/DSL/Sintassi Regex.md",
-    "Reti di calcolatori/Libro/Riassunto libro.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Reti di calcolatori/Appunti.md",
     "Ingegneria del software/Appunti.md",
     "Reti di calcolatori/img/photo_5769355704325488905_y.jpg",
     "Reti di calcolatori/img/photo_5769355704325488902_y.jpg",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/DV - Distance Vector.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/Split Horizon.md",
     "Reti di calcolatori/img/photo_57693557043254888915_y.jpg",
     "Reti di calcolatori/img/photo_5769355704325488895_y.jpg",
     "photo_5769355704325488882_y.jpg",
@@ -223,11 +298,6 @@
     "Reti di calcolatori/img/photo_5769355704325488874_y.jpg",
     "Reti di calcolatori/img/Pasted image 20231219134937.png",
     "Reti di calcolatori/img/photo_5769355704325488871_y.jpg",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello 1/Mezzi trasmissivi.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello 1/Mezzi trasmissivi - Differenze.md",
-    "Reti di calcolatori/Riassunti/Comunicazione broadcast/VLAN.md",
-    "Reti di calcolatori/Libro/CAP6.1.pdf",
-    "Reti di calcolatori/Libro/CAP6.2.pdf",
     "Linguaggi di programmazione/Riassunti/Scala/Slide/16. parser combinators.4.pdf",
     "Linguaggi di programmazione/Riassunti/Scala/Slide/15. dsl.4.pdf",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/ES.canvas",

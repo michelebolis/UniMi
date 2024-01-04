@@ -3,7 +3,7 @@ Lavoriamo a livello dei buffer delle socket (ricordiamo a livello kernel)
 
 Introduciamo 2 variabili: $W_S$ (Finestra di invio) e $W_R$ (Finestra di ricezione) che utilizzeremo nell'header del TCP in window size
 Lato ricezione, notifica che la $W_R$ = 2000, cioe ho un buffer di 2000byte (Window adv...) con un segmento con window size = 2000
-Essendo a livello di trasporto, non saprò quando l applicazione leggera dal buffer (in generale utilizzerà le primitive)
+Essendo a livello di trasporto, non saprò quando l'applicazione leggera dal buffer (in generale utilizzerà le primitive)
 Quando la destinazione invia il secondo messaggio nello start della connessione, viene inclusa anche la window size, cioe la $W_R$
 
 Ipotizziamo di avere nella sorgente un $W_S$= 2000

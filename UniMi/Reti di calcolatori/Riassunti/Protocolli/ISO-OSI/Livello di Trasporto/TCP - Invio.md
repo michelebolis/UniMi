@@ -16,6 +16,4 @@ E' necessario fare due segmenti: uno da 500 e uno da 100
 
 [[Cumulative ACK]]
 [[TCP - Invio continuo]]
-[[Algoritmo di Nagle]]
 [[Fast Retrasmission]]
-[[Calibrazione RTO]]  
