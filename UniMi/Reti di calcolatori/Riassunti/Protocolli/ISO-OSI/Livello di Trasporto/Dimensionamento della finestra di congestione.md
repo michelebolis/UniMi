@@ -7,11 +7,7 @@ Caso rete senza congestione
 $NumeroDiByteChePossoTrasmettere = min(W_C, W_S)$
 
 Problemi:
-- [[RTO expires]] 
-- [[3 ACK duplicati]]
-
-3 ACK potrebbero essere molti
-La sorgente, una volta rilevato di aver ricevuto i segmenti non in ordine, puo utilizzare un SACK (SelectiveACK) per specificare il segmento che ho ricevuto insieme al ACK che rappresenta invece quello che mi aspettavo
-
+- [[WC - RTO expires]] 
+- [[WC - 3 ACK duplicati]]
 
 [[Explicit Congestion Notification]]

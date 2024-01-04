@@ -614,9 +614,9 @@ Nella maggior parte delle implementazione, TCP restituisce un ACK per ogni segme
 Controllo di flusso
 Il campo window size di ogni segmento indica il numero di byte che il TCP ricevente puo ricevere nel buffer. In questo modo si garantisce che ci sia sempre spazio libero nel buffer del destinatario prima che la sorgente mandi i dati.
 
-Associata ad ogni direzione vengono mantenute due variabili, la finestra di invio W_S, e la finestra di ricezione W_R
-Il flusso si ferma quando W_S = 0 
-W_R invece è aumentata quando riceve dei dati privi di errore e viene diminuita quando AP destinatario legge dei byte dal buffer
+Associata ad ogni direzione vengono mantenute due variabili, la finestra di invio $W_S$, e la finestra di ricezione $W_R$
+Il flusso si ferma quando $W_S$ = 0 
+$W_R$ invece è aumentata quando riceve dei dati privi di errore e viene diminuita quando AP destinatario legge dei byte dal buffer
 
 Controllo di congestione
 Un segmento potrebbe essere scartato durante il suo viaggio perche sono presenti degli errori o perche un router/gateway è diventato congestionato.

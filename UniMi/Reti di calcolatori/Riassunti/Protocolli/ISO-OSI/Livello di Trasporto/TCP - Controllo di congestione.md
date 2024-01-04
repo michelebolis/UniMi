@@ -1,4 +1,5 @@
 La congestione è un fattore della rete determinato dal riempimento delle code nei router e causa della perdita di segmenti
+
 TCP rileva la congestione come un errore di trasmissione
 - thougthput: utilizzo del canale nel tempo
 - goodput: thougthput - utilizzo canale per ritrasmissioni

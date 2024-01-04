@@ -1,7 +1,10 @@
-Quanti segmenti possiamo mandare alla destinazione e la velocita di processamento alla destinazione
-Lavoriamo a livello dei buffer delle socket (ricordiamo a livello kernel)
+Il campo window size di ogni segmento indica il numero di byte che il TCP ricevente puo ricevere nel buffer. In questo modo si garantisce che ci sia sempre spazio libero nel buffer del destinatario prima che la sorgente mandi i dati.
 
-Introduciamo 2 variabili: $W_S$ (Finestra di invio) e $W_R$ (Finestra di ricezione) che utilizzeremo nell'header del TCP in window size
+Introduciamo 2 variabili: $W_S$ (`Finestra di invio`) e $W_R$ (`Finestra di ricezione`) che utilizzeremo nell'header del TCP in window size
+
+Il flusso si ferma quando $W_S$ = 0 
+$W_R$ invece è aumentata quando la destinazione riceve dei dati privi di errore mentre viene diminuita quando AP destinatario legge dei byte dal buffer
+
 Lato ricezione, notifica che la $W_R$ = 2000, cioe ho un buffer di 2000byte (Window adv...) con un segmento con window size = 2000
 Essendo a livello di trasporto, non saprò quando l'applicazione leggera dal buffer (in generale utilizzerà le primitive)
 Quando la destinazione invia il secondo messaggio nello start della connessione, viene inclusa anche la window size, cioe la $W_R$

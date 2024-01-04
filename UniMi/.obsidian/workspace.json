@@ -25,9 +25,9 @@
               "state": {
                 "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "viewState": {
-                  "x": -6984.343000509351,
-                  "y": -1939.3304632183163,
-                  "zoom": 0.33333333333333365
+                  "x": -7966.025565701862,
+                  "y": -655.7781612875925,
+                  "zoom": -0.333333333333333
                 }
               }
             }
@@ -45,7 +45,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "65f13d5d1b83d54e",
@@ -62,29 +62,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "b43c45d2e99de15e",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Reti di calcolatori/Libro/CAP6.1.pdf"
-              }
-            }
-          },
-          {
-            "id": "6135686a65264ddb",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Reti di calcolatori/Libro/CAP6.2.pdf"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +113,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -150,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Libro/CAP6.1.pdf",
+                "file": "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Controllo di congestione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Libro/CAP6.1.pdf",
+                "file": "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Controllo di congestione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -190,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reti di calcolatori/Libro/CAP6.1.pdf"
+                "file": "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Controllo di congestione.md"
               }
             }
           },
@@ -230,12 +210,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -250,13 +230,13 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "b43c45d2e99de15e",
+  "active": "1de0f9af943164c9",
   "lastOpenFiles": [
-    "Reti di calcolatori/Libro/CAP6.2.pdf",
-    "Reti di calcolatori/Libro/CAP6.1.pdf",
     "Reti di calcolatori/Libro/Riassunto libro.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Calibrazione RTO.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Calibrazione RTO.md",
+    "Reti di calcolatori/Libro/CAP6.1.pdf",
+    "Reti di calcolatori/Libro/CAP6.2.pdf",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Algoritmo di Nagle.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Invio.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Delayed Acknowledgments.md",
