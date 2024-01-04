@@ -16,24 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "de2c9f3fa2a4faa4",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
-                "viewState": {
-                  "x": -3305.7988981245953,
-                  "y": 3991.8194055141876,
-                  "zoom": -2.9999999999999996
-                }
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -83,7 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 247.5
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -99,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas"
-              }
+              "state": {}
             }
           },
           {
@@ -184,7 +164,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -199,8 +180,21 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "a036a027379b1f76",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
+    "Reti di calcolatori/Esami/Esami indice.md",
+    "Reti di calcolatori/Esami/DomandeRetiEx.pdf",
+    "Reti di calcolatori/Esami/2018-02-27.md",
+    "Reti di calcolatori/Reti di calcolatori.md",
+    "Reti di calcolatori/Seminari",
+    "Reti di calcolatori/Esami/2019-01-29.md",
+    "Reti di calcolatori/Esami/2023-07-25.md",
+    "Reti di calcolatori/Esami/2023-09-07.md",
+    "Reti di calcolatori/Esami/2023-09-26.md",
+    "Reti di calcolatori/Esami/2023-02-21.md",
+    "Reti di calcolatori/Esami/2022-06-21.md",
+    "Reti di calcolatori/Esami/2023-06-20.md",
+    "Reti di calcolatori/Esami",
     "Reti di calcolatori/Libro/CAP3.pdf",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Reti di calcolatori/Libro/CAP2.pdf",
@@ -232,23 +226,10 @@
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello 1/Mezzi trasmissivi.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello 1/Mezzi trasmissivi - Differenze.md",
     "Reti di calcolatori/Riassunti/Comunicazione broadcast/VLAN.md",
-    "Reti di calcolatori/Riassunti/Comunicazione broadcast/VLAN - Formato.md",
     "Reti di calcolatori/Libro/CAP6.1.pdf",
     "Reti di calcolatori/Libro/CAP6.2.pdf",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/MPLS.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/Router MPLS.md",
-    "Reti di calcolatori/Seminario EOLO.md",
-    "Reti di calcolatori/Reti di calcolatori.md",
-    "Reti di calcolatori/Seminario Rete UniMi.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/IPv4 - IPv6 Translators.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/IPv4 - IPv6 Dual stacks and tunneling.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/IPv4 - IPv6 Dual protocols.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/ARP-RARP.md",
     "Linguaggi di programmazione/Riassunti/Scala/Slide/16. parser combinators.4.pdf",
     "Linguaggi di programmazione/Riassunti/Scala/Slide/15. dsl.4.pdf",
-    "Linguaggi di programmazione/Riassunti/Scala/DSL",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Use cases Diagram",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/ES.canvas",
     "Ricerca operativa/Ricerca operativa.canvas",
     "Sistemi biometrici/Sistemi biometrici.canvas",
