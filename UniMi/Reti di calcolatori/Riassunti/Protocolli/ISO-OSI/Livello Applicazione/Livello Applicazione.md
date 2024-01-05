@@ -3,3 +3,5 @@
 [[HTTP]]
 [[DASH - Dynamic Adaptive Streaming over HTTP]]
 [[CDN - Content Delivery Network]]
+[[SDN - SW Defined Networking]]
+[[NFV - Network Function Virtualization]]

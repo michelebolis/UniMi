@@ -1,0 +1,2 @@
+NFV Network Function Virtualization virtualizzazione delle funzionalita di rete 
+EDGE computing: stessa logica di un cloud computing as a service MA locale, all edge. Oltre ai datacenter, ci sono anche piccoli datacenter locali per servizi a bassissima latenza

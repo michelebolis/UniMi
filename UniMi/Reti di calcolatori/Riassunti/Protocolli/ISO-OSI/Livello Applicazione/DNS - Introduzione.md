@@ -1,8 +1,8 @@
 DNS Domain Name System
 Per contattare il server di una pagina web potrei utilizzare il suo IP MA è ovviamente piu semplice utilizzare il suo nome simbolico
-DNS traduce un nome in un indirizzo IP
-Un nome DNS è identificato da un fully qualified domain name
-1. Per essere human readable è rappresentata in dot notation es www.di.unimi.it. (ATT a livello di standard c è un `.` finale ma in realtà è messo automaticamente)
+DNS traduce un nome simbolico in un indirizzo IP
+Un nome DNS è identificato da un `Fully Qualified Domain Name`
+1. Per essere human readable è rappresentata in dot notation es \www.di.unimi.it. (ATT a livello di standard c è un `.` finale ma in realtà è messo automaticamente)
 2. Dal punto di vista della macchina è rappresentato come una stringa di byte, mettendo il numero di byte di ogni label es 3www2di5unimi2it0
 
 Utilizzi:
