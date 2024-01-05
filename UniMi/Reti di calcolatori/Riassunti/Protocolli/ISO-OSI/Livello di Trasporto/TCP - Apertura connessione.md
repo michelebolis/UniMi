@@ -2,7 +2,7 @@ Sia la sorgente che la destinazione scelgono un SEQ SequenceNumber
 SEQ non parte sempre da 0, per evitare che segmenti di una vecchia connessione ancora nella rete causino sovrapposizione
 (Oggi non viene piu usato un approccio incrementale ma viene usata una funzione crittografica)
 
-Le due entita TCP accordano un MSS Maximum Segment Size che di standard è di 536byte
+All'inizio della connessione le due entità contrattano il `MSS Max Segment Size`. SE non viene definito esplicitamente (attraverso la [[MSSO - Max Segment Size Option]]), è di 536byte (perche si evita una frammentazione)
 
 Fasi
 1. La sorgente invia una richiesta di connessione, un segmento in cui flag SYN=1 e SEQ=X (con X il numero di inizio sequenza della sorgente; ACK non verra guardato perche il flag è a 0). Il sorgente è in stato di SYN_SENT

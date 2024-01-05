@@ -4,10 +4,10 @@ TCP rileva la congestione come un errore di trasmissione
 - thougthput: utilizzo del canale nel tempo
 - goodput: thougthput - utilizzo canale per ritrasmissioni
 
-l obiettivo del TCP quando viene utilizzato per l invio di grandi quantita di dati, è mandare in parallelo piu segmenti possibili
+L'obiettivo del TCP quando viene utilizzato per l'invio di grandi quantita di dati, è mandare in parallelo piu segmenti possibili
 
 Ipotizziamo di avere la trasmissione di segmenti verso una destinazione in cui in un primo tratto, ho una trasmissione veloce MA poi dal router alla destinazione ho un canale lento (collo di bottiglia). 
-SE la rete ce la fa, si nota solo un aumento di RTT RoundTripTime
+SE la rete ce la fa, si nota solo un aumento di RTT
 SE i buffer del router si saturano, elimina i segmenti e TCP rileva l'errore di trasmissione MA la sorgente come stima quanti segmenti inviare nell'unita di tempo?
 
 La finestra di congestione indica quanti byte si possono immettere nella rete 

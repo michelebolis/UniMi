@@ -42,6 +42,6 @@ SE a $T_k$ RTO scade, raddoppio e poi quando riceverò R faro di nuovo la stima
 
 ---
 Problemi:
-Quando l RTO scade, viene raddoppiato E viene ritrasmesso il segmento. MA se l'ACK del segmento precedente arriva molto dopo, ho un ambiguità perche non si capisce a quale trasmissione del segmento appartiene. 
+Quando l'RTO scade, viene raddoppiato l'RTO E viene ritrasmesso il segmento. MA se l'ACK del segmento precedente arriva molto dopo, ho un ambiguità perche non si capisce a quale trasmissione del segmento appartiene. 
 
 L'algoritmo di Karn dice che ogni volta che raddoppio RTO non considero RTT di nessuno dei due segmenti, non aggiornando quindi ne la media ne la varianza.

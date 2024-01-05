@@ -620,16 +620,16 @@ $W_R$ invece è aumentata quando riceve dei dati privi di errore e viene diminui
 
 Controllo di congestione
 Un segmento potrebbe essere scartato durante il suo viaggio perche sono presenti degli errori o perche un router/gateway è diventato congestionato.
-Ogni RCP ha quindi una variabile chiamata finestra di congestione W_C
+Ogni RCP ha quindi una variabile chiamata finestra di congestione $W_C$
 
 Inizialmente non si conosce lo stato delle rete quindi si individuano 3 fasi:
-- Slow start: in cui W_C viene aumentato di 1 per ogni ACK ricevuto in modo da aumentare rapidamente. Questa fase prende il nome di slow start in quanto W_C inizialmente è uguale a 1
-- Fase di prevenzione della congestione: lo slow start si ferma quando raggiunge lo Slow Start Threshold SST (tipicamente a 64kbytes). Nella nuova fase W_C viene incrementato di 1 ogni W_C ACK ricevuti 
-- Fase costante in cui W_C non aumenta
+- Slow start: in cui $W_C$ viene aumentato di 1 per ogni ACK ricevuto in modo da aumentare rapidamente. Questa fase prende il nome di slow start in quanto $W_C$ inizialmente è uguale a 1
+- Fase di prevenzione della congestione: lo slow start si ferma quando raggiunge lo Slow Start Threshold SST (tipicamente a 64kbytes). Nella nuova fase $W_C$ viene incrementato di 1 ogni $W_C$ ACK ricevuti 
+- Fase costante in cui $W_C$ non aumenta
 
 Tipi di congestione:
 - Ricezione di ACK duplicati: indica che la destinazione è raggiungibile quindi si presume un livello di congestione basso. Alla ricezione di 3 ACK duplicati, W_C viene dimezzato e viene utilizzato l incremento della fase di prevenzione della  congestione (fast recovery)
-- RTO scade: assumendo che lo scadere dell RTO sia un evento raro, cio indica una congestione grave. W_C è quindi resettato a 1 e si riparte con lo slow start
+- RTO scade: assumendo che lo scadere dell RTO sia un evento raro, cio indica una congestione grave. $W_C$ è quindi resettato a 1 e si riparte con lo slow start
 
 Chiusura della connessione
 - 4 way close
@@ -655,18 +655,18 @@ Potrebbe succedere che nonostante un AP abbia finito la trasmissione e voglia ch
 Additional features
 - Persist Timer
 Il pacchetto con il Window update potrebbe andare perso MA cosi la finestra resterebbe a 0 e ri rimarrebbe in un deadlock
-Per risolvere cio quando viene settata la finestra W_S, parte il persist timer che SE prima del suo scadere non viene ricevuto un segmento con WIN = ..., allora TCP manda un window probe
+Per risolvere cio quando viene settata la finestra $W_S$, parte il persist timer che SE prima del suo scadere non viene ricevuto un segmento con WIN = ..., allora TCP manda un window probe
 
 - Keepalive timer
 Quando una connessione è stabilita tra due entità, questa persiste finche una delle due non la chiude. MA SE il client viene spente, la connessione rimane anche se è inattivo.
 Il server TCP tiene quindi un keepalive timer di 2 ore al cui scadere verra inviato un segmento di cui si aspetta un ACK. SE non lo si riceve, si riprova per 10 ogni ogni 75s e nel caso si termina la connessione
 
 - Silly window syndrome
-In alcune AP si potrebbe richiedere di leggere o inviare un basso numero di byte, intansando la rete con moltissimi segmenti
-Per evitare cio, un TCP ricevente non invia la window update finche non c è sufficiente spazio nel buffer 
+In alcune AP si potrebbe richiedere di leggere o inviare un basso numero di byte, intasando la rete con moltissimi segmenti
+Per evitare ciò, un TCP ricevente non invia la window update finche non c è sufficiente spazio nel buffer 
 
 - Window scale option
-Il campo window size nell header è di 16 bit, permettendo una dimensione massima di 2^16.
+Il campo window size nell'header è di 16 bit, permettendo una dimensione massima di $2^{16}$.
 Tuttavia per avere una dimensione maggiore, si utilizza la window scale option (inclusa nel segmento SYN)
 Formato:
 - NOP option: 8 bit con valore 1 usato come padding

@@ -96,7 +96,7 @@ Livello 3:
 					![[WC - RTO expires]]
 					![[WC - 3 ACK duplicati]]
 					![[Explicit Congestion Notification]]
-			![[TCP - Controllo dell'errore]]
+			![[TCP - Fasi]]
 				![[TCP - Apertura connessione]]
 					![[RTO]]
 				![[TCP - Invio]]

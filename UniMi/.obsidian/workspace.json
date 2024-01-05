@@ -25,20 +25,44 @@
               "state": {
                 "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "viewState": {
-                  "x": -7966.025565701862,
-                  "y": -655.7781612875925,
-                  "zoom": -0.333333333333333
+                  "x": -3631.3619338368244,
+                  "y": -3316.236703930037,
+                  "zoom": -1.3333333333333335
                 }
               }
             }
           },
           {
-            "id": "a2f1107c80c6c2c5",
+            "id": "ccc71db25580d650",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Calibrazione RTO.md",
+                "file": "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Livello Applicazione.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d60b2536c807bfee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/CDN - Content Delivery Network.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "afd583986fe6cf6f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reti di calcolatori/Libro/Riassunto libro.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,16 +72,16 @@
         "currentTab": 1
       },
       {
-        "id": "65f13d5d1b83d54e",
+        "id": "3d1e139e150a4365",
         "type": "tabs",
         "children": [
           {
-            "id": "84557da965ac77c2",
+            "id": "5a097e88e9bdd85d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reti di calcolatori/Libro/Riassunto libro.md",
+                "file": "Reti di calcolatori/Appunti.md",
                 "mode": "source",
                 "source": false
               }
@@ -230,44 +254,45 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "1de0f9af943164c9",
+  "active": "a036a027379b1f76",
   "lastOpenFiles": [
-    "Reti di calcolatori/Libro/Riassunto libro.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Livello Applicazione.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/CDN - Content Delivery Network.md",
+    "Reti di calcolatori/Appunti.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/DASH - Dynamic Adaptive Streaming over HTTP.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 2 - Multiple Parallel Stream.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Trasparenza HTTP.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 2 - Formato.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Frame Setting.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Frame Push_Promise.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Frame Data.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Frame Header.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/IMAP.md",
+    "Reti di calcolatori/Libro/Riassunto libro.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Controllo del flusso Esempio.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/MSSO - Max Segment Size Option.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Option.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/SACK permitted option.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Time Stamp option.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Window scale option.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Head Of Line Blocking Problem.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Calibrazione RTO.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Formato.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Controllo dell'errore.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Fast Retrasmission - Esempio.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/UDP.md",
     "Reti di calcolatori/Libro/CAP6.1.pdf",
     "Reti di calcolatori/Libro/CAP6.2.pdf",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Algoritmo di Nagle.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Invio.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Delayed Acknowledgments.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/TCP - Algoritmo di Nagle.md",
-    "Reti di calcolatori/Esami/Esami indice.md",
     "Reti di calcolatori/Esami/DomandeRetiEx.pdf",
-    "Reti di calcolatori/Esami/2018-02-27.md",
-    "Reti di calcolatori/Reti di calcolatori.md",
     "Reti di calcolatori/Seminari",
-    "Reti di calcolatori/Esami/2019-01-29.md",
-    "Reti di calcolatori/Esami/2023-07-25.md",
-    "Reti di calcolatori/Esami/2023-09-07.md",
-    "Reti di calcolatori/Esami/2023-09-26.md",
-    "Reti di calcolatori/Esami/2023-02-21.md",
-    "Reti di calcolatori/Esami/2022-06-21.md",
-    "Reti di calcolatori/Esami/2023-06-20.md",
     "Reti di calcolatori/Esami",
     "Reti di calcolatori/Libro/CAP3.pdf",
     "Reti di calcolatori/Libro/CAP2.pdf",
     "Reti di calcolatori/Libro/CAP1.pdf",
-    "Reti di calcolatori/Riassunti/Comunicazione broadcast/Standard rete a 1Gbps.md",
-    "Reti di calcolatori/Riassunti/Comunicazione broadcast/Standard rete a 10Mbps.md",
-    "Reti di calcolatori/Riassunti/Comunicazione broadcast/CSMA-CD.md",
-    "Reti di calcolatori/Riassunti/Comunicazione broadcast/Standard rete a 10Mbps - Ragionamento.md",
-    "Reti di calcolatori/Riassunti/Comunicazione broadcast/CSMA-CD - Formato.md",
-    "Reti di calcolatori/Riassunti/Comunicazione digitale/HDLC.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
-    "Linguaggi di programmazione/Riassunti/Scala/DSL/Sintassi Regex.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-    "Reti di calcolatori/Appunti.md",
-    "Ingegneria del software/Appunti.md",
     "Reti di calcolatori/img/photo_5769355704325488905_y.jpg",
     "Reti di calcolatori/img/photo_5769355704325488902_y.jpg",
     "Reti di calcolatori/img/photo_57693557043254888915_y.jpg",

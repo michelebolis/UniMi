@@ -28,3 +28,6 @@ HTTP schema
 
 [[HTTP 1.1]]
 [[HTTP 2]]
+
+[[Trasparenza HTTP]]
+HTTP 3 gestisce piu efficientemente le funzionalita del 2 demandando a CUIC e utilizzando UDP

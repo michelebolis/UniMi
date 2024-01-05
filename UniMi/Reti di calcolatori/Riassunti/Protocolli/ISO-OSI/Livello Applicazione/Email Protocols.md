@@ -1,5 +1,7 @@
-SMTP Simple Mail Transport Protocol
-Protocollo per l'invio di mail tra due soggetti
+Protocollo per l'invio: SMTP Simple Mail Transport Protocol
+Protocollo per la ricezione:
+- POP 3: fa operazioni elementali come prendere la posta dal server ed ha un'unica coda delle mail
+- [[IMAP]] 
 
 | Protocollo                   | Numero di porta                           |
 | ---------------------------- | ----------------------------------------- |

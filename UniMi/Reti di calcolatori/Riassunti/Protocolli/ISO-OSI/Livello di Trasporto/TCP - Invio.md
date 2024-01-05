@@ -12,8 +12,10 @@ E' necessario fare due segmenti: uno da 500 e uno da 100
 3. Il ricevente manda un segmento con ACK=1, ACK = X + 500
 4. Il mittente, ricevuto il segmento di ACK, cancello nel buffer TCP il primo segmento e mando il secondo segmento con SEQ=X+500
 5. Ricevente ripete passo 2 mandando un ACK=X+600
-6. Alla ricezione dell ACK, tutti i segmenti sono stati inviati
+6. Alla ricezione dell'ACK, tutti i segmenti sono stati inviati
 
-[[Cumulative ACK]]
-[[TCP - Invio continuo]]
-[[Fast Retrasmission]]
+Ottimizzazioni:
+- [[Cumulative ACK]]
+- [[TCP - Invio continuo]]
+
+[[TCP - Controllo dell'errore]]
