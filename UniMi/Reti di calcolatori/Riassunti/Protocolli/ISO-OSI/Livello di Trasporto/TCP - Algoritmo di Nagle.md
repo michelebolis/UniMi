@@ -1,2 +1,1 @@
-Una variazione del delayed acknowledgement, è l'algoritmo di Nagle
-TCP in questo caso aspetta SOLO un segmento che riceve l'ACK. Quando l ACK arriva, tutti i caratteri nel buffer, vengono inviati in un unico segmento
+E' variazione del delayed acknowledgement che aspetta SOLO un segmento che riceve l'ACK. Quando l ACK arriva, tutti i caratteri nel buffer, vengono inviati in un unico segmento
