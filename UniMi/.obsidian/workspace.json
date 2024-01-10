@@ -16,8 +16,46 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "4ad62c4dfb364145",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reti di calcolatori/Esami/2023-09-07.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "39c9d0098218b9c6",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
+                "viewState": {
+                  "x": -7758.556243909333,
+                  "y": -1410.6014042210572,
+                  "zoom": -0.3333333333333334
+                }
+              }
+            }
+          },
+          {
+            "id": "a8f138456ddb4361",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Reti di calcolatori/Esami/DomandeRetiEx.pdf"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,6 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Reti di calcolatori/Esami/2023-09-07.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Reti di calcolatori/Esami/2023-09-07.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +160,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Reti di calcolatori/Esami/2023-09-07.md"
+              }
             }
           },
           {
@@ -179,8 +221,9 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "47136b92c595cdff",
+  "active": "4ad62c4dfb364145",
   "lastOpenFiles": [
+    "Reti di calcolatori/Esami/2023-09-26.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Reti di calcolatori/Esami/DomandeRetiEx.pdf",
     "Ingegneria del software/Riassunti/img/Pasted image 20231215095605.png",
@@ -208,7 +251,6 @@
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/SACK permitted option.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Time Stamp option.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Window scale option.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Head Of Line Blocking Problem.md",
     "Reti di calcolatori/Libro/CAP6.1.pdf",
     "Reti di calcolatori/Libro/CAP6.2.pdf",
     "Reti di calcolatori/Seminari",
