@@ -164,8 +164,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,6 +181,7 @@
   },
   "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
+    "Reti di calcolatori/Esami/Esercizi vari.md",
     "Reti di calcolatori/Esami/2023-09-26.md",
     "Reti di calcolatori/Appunti.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
