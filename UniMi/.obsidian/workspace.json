@@ -16,46 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "d77d439ee076987c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reti di calcolatori/Esami/2023-09-26.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "58d072b5da517d85",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Reti di calcolatori/Esami/DomandeRetiEx.pdf"
-              }
-            }
-          },
-          {
-            "id": "5c274b5f932ce9db",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
-                "viewState": {
-                  "x": 4551.335265945044,
-                  "y": -1832.8597819515035,
-                  "zoom": 0.9999999999999998
-                }
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -121,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Esami/2023-09-26.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Esami/2023-09-26.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Reti di calcolatori/Esami/2023-09-26.md"
-              }
+              "state": {}
             }
           },
           {
@@ -222,13 +180,13 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "d77d439ee076987c",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
-    "Reti di calcolatori/Appunti.md",
-    "Reti di calcolatori/Esami/2023-07-25.md",
-    "Reti di calcolatori/Reti di calcolatori.canvas",
-    "Reti di calcolatori/Esami/DomandeRetiEx.pdf",
     "Reti di calcolatori/Esami/2023-09-26.md",
+    "Reti di calcolatori/Appunti.md",
+    "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/Esami/2023-07-25.md",
+    "Reti di calcolatori/Esami/DomandeRetiEx.pdf",
     "Reti di calcolatori/Esami/2023-09-07.md",
     "Reti di calcolatori/Libro/CAP6.2.pdf",
     "Reti di calcolatori/Libro/CAP6.1.pdf",

@@ -2029,3 +2029,10 @@ Sabrina ... per data science
 ---
 
 Esercitazione rossi
+- Quale è la dimensione del frame data, dato U
+
+considero tx = X/banda e poi faccio la formula inversa
+
+nel RTO PRIMA sempre Deviazione e poi RTT
+RTT = RTTMedia
+
