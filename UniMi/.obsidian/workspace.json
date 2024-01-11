@@ -164,7 +164,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,9 +180,11 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "47136b92c595cdff",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
+    "Reti di calcolatori/Libro/CAP7.pdf",
     "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/Libro/CAP6.1.pdf",
     "Reti di calcolatori/Esami/DomandeRetiEx.pdf",
     "Ingegneria del software/Riassunti/img/Pasted image 20231215095605.png",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Email - Struttura rete.md",
@@ -209,7 +212,6 @@
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Time Stamp option.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Window scale option.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Trasporto/Head Of Line Blocking Problem.md",
-    "Reti di calcolatori/Libro/CAP6.1.pdf",
     "Reti di calcolatori/Libro/CAP6.2.pdf",
     "Reti di calcolatori/Seminari",
     "Reti di calcolatori/Esami",
@@ -228,7 +230,6 @@
     "Reti di calcolatori/img/photo_5769355704325488874_y.jpg",
     "Reti di calcolatori/img/Pasted image 20231219134937.png",
     "Linguaggi di programmazione/Riassunti/Scala/Slide/16. parser combinators.4.pdf",
-    "Linguaggi di programmazione/Riassunti/Scala/Slide/15. dsl.4.pdf",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/ES.canvas",
     "Ricerca operativa/Ricerca operativa.canvas",
     "Sistemi biometrici/Sistemi biometrici.canvas",
