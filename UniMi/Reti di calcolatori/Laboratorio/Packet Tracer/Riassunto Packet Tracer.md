@@ -212,8 +212,9 @@ n = 32
 può iniziare a 0, 32, 64, 96, 128, 160, 192, 224
 
 Double check:
-- indirizzo base DEVE essere pari
-- indirizzo broadcast DEVE essere dispari
+- indirizzo base e l'indirizzo max DEVE essere pari
+- indirizzo broadcast e l'indirizzo min DEVE essere dispari
+- i netID delle diverse sottoreti sono sempre differenti in binario
 
 es rete 192.168.20.96/27
 - S1: 5 device + broadcast + base = 7 indirizzi = 3 bit
@@ -236,3 +237,68 @@ indirizzo min: 192.168.20.113
 indirizzo max: 192.168.20.126
 Verifica min e max siano sulla stessa rete: 011|1|0001 e 011|1|1110 sono sulla stessa rete
 
+- Euristica
+
+Si inizia dalla subnet piu grande e via via procedendo in ordine decrescente
+
+es rete 192.168.20.96/27, prima S2 e POI S1 (14 > 5)
+- S2: 14 device + broadcast + base = 16 indirizzi = 4 bit
+
+netmask: 255.255.255.240
+indirizzo base: 192.168.20.96/28
+broadcast: 192.168.20.111
+indirizzo min: 192.168.20.97
+indirizzo max: 192.168.20.110
+
+- S1: 5 device + broadcast + base = 7 indirizzi = 3 bit
+
+netmask: 255.255.255.248
+indirizzo base: 192.168.20.112/29
+broadcast: 192.168.20.119
+indirizzo min: 192.168.20.113
+indirizzo max: 192.168.20.118
+
+
+es riassuntivo
+indirizzo base 10.11.160.0/24; 5 subnet collegate da un router
+A 25 host
+G 14 host
+K 28 host
+M 9 host
+R 58 host
+
+Usare la regola dell'euristica
+- R 58 + base + broadcast + gateway = 61 -> 6 bit
+Netmask: 255.255.255.192 (1100000)
+indirizzo base: 10.11.160.0/26
+indirizzo broadcast: 10.11.160.63
+indirizzo min: 10.11.160.1
+indirizzo max: 10.11.160.62
+
+- K 28 + 3 = 31 -> 5 bit
+Netmask: 255.255.255.224 (1110000)
+indirizzo base: 10.11.160.64
+indirizzo broadcast: 10.11.160.95/27
+indirizzo min: 10.11.160.65
+indirizzo max: 10.11.160.94
+
+- A 25 + 3 = 28 -> 5 bit
+Netmask: 255.255.255.224
+indirizzo base: 10.11.160.96/27
+broadcast: 10.11.160.127
+indirizzo min: 10.11.160.97
+indirizzo max: 10.11.160.126
+
+- G 14 + 3 = 17 -> 5 bit
+Netmask: 255.225.255.224
+indirizzo base: 10.11.160.128/27
+broadcast: 10.11.160.159
+indirizzo min: 10.11.160.129
+indirizzo max: 10.11.160.158
+
+- M 9 + 3 = 12 -> 4 bit
+Netmask: 255.255.255.240
+indirizzo base: 10.11.160.160/28
+broadcast: 10.11.160.175
+indirizzo min: 10.11.160.161
+indirizzo max: 10.11.160.174

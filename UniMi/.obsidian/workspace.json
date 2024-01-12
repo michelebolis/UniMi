@@ -4,22 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "9316e15de3fbeb1a",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "39eb8040ab346149",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_PT2.pdf"
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "55872858106b3a17",
         "type": "tabs",
         "children": [
@@ -32,43 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "f29ad38580b2b639",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reti di calcolatori/Appunti lab.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b4b09c39b121c8c3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fa5b4fd07607960c",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/Comandi Packet Tracer.pdf"
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -118,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -135,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md"
-              }
+              "state": {}
             }
           },
           {
@@ -235,15 +179,15 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "b4b09c39b121c8c3",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
     "Reti di calcolatori/Appunti lab.md",
+    "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_0.pdf",
     "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md",
     "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_PT2.pdf",
     "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_PT1.pdf",
     "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/Comandi Packet Tracer.pdf",
     "Pasted image 20240112113310.png",
-    "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_0.pdf",
     "Reti di calcolatori/Laboratorio/Seminari/Seminari Laboratorio Reti di calcolatori.md",
     "Reti di calcolatori/Laboratorio/Packet Tracer/Packet Tracer.md",
     "Reti di calcolatori/Laboratorio/Java Socket/Java Socket.md",
