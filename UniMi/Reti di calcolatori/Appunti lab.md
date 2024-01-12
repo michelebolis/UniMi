@@ -96,7 +96,7 @@ Usando 4 bridge con i 4 endsystem e un hub collegato ai 4 bridge, viene fatta pu
 
 ![[Pasted image 20231027150227.png]]
 
-Quando un dispositivo si accende, viene fatta un ARP request sul proprio indirizzo per verificare l unicita del proprio ip e per mettere nelle ARP table degli altri dispositivi la mia corrispondenza ip-MAC
+Quando un dispositivo si accende, viene fatta un ARP request sul proprio indirizzo per verificare l unicità del proprio IP e per mettere nelle ARP table degli altri dispositivi la mia corrispondenza IP-MAC
 
 ATT SE due PC hanno lo stesso IP, il ping ha successo 
 ![[Pasted image 20231027155658.png]]

@@ -23,7 +23,7 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_0.pdf"
+                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_PT1.pdf"
               }
             }
           },
@@ -50,9 +50,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "fa5b4fd07607960c",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/Comandi Packet Tracer.pdf"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -118,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_0.pdf",
+                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_0.pdf",
+                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_0.pdf"
+                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md"
               }
             }
           },
@@ -218,10 +228,13 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "39eb8040ab346149",
+  "active": "b4b09c39b121c8c3",
   "lastOpenFiles": [
-    "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md",
     "Reti di calcolatori/Appunti lab.md",
+    "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_PT1.pdf",
+    "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md",
+    "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/Comandi Packet Tracer.pdf",
+    "Pasted image 20240112113310.png",
     "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_0.pdf",
     "Reti di calcolatori/Laboratorio/Seminari/Seminari Laboratorio Reti di calcolatori.md",
     "Reti di calcolatori/Laboratorio/Packet Tracer/Packet Tracer.md",
@@ -236,8 +249,6 @@
     "Reti di calcolatori/Laboratorio/Java Socket/Slide/LabRetiF1X_JS6.pdf",
     "Reti di calcolatori/Laboratorio/Java Socket/Slide/LabRetiF1X_JS5.pdf",
     "Reti di calcolatori/Laboratorio/Java Socket/Slide/LabRetiF1X_JS4.pdf",
-    "Reti di calcolatori/Laboratorio/Java Socket/Slide/LabRetiF1X_JS3.pdf",
-    "Reti di calcolatori/Laboratorio/Java Socket/Slide/LabRetiF1X_JS2.pdf",
     "Reti di calcolatori/Esami/Esercizi vari.md",
     "Reti di calcolatori/Esami/2023-09-26.md",
     "Reti di calcolatori/Appunti.md",
@@ -267,7 +278,6 @@
     "Reti di calcolatori/img/photo_5769355704325488878_y.jpg",
     "Reti di calcolatori/img/photo_5769355704325488877_y.jpg",
     "Reti di calcolatori/img/photo_5769355704325488874_y.jpg",
-    "Reti di calcolatori/img/Pasted image 20231219134937.png",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/ES.canvas",
     "Ricerca operativa/Ricerca operativa.canvas",
     "Sistemi biometrici/Sistemi biometrici.canvas",
