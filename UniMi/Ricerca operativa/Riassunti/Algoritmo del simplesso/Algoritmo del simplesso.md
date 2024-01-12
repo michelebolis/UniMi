@@ -14,7 +14,7 @@ E' una struttura dati fondamentale sulla quale opera l'algoritmo del simplesso
 
 Router non convenzionale (MPLS) differenze:
 - le informazioni di routing popolano anche la Label switching table
-- l'IP header e l'IP payload vengono trasformati in un MPLS pacchetto. Questo avviene tramite [[tunneling]], incapsulando quindi il pacchetto IP
+- l'IP header e l'IP payload vengono trasformati in un MPLS pacchetto. Questo avviene tramite [[Tunneling]], incapsulando quindi il pacchetto IP
 - labeling: assegnamento della label al pacchetto
 - Gestisco le code in base all'etichetta
 
