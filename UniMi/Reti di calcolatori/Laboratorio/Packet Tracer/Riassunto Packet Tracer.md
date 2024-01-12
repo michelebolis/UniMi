@@ -99,4 +99,140 @@ Configurare la VLAN dell interface
 
 
 ## Subnetting
+IPv4: 32bit unsigned long con dotted notation
+Ogni ottetto non puo superare 255
+
+Modo di assegnazione indirizzi
+- classi vs CIDR
+- subnetting
+
+Class-based
+
+| Indirizzi speciali | Significato |
+| ---- | ---- |
+| hostID = 0 | indirizzo base della rete |
+| netID = 0 | indirizzo della stessa rete della sorgente |
+| tutti 1 | broadcast sulla rete sorgente |
+| hostID a tutti 1 | broadcast sulla rete destinataria |
+
+| Classe | min       | max             | netID  | hostID |
+| ------ | --------- | --------------- | ------ | ------ |
+| A      | 1.0.0.0   | 127.255.255.255 | 7 bit  | 24 bit |
+| B      | 128.0.0.0 | 191.255.255.255 | 14 bit | 16 bit |
+| C       | 192.0.0.0          | 223.255.255.255                | 21 bit       | 8 bit       |
+
+Usando $x$ bit per il netID avrò $32-x$ bit per l'hostID
+MA cosi per percorrere la tabella di instradamento ci impiegherei in media $2^{32}/2 = 2^{31}$
+
+L'indirizzo destinazione viene messo in AND bit a bit con la netmask: cancello bit a destra trovando il netID
+
+Ricorda potenze di 2
+
+| $2^7$   | $2^6$   | $2^5$   | $2^4$   | $2^3$   | $2^2$   | $2^1$   | $2^0$   |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+|    128 | 64  | 32 | 16 | 8 | 4 | 2 | 1     |
+
+ES Class 
+15.0.0.0 Classe A -> 8
+00001111.00000000.00000000.00000000
+Netmask
+11111111.00000000.00000000.00000000
+255.0.0.0
+Broadcast
+00001111.11111111.11111111.11111111
+15.255.255.255
+2 indirizzi accettabili (minimo; massimo)
+00001111.00000000.00000000.00000001 MIN 15.0.0.1
+00001111.11111111.11111111.11111110 MAX 15.255.255.254
+
+137.149.0.0 Classe B -> 16
+10001001.10010101.00000000.00000000
+Netmask
+11111111.11111111.00000000.00000000
+Broadcast
+10001001.10010101.11111111.11111111
+137.149.255.255
+2 indirizzi accettabili (minimo; massimo)
+10001001.10010101.00000000.00000001 MIN 137.149.0.1
+10001001.10010101.11111111.11111110 MAX 137.149.255.254
+
+215.151.59.0 Classe C -> 24
+11010011.10010111.00111011.00000000
+Netmask
+11111111.11111111.11111111.00000000
+Broadcast
+11010011.10010111.00111011.11111111
+215.151.59.255
+2 indirizzi accettabili (minimo; massimo)
+11010011.10010111.00111011.00000001 MIN 215.151.59.1
+11010011.10010111.00111011.11111110 MAX 215.151.59.254
+
+CIDR
+Indirizzo x.y.w.z/n con n il numero di bit usati per il netID
+Per ogni subnet bisogna scegliere una potenza di 2 minima per indirizzare tutti i dispositivi, cioe end system + gateway + 1 broadcast + 1 base address
+
+Best practice: il gateway ha sempre il primo o l'ultimo indirizzo usabile
+
+Subnetting
+Subnet mask: tutti bit a 1 in corrispondenza di network e subnet address e tutti 0 per l'host address
+
+es ho una rete da /16, voglio suddividere in subnet ognuna da 100 host
+Per l hostID ho bisogno di 7 bit --> 128 host circa
+Per il netID restano 16-7 = 9 bit
+
+es rete 192.168.20.96/27 
+Rete verde: 4 host + 1 router + broadcast + base = 7 indirizzi 
+3 bit -> rete /29 (32-3) -> netmask 255.255.255.11111000
+Indirizzo base: 192.168.20.96 (.011 00000)
+Broadcast: 192.168.20.103 (.01100 | 111)
+Indirizzo min: 192.168.20.97
+Indirizzo max: 192.168.20.102
+
+Rete arancione: 2 host + 1 router + broadcast + base = 5 indirizzi 
+3 bit -> rete /29 (32-3) -> netmask 255.255.255.11111000
+Indirizzo base: 192.168.20.104
+Broadcast: 192.168.20.111 (Indirizzo base + $2^n-1$)
+Indirizzo min: 192.168.20.105
+Indirizzo max: 192.168.20.110
+
+
+Il campo CRC è il resto della divisione tra due polinomi rappresentanti dai dati/polinomioComunePerCRC 
+10110 = $x^4 + x^2 + x$
+SE i due resti non sono uguali, allora c è stata un errore
+
+
+Proprietà aritmetica binaria
+- Allineamento
+Una rete di dimensione $2^n$ può iniziare solo a intervalli regolari multipli di $2^n$, cioè a posizioni pari a $k * 2^n$, 
+Il primo indirizzo disponibile nello host address range deve essere composto da tutti 0 negli ultimi $n$ bit per qualsiasi sottorete
+
+es n = 64 (taglia è il massimo numero di dispositivi)
+può iniziare a 0, 64, 128, 192
+n = 32
+può iniziare a 0, 32, 64, 96, 128, 160, 192, 224
+
+Double check:
+- indirizzo base DEVE essere pari
+- indirizzo broadcast DEVE essere dispari
+
+es rete 192.168.20.96/27
+- S1: 5 device + broadcast + base = 7 indirizzi = 3 bit
+
+Posso partire da 96 perché è multiplo di 8 
+netmask: 255.255.255. (.111|11|000)
+indirizzo base: 192.168.20.96/29
+broadcast: 192.168.20.103
+indirizzo min: 192.168.20.97
+indirizzo max: 192.168.20.102
+Verifica min e max siano sulla stessa rete: 01100|001 e 01100|110 sono sulla stessa rete
+Double check: 103 è dispari e 96 pari
+
+- S2: 14 device + broadcast + base = 16 indirizzi = 4 bit
+104 non è multiplo di 16 --> 112 è il primo multiplo di 16
+netmask: 255.255.255.240 (.111|1|0000)
+indirizzo base: 192.168.20.112/28
+broadcast: 192.168.20.127
+indirizzo min: 192.168.20.113
+indirizzo max: 192.168.20.126
+Verifica min e max siano sulla stessa rete: 011|1|0001 e 011|1|1110 sono sulla stessa rete
 
