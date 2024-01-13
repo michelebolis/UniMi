@@ -4,22 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "5e11c86c3db2d897",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "17d1e154b2170125",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_PT5.pdf"
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "55872858106b3a17",
         "type": "tabs",
         "children": [
@@ -32,33 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "7645b54053e85f99",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "188291279a99860e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reti di calcolatori/Appunti lab.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -124,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_PT5.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_PT5.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_PT5.pdf"
-              }
+              "state": {}
             }
           },
           {
@@ -224,10 +179,12 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "47136b92c595cdff",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
-    "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_PT5.pdf",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Mockito - Testing Cheatsheet.md",
+    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md",
+    "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_PT5.pdf",
     "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_PT4.pdf",
     "Reti di calcolatori/Appunti lab.md",
     "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_PT3.pdf",
@@ -269,9 +226,7 @@
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/CDN - Content Delivery Network.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/DASH - Dynamic Adaptive Streaming over HTTP.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 2 - Multiple Parallel Stream.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Trasparenza HTTP.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
-    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Reti di calcolatori/img/photo_5769355704325488905_y.jpg",
     "Reti di calcolatori/img/photo_5769355704325488902_y.jpg",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/ES.canvas",

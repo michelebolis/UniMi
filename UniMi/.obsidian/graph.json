@@ -25,7 +25,7 @@
       "query": "path:\"Reti di calcolatori\"  ",
       "color": {
         "a": 1,
-        "rgb": 14718802
+        "rgb": 13559571
       }
     },
     {
@@ -67,6 +67,6 @@
   "repelStrength": 13.6213333333333,
   "linkStrength": 0.662103703703704,
   "linkDistance": 348,
-  "scale": 0.05583014629963572,
+  "scale": 0.05583014629963573,
   "close": false
 }

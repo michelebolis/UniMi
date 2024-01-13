@@ -138,7 +138,7 @@
 		![[Builder]]
 	![[Mocking]]
 		![[Test Double]]
-		![[Mockito]]
+		![[Mockito - Testing Cheatsheet]]
 		![[Dummy Object]]
 			![[Dummy Object - Mockito]]
 		![[Stub Object]]
