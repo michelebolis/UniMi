@@ -302,3 +302,158 @@ indirizzo base: 10.11.160.160/28
 broadcast: 10.11.160.175
 indirizzo min: 10.11.160.161
 indirizzo max: 10.11.160.174
+
+
+Configurazione router
+NON collegare router direttamente con gli end system
+Comandi CLI base
+
+| Comando                | Descrizione                                           |
+| ---------------------- | ----------------------------------------------------- |
+| `traceroute x.y.z.w`   | consente di verificare il path verso una destinazione |
+| `show ip bgp/ospf/rip` | mostra le tabelle di instradamento                    |
+| `show dhcp`                        | mostra il range di indirizzi assegnabili da DHCP server                                                      |
+
+Comandi CLI in `(config)`
+
+| Comando         | Descrizione                            |
+| --------------- | -------------------------------------- |
+| `hostname Name` | permette di cambiare il nome dell host |
+| `ip name x.y.z.w`                | permette di cambiare IP                                       |
+I cambiamenti sono operativi quando premo `CTRL-Z`
+
+Connessione VLAN con un router
+![[Pasted image 20240113094049.png]]
+
+Assumendo che lo switch abbia gia il VLAN database settato e i collegamenti con le subnet corretti, il collegamento tra switch e router deve avere tutte le VLAN a cui è collegato lo switch in trunk mode
+
+![[Pasted image 20240113094256.png]]
+
+Ora è necessario configurare il router, in particolare l'interfaccia collegata allo switch (Fa0/0)
+In CLI
+1. `enable`
+2. `configure terminal`
+3. Ora sono in `(config)`, eseguo `interface nomeInterfaccian/k.IDVLAN`
+4. Ora sono in `(config-subif)`, eseguo `ip address indirizzoDaAssegnare subNetMask`
+5. `CTRL-Z`
+
+Risultato:
+![[Pasted image 20240113094621.png]]
+
+L'indirizzo da assegnare al router deve appartenere alla VLAN 20 e dovrà essere specificato come default gateway in ogni end system della VLAN
+La subnet mask è presente in automatico in ogni end system delle VLAN in una loro interfaccia di rete
+
+![[Pasted image 20240113095015.png]]
+
+DHCP
+Aggiungiamo un end system con DHCP
+Appena si collega ad una rete già esistente, si da un indirizzo casuale controllando se non sia già presente con un ARP request 
+MA non appena compare un DHCP server, questo indirizzo casuale viene sostituito con quello dato dal server
+
+Per farsi assegnare un IP da un DHCP
+![[Pasted image 20240113100438.png]]
+
+I server tipicamente non hanno indirizzi dinamici
+Come settare il servizio DHCP:
+Andare sul server -> `Services` -> `DHCP` -> ...
+Parametri sbagliati da correggere:
+- Default gateway
+- Start IP address
+- maximum number of users
+OSS lo spazio di indirizzi per la VLAN in realtà questo contiene sia gli indirizzi statici che dinamici
+
+![[Pasted image 20240113095919.png]]
+
+Un DHCP è proxy quando non c è un server DCHCP in una rete, e quindi fa da DHCP server anche per quella rete 
+
+Semplicemente si aggiunge un altro pool al DHCP server
+Ora serve configurare il router con CLI configurando l'interfaccia della VLAN dove non c è il server
+
+1. `enable`
+2. `configure terminal`
+3. Ora sono in `(config)`, eseguo `interface nomeInterfaccian/k.IDVLAN`
+4. Ora sono in `(config-subif)`, eseguo `ip helper-address indirizzoDHCPServer`
+5. `CTRL-Z`
+
+Configurazione Routing
+- Rotte statiche
+
+Per ogni router e per ogni destinazione nella rete non direttamente collegata al router
+
+1. `enable`
+2. Ora sono in `(config)`, eseguo `ip route IPDest netmask IPNextHop`
+
+Per visualizzare routing table di un router, $lente$ -> `routing table`
+
+- Rotte dinamiche
+
+- RIP v1 (NON lo chiede)
+- RIP v2
+
+E' classless
+ATT bisogna esplicitare di voler usare le v2
+1.  `enable`
+2. `config term`
+3. Ora sono in `(config)`, eseguo `router rip`
+4. Ora sono in `(config-router)`, eseguo `version 2` (ATT NON si vede quale sia la version)
+5. `network IPAdiacente` (non gli dico la netmask perche è collegato direttamente alla LAN e quindi conosco la netmask)
+
+OGNI router deve avere la stessa versione
+ATT in realta tra due router c è una rete, che richiedendo 2 dispositivi + base + broadcast, sara una /30 
+quindi nelle interfacce dei due router dovro mettere l IP di questa sottorete
+Per definire una /30, prima metto la netmask (quindi 255.255.255.252) e POI l IP
+
+- OSPF
+
+Passi
+1. `enable`
+2. `config term`
+3. Ora sono in `(config)`, eseguo `router ospf 1`
+4. Ora sono in `(config-router)`, eseguo `area 1 stub`
+5. Eseguo `network indirizzoBase wildcard area 1`
+
+Con wildcard = negazione della netmask
+Per evitare flooding di pkt di link state (es nella mia VLAN o NAT):
+1. `enable`
+2. `config term`
+3. Ora sono in `(config)`, eseguo `router ospf 1`
+4. Ora sono in `(config-router)`, eseguo `passive interface nomeInterfaccian/k`
+
+Stessa cosa da fare in RIP per evitare inoltre di DV (SE esistono subif per VLAN bisogna farle se quelle NON su l'interfaccia fisica)
+
+
+Access Control List
+Sul router esiste la possibilità di limitare il traffico in ingresso/in uscita a/da una rete
+
+- ACL standard ID 1-99: si puo solo selezionare lo IP sorgente dei pacchetti da NON far passare
+- ACL extended ID 100-199: si possono selezionare
+	- protocollo di livello nerwork o trasporto
+	- indirizzo sorgente e/o destinazione (any come wildcard)
+	- insiemi di porte
+	- modalità permit/deny
+	- established: segmenti TCP con ACK flag = 1
+- ACL named extended ID 100-199: possibilità di modifica successiva
+
+1. Creazione ACL
+
+Paradigma
+`access-list IDACL permit|deny protocolName`
+`sourceIP|wildcard [eq|lt|gt|neq|range IDPorta]` `destinationIP|wildcard [eq|lt|gt|neq|range IDPorta] [established] [log]`
+
+es 
+access-list 110 permit TCP any host 192.168.200.200 eq 80
+"ACL 110 permette segmenti TCP da qualsiasi sorgente con destinazione 192.168.200.200 e porta uguale a 80"
+
+access-list 110 deny ICMP any any
+"ACL 110 nega pacchetti ICMP da qualsiasi host a qualunque altro"
+
+ATT le regole vengono analizzate in ordine, se non fa match allora vale l implicita deny IP any any
+
+2. Applicazione ACL a interfaccia
+
+Entro nella configurazione dell interface: interface nomeInterfaccian/k
+Eseguo `ip access-group IDACL out|in`
+
+Double check:
+- `show ip access-lists`: mostra le regole della access list 
+- `show ip interface NomeInterfaccian/k.VLAN`: mostra le informazioni dell interfaccia tra cui `Outgoing/Inbound access lists is...`
