@@ -103,9 +103,36 @@ try {
 SE il numero di porta è a 0, in realtà viene scelta dal SO (non va bene chiaramente per il server)
 Lo stato della socket può essere mostrato con `netstat` o `lsof`
 3. connessione client e server
-Lato server
+Il metodo socket.connect(SocketAddress) esegue three-way handshake e anche il bind implicito
 
-Lato client
+4. scambio dati come byte stream
+La rete memorizza i byte come big endian cioe dal byte piu significativo al meno significativo
+La rete ha solo conoscenza dei byte e poi il programmatore dovra convertirli in numeri, struct...
+Caso byte stream: programmatore deve gestire il formato PDU
+- SE PDU di taglia costante, lettura di un numero fisso di byte
+- SE PDU di taglia variabile: lettura dei byte dell'header e successivamente dei dati per la lunghezza indicata nell'header
 
-1. scambio dati come byte stream
-2. chiusura
+TUTTI i dati devono essere convertiti a/da sequenza di byte
+- caratteri: cast a tipo byte
+- stringhe: fare `String.replace()` per sostituire `\r` o `\n`
+- numeri: formato dipendente dall'architettura quindi si usa il toString delle varie classi es `Double.toString(num)` e analogamente `Double.parseDouble(stringa)`
+- dati strutturati: conversione dei singoli campi o `Serializable`
+
+Metodi utili
+- `String trim()`: elimina gli spazi iniziali e finali in una stringa
+- `String split(String regex, int limit)`: spezza la stringa eliminando il separatore
+- classe `StringTokenizer`: costruttore per sottostringhe delimitate da separatore con metodo `nextToken()`
+
+Getter dei due stream (unidirezionali)
+- InputStream socket.getInputStream()
+- OutputStream socket.getOutputStream()
+
+Metodi associati:
+- write(s) passa i dati al livello di Trasporto
+- read(), primitive bloccante finche non legge dei byte
+	- SE il canale è chiuso dal peerm read() si sblocca tornando <0
+
+5. chiusura
+metodo close() non permette un ulteriore utilizzo del canale
+ATT nel server considerare QUALE socket si vuole chiudere
+Per garantire che tutte le socket siano chiuse, si può usare close in blocco
