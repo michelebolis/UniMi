@@ -457,3 +457,46 @@ Eseguo `ip access-group IDACL out|in`
 Double check:
 - `show ip access-lists`: mostra le regole della access list 
 - `show ip interface NomeInterfaccian/k.VLAN`: mostra le informazioni dell interfaccia tra cui `Outgoing/Inbound access lists is...`
+
+es 
+`ip access-list extended 100`
+`permit TCP any host 192.168.0.1 eq www`
+`deny IP any any`
+`exit`
+`interface fastEthernet 0/0`
+`ip access-group 100 in`
+
+"ACL 100 permette l’ingresso dall’interfaccia fastEthernet 0/0 di tutti i segmenti TCP generati da qualunque sorgente, e destinati allo host 192.168.0.1 su porta 80"
+"ACL 100 non accetta alcun altro tipo di traffico IP"
+nessuno degli end system della VLAN può accedere ad un server web pubblico a causa dell `in`
+
+Soluzione: 
+`ip access-list extended 100`
+`15 permit TCP any any established`
+
+NAT
+Per la traduzione degli indirizzi è necessario
+1. configurare le interfacce di ingresso e uscita alla rete abilitando il servizio NAT 
+	1. `enable`
+	2. `config term`
+	3. `interface nomeInterfaccia n/k`
+	4. `ip nat inside`
+	5. `exit`
+	6. `interface nomeInterfaccia a/b`
+	7. `ip nat outside`
+	8. `exit`
+2. creare una ACL che determini quali indirizzi devono essere tradotti
+	`access-list IDACL permit ip any any`
+3. configurare il router stabilendo per quale traffico devono essere tradotti gli indirizzi e quale è l'indirizzo presentato all'esterno
+	`ip nat inside source list IDACL interface nomeInterfacciaIN n/k`
+
+es 
+![[Pasted image 20240114094235.png]]
+ip nat inside source list 110 interface fastEthernet 0/0
+"Quando si fa NAT degli indirizzi interni si usa come criterio degli indirizzi da tradurre nella ACL 110 e si traducono gli indirizzi usando l'indirizzo IP dell'interfaccia fastEterhent 0/0"
+Ora il ping da interno a esterno funziona MA il server web pubblico non è accessibile da Internet
+
+es accesso a servizi interni pubblici
+port forwarding: mapping tra (indirizzo esterno e porta) e (indirizzo interno e porta servizio) all'interno del router gateway
+`ip nat inside source static tcp IPInterno portaInterna IPEsterno portaEsterna`
+`ip nat inside source static tcp 192.168.0.1 80 10.0.0.254 80`

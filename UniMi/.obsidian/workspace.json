@@ -16,6 +16,35 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "724706b6b3f41f6f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reti di calcolatori/Laboratorio/Java Socket/Riassunto Java Socket.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "1e341d31d17b41dd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "11e8c16589115bb9",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Reti di calcolatori/Laboratorio/Java Socket/Slide/LabRetiF1X_JS2.pdf"
+              }
+            }
           }
         ]
       }
@@ -67,7 +96,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -83,6 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Reti di calcolatori/Laboratorio/Java Socket/Riassunto Java Socket.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Reti di calcolatori/Laboratorio/Java Socket/Riassunto Java Socket.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +152,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Reti di calcolatori/Laboratorio/Java Socket/Riassunto Java Socket.md"
+              }
             }
           },
           {
@@ -179,14 +213,21 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c1ce2ce19829fc50",
+  "active": "724706b6b3f41f6f",
   "lastOpenFiles": [
+    "Reti di calcolatori/Laboratorio/Java Socket/Slide/LabRetiF1X_JS2.pdf",
+    "Reti di calcolatori/Laboratorio/Java Socket/Riassunto Java Socket.md",
+    "Reti di calcolatori/Laboratorio/Java Socket/Java Socket.md",
+    "Reti di calcolatori/Laboratorio/Java Socket/Slide/LabRetiF1X_JS1.pdf",
+    "Pasted image 20240114104112.png",
+    "Reti di calcolatori/Appunti lab.md",
+    "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md",
+    "Reti di calcolatori/Laboratorio/Packet Tracer/Packet Tracer.md",
+    "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_PT5.pdf",
+    "Pasted image 20240114094235.png",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Mockito - Testing Cheatsheet.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-    "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md",
-    "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_PT5.pdf",
     "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_PT4.pdf",
-    "Reti di calcolatori/Appunti lab.md",
     "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_PT3.pdf",
     "Reti di calcolatori/img/Pasted image 20240113100438.png",
     "Reti di calcolatori/img/Pasted image 20240113095919.png",
@@ -200,14 +241,10 @@
     "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/Comandi Packet Tracer.pdf",
     "Reti di calcolatori/img/Pasted image 20240112113310.png",
     "Reti di calcolatori/Laboratorio/Seminari/Seminari Laboratorio Reti di calcolatori.md",
-    "Reti di calcolatori/Laboratorio/Packet Tracer/Packet Tracer.md",
-    "Reti di calcolatori/Laboratorio/Java Socket/Java Socket.md",
     "Reti di calcolatori/Reti di calcolatori.md",
     "Reti di calcolatori/Laboratorio/Java Socket/Slide/Index Slide.md",
     "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/Index Slide.md",
     "Reti di calcolatori/Laboratorio/Seminari/Glossario_GGalluzzi.pdf",
-    "Reti di calcolatori/Laboratorio/Seminari/Glossario_FAlberti.pdf",
-    "Reti di calcolatori/Laboratorio/Java Socket/Slide/LabRetiF1X_JS1.pdf",
     "Reti di calcolatori/Esami/Esercizi vari.md",
     "Reti di calcolatori/Esami/2023-09-26.md",
     "Reti di calcolatori/Appunti.md",
@@ -225,10 +262,7 @@
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/SDN - SW Defined Networking.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/CDN - Content Delivery Network.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/DASH - Dynamic Adaptive Streaming over HTTP.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 2 - Multiple Parallel Stream.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
-    "Reti di calcolatori/img/photo_5769355704325488905_y.jpg",
-    "Reti di calcolatori/img/photo_5769355704325488902_y.jpg",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/ES.canvas",
     "Ricerca operativa/Ricerca operativa.canvas",
     "Sistemi biometrici/Sistemi biometrici.canvas",
