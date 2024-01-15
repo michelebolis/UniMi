@@ -103,7 +103,7 @@ try {
 SE il numero di porta è a 0, in realtà viene scelta dal SO (non va bene chiaramente per il server)
 Lo stato della socket può essere mostrato con `netstat` o `lsof`
 3. connessione client e server
-Il metodo socket.connect(SocketAddress) esegue three-way handshake e anche il bind implicito
+Il metodo `socket.connect(socketAddressServer)` esegue three-way handshake e anche il bind implicito
 
 4. scambio dati come byte stream
 La rete memorizza i byte come big endian cioe dal byte piu significativo al meno significativo
@@ -124,15 +124,56 @@ Metodi utili
 - classe `StringTokenizer`: costruttore per sottostringhe delimitate da separatore con metodo `nextToken()`
 
 Getter dei due stream (unidirezionali)
-- InputStream socket.getInputStream()
-- OutputStream socket.getOutputStream()
+- `InputStream socket.getInputStream()`
+- `OutputStream socket.getOutputStream()`
 
 Metodi associati:
-- write(s) passa i dati al livello di Trasporto
-- read(), primitive bloccante finche non legge dei byte
-	- SE il canale è chiuso dal peerm read() si sblocca tornando <0
+- `write(s)` passa i dati al livello di Trasporto
+- `read()`, primitive bloccante finche non legge dei byte
+	- SE il canale è chiuso dal peer read() si sblocca tornando <0
 
 5. chiusura
-metodo close() non permette un ulteriore utilizzo del canale
+metodo `close()` non permette un ulteriore utilizzo del canale
 ATT nel server considerare QUALE socket si vuole chiudere
-Per garantire che tutte le socket siano chiuse, si può usare close in blocco
+Per garantire che tutte le socket siano chiuse, si può usare `close` in blocco
+
+Fasi connection-less
+   1-2. Creazione socket lato client
+```java
+sClient = new DatagramSocket(); //esegue anche binding implicito
+```
+In questo caso client e server sono simmetrici, non ci sono due classi diverse
+3. Scambio di dati
+Invio dati
+```java
+DatagramPacket(byte[] buf, int offset, int length, InetAddress address, int port);
+DatagramSocket.send(DatagramPacket dp);
+```
+Ricezione dati: bloccante finche non ricevo l'intero datagram
+```java
+DatagramSocket.receive(DatagramPacket dp);
+```
+
+In generale
+1. Lanciare server cosi da vedere la porta assegnata dal SO
+2. Lanciare il client passando come argomento la porta
+
+
+Il server deve gestire piu client efficientemente
+- Server iterativo
+	- SE il server è libero, il client può entrare in servizio immediatamente
+	- SE il server è occupato, 
+		- SE la coda è piena, il servizio viene rifiutato
+		- ALTRIMENTI si mette in coda e aspetta
+	Problemi associati:
+	- gestione della coda
+	- attesa indefinita, starvation
+	- attacchi Denial of Service DoS
+	L'associazione è completamente definita alla costruzione della socket e non puo associarsi ad altri client
+- Server concorrente; sfrutta tempi morti di un client (I/O bound) per servirne altri
+	Su socket con associazione parzialmente definita si possono accettare altre richieste di connessione
+	Problemi associati: gestione difficile e non scalabile
+- Server multiprocesso: piu entita distinte e contemporanemanete attive quindi piu flussi paralleli per la fornitura del servizio
+	Problemi associati:
+	- gestione limitatezza e carico di ogni thread
+	- ogni thread gestisce in modo iterativo o concorrente
