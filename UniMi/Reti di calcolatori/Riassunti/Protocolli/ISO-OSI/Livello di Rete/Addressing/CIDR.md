@@ -1,7 +1,7 @@
-Classless Inter Domain Routing
+`CIDR - Classless Inter Domain Routing`
 A varie organizzazioni vengono dati una certa porzione di indirizzamento libera
 
-Le tabelle di routing contengono l'indirizzo base, quanti bit utilizza la maschera (che definisce la divisione tra NetID e HostID) e la maschera stessa 
+Le tabelle di routing contengono l'`indirizzo base`, `quanti bit utilizza la maschera` (che definisce la divisione tra NetID e HostID) e l`a maschera stessa `
 
 Vantaggi: uso piu efficiente dello spazio di indirizzamento
 Svantaggio: complicazione del routing dei pacchetti in quanto devo potenzialmente scorrere tutte le entry per trovare il SubNet giusto

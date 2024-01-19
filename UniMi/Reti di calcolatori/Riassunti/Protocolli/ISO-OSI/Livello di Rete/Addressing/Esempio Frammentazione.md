@@ -1,12 +1,12 @@
-se ho un host con TCP che produce dati da 7000B MA devo farceli stare su un token ring che li fa passare su 4kB e magari nella LAN destinazione ne fa passare al massimo 1kB
+SE ho un host con TCP che produce dati da $7kB$ MA devo farceli stare su un token ring che li fa passare su $4kB$ e magari nella LAN destinazione ne fa passare al massimo 1kB
 
-Deve frammentare i 7k in 4k e 3k (non viene frammentato in questo modo)
+Deve frammentare i 7k in 4k e 3k
 Bisogna tener presente che al payload bisogna aggiungere gli IP delle due macchine e altre info che in totale pesano 20B.
-Il IP non gestisce una byte stream: si utilizza un fragment offset su 13bit MA la lenght è su 16bit. L'offset non viene contato sui byte ma sugli ottetti
-QUINDI la dimensione deve essere un multiplo di 8
+L'IP non gestisce una byte stream: si utilizza un fragment offset su 13bit MA la lenght è su 16bit. `L'offset non viene contato sui byte ma sugli ottetti`
+QUINDI `la dimensione deve essere un multiplo di 8`
 nel nostro caso è 3976 
 
-MID = 0 SE il frammento è l ultimo del pacchetto
+$MID = 0$ SE il frammento è l ultimo del pacchetto
 
 | Nome         | PKT ID | Fragment Offset | Tot length | Dati  | MID |
 | ------------ | ------ | --------------- | ---------- | ----- | --- |

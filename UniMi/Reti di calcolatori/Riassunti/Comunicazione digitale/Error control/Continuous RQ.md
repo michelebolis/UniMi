@@ -1,6 +1,6 @@
 Opera in modalità duplex
 
-Il mittente invia I-frame in modo continuativo senza aspettare il ritorno di un ACK. Il mittente conserverà quindi una copia dell'I-frame trasmesso in un lista di ritrasmissione. 
+Il mittente `invia I-frame in modo continuativo` senza aspettare il ritorno di un ACK. Il mittente conserverà quindi una copia dell'I-frame trasmesso in un lista di ritrasmissione. 
 
 Il destinatario, anche in questo caso, invierà un ACK per ogni frame ricevuto correttamente, conservandolo in una lista di ricezione. Anche in questo caso sarà necessario avere nei frame e negli ACK un numero di sequenza identificativo
 Alla ricezione del ACK, viene rimosso dalla lista il corrispettivo frame

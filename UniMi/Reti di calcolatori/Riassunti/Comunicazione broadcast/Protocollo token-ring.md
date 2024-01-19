@@ -1,4 +1,4 @@
-Approccio deterministico
+Approccio `deterministico`
 
 Viene eletto una stazione a `master`, (es con un algoritmo distribuito): essa conosce la composizione della rete e ne fa parte.
 Il master genera un token e lo invia attraverso un anello logico (es prima A poi B poi C) passando il token con round-robin

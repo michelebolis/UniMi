@@ -1,10 +1,11 @@
-La differenza con il bridge è che NON c'è CSMA/CD ma c'è un cavo dedicato dal nodo allo switch, quindi non ci saranno mai collisioni
+La differenza con il bridge è che NON c'è CSMA/CD ma c'è un cavo dedicato dal nodo allo switch, quindi `non ci saranno mai collisioni`
 Sono quindi grandi accumulatori anche a grande velocita in quanto non ci sono vincoli di distanza
 
 Il processo nello switch legge l'header per ottenere il MAC address e trasmettere il frame alla coda di uscita corretta.
-Anche lo switch ha un processo di apprendimento simile al bridge.
+Anche lo switch ha un `processo di learning` simile al bridge.
 
-Spesso vengono collegati sia ai router che ad altri switch. La connessione switch to switch viene chiamato `trank`, in questo caso passano frame di qualsiasi colore (VLAN) e sarà lo switch destinatario a gestirlo
+Spesso vengono collegati sia ai router che ad altri switch. 
+La connessione switch to switch viene chiamato `trank`, in questo caso passano frame di qualsiasi colore (VLAN) e sarà lo switch destinatario a gestirlo
 
 Essendoci compatibilità con le frame posso sostituire in qualsiasi momento un bridge con uno switch
 In realta il CS (del CSMA/CD) verra sempre fatto ma non ci saranno mai collisioni

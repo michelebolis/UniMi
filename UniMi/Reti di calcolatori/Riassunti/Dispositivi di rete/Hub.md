@@ -1,5 +1,5 @@
-L'hub è un dispositivo di livello 1 che, dato un messaggio, permette di farlo ricevere a tutti gli interlocutori in broadcast
-L'hub non appena un nodo A trasferisce un messaggio verso B, l'hub propaga il messaggio a TUTTI i nodi collegati, anche al mittente
+L'`hub` è un dispositivo di `livello 1` che, dato un messaggio, permette di farlo ricevere a tutti gli interlocutori in broadcast
+L'hub non appena un nodo $A$ trasferisce un messaggio verso $B$, l'hub propaga il messaggio a TUTTI i nodi collegati, *anche al mittente*
 
 Tipicamente ci sono diversi hub (o hub repeater) che concentrano stazioni 
 L'hub è comodo perche con un cavo punto punto (solitamente doppino telefonico) collego ogni stazione all'hub. 

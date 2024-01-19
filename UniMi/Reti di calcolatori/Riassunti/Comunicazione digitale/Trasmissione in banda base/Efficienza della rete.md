@@ -1,4 +1,4 @@
 Utilizzo/efficienza della rete 
-$$U = {T_x \over (T_x + 2* T_p)}$$
-SE $T_p$ è piccolo, U tende a 1
-SE $T_p$ è grande, U tende a 0
+$$U = {t_x \over (t_x + 2 * t_p)}$$
+SE $t_p$ è piccolo, U tende a 1
+SE $t_p$ è grande, U tende a 0

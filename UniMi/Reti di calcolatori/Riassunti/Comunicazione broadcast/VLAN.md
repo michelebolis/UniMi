@@ -1,5 +1,6 @@
-Le VLAN permettono l'aggregazione delle stazioni in gruppi omogenei, Standard IEEE 802.1Q
-I frame nelle VLAN non vengono solo instradate secondo il loro MAC address ma anche secondo il proprio VLAN identifier in quanto end system di due VLAN diverse non possono comunicare.
+Le `VLAN` permettono l'aggregazione delle stazioni in gruppi omogenei 
+Standard `IEEE 802.1Q`
+I frame nelle VLAN non vengono solo instradate secondo il loro MAC address, ma anche secondo il proprio `VLAN identifier` in quanto end system di due VLAN diverse non possono comunicare.
 E' uno strumento organizzativo molto utilizzato
 
 [[VLAN - Formato]]

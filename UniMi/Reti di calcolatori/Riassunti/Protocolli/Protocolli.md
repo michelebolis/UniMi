@@ -1,8 +1,8 @@
-Un protocollo è un insieme di regole e convenzioni che permettono la comunicazione tra due macchine a stati. Ovviamente le due entità devono usare lo stesso protocollo.
+Un `protocollo` è un insieme di regole e convenzioni che permettono la comunicazione tra due macchine a stati. Ovviamente le due entità devono usare lo stesso protocollo.
 
 Due modalita di utilizzo di protocollo
-- Servizi orientati alla connessione: fare una connessione significare istaurare un canale (setup), il dialogo e infine una fase di rilascio. 
-- Servizi senza connessione: appena ho il dato lo mando, senza contrattare i QoS
+- Servizi `orientati alla connessione`: fare una connessione significare istaurare un canale (setup), il dialogo e infine una fase di rilascio. 
+- Servizi `senza connessione`: appena ho il dato lo mando, senza contrattare i QoS
 
 Protocolli di rete:
 - [[Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/ISO-OSI|ISO-OSI]]

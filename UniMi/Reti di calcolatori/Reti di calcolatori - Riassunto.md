@@ -55,7 +55,7 @@ Livello 3:
 	![[Livello di Rete]]
 		![[Addressing]]
 			![[IPv4 - Formato]]
-				![[NetID]]
+				![[IP - Divisione dell'indirizzo]]
 					![[Classi NetID]]
 					![[Subnetting]]
 					![[CIDR]]

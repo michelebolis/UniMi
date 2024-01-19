@@ -16,8 +16,24 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "a6d2b7565fbb0b95",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
+                "viewState": {
+                  "x": -535.6695882528172,
+                  "y": 4036.9820059061467,
+                  "zoom": -2
+                }
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +138,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas"
+              }
             }
           },
           {
@@ -179,8 +199,22 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c1ce2ce19829fc50",
+  "active": "a6d2b7565fbb0b95",
   "lastOpenFiles": [
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/Architettura delle rete - Ottimizzazioni.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/ARP-RARP.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/ARP-RARP - Formato.md",
+    "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/NAT.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/NAT - Esempio.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/Classi NetID.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/Addressing.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Unità di misura.md",
+    "Reti di calcolatori/Riassunti/Comunicazione broadcast/Scala tempo.md",
+    "Reti di calcolatori/img/Pasted image 20240114094235.png",
+    "Reti di calcolatori/Riassunti/Dispositivi di rete/Hub.md",
+    "Reti di calcolatori/Appunti lab.md",
+    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Reti di calcolatori/Laboratorio/Java Socket/Riassunto Java Socket.md",
     "Reti di calcolatori/Laboratorio/Java Socket/Slide/LabRetiF1X_JS5.pdf",
     "Reti di calcolatori/Laboratorio/Java Socket/Slide/LabRetiF1X_JS6.pdf",
@@ -189,14 +223,11 @@
     "Reti di calcolatori/Laboratorio/Java Socket/Slide/LabRetiF1X_JS2.pdf",
     "Reti di calcolatori/Laboratorio/Java Socket/Java Socket.md",
     "Reti di calcolatori/Laboratorio/Java Socket/Slide/LabRetiF1X_JS1.pdf",
-    "Pasted image 20240114104112.png",
-    "Reti di calcolatori/Appunti lab.md",
+    "Reti di calcolatori/img/Pasted image 20240114104112.png",
     "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md",
     "Reti di calcolatori/Laboratorio/Packet Tracer/Packet Tracer.md",
     "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_PT5.pdf",
-    "Pasted image 20240114094235.png",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Mocking/Mockito - Testing Cheatsheet.md",
-    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_PT4.pdf",
     "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_PT3.pdf",
     "Reti di calcolatori/img/Pasted image 20240113100438.png",
@@ -214,20 +245,10 @@
     "Reti di calcolatori/Esami/Esercizi vari.md",
     "Reti di calcolatori/Esami/2023-09-26.md",
     "Reti di calcolatori/Appunti.md",
-    "Reti di calcolatori/Reti di calcolatori.canvas",
     "Reti di calcolatori/Esami/2023-07-25.md",
     "Reti di calcolatori/Esami/2023-09-07.md",
     "conflict-files-obsidian-git.md",
     "Ingegneria del software/Riassunti/img/Pasted image 20231215095605.png",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Email - Struttura rete.md",
-    "Reti di calcolatori/Libro/Riassunto libro.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/DNS - Risoluzione.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/DNS - Formato.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Livello Applicazione.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/NFV - Network Function Virtualization.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/SDN - SW Defined Networking.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/CDN - Content Delivery Network.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/DASH - Dynamic Adaptive Streaming over HTTP.md",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/ES.canvas",
     "Ricerca operativa/Ricerca operativa.canvas",
