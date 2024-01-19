@@ -25,9 +25,9 @@
               "state": {
                 "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "viewState": {
-                  "x": -535.6695882528172,
-                  "y": 4036.9820059061467,
-                  "zoom": -2
+                  "x": -930.849555270541,
+                  "y": 795.2714510804217,
+                  "zoom": -4
                 }
               }
             }
@@ -201,10 +201,16 @@
   },
   "active": "a6d2b7565fbb0b95",
   "lastOpenFiles": [
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Email - Contenuto.md",
+    "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Frame Header.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Frame Push_Promise.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 2.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 1.1.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 1.X.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/Architettura delle rete - Ottimizzazioni.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/ARP-RARP.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/ARP-RARP - Formato.md",
-    "Reti di calcolatori/Reti di calcolatori.canvas",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/NAT.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/NAT - Esempio.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/Classi NetID.md",
@@ -242,12 +248,6 @@
     "Reti di calcolatori/Reti di calcolatori.md",
     "Reti di calcolatori/Laboratorio/Java Socket/Slide/Index Slide.md",
     "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/Index Slide.md",
-    "Reti di calcolatori/Esami/Esercizi vari.md",
-    "Reti di calcolatori/Esami/2023-09-26.md",
-    "Reti di calcolatori/Appunti.md",
-    "Reti di calcolatori/Esami/2023-07-25.md",
-    "Reti di calcolatori/Esami/2023-09-07.md",
-    "conflict-files-obsidian-git.md",
     "Ingegneria del software/Riassunti/img/Pasted image 20231215095605.png",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/ES.canvas",

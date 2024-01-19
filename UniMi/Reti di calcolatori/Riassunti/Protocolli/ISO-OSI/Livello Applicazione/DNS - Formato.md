@@ -2,12 +2,14 @@ Formato record:
 
 | Campo                      | Dimensione | Descrizione                              |
 | -------------------------- | ---------- | ---------------------------------------- |
-| N FullyQualifiedDomainName | $N*32bit$  | deve essere meno di 256 caratteri con l ultimo byte a 0 (la root)                                         |
+| $N$ FQDN | $N*32bit$  | deve essere meno di 256 caratteri con l ultimo byte a 0 (la root)                                         |
 | Type                       | 16 bit     | ci sono diverse tipologie di record      |
 | Class                      | 16 bit     | = 1 cioè indica l'utilizzo di Internet                        |
 | TTL                        | 32 bit     | secondi di validità della memorizzazione |
 | Length                     | 16 bit     |                                          |
 | Data                           |            | l'indirizzo richiesto                                         |
+
+---
 
 | Tipo di record         | Descrizione                                          |
 | ---------------------- | ---------------------------------------------------- |
