@@ -1,4 +1,4 @@
-Sia la sorgente che la destinazione scelgono un SEQ SequenceNumber 
+Sia la sorgente che la destinazione scelgono un `SEQ SequenceNumber` 
 SEQ non parte sempre da 0, per evitare che segmenti di una vecchia connessione ancora nella rete causino sovrapposizione
 (Oggi non viene piu usato un approccio incrementale ma viene usata una funzione crittografica)
 
@@ -11,5 +11,6 @@ Fasi
 4. Alla ricezione dell'ACK, entrambi hanno una connessione bidirezionale indipendente (indipendente perche ci sono due SEQ indipendenti)
 
 Problemi possibili:
-- Non c è una porta in ascolto nella socket ricevente -> viene mandato (al punto 2) un segmento con RST=1
+- `Non c è una porta in ascolto` nella socket ricevente
+	- Viene mandato (al punto 2) un segmento con $RST=1$
 - ACK da ricevente a mittente non arriva in tempo. -> [[RTO]]

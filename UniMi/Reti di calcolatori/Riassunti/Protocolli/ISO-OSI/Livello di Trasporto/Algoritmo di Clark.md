@@ -1,3 +1,5 @@
+Situazione: `produttore veloce e consumatore lento`
+
 `Silly Window Syndrome`: in alcune AP si potrebbe richiedere di leggere o inviare un basso numero di byte, intasando la rete con moltissimi segmenti
 
 Lato ricevente, ipotizziamo che l'applicazione legga un byte alla volta.

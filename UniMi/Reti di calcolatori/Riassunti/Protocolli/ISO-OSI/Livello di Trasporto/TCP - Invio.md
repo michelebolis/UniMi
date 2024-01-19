@@ -1,6 +1,6 @@
 Assumiamo che non ci siano errori nella connessione e che la dimensione dei messaggi al livello applicazione sia maggiore della dimensione del segmento
 
-Sorgente con messaggio da scrivere di 600byte
+Sorgente con messaggio da scrivere di $600byte$
 Sorgente con $SEQ = X$ e destinazione con $SEQ = Y$
 $MSS = 500byte$
 

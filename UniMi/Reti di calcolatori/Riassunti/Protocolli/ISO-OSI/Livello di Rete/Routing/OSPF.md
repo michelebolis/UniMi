@@ -1,4 +1,4 @@
-Open Shortest Path First
+`OSPF - Open Shortest Path First`
 Algoritmo che ogni nodo della rete esegue tutte le volte che riceve un update di un LS, in particolare usa l'algoritmo di Dijkstra
 
 Vantaggi:

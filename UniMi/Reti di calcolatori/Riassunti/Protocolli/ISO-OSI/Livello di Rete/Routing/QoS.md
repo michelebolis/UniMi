@@ -1,8 +1,8 @@
-I router devono rispettare i QoS
-Estratto il packet classifier (TOS bit) dall header, viene fatto uno scheduling sulla coda in base alla politica di scheduling
+I router devono rispettare i `QoS - Quality of Service`
+Estratto il packet classifier (`TOS bit`) dall header, viene fatto uno scheduling sulla coda in base alla politica di scheduling
 Le code di I/O per ogni porta di I/O sono diverse in base alla qualità di servizio che vogliono offrire, in particolare un router ha tante code quanti sono i servizi che puo offrire
 
-Una congestione avviene quando la domanda per una risorsa della rete eccede il livello che concede.
+Una `congestione` avviene quando la domanda per una risorsa della rete eccede il livello che concede.
 SE un burst di pacchetti arriva al router su un numero differenziato di linee di input, l'output si congestionerà SE il rate d'arrivo è maggiore di quello di uscita
 Soluzione: [[Tecnica Token Bucket]]
 

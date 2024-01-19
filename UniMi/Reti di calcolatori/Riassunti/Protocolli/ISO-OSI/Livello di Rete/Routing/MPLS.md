@@ -1,6 +1,6 @@
 Nella realizzazione delle aree0 si richiede l'efficienza dei router
 Tecnica `MPLS Multi Protocol Label Switching` utilizzata nelle aree0 degli AS
-Si ragiona attraverso le etichette, sovrapponendosi all'indirizzo IP, MA le etichette valgono solo all'interno del singolo router
+Si ragiona attraverso le `etichette`, sovrapponendosi all'indirizzo IP, MA *le etichette valgono solo all'interno del singolo router*
 MPLS agisce sulla parte del router che si occupa del forwarder, facendolo operare come uno switch
 Trasformo il router in un apparato che fa forwarding SENZA curarsi del routing
 
@@ -8,8 +8,8 @@ LS continua ad essere a bordo del router, MA è funzionale a far funzionare il r
 Il router di gateway dell'area0 si chiamano `Area Border Router`: qui si compie la trasformazione da LS a MPLS
 
 [[Router MPLS]]
-MPLS formato pacchetto
-l'header di MPLS contiene
+
+L'header di MPLS contiene
 - Label su 20bit
 - CoS Class of Service su 3bit per selezionare la specifica coda 
 - TTL time to leave su 8bit
