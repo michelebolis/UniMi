@@ -3,6 +3,9 @@ Standardizzato come `IEEE 802.3`: [[CSMA-CD - Formato]]
 
 Quando una stazione vuole trasmettere, prima di farlo fa `Carrier Sense`, cioè legge dal canale ciò che passa, rilevando se il canale sia in idle o meno.
 
+CSMA-CD adotta uno schema `1-persistent` cioè appena trova libero il canale, trasmette
+In uno schema `0-persistent` invece appena trova libero il canale aspetta un tempo casuale
+
 La probabilità di collisione è tanto maggiore tanto piu stazioni ci sono sul canale.
 Le collisioni si possono ancora verificare SE una stazione $B$ sta trasmettendo e una stazione $C$ fa CS, quest'ultima aspetta che $B$ finisca. Tuttavia se un altro nodo $A$ fa CS, sia $A$ che $C$ stanno aspettando la terminazione della comunicazione di $B$ e ciò causa ancora una collisione
 

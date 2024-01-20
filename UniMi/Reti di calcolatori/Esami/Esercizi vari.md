@@ -95,7 +95,7 @@ MSS = 1480
 - Si considerino gli effetti dell’uso di slow start su una linea con RTT di 10 msec. e nessuna congestione. La finestra di ricezione è 24 KB e la massima dimensione di segmento è 2 KB. Quanto tempo è necessario prima che possa essere inviata una finestra intera, se la slow start threshold è 32 KB?
 
 Supponendo che non scada mai l RTO, A t=0 invio 2KB, a t=10msec invio 4KB, t=20msec invio 8KB, t=30msec invio 16KB quindi a t=40msec raggiungo la $W_C = 32KB$ MA dovro fare il min con la finestra di ricezione
-SBAGLIATE LE SOLUZIONI (congestion window in slow start si aumenta di 1 MSS, in questo caso quindi ad ogni t si aumento di 2KB non si raddoppia)
+(NOTA che si raddoppiano perche mando a t=10msec 4 segmenti e ricevo 4 ack quindi aumento di 4 la finestra raddoppiandola)
 
 - Si supponga che la finestra di congestione di TCP sia di 18 KB nel momento in cui si verifica un retransmission timeout. Quando sarà grande la finestra se le successive 4 trasmissioni avvengono con successo? Si assuma che la max dimensione di segmento sia 1 KB e la slow start threshold sia di 16KB.
 
