@@ -1,4 +1,4 @@
-Formato header: 
+Formato header: (min di 20B)
 
 | Campo | Dimensione | Descrizione |
 | ---- | ---- | ---- |

@@ -18,15 +18,15 @@
             }
           },
           {
-            "id": "a6d2b7565fbb0b95",
+            "id": "3a8e0bf07957c55b",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
                 "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "viewState": {
-                  "x": -930.849555270541,
-                  "y": 795.2714510804217,
+                  "x": -2183.902033137496,
+                  "y": 887.9494610054151,
                   "zoom": -4
                 }
               }
@@ -199,10 +199,13 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "a6d2b7565fbb0b95",
+  "active": "3a8e0bf07957c55b",
   "lastOpenFiles": [
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Email - Contenuto.md",
+    "Reti di calcolatori/Esami/Esercizi vari.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/Esami/Untitled.md",
+    "Reti di calcolatori/Appunti.md",
+    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Email - Contenuto.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Frame Header.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Frame Push_Promise.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 2.md",
@@ -244,10 +247,6 @@
     "Reti di calcolatori/img/Pasted image 20240113094049.png",
     "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_PT2.pdf",
     "Reti di calcolatori/img/Pasted image 20240112113310.png",
-    "Reti di calcolatori/Laboratorio/Seminari/Seminari Laboratorio Reti di calcolatori.md",
-    "Reti di calcolatori/Reti di calcolatori.md",
-    "Reti di calcolatori/Laboratorio/Java Socket/Slide/Index Slide.md",
-    "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/Index Slide.md",
     "Ingegneria del software/Riassunti/img/Pasted image 20231215095605.png",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/ES.canvas",

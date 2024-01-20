@@ -7,3 +7,6 @@ MA ogni volta che si libera la finestra, dovrei inviare un ACK solo per notifica
 
 Soluzione: algoritmo di Clark
 Si evita di annunciare la nuova disponibilita di window aspettando o di raggiungere il MSS o se ho almeno meta buffer vuoto
+
+1. $X = min(W_R, buffer/2)$
+2. $TempoNoWinUpdate = X*TempoConsumo$
