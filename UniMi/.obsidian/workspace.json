@@ -18,22 +18,34 @@
             }
           },
           {
-            "id": "09ad8a6f8b78bbdc",
+            "id": "34e551f7ff52d832",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
                 "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "viewState": {
-                  "x": -5082.8048541972885,
-                  "y": 548.9167087686986,
-                  "zoom": -0.8469340593578119
+                  "x": 5341.6106474950975,
+                  "y": -2706.936114388281,
+                  "zoom": -0.9679263086368679
                 }
+              }
+            }
+          },
+          {
+            "id": "b4337b000f7a9ec5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reti di calcolatori/Esami/2019-01-29.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -83,8 +95,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -100,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
+                "file": "Reti di calcolatori/Esami/2019-01-29.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
+                "file": "Reti di calcolatori/Esami/2019-01-29.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas"
+                "file": "Reti di calcolatori/Esami/2019-01-29.md"
               }
             }
           },
@@ -201,14 +212,14 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "09ad8a6f8b78bbdc",
+  "active": "b4337b000f7a9ec5",
   "lastOpenFiles": [
     "Reti di calcolatori/Esami/2022-06-21.md",
-    "Reti di calcolatori/Esami/2023-02-21.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/Esami/2023-02-21.md",
     "Reti di calcolatori/Esami/2023-06-20.md",
-    "Reti di calcolatori/Esami/2023-09-07.md",
     "Reti di calcolatori/Esami/2023-07-25.md",
+    "Reti di calcolatori/Esami/2023-09-07.md",
     "Reti di calcolatori/Esami/2023-09-26.md",
     "Reti di calcolatori/Esami/Esercizi vari.md",
     "Reti di calcolatori/Esami/2018-02-27.md",
