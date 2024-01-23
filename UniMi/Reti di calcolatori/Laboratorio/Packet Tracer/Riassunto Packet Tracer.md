@@ -334,8 +334,9 @@ In CLI
 1. `enable`
 2. `configure terminal`
 3. Ora sono in `(config)`, eseguo `interface nomeInterfaccian/k.IDVLAN`
-4. Ora sono in `(config-subif)`, eseguo `ip address indirizzoDaAssegnare subNetMask`
-5. `CTRL-Z`
+4. Ora sono in `(config-subif)`, eseguo `encapsulation dot1Q IDVLAN`
+5. Eseguo `ip address indirizzoDaAssegnare subNetMask`
+6. `CTRL-Z`
 
 Risultato:
 ![[Pasted image 20240113094621.png]]
