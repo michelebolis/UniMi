@@ -304,7 +304,7 @@ indirizzo min: 10.11.160.161
 indirizzo max: 10.11.160.174
 
 
-Configurazione router
+## Configurazione router
 NON collegare router direttamente con gli end system
 Comandi CLI base
 
@@ -346,7 +346,7 @@ La subnet mask è presente in automatico in ogni end system delle VLAN in una lo
 
 ![[Pasted image 20240113095015.png]]
 
-DHCP
+## DHCP
 Aggiungiamo un end system con DHCP
 Appena si collega ad una rete già esistente, si da un indirizzo casuale controllando se non sia già presente con un ARP request 
 MA non appena compare un DHCP server, questo indirizzo casuale viene sostituito con quello dato dal server
@@ -376,7 +376,7 @@ Ora serve configurare il router con CLI configurando l'interfaccia della VLAN do
 4. Ora sono in `(config-subif)`, eseguo `ip helper-address indirizzoDHCPServer`
 5. `CTRL-Z`
 
-Configurazione Routing
+## Configurazione Routing
 - Rotte statiche
 
 Per ogni router e per ogni destinazione nella rete non direttamente collegata al router
@@ -393,7 +393,7 @@ Per visualizzare routing table di un router, $lente$ -> `routing table`
 
 E' classless
 ATT bisogna esplicitare di voler usare le v2
-1.  `enable`
+1. `enable`
 2. `config term`
 3. Ora sono in `(config)`, eseguo `router rip`
 4. Ora sono in `(config-router)`, eseguo `version 2` (ATT NON si vede quale sia la version)
@@ -423,7 +423,7 @@ Per evitare flooding di pkt di link state (es nella mia VLAN o NAT):
 Stessa cosa da fare in RIP per evitare inoltre di DV (SE esistono subif per VLAN bisogna farle se quelle NON su l'interfaccia fisica)
 
 
-Access Control List
+## Access Control List
 Sul router esiste la possibilità di limitare il traffico in ingresso/in uscita a/da una rete
 
 - ACL standard ID 1-99: si puo solo selezionare lo IP sorgente dei pacchetti da NON far passare
@@ -475,7 +475,7 @@ Soluzione:
 `ip access-list extended 100`
 `15 permit TCP any any established`
 
-NAT
+## NAT
 Per la traduzione degli indirizzi è necessario
 1. configurare le interfacce di ingresso e uscita alla rete abilitando il servizio NAT 
 	1. `enable`
@@ -493,7 +493,7 @@ Per la traduzione degli indirizzi è necessario
 
 es 
 ![[Pasted image 20240114094235.png]]
-ip nat inside source list 110 interface fastEthernet 0/0
+`ip nat inside source list 110 interface fastEthernet 0/0`
 "Quando si fa NAT degli indirizzi interni si usa come criterio degli indirizzi da tradurre nella ACL 110 e si traducono gli indirizzi usando l'indirizzo IP dell'interfaccia fastEterhent 0/0"
 Ora il ping da interno a esterno funziona MA il server web pubblico non è accessibile da Internet
 
