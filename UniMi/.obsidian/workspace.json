@@ -18,12 +18,12 @@
             }
           },
           {
-            "id": "25dbc441c21020a3",
+            "id": "dfad929329e8c039",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md"
               }
             }
           },
@@ -181,8 +181,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -197,10 +196,11 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "25dbc441c21020a3",
+  "active": "47136b92c595cdff",
   "lastOpenFiles": [
+    "Extra/Blockchain.md",
+    "Extra",
     "Untitled 1.md",
-    "Untitled.md",
     "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Reti di calcolatori/Esami/2019-01-29.md",
@@ -225,7 +225,6 @@
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/ARP-RARP - Formato.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/NAT.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/NAT - Esempio.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/Classi NetID.md",
     "Reti di calcolatori/img/Pasted image 20240114094235.png",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Reti di calcolatori/Laboratorio/Java Socket/Slide/LabRetiF1X_JS5.pdf",
@@ -244,7 +243,6 @@
     "Reti di calcolatori/img/Pasted image 20240113094621.png",
     "Reti di calcolatori/img/Pasted image 20240113094256.png",
     "Reti di calcolatori/img/Pasted image 20240113094049.png",
-    "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_PT2.pdf",
     "Reti di calcolatori/img/Pasted image 20240112113310.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231215095605.png",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
