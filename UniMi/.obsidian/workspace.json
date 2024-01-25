@@ -16,8 +16,33 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "140dcff5024ddf40",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6c6aac0fc1d08fce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reti di calcolatori/Laboratorio/Java Socket/Java Socket - CheatSheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,6 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +147,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md"
+              }
             }
           },
           {
@@ -180,9 +209,12 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c1ce2ce19829fc50",
+  "active": "140dcff5024ddf40",
   "lastOpenFiles": [
+    "Reti di calcolatori/Laboratorio/Java Socket/Java Socket - CheatSheet.md",
     "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md",
+    "Reti di calcolatori/Laboratorio/Packet Tracer/Packet Tracer - CheatSheet.md",
+    "Reti di calcolatori/Laboratorio/Packet Tracer/Packet Tracer.md",
     "Reti di calcolatori/Laboratorio/Seminari/Seminario Rete UniMi - Riassunto.md",
     "Reti di calcolatori/Laboratorio/Seminari/Seminario EOLO - Riassunto.md",
     "Reti di calcolatori/Laboratorio/Seminari/Seminario EOLO.md",
@@ -207,9 +239,6 @@
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Frame Push_Promise.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 2.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 1.1.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 1.X.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Routing/Architettura delle rete - Ottimizzazioni.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello di Rete/Addressing/ARP-RARP.md",
     "Reti di calcolatori/img/Pasted image 20240114094235.png",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Reti di calcolatori/Laboratorio/Java Socket/Slide/LabRetiF1X_JS5.pdf",

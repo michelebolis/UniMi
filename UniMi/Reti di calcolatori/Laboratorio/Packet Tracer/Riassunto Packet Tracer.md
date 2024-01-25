@@ -1,4 +1,4 @@
-## PT - Introduzione
+ ## PT - Introduzione
 Cablature:
 - Copper Straight: servono per collegare apparati diversi in funzione del livello che implementano
 - Copper Cross: servono per collegare apparati uguali
