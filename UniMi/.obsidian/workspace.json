@@ -16,8 +16,69 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "f73521edf1c3033a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Packet Tracer - CheatSheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "eac965659d1d4d15",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reti di calcolatori/Laboratorio/Java Socket/Java Socket - CheatSheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "57c384e48de5e3a8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reti di calcolatori/Appunti lab.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e4492e70d5237f1b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reti di calcolatori/Laboratorio/Seminari/Seminario EOLO - Riassunto.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "24a48c6147dcff71",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reti di calcolatori/Laboratorio/Seminari/Seminario Rete UniMi - Riassunto.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -67,7 +128,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 297.5110321044922
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -83,6 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Packet Tracer - CheatSheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Packet Tracer - CheatSheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +183,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Packet Tracer - CheatSheet.md"
+              }
             }
           },
           {
@@ -179,16 +244,17 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c1ce2ce19829fc50",
+  "active": "f73521edf1c3033a",
   "lastOpenFiles": [
-    "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md",
+    "Reti di calcolatori/Laboratorio/Seminari/Seminario Rete UniMi - Riassunto.md",
     "Reti di calcolatori/Laboratorio/Packet Tracer/Packet Tracer - CheatSheet.md",
     "Reti di calcolatori/Laboratorio/Java Socket/Java Socket - CheatSheet.md",
-    "Reti di calcolatori/Laboratorio/Packet Tracer/Packet Tracer.md",
-    "Reti di calcolatori/Laboratorio/Seminari/Seminario Rete UniMi - Riassunto.md",
+    "Reti di calcolatori/Appunti lab.md",
     "Reti di calcolatori/Laboratorio/Seminari/Seminario EOLO - Riassunto.md",
-    "Reti di calcolatori/Laboratorio/Seminari/Seminario EOLO.md",
+    "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md",
+    "Reti di calcolatori/Laboratorio/Packet Tracer/Packet Tracer.md",
     "Reti di calcolatori/Laboratorio/Seminari/Seminario Rete UniMi.md",
+    "Reti di calcolatori/Laboratorio/Seminari/Seminario EOLO.md",
     "Extra/Blockchain.md",
     "Extra",
     "Untitled 1.md",
@@ -208,7 +274,6 @@
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Frame Header.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Frame Push_Promise.md",
     "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 2.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 1.1.md",
     "Reti di calcolatori/img/Pasted image 20240114094235.png",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Reti di calcolatori/Laboratorio/Java Socket/Slide/LabRetiF1X_JS5.pdf",
