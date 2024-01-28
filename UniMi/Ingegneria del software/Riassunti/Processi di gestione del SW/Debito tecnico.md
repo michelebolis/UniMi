@@ -1,3 +1,3 @@
 Durante lo sviluppo di un SW è facile incontrare dei problemi, che possono essere risolti subito oppure in un secondo momento. 
 
-In quest’ultimo caso però maggiore è il numero di problemi non risolti, maggiore sarà il debito tecnico accumulato, che sarà più difficile da sanare con il passare del tempo; questo perché il codice diventerà sempre maggiore e più complesso man mano che il SW viene sviluppato.
+In quest’ultimo caso però maggiore è il numero di problemi non risolti, maggiore sarà il `debito tecnico` accumulato, che sarà più difficile da sanare con il passare del tempo; questo perché il codice diventerà sempre maggiore e più complesso man mano che il SW viene sviluppato.

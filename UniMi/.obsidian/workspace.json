@@ -16,69 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "f73521edf1c3033a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Packet Tracer - CheatSheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "eac965659d1d4d15",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reti di calcolatori/Laboratorio/Java Socket/Java Socket - CheatSheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "57c384e48de5e3a8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reti di calcolatori/Appunti lab.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e4492e70d5237f1b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reti di calcolatori/Laboratorio/Seminari/Seminario EOLO - Riassunto.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "24a48c6147dcff71",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reti di calcolatori/Laboratorio/Seminari/Seminario Rete UniMi - Riassunto.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -128,7 +67,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 297.5110321044922
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -144,7 +84,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Packet Tracer - CheatSheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +100,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Packet Tracer - CheatSheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,9 +121,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Reti di calcolatori/Laboratorio/Packet Tracer/Packet Tracer - CheatSheet.md"
-              }
+              "state": {}
             }
           },
           {
@@ -244,38 +180,38 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "f73521edf1c3033a",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
-    "Reti di calcolatori/Laboratorio/Seminari/Seminario Rete UniMi - Riassunto.md",
-    "Reti di calcolatori/Laboratorio/Packet Tracer/Packet Tracer - CheatSheet.md",
-    "Reti di calcolatori/Laboratorio/Java Socket/Java Socket - CheatSheet.md",
-    "Reti di calcolatori/Appunti lab.md",
-    "Reti di calcolatori/Laboratorio/Seminari/Seminario EOLO - Riassunto.md",
-    "Reti di calcolatori/Laboratorio/Packet Tracer/Riassunto Packet Tracer.md",
-    "Reti di calcolatori/Laboratorio/Packet Tracer/Packet Tracer.md",
-    "Reti di calcolatori/Laboratorio/Seminari/Seminario Rete UniMi.md",
-    "Reti di calcolatori/Laboratorio/Seminari/Seminario EOLO.md",
-    "Extra/Blockchain.md",
-    "Extra",
-    "Untitled 1.md",
-    "Reti di calcolatori/Reti di calcolatori.canvas",
-    "Reti di calcolatori/Esami/2019-01-29.md",
-    "Reti di calcolatori/Esami/2022-06-21.md",
-    "Reti di calcolatori/Esami/2023-02-21.md",
-    "Reti di calcolatori/Esami/2023-06-20.md",
-    "Reti di calcolatori/Esami/2023-07-25.md",
-    "Reti di calcolatori/Esami/2023-09-07.md",
-    "Reti di calcolatori/Esami/2023-09-26.md",
-    "Reti di calcolatori/Esami/Esercizi vari.md",
-    "Reti di calcolatori/Esami/2018-02-27.md",
-    "Reti di calcolatori/Esami/Untitled.md",
-    "Reti di calcolatori/Appunti.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Email - Contenuto.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Frame Header.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/Frame Push_Promise.md",
-    "Reti di calcolatori/Riassunti/Protocolli/ISO-OSI/Livello Applicazione/HTTP 2.md",
-    "Reti di calcolatori/img/Pasted image 20240114094235.png",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Unified process - funzionamento.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Unified process.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Bug tracking.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Gradle.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Ant.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Makefile.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Make.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Build automation.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Hosting centralizzato/Continuous Integration CI.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Hosting centralizzato/Pull request.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Hosting centralizzato/Fork.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Hosting centralizzato/Hosting centralizzato.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Gitflow/Gerrit.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Gitflow/Gitflow - limiti.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Gitflow/GitFlow.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/SCM - Lavoro concorrente.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/SCM - Operazioni.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/SCM - Meccanismo di base.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/SCM distribuito.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/SCM - Storia.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/SCM - Source Configuration Management.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source/Articoli/The Emerging Economic Paradigm Of Open Source.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source/Articoli/An empirical study of open-source and closed-source software products.md",
+    "Ingegneria del software/Riassunti/img/Pasted image 20240128143352.png",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source/Articoli/Care and Feeding of FOSS.md",
+    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source/Articoli/The Cathedral and the Bazaar.md",
+    "Extra",
+    "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/img/Pasted image 20240114094235.png",
     "Reti di calcolatori/Laboratorio/Java Socket/Slide/LabRetiF1X_JS5.pdf",
     "Reti di calcolatori/Laboratorio/Java Socket/Slide/LabRetiF1X_JS6.pdf",
     "Reti di calcolatori/Laboratorio/Java Socket/Slide/LabRetiF1X_JS4.pdf",
@@ -293,7 +229,6 @@
     "Reti di calcolatori/img/Pasted image 20240113094256.png",
     "Reti di calcolatori/img/Pasted image 20240113094049.png",
     "Reti di calcolatori/img/Pasted image 20240112113310.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231215095605.png",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/ES.canvas",
     "Ricerca operativa/Ricerca operativa.canvas",

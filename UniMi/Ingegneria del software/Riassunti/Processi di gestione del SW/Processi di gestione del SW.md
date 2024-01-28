@@ -1,16 +1,13 @@
-- [[Ingegneria del software/Riassunti/Processi di gestione del SW/Storia]]
-- [[Terminologia]]
+- [[Processi di gestione del SW - Storia]]
+- [[Terminologia]] e [[Debito tecnico]]
 
-Dato il #Target, riflettiamo su
+Dato il `Target`, riflettiamo su
 - [[Problemi principali]]
+- [[Qualità del processo]]
 - Le [[Qualità del SW]] che vogliamo raggiungere. 
 	Utilizzando un buon processo ho un'elevata probabilità di produrre un prodotto di qualità. 
 	Tipi di qualità
-	- Esterna: è di interesse per uno stakeholders
-	- Interna: esclusivamente colte dallo sviluppatore
+	- `Esterna`: è di interesse per uno stakeholders
+	- `Interna`: esclusivamente colte dallo sviluppatore
 
-[[Debito tecnico]]
-[[Qualità del processo]]
-
-[[Problemi principali]]
 [[Processo di produzione del SW]]

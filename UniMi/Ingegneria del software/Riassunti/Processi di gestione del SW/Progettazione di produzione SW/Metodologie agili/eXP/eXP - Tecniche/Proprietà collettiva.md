@@ -1,2 +1,2 @@
-Il codice non appartiene ad una persona sola ma non è neanche senza proprietà, dove tutti possono modificare tutto senza preoccupazioni
-Ci si deve sentire responsabilizzati sull'intero codice anche se non si conosce tutto alla stessa maniera
+Il codice non appartiene ad una persona sola ma non è neanche senza proprietà, dove `tutti possono modificare tutto senza preoccupazioni`
+Ci si deve sentire `responsabilizzati sull'intero codice` anche se non si conosce tutto alla stessa maniera

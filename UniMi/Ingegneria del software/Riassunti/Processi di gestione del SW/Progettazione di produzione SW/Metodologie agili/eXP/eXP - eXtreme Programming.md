@@ -1,4 +1,4 @@
-Incrementa poi semplifica, rendendo il codice piu leggibile, migliore (refactoring)
+La metodologia eXP prevede una filosofia `Incrementa poi semplifica`, rendendo il codice piu leggibile, migliore (refactoring)
 Nella semplificazione le funzionalità rimangono uguali migliorando le proprietà interne del componente
 
 - [[TDD - Test Driven Development]]
@@ -10,13 +10,8 @@ Nella semplificazione le funzionalità rimangono uguali migliorando le propriet�
 - [[eXP - Raggruppamento fasi]]
 - [[eXP - Critiche]]
 
-Velocity: capacità osservata di completare lavori da parte del team. Cio ci permette ad una nuova iterazione di sviluppare tanti punti quanti ne ha fatti all iterazione precedente, compensando stime sbagliate all'interno del team
+`Velocity`: capacità osservata di completare lavori da parte del team. Ciò ci permette ad una nuova iterazione di sviluppare tanti punti quanti ne ha fatti all iterazione precedente, compensando stime sbagliate all'interno del team
 Tuttavia:
 - NON deve essere usato come metro di valutazione tra team o nel tempo
 - NON si devono considerare storie non finite
 - NON deve essere imposta
-
-
-Probabilmente non serve mappare in ore reali, basta guardare l iterazione prima 
-...
-è necessario un progresso continuo grazie ad uno scheduling realistico

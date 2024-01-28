@@ -1,4 +1,4 @@
-Lo scopo di creare una release è **cristalizzare l’insieme delle funzionalità** presente sul branch `develop` all’inizio di essa dedicandosi solo alla sistemazione degli errori o alle attività necessarie per il deploy (modifica del numero di versione, …). L’insieme delle funzionalità rilasciate è quello presente sul branch `develop` al momento di inizio di una release.
+Lo scopo di creare una release è **cristallizzare l’insieme delle funzionalità** presente sul branch `develop` all’inizio di essa dedicandosi solo alla sistemazione degli errori o alle attività necessarie per il deploy (modifica del numero di versione, …). L’insieme delle funzionalità rilasciate è quello presente sul branch `develop` al momento di inizio di una release.
 
 I bug fix possono essere ri-mergiati in `develop`, anche utilizzando la funzionalità **cherry-pick** di git; essa permette di selezionare un commit specifico da un ramo e applicarlo in un altro ramo. 
 

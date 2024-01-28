@@ -4,6 +4,6 @@ Principi del manifesto
 - Collaborazione del cliente come se fosse nel team
 - Capacita di rispondere ai cambiamenti piuttosto che seguire il piano predisposto
 
-Bertrand Meyer analizza in maniera critica molti concetti metodologici su come si fa a parlare di un processo.
+`Bertrand Meyer` analizza in maniera critica molti concetti metodologici su come si fa a parlare di un processo.
 
 [[Elenco metodologie agili]]

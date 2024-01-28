@@ -1,7 +1,7 @@
 Conosciuto nelle sue versioni commerciali anche come:
 
-- **USDP** ==Unified== Software Development Process
-- **RUP** Rational ==Unified== Process
+- `USDP - Unified Software Development Process`
+- `RUP - Rational Unified Process`
 
 È un modello di processo definito dagli stessi creatori di [[UML Diagram]], é un modello _Orientato agli Oggetti_ (**“OO”**), quindi ottimo da utilizzare in contemporanea. Esistono anche altri modelli **OO** come ad esempio _“Object Oriented Software Process”_ (**OOSP**)
 

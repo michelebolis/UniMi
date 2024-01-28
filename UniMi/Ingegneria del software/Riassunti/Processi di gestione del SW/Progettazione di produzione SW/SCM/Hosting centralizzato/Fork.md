@@ -1,4 +1,4 @@
-Il “fork” di un repository Git è una **copia del repository originale** che viene creata su un account di hosting diverso dal proprietario originale. 
+Il `fork` di un repository Git è una **copia del repository originale** che viene creata su un account di hosting diverso dal proprietario originale. 
 Questo permette a un altro sviluppatore di creare una copia del repository e di lavorare su di essa senza influire sul lavoro del proprietario originale e **senza la sua autorizzazione**. È possibile quindi mantenere una _connessione_ tra i due repository e condividere facilmente le modifiche apportate.
 
 La maggioranza delle piattaforme di hosting centralizzato **ottimizza la condivisione dello spazio degli oggetti**, utilizzando un’unica _repository fisica_ per tutti i fork. 
