@@ -1,7 +1,5 @@
-
-NullObject pattern
-[[Nullability]]
-Vogliamo creare un oggetto che corrisponda al concetto "nessun valore" o "valore neutro"
+Situazione: [[Nullability]]
+Vogliamo creare un oggetto che corrisponda al `concetto "nessun valore" o "valore neutro"`
 ```java
 public interface CardSource { 
 	Card draw(); 
@@ -15,5 +13,5 @@ public interface CardSource {
 }
 ```
 
-NULL diventa un oggetto valido della classe di tipo anonimo che aderisce alla stessa interfaccia
+`NULL diventa un oggetto valido della classe di tipo anonimo che aderisce alla stessa interfaccia`
 Serve ad evitare di dover trattare separatamente il caso == null, ma se proprio diventasse necessario si può sempre testare == CardSource.NULL

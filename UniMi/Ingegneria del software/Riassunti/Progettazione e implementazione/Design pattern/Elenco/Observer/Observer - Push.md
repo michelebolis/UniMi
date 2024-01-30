@@ -1,4 +1,4 @@
-In questo caso l’argomento Observable di `update` viene messo nullo, mentre **nell’Object viene passata la totalità dello stato** del Subject:
+In questo caso l’argomento Observable di `update` viene messo nullo, mentre `nell’Object viene passata la totalità dello stato del Subject`:
 
 ```java
 // Observable ù

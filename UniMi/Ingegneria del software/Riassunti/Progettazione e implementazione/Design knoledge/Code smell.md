@@ -2,7 +2,7 @@ Lista di segnali che suggeriscono problemi nella progettazione nel codice:
 - codice duplicato: usato in precedenza per arrivare ad un verde, va poi rimosso
 - Metodo "troppo" lungi: poco leggibili e riusabili
 - Troppi livelli logici di indentazione: poco leggibili e riusabili
-- Troppi attributi per classe: non viene rispettata la single responsability
+- Troppi attributi per classe: non viene rispettata la `single responsability`
 - Lunghe sequenze di if-else o switch
 - classe troppo grande
 - lista di parametri troppo lunga

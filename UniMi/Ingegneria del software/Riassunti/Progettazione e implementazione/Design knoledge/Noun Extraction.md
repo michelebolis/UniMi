@@ -1,4 +1,4 @@
-E' una tecnica basata sulle specificazioni in cui vengono estratti tutti i sostantivi o frasi sostantivizzate.
+La `Noun Extraction` è una tecnica basata sulle specificazioni in cui vengono estratti tutti i sostantivi o frasi sostantivizzate.
 
 1. Si considerano tutti i candidati e si incomincia a sfoltire
 

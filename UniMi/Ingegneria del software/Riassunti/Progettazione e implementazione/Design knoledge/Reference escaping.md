@@ -1,5 +1,5 @@
-Reference escaping: accesso a un attributo privato fuori dalla classe
-Situazioni:
+Il `Reference escaping` si ha quando si lascia l'accesso a un attributo privato fuori dalla classe
+Situazioni possibili:
 - Getter ritorna un riferimento di un attributo privato 
 
 ```java

@@ -1,14 +1,11 @@
 Ad una variabile che indica un riferimento a un oggetto possiamo assegnare un valore null
 Problema: quando proviamo a deferenziale la variabile e non puntando a nulla, riceviamo un errore
 
-Null viene utilizzato per indicare errore, stato temporaneamente inconsistente, valore assente.
+`Null viene utilizzato per indicare errore, stato temporaneamente inconsistente, valore assente`.
 Perciò un codice chiaro NON dovrebbe far uso di null o almeno limitarlo
 
-come implementare attributi diversi da null: 
-assert attributo!=null;
-
-
-modalita sviluppo: faccio un if --> segnalo io l errore dell utilizzatore, programmazione difensiva
+Come implementare attributi diversi da null: 
+1. modalita sviluppo: faccio un `if` segnalando l'errore dell'utilizzatore, `programmazione difensiva`
 
 ```java
 public Card(Rank rank, Suit suit) { 
@@ -18,7 +15,7 @@ public Card(Rank rank, Suit suit) {
 }
 ```
 
-modalita produzione: assert o notazione --> assumo l utilizzo corretto, programmazione con contratto
+2. modalita produzione: `assert` o notazione assumendo l'utilizzo corretto, `programmazione con contratto`
 
 ```java
 final @NotNull private Rank rank; 

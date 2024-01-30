@@ -16,8 +16,24 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "21d593c04f6b8948",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "viewState": {
+                  "x": -3063.2276689565088,
+                  "y": -8921.850625274783,
+                  "zoom": -2
+                }
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -67,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -84,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,6 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +138,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas"
+              }
             }
           },
           {
@@ -180,35 +199,36 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c1ce2ce19829fc50",
+  "active": "21d593c04f6b8948",
   "lastOpenFiles": [
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Observer/Observer - Pull.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Unified process - funzionamento.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Unified process.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Bug tracking.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Gradle.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Ant.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Makefile.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Make.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Build automation.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Hosting centralizzato/Continuous Integration CI.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Hosting centralizzato/Pull request.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Hosting centralizzato/Fork.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Hosting centralizzato/Hosting centralizzato.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Gitflow/Gerrit.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Gitflow/Gitflow - limiti.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Gitflow/GitFlow.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/SCM - Lavoro concorrente.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/SCM - Operazioni.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/SCM - Meccanismo di base.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/SCM distribuito.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/SCM - Storia.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/SCM - Source Configuration Management.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source/Articoli/The Emerging Economic Paradigm Of Open Source.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source/Articoli/An empirical study of open-source and closed-source software products.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Observer/Observer - Push.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Observer/Observer.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Observer/Observer - Antipattern.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Decorator/Decorator - Antipattern.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Decorator/Decorator.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Composite.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Facade.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Adapter.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Object Adapter.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Class Adapter.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Delegation.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Nullability.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/NullObject.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Iterator.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Singleton.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Meta pattern.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Design pattern.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Automi di Mealy.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/State Diagram - Automi di Moore.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Stato - Casi particolari.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Stato.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Reference escaping.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Encapsulation and infomation hiding.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Noun Extraction.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Come identificare classi-relazioni.md",
     "Ingegneria del software/Riassunti/img/Pasted image 20240128143352.png",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source/Articoli/Care and Feeding of FOSS.md",
-    "Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Open source/Articoli/The Cathedral and the Bazaar.md",
     "Extra",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Reti di calcolatori/img/Pasted image 20240114094235.png",
