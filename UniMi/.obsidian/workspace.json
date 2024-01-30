@@ -25,9 +25,9 @@
               "state": {
                 "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "viewState": {
-                  "x": -3063.2276689565088,
-                  "y": -8921.850625274783,
-                  "zoom": -2
+                  "x": -1907.8155319980851,
+                  "y": -3654.7445304352195,
+                  "zoom": -4
                 }
               }
             }
@@ -83,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -199,10 +200,23 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "21d593c04f6b8948",
+  "active": "47136b92c595cdff",
   "lastOpenFiles": [
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Observer/Observer - Pull.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Deployment Diagram.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Component Diagram.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Use cases Diagram/Use Cases Diagram - Fasi.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Use cases Diagram/Use Cases Diagram.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Activity Diagram/Activity Diagram - Decisioni.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Activity Diagram/Activity Diagram - Swim lane.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Activity Diagram/Activity Diagram - Sincronizzazione.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Activity Diagram/Activity Diagram.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Sequence Diagram.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Class Diagram/Class Diagram - Legenda Relazioni.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Class Diagram/Class Diagram - Legenda Classi.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Superstate.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/State Diagram.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Observer/Observer - Pull.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Observer/Observer - Push.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Observer/Observer.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Observer/Observer - Antipattern.md",
@@ -215,19 +229,6 @@
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Class Adapter.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Delegation.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Nullability.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/NullObject.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Iterator.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Singleton.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Meta pattern.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Design pattern.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Automi di Mealy.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/State Diagram - Automi di Moore.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Stato - Casi particolari.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Stato.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Reference escaping.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Encapsulation and infomation hiding.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Noun Extraction.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Come identificare classi-relazioni.md",
     "Ingegneria del software/Riassunti/img/Pasted image 20240128143352.png",
     "Extra",
     "Reti di calcolatori/Reti di calcolatori.canvas",

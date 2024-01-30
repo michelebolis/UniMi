@@ -1,6 +1,6 @@
 Per identificare le caratteristiche che rendono utile un caso di test o ragiono sulle caratteristiche delle specifiche o del codice
 
-Ad ogni criterio è possibile associare una metrica che ne misuri la copertura e che ci permetta di:
+Ad ogni criterio è possibile associare una `metrica` che ne misuri la copertura e che ci permetta di:
 - decidere quando smettere
 - decidere quale altro caso di test è opportuno aggiungere
 - confrontare le `boltà` di Test diversi

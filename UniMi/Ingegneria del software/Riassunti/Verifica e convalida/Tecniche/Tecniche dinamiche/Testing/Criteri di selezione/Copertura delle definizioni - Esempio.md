@@ -1,5 +1,5 @@
 
-![[Pasted image 20231211093847.png|250]]
+![[Pasted image 20231211093847.png|200]]
 
 Considerando la variabile `a`:
 $du(a, 5) = \{7, 8, 9, 11, 12\}$

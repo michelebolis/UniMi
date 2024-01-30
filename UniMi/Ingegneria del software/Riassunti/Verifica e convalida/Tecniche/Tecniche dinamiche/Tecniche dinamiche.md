@@ -1,6 +1,6 @@
-Tecniche dinamiche sono basate sull'esecuzione del programma eseguibile (MA esplode facilmente nel numero di stati possibili)
+Tecniche dinamiche sono `basate sull'esecuzione del programma eseguibile` (MA esplode facilmente nel numero di stati possibili)
 
 Vantaggi: piu facile da determinare
 
-- [[Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Testing|Testing]]
-- [[Processi di review]]
+1. [[Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Testing|Testing]]
+2. [[Processi di review]]

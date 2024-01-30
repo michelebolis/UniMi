@@ -1,10 +1,10 @@
-![[Pasted image 20231211094809.png|250]]
+![[Pasted image 20231211094809.png|200]]
 
 Considerando la variabile `a`:
 $du(a, 5) = \{7, 8, 9, 11, 12\}$
 $du(a, 9) = \{7, 8, 9, 11, 12\}$
 
-![[Pasted image 20231211095048.png]]
+![[Pasted image 20231211095048.png|300]]
 
 T = {`<4, 8>`, `<12, 8>`, `<12, 4>`}
 

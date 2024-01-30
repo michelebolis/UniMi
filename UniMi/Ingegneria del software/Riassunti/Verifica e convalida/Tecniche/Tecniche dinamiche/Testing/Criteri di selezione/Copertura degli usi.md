@@ -2,6 +2,6 @@ Un test T soddisfa il criterio di copertura degli usi SE e SOLO SE per ogni nodo
 
 $T \in C$ SE e SOLO SE $\forall i \in P, \forall x \in def(i), \forall j \in du(x, i), \exists t \in T$ che esegue un cammino da $i$ a $j$ senza definizioni di $x$
 
-ATT NON implica il criterio di copertura delle definizioni 
+`ATT NON implica il criterio di copertura delle definizioni `
 
 [[Copertura degli usi - Esempio]]

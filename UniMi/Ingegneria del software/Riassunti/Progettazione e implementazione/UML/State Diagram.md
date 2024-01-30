@@ -1,9 +1,9 @@
-Gli automi a stati finiti viene mappato dallo State Diagram rendendoli compatibili con il dominio applicativo degli UML, le classi.
+`Gli automi a stati finiti vengono mappati dallo State Diagram` rendendoli compatibili con il dominio applicativo degli UML, le classi.
 
-I rettangoli rappresentano gli oggetti.
+I rettangoli rappresentano gli `oggetti`.
 Le frecce rappresentano relazioni tra classi/oggetti in particolare sono 
-- eventi SE si considera cosa provoca quella transizione, cioe quale metodo della classe viene chiamato
-- azione: SE si considera cosa esegue quella transizione, quindi quali operazioni vengono fatte verso l'esterno
+- `eventi` SE si considera cosa provoca quella transizione, cioe quale metodo della classe viene chiamato
+- `azione`: SE si considera cosa esegue quella transizione, quindi quali operazioni vengono fatte verso l'esterno
 Le azioni sono conseguenza degli eventi: l'evento `restituisci()` causa l'azione `book.restituisci(this)`
 
 

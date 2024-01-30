@@ -1,6 +1,6 @@
 Verificare in maniera esaustiva che `P(d)` sia corretto per ogni $d \in D$ è impossibile.
 
-Il criterio di selezione è il ragionamento o le regole che utilizziamo nel selezionare un sottoinsieme di `D` (per approssimare il test ideale)
+Il `criterio di selezione` è il ragionamento o le regole che utilizziamo nel selezionare un sottoinsieme di `D` (per approssimare il test ideale)
 
 Un criterio `C` si dice `affidabile` SE presi $T_1$ e $T_2$ in base al criterio `C`, ALLORA o entrambi hanno successo o nessuno dei due ha successo
 $$affidabile(C, P)<->(\forall T_1 \in C, \forall T_2 \in C, successo(T_1, C) <->successo(T_2, C) )$$
@@ -12,7 +12,7 @@ ATTENZIONE
 $$[affidabile(C, P) \wedge valido(C, P) \wedge T \in C \wedge \neg successo(T, P)] -> ok(P,D) $$
 SE usiamo un test con un criterio affidabile e valido, il test non trova errori MA il criterio selezionerebbe test ideale che non esistono
 
-[[Es Criterio di selezione]]
+[[Criterio di selezione - Esempio]]
 [[Criterio di selezione - Ragionamento]]
 [[Criteri di selezione]]
 

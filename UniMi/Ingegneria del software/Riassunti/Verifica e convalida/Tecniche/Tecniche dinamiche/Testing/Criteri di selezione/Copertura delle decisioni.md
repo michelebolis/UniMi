@@ -2,6 +2,6 @@ Un test T soddisfa il criterio di copertura delle decisioni SE e SOLO SE `ogni d
 
 La metrica è la frazione delle decisioni che sono state rese sia vere che false su quelle per cui è possibile farlo
 
-La copertura delle decisioni IMPLICA la copertura dei comandi
+`La copertura delle decisioni IMPLICA la copertura dei comandi`
 
 [[Copertura delle decisioni - Esempio]]

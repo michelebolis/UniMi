@@ -1,1 +1,1 @@
-Si parla di white box quando ipotizziamo di estrarre, mediante tecniche di reverse engineering, le informazioni sugli stati dal codice (abbiamo quindi accesso al codice)
+Si parla di `white box` quando ipotizziamo di estrarre, mediante tecniche di reverse engineering, le `informazioni sugli stati dal codice` (abbiamo quindi accesso al codice)

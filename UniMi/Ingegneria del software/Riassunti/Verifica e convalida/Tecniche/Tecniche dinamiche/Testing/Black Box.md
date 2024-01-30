@@ -1,2 +1,2 @@
-Si parla di black box quando ipotizziamo che esista una rappresentazione nelle specifiche MA non si ha accesso al codice
+Si parla di `black box` quando ipotizziamo che esista una rappresentazione nelle specifiche MA `non si ha accesso al codice`
 Il TDD impone una filosofia completamente black box in quanto impone di scrivere prima il test che il codice
