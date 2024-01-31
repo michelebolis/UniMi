@@ -13,3 +13,6 @@
 ![[IS2023-L14.pdf]]
 ![[IS2023-L15.pdf]]
 ![[IS2023-L17.pdf]]
+![[IS2023-L18_20.pdf]]
+![[IS2023-PETRI.pdf]]
+![[IS2023-PETRITEMPORIZZATE.pdf]]

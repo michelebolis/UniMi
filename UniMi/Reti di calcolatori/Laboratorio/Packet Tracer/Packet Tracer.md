@@ -1,2 +1,2 @@
 Slide: [[Reti di calcolatori/Laboratorio/Packet Tracer/Slide/Index Slide|Index Slide]]
-[[Riassunto Packet Tracer]]
+Riassunti: [[Riassunto Packet Tracer]], [[Packet Tracer - CheatSheet]]

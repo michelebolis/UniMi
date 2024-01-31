@@ -1,0 +1,5 @@
+- [[Reti di Petri - Rete Limitata]]
+- [[Reti di Petri - Rete viva]]
+- [[Reti di Petri - Rete conservativa]]
+- [[Reti di Petri - Rete reversibile]]
+- [[Rete di Petri - Rete Pura e Non Pura]]

@@ -1,4 +1,4 @@
-Nascono per descrivere sistemi concorrenti
+Le reti di Petri pascono per descrivere sistemi concorrenti
 
 Lo stato è una composizione di tanti di tanti stati parziali
 Le transazioni sono state promosse a nodi
@@ -24,51 +24,18 @@ $\forall p \in post(t) - pre(t)$, $M'(p)=M(p)+W(<t,p>)$
 $\forall p \in post(t) \cap pre(t)$, $M'(p)=M(p)-W(<p,t>)+W(<p,t>)$
 $\forall p \in P - (pre(t) \cup post(t)), M'(p) = M(p)$
 
-ES evoluzione
-![[Pasted image 20231212132345.png]]
-![[Pasted image 20231212132446.png]]
-![[Pasted image 20231212132459.png]]![[Pasted image 20231212132524.png]]
+Regola abilitazioni: $\forall p \in pre(t), M(p) \geq W(<p,t>)$
 
-Caso di non determinismo
+[[Reti di Petri - Esempio]]
 
-ES abilitazioni
-![[Pasted image 20231212132707.png]]
-![[Pasted image 20231212132724.png]]
+[[Reti di Petri - Relazioni]]
+[[Rete di Petri - Tipi di reti]]
 
-Regola abilitazioni: $\forall p \in Pre(t), M(p) \geq W(<p,t>)$
+Definiamo poi:
+- [[Reti di Petri - Insieme di raggiungibilità|Insieme di raggiungibilità]]
+- [[Reti di Petri - Archi inibitori|Archi inibitori]]
+- [[Reti di Petri - Rappresentazione matriciale]]
 
-Relazione di sequenza
-Una transizione $t_1$ è in sequenza con una transizione $t_2$ in una marcatura $M$ SE e SOLO SE
-$M[t_1 > \wedge \neg M[t_2 \wedge M[t_1t_2 >$
-- $t_1$ è abilitata in $M$
-- $t_2$ non è abilitata in $M$
-- $t_2$ è abilitata nella marcatura $M'$ prodotta dallo scatto $M[t_1 > M'$
-
-ES sequenza
-![[Pasted image 20231212133154.png]]
-$T_0$ è in sequenza con $T_1$
-$T_0$ è in sequenza con $T_2$
-$T_3$ è in sequenza con $T_2$
-
-Relazione di conflitto
-Due transizioni $t_1$ e $t_2$ sono in conflitto
-- Strutturale SE e SOLO SE $pre(t_1) \cap pre(t_2) \neq \emptyset$
-- Effettivo in una marcatura M SE e SOLO SE 
-$$M[t_1 > \wedge \text{ }M[t_2 > \wedge\text{ } \exists p \in pre(t_1) \cap pre(t_2),\text{ }M(p) < W(<p, t_1>) + W(<p, t_2>)$$
-$t_1$ e $t_2$ sono abilitate in $M$ e esiste un posto $p$ in ingresso a entrambe le transizioni che non ha abbastanza token per farle scattare entrambe
-
-![[Pasted image 20231212154844.png]]
-
-Relazione di concorrenza
-Due transizioni $t_1$ e $t_2$ sono in concorrenza
-- Strutturale SE e SOLO SE $pre(t_1) \cap pre(t_2) \neq \emptyset$
-- Effettiva in una marcatura M SE e SOLO SE
-$$M[t_1 > \wedge \text{ }M[t_2 > \wedge\text{ } \forall p \in pre(t_1) \cap pre(t_2),\text{ }M(p) \geq W(<p, t_1>) + W(<p, t_2>)$$
-$t_1$ e $t_2$ sono abilitate in $M$ e tutti i posti in ingresso a entrambe le transizioni che hanno abbastanza token per farle scattare entrambe
-
-![[Pasted image 20231212155127.png]]
-
-Insieme di raggiungibilità
-L'insieme di raggiungibilità di una rete, a partire da una marcatura $M$, è il piu piccolo insieme di marcature t.c.
-$M \in R(P / T, M)$
-$(M' \in R(P/T,\text{ }M) \wedge \exists t \in T,\text{ }M'[t > M'') \implies M'' \in R(P/T,\text{ }M)$
+[[Reti di Petri - Variazioni]]
+[[Reti di Petri - Tecniche di analisi]]
+[[Reti di Petri Temporizzate - Introduzione]]

@@ -16,24 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "21d593c04f6b8948",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-                "viewState": {
-                  "x": -1907.8155319980851,
-                  "y": -3654.7445304352195,
-                  "zoom": -4
-                }
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -83,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -100,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas"
-              }
+              "state": {}
             }
           },
           {
@@ -200,56 +179,56 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "47136b92c595cdff",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Deployment Diagram.md",
-    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Component Diagram.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Use cases Diagram/Use Cases Diagram - Fasi.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Use cases Diagram/Use Cases Diagram.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Activity Diagram/Activity Diagram - Decisioni.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Activity Diagram/Activity Diagram - Swim lane.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Activity Diagram/Activity Diagram - Sincronizzazione.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Activity Diagram/Activity Diagram.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Sequence Diagram.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Class Diagram/Class Diagram - Legenda Relazioni.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Class Diagram/Class Diagram - Legenda Classi.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Superstate.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/State Diagram.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Observer/Observer - Pull.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Observer/Observer - Push.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Observer/Observer.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Observer/Observer - Antipattern.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Decorator/Decorator - Antipattern.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Decorator/Decorator.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Composite.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Facade.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Adapter.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Object Adapter.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Class Adapter.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Delegation.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Nullability.md",
-    "Ingegneria del software/Riassunti/img/Pasted image 20240128143352.png",
-    "Extra",
-    "Reti di calcolatori/Reti di calcolatori.canvas",
-    "Reti di calcolatori/img/Pasted image 20240114094235.png",
-    "Reti di calcolatori/Laboratorio/Java Socket/Slide/LabRetiF1X_JS5.pdf",
-    "Reti di calcolatori/Laboratorio/Java Socket/Slide/LabRetiF1X_JS6.pdf",
-    "Reti di calcolatori/Laboratorio/Java Socket/Slide/LabRetiF1X_JS4.pdf",
-    "Reti di calcolatori/Laboratorio/Java Socket/Slide/LabRetiF1X_JS3.pdf",
-    "Reti di calcolatori/Laboratorio/Java Socket/Slide/LabRetiF1X_JS2.pdf",
-    "Reti di calcolatori/Laboratorio/Java Socket/Slide/LabRetiF1X_JS1.pdf",
     "Reti di calcolatori/img/Pasted image 20240114104112.png",
-    "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_PT5.pdf",
-    "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_PT4.pdf",
-    "Reti di calcolatori/Laboratorio/Packet Tracer/Slide/LabRetiF1X_PT3.pdf",
-    "Reti di calcolatori/img/Pasted image 20240113100438.png",
-    "Reti di calcolatori/img/Pasted image 20240113095919.png",
-    "Reti di calcolatori/img/Pasted image 20240113095015.png",
-    "Reti di calcolatori/img/Pasted image 20240113094621.png",
-    "Reti di calcolatori/img/Pasted image 20240113094256.png",
-    "Reti di calcolatori/img/Pasted image 20240113094049.png",
-    "Reti di calcolatori/img/Pasted image 20240112113310.png",
+    "Reti di calcolatori/Reti di calcolatori.md",
+    "Reti di calcolatori/Esami/Esami indice.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Variazioni/Reti di Petri - Eliminazione dei pesi degli archi.md",
+    "Reti di calcolatori/Laboratorio/Seminari/Seminari Laboratorio Reti di calcolatori.md",
+    "Reti di calcolatori/Laboratorio/Packet Tracer/Packet Tracer.md",
+    "Reti di calcolatori/Laboratorio/Java Socket/Java Socket.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reri di Petri - Definizioni varie",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Variazioni",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tipi di reti",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Relazioni",
+    "Ingegneria del software/Slide/IS2023-PETRITEMPORIZZATE.pdf",
+    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Introduzione.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Introduzione.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reri di Petri - Definizioni varie/Reti di Petri - Rappresentazione matriciale.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reri di Petri - Definizioni varie/Retri di Petri - Rappresentazione matriciale Esempio.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reri di Petri - Definizioni varie/Reti di Petri - Matrice di incidenza.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Esempio.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Variazioni/Reti di Petri - Variazioni.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tipi di reti/Rete di Petri - Tipi di reti.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Variazioni/Reti di Petri - Posto complementare.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Relazioni/Reti di Petri - Relazioni.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Reti di Petri - Tecniche di analisi.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tipi di reti/Reti di Petri - Rete viva.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reri di Petri - Definizioni varie/Reti di Petri - Archi inibitori.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Reti di Petri - P-Invarianti.md",
+    "Ingegneria del software/Riassunti/img/Pasted image 20240131104947.png",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Reti di Petri - Albero di copertura.md",
+    "Ingegneria del software/Riassunti/img/Pasted image 20240131102910.png",
+    "Ingegneria del software/Slide/IS2023-PETRI.pdf",
+    "Ingegneria del software/Riassunti/img/Pasted image 20240131102611.png",
+    "Ingegneria del software/Riassunti/img/Pasted image 20240131102415.png",
+    "Ingegneria del software/Riassunti/img/Pasted image 20240131101140.png",
+    "Ingegneria del software/Riassunti/img/Pasted image 20240131095820.png",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Reti di Petri - Albero delle marcature raggiungibili.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Rete di Petri - Copribilità.md",
+    "Ingegneria del software/Riassunti/img/Pasted image 20240131094436.png",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tipi di reti/Reti di Petri - Rete reversibile.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tipi di reti/Reti di Petri - Rete conservativa.md",
+    "Ingegneria del software/Riassunti/img/Pasted image 20240131092040.png",
+    "Ingegneria del software/Riassunti/img/Pasted image 20240131092009.png",
+    "Ingegneria del software/Riassunti/img/Pasted image 20240131091410.png",
+    "Ingegneria del software/Slide/IS2023-L18_20.pdf",
+    "Ingegneria del software/Slide/IS2023-L17.pdf",
+    "Reti di calcolatori/Reti di calcolatori.canvas",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/ES.canvas",
     "Ricerca operativa/Ricerca operativa.canvas",
