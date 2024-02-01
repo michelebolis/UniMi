@@ -2,7 +2,7 @@
 ![[Processi di gestione del SW]]
 	![[Processi di gestione del SW - Storia|Processi di gestione del SW - Storia]]
 	![[Terminologia]]
-	![[Problemi principali]]
+	![[Processi di gestione del SW - Problemi principali]]
 	![[Debito tecnico]]
 	![[Qualità del SW]]
 		![[Funzionamento]]

@@ -5,6 +5,7 @@ La manutenzione puo essere:
 - `Correttiva`: risolvere gli errori nel sistema
 - `Adattiva`: adattare il SW a nuovi requisiti
 - `Perfettiva`: migliorare qualità interne del SW, riducendo il debito tecnico
+
 Il costo della fase di manutenzione corrisponde a oltre il 60% del costo totale del SW.
 Output: un prodotto migliore
 
