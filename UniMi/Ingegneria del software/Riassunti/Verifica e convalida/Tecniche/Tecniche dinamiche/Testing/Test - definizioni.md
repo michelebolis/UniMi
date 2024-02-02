@@ -1,5 +1,5 @@
 Un test `T` per un programma `P` è un sottoinsieme (finito) di `D`
-Un elemento `t` di un test `T` è detto `caso di test
+Un elemento `t` di un test `T` è detto `caso di test`
 L'esecuzione di un test consiste nell'esecuzione del programma $\forall t \in T$
 
 Un programma passa o supera un test:$$ok(P, T) <-> \forall t \in T, ok(P,t)$$

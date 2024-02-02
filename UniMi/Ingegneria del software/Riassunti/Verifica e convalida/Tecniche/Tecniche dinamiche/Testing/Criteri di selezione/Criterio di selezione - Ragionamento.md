@@ -3,7 +3,7 @@ Per identificare le caratteristiche che rendono utile un caso di test o ragiono 
 Ad ogni criterio è possibile associare una `metrica` che ne misuri la copertura e che ci permetta di:
 - decidere quando smettere
 - decidere quale altro caso di test è opportuno aggiungere
-- confrontare le `boltà` di Test diversi
+- confrontare le `bontà` di Test diversi
 
 Un caso di test per poter portare a evidenziare un malfunzionamento causato da un'anomalia, è necessario 
 - eseguire il comando che contiene l'anomalia

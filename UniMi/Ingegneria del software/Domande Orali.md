@@ -1,0 +1,42 @@
+- test ideale 
+- reti di petri di alto livello per il tempo 
+- test valido e criterio studiato che seleziona test validi 
+- azienda perché dovrebbe scegliere open source 
+- copertura comandi vs decisioni 
+- beebugging e analisi mutazionale 
+- dimostrazione rdp da conservativa a limitata 
+- polimorfismo e collegamento dinamico 
+- modello a spirale 
+- assiomi reti tbn 
+- 2 regole xp da consigliare a colleghi 
+- relazioni uml tra classi e tra istanze
+- UML le varie frecce e esempi 
+- vitalità transizioni 
+- criterio copertura comandi vs decisioni in particolare un esempio dove vale una e non l'altra
+ - Cos'è la verifica e convalida? Perché i requisiti di solito sono meno formali delle specifiche?
+- Cos'è SCM? Perché i manufatti sono file di testo di solito?
+- Cos'è il TDD?
+- Cos'è il refactoring? Chi ha coniato il termine? 
+- Come nascono e cosa sono le metodologie Agile? Quali sono i quattro valori del manifesto (e.g. prediligere la collaborazione tra persone)? Dimmi alcuni dei principi (??? non le tecniche dell'XP) (e.g. KISS)?
+- A cosa servono le reti di Petri?
+- Che cos’è la nullability? Perché è importante? Qual è la caratteristica del valore null che “da fastidio”? 
+- Processi, parlami positivamente del modello a cascata. Modelli di ciclo del software (descrittivo). Come nasce il modello a cascata? 
+- Terminologia di base di verifica e convalida. Sbaglio, errore, difetto, anomalia…, esempio in cui si presenta anomalia ma non (difetto o errore (?)) 
+- Prova a scrivermi la relazione di conflitto, relazione di concorrenza (fai esempi e scrivi in maniera formale) evidenzia strutturale/effettivo 
+- Mi parli di criterio di selezione. Che cos’è? Perché dobbiamo scegliere nei test un sottoinsieme del loro domino (cioè non seleziono tutti i test, ma solo alcuni)? Divagato su definizione di criterio valido. La parola criterio l’abbiamo usata in altri contesti, quali? Criteri di copertura dei comandi/decisioni ecc. dimmi qualcosa su uno di questi. Esempio dove “un criterio è soddisfatto e l’altro no” 
+- Da dove derivano, chi è che le scrive le specifiche? Dopo averle raccolte cosa devi fare prima di implementarle?
+- Pattern, chain of responsability, interface segregation 
+- Modelli iterativi e modelli sequenziali, prototipale (?) 
+- boh... di una transizione. È una caratteristica strutturale? 
+- Che è il TDD, come funziona? È una tecnica di specifica?
+- Esempio di rete limitata. 
+- Differenza tra merge e pull request.
+- Testing funzionale
+- Cosa sono gli STUB? Quando devo “mockare”? Perché non voglio usare le altre classi già presenti? Quando invece NON POSSO usare le altre classi? Problemi uso mock (ad esempio di performance, perché non simula reale tempo di risposta). Dumming/stubbing. Che funzioni usi per fare stubbing con mockito? 
+- Albero di raggiungibilità vs albero di copertura. Cosa rappresenta Ω? Vari esempi 
+- definizione e struttura di una rete 
+- perchè abbiamo studiato le reti di Petri? 
+- quando una transizione si dice viva? Definire la vitalità e i gradi 
+- definizioni di: raggiungibilità, sequenza, conflitto e concorrenza a volte anche chiede anche di rappresentarle graficamente 
+- conservatività e limitatezza: quali sono le differenze tra queste due proprietà? Enunciarle e poi rappresentare una rete limitata ma non conservativa 
+- analisi statica e dinamica delle reti di Petri
