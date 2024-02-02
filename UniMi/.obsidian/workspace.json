@@ -18,16 +18,16 @@
             }
           },
           {
-            "id": "ea1accdcdd37b76b",
+            "id": "65444d8d845615c1",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
                 "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "viewState": {
-                  "x": -10649.74550967182,
-                  "y": -2677.720840107127,
-                  "zoom": -0.6666666666666663
+                  "x": 995.497257062091,
+                  "y": -1818.677078587638,
+                  "zoom": 0
                 }
               }
             }
@@ -185,7 +185,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -200,13 +201,13 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "ea1accdcdd37b76b",
+  "active": "65444d8d845615c1",
   "lastOpenFiles": [
+    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Root.md",
     "Extra/Extra Index.md",
     "Extra/Blockchain.md",
     "Ingegneria del software/Riassunti/img/Pasted image 20231215095605.png",
-    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Semplificazione dei constraints.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri - Time Anonymous Timestamp.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Generalizzazione in tempi relativi.md",
@@ -239,7 +240,6 @@
     "Reti di calcolatori/Esami/Esami indice.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Variazioni/Reti di Petri - Eliminazione dei pesi degli archi.md",
     "Reti di calcolatori/Laboratorio/Seminari/Seminari Laboratorio Reti di calcolatori.md",
-    "Reti di calcolatori/Laboratorio/Packet Tracer/Packet Tracer.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reri di Petri - Definizioni varie",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Variazioni",

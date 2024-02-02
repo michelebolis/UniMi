@@ -3,6 +3,7 @@ Gli oggetti sono distinguibili in `Classi` e `Interfacce`, identificate rispetti
 ![[Pasted image 20231213102408.png]]
 - I metodi delle classi sono rappresentate da un cerchio
 - Gli attributi sono rappresentati da un quadrato
+
 Visibilità attributo: 
 - pubblico: verde
 - protected: giallo
