@@ -1,4 +1,4 @@
-Il refactoring `consiste` nel Cambiare il design del codice senza cambiarne il funzionamento
+Il `refactoring` consiste nel `cambiare il design del codice senza cambiarne il funzionamento`
 Durante il refactoring è opportuno rispettare le seguenti regole:
 - `le modifiche al codice non devono modificare le funzionalità`: il refactoring DEVE essere invisibile al cliente;
 - `non possono essere aggiunti test` aggiuntivi rispetto alla fase verde appena raggiunta.

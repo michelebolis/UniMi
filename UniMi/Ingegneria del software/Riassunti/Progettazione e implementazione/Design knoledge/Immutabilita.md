@@ -1,5 +1,5 @@
-Una classe è immutabile se non c è modo di cambiare lo stato dell'oggetto dopo la sua inizializzazione
-
+Una classe è immutabile se `non c'è modo di cambiare lo stato dell'oggetto dopo la sua inizializzazione
+`
 Condizioni necessarie:
 - NON fornire metodi che mutano lo stato
 	- (non è obbligatorio che gli attributi siano privati)

@@ -25,9 +25,9 @@
               "state": {
                 "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "viewState": {
-                  "x": -5158.68749820697,
-                  "y": 3496.471114433581,
-                  "zoom": -1.666666666666666
+                  "x": -4525.6399113535845,
+                  "y": -3753.730651192237,
+                  "zoom": 0.3333333333333332
                 }
               }
             }
@@ -200,7 +200,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "a036a027379b1f76",
+  "active": "ea1accdcdd37b76b",
   "lastOpenFiles": [
     "Root.md",
     "Extra/Extra Index.md",

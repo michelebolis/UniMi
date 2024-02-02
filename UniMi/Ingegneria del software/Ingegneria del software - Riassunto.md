@@ -98,7 +98,7 @@
 	![[Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Refactoring|Refactoring]]
 		![[Code smell]]
 			![[Principio tell don't ask]]
-	![[Design knoledge]]
+	![[Design knowledge]]
 		![[OO - Object Orientation]]
 			![[Immutabilita]]
 			![[Encapsulation and infomation hiding]]

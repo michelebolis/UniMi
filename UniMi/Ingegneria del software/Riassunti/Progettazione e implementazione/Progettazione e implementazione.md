@@ -1,4 +1,4 @@
 - [[Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Refactoring|Refactoring]]
-- [[Design knoledge]]
+- [[Design knowledge]]
 - [**Interface segregation**](https://marcobuster.github.io/sweng/07_progettazione/05_interface-segregation.html)
 - [[Mocking]]
