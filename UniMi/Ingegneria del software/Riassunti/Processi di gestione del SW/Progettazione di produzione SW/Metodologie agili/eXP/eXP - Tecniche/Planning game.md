@@ -8,6 +8,7 @@ Come si effettua una stima da parte del team
 - Ci sono diverse stime possibili es ore vs giorni
 - `La stima è effettuata dal team`, e non dal singolo dev perché risulta piu difficile che qualcosa sfugga all'intero team piuttosto che al singolo, ho una stima piu accurata
 - In realta la ragione è che la stima deve essere del team, deve appartenere al team
+
 Problemi
 - Richiede molto tempo, dovremo minimizzare le discussioni
 - `Effetto ancora/ancoraggio`: il primo che comunica la propria stima, induce negli altri un confronto con essa (da assoluto a relativo). Dovremo minimizzare questo effetto
