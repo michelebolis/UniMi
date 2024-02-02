@@ -1,4 +1,4 @@
-Situazione: `evitare che una classe che implementa una classe astratta, usi un metodo aggiunto alla classe astratta successivamente, comportamenti diversi per diverse istanze`
+Situazione: `evitare che una classe che implementa una classe astratta, usi un metodo aggiunto alla classe astratta successivamente, prevedendo comportamenti diversi per diverse istanze`
 
 Possibili soluzioni
 - Override: viola Liskov Principle

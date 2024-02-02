@@ -137,7 +137,6 @@
 		{"id":"83e272f4ecfd5548","type":"file","file":"Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Gradle.md","x":-10600,"y":1606,"width":638,"height":814},
 		{"id":"2ac71f7c2c57c223","type":"file","file":"Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/Metodologie agili/eXP/eXP - Tecniche/Refactoring.md","x":-7453,"y":7368,"width":653,"height":262},
 		{"id":"c97172963047b9d5","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Composite.md","x":-7600,"y":-2532,"width":720,"height":1488},
-		{"id":"984567d83f9cbe34","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Decorator/Decorator - Antipattern.md","x":-8400,"y":-2691,"width":720,"height":1607},
 		{"id":"5af942313d25f72e","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Decorator/Decorator.md","x":-9331,"y":-2680,"width":837,"height":1584},
 		{"id":"abf2348e82fc5bd7","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Object Adapter.md","x":-5571,"y":-1900,"width":620,"height":720},
 		{"id":"646083d023fbc3ba","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Class Adapter.md","x":-6220,"y":-1900,"width":620,"height":680},
@@ -148,7 +147,6 @@
 		{"id":"371c1afb2532a9e2","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Decorator/Decorator - Esempio.md","x":-10200,"y":-2468,"width":780,"height":1162},
 		{"id":"d5335d9952739f62","type":"file","file":"Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Bug tracking.md","x":-9720,"y":20,"width":838,"height":937},
 		{"id":"6ab204d626f254a2","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Chain of responsability.md","x":-5571,"y":-2532,"width":607,"height":432},
-		{"id":"bd3a600e767d8d48","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Adapter.md","x":-6220,"y":-2412,"width":620,"height":312},
 		{"id":"5a752870e7871145","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Builder.md","x":-10872,"y":-2720,"width":568,"height":400,"color":"1"},
 		{"id":"a81c101d5f15cef5","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Design pattern.md","x":-4860,"y":-3292,"width":860,"height":960},
 		{"id":"c015f04b5e6883c5","type":"file","file":"Ingegneria del software/Riassunti/Processi di gestione del SW/Progettazione di produzione SW/SCM/Esigenze Open source/Unified process - funzionamento.md","x":-10000,"y":-883,"width":820,"height":850},
@@ -316,7 +314,9 @@
 		{"id":"9af44fe4f4001e68","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/OO - Object Orientation.md","x":-5159,"y":-5783,"width":679,"height":564},
 		{"id":"37556eda720799bd","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Design knowledge.md","x":-4351,"y":-6240,"width":800,"height":760},
 		{"id":"caf3c43de87d38d5","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Reference escaping.md","x":-6820,"y":-5980,"width":700,"height":747},
-		{"id":"f83fb907a9354b70","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/State Diagram - Automi di Moore.md","x":-5257,"y":-7058,"width":586,"height":470}
+		{"id":"f83fb907a9354b70","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/State Diagram - Automi di Moore.md","x":-5257,"y":-7058,"width":586,"height":470},
+		{"id":"bd3a600e767d8d48","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Adapter.md","x":-6220,"y":-2432,"width":620,"height":332},
+		{"id":"984567d83f9cbe34","type":"file","file":"Ingegneria del software/Riassunti/Progettazione e implementazione/Design pattern/Elenco/Decorator/Decorator - Antipattern.md","x":-8400,"y":-2706,"width":720,"height":1636}
 	],
 	"edges":[
 		{"id":"2b5b30c34a79acbe","fromNode":"a2ed117451add2c3","fromSide":"left","toNode":"432ce7ecdf2a72f4","toSide":"right","label":"6"},

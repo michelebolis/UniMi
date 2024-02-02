@@ -18,6 +18,7 @@ Problemi:
 - esplosione combinatoria dovuta all’accoppiamento di ogni possibile base e insieme di decorazioni
 - estrema difficoltà che comporterebbe una futura aggiunta di decorazioni.
 
+Alternativa:
 - `God class`
 L’ideale sarebbe invece poter **aggiungere funzionalità e caratteristiche dinamicamente**, restringendo la gerarchia ad un’unica classe le cui istanze possano essere “decorate” su richiesta al momento dell’esecuzione.  
 La soluzione più semplice a questo nuovo problema parrebbe quella che viene definita una GOD CLASS (o _fat class_), ovvero `un’unica classe in cui tramite attributi booleani e switch vengono attivate o disattivate diverse decorazioni.`
