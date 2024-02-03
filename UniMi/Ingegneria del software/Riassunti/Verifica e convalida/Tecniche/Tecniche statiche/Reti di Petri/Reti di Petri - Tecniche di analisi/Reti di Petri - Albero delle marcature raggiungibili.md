@@ -8,8 +8,9 @@ Fasi
 		1. crea la marcatura M' prodotta dallo scatto di t
 		2. crea un nuovo nodo corrispondente a M', aggiungi un arco da M a M' ed etichetta M' come `nuovo` 
 
-Analisi di raggiungibilità 
-Problemi: vi è la necessità di enumerare tutte le possibili marcature raggiungibili MA se la rete non è limitata, sono infiniti
+Problemi: 
+- vi è la necessità di enumerare tutte le possibili marcature raggiungibili MA se la rete non è limitata, sono infiniti
+- la crescita del numero di stati puo risultare velocemente ingestibile
 
 Esempio
 ![[Pasted image 20240131094436.png|500]]

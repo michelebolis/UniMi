@@ -11,11 +11,11 @@ Fasi:
 		3. crea un nodo corrispondente a $M'$, aggiungi un arco da $M$ a $M'$ ed etichetta M' come `nuovo`
 
 Analisi di copribilità
-1. una rete di Petri è limitata SE $w$ non compare in nessun nodo dell'albero di copertura
-2. una rete di Petri è binaria SE nell'albero di copertura compaiono SOLO 0 e 1
-3. una transazione è morta (0-live) SE non appare come etichetta di un arco dell'albero di copertura 
-4. condizione necessaria affinche una marcatura M sia raggiungibile è l'esistenza di un nodo etichettato con una marcatura che copre M (NON è sufficiente)
-5. non è possibile decidere SE una rete è viva
+1. una rete di Petri è `limitata` SE $w$ non compare in nessun nodo dell'albero di copertura
+2. una rete di Petri è `binaria` SE nell'albero di copertura compaiono SOLO 0 e 1
+3. una transazione è `morta` (0-live) SE non appare come etichetta di un arco dell'albero di copertura 
+4. condizione necessaria affinché una marcatura M sia raggiungibile è l'esistenza di un nodo etichettato con una marcatura che copre M (NON è sufficiente)
+5. `non è possibile decidere SE una rete è viva`
 
 Esempio
 ![[Pasted image 20240131095820.png|500]]
