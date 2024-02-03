@@ -16,8 +16,24 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "ef6efbe8d8a29bf6",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "viewState": {
+                  "x": 4636.063977030013,
+                  "y": 1365.1790050820896,
+                  "zoom": -1.3333333333333333
+                }
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -67,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -83,6 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +139,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas"
+              }
             }
           },
           {
@@ -179,30 +200,38 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c1ce2ce19829fc50",
+  "active": "ef6efbe8d8a29bf6",
   "lastOpenFiles": [
-    "Ingegneria del software/Domande Orali.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Debugging/Debugging.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Debugging/Debugging - Debugging per prova.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Debugging/Debugging - Debugging simbolico.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Debugging/Debugging - Dump di memoria.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Debugging/Debugging - Tecnica Naive.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Debugging/Debugging - Delta Debugging.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-    "Root.md",
-    "Extra/Extra Index.md",
-    "Extra/Blockchain.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Modelli statistici.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Confronto tecniche di verifica e convalida.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Gruppo di test autonomo.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/SW Inspection/SW Inspection - Conclusioni.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/SW Inspection/SW Inspection - Automazione dell'ispezione.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/SW Inspection/SW Inspection - Introduzione.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/SW Inspection/SW Inspection - Fagan.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/SW Inspection/SW Inspection - Active Design Reviews.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/SW Inspection/SW Inspection - Fagan Fasi.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Test funzionale/Test funzionale.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Test funzionale/Category partition.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Test funzionale/Test di frontiera.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Test funzionale/Test funzionale - Classi di equivalenza.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Test funzionale/Test funzionale - Testing delle interfacce.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Tecniche per OO/Tecniche per OO - Criteri di copertura.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Tecniche per OO/Tecniche per OO - Class Testing.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Tecniche per OO/Tecniche per OO.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/OO - Object Orientation.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Analisi mutazionale/Analisi mutazione - Automazione.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Analisi mutazionale/Criterio di copertura dei Mutanti.md",
+    "Pasted image 20240203091229.png",
+    "Pasted image 20240203091224.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231215095605.png",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Semplificazione dei constraints.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri - Time Anonymous Timestamp.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Generalizzazione in tempi relativi.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Relazione di inclusione tra stati.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Assiomi Semantiche.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Introduzione.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Tipi di semantiche temporali.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Infomation Loss.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Analisi di reti temporizzate.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - HLTPN.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Semantica Mixed time.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Semantica forte.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Semantica debole.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Time Basic.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Tempo sulle transizioni.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Tempo sui posti.md",
     "Ingegneria del software/Slide/IS2023-PETRITEMPORIZZATE.pdf",
     "Ingegneria del software/Riassunti/img/Pasted image 20240131153139.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20240131153018.png",
@@ -211,13 +240,6 @@
     "Ingegneria del software/Riassunti/img/Pasted image 20240131152515.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20240131152442.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20240131151651.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20240131151610.png",
-    "Ingegneria del software/Appunti.md",
-    "Ingegneria del software/Riassunti/img/Pasted image 20240131145913.png",
-    "Ingegneria del software/Riassunti/Macroargomenti.md",
-    "Reti di calcolatori/Reti di calcolatori.md",
-    "Reti di calcolatori/Esami/Esami indice.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Variazioni/Reti di Petri - Eliminazione dei pesi degli archi.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reri di Petri - Definizioni varie",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Variazioni",

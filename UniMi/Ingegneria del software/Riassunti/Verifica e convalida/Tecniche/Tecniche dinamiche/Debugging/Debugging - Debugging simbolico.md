@@ -1,4 +1,3 @@
-Gli stadi intermedi sono prodotti usando una rappresentazione compatibile con quella del linguaggio, in particolare gli stati sono rappresentati con strutture dati e valori associati
-I debugger simbolici forniscono inoltre ulteriori strumenti (watch/spy monitor) che permettono di visualizzare il comportamento del programma in maniera selettiva
+Gli stadi intermedi sono prodotti usando una rappresentazione compatibile con quella del linguaggio, in particolare gli stati sono rappresentati con strutture dati e valori associati, utilizzando quindi lo stesso livello di astrazione del linguaggio
 
-es breakpoint sono watch sulle variabili
+I debugger simbolici forniscono inoltre ulteriori strumenti (watch/spy monitor) che permettono di visualizzare il comportamento del programma in maniera selettiva

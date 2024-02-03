@@ -29,7 +29,7 @@ Regola abilitazioni: $\forall p \in pre(t), M(p) \geq W(<p,t>)$
 [[Reti di Petri - Esempio]]
 
 [[Reti di Petri - Relazioni]]
-[[Rete di Petri - Tipi di reti]]
+[[Rete di Petri - Proprietà]]
 
 Definiamo poi:
 - [[Reti di Petri - Insieme di raggiungibilità|Insieme di raggiungibilità]]
@@ -38,4 +38,4 @@ Definiamo poi:
 
 [[Reti di Petri - Variazioni]]
 [[Reti di Petri - Tecniche di analisi]]
-[[Reti di Petri Temporizzate - Introduzione]]
+[[Reti di Petri Temporizzate]]

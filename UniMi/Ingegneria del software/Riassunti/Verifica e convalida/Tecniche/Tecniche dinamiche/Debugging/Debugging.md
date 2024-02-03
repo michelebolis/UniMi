@@ -1,4 +1,4 @@
-Il debugging è una tecnica che ha l'obiettivo di localizzare le anomalie che causano malfunzionamenti rilevati in precedenza e rimuoverle. Richiede un programma e un malfunzionamento NOTO e riproducibile (NON deve essere usato per rilevare malfunzionamenti).
+Il debugging l'insieme delle tecniche che ha l'obiettivo di localizzare e rimuovere le anomalie che causano malfunzionamenti rilevati in precedenza. Richiede un programma e un malfunzionamento NOTO e riproducibile (NON deve essere usato per rilevare malfunzionamenti).
 
 L'attività è definita per una programma e un insieme di dati che causano i malfunzionamenti 
 MA va verificato che il malfunzionamento non sia dovuto a specifiche errate
@@ -10,6 +10,7 @@ Approcci:
 Problemi
 - Non sempre è facile stabilire una relazione anomalia-malfunzionamento
 - Non esiste una relazione biunivoca tra anomalie e malfunzionamento
+- la correzione di un'anomalia potrebbe introdurre altre anomalie
 
 [[Debugging - Tecnica Naive]]
 [[Debugging - Dump di memoria]]
@@ -22,4 +23,4 @@ Altre funzionalità del debugger:
 - Modificare il codice (NON sempre è possibile, potrebbe essere necessaria una ricompilazione)
 - Rappresentazioni grafiche dei dati
 
-Automazione debugging: delta/differential debugging
+Automazione del debugging: [[Debugging - Delta Debugging]]
