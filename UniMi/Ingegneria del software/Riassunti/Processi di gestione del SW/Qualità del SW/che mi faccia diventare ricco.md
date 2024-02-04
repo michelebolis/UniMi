@@ -8,4 +8,4 @@
 	- `Evolvibilità`: capacita del SW di estendere i propri requisiti. 
 		Studi dimostrano che all'aumentare del tempo dalla release, l'Evolvibilità diminuisca.
 		`M.Lehman's Laws` un sistema che è usato cambierà, quindi un sistema in evoluzione aumenterà la sua complessità a meno che il lavoro è fatto per ridurne.
-- `Perfettivibilità`: capacità di miglioramento del codice, dal punto di vista interno o esterno, senza cambiarne i requisiti, posso provare a fare cambiamenti volti a migliorare efficienza o usabilità. 
+	- `Perfettivibilità`: capacità di miglioramento del codice, dal punto di vista interno o esterno, senza cambiarne i requisiti, posso provare a fare cambiamenti volti a migliorare efficienza o usabilità. 
