@@ -18,21 +18,6 @@
             }
           },
           {
-            "id": "ef6efbe8d8a29bf6",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-                "viewState": {
-                  "x": -1993.139056017853,
-                  "y": -9502.331561064924,
-                  "zoom": 1.1102230246251565e-16
-                }
-              }
-            }
-          },
-          {
             "id": "e0d05c0502324b07",
             "type": "leaf",
             "state": {
@@ -44,8 +29,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -95,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -112,7 +95,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +111,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,9 +132,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas"
-              }
+              "state": {}
             }
           },
           {
@@ -212,9 +191,11 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "ef6efbe8d8a29bf6",
+  "active": "47136b92c595cdff",
   "lastOpenFiles": [
+    "Ingegneria del software/Riassunti/img/Pasted image 20240203091224.png",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+    "Ingegneria del software/Domande Orali.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Reti di Petri - Controllori.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Copertura di P-invarianti.md",
     "Ingegneria del software/Slide/IS2023-PETRI.pdf",
@@ -240,9 +221,7 @@
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Debugging/Debugging - Debugging simbolico.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Debugging/Debugging - Dump di memoria.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Debugging/Debugging - Tecnica Naive.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Debugging/Debugging - Delta Debugging.md",
-    "Pasted image 20240203091229.png",
-    "Pasted image 20240203091224.png",
+    "Ingegneria del software/Riassunti/img/Pasted image 20240203091229.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231215095605.png",
     "Ingegneria del software/Slide/IS2023-PETRITEMPORIZZATE.pdf",
     "Ingegneria del software/Riassunti/img/Pasted image 20240131153139.png",

@@ -1,22 +1,72 @@
 {
   "collapse-filter": true,
-  "search": "",
-  "showTags": false,
-  "showAttachments": false,
-  "hideUnresolved": false,
+  "search": "- (file:\"Reti di calcolatori - Riassunto\" OR file:\"Ingegneria del software - Riassunto\")",
+  "showTags": true,
+  "showAttachments": true,
+  "hideUnresolved": true,
   "showOrphans": true,
   "collapse-color-groups": true,
-  "colorGroups": [],
+  "colorGroups": [
+    {
+      "query": "path:\"Ingegneria del software\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:\"Sistemi embedded\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 5425632
+      }
+    },
+    {
+      "query": "path:\"Reti di calcolatori\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 13559571
+      }
+    },
+    {
+      "query": "path:\"Linguaggi di programmazione\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 11752160
+      }
+    },
+    {
+      "query": "file:Root",
+      "color": {
+        "a": 1,
+        "rgb": 16777215
+      }
+    },
+    {
+      "query": "path:\"Ricerca operativa\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 3485342
+      }
+    },
+    {
+      "query": "path:\"Sistemi biometrici\" ",
+      "color": {
+        "a": 1,
+        "rgb": 4692595
+      }
+    }
+  ],
   "collapse-display": true,
-  "showArrow": false,
-  "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
+  "showArrow": true,
+  "textFadeMultiplier": -1.9,
+  "nodeSizeMultiplier": 1.65677083333333,
+  "lineSizeMultiplier": 0.967708333333333,
   "collapse-forces": true,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
-  "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 1,
+  "centerStrength": 0.373866666666667,
+  "repelStrength": 13.6213333333333,
+  "linkStrength": 0.662103703703704,
+  "linkDistance": 348,
+  "scale": 0.05583014629963577,
   "close": false
 }
