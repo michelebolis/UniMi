@@ -16,18 +16,6 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "e0d05c0502324b07",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Reti di Petri - Controllori.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ]
       }
@@ -79,7 +67,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -191,12 +180,34 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "47136b92c595cdff",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
-    "Ingegneria del software/Riassunti/img/Pasted image 20240203091224.png",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-    "Ingegneria del software/Domande Orali.md",
+    "Ingegneria del software/Ingegneria del software - Riassunto.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri - Time Anonymous Timestamp.md",
+    "Pasted image 20240206105947.png",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Floyd.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Grafo aciclico.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri - Aggiornamento di marcatura e vincoli.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Analisi di raggiungibilità temporale.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Identificazione delle abilitazioni.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Albero di raggiungibilità temporale.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Stati simbolici.md",
+    "Ingegneria del software/Slide/IS2023-PETRITEMPORIZZATE.pdf",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Semantica Mixed time.md",
+    "Ingegneria del software/Riassunti/img/Pasted image 20240206100807.png",
+    "Ingegneria del software/Riassunti/img/Pasted image 20240206100646.png",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Semantica forte STS.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Assiomi Semantiche.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Semantica monotonica debole MWTS.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Semantica debole WTS.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Time Basic.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Variazioni/Reti di Petri - Reti con priorità.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Reti di Petri - Controllori.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Reti di Petri - Mutua esclusione.md",
+    "Ingegneria del software/Riassunti/img/Pasted image 20240206090112.png",
+    "Ingegneria del software/Riassunti/img/Pasted image 20240203091224.png",
+    "Ingegneria del software/Domande Orali.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Copertura di P-invarianti.md",
     "Ingegneria del software/Slide/IS2023-PETRI.pdf",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Reti di Petri - P-Invarianti.md",
@@ -204,33 +215,11 @@
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Reti di Petri - Albero di copertura.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Rete di Petri - Copribilità.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tipi di reti/Reti di Petri - Rete reversibile.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tipi di reti/Reti di Petri - Rete conservativa.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Variazioni/Reti di Petri - Condizioni - Eventi.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Variazioni/Reti di Petri - Eliminazione dei pesi degli archi.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reri di Petri - Definizioni varie/Reti di Petri - Archi inibitori.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Variazioni/Reti di Petri - Posto complementare.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Variazioni/Reti di Petri - Capacità dei posti.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tipi di reti/Reti di Petri - Rete viva.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tipi di reti/Reti di Petri - Rete Limitata.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reri di Petri - Definizioni varie/Reti di Petri - Insieme di raggiungibilità.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Definizione.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Comportamento dinamico.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Debugging/Debugging.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Debugging/Debugging - Debugging per prova.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Debugging/Debugging - Debugging simbolico.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Debugging/Debugging - Dump di memoria.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Debugging/Debugging - Tecnica Naive.md",
     "Ingegneria del software/Riassunti/img/Pasted image 20240203091229.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231215095605.png",
-    "Ingegneria del software/Slide/IS2023-PETRITEMPORIZZATE.pdf",
     "Ingegneria del software/Riassunti/img/Pasted image 20240131153139.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20240131153018.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20240131152934.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20240131152815.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20240131152515.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20240131152442.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20240131151651.png",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reri di Petri - Definizioni varie",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Variazioni",

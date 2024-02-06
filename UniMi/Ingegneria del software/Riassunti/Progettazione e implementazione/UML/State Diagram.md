@@ -17,4 +17,4 @@ Le azioni sono conseguenza degli eventi: l'evento `restituisci()` causa l'azione
 
 Il verificarsi di eventi non esplicitamente marcati da un arco deve portare alla terminazione dell’esecuzione e al sollevamento di un errore, questo significa che sono situazioni che **non devono accadere**, differentemente dagli automi a stati finiti, in cui la mancanza di archi indicava una situazione che **non potevano accadere**.
 
-[[Superstate]]
+[[Superstate Diagram]]

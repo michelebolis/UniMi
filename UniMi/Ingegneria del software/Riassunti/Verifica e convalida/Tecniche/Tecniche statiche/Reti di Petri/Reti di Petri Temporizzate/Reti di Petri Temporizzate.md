@@ -1,4 +1,4 @@
-Contesto: sistemi Hard Real-time
+Contesto: `sistemi Hard Real-time`
 Il tempo è un fattore essenziale in moltissime applicazioni
 Hard Real time significa che bisogna soddisfare dei vincoli temporali senza errori 
 
@@ -10,7 +10,6 @@ Per aggiungere il tempo deterministico alle reti di Petri, esistono diverse poss
 - [[Reti di Petri Temporizzate - Tempo sulle transizioni]]
 
 [[Reti di Petri Temporizzate - Time Basic]] nets (Ghezzi)
-[[Reti di Petri Temporizzate - Tipi di semantiche temporali]]
 
 Tempo come concetto derivato
 Vediamo il tempo come variabile associata ai gettoni
@@ -25,5 +24,4 @@ MWTS = chronos + assiomi 1, 2, 3
 STS = chronos + assiomi 1, 2, 3, 4, 5 
 
 [[Reti di Petri Temporizzate - HLTPN]]
-[[Reti di Petri Temporizzate - Analisi di reti temporizzate]]
-[[Reti di Petri Temporizzate - Semplificazione dei constraints]]
+[[Reti di Petri Temporizzate - Analisi di raggiungibilità temporale]]
