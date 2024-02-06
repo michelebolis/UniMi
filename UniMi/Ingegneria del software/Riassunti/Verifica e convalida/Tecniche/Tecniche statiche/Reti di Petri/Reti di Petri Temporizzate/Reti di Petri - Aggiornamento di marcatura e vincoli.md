@@ -1,8 +1,8 @@
-1. Creazione e distruzione dei vincoli
+1. `Creazione e distruzione dei gettoni`
 
 Distruggere i gettoni e i relativi simboli nel preset e generare i nuovi gettoni nel postset, identificati tutti dallo stesso nuovo identificatore simbolico
 
-2. Espansione dei vincoli
+2. `Espansione dei vincoli`
 Lo scatto simbolico di una transizione $t$ crea uno stato simbolico caratterizzato dal vincolo $C_n$
 $$C_n = C_p \wedge t_n \geq maxT \wedge t_n \geq tmin \wedge t_n \leq tmax$$
 $$\bigcap_{t_s} (tmax_s < tmin_s \vee tmax_s < maxT \vee tmax_s \geq t_n)$$

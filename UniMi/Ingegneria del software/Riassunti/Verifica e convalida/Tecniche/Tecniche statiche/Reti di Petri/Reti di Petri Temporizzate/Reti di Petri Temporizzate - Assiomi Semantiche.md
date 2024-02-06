@@ -1,6 +1,6 @@
 - Assioma `1`: `monotonicità rispetto alla marcatura iniziale`
 
-`Tutti i tempi di scatto` di una sequenza di scatto devono essere `non minori di uno qualunque dei timestamp dei gettono della marcatura iniziale`
+`Tutti i tempi di scatto` di una sequenza di scatto devono essere `non minori di uno qualunque dei timestamp dei gettoni della marcatura iniziale`
 La marcatura deve essere consistente cioè `non deve contenete gettono prodotti in futuro`
 
 - Assioma `2`: `monotonicità dei tempi di scatto di una sequenza `

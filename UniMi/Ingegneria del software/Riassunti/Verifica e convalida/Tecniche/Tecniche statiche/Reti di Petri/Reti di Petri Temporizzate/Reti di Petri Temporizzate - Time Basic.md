@@ -3,7 +3,7 @@ Vengono associati degli `insiemi variabili` di `tempi di scatto assoluti` possib
 Possono fare riferimento sia a tempi assoluti che ai tempi dei singoli gettoni
 
 Informalmente
-- I gettono non sono anonimi ma caratterizzati da un timestamp, cioè il momento in cui sono stati creati
+- I gettonI non sono anonimi ma caratterizzati da un timestamp, cioè il momento in cui sono stati creati
 - Il tempo di abilitazione, cioè il momento in cui la transizione viene abilitata, è il massimo tra i timestamp dei gettoni che compongono la tupla abilitante (enabling tuple)
 - L'insieme dei tempi di scatto non possono essere minori del tempo di abilitazione: una transizione non puo scattare prima di essere abilitata
 - Il tempo di scatto è uguale al quello scelto all'interno del set dei possibili e diventa timestamp di tutti i gettono prodotti
