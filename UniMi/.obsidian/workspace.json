@@ -16,8 +16,20 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "808329afea5e5450",
+            "type": "leaf",
+            "state": {
+              "type": "diff-view",
+              "state": {
+                "file": "UniMi/.obsidian/app.json",
+                "staged": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -179,7 +191,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "47136b92c595cdff",
+  "active": "808329afea5e5450",
   "lastOpenFiles": [
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Ingegneria del software - Riassunto.md",
