@@ -1,6 +1,6 @@
 Una transizione può scattare solo in uno degli istanti identificati dalla sua funzione temporale
 Una transizione non può scattare prima di essere stata abilitata
-Una transizione `DEVE scattare ad un suo possibile tempo di scatto a meno che non venga abilitata prima del proprio massimo tempo di scatto ammissibile`
+Una transizione `DEVE scattare ad un suo possibile tempo di scatto a meno che non venga disabilitata prima del proprio massimo tempo di scatto ammissibile`
 
 E' la semantica piu diffusa, utile per i sistemi deterministici tanto che è di default in molti modelli temporizzati (TPNs)
 

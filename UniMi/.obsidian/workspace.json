@@ -21,13 +21,25 @@
             "id": "8c1b52de9fed9e45",
             "type": "leaf",
             "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ingegneria del software/Domande Orali.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "21a0fa939abb0f6b",
+            "type": "leaf",
+            "state": {
               "type": "canvas",
               "state": {
                 "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "viewState": {
-                  "x": 9033.612516928391,
-                  "y": 5803.403284897464,
-                  "zoom": -1.0833333333333337
+                  "x": 4308.345187721842,
+                  "y": -5506.4880547674165,
+                  "zoom": -0.17535122113941695
                 }
               }
             }
@@ -83,7 +95,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 358.5110321044922
+    "width": 200
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -99,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "file": "Ingegneria del software/Domande Orali.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "file": "Ingegneria del software/Domande Orali.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas"
+                "file": "Ingegneria del software/Domande Orali.md"
               }
             }
           },
@@ -184,7 +196,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -201,12 +214,13 @@
   },
   "active": "8c1b52de9fed9e45",
   "lastOpenFiles": [
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Grafico aciclico/Time Anonymous Timestamp.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+    "Ingegneria del software/Domande Orali.md",
+    "Ingegneria del software/Slide/IS2023-PETRITEMPORIZZATE.pdf",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Grafico aciclico/Time Anonymous Timestamp.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Tipi di semantiche temporali",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Grafico aciclico",
-    "Ingegneria del software/Domande Orali.md",
     "Ingegneria del software/Riassunti/img/Pasted image 20240206105947.png",
     "Ingegneria del software/Ingegneria del software - Riassunto.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Grafico aciclico/Reti di Petri Temporizzate - Floyd.md",
@@ -216,7 +230,6 @@
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Reti di Petri Temporizzate - Identificazione delle abilitazioni.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Reti di Petri Temporizzate - Albero di raggiungibilità temporale.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Reti di Petri Temporizzate - Stati simbolici.md",
-    "Ingegneria del software/Slide/IS2023-PETRITEMPORIZZATE.pdf",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Tipi di semantiche temporali/Reti di Petri Temporizzate - Semantica Mixed time.md",
     "Ingegneria del software/Riassunti/img/Pasted image 20240206100807.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20240206100646.png",
