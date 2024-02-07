@@ -1,4 +1,4 @@
-OSS Un caso di test NON da origine ad 1 esecuzione MA ad n+1 dove n è il numero di mutanti
+OSS Un caso di test NON da origine ad 1 esecuzione MA ad $n+1$ dove $n$ è il numero di mutanti
 E' possibile mediante un'opportuna infrastruttura, automatizzare la generazione, esecuzione e controllo
 
 ![[Pasted image 20231211103116.png|400]]

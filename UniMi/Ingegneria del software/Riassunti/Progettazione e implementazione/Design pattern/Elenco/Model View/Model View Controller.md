@@ -1,4 +1,4 @@
-Model contiene lo stato condiviso, le view sono una serie di classi che costituiscono l'interfaccia con l'utente e infine i controller, uno pe rogni vista, sono classi che si occupano della logica dell'applicazione
+`Model contiene lo stato condiviso`, le view sono una serie di classi che costituiscono l'interfaccia con l'utente e infine i `controller, uno per ogni vista, sono classi che si occupano della logica dell'applicazione`
 
 | Passaggi                                                                                                                                   | Rappresentazione                     |
 | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------ |

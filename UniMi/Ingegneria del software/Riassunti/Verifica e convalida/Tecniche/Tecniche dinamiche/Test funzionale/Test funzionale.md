@@ -1,8 +1,8 @@
-Il test funzionale si concentra sulla verifica del comportamento del programma dal punto di vista dell'utente finale, non sfruttando quindi la conoscenza del codice (black box)
+Il `test funzionale` si concentra sulla verifica del comportamento del programma dal `punto di vista dell'utente finale`, non sfruttando quindi la conoscenza del codice (black box)
 Puo essere l unico approccio possibile (es test di validazione del lavoro dal committente esterno)
 I dati di test possono essere derivati dalle specifiche, concentrandosi quindi sul dominio delle informazioni e NON sulla struttura di controllo
 
-Permette di identificare errori non sintetizzabili con criteri strutturali es funzionalità non implementata o cammino di flusso dimenticato
+Permette di identificare `errori non sintetizzabili con criteri strutturali` es funzionalità non implementata o cammino di flusso dimenticato
 Obiettivo: trovare errori di interfaccia e di prestazioni
 
 Raggruppamento tecniche:

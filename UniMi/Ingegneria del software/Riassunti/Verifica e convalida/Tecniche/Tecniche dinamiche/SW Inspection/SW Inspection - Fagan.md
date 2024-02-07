@@ -1,4 +1,4 @@
-Fagan Code Inspection è la piu diffusa tra le tecnica di ispezione in quanto rigorosa e definita e si estende anche alla fase di progetto e raccolta dei requisiti
+`Fagan Code Inspection` è la piu diffusa tra le tecnica di ispezione in quanto `rigorosa e definita` e si estende anche alla fase di progetto e raccolta dei requisiti
 
 Ruoli:
 - Il moderatore, solitamente proveniente da un altro processo, coordina i meeting, sceglie i partecipanti e controlla il processo Readers.

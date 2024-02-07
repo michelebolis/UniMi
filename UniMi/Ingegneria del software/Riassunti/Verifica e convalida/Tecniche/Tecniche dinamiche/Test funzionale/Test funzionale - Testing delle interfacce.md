@@ -1,4 +1,4 @@
-Per interfacce intendiamo l'insieme di funzionalità che permettono l'interoperabilità dei componenti
+Per $interfacce$ intendiamo l'`insieme di funzionalità` che permettono l'interoperabilità dei componenti
 Tipi di interfacce:
 - a invocazione con parametri
 - a condivisione di memoria

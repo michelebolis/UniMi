@@ -1,2 +1,2 @@
-Molti debugging permettono non solo la visualizzazione degli stati ma anche l'esame automatico degli stati ottenuti
-Vengono utilizzati watch condizionali o asserzioni a livello di monitor (e non del codice)
+Molti debugging permettono non solo la visualizzazione degli stati ma anche l'`esame automatico degli stati ottenuti`
+Vengono utilizzati `watch condizionali` o asserzioni a livello di monitor (e non del codice)

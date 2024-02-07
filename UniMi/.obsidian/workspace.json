@@ -18,13 +18,17 @@
             }
           },
           {
-            "id": "808329afea5e5450",
+            "id": "8c1b52de9fed9e45",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
+              "type": "canvas",
               "state": {
-                "file": "UniMi/.obsidian/app.json",
-                "staged": false
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "viewState": {
+                  "x": 9033.612516928391,
+                  "y": 5803.403284897464,
+                  "zoom": -1.0833333333333337
+                }
               }
             }
           }
@@ -79,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 358.5110321044922
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -95,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,6 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,7 +138,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas"
+              }
             }
           },
           {
@@ -191,34 +199,37 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "808329afea5e5450",
+  "active": "8c1b52de9fed9e45",
   "lastOpenFiles": [
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Grafico aciclico/Time Anonymous Timestamp.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Tipi di semantiche temporali",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Grafico aciclico",
+    "Ingegneria del software/Domande Orali.md",
+    "Ingegneria del software/Riassunti/img/Pasted image 20240206105947.png",
     "Ingegneria del software/Ingegneria del software - Riassunto.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri - Time Anonymous Timestamp.md",
-    "Pasted image 20240206105947.png",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Floyd.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Grafo aciclico.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri - Aggiornamento di marcatura e vincoli.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Analisi di raggiungibilità temporale.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Identificazione delle abilitazioni.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Albero di raggiungibilità temporale.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Stati simbolici.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Grafico aciclico/Reti di Petri Temporizzate - Floyd.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Grafico aciclico/Reti di Petri Temporizzate - Grafo aciclico.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Reti di Petri - Aggiornamento di marcatura e vincoli.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Reti di Petri Temporizzate - Analisi di raggiungibilità temporale.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Reti di Petri Temporizzate - Identificazione delle abilitazioni.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Reti di Petri Temporizzate - Albero di raggiungibilità temporale.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Reti di Petri Temporizzate - Stati simbolici.md",
     "Ingegneria del software/Slide/IS2023-PETRITEMPORIZZATE.pdf",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Semantica Mixed time.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Tipi di semantiche temporali/Reti di Petri Temporizzate - Semantica Mixed time.md",
     "Ingegneria del software/Riassunti/img/Pasted image 20240206100807.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20240206100646.png",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Semantica forte STS.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Assiomi Semantiche.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Semantica monotonica debole MWTS.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Semantica debole WTS.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate/Reti di Petri Temporizzate - Time Basic.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Tipi di semantiche temporali/Reti di Petri Temporizzate - Semantica forte STS.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Tipi di semantiche temporali/Reti di Petri Temporizzate - Assiomi Semantiche.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Tipi di semantiche temporali/Reti di Petri Temporizzate - Semantica monotonica debole MWTS.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Tipi di semantiche temporali/Reti di Petri Temporizzate - Semantica debole WTS.md",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Reti di Petri Temporizzate - Time Basic.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Variazioni/Reti di Petri - Reti con priorità.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Reti di Petri - Controllori.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Reti di Petri - Mutua esclusione.md",
     "Ingegneria del software/Riassunti/img/Pasted image 20240206090112.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20240203091224.png",
-    "Ingegneria del software/Domande Orali.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Copertura di P-invarianti.md",
     "Ingegneria del software/Slide/IS2023-PETRI.pdf",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Reti di Petri - P-Invarianti.md",
@@ -231,14 +242,11 @@
     "Ingegneria del software/Riassunti/img/Pasted image 20240131153139.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20240131153018.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20240131152934.png",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri Temporizzate",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reri di Petri - Definizioni varie",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Variazioni",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tipi di reti",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Relazioni",
-    "Ingegneria del software/Slide/IS2023-L18_20.pdf",
-    "Ingegneria del software/Slide/IS2023-L17.pdf",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/ES.canvas",
