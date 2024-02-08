@@ -60,3 +60,7 @@ Ingegnere:
 - Rete di petri: conservativita rispetto a una funzione 
 	- Legame con la limitatezza: una rete conservativa è limitata ma non viceversa (con esempi, serve una rete con 2 transizioni e 2 posti)
 
+Un tizio fuoricorso
+- pattern adapter
+	- UML class: frecce significato e NOME: generalizzazione (linea tratteggiata e triangolo bianco) e implementazione (linea continua e triangolo bianco)
+		- composizione (quella "nera"), aggregazione (quella "bianca"), dipendenza (linea "tratteggiata": parte del codice dell'interfaccia viene usato)
