@@ -57,7 +57,6 @@
 		{"id":"37029beecaf145a1","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Copertura degli usi.md","x":3620,"y":-6853,"width":520,"height":403},
 		{"id":"ae7899f3d5d94d32","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Test funzionale/Test funzionale.md","x":4395,"y":-4182,"width":605,"height":790},
 		{"id":"090fb180d07b8cc5","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/SW Inspection/SW Inspection - Fagan.md","x":3140,"y":-4234,"width":520,"height":489},
-		{"id":"d98bd861fcb93e36","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/SW Inspection/SW Inspection - Active Design Reviews.md","x":2600,"y":-4151,"width":447,"height":324},
 		{"id":"bd4524ee171d5645","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Debugging/Debugging - Dump di memoria.md","x":1893,"y":-4080,"width":580,"height":280},
 		{"id":"8ee1d0665b8bbd7d","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/SW Inspection/SW Inspection - Introduzione.md","x":3760,"y":-4159,"width":540,"height":339},
 		{"id":"77ede9f83ec75474","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Processi di review.md","x":1067,"y":-5080,"width":620,"height":460},
@@ -339,7 +338,8 @@
 		{"id":"4db3a5228dc10cd1","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Testing.md","x":343,"y":-6822,"width":553,"height":322},
 		{"id":"bb05ca25ae6c496e","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Test - definizioni.md","x":343,"y":-7919,"width":553,"height":512},
 		{"id":"ad510cf2ff536787","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Correttezza di un programma.md","x":343,"y":-7312,"width":553,"height":372},
-		{"id":"8e07ecc1639f6d82","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Test ideale.md","x":343,"y":-8399,"width":553,"height":420}
+		{"id":"8e07ecc1639f6d82","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Test ideale.md","x":343,"y":-8399,"width":553,"height":420},
+		{"id":"d98bd861fcb93e36","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/SW Inspection/SW Inspection - Active Design Reviews.md","x":2580,"y":-4151,"width":480,"height":324}
 	],
 	"edges":[
 		{"id":"2b5b30c34a79acbe","fromNode":"a2ed117451add2c3","fromSide":"left","toNode":"432ce7ecdf2a72f4","toSide":"right","label":"6"},
