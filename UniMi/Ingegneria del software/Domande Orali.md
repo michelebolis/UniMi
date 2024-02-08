@@ -87,6 +87,14 @@ Orale 3
 
 Orale 4: 
 - come fare refactoring con pattern notando codice duplicato
-	- strategy con UML (FARLO PRECISI)
+	- strategy con UML (FARLO PRECISO)
 	- template: SE ho una classe astratta che non implementa per es sort e poi n classi concrete che implementano il sort
 - cosa intendiamo per il SW "che funzioni"
+	- C è un legame tra affidabilita, robustezza e correttezza
+		- affidabilita non implica correttezza 
+		- correttezza non implica affidabile in quanto ci potrebbe essere stata un incomprensione nei requisiti
+		- cliente preferisce correttezza o affidabile? Forse meglio affidabilita cosi faccio contento il cliente ma ci sono dei rischi legali
+- secondo e terzo grado di vitalità di una transizione (esempio)
+
+Orale 5:
+- 
