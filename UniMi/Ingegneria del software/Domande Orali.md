@@ -87,5 +87,6 @@ Orale 3
 
 Orale 4: 
 - come fare refactoring con pattern notando codice duplicato
-	- strategy
-	- delegation
+	- strategy con UML (FARLO PRECISI)
+	- template: SE ho una classe astratta che non implementa per es sort e poi n classi concrete che implementano il sort
+- cosa intendiamo per il SW "che funzioni"
