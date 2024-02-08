@@ -278,7 +278,6 @@
 		{"id":"f8d2e337e30fa5d0","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Relazioni/Reti di Petri - Relazione di concorrenza.md","x":4780,"y":40,"width":680,"height":640},
 		{"id":"7a62e3676f28b871","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reri di Petri - Definizioni varie/Reti di Petri - Insieme di raggiungibilità.md","x":3998,"y":2000,"width":590,"height":464},
 		{"id":"b997e5d3a45ec827","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Analisi Data Flow/Analisi Data Flow - Introduzione.md","x":4105,"y":-2523,"width":580,"height":727},
-		{"id":"4530d0caf281088b","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Analisi Data Flow/Analisi Data Flow - File.md","x":4300,"y":-1701,"width":547,"height":420},
 		{"id":"c2fd1f48d00c28b4","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Analisi Data Flow/Compilatori - Analisi.md","x":4885,"y":-2643,"width":520,"height":417},
 		{"id":"bdfb5f5b8e839212","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Analisi Data Flow/Regole Data Flow.md","x":4885,"y":-2112,"width":520,"height":589},
 		{"id":"4ed6865b2c1ba5fb","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Reti di Petri Temporizzate - Time Basic.md","x":6740,"y":4940,"width":731,"height":1065},
@@ -339,7 +338,8 @@
 		{"id":"bb05ca25ae6c496e","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Test - definizioni.md","x":343,"y":-7919,"width":553,"height":512},
 		{"id":"ad510cf2ff536787","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Correttezza di un programma.md","x":343,"y":-7312,"width":553,"height":372},
 		{"id":"8e07ecc1639f6d82","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Test ideale.md","x":343,"y":-8399,"width":553,"height":420},
-		{"id":"d98bd861fcb93e36","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/SW Inspection/SW Inspection - Active Design Reviews.md","x":2580,"y":-4151,"width":480,"height":324}
+		{"id":"d98bd861fcb93e36","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/SW Inspection/SW Inspection - Active Design Reviews.md","x":2580,"y":-4151,"width":480,"height":324},
+		{"id":"4530d0caf281088b","type":"file","file":"Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Analisi Data Flow/Analisi Data Flow - File.md","x":4156,"y":-1701,"width":478,"height":420}
 	],
 	"edges":[
 		{"id":"2b5b30c34a79acbe","fromNode":"a2ed117451add2c3","fromSide":"left","toNode":"432ce7ecdf2a72f4","toSide":"right","label":"6"},
