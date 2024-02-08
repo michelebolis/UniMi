@@ -69,4 +69,10 @@ Un tizio fuoricorso
 		- class adapter perche riesco ad avere un oggetto che puo essere visto come nuovo (perche implementa l interfaccia) e vecchio (perche estende la classe vecchia)
 - cosa perdo da albero di raggiubilita a albero di copertura 
 	- copre != copribile
-	- 
+
+DeStasio
+- Interfacce: non devo avere interfacce che sappiano fare tante cose
+	- posso fare un metodo che non ritorna niente anche se dovrei se c è un eccezione
+	- come fa un interfaccia a dipendere da una classe? se è presente nella segnatura dei metodi --> violo dependency inversion
+	- in java moderno posso impedire che venga estesa
+- nel testing, bisognava usare le interfacce invece nelle classi concrete. Cos è il mocking
