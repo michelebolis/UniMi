@@ -56,4 +56,7 @@ Ingegnere:
 	- NON dire ci sono 3 cose ma poi me ne ricordo 2
 	- regole del data flow
 	- criterio di copertura delle definizioni (vuole davvero la definizione matematica) 
-		- relazione con il criterio delle decisioni
+		- relazione con il criterio delle decisioni: decisioni non include definizioni MA NEACHE viceversa (es con un ciclo in cui ho bisogno di 2 iterazioni). In realta perche esaminano due cose diverse
+- Rete di petri: conservativita rispetto a una funzione 
+	- Legame con la limitatezza: una rete conservativa è limitata ma non viceversa (con esempi, serve una rete con 2 transizioni e 2 posti)
+
