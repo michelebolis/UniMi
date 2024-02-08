@@ -49,4 +49,11 @@ Ingegnere:
 	- Valori di ritorno: 
 		- NullObject (vantaggio: semplifica i controlli, in particolare se sul ritorno devo usare i metodi della classe ritornata)
 		- Tipi opzionali: wrapper che mi permette di sapere se c è o meno
-- Differenza tra modelli sequenziali/iterativi/incrementali
+- Differenza tra modelli sequenziali/iterativi/incrementali (descrittivi vs prescrittivi). ATT gli incrementali IN AGGIUNTA (NON A DIFFERENZA) degli iterativi hanno la consegna come fase
+	- Differenza anche il modello prototipale (pubblico: faccio vedere al cliente le funzionalità esterne del prototipo). COME DETTO A LEZIONE è iterativo e non incrementale in quanto il prototipo non viene consegnato ma buttato 
+- Mi parli dell'Analisi Data Flow e scelga un criterio
+	- MONGA INTERVIENE
+	- NON dire ci sono 3 cose ma poi me ne ricordo 2
+	- regole del data flow
+	- criterio di copertura delle definizioni (vuole davvero la definizione matematica) 
+		- relazione con il criterio delle decisioni

@@ -28,6 +28,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "717261cdfb0c1a0c",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "viewState": {
+                  "x": 4505.908247224433,
+                  "y": -7387.093516370873,
+                  "zoom": -0.25652080486222845
+                }
+              }
+            }
           }
         ],
         "currentTab": 1
