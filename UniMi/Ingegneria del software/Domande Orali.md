@@ -95,6 +95,12 @@ Orale 4:
 		- correttezza non implica affidabile in quanto ci potrebbe essere stata un incomprensione nei requisiti
 		- cliente preferisce correttezza o affidabile? Forse meglio affidabilita cosi faccio contento il cliente ma ci sono dei rischi legali
 - secondo e terzo grado di vitalità di una transizione (esempio)
+	- grado 3: non la riusciro mai a farla diventare morta MA NON vuol dire che è sempre abilitata
 
 Orale 5:
-- 
+- Errori: tanti errori di nullability, quando faccio add anche se non cambia lo stato, faccio lo stesso notifyObservers
+- relazioni tra istanze e relazioni tra classi
+	- classi-classi: dipendenza (quando se cambio il codice di una classe, dovro anche cambiare il codice dell altra MA non è detto che si conoscano (es classe che salva dati in un file e classe che legge da un file, si differenziano per la codifica)), generalizzazione 
+	- istanze-istanze: composizione, associazione, aggregazione 
+- strumenti che possono essere utilizzate per l open source
+	- gitlab
