@@ -64,3 +64,9 @@ Un tizio fuoricorso
 - pattern adapter
 	- UML class: frecce significato e NOME: generalizzazione (linea tratteggiata e triangolo bianco) e implementazione (linea continua e triangolo bianco)
 		- composizione (quella "nera"), aggregazione (quella "bianca"), dipendenza (linea "tratteggiata": parte del codice dell'interfaccia viene usato)
+	- protected = package + quelli che eredito da te
+	- codice legacy: quale scelgo tra class e object adapter?
+		- class adapter perche riesco ad avere un oggetto che puo essere visto come nuovo (perche implementa l interfaccia) e vecchio (perche estende la classe vecchia)
+- cosa perdo da albero di raggiubilita a albero di copertura 
+	- copre != copribile
+	- 
