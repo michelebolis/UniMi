@@ -35,8 +35,18 @@
 - Cosa sono gli STUB? Quando devo “mockare”? Perché non voglio usare le altre classi già presenti? Quando invece NON POSSO usare le altre classi? Problemi uso mock (ad esempio di performance, perché non simula reale tempo di risposta). Dumming/stubbing. Che funzioni usi per fare stubbing con mockito? 
 - Albero di raggiungibilità vs albero di copertura. Cosa rappresenta Ω? Vari esempi 
 - definizione e struttura di una rete 
-- perchè abbiamo studiato le reti di Petri? 
+- perché abbiamo studiato le reti di Petri? 
 - quando una transizione si dice viva? Definire la vitalità e i gradi 
 - definizioni di: raggiungibilità, sequenza, conflitto e concorrenza a volte anche chiede anche di rappresentarle graficamente 
 - conservatività e limitatezza: quali sono le differenze tra queste due proprietà? Enunciarle e poi rappresentare una rete limitata ma non conservativa 
 - analisi statica e dinamica delle reti di Petri
+
+2024
+Ingegnere:
+- Errore "con cui ti boccerebbe santini": gestione nullability
+- Parlami della Nullability -> 
+	- Per i parametri: contratto (asserzioni) o programmazione difensiva  
+	- Valori di ritorno: 
+		- NullObject (vantaggio: semplifica i controlli, in particolare se sul ritorno devo usare i metodi della classe ritornata)
+		- Tipi opzionali: wrapper che mi permette di sapere se c è o meno
+- Differenza tra modelli sequenziali/iterativi/incrementali

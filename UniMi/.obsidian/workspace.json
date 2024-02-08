@@ -21,14 +21,11 @@
             "id": "21a0fa939abb0f6b",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-                "viewState": {
-                  "x": 5624.753479957885,
-                  "y": 7311.40066435674,
-                  "zoom": -0.6571791283413914
-                }
+                "file": "Ingegneria del software/Domande Orali.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -100,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "file": "Ingegneria del software/Domande Orali.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "file": "Ingegneria del software/Domande Orali.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas"
+                "file": "Ingegneria del software/Domande Orali.md"
               }
             }
           },
@@ -203,8 +199,8 @@
   },
   "active": "21a0fa939abb0f6b",
   "lastOpenFiles": [
-    "Ingegneria del software/Domande Orali.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+    "Ingegneria del software/Domande Orali.md",
     "Ingegneria del software/Slide/IS2023-PETRITEMPORIZZATE.pdf",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Grafico aciclico/Time Anonymous Timestamp.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Tipi di semantiche temporali",
