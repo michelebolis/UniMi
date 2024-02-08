@@ -76,3 +76,11 @@ DeStasio
 	- come fa un interfaccia a dipendere da una classe? se è presente nella segnatura dei metodi --> violo dependency inversion
 	- in java moderno posso impedire che venga estesa
 - nel testing, bisognava usare le interfacce invece nelle classi concrete. Cos è il mocking
+	- fake object non è fattibile in mockito
+- sei appena stata assunta, Mattia è il tuo manager, convincilo con 3 tecniche exp con un linguaggio che capisca un manager
+	- CI, trovo errori prima e ho una versione presentabili al cliente
+- reti di petri: non ho capito a cosa serve l analisi di raggiungibilita, quando è utile?
+	- quali sono le informazioni che perdiamo con la copertura? 
+		- marcatura raggiungibile
+			- Condizione sufficiente: se è presente come nodo nell albero
+			- Condizione necessaria: se è presente un nodo che copre quella marcatura 
