@@ -103,4 +103,8 @@ Orale 5:
 	- classi-classi: dipendenza (quando se cambio il codice di una classe, dovro anche cambiare il codice dell altra MA non è detto che si conoscano (es classe che salva dati in un file e classe che legge da un file, si differenziano per la codifica)), generalizzazione 
 	- istanze-istanze: composizione, associazione, aggregazione 
 - strumenti che possono essere utilizzate per l open source
-	- gitlab
+	- gitlab 
+		- cos è git
+- voi mi dite sempre gli errori ma magari non li avevo neanche visti --> begubbing
+	- analisi mutazionale: SE il programma e corretto e lo modifico, SE il test non si accorge vuol dire che il test non è approfondito. MA in realta con l analisi mutazionale, il passare i test indica ...
+- transizioni in conflitto
