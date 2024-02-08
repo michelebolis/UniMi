@@ -42,7 +42,7 @@
 - analisi statica e dinamica delle reti di Petri
 
 2024
-Ingegnere:
+Orale 1
 - Errore "con cui ti boccerebbe santini": gestione nullability
 - Parlami della Nullability -> 
 	- Per i parametri: contratto (asserzioni) o programmazione difensiva  
@@ -60,7 +60,7 @@ Ingegnere:
 - Rete di petri: conservativita rispetto a una funzione 
 	- Legame con la limitatezza: una rete conservativa è limitata ma non viceversa (con esempi, serve una rete con 2 transizioni e 2 posti)
 
-Un tizio fuoricorso
+Orale 2
 - pattern adapter
 	- UML class: frecce significato e NOME: generalizzazione (linea tratteggiata e triangolo bianco) e implementazione (linea continua e triangolo bianco)
 		- composizione (quella "nera"), aggregazione (quella "bianca"), dipendenza (linea "tratteggiata": parte del codice dell'interfaccia viene usato)
@@ -70,7 +70,7 @@ Un tizio fuoricorso
 - cosa perdo da albero di raggiubilita a albero di copertura 
 	- copre != copribile
 
-DeStasio
+Orale 3
 - Interfacce: non devo avere interfacce che sappiano fare tante cose
 	- posso fare un metodo che non ritorna niente anche se dovrei se c è un eccezione
 	- come fa un interfaccia a dipendere da una classe? se è presente nella segnatura dei metodi --> violo dependency inversion
@@ -83,4 +83,9 @@ DeStasio
 	- quali sono le informazioni che perdiamo con la copertura? 
 		- marcatura raggiungibile
 			- Condizione sufficiente: se è presente come nodo nell albero
-			- Condizione necessaria: se è presente un nodo che copre quella marcatura 
+			- Condizione necessaria: o sono uguali o c è omega MA NON sufficiente perche omega non so quanto è, PERDO infatti la capacita dei numeri che puo rappresentare (omega = numero grande a piacere)
+
+Orale 4: 
+- come fare refactoring con pattern notando codice duplicato
+	- strategy
+	- delegation
