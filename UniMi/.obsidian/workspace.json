@@ -16,8 +16,48 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "8a8ac84704760704",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ingegneria del software/Domande Orali.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dccbf5551247cd67",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "viewState": {
+                  "x": -9934.633975887857,
+                  "y": -3132.2921136441455,
+                  "zoom": -0.333333333333333
+                }
+              }
+            }
+          },
+          {
+            "id": "bd0306a3d3b30ed7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Class Diagram/Class Diagram - Legenda Relazioni.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -83,6 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Class Diagram/Class Diagram - Legenda Relazioni.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Class Diagram/Class Diagram - Legenda Relazioni.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +162,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Class Diagram/Class Diagram - Legenda Relazioni.md"
+              }
             }
           },
           {
@@ -179,10 +223,11 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c1ce2ce19829fc50",
+  "active": "bd0306a3d3b30ed7",
   "lastOpenFiles": [
     "Ingegneria del software/Domande Orali.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Class Diagram/Class Diagram - Legenda Relazioni.md",
     "Ingegneria del software/Slide/IS2023-PETRITEMPORIZZATE.pdf",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Grafico aciclico/Time Anonymous Timestamp.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Tipi di semantiche temporali",
@@ -216,7 +261,6 @@
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reri di Petri - Definizioni varie/Reti di Petri - Rappresentazione matriciale.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Reti di Petri - Albero di copertura.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Rete di Petri - Copribilità.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tipi di reti/Reti di Petri - Rete reversibile.md",
     "Ingegneria del software/Riassunti/img/Pasted image 20240203091229.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231215095605.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20240131153139.png",

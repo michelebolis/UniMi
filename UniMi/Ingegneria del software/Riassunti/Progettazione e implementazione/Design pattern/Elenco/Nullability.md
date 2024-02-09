@@ -4,7 +4,7 @@ Problema: quando proviamo a deferenziale la variabile e non puntando a nulla, ri
 `Null viene utilizzato per indicare errore, stato temporaneamente inconsistente, valore assente`.
 Perciò un codice chiaro NON dovrebbe far uso di null o almeno limitarlo
 
-Come implementare attributi diversi da null: 
+Come implementare i `parametri` diversi da null: 
 1. modalita sviluppo: faccio un `if` segnalando l'errore dell'utilizzatore, `programmazione difensiva`
 
 ```java

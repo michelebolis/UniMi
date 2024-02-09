@@ -7,5 +7,5 @@ Modelli
 Modelli
 - [[Modelli sequenziali]]: le varie fasi sono poste in un `ordine prestabilito`
 - [[Modelli iterativi]]: evoluzione dei modelli sequenziali in cui è `permessa la ripetizione` di una o piu fasi
-- [[Modelli incrementali]]: modelli in cui `nelle iterazioni viene inclusa la consegna`, permettendo così di rilasciare componenti di volta in volta
+- [[Modelli incrementali]]: modelli in cui, in aggiunta ai modelli iterativi, `nelle iterazioni viene inclusa la consegna`, permettendo così di rilasciare componenti di volta in volta
 

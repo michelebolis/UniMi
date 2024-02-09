@@ -10,3 +10,4 @@ $$\forall M \in R(P/T, M_0), \sum_{p \in P}M(p) = \sum_{p\in P} M_0(p)$$
 2. Il numero di gettoni distrutti dallo scatto di una transizione (non morta) è uguale al numero di gettoni che crea
 $$\forall t \in T, \sum_{p\in pre(t)} W(<p, t>) = \sum_{p \in post(t)}W(<t,p>)$$
 
+`SE una reti di Petri è conservativa, ALLORA è limitata MA NON viceversa`
