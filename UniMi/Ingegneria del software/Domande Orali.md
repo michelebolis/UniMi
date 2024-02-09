@@ -82,7 +82,7 @@ Orale 3
 - reti di petri: non ho capito a cosa serve l analisi di raggiungibilita, quando è utile?
 	- quali sono le informazioni che perdiamo con la copertura? 
 		- marcatura raggiungibile
-			- Condizione sufficiente: se è presente come nodo nell albero
+			- Condizione sufficiente: se è presente come nodo nell'albero
 			- Condizione necessaria: o sono uguali o c è omega MA NON sufficiente perche omega non so quanto è, PERDO infatti la capacita dei numeri che puo rappresentare (omega = numero grande a piacere)
 
 Orale 4: 
@@ -95,7 +95,7 @@ Orale 4:
 		- correttezza non implica affidabile in quanto ci potrebbe essere stata un incomprensione nei requisiti
 		- cliente preferisce correttezza o affidabile? Forse meglio affidabilita cosi faccio contento il cliente ma ci sono dei rischi legali
 - secondo e terzo grado di vitalità di una transizione (esempio)
-	- grado 3: non la riusciro mai a farla diventare morta MA NON vuol dire che è sempre abilitata
+	- grado 3: non la riuscirò mai a farla diventare morta MA NON vuol dire che è sempre abilitata
 
 Orale 5:
 - Errori: tanti errori di nullability, quando faccio add anche se non cambia lo stato, faccio lo stesso notifyObservers

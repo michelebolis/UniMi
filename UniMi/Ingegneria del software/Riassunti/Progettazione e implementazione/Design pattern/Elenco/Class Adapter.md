@@ -13,3 +13,5 @@ Vantaggi
 - SE un metodo cambia, non devo fare nulla
 
 Svantaggi: possibili problemi con ereditarietà multipla
+
+Situazione in cui usarlo: `codice legacy` perche riesco ad avere un oggetto che puo essere visto come nuovo (perche implementa l interfaccia) e vecchio (perche estende la classe vecchia)

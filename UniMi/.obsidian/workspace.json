@@ -37,27 +37,15 @@
               "state": {
                 "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "viewState": {
-                  "x": -9934.633975887857,
-                  "y": -3132.2921136441455,
-                  "zoom": -0.333333333333333
+                  "x": 4542.388078607621,
+                  "y": -1614.6046227357283,
+                  "zoom": -1.666666666666666
                 }
-              }
-            }
-          },
-          {
-            "id": "bd0306a3d3b30ed7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Class Diagram/Class Diagram - Legenda Relazioni.md",
-                "mode": "source",
-                "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -123,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Class Diagram/Class Diagram - Legenda Relazioni.md",
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Class Diagram/Class Diagram - Legenda Relazioni.md",
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Class Diagram/Class Diagram - Legenda Relazioni.md"
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas"
               }
             }
           },
@@ -223,11 +211,12 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "bd0306a3d3b30ed7",
+  "active": "dccbf5551247cd67",
   "lastOpenFiles": [
     "Ingegneria del software/Domande Orali.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Class Diagram/Class Diagram - Legenda Relazioni.md",
+    "Ingegneria del software/Riassunti/img/Pasted image 20240209101025.png",
     "Ingegneria del software/Slide/IS2023-PETRITEMPORIZZATE.pdf",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Grafico aciclico/Time Anonymous Timestamp.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Tipi di semantiche temporali",
@@ -265,7 +254,6 @@
     "Ingegneria del software/Riassunti/img/Pasted image 20231215095605.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20240131153139.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20240131153018.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20240131152934.png",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reri di Petri - Definizioni varie",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Variazioni",
