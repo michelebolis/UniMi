@@ -16,8 +16,24 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "60be9354aa5d447b",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+                "viewState": {
+                  "x": 4027.1333431203357,
+                  "y": -6671.611019361756,
+                  "zoom": 0.6666666666666663
+                }
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -67,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -84,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,6 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +138,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas"
+              }
             }
           },
           {
@@ -180,7 +199,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c1ce2ce19829fc50",
+  "active": "60be9354aa5d447b",
   "lastOpenFiles": [
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Domande Orali.md",

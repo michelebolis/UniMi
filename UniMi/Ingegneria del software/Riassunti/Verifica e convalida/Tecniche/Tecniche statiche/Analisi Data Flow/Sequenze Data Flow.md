@@ -1,4 +1,4 @@
-`P(p ,a)` indica la sequenza ottenuta per la variabile `a` eseguendo il cammino.
+`P(p, a)` indica la sequenza ottenuta per la variabile `a` eseguendo il cammino.
 Per rappresentare `P` in caso di cammini contenenti cicli e decisioni si possono usare espressioni regolari in cui:
 - `|` indica che i simboli a destra e a sinistra si escludono a vicenda
 - `*` indica che il simbolo può essere ripetuto da `0` a `n` volte
