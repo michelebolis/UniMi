@@ -25,9 +25,9 @@
               "state": {
                 "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "viewState": {
-                  "x": 4027.1333431203357,
-                  "y": -6671.611019361756,
-                  "zoom": 0.6666666666666663
+                  "x": -3401.6913231866397,
+                  "y": 5867.471223362679,
+                  "zoom": -1.1102230246251565e-16
                 }
               }
             }
@@ -83,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -184,7 +185,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
