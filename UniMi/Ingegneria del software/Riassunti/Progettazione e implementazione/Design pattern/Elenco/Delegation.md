@@ -7,6 +7,8 @@ Possibili soluzioni
 
 Principi Dependency Inversion e Open Close: `identificare gli aspetti della applicazione che cambiano e separarli da ciò che rimane fisso`
 
+- `template pattern`: SE ho una classe astratta che non implementa per es sort e poi n classi concrete che implementano il sort
+
 - `Delegation strategy`: definisce una famiglia di algoritmi e li rende attraverso l'encapsulation tra di loro intercambiabili 
 
 `L'ereditarietà è sostituita dalla composizione`.
