@@ -5,6 +5,6 @@
 
 Composizione >>>> Ereditarietà
 
-- [[Encapsulation and infomation hiding]]
+- [[Encapsulation and information hiding]]
 - [[Immutabilita]]
 - [[Come identificare classi-relazioni]]

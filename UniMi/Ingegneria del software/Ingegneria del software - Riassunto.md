@@ -104,7 +104,7 @@
 	![[Design knowledge]]
 		![[OO - Object Orientation]]
 			![[Immutabilita]]
-			![[Encapsulation and infomation hiding]]
+			![[Encapsulation and information hiding]]
 			![[Reference escaping]]
 			![[Come identificare classi-relazioni]]
 				![[Noun Extraction]]
