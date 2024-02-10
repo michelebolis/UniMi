@@ -25,9 +25,9 @@
               "state": {
                 "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "viewState": {
-                  "x": 587.6496114065478,
-                  "y": -6933.191774358185,
-                  "zoom": -0.33333333333333276
+                  "x": 3380.1819942257284,
+                  "y": -8063.157869383301,
+                  "zoom": 0.3333333333333334
                 }
               }
             }
@@ -200,8 +200,9 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "a036a027379b1f76",
+  "active": "60be9354aa5d447b",
   "lastOpenFiles": [
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Copertura delle condizioni - Esempio.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Ingegneria del software/Domande Orali.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Class Diagram/Class Diagram - Legenda Relazioni.md",
