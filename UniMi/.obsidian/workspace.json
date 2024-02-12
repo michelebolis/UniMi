@@ -25,10 +25,22 @@
               "state": {
                 "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "viewState": {
-                  "x": 5727.77439681134,
-                  "y": 7330.610018752355,
-                  "zoom": 3.3306690738754696e-16
+                  "x": 10433.362574218194,
+                  "y": 5252.972749148322,
+                  "zoom": -1.6666666666666665
                 }
+              }
+            }
+          },
+          {
+            "id": "17e46ae2fad7bc53",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Object Orientation - Esempi.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -202,8 +214,9 @@
   },
   "active": "60be9354aa5d447b",
   "lastOpenFiles": [
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Copertura delle condizioni - Esempio.md",
+    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Object Orientation - Esempi.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
+    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Copertura delle condizioni - Esempio.md",
     "Ingegneria del software/Domande Orali.md",
     "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Class Diagram/Class Diagram - Legenda Relazioni.md",
     "Ingegneria del software/Riassunti/img/Pasted image 20240209101025.png",
@@ -238,8 +251,6 @@
     "Ingegneria del software/Slide/IS2023-PETRI.pdf",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Reti di Petri - P-Invarianti.md",
     "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reri di Petri - Definizioni varie/Reti di Petri - Rappresentazione matriciale.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Reti di Petri - Albero di copertura.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Rete di Petri - Copribilità.md",
     "Ingegneria del software/Riassunti/img/Pasted image 20240203091229.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20231215095605.png",
     "Ingegneria del software/Riassunti/img/Pasted image 20240131153139.png",

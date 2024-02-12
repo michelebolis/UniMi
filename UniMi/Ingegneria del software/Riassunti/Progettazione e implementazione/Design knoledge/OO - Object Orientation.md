@@ -3,6 +3,7 @@
 - `Composizione` 
 - `Dynamic Pipeling` (collegamento dinamico): in Java il tipo concreto degli oggetti e quindi il problema di stabilire _quale metodo chiamare_ viene risolto durante l’esecuzione. permette di scrivere una chiamata che chiamerà un codice che non esiste ancora
 
+[[Object Orientation - Esempi]]
 Composizione >>>> Ereditarietà
 
 - [[Encapsulation and information hiding]]
