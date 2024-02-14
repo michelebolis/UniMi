@@ -16,36 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "60be9354aa5d447b",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-                "viewState": {
-                  "x": 10433.362574218194,
-                  "y": 5252.972749148322,
-                  "zoom": -1.6666666666666665
-                }
-              }
-            }
-          },
-          {
-            "id": "17e46ae2fad7bc53",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Object Orientation - Esempi.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -95,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 255.5110321044922
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -112,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Ingegneria del software/Ingegneria del software (SWENG).canvas"
-              }
+              "state": {}
             }
           },
           {
@@ -212,54 +179,55 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "60be9354aa5d447b",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/Design knoledge/Object Orientation - Esempi.md",
+    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Tratti biometrici - Impronte digitali.md",
+    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Estrazione delle feature di un impronta.md",
+    "Sistemi biometrici/Riassunti/Tratti/Tratti biometrici.md",
+    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Matching di due impronte digitali.md",
+    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Estrarre L2.md",
+    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Estrarre L1.md",
+    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Manipolazione immagine, Enhancement.md",
+    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Filtraggio iniziale.md",
+    "Sistemi biometrici/Riassunti/Sistemi biometrici - Riassunto.md",
+    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Sensori.md",
+    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Unicità.md",
+    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Sistemi AFIS.md",
+    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Livelli di analisi.md",
+    "Sistemi biometrici/Riassunti/Standard per la biometria.md",
+    "Sistemi biometrici/Riassunti/Tratti/Retina",
+    "Sistemi biometrici/Riassunti/Tratti/Mano e palmo",
+    "Sistemi biometrici/Riassunti/Tratti/Orecchio",
+    "Sistemi biometrici/Riassunti/Tratti/Voce",
+    "Sistemi biometrici/Riassunti/Tratti/Volto",
+    "Sistemi biometrici/Riassunti/Tratti/KeyStroke dynamics",
+    "Sistemi biometrici/Riassunti/Tratti/KeyStroke dynamics/Sistemi biometrici - KeyStroke dynamics.md",
+    "Sistemi biometrici/Riassunti/Progettazione/Regole generali di progettazione dei sistemi biometrici.md",
+    "Sistemi biometrici/Riassunti/Tratti/DNA",
+    "Sistemi biometrici/Riassunti/Tratti/Firma",
+    "Sistemi biometrici/Riassunti/Tipi di sistemi/Tipi di sistemi biometrici.md",
+    "Sistemi biometrici/Riassunti/Progettazione",
+    "Sistemi biometrici/Riassunti/Tipi di sistemi",
+    "Sistemi biometrici/Riassunti/Aspetti/Aspetti analitici di un sistema biometrico.md",
+    "Sistemi biometrici/Riassunti/Aspetti/Aspetti di architettura dei sistemi biometrici.md",
+    "Sistemi biometrici/Riassunti/Aspetti/Aspetti generali e regolamentazione.md",
+    "Sistemi biometrici/Riassunti/Tratti/Comparazione sistemi e tratti biometrici.md",
+    "Sistemi biometrici/Riassunti/Tratti/Sample indipendente.md",
+    "Sistemi biometrici/Riassunti/Tratti/Variazioni del tratto.md",
+    "Sistemi biometrici/Riassunti/Tratti/Proprieta di un tratto biometrico.md",
+    "Sistemi biometrici/Riassunti/Tratti/Soft Biometrics.md",
+    "Sistemi biometrici/Riassunti/Overview/Biometria - Overview.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche dinamiche/Testing/Criteri di selezione/Copertura delle condizioni - Esempio.md",
-    "Ingegneria del software/Domande Orali.md",
-    "Ingegneria del software/Riassunti/Progettazione e implementazione/UML/Class Diagram/Class Diagram - Legenda Relazioni.md",
-    "Ingegneria del software/Riassunti/img/Pasted image 20240209101025.png",
-    "Ingegneria del software/Slide/IS2023-PETRITEMPORIZZATE.pdf",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Grafico aciclico/Time Anonymous Timestamp.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Tipi di semantiche temporali",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Grafico aciclico",
-    "Ingegneria del software/Riassunti/img/Pasted image 20240206105947.png",
-    "Ingegneria del software/Ingegneria del software - Riassunto.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Grafico aciclico/Reti di Petri Temporizzate - Floyd.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Grafico aciclico/Reti di Petri Temporizzate - Grafo aciclico.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Reti di Petri - Aggiornamento di marcatura e vincoli.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Reti di Petri Temporizzate - Analisi di raggiungibilità temporale.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Reti di Petri Temporizzate - Identificazione delle abilitazioni.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Reti di Petri Temporizzate - Albero di raggiungibilità temporale.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Analisi/Reti di Petri Temporizzate - Stati simbolici.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Tipi di semantiche temporali/Reti di Petri Temporizzate - Semantica Mixed time.md",
-    "Ingegneria del software/Riassunti/img/Pasted image 20240206100807.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20240206100646.png",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Tipi di semantiche temporali/Reti di Petri Temporizzate - Semantica forte STS.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Tipi di semantiche temporali/Reti di Petri Temporizzate - Assiomi Semantiche.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Tipi di semantiche temporali/Reti di Petri Temporizzate - Semantica monotonica debole MWTS.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Tipi di semantiche temporali/Reti di Petri Temporizzate - Semantica debole WTS.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate/Reti di Petri Temporizzate - Time Basic.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Variazioni/Reti di Petri - Reti con priorità.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Reti di Petri - Controllori.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Reti di Petri - Mutua esclusione.md",
-    "Ingegneria del software/Riassunti/img/Pasted image 20240206090112.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20240203091224.png",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Copertura di P-invarianti.md",
-    "Ingegneria del software/Slide/IS2023-PETRI.pdf",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi/Reti di Petri - P-Invarianti.md",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reri di Petri - Definizioni varie/Reti di Petri - Rappresentazione matriciale.md",
-    "Ingegneria del software/Riassunti/img/Pasted image 20240203091229.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20231215095605.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20240131153139.png",
-    "Ingegneria del software/Riassunti/img/Pasted image 20240131153018.png",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Temporizzate",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reri di Petri - Definizioni varie",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Variazioni",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tecniche di analisi",
-    "Ingegneria del software/Riassunti/Verifica e convalida/Tecniche/Tecniche statiche/Reti di Petri/Reti di Petri - Tipi di reti",
+    "Sistemi biometrici/Img/Pasted image 20240214094438.png",
+    "Sistemi biometrici/Img/Pasted image 20240214094306.png",
+    "Sistemi biometrici/Img/Pasted image 20240214094252.png",
+    "Sistemi biometrici/Img/Pasted image 20240214094152.png",
+    "Sistemi biometrici/Img/Pasted image 20240214093319.png",
+    "Sistemi biometrici/Img/Pasted image 20240214093309.png",
+    "Sistemi biometrici/Img/Pasted image 20240214093256.png",
+    "Sistemi biometrici/Img/Pasted image 20240214092720.png",
+    "Sistemi biometrici/Img/Pasted image 20240214092622.png",
+    "Sistemi biometrici/Img/Pasted image 20240214091828.png",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/ES.canvas",

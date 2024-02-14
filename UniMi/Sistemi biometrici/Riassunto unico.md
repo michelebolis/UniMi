@@ -2736,3 +2736,1155 @@ Tutta via l'utenza è preocupata riguardo alla sua diffusione e alla privacy :
 
 Gli errori ( FNMR, FMR, CMC) sono tutta via ancora abbastanza alti da creare un effetto di protezione da "errore del sistema" su schedature a scala metropolitana e nazionali nel FR.
 In EU, tutta via, è ancora aperto il dibattito se utilizzare o meno queste tecnologie in screening di massa.
+
+---
+AAAAAAAAAA
+---
+
+EER  = punto sulla curva det in cui FNMR = FMR
+Avevamo indicato fra i principali fattori migliorativi del volto :
+- Alta risoluzione delle immagini
+- Multi-stil, multiple shots
+- Introduzione dei dati 3d
+- Artificial intelligence
+
+Controllo del volto 3D usando un sistema 2D.
+
+Partendo dal sensore più semplice, ovvero la camera visibile 2D è possibili eseguire shape from motion.
+
+![[Pasted image 20240214090426.png]]
+
+- Zoom := si tratta di una tecnologia che a partire da un immagine frontale del volto, ( la zona centrale è quella del volto che ha maggiori dettagli 3d utili), costruisce un modello 3D.
+
+Viene realizzato un modello 3D, a partire da camere 2D, tutta via il modello 3D contiene più dati rispetto ad un qualsiasi foto piatta.
+
+Il test di matching viene fatto su immagini 2D.
+
+- FAR 1/4,200,000 FAR @ less than 1/100 (FRR)
+
+- 668% better than the top algorithm in lates NIST’s FRVT results. Risultati rilevati mediante test proprietari e non indipendenti.
+
+- Sempre il produttore afferma che si tratta di una tecnologia molto robusta alle frodi, perfino agli utenti dormienti con occhi chiusi.
+
+Resiste a :
+- Maschere
+- Video ad alta risoluzione
+- Progetti video su teste 3D
+- Impostori, sosia.
+
+- 3D face Map := si tratta di una tecnologia, la quale partendo da un video di 2 secondi permette di verificare :
+	- Vitalità del volto
+	- 3D della superficie
+	- Riconoscimento del volto 3D.
+
+Inoltre gode delle seguenti caratteristiche :
+
+- Interoperabile .= funziona con tutte le camere dei cellulari recenti
+- Controlli di liveness veloci
+- Funziona in condizione ambientali realistiche
+- Funziona anche con occhiali, barba, trucco.
+
+Spoofing e anti - spoofing volto 3D
+Struttura generale dei metodi anti spoofing :
+![[Pasted image 20240214090439.png]]
+Alcune tecniche per frodare un sitema 3D :
+- Nel campo delle protesi e dei materiali sintetici che emulano il corpo umano sono stati fatti grandi passi. 3D printed Latex mask.
+- Maschera con ritagli per gli occhi := un attacco con maschera con ritagli per mostrare gli occhi. Tale attacco viene individuato da "salti" del flusso ottico casusate dalla discontinuità dei fori fra le parti mobili (occhio) e fisse (maschera).
+
+Possibili controlli :
+- Usando illuminatori a lunghezza d'onda è possibile avere in tempo reale ( parziale) analisi  spetto grafica del volto . Inoltre attraverso dei sitemi di classificazione che analizzano i dati spetto-grafici si stima il materiale di cui è composto :
+- Tipo organico, se contiene acqua, grassi
+- O plastica, gomma, silicone
+- Usando sensori termici, permettono un analisi termografica dell'immagine. Permettono di capire se abbiamo di fronte dei tessuti a temperatura corretta ( tutta via il costo dei sensori termografici sta rapidamente scendendo nel tempo)
+- Battito delle palpebre := Avendo un sensore con elevati FPS (>30) e risoluzione è possibile verificare :
+- Assenza di pattern ed effetto Moirè
+- Movimento delle palpebre compatibile per direzioni ed entità a quello naturale.
+
+Lo scopo del flusso ottico è quello di assegnare ad ogni pixel appartenente al frame corrente un motion vector che punta verso la posizione dello stesso pixel in un frame di riferimento successivo .
+
+
+Mano e Palmo
+Caratteristiche del tratto biometrico :
+- Tratto biometrico moto ben accettato dagli utenti perché poco invasivo : È normale porgere la mano o darsi una stretta di mano quando si incontrano due persone.
+- Presente fin dal 1979 sul mercato ( tecnologia matura)
+- Offre un discreto livello di accuratezza, senza dover chiedere all'utente sample molto critici perla privacy come l'iride o l'impronta.
+- Offre la possibilità di funzionare in modo multimodale, controllando più aspetti come immagini, misure, pattern delle vene.
+- Diffusione sul mercato buona :
+	- Impronte (44%)
+	- Face (19%)
+	- Geometria della mano(9%)
+	- Iride(7)
+	- Voce(4)
+	- Firma(2)
+	- Multimodali(4)
+- L'utente deve essere collaborativo
+- Dalla mano sono estraibili circa 90 features :
+	- Misura delle lunghezze degli elementi
+	- Confronto delle immagini
+	- Immagine termica per pattern vene
+	- Studio delle linee della pelle
+
+Sono sistemi veloci, adatti per essere affiancati a tornelli, porte e cancelli. Vengono utilizzati principalmente per il controllo degli accessi.
+
+Sono sistemi impiegati anche per applicazioni del tipo "time and attandance" cioè per il controllo delle presenze sui luoghi di lavoro.
+
+La geometria della mano è il tratto biometrico preferito dal garante della privacy.
+Vantaggi :
+- Tecnologia consolidata
+- Sensore robusto
+- Dimensioni del template motlo ridotte
+- Minore impatto sulla privacy degli utenti
+
+Svantaggi :
+- Costo circa sui 1000 dollari
+- Dimensione e peso notevoli
+- Sensibilità a forte luce diurna
+
+Sensori :
+Di solito si lavora su tre viste :
+- Palmare
+- Laterale
+- Dorsale
+
+Vengono utilizzati scanner ( anche < 1800 dpi), CDD camera ( media risoluzione) visibili o ad infrarossi.
+
+Possiamo inoltre distinguere i sensori in due categorie :
+- Sensori con guide := il sistema diventa più accurato perché si riduce la variabilità intraclasse del sample, essendo forzato ad assumere una posizione corretta.
+- Sensori senza guide := con i pioli l'utente deve imparare il corretto posizionamento della mano.
+
+Inoltre si stanno iniziando a diffondere sistemi contactless ( come ad esempio quello di amazon one).
+
+Passi per il matching
+- Peg Removal := conoscendo la posizione fissa dei pioli è facile sottrarli alle immagini per avere a disposizione solo la mano.
+- Estrazione dei contorni := si usa un algoritmo a soglia adattiva per segmentare l'immagine e trovare il contorno esterno della mano.
+- Estrazione delle dita ed allineamento := ile 5 dita vengono estratte dal profilo ed allineate separatamente a partire da posizioni standard. Questo rende il matching maggiormente veloce.
+
+- Matching :
+	- Le curve delle due mani da confrontare gia allineate sul riferimento vengono trasformate in gruppi di punti
+	- Il matching lavora individuando coppie di punti e misurando la loro distanza. La loro distanza media è chiamata mean alignment error ( MAE)
+	- Se il mae è minore di una soglia prefissata l'utente è considerato un genuino altrimenti come impostore.
+
+Eigenfingers := in modo assolutamente simile al metodo delle autofacce da un database di immagini di mani, è possibile ricostruire le dita ed il palmo.
+
+Ad oggi non si ha notizia di comparazioni indipendenti dal produttore di algoritmi e sistemi biometrici basati sulla mano, simili a quelli per il volto ( FRVT) ecc…
+
+Un test governativo ( INPASS Evaluation),  ha rilevato le seguenti performance :
+- FTE = 2% ( failure to enroll)
+- FNMR = 1,5 % FMR = 1,5 %
+- ERR = dal 3 al 1.5 %  punto della curva det in cui FNMR = FMR riassuma dal punto di vista generale l'andamento di un sistema biometrico.
+
+---
+
+Biometria della firma :
+- Ragionevolmente unica non solo dal punto di vista ma anche per una serie di caratteristiche :
+	- Velocità di scrittura .
+	- Angolo d'inclinazione della penna .
+	- Accelerazione del movimento .
+	- Numero di volte che la penna viene sollevata dalla carta.
+- Maggiore applicazione negli ambienti bancari e finanziari
+- Firma online :
+	l'utente appone la propria firma con una penna speciale o su una tavoletta elettronica in grado di rilevare i parametri descrittivi della firma, che portano alla creazione d un template le cui dimensioni sono intorno ai 1500 byte. 1.5kb
+	- Tracciati dei parametri nel tempo che sono comparati in sede di matching ( distanze relative spazio - temporali dei punti singolari).
+	- Punti singolari tracciati
+		- Inversione di moto
+		- Cupsidi delle curve
+		- Intersezione delle linee
+- Firma offline: tipicamente apposta su un documento cartaceo poi scansionato
+	- Abbiamo solo a disposizione l'immagine della firma come sample iniziale.  La dimensione del template offline può raggiungere 1MB se il template è la firma scansionata, diversamente può ridursi.
+	- Tecniche di confronto :
+		- Studio degli istogrammi delle proiezioni orizzontali e verticali dei toni di grigio.
+		- Dislocazione dei tratti all'interno dell'area di firma secondo il metodo extended shadow code. Permette di codificare la firma in un codice, creato sovrapponendo una serie di matrici di segmenti sulla firma e andando a verificare le intersezioni delle ombre della firma con i segmenti della maschera.
+
+Vantaggi  :
+- Hardware poco costoso
+- Buona accettabilità da parte degli utenti.
+- Difficilmente falsificabile ( nel caso della firma online)
+
+Svantaggi :
+- Instabilità temporale del campione ( elevata variabilità intraclasse)
+- Dimensioni del template
+- Numero limitato di applicazioni adatte
+- Si hanno problemi per firme molto brevi o troppo semplici ( elevata similtudine interclasse)
+
+Applicazioni :
+Banche e transazioni finanziare, per esempio i requisiti della APACS ( association payment clearing service) richiedono un FMR uguale al 0.001% ed un FNMR pari al 5%.
+
+Ad oggi non si hanno sistemi commerciali che hanno tale requisito. Tutta via i sistemi esistenti vengono utilizzati per facilitare il riconoscimento ad un operatore fisico.
+
+ERR = 3% per firma  con le nuove tecnologie
+
+
+Riconoscimento della retina
+- Pattern dei vasi presenti sulla retina. La tessitura delle vene sulla retina è già completa al momento della nascita e rimane quasi completamente stabile per tutta la durata della vita.
+- La distribuzione sulla retina dei vasi è principalmente casuale e assolutamente univoca.  Il pattern di vene parte dal nervo ottico, ma le successive diramazioni sono pressoche casuali.
+- Il sensore per la rilevazione della retine deve essere posizionato a breve distanza dall' occhio.
+
+Con metodi molto simili a quelle delle impronte digitale, vengono  estratte le minutiae della retina e memorizzate in un template. Il pattern delle vene in alcune versione commerciali solitamente è un codice e barra circolare :
+
+Retica, individua il centro del nervo ottico ed esegue delle scansione dei toni di grgio lungo circonferenze concentriche. Attraverso una comparazione a soglia adattiva è possibile convertire questo andamento in un insieme di bit ( 1 se l'intensità è sopra la soglia, 0 altrimenti).
+
+![[Pasted image 20240214090929.png]]
+
+Vantaggi :
+- Molto efficiente
+- Stabile
+- Difficile da contraffare
+- Difficilmente alterabile da fattori esterni
+
+Svantaggi :
+- Viene rilevato dall'utente come intrusivo
+- Difficile da adattare nell'ambito commerciale
+- Sentito come pericoloso per la vista
+- Elevato costo dei sensori
+- Non più sviluppata
+
+
+Riconoscimento della voce
+Il riconoscimento della voce, ha lo scopo di identificare un certo individuo appunto dalla sua voce.
+
+Dividiamo lo studio della voce in due principali categorie :
+- Speech Recognition := Riconoscere ciò che viene detto ( frasi, numeri, testi)
+- Speaker recognition := riconoscere l'identità della persona che sta parlando.
+- Si tratta di un tratto biometrico ibrido tra biometria fisiologica e comportamentale. Il tratto vocale viene composto dalla seguenti parti :
+	- Parte fisiologica = pulsazioni glottali
+	- Parte fisiologica/comportamentale = tratto della bocca.
+- Accesso fisico e logico
+- Il segnale audio deve soddisfare le seguenti caratteristiche :
+	- Frequenza con una risposta di +/- 4 decibel nel range da 100 hz a 8hz
+	- Rumore in sottofondo fino ad un massimo di 18.20 db
+	- Sample rare raccomandato 11025 kHZ
+	-  50KB 100KB. Dimensione sample
+
+Fino ad oggi il riconoscimento vocale avviene in 3 modalità :
+- Auditivo ( un esperto ascolta le tracce)
+- Semiautomatico ( un esperto controlla delle feature estratte dalla voce di due persone, ad esempio spettogrammi)
+- Riconoscimento completamente automatico
+
+Sensori di acquisizione :
+- Microfono ( si può partire da un sensore motlo semplice)
+- Telefono , aumenta la frubilità della tecnologia ma rende il processo biometrico molto più complesso a causa della riduzione drastica di informazioni dovuta alla limitata banda destinata alla voce su una linea telefonica.
+- Cooperativa: registrazione da parte dell'utente di una frase predefinita, per un certo numero di volte .
+	- Text dependent = è noto il parlato oppure tutti gli individui che hanno fatto l'enrolment hanno detto una frase uguale.  È sufficiente che gli utenti pronuncino una semplice frase in codice per convalidare la propria identità.
+	
+	Abbiamo le seguenti caratteristiche :
+	- Sample più brevi
+	- Le password vocali possono essere cambiate facilmente
+	- Proteggono meglio la privacy
+	- Serve la cooperazione dell'utente
+
+	- Text indipendent = non si conosce il parlato . Autenticazione durante una normale conversazione.
+		- Servono 30s-1m per un accurata identificazione
+		- Usato in una normale conversazione
+		- Non serve cooperazione
+
+- Non cooperativa: l'identificazione avviene in modo "covert" senza informare l'interessato.
+
+Caratteristiche generali della voce :
+Elaborazione della traccia vocale per estrare i parametri del modello acustico del parlatore ( però dipendente dal linguaggio e dal soggetto) :
+- Anatomia ( dimensioni e conformazione di bocca e gola)
+- Comportamento ( timbro di voce, modo di parlare)
+- Solitamente richiede complesse elaborazioni del segnale acustico ( analisi di spettro, periodicità)
+
+Diverse caratteristiche si possono estrarre dalla voce : da quelle linguistiche fino a quelle acustiche sonore di basso livello :
+- Alto livello = caratteristiche lessicali e sintattiche come la co-occorenza delle parole o dei fonemi
+- Livello intermedio = qualità della voce
+- Basso livello = energia del suono nella varie bande spettrali
+
+Passi principali effettuati per lo speaker recognition :
+- Pre-filtraggio
+- Elaborazione delle feature statiche (MFCC mel-frequency cepstral coefficients) e dinamiche
+- Modellazione del parlatore
+- Comparazione dei modelli e decisione
+
+Vantaggi :
+- Tecnologia basata su hardware di larga diffusione
+- Buona accettabilità da parte degli utenti
+- Template compatto 50KB 100KB. Dimensione sample
+
+Svantaggi :
+- Possibilità di tempi lunghi di enrollment
+- Elevare dimensioni del templare circa 1MB
+- Sensibilità ai rumori di fondo
+- Variabilità intraclasse dovuta a malattia o condizioni ambientali
+- Facilità falsificazione tratto
+
+Applicazioni nel mercato :
+Ad oggi è stato stimato che il mercato riguardante il riconoscimento o l'analisi vocale raggiungerà un valore di 28.3 bilioni di dollari nel 2026. 
+
+Le aziende stanno implementando l'autenticazione vocale in praticamente ogni settore ( call center, robotica, e-commerce)
+
+Applicazioni attuali :
+- Autenticazione degli utenti in applicazioni di medio/bassa sicurezza
+- Attività investigative
+- Sistemi multimodali
+
+Accuratezza :
+MFCC features = circa 99 %  di accuratezza, si tratta delle feature migliori  per il riconoscimento della voce.
+
+WER ( accuratezza del riconoscimento della voce) :
+Con :
+$$1-WER = \frac{S+D+1}{N} = accuracy\% $$
+- N = il numero di parole nella reference audio N = S + D + C
+- S = il numero di sostituzioni
+- D = il numero di cancellazioni
+- I =  il numero di intersezioni  
+- C = il numero di riconoscimenti corretti
+
+Ranking error Rank(n) =  si tratta di un tipo di metrica relativa al problema della identificazione (1:N). Data un sample in ingresso, vogliamo trovare il template genuino corrispondete tra n individui presenti in un DB.
+
+Il problema viene risolto comparando il sample con tutti gli n candidati del DB e scegliendo il candidato a distanza minima ( con maggiore similarità).
+
+Rank(N) = è il rapporto dei template della query per cui i confronti con i genuini sono tra gli n confronti con i valori di somiglianza più alti nel database.
+
+Procedimento :
+- Prendo 1 template
+- Faccio N comparazioni
+- Prendo gli n score più simili
+- Vi è un genuino Si = 1 , no = 0
+- Rifaccio con gli altri utenti e medio il tutto ottengo rank(n)
+
+In un sistema ideale, i valori di matching più alti sono sempre asseganti a delle comparazioni tra genuini. Nel sistema ideale Rank(1) = 1.0 . Significa che tutte le comparazioni fra genuini hanno ottenuto valori di similarità più alti.
+
+Curva det per la voce :
+![[Pasted image 20240214091428.png]]
+
+Il voip tende a migliorare il FMR in applicazioni con maggiore reliability e minore sicurezza .
+Oltre i 30secondi di enrolment inoltre non si ha alcun miglioramento del tasso di errore in fase di autenticazione o identificazione.
+
+Time Warping = allinea le firme on-line non quelle off-line che sono statiche.
+
+---
+
+Le caratteristiche dei sistemi di riconoscimento degli individui basati su DNA, pongono questa metodologia come la più accurata nel panorama biometrico.
+
+Il DNA può essere usato come tratto biometrico con dovute precauzioni  :
+- Per garantire l'attendibilità del risultato
+- Per evitare usi impropri delle informazioni contenute nei sample
+
+Anche se i sistemi basati su DNA vengono utilizzati per valutare le tracce ritrovate su scene del crimine, ad oggi non esite un metodo di stima statistica per valutare quanto è affidabile l'associazione fra campioni :
+- Il livello di accuratezza viene ritenuto molto alto dagli esperti
+- Viene controllato che vi sia un profile rarity > 1/10 M ( a parte gemelli omozigoti)
+
+La produzione di sensori a stato solido per analisi DNA ( basati sulla tecnica micro array), fa prevedere nel futuro prossimo uan diffusione sempre maggiore dei sistemi biometrici basati su DNA.
+
+Biometria del DNA
+Si tratta di una tecnica relativamente giovane 1984. i termini correntemente in uso sono :
+- DNA typing ( accezione generale)
+- DNA profiling o DNA fingerprint
+
+Nel 1986 Mullis arrivò alla tecnica PCR ( Polymerase Chain Reaction), si tratta di una tecnica ad oggi automatizzabile che permette di amplificare un campione di DNA fino ad arrivare ad un comodo template per le operazioni di comparazione
+
+Ad ogni ciclo il sistema raddoppia la coppia dei frammenti di DNA. È critica la quantizzazione del campione iniziale, perché sbagliare il numero di cicli crea un errore molto grande sulla quantità finale di DNA.
+
+La formazione di un individuo ("fenotipo") come la formazione dei suoi tratti biometrici dipendono dall'interazione del suo patrimonio genetico ( DNA. Genotipo) e l'ambiente.
+
+Il DNA è un ottimo strumento di identificazione in biometria per i seguenti motivi :
+- Esso è presente in ogni cellula del corpo in modo omogeneo
+- Un processo di duplicazione cellulare ( mitosi), duplica con incredibile precisione la sequenza del DNA
+- È una sequenza assolutamente unica per ogni individuo :
+	- Solo una porzione dal 0.1% al 0.5% è diversa per ogni individuo, il resto è uguale per tutti.
+	- Tutta via questa piccola porzione è composta da milioni di basi, ossia elementi costituenti del DNA.
+- È sufficiente un piccolo campione di DNA per effettuare l'acquisizione del tratto ( PCR amplification)
+
+Vantaggi :
+-  è la tecnica più accurata a disposizione.
+- Al contrario degli altri tratti biometrici ( iride, mano, voce, ecc.) con il DNA bastano poche cellule
+- Il DNA permette anche associazioni fra consanguinei ( a differenza degli altri tratti)
+
+Svantaggi :
+- Analisi non real time, servono minuti/ore
+- Procedura non automatizzata
+- Analisi costosa ( 100 dollari to 2000 dollari)
+
+Com'è fatto il DNA
+ACIDO DESOSSIRIBONUCLEICO
+
+Il DNA è un polimero, ovvero una lunga molecola di unità base ripetute. Le unita base che si ripetono prendono il nome di nucleotidi e possono essere di 4 tipi :
+- ADENINA (A)
+- CITOSINA ( C )
+- GUANINA ( G)
+- THIMINA ( T )
+
+Un intero organismo umano dipende dalla combinazioni di parole che si possono formare con 4 lettere. Tutta l'informazione per generare un uomo è in una cella ed è rappresentabile come una permutazione delle 4 lettere.
+
+Il DNA ha una struttura a doppia elica, una singola elica è costituita da due basi opposte che si legano attraverso un legame idrogeno. Le coppie C-G/A-T prendono il nome di base pair, e si usano come unità di misura per contare la lunghezza dei segmenti
+
+Gene : i geni sono situati in precise posizioni nella sequenza del DNA è contengono il genoma, ovvero una serie di informazioni che permettono di codificare molecole funzionali (RNA, Proteine)
+
+Nei cromosomi ci sono circa 100.000 geni appaiati
+
+Ogni gene ha fino a 100 versioni diverse chiamti alleli ( per la maggior parte delle persone sono le stesse)
+
+![[Pasted image 20240214091644.png]]
+
+Il processi di duplicazione delle cellule prende il nome di mitosi ( e di conseguenza di duplicazione del DNA). Ad oggi esite una tecnica chiamata PCR, la quale permette di duplicare delle piccole porzioni di DNA in poche ore.
+
+- Che feature si estraggano dal DNA :
+Si potrebbero estrarre la sequenza di basi che compongono un gene, ma diventerebbe inutilmente complesso.
+
+In alcune regioni del DNA (Loci ) vi sono dei pattern di basi ripetuti, ma ripetuti in un numero di volte diverso in ogni individuo. Questo tipo di DNA è chiamato DNA satellite, le sequenze prendono il nome di sequenze tandem.
+
+La feature biometrica è quindi il numero di ripetizioni in un locus
+
+Le porzioni di DNA con ripetizioni chiamate satelliti si dividono in :
+
+- Marco satelliti ( > 100 bp)
+- Mini satelliti (10-100bp)
+- Micro satelliti (2-7bp) <- biometria attuale DNA
+
+…CTAGTCGT GATA GATA GATA GATTACA… = 3 bp ripetizioni
+
+STR = short tandem repeat usate in larga scala in biometria
+
+SNP = single-nucleotide-polymorphism  variazione del materiale generico a carico di un unico nucleotide ( G,A,T,C)
+
+![[Pasted image 20240214091723.png]]
+
+- Come è costituito un template di DNA :
+Il famoso Combined Dna index system (CODIS) FBI database usa per il suo template :
+- 13 solo loci in tutti i cromosomi ( dal 2017 sono 20)
+- Conteggia gli str
+
+Contiene dati su oltre 14 milioni di individui.
+
+Campioni utili per trovare il DNA :
+- Sangue
+- Sperma
+- Saliva
+- Urina
+- Capelli
+- Denti
+- Ossa
+- Tessuti
+
+È sufficiente una microscopica goccia di sangue o saliva per ottenere un campione valido per un analisi forense. Nelle normali procedure si usa un campione di sangue o un campione di saliva dalla bocca.
+
+Passi nell'analisi del DNA :
+- Collezionare il campione di DNA
+- Eseguire una estrazione del DNA e una quantizzazione ( fondamentale per la successiva fase di PCR)
+- Il DNA viene duplicato tramite la PCR amplification
+- Estrazione e conteggio degli STR .
+- Matching.
+
+Fase di PCR  e separazione STR :
+La porzione di DNA che può essere duplicata è limitata, di conseguenza si procede solamente alla amplificazione dei loci che ci interessano . Tutti gli STR che si usano sono estraibili tramite appositi enzimi :
+
+Il DNA è un polimero carico elettro staticamente. SI possono separare segmenti di DNA di una certa dimensione utilizzando opportuni campi elettrici (un apposito gel) . Gli alleoli di piccole dimensione sono più veloci nel processo di elettroforesi capillare.
+
+L'amplificazione PCR è estremamente sensibile :
+- Basta un solo capello per completare un analisi
+- Rimane il pericolo della contaminazione, basta solamente un residuo di impronta del tecnico di laboratorio per contaminare il campione.
+- La fase di quantizzazione è fodamentale  :
+	- Troppo poco DNA perdo allelei
+	- Toppo DNA malfunzionamento del kit
+
+Una volta separati i vari alleoli avvien il conteggio tramite un apposito sensore laser, che ne esegue la lettura.
+
+Genotipizzazione :
+I dati tracciati dal sensore laser, arrivano al softwer per la genotipizzazione, l'esperto produce e controlla tutti i dati per il template da confrontare e/o memorizzare.
+
+![[Pasted image 20240214091809.png]]
+
+Problema := esistono moltissimi problemi sperimentali che possono provocare dei falsi picchi di alelei o farli scomparire, anche in questo caso si parla di artefatti.
+
+Da questo punto di vista anche il DNA può sbagliare.
+
+Nei vari loci del CODIS, troviamo due allelei uno proveniente dalla mamma e uno proveniente dal papà
+
+![[Pasted image 20240214091828.png]]
+
+Legame DNA somiglianza face body
+DNA in comune (gemelli, parenti) -> Somiglianza biometrica (face, finger print)
+Somiglianza biometrica - > Somiglianza nel DNA
+
+Legame scoperto nel 2022. Persone estranee ma somiglianti, hanno somiglianza anche genetica, utile per predirre malattie. Oltre a questo dei sosia possono essere fisicamente simili ma anche caratterialmente.
+
+La fenotipizzazione permette dal sample del DNA di ricostruire il volto ?  SNI
+
+La fenotipizzazione del DNA può aiutare a stabilire come potrebbe apparire l'autore e quindi restringere ulteriormente i sospetti.  Dopo seguirò la genotipizzazione.
+
+Gli essere umani sono diversi fra loro per il 0,1-0,5% del loro DNA, ma sono ugualmente tantissime  basi .
+
+Stanno iniziando a nascere i primi sw, tutta via la sintesi del fenotipio è un operazione che avviene su base statistica.
+
+DNA nei gemelli
+Gemelli ,individui nati durante lo stesso parto, anche se non nello stesso istante. Si dividono in :
+- Eterozigoti (bi ovulari) := 2/3 dei parti gemellari. Derivano dalla fecondazione di due diverse cellule uovo da parte di due spermatozoi diversi, due fratelli normali con la stessa data di nascita.
+- Monozigoti = derivano da una singola cellula uovo fecondata da uno spermatozoo. Al concepimento hanno lo stesso DNA.
+
+Solo pochi laboratori capaci di analisi molto avanzate trovano in modulo affidabile le piccolissime differenze del DNA degli omozigoti.  Di conseguenza il CODIS potrebbe non funzionare.
+
+
+Privacy del DNA
+Autenticazione del DNA parentale, avviene secondo le seguenti fasi :
+- DNA in una banca dati
+- Match di un adeguata porzione di DNA dovuta alla parentela
+- Ricerca nell'albero genealogico
+
+È stato misurato che in UK mediamente un individuo condivide 175 terzi cugini. Mandando il proprio DNA ad una azienda per l'analisi si possono rintracciare i parenti perché contengono stesse porzioni di DNA.
+
+Il problema è che espone anche i suoi discendenti e parenti nel futuro, 1 solo individuo espone > 1000 persone al tracciamento.
+
+Accedendo a un DB di 1.28 M persone si copre il 60% della discendenza europea.
+
+Con il 2% della popolazione schedata con DNA si ha il 90% di accuratezza di risalire senza errori fino al 4 cugino.
+
+Oltre alla possibilità di essere riconosciuto il DNA fornisce dati su malattie e predisposizioni, tutte informazioni che se divulgare possono influenzare drasticamente la vita di una persona. Tutta via più di 25 milioni di persone nel 2019 effettuano test sul DNA ad aziende private, le quali espongono il DNA degli utenti.
+
+Nel 2013 il ricercatore Enrich usando dati pubblici ha costruito un albero genealogico di 13 milioni di individui.
+
+
+Orecchio
+Vantaggi :
+- Tratto spesso nascosto ( difficile da copiare)
+- Non si conoscono attacchi realistici su questo tratto
+- Esposto lateralmente e non funzionano i sitemi classici. Solo alcuni algoritmi di face detection capaci di lavorare con volti ruotati possono essere utilizzati.
+- Implementabile su molti device
+- E’ un tratto che può essere usato con i sistemi multimodali che funziona quando gli altri smettono. L'orecchio si può controllare in situazioni non standard.
+
+Svantaggi :
+- No standard ISO
+- Occlusioni, tutta via è molto semplice spostare i capelli per avere un area di acquisizione con il 100% dell'area scoperta.
+- Non sempre applicabile
+
+Lo studio dell'orecchio è ancora un dibattito oggi :
+- Lo studio dell'orecchio ( impronte in CSI)
+
+Ancora oggi è presente in letteratura il dibattito se quest possa essere una prova impugnabile in tribunale al pari di un impronta o la prova del DNA.
+
+- I sistemi basati sull'orecchio (immagini 2D) esistono e mostrano tatti di errore EER che vanno dal 6% (anni fa), fino ad alcuni sistemi recenti EER 4% . Tutta via tale risultati non sono frutto di competizioni indipendenti.
+Le scansioni possono avvenire sia in 2D che in 3D.
+Abbiamo una perfetta separazione tra individui diversi ( inter classe), anche per i gemelli
+
+La separazione intraclasse dipende da i seguenti fattori :
+- Occlusioni
+- Cambio di posa
+- Varianza di scala
+- Illuminazione
+- Rumore
+- Bassa risoluzione
+
+Estrazione di feature :
+- EIGEN EARS ( come autofacce)
+- Distanze dal centro dei punti principali dell'orecchio, non sempre è automatizzabile
+- Confronto fra 2 template, estrazione contorni tramite Gabor Filter
+
+Non esistono comparazioni su larga scala indipendenti per tutti i sistemi commerciali. EER 4% - 6%
+
+Esempi di sistemi commerciali :
+HELIX, si tratta di un sistema biometrico multipiattaforma per l'orecchio. Può essere integrato con la maggior parte delle camera ad oggi esistenti ( smarthpone, videocamere di sorveglianza, webcam, body cam della polizia).
+
+Ad esempio la versione smartphone, sblocca il cellulare utilizzando la telecamera interna del cellulare per scansionare l'orecchio.
+
+---
+
+KeyStroke dynamics
+Si tratta di sistemi di identificazione basati sulla dinamica della battitura alla tastiera e si basano sull'ipotesi che persone diverse battono in modo diverso.
+
+L'analisi della digitazione e firma online sono simi :
+- Tratti biometrici comportamentali
+- Sono variabili nel tempo, dipendono dalle condizioni dell'individuo
+- Buona privacy, poco invasivi
+- Acquisibili da sensori economici
+- Gli algoritmi di matching hanno bisogno di allineamenti temporali
+
+Altre tecniche simili riguardano il tipo di swaping sullo schermo, oppure come l'utente utilizza il mouse. Si tratta di metodi che vanno ad identificare una persona in base al comportamento in un ambiente software o come interagisce con il Sistema operativo.
+
+Con il solo comportamento non è sempre possibile verificare una identità all'atto del login sul sitema ( troppo poca informazione).  Tutta via possono essere utilizzati per identificare se la persona che sta usando il terminale è quella autorizzata, autorizzazione continua dell'utente.
+
+KeyStroke dynamics  -> two factor authentication :
+La possibilità di estratte il template direttamente mentre si scrive la password, di fatto rende possibile una istantanea verifica a due fattori. Se aggiungiamo anche le tecniche OTP al login, allora avremo una verifica a 3 fattori.
+
+Estrazione delle feature :
+Le tecniche di keyStroke dynamic si impiegano a regolare gli accesi ad un terminale, in quanto non serve nessun altro sensore se non la tastiera stessa del terminale.
+
+Le feauture locali che possono essere estratte sono le seguenti :
+- Latenza fra due pressioni
+- Tempo di battitura del taso ( tempo per il quale il tasto rimane premuto)
+
+ utilizzabili per controllo login.
+
+Alcune feature, meno interessanti ( se non combinate con le altre possono essere) :
+- Tempo globale di battitura
+- Frequenza di errori
+- Forza applicata nella battitura di un tasto
+- L'uso di tasti non query
+
+Esistono anche qui delle feature globali calcolabili quando la sessione di battitura è terminata :
+- Associazioni tra tasti, le quali possono essere statiche ( numero di volte che è stata usata la coppia alt + tab) o dinamiche ( tempo che intercorre tra la battitura della coppia di tasti alt tab)
+
+Non utilizzabili per il login, come tutte le feature globali.
+
+Vantaggi :
+- Sitemi di tipo software, oltre alla tastiera del terminale di cui si vuole regolare l'accesso non c'è bisogno di sensori
+- Sono molto ben accetti dagli utenti, poco invasivi
+- Possono essere utilizzati senza che l'utente se ne accorga. L'utente quindi può non essere collaborativo.
+
+Svantaggi :
+- Bassa accuratezza
+- Informazioni utilizzate per rompere le password
+- Cambiando la tastiera spesso i tempi cambiano
+- Ferite sulle mani o traumi possono influenzare la battitura.
+
+Attacchi ai sistemi keyword dynamics :
+Attacco sul canale SSH, è possibile in quanto tale protocollo trasmette immediatamente un pacchetto non appena viene premuto un tasto. DI conseguenza è possibile intercettare la password in base ai tempi di latenza rispecchiati fedelmente dalla LAN.
+
+I tempi di latenza da soli non riescono a dare abbastanza informazioni per recuperare una password immediatamente, ma restituiscono delle probabilità sule coppie di lettere che permettono ai generatori di password di ridurre il tempo di computazione necessario ad effettuare un attacco di tipo brute force.
+
+Biometria Less-constrained e Uncostrained
+
+Less - Constrained biometry :
+- Senza contatto
+- Elevata distanza
+- Condizioni di luce naturale
+- Serve un minimo di cooperazione da parte dell'utente
+
+Uncostreined biometry :
+- Soggetti non cooperativi
+- Scenari non controllati
+
+Contactless fingerprint :
+Si tratta di un sistema biometrico less-constrined, a differenza dei "classici" sistemi biometrici con pressione delle impronte sui sensori, abbiamo i seguenti vantaggi :
+- Assenza delle distorsioni elastiche della pelle nelle immagini delle dita
+- Più resistente alla polvere e allo sporco
+- Maggiore accettazione da parte degli utenti
+- Possibilità di usare telecamere standard come sensori
+
+Svantaggi :
+- Parzialmente compatibile con i vari AFIS
+- Sfondi complessi da gestire
+- Sensibile all'illuminazione e alla posizione / distanza.  L'illuminazione deve essere controllata.
+- I sistemi 2D possono essere vulnerabili a distorsioni di tipo prospettico dell'impronta
+- Tempo di calcolo più lungo
+
+Esistono ad oggi dei sensori 3d contactless per le impronte, dai quali si può ricavare molte informazioni 2D e 3D.
+
+
+Riconoscimento del palmo
+![[Pasted image 20240214092622.png]]
+
+Touch-Based system :
+- Maggiore accuratezza
+- Si lasciano impronte sul device
+- Compatibili con classici sistemi di impronte
+- Minore usabilità
+
+Touchless :
+- Minore o uguale accuratezza
+- Non si lasciano impronte sul device
+- Maggiore usabilità
+- Parziale compatibilità con i sistemi classici.
+
+Si tratta di sitemi biometrici che lavorano sul palmo della mano, hanno un raggio d'azione che parte dall'inzio del polso e arriva fino alle dita, Diverte feauture estraibili con diversa risoluzione :
+- Feature geometriche
+- Linee principali
+- Delta points
+- Minutiae
+- Level3 features
+
+| Risoluzione | Livello feauture estraibili | Descrizione |
+| ---- | ---- | ---- |
+| 300 | Livello 1 | Linee del palmo |
+| 500 | Livello 2 | Minutiae |
+| 1000 | Livello 3 | Pori |
+
+Tra 300-500 dpi è la tipica zona d'azione del palm ricognition.
+
+I moduli di matching sono ad HOC in base alle features estratte vanno da semplici metriche euclidee fino a funzioni complesse con deep learnign.
+
+![[Pasted image 20240214092720.png]]
+
+Touch based 2D :
+- Approccio moto simile alle impronte, di conseguenza molti sensori (scanner) sono multifunzionali e possono acquisire anche le impronte.
+- Si lasciano le tracce delle impronte sullo scanner ( impronte latenti )
+
+2D palmprint touchless
+A differenza dei touched base sono dei sistemi less-constrained
+E richiedono minori dpi per una corretta scansione.
+- Minor cooperazione richiesta
+- Tendono ad avere una minore o uguale accuratezza rispetto ai metodi a contatto.
+- I template estratti non sono compatibili con la maggior parte dei sistemi a contatto
+- Presentano una maggiore usabilità
+- Non lasciando impronte digitali sulla superfice del sensore
+
+Ad oggi vengono ad esempio utilizzati per acesso logico ai terminai, oppure per accesso fisico ad aree ristrette.
+
+Svantaggi :
+- Funzionalità ad alta precisione non sempre utilizzabili ( minuzie)
+- Sensibili agli sfondi, alla illuminazione e ai cambi di posa ( mano troppo vicina o lontana dal sensore)
+
+È possibile utilizzare dei sensori IR per il riconoscimento delle vene, in questo caso non stiamo più parlando di palm recognition ma di vein palm biometrics:
+
+Parliamo di un tipo di acquisizione unconstrained  se abbiamo un sensore senza guide. Tutta via possono essere usate delle particolari guide sui sensori per garantire la corretta distanza lavoro, richiede più cooperazione da parte dell'utente ma garantisce anche una maggiore accuratezza.
+
+Possibili attacchi tramite appositi calchi in cera.
+
+FRR ( false reject rate) = 0.01
+
+3D palm recognition
+2D vs 3D :
+- Vantaggi  del 3D :
+	- Robusto per illuminazione, occlusione, rumore
+	- Resistente alle fordi
+	- Invariante alla posizione alla distanza
+- Svantaggi :
+	- Dispositivo più complesso
+	- Costoso
+
+Acquisizioni del palmo 3D :
+- 1 telecamera -> N acquisizioni nel tempo -> Dati 3D
+- 2 telecamere -> 1 acquisizione multipla -> Dati 3D
+
+Al momento sta venendo ancora sviluppato il primo sistema contactless commerciale per pali e impronte 3D
+
+---
+
+Possibili valutazioni di un sistema biometrico :
+Un sistema biometrico può essere valutato sotto diversi aspetti :
+- Technology evaluations  : = Si tratta di valutazione offline, vengono effettuate utilizzando più algoritmi per la stessa modalità biometrica.
+- Scenario evaluations := Valutazioni in cui le prestazioni del sistema sono valutate in un prototipo o in un applicazione simulata.
+- Operational evaluations := Valutazione un cui l'intera valutazione del sistema biometrico viene determinata in un specifico ambiente applicativo, con un specifico target di utenti.
+
+Ogni valutazione ha le sue regole da seguire ed i suoi parametri da misurare.
+
+Tecnology Evaluation
+- Servono per eseguire prove in "laboratorio" con algoritmi e database di sample standard.
+- Sono il primo passo di applicazione di un algoritmo generico vero un tipo di applicazione più specifica :
+	- Per ottenre i dati vengono utilizzati una serie di sensori sia fisici che virtuali
+	- Sono stati scelti degli utenti di una particolare operazioni.
+- Prevedono un rilascio di parte di dati per effettuare il tuning degli algoritmi. Successivamente gli algoritmi vengono testati su dei dataset a loro sconosciuti.
+	Il data set segreto viene utilizzato anche per il confronto degli algoritmi.
+- Conviene utilizzare queste valutazioni durane le fasi di sviluppo di algoritmi/sistemi.
+
+Scenario evaluation
+- I test controllano un sistema biometrico completo in condizioni che simulano l'applicazione sul campo.
+- Di solito vengono testate diverse combinazioni di algoritmi e sensori. L'obbiettivo è trovare la combinazione che offre performance migliori per creare il sistema finale da implementare.
+- In questa fase di valutazione, la popolazione è chiusa e limitata, quandi la veridicità statistica dei dati può risultare compromessa.
+
+Operational Evaluations
+- Simile alla prova in condizioni di "scenario" ma eseguita :
+	- Su una specifica applicazione
+	- Con uno specifico algoritmo
+	- Sul posto esatto dell'applicazione
+	- Si impiegano gli utenti finale dell'applicazione
+- Si ottengono risultati vicini a quelli che compariranno nell'applicazione finale.
+- I test di questo tipo non sono facilmente ripetibili . Non è possibile ricreare esattamente le stesse condizioni in altri esperimenti di verifica.
+
+Online Evaluation vs Offline evaluation :
+- ONLINE =  Si tratta di tipi di sistemi che pretendono di eseguire l'enrolment o il matching al momento dell'acquisizione del sample da parte del sensore.
+	- Il vantaggio principale è che il sample può essere immediatamente scartato. Tutta via è consigliabile che l'immagine o il segnale siano collezionabili.
+	Con valutazioni su scenari e test operativi, le transazioni online potrebbe essere più semplici per il tester (il sistema funziona al suo solito modo) e, anche se consigliato, l'archiviazione di immagini o segnali non è assolutamente necessario
+- OFFLINE = l'esecuzione dell'enrollment o del matching avviene in un momento separato rispetto all'acquisizione dell'immagine da parte del sensore :
+	- Vengono collezionate una serie di immagini per l'enrollment offline e il matching offline. Questa caratteristica permette di avere un gran controllo su quali tentativi e template devono essere utilizzati in ogni transizione
+	
+	Ad esempio è possibile sistemare il quality check module
+	
+	- I test di tipo tecnologico portano a salvarsi i sample in ingresso per delle computazioni offline.
+
+N.B = i tassi di errore non significano nulla se non è possibile associarli un tasso di confidenza ad ogni misura. Gli intervalli di confidenza vengono costruiti di solito non da esperimenti, ma da un modello statistico che deve descrivere meglio possibile l'esperimento.
+
+
+Comparazione dei sistemi
+La comparazione dei sistemi biometrici, avviene comparando i valori degli indici di merito viste nelle lezioni precedenti :
+- Numeri puri come EER, FTM; FNTM; FAR. Meglio se espresse rispetto alla soglia T del sistema biometrico.
+- Descrittive :
+	- Distribuzione dei genuini pn(t)
+	- Distribuzione degli impostori pm(t)
+- La comparazione maggiormente efficace è quella che si può avere confrontando le curve DET ( o ROC ) dei due sitemi in merito.
+
+MEMO SU ROC
+ROC = 1 - DET
+La curva ROC e la curva DET mostrano la stessa informazione ma si focalizzano su punti di vista differenti. Riferendosi ad autenticazione positiva :
+- La curva DET mostra quanti genuini non passano FNMR
+- La curva ROC mette in mostra quanti genuini passano
+
+Comparazione con DET  :
+Non sempre la comparazione basato su EER è adatta. Bisogna scegliere la regione di funzionamento del sistema in termini di FNMR e FMR e successivamente confrontare i sistemi in quelle due zone della curva, per vedere quale sistema si comporta meglio.
+
+Deve essere richiesto al commitente un grado di FNMR e FMR, nel quale l'applicazione deve lavorare.
+
+Errore zero sempre impossibile nella pratica
+
+![[Pasted image 20240214093256.png]]
+
+Comparazione con CMC
+
+La curva rappresenta la probabilità di identificare una persona in base al pool di impronte che abbiamo selezionato. Le impronte nel pool sono ordinate in base al match score.
+
+Si usano solo gli score, non si usa nessuna soglia.
+
+![[Pasted image 20240214093309.png]]
+
+
+La curva CMC non è derivabile da altri plot
+
+Distribuzioni molto ben separate ( fra genuini e impostori) produrranno poi una buona curva DET e ROC e CMC.
+
+Buona ROC non è detto buona CMC
+
+![[Pasted image 20240214093319.png]]
+
+Diverse CMC possono avere la stessa ROC
+
+Sistemi biometrici diversi ( stessi sample = tecnology evaluation ) con diverse CMC possono avere la stessa DET/ROC.  Perché
+
+- Sheep : basso FMR, basso FNMR
+- Goats  alto FNMR
+- Lambs alto FMR
+- Wolf alto FMR
+
+La distribuzione individuale dice se mi comporto bene verso me stesso e verso gli altri.
+
+Ogni identità contribuisce in maniera unica alle performace del sistema, ovvero le statistiche aggregate DET/ROC non predicono bene le statistiche rank che dipendono esattamente dagli individui.
+
+
+Comparazione con distributori genuini e impostori:
+Le distribuzione dei match score sono alla base delle curve ROC, CMC, DET.
+Sono un ottimo modo per vedere il comportamento del sistema e capire se ci sono :
+- Assimetrie
+- Code non simmetriche
+- outlier
+
+Distribuzioni d'
+D' è la misura del grado di separazione presente fra le distribuzioni degli impostori e dei genuini, calcolato considerando le loro medie e deviazioni standard .
+
+Il parametro d' da solo non è esaustivo , stesso d' ma DET diverse.
+
+
+Indici aggiuntivi :
+Possiamo descrivere le regioni di una curva DET nel seguente modo :
+Regioni con bassi FMR -> regioni di security  1-FAR(t):
+- Bassa possibilità che un utente non autorizzato possa entrare nel sistema.
+- Tutta via la probabilità che un utente autorizzato non riesca ad entrare nel sistema al primo tentativo è più alta. Occorrerà che l'utente presenti più volte il suo tratto biometrico al sensore.
+Regioni con baso FNMR -> regioni di convenience 1-FRR(t) :
+- Un utente autorizzato non perde tempo, in quanto con bassa probabilità non entrerà al primo tentativo
+- Tutta via avremo una percentuale più alta di utenti non autorizzati che riescono ad accedere al sistema.
+
+---
+
+Standard per la biometria
+Standard ISO / IEC 19794 = si occupa dell'interscambio di dati biometrici ( di qualsiasi tipo) fra istituzioni e aziende.
+
+Ma chi sono gli Standard (body) :
+Sono organizzazioni internazionali che si occupano della standardizzazione di tutti i protocolli in uso.
+
+In biometria sono importanti i seguenti standard body :
+- ISO, IEC
+- Alcune organizzazioni informali come Biometric Consortium e BIOAPI. Si tratta di insiemi di aziende che commercializzano sistemi biometrici.
+
+Standard BIOAPI :
+Lo standard bioapi già dal 2000 contiene tutte le specifiche di interazioni tra i moduli che compongono un sistema biometrico.
+
+Fornisce un modello di autenticazione ad alto livello per ogni tecnologia biometrica presente sul mercato.
+
+Include le specifiche delle funzionalità di :
+- Verifica
+- Identificazione
+- Enrollement
+- Interfaccia di interazione con il DB, in modo tale da permettere al biometric service provider di gestire i template nel db in modo ottimale
+
+BSP = è un termine generale che indica il modulo che gestisce le funzionalità biometriche verso i moduli HW e i layer software necessari alle unità.
+
+Bioapi inoltre fornisce le primitive di gestione dei sistemi biometrici distribuiti :
+
+Permette alle applicazioni di gestire le acquisizioni dei campioni. Gestire l'acquisizione su un modulo client e l'enrollment, identification e verification su un modulo server.
+
+
+Progettazione di un sitema monomodale :
+Il problema della progettazione è molto complesso :
+- Vi sono molti parametri in gioco
+- Alcuni di essi sono difficilmente stimabili
+
+I parametri da tenera a mente nella progettazione di un sistema biometrico sono i seguenti :
+- Interoperabilità
+- Gradimento degli utenti
+- Accuratezza
+- Costi
+- Velocità
+- Scalabilità
+- Usabilità
+
+8 domande da porsi per scegliere il tratto biometrico corretto per il nostro sistema :
+- È un applicazione di autenticazione o identificazione ?
+	Se l'applicazione è di identificazione, bisogna considerare i seguenti parametri :
+	- Scalabilità del tratto
+	- Unicità del tratto
+- È un applicazione completamente automatica o semi-automatica ?
+	Se è semi-automatica bisogna :
+	- Prevedere un operatore da affiancare al sensore di acquisizione.
+	- Se l'applicazione è remota o situata in ambienti ostili non sempre è possibile avere la presenza costante di un operatore al controllo della acquisizione.
+- Gli utenti sono collaborativi / allenati all'utilizzo dei sistemi biometrici ?
+	- Esistono degli studi scientifici che dimostrano che se un utente viene istruito all'interazione con i sistemi biometrici, migliorano l'accuratezza e il nuemro di retry necessari nella fase di acquisizione.
+	- Particolarmente vero per alcuni tratti biometrici ( impronte, volto) indifferente per altri ( retina)
+- Il sitema biometrico deve acquisire gli utenti in modo cover o overt (coperto scoperto ) ?
+	- Motivi legati alla privacy
+	- Per le caratteristiche del tratto biometrico ( impronte, iride solo overt)
+- Gli utenti del sistema sono collaborativi o no ?
+	Se i soggetti non sono collaborativi, allora :
+	- Scegliere un tratto con una lunga durabilità temporale e che non possono essere cambiati o frodati
+	- Evitare tratti biometrici comportamentali ( la voce può essere facilmente alterata rispetto all'iride)
+- Quali sono i requisiti sulla capacità di memorizzazione del sistema ?
+I tratti biometrici presentano dei template con degli spazi di memorizzazione eteregogenei fra di loro, possono variare da pochi byte per le impronte a molti kbyte per la voce.
+- Quanto sono stringenti le richieste sulle performance ( accuratezza, velocità) ?
+	- In un sitema multimodale ad esempio se la richiesta di accuratezza non è soddisfatta si potrebbero unire due tratti biometrici veloci .
+- Quali tipi di tratti biometrici sono maggiormente accettati dalla popolazione degli utenti ?
+	- Il tasso di accettazione di un tratto varia molto dalla etnia e dalla cultura delle popolazione di riferimento.
+Ad esempio non si può usare il volto se il 50% della popolazione non lo vuole mostrare.
+
+Classificazione dei sitemi biometrici
+- Applicazioni protette dalla privacy
+Le applicazioni biometriche proteggono delle informazioni personali che potrebbero in altri casi essere compromesse.
+- Applicazioni simpatizzanti della privacy
+Costruite tenendo conto di particolari template riguardanti la privacy
+- Applicazioni privacy neutre
+- Applicazioni invasive per la privacy
+
+Ad esempio alcuni id nazionali.
+
+Vediamo ora se il sitema è favorevole o meno alla privacy in base alle sue caratteristiche.
+
+| Privacy ++ | Privacy -- |
+| ---- | ---- |
+| Overt ( acquisizione con utente informato) | Cover ( acquisizione all'insaputa dell'utente) |
+| Optional ( acquisizione opzionale) | Mandatory ( acquisizione obbligatoria) |
+| Autentication | identification |
+| Private sector | Pubblic sector |
+| L'utente interagisce con il sistema come cliente privato | L'utente interagisce con il sistema come cittadino impiegato. |
+| I dati sono salvati in personal storage | Database storage |
+| Tipo di tratto comportamentale | Tratto fisico |
+| Tratto salvato in template | Tratto salvato in sample |
+
+Confronti tra tratti biometrici :
+
+| . | Finger | Face | Voice | Iris | Hand | Signature |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| maturità | Molto alta | alta | media | alta | alta | Media |
+| Tipo di sensore | contatto | Non intrusivo | Non inrusivo | Non intrusivo | contatto | Contatto |
+| Sensor cost | <200 | <50 | <5 | <300 | <500 | <300 |
+| Template size | <500 | <1000 | <2000 | 256 | <100 | 200 |
+| scalabilità | alta | media | bassa | alta | bassa | akta |
+
+Accuratezza -> IRIS > FINGER > FACE > VOICE
+
+Poco Costoso -> VOICE > FINGER /FACE > IRIS
+
+
+Livelli di accuratezza da impostare
+Quali sono i livelli di FMR e FNMR da richiedere ad un sistema sulal singola comparazione nelle varie condizioni ? Ecco alcuni ordini di grandezza considerati necessari
+
+| Modalità | FNMR | FMR |
+| ---- | ---- | ---- |
+| Autenticazione | 0.1% | 0.1% |
+| Identificazione su larga scala 1M di iD | 10% | 0.0001 % meno di 1 errore su 1Milione |
+| Screening 500 ID | 1% | 0.001% |
+
+Nella stesura del progetto occore tenere a mente che in caso di fallimento del sistema deve essere previsto un meccanismo di bacup. Inoltre devono essere stimati i costi dovuti ad una violazione o ad un errore nel sistema :
+- Stima dei danni se un impostore entra ne sistema
+- Sitema dei cosi per il fermo del sistema
+- Il costo medio di failure to enroll
+- Costo medio per la user education
+
+Passi da seguire per la progettazione di un sistema biometrico :
+in input al problema abbiamo le specifiche del problema ( richieste dal committente), le quali sono :
+- La velocità
+- L'accuratezza ( di solito vi è grande incertezza nella definizione di questa specifica)
+- I requisiti di costo/performance
+
+I successivi passi progettuali sono i seguenti :
+- Stabilire un protocollo per l'acquisizione dei tratti biometrici
+- Scegliere uan rappresentazione interna dei sample adeguata per gli algoritmi di estrazione delle feature scelti.
+- Quale tipo di feature estrarre, locali, globali, ecc..
+- Con quale algoritmi estrarli
+	- Accuratezza
+	- Robustezza al failure to enroll, variabilità negli ingressi
+	- Occupazione delle risorse di computazione e memoria
+- Dati due template quale funzione di matching usiamo per esprimere il concetto di vicinanza fra campioni. Quale algoritmo di matching utilizziamo per implementare la funzione di matching :
+	- Resistenza alla variabilità degli ingressi ( failure to match)
+	- Occupazione di risorse
+- Come organizziamo il DB, quante partizioni ?
+	- Numero di template per individuo
+	- Organizzare il DB in binning per aumentare l'efficienza nelle operazioni di ricerca
+
+
+BSP
+Biometric servcie plattoform,  si tratta di sistemi biometrici che fanno uso di un architettura web.
+
+Nuove soluzioni per far riconoscimento biometrico basate su cloud.
+Vanno a semplificare installazione, uso, gestione e manutenzione del sistema biometrico.
+
+Abbassano i costi ed i tempo per iniziare ad usare un sistema biometrico, specialmente per grandi organizzazioni.
+Necessitano di connessioni affidabili o il servizio viene interrotto.
+
+---
+
+Svantaggi sistemi mono-modali
+Principali svantaggi dei sistemi mono modali :
+- Rumore presente nei dati in ingresso
+- Variabilità intra-classe (variazione di posa, ferite,..)
+- Limitata distintività del tratto biometrico ( firma, mano)
+- Non universalità del tratto  FTE, malattie
+
+- Attacchi sul sensore
+
+Ad esempio :
+Supponiamo di avere un aeroporto con 300.000 e un tasso di FRR ( utenti abilitati non fatti passare al primo tentativo) pari a 10% per faccia, 0.2% per fingerpritn e 10-20% per voce.
+
+Alloca circa :
+- 600 persone usando l'impronta
+- 30000 usando il volto
+- 45000 usando la voce
+
+Autorizzate non verrebbero fatte passare al primo tentativo.
+
+Il numero di FRR di tutti i monomodali sarebbe troppo alto, occore una soluzione multimodale.
+
+
+Sistemi multimodali
+I sitemi multi-modali sono dei sitemi biometrici che utilizzano o sono in grado di utilizzare più di un tratto fisco/ comportamentale per enrollment, identificazione, verifica.
+- Monomodale piccola distinzione tra :
+	- Unibiometric := singola tratto biometrico
+	- Unimodal := una singola immagine,  una singola rappresentazione, una singolo matcher
+- Multimodale := sistemi con tratti biometrici scorrelati ( impronta e volto)
+- Multi Biometrico := cappello generale che comprende sistemi con tratti leggermente correlati, sensori diversi, feature diverse.
+
+L'essere umano è per sua natura multimodale, riesce a riconoscere contemporaneamente diversi tratti biometrici.
+
+I sitemi multi-modali sono più accurati dei sistemi monomodali che li compongono.
+Ad esempio supponiamo di prendere una curva ROC di un sistema che mette assieme i seguenti sistemi mono modali :
+- Firma
+- Face
+- Mano
+
+![[Pasted image 20240214094152.png]]
+
+Vantaggi :
+- L'accuratezza del sitema viene aumentata, in quanto utilizzando N tratti biometrici si riesce ad estrarre più informazione, aumentando le performance del matching
+- Riescono a coprire una fascia più ampia di utenti riducendo il Failure to enroll, gli utenti che non possono utilizzare un tratto si registrano con un altro
+- Più robusti alle frodi, è difficle ingannare più sensori.
+
+Svantaggi :
+- Sono più costosi essendo composti da più unità biometriche
+- Sono più lenti in acquisizione.
+
+Come possono essere composti i sitemi :
+- Tratti biometrici differenti
+- Stesso tratto ma diversi sample
+- Stesso tratto ma differenti dita
+- Differenti tipi di sensori per lo stesso tratto
+- Tipo di feature estratte da un tratto diverse ( minutiae e non minutiae matching).
+
+Alcune composizioni sono vicine ( iride, volto) per semplicità di acquisizione
+
+Altre composizioni sono assolutamente indipendenti
+
+Possibili applicazioni dei sitemi multimodali :
+- Alto
+	- Accesso fisico
+	- Identificazione (passaporti biometrici)
+- Medio
+	- Accesso a rete informatica
+	- Acesso ad ATM
+- Basso
+	- Ecormence
+	- Telefonia
+	- sorveglianza
+
+Tecniche di data fusion biometrica :
+Dato che nei sistemi multimodali andiamo ad acquisire più tratti biometrici, in un certo modulo del sistema dovremo andare ad eseguire una funzione dei vari match score per ogni tratto e decidere se l'utente è autorizzato o meno.
+- Sistemi multimodali :
+	- Fusione a livello delle feature
+	- Fusione a livello di matchscore ( dopo aver eseguito un matching per ogni tratto)
+	- Fusione a livello di Decision module
+- Sitemi muti biometrici
+	- Fusione a livello di matchscore
+	![[Pasted image 20240214094252.png]]
+
+
+Fusione a livello di matching :
+- Nel caso di sistemi multibiometrici con lo stesso tratto biometrico, una solo immagine ma diversi moduli di estrazione delle feature, la fusion dopo il matching risulta la soluzione migliore.  Utilizzo più matcher diversi e ne combino i risultati.
+![[Pasted image 20240214094306.png]]
+- Nel caso di tratti indipendenti tra di loro o stesso tratto ma sample diversi risulta meno efficace.
+Nel caso delle impronte si ottiene il massimo livello di accuratezza usando 3 dita.
+
+Metodi di fusione del match score :
+- Regola della somma
+	La regola della somma si è sempre rilevato in grado di aumentare le prestazione dei test :
+	S = W1S1 + W2S2 + W3S3
+	
+	Si tratta di un metodo di fusione semplice a livello di match score.
+	
+	Esistono due filosofie diverse per unire i vari match score s1,s2…sn:
+	- Classificazione := il classificatore è un modulo che avendo in ingresso i S1,S2,….,Sn match score produce direttamente l'uscita impostore/genuino :
+		- Reti neurali
+		- Questi sistemi per poter fissare i parametri necessitano di dati e di una fase di allenamento ( trainer classsifier).
+	- Regressione/combinatore  := è un modulo che combina in modo lineare, non lineare, logico/combinatorio i valori S1, S2, …,Sn e passa un univo valore S al decisore finale ( che può essere di nuovo un calssificatore o una semplice)  :
+		- AND/OR funzioni, votazioni, max, min
+		- Reti neurali e regressori.
+- Normalizzazione degli score
+	Per confrontare fra loro correttamente i vari valori di diversi matcher ( valori di distanza tra template ) è necessario eseguire prima un operazione di normalizzazione :
+	- Omogeneizzare il significato = per esempio s1 è una similarità e s2 è una distanza.
+	- Riportare alla stessa scala=  le uscite s1,…sn potrebbero essere su scale diverse, ad esempio s1 potrebbe andare da 0 a 100 e s2 da 0 a 10000
+	- Uniformare le distribuzioni dei valori
+	
+	Meglio tenere conto di :
+	- Robustezza, Una valore di matching completamente diverso dagli altri potrebbe essere errato e non deve stravolgere la normalizzazione.
+	Mediana e sigmodale in questa categoria
+	- Efficienza, occorre normalizzare avendo dei parametri stimati, che però devono essere vicini a quelli reali dei match score, altrimenti la normalizzazione non è corretta.
+	
+	Rientrano in questa categoria le normalizzazioni min e max
+	Occorre provare sempre diverse normalizzazioni per vedere quale permette la percentuale di FAR più bassa.
+
+![[Pasted image 20240214094438.png]]
+
+Sistemi gerarchici
+Nei sitemi multimodali gerarchici avvengono acquisizioni in cascata in base al risultato dell'identificazione precedente.
+- In verification riducono il tempo di verifica
+- In identificazione permettono attraverso la tecncnia del "pruning" di ridurre le porzioni di DB da analizzare mediane indexing
+- Per ridurre il tempo medio di verifica, occorre acquisire prima i tratti biometrici maggiormente accurati, tutta via in alcune applicazioni è l'utente che sceglie che tratto mostrare.
+
+Fusione a livello di features :
+Non è semplice andare ad effettuare una fusione delle features, in quanto abbiamo un eccessiva eterogeneità fra le features ( per esempio volto con autofacce e impronta con minuzie).
+
+DI solito la fusione è possibile quando si vanno ad estrarre degli array numerici da ogni features.
+
+Esempio :
+Supponiamo di avere i tratti della mano e del volto :
+- Dalla mano si estraggono 14 lunghezze
+- Dal volto 25 coefficenti delle autofacce
+
+- Si normalizzano le features
+- Si concatenano i due array
+- Si calcola :
+	- La distanza euclidea fra i template concatenati
+	- La distanza fra le singole features
+- Si uniscono i risultati e si passano ad un classificatore o regressore
+
+Esistono due approcci per aumentare ancora le prestazioni se si tiene conto delle caratteristiche singolari di ogni utente :
+- Ogni utente avrà una distanza personalizzata dagli impostori, di conseguenza ad ogni utente saranno assegnate delle soglie di decisione personalizzate, per ogni tratto biometrico.
+Dalle distribuzioni dei genuini possiamo calcolare il FRR per ogni utente, se fossero stati impostori controllavamo il FAR.
+
+- Si vanno a pesare diversamente i vari tratti biometrici, in funzione della qualità del sample acquisito in fase di enrollment e dell'importanza del tratto. Teniamo dunque conto :
+	- Qualità del tratto
+	- Errore di quel tratto biometrico 
+
+In altra parole si hanno due set di parametri nella progettazione di un sistema modale, la soglia dei matching ed i loro pesi.
+
+
+Integrazione con soft biometrics
+Alcuni tratti si soft biometrics ( non utilizzabili per identificare o verificare l'identità di individuo da soli) possono essere utilizzati assieme ai tratti biometrici :
+
+Alcuni esempi di tratti :
+- Genere
+- Sesso
+- Peso
+- Altezza
+- Colore della pelle
+- Colore degli occhi
+
+L'integrazione corretta si un sistema di soft-biometrics è a valle del modulo di matching primario.
+Il modulo di matching primario ritornerà una probabilità che la feature  x appartiene all'utente w del database ( sarà il match score più alto). P(W|x).
+Dobbiamo quandi progettare il post processing module  :
+Sceglieremo uan funzione che rappresenti al meglio i valori dati dalla formula di bayes per tutti gli utenti ovvero P(W|x,y) con y tratto si soft biometrics.
+
+I sitemi innovativi "multiple immages" o i 2.5d faces sono di fatto sei sistemi multi biometrici per il volto.
+Il sistema iride + retina implementa due delle più accurate e resistenti agli attacchi tecnologie presenti sul mercato. Ad oggi tutta via è possibile falsificare allo stesso tempo i due tratti superando i test di liveness disponibili su questi sitemi.
