@@ -49,3 +49,4 @@ Struttura dei moduli secondo Dougam
 [[Feature Extraction Module]]
 
 [[Iride - Algoritmi di matching]]
+[[Iride - Exploits]]

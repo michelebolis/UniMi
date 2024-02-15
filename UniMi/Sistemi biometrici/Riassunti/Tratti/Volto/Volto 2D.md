@@ -1,0 +1,6 @@
+[[Volto 2D - Sensori]]
+[[Volto 2D - Face Detection]]
+[[Volto 2D - Feature Extraction]]
+[[Volto 2D - PCA]]
+[[Volto 2D - Matching]]
+[[Volto 2D - Exploits]]

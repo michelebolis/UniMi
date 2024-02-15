@@ -23,38 +23,41 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sistemi biometrici/Riassunti/Tratti/Tratti biometrici.md",
+                "file": "Sistemi biometrici/Riassunti/Sistemi biometrici - Riassunto.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c81be38a9c5e2696",
+            "id": "b416510f534e40df",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sistemi biometrici/Riassunti/Tratti/Iride/Sistemi biometrici - Iride.md",
+                "file": "Sistemi biometrici/Riassunti/Aspetti/Aspetti generali e regolamentazione.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f721e3da94703c20",
+            "id": "a08ee4804a8bcb41",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Sistemi biometrici/Riassunti/Tratti/Iride/Feature Extraction Module.md",
-                "mode": "source",
-                "source": false
+                "file": "Sistemi biometrici/Sistemi biometrici.canvas",
+                "viewState": {
+                  "x": 155.16461550163683,
+                  "y": -251.08416520447554,
+                  "zoom": -0.9999999999999996
+                }
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -104,7 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 255.5110321044922
+    "width": 354.5
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -120,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sistemi biometrici/Riassunti/Tratti/Iride/Feature Extraction Module.md",
+                "file": "Sistemi biometrici/Riassunti/Aspetti/Aspetti generali e regolamentazione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sistemi biometrici/Riassunti/Tratti/Iride/Feature Extraction Module.md",
+                "file": "Sistemi biometrici/Riassunti/Aspetti/Aspetti generali e regolamentazione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sistemi biometrici/Riassunti/Tratti/Iride/Feature Extraction Module.md"
+                "file": "Sistemi biometrici/Riassunti/Aspetti/Aspetti generali e regolamentazione.md"
               }
             }
           },
@@ -220,45 +223,45 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "f721e3da94703c20",
+  "active": "b416510f534e40df",
   "lastOpenFiles": [
-    "Sistemi biometrici/Riassunti/Tratti/Iride/Sistemi biometrici - Iride.md",
-    "Sistemi biometrici/Riassunti/Tratti/Iride/Modulo quality Checker.md",
-    "Sistemi biometrici/Riassunti/Tratti/Iride/IRISCODE.md",
-    "Sistemi biometrici/Riassunti/Tratti/Iride/Iride - Sensori.md",
-    "Sistemi biometrici/Riassunti/Tratti/Iride/Iride - Composizione.md",
-    "Sistemi biometrici/Riassunti/Tratti/Tratti biometrici.md",
-    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Matching di due impronte digitali.md",
-    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Tratti biometrici - Impronte digitali.md",
-    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Minutae based Matching.md",
-    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Image Based Matching.md",
-    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Texture Based Matching FilterBanks.md",
-    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Estrazione delle feature di un impronta.md",
-    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Manipolazione immagine, Enhancement.md",
-    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Rappresentazione.md",
-    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Storia.md",
-    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Estrarre L2.md",
-    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Estrarre L1.md",
-    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Filtraggio iniziale.md",
+    "Sistemi biometrici/Sistemi biometrici.canvas",
     "Sistemi biometrici/Riassunti/Sistemi biometrici - Riassunto.md",
-    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Sensori.md",
-    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Unicità.md",
-    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Sistemi AFIS.md",
-    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Livelli di analisi.md",
-    "Sistemi biometrici/Riassunti/Standard per la biometria.md",
+    "Sistemi biometrici/Riassunti/Aspetti/Aspetti generali e regolamentazione.md",
+    "Sistemi biometrici/Riassunti/Statistica/Biometrici - Statistica.md",
+    "Sistemi biometrici/Riassunti/Statistica/Sistemi biometrici - Modelli statistici.md",
+    "Sistemi biometrici/Riassunti/Statistica/Statistica - DET e ROC.md",
+    "Sistemi biometrici/Riassunti/Statistica/Statistica - FNM e FM.md",
+    "Sistemi biometrici/Riassunti/Statistica",
+    "Sistemi biometrici/Riassunti/Tratti/Tratti biometrici.md",
+    "Sistemi biometrici/Riassunti/Tratti/Volto/Volto - Facial Fingerprinting.md",
+    "Sistemi biometrici/Riassunti/Tratti/Volto/Tratti biometrici - Volto.md",
+    "Sistemi biometrici/Riassunti/Tratti/Volto/Volto 2D vs 3D.md",
+    "Sistemi biometrici/Riassunti/Tratti/Volto/Volto 3D - Matching.md",
+    "Sistemi biometrici/Riassunti/Tratti/Volto/Volto 3D.md",
+    "Sistemi biometrici/Riassunti/Tratti/Volto/Volto 3D - Introduzione.md",
+    "Sistemi biometrici/Riassunti/Tratti/Volto/Volto 2D.md",
+    "Sistemi biometrici/Riassunti/Tratti/Volto/Volto 2D - Exploits.md",
+    "Sistemi biometrici/Riassunti/Tratti/Volto/Volto 2D - Matching.md",
+    "Sistemi biometrici/Riassunti/Tratti/Volto/Volto 2D - PCA.md",
+    "Sistemi biometrici/Riassunti/Tratti/Volto/Volto 2D - Feature Extraction.md",
+    "Sistemi biometrici/Riassunti/Tratti/Volto/Volto 2D - Face Detection.md",
+    "Sistemi biometrici/Riassunti/Tratti/Volto/Volto 2D - Sensori.md",
+    "Sistemi biometrici/Riassunti/Tratti/Volto/Volto 3D - Exploits.md",
+    "Sistemi biometrici/Riassunti/Tratti/Volto/Volto - Template standard.md",
+    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Template.md",
+    "Sistemi biometrici/Riassunti/Tratti/Iride/Sistemi biometrici - Iride.md",
+    "Sistemi biometrici/Riassunti/Tratti/Iride/Iride - Exploits.md",
+    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Sistemi biometrici/Riassunti/Tratti/Retina",
     "Sistemi biometrici/Riassunti/Tratti/Mano e palmo",
     "Sistemi biometrici/Riassunti/Tratti/Orecchio",
     "Sistemi biometrici/Riassunti/Tratti/Voce",
     "Sistemi biometrici/Riassunti/Tratti/Volto",
     "Sistemi biometrici/Riassunti/Tratti/KeyStroke dynamics",
-    "Sistemi biometrici/Riassunti/Tratti/KeyStroke dynamics/Sistemi biometrici - KeyStroke dynamics.md",
-    "Sistemi biometrici/Riassunti/Progettazione/Regole generali di progettazione dei sistemi biometrici.md",
     "Sistemi biometrici/Riassunti/Tratti/DNA",
     "Sistemi biometrici/Riassunti/Tratti/Firma",
     "Sistemi biometrici/Riassunti/Progettazione",
-    "Sistemi biometrici/Riassunti/Tipi di sistemi",
     "Sistemi biometrici/Img/Pasted image 20240214094438.png",
     "Sistemi biometrici/Img/Pasted image 20240214094306.png",
     "Sistemi biometrici/Img/Pasted image 20240214094252.png",
@@ -273,7 +276,6 @@
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/ES.canvas",
     "Ricerca operativa/Ricerca operativa.canvas",
-    "Sistemi biometrici/Sistemi biometrici.canvas",
     "Sistemi embedded/Sistemi embedded.canvas"
   ]
 }

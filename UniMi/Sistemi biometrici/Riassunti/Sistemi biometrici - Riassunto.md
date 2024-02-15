@@ -1,4 +1,5 @@
 [[Biometria - Overview]]
+[[Biometrici - Statistica]]
 [[Tratti biometrici]]
 
 [[Aspetti generali e regolamentazione]]
@@ -6,7 +7,6 @@
 [[Aspetti analitici di un sistema biometrico]]
 
 [[Regole generali di progettazione dei sistemi biometrici]]
-[[Biometrici - Statistica]]
 
 [[Valutazioni di un sistema biometrico]]
 [[Standard per la biometria]]

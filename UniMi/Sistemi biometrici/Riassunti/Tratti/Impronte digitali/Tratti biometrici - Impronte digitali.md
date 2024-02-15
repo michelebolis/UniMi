@@ -71,7 +71,7 @@ Alte prestazioni e tanta integrabilità
 Permette di effettuare dei match on card, supporta sia PC, mobile che sistemi embedded.
 Abbiamo un accuratezza del 99.98% ed è in grado di eseguire 1 milione di matching al secondo.
 
-[[Impronte digitali - Rappresentazione]]
+[[Impronte digitali - Template]]
 [[Impronte digitali - Unicità]]
 
 Nel modulo di estrazione delle feature si eseguono tipicamente i seguenti passi :

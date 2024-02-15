@@ -1,1 +1,31 @@
-{}
+{
+	"nodes":[
+		{"id":"b5700a9cd269ccad","x":-240,"y":-280,"width":480,"height":500,"type":"file","file":"Sistemi biometrici/Riassunti/Sistemi biometrici - Riassunto.md"},
+		{"id":"1e72fd817aaae016","x":-300,"y":-900,"width":600,"height":500,"type":"file","file":"Sistemi biometrici/Riassunti/Overview/Biometria - Overview.md"},
+		{"id":"a20e1ac89517ff0d","x":-1120,"y":-1110,"width":700,"height":920,"type":"file","file":"Sistemi biometrici/Riassunti/Overview/Riconoscimento delle entità.md"},
+		{"id":"dcdf6b941f779bc6","x":-380,"y":-2160,"width":760,"height":920,"type":"file","file":"Sistemi biometrici/Riassunti/Overview/Metodi classici di autenticazione.md"},
+		{"id":"a2c2410587bfe861","x":-1240,"y":-2130,"width":740,"height":860,"type":"file","file":"Sistemi biometrici/Riassunti/Overview/Metodi biometrici.md"},
+		{"id":"074b1a88c58a42b8","x":480,"y":-2337,"width":772,"height":967,"type":"file","file":"Sistemi biometrici/Riassunti/Overview/Sistemi biometrici - Funzionamento generico.md"},
+		{"id":"33ba0e25e3934294","x":-314,"y":300,"width":629,"height":650,"type":"file","file":"Sistemi biometrici/Riassunti/Tratti/Tratti biometrici.md"},
+		{"id":"1406abef9c0e5f5b","x":1147,"y":1760,"width":1047,"height":3025,"type":"file","file":"Sistemi biometrici/Riassunti/Statistica/Biometrici - Statistica.md"},
+		{"id":"2e924a929c3d5b6a","x":2421,"y":1800,"width":846,"height":800,"type":"file","file":"Sistemi biometrici/Riassunti/Statistica/Statistica - FNM e FM.md"},
+		{"id":"381e4c4fa5030066","x":2421,"y":2720,"width":846,"height":1080,"type":"file","file":"Sistemi biometrici/Riassunti/Statistica/Statistica - DET e ROC.md"},
+		{"id":"e935676d81bcc56c","x":2421,"y":3880,"width":846,"height":2520,"type":"file","file":"Sistemi biometrici/Riassunti/Statistica/Sistemi biometrici - Modelli statistici.md"},
+		{"id":"fa4a492c36a6a3bb","x":1360,"y":-3310,"width":794,"height":1940,"type":"file","file":"Sistemi biometrici/Riassunti/Overview/Storia della biometria.md"},
+		{"id":"5071c038ab77f377","x":1080,"y":-1110,"width":885,"height":1257,"type":"file","file":"Sistemi biometrici/Riassunti/Aspetti/Aspetti generali e regolamentazione.md"}
+	],
+	"edges":[
+		{"id":"cb0f3999d0584cc6","fromNode":"b5700a9cd269ccad","fromSide":"top","toNode":"1e72fd817aaae016","toSide":"bottom"},
+		{"id":"cbc21bc7c3350f18","fromNode":"1e72fd817aaae016","fromSide":"left","toNode":"a20e1ac89517ff0d","toSide":"right"},
+		{"id":"121ed030cbf91dae","fromNode":"1e72fd817aaae016","fromSide":"top","toNode":"dcdf6b941f779bc6","toSide":"bottom"},
+		{"id":"49c5c36bfe4cdcb2","fromNode":"dcdf6b941f779bc6","fromSide":"left","toNode":"a2c2410587bfe861","toSide":"right"},
+		{"id":"d01b143e7f1a5283","fromNode":"1e72fd817aaae016","fromSide":"top","toNode":"074b1a88c58a42b8","toSide":"bottom"},
+		{"id":"9961e08450f69629","fromNode":"1e72fd817aaae016","fromSide":"top","toNode":"fa4a492c36a6a3bb","toSide":"bottom"},
+		{"id":"94c7b9c0f4efd601","fromNode":"b5700a9cd269ccad","fromSide":"bottom","toNode":"33ba0e25e3934294","toSide":"top"},
+		{"id":"e9a17eb1d301cc1a","fromNode":"1406abef9c0e5f5b","fromSide":"right","toNode":"2e924a929c3d5b6a","toSide":"left"},
+		{"id":"9d91a43df368ea4c","fromNode":"1406abef9c0e5f5b","fromSide":"right","toNode":"381e4c4fa5030066","toSide":"left"},
+		{"id":"0f37591a0f6d9a0f","fromNode":"1406abef9c0e5f5b","fromSide":"right","toNode":"e935676d81bcc56c","toSide":"left"},
+		{"id":"e26ec5e792badbb1","fromNode":"b5700a9cd269ccad","fromSide":"right","toNode":"1406abef9c0e5f5b","toSide":"top"},
+		{"id":"446c8fddf2b03ee0","fromNode":"b5700a9cd269ccad","fromSide":"right","toNode":"5071c038ab77f377","toSide":"left"}
+	]
+}
