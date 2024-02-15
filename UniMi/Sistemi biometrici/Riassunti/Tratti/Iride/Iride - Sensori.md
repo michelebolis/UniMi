@@ -1,24 +1,21 @@
-Iride - Sensori
 Prima di parlare sei sensori in commercio, andiamo a stabilire quale luce è meglio per acquisire l'iride :
-- Luce visibile
-	- Si vedono gli strati che compongono l'iride
-	- Si vede meno la tessitura ( più interessante per il sistema biometrico)
+- `Luce visibile`
+	- `Si vedono gli strati` che compongono l'iride
+	- `Si vede meno la tessitura` (più interessante per il sistema biometrico)
 	- La melanina dei pigmenti assorbe la luce visibile ( quindi se non irradia non la vediamo)
-	- Inoltre con la luce visibili abbiamo una maggiore variabilità intraclasse , rendendo il problema del riconoscimento ancora più complesso
+	- Inoltre con la luce visibili abbiamo una `maggiore variabilità intraclasse`, rendendo il problema del riconoscimento ancora più complesso
 	- Gli occhi scuri sono più problematici e offrono meno dettagli utili al riconoscimento
-	- La fonte di luce utilizzata non può essere troppo intensa, altrimenti darebbe fastidio all'utente.
-- Luce infrarossa (IR)
-	- La melanina riflette molto meglio la luce IR
+	- La fonte di luce utilizzata `non può essere troppo intensa`, altrimenti darebbe fastidio all'utente.
+- `Luce infrarossa` (IR)
+	- `La melanina riflette molto meglio la luce IR`
 	- Si vedono meglio i pattern casuali e distintivi tipici dell'iride
 
-Le feature maggiormente interessanti per il sistema biometrico si vedono meglio con la luce IR ( infrarossi) piuttosto che con la luce visibile.
+`Le feature maggiormente interessanti per il sistema biometrico si vedono meglio con la luce IR` piuttosto che con la luce visibile.
 
-Per catturare i complessi dettagli dell'iride, il sistema di acquisizione deve poter risolvere con almeno 70 px il raggio dell'iride ( di solito 100-140 px).
-Si usano CDD monocromatici ( almeno 640*480 ) capaci di acquisire ad infrarossi.
+Per catturare i complessi dettagli dell'iride, il sistema di acquisizione deve poter risolvere con `almeno 70 px il raggio dell'iride ( di solito 100-140 px)`.
+Si usano CDD monocromatici (almeno $640*480$ ) capaci di acquisire ad infrarossi.
 
-L'illuminazione migliore per rilevare i dettagli deve cadere nella banda di 700-900 nm ( non visibile all'occhio) , è quindi necessario utilizzare telecamere con ottiche variabili per trova-re l'occhio nel volto e poi zoomare verso l'occhio per acquisirlo alla massima risoluzione possibile :
-
-- In alcuni casi si usano 2 telecamere con due ottiche diverse al posto di uno zoom.
+`L'illuminazione migliore per rilevare i dettagli deve cadere nella banda di 700-900 nm` ( non visibile all'occhio), è quindi necessario utilizzare telecamere con ottiche variabili per trovare l'occhio nel volto e poi zoomare verso l'occhio per acquisirlo alla massima risoluzione possibile: in alcuni casi si usano 2 telecamere con due ottiche diverse al posto di uno zoom.
 
 Esempi di sistemi
 Una delle più grandi applicazioni dei sistemi biometrici basati sull'iride è il sistema nazionale delle frontiere degli emirati arabi :

@@ -1,4 +1,3 @@
-Feature Extraction Module
 La grande variabilità delle immagini dell'iride, fanno fallire la maggior parte degli approccio di filtraggio visti per le impronte digitali. Approcci come segmentazione, binarizzazione non funzioneranno.
 
 Dougman invece propone il seguente approccio :

@@ -13,14 +13,7 @@ Si utilizzano vari tipi di sensori per identificare un individuo tramite la sua 
 - Funzionare anche con piccoli overlap (interruzioni nell'impronta), sovrapporre due impronte potrebbe risultare difficile.
 - Aumentare la qualità del sample rilevato, qualità dei tratti diverse.
 
-Il riconoscimento avviene tramite tre diversi approcci :
-- `Correlation-based`: algoritmi che permettono di fare delle `correlazioni tra due immagini`, verificano che parti dell'immagine siano simili. `Troppo semplice`, lontano dagli standard odierni. Adatto per sistemi di piccole dimensioni.
-- `Minutia-based`: si tratta di "fenomeni" particolari che avvengono sui ridge. Vengono utilizzati in particolare per l'analisi le biforcazioni dei ridge e dove si interrompono. Riconosciamo l'impronta per una particolare disposizione dei punti particolari.
-	Metodo più utilizzato.
-- `Ridge feauture based`: algoritmi che analizzano nel dettaglio la struttura delle singole creste/valichi che costituiscono un impronta.
-	Ridge = venature dell'impronta
-
-[[Tratti biometrici - Storia impronte digitali]]
+[[Impronte digitali - Storia]]
 
 Come sono Composte le impronte digitali
 Le impronte digitali sono `creste e valli della pelle` sui palmi e sulle dita di molti animali.
@@ -68,7 +61,7 @@ La sentenza 2559 del 14.11.1959 espressa dalla Corte di Cassazione indica in 16 
 
 Tecnologie concorrenti sul mercato :
 - Sistema della ditta M2SYS :
-Si tratta di un sistema multimodale ABIS ( automatic, biometric identification system)
+Si tratta di un sistema multimodale `ABIS Automatic Biometric Identification System`
 Si tratta di un architettura che supporta il matching biometrico sia in identificazione ( 1;N) che in verifica (1:1), il sistema può cercare un match in oltre 200 milioni di irdi o 100 milioni di impronte al secondo
 - Sistema della dita dermalog
 Come prima si tratta di un sistema multimodale.
@@ -78,33 +71,7 @@ Alte prestazioni e tanta integrabilità
 Permette di effettuare dei match on card, supporta sia PC, mobile che sistemi embedded.
 Abbiamo un accuratezza del 99.98% ed è in grado di eseguire 1 milione di matching al secondo.
 
-
-
-Rappresentazioni delle impronte
-La rappresentazione delle impronte digitali in un sistema biometrico dipende dal :
-- [[Impronte digitali - Sensori]]
-- [[Impronte digitali - Livelli di analisi]]
-- `Caratteristiche che si estraggono`:
-	- Posizione dei ridge ( orientamento. Forma)
-	- Minuzie ( coordinate, orientamento, tipo)
-	- Pori (coordinate)
-
-Il sample della impronta è una immagine in toni di grigio quando si controlla :
-- Risoluzione
-- Bit per pixel
-
-Un esempio : L'FBI digitalizza le impronte del DB nazionale a 100 DPI con 8 bit per pixel. Una cartella con 10 impronte occupa circa 10 MB.
-
-Formati di compressione:
-- Usando un `formato "lossless"`, con le impronte si ottiene un `fattore di compressione 2:1`, troppo poco per un archivio di grandi dimensioni. Il formato di compressione è interno a sistema, viene utilizzato per salvare le immagini sul DB al fine di non utilizzare troppo spazio di memorizzazione.
-- Esistono dei formati di compressione appositi per le immagini di impronte digitali:
-	- L'FBI e il NIST americano usano il seguente algoritmo (WSQ) `Wave scalar Quantization`
-
-Formati di interscambio:
-Oltre al formato di rappresentazione interna del templare, nel sistema biometrico ( che può essere privato o segreto essendo del produttore), esistono formati di interscambio dei dati fra istituzioni/aziende
-`ISOC/IEC 19794` è un documento ISO che regola i "`biometric interchange formats`"
-
-
+[[Impronte digitali - Rappresentazione]]
 [[Impronte digitali - Unicità]]
 
 Nel modulo di estrazione delle feature si eseguono tipicamente i seguenti passi :
