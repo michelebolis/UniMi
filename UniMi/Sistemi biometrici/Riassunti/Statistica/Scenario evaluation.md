@@ -1,0 +1,3 @@
+I test controllano un sistema biometrico completo in condizioni che simulano l'applicazione sul campo.
+Di solito vengono testate diverse combinazioni di algoritmi e sensori. L'obbiettivo è trovare la combinazione che offre performance migliori per creare il sistema finale da implementare.
+In questa fase di valutazione, la popolazione è chiusa e limitata, quandi la veridicità statistica dei dati può risultare compromessa.

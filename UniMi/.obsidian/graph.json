@@ -1,6 +1,6 @@
 {
   "collapse-filter": true,
-  "search": "- (file:\"Reti di calcolatori - Riassunto\" OR file:\"Ingegneria del software - Riassunto\")",
+  "search": "- (file:\"Reti di calcolatori - Riassunto\" OR file:\"Ingegneria del software - Riassunto\" OR file:\"Riassunto unico\")",
   "showTags": true,
   "showAttachments": true,
   "hideUnresolved": true,
@@ -67,6 +67,6 @@
   "repelStrength": 13.6213333333333,
   "linkStrength": 0.662103703703704,
   "linkDistance": 348,
-  "scale": 0.036596568974779004,
+  "scale": 0.05130776381992365,
   "close": false
 }

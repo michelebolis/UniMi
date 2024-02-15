@@ -86,3 +86,5 @@ Caratterizzazione degli utenti the Doddington zoo
 - WOLVES (`lupi`): Individui `capaci di manipolare il tratto biometrico` (i tratti compartamentali di solito) per impersonare un utente legittimato. Un lupo entra al posto di una pecora. Aumentano il `False Accept Rate`
 
 [[Sistemi biometrici - Modelli statistici]]
+[[Valutazioni di un sistema biometrico]]
+[[Comparazione dei sistemi biometrici]]

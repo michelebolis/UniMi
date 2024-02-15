@@ -15,7 +15,7 @@ Ad esempio supponiamo di prendere una curva ROC di un sistema che mette assieme 
 - Face
 - Mano
 
-![[Pasted image 20240214094152.png]]
+![[Pasted image 20240214094152.png|300]]
 
 Vantaggi :
 - L'accuratezza del sitema viene aumentata, in quanto utilizzando N tratti biometrici si riesce ad estrarre più informazione, aumentando le performance del matching

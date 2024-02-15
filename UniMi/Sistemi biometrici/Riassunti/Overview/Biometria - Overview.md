@@ -8,3 +8,8 @@ Definizione di `Biometria`: insieme di tecniche automatiche per il riconosciment
 [[Metodi classici di autenticazione]]
 [[Sistemi biometrici - Funzionamento generico]]
 [[Storia della biometria]]
+
+[[Aspetti generali e regolamentazione]]
+[[Aspetti analitici di un sistema biometrico]]
+
+[[Regole generali di progettazione dei sistemi biometrici]]
