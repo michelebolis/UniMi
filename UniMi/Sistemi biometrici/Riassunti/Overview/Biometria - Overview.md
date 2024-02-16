@@ -5,7 +5,6 @@ Abbiamo due possibilità di identificazione in più in base a cosa sei o casa fa
 Definizione di `Biometria`: insieme di tecniche automatiche per il riconoscimento degli individui basato sulle loro caratteristiche fisiche e comportamentali.
 
 [[Riconoscimento delle entità]]
-[[Metodi classici di autenticazione]]
 [[Sistemi biometrici - Funzionamento generico]]
 [[Storia della biometria]]
 

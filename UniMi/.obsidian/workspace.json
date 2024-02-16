@@ -16,24 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "a08ee4804a8bcb41",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Sistemi biometrici/Sistemi biometrici.canvas",
-                "viewState": {
-                  "x": -1122.3325657092555,
-                  "y": 1581.6608452086803,
-                  "zoom": -4
-                }
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -83,7 +67,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 340.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -99,7 +84,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sistemi biometrici/Sistemi biometrici.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +100,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sistemi biometrici/Sistemi biometrici.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,9 +121,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Sistemi biometrici/Sistemi biometrici.canvas"
-              }
+              "state": {}
             }
           },
           {
@@ -199,10 +180,28 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "a08ee4804a8bcb41",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
-    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Sistemi biometrici/Sistemi biometrici.canvas",
+    "Sistemi biometrici/Riassunti/Tratti/DNA/Sistemi biometrici - DNA.md",
+    "Sistemi biometrici/Riassunti/Tratti/DNA/DNA - Composizione.md",
+    "Sistemi biometrici/Riassunti/Tratti/KeyStroke dynamics/Sistemi biometrici - KeyStroke dynamics.md",
+    "Sistemi biometrici/Riassunti/Tratti/Orecchio/Sistemi biometrici - Orecchio.md",
+    "Sistemi biometrici/Riassunti/Tratti/Voce/Sistemi biometrici - Voce.md",
+    "Sistemi biometrici/Riassunti/Tratti/Voce/Voce - Sensori.md",
+    "Sistemi biometrici/Riassunti/Tratti/Voce/Voce - Riconoscimento.md",
+    "Sistemi biometrici/Riassunti/Tratti/Retina/Sistemi biometrici - Retina.md",
+    "Sistemi biometrici/Riassunti/Tratti/Firma/Biometria della firma.md",
+    "Sistemi biometrici/Riassunti/Tratti/Mano e palmo/Sistemi biometrici - Mano e Palmo.md",
+    "Sistemi biometrici/Riassunti/Tratti/Mano e palmo/Palmo 3D.md",
+    "Sistemi biometrici/Riassunti/Tratti/Mano e palmo/Palmo 2D.md",
+    "Sistemi biometrici/Riassunti/Tratti/Mano e palmo/Mano - Matching.md",
+    "Sistemi biometrici/Riassunti/Tratti/Mano e palmo/Mano - Sensori.md",
+    "Sistemi biometrici/Riassunti/Tipi di sistemi/Tecniche di data fusion biometrica.md",
+    "Sistemi biometrici/Riassunti/Tipi di sistemi/Sistemi multimodali gerarchici.md",
+    "Sistemi biometrici/Riassunti/Tipi di sistemi/Sistemi multimodali.md",
+    "Sistemi biometrici/Riassunti/Tipi di sistemi/Sistemi monomodali.md",
+    "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Sistemi biometrici/Riassunti/Standard per la biometria.md",
     "Sistemi biometrici/Riassunti/Standard BIOAPI.md",
     "Sistemi biometrici/Riassunti/Statistica/Comparazione dei sistemi biometrici.md",
@@ -210,24 +209,6 @@
     "Sistemi biometrici/Riassunti/Statistica/Biometrici - Statistica.md",
     "Sistemi biometrici/Riassunti/Tratti/Sample indipendente.md",
     "Sistemi biometrici/Riassunti/Tratti/Comparazione sistemi e tratti biometrici.md",
-    "Sistemi biometrici/Riassunti/Tratti/Anello debole della catena di identificazione.md",
-    "Sistemi biometrici/Riassunti/Tratti/Sample vs Template.md",
-    "Sistemi biometrici/Riassunti/Tratti/Sistemi biometrici - Percezione degli utenti.md",
-    "Sistemi biometrici/Riassunti/Tratti/Variazioni del tratto.md",
-    "Sistemi biometrici/Riassunti/Statistica/Valutazioni di un sistema biometrico.md",
-    "Sistemi biometrici/Riassunti/Statistica/Operational Evaluation.md",
-    "Sistemi biometrici/Riassunti/Statistica/Tecnology Evaluation.md",
-    "Sistemi biometrici/Riassunti/Tratti/Soft Biometrics.md",
-    "Sistemi biometrici/Riassunti/Tratti/Proprieta di un tratto biometrico.md",
-    "Sistemi biometrici/Riassunti/Statistica/Scenario evaluation.md",
-    "Sistemi biometrici/Riassunti/Sistemi biometrici - Riassunto.md",
-    "Sistemi biometrici/Riassunti/Overview/Biometria - Overview.md",
-    "Sistemi biometrici/Riassunti/Progettazione/Regole generali di progettazione dei sistemi biometrici.md",
-    "Sistemi biometrici/Riassunti/Progettazione/Miglioramenti a ricerca, organizzazione e scalabilità del DB.md",
-    "Sistemi biometrici/Riassunti/Progettazione/Miglioramenti al matching.md",
-    "Sistemi biometrici/Riassunti/Progettazione/Miglioramenti della rappresentazione.md",
-    "Sistemi biometrici/Riassunti/Progettazione/Miglioramenti dell'acquisizione.md",
-    "Sistemi biometrici/Riassunti/Aspetti/Aspetti analitici di un sistema biometrico.md",
     "Sistemi biometrici/Riassunti/Statistica",
     "Sistemi biometrici/Riassunti/Tratti/Retina",
     "Sistemi biometrici/Riassunti/Tratti/Mano e palmo",

@@ -3,7 +3,7 @@ Il riconoscimento della entità consiste nelle operazione che associa una identi
 Il riconoscimento può essere suddiviso in due categorie :
 - Verifica dell'identità (`autenticazione`): "equivale alla domanda: sono chi dico di essere?"
 	- `Conferma o nega l'identità dichiarata dall'utente`
-	- Metodi one to one (1:1)
+	- Metodi one to one (1:1) [[Metodi classici di autenticazione]]
 - Ricerca dell'identità (`identificazione`): "chi sono io?"
 	- Al sistema biometrico non viene presentato nulla, e `a carico del sistema riconoscere l'identità dell'utente che si presenta`, verificando che sia presente nella lista degli utenti ammessi.
 	- Metodi one to many (1:N)

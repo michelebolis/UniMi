@@ -1,12 +1,11 @@
-Tecniche di data fusion biometrica
-Dato che nei sistemi multimodali andiamo ad acquisire più tratti biometrici, in un certo modulo del sistema dovremo andare ad eseguire una funzione dei vari match score per ogni tratto e decidere se l'utente è autorizzato o meno.
+Dato che nei sistemi multimodali andiamo ad acquisire più tratti biometrici, in un certo modulo del sistema dovremo andare ad eseguire una `funzione dei vari match score per ogni tratto e decidere se l'utente è autorizzato o meno`.
 - Sistemi multimodali :
 	- Fusione a livello delle feature
 	- Fusione a livello di matchscore ( dopo aver eseguito un matching per ogni tratto)
 	- Fusione a livello di Decision module
-- Sitemi muti biometrici
+- Sistemi muti-biometrici
 	- Fusione a livello di matchscore
-	![[Pasted image 20240214094252.png]]
+	![[Pasted image 20240214094252.png|300]]
 
 
 Fusione a livello di matching :
@@ -43,4 +42,4 @@ Metodi di fusione del match score :
 	Rientrano in questa categoria le normalizzazioni min e max
 	Occorre provare sempre diverse normalizzazioni per vedere quale permette la percentuale di FAR più bassa.
 
-![[Pasted image 20240214094438.png]]
+	![[Pasted image 20240214094438.png|400]]
