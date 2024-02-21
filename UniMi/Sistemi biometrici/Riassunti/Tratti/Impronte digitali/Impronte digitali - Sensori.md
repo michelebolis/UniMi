@@ -10,7 +10,7 @@ L'acquisizione off-line è divisa in due fasi fondamentali :
 - I polpastrelli vengono prima passati su un tampone inchiostrato e poi vengono rotolati su una scheda di carta
 - La scheda di acquisizione viene acquisita con uno scanner ottico o telecamera ad alta risoluzione.
 
-Le `impronte digitali latenti`, sono di tipo off-line ( Ad esempio le impronte trovare su una scena del crimine). Sono prodotte dalle tracce lasciate dal grasso secreto della pela,  esso lascia sulle superfici una traccia evidenziabile con speciali reagenti chimici
+Le `impronte digitali latenti`, sono di tipo off-line ( Ad esempio le impronte trovare su una scena del crimine). Sono prodotte dalle `tracce lasciate dal grasso secreto della pela`,  esso lascia sulle superfici una traccia evidenziabile con speciali reagenti chimici
 - `Live - Scan`:
 Nella modalità live scan, invece l'immagine digitale dell'impronta è `acquisita in tempo reale`, tramite il contatto del polpastrello con un apposito sensore
 

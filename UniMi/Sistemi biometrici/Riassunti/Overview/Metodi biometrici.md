@@ -11,7 +11,7 @@ Vantaggi:
 
 Svantaggi:
 - I sistemi biometrici hanno un costo maggiore
-- I sitemi biometrici rispondono in realtà con un livello di matching e non con una decisione binaria "yes/no"
+- I sistemi biometrici rispondono in realtà con un livello di matching e non con una decisione binaria "yes/no"
 - Alcune persone li vedono come un invasione della propria privacy, non vogliono essere schedati.
 - Non possono essere cambiati a piacimento, a differenza di una password, la quale può essere facilmente cambiata.
 - Alcune persone con delle disabilità, potrebbero non disporre di alcuni tratti biometrici ( voce, impronte digitali usurate, iride) 

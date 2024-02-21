@@ -63,7 +63,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -183,6 +184,10 @@
   "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
     "Sistemi biometrici/Sistemi biometrici.canvas",
+    "Sistemi biometrici/Riassunti/Statistica/Valutazioni di un sistema biometrico.md",
+    "Sistemi biometrici/Riassunto unico.md",
+    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Estrarre L1.md",
+    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Livelli di analisi.md",
     "Sistemi biometrici/Riassunti/Tratti/DNA/Sistemi biometrici - DNA.md",
     "Sistemi biometrici/Riassunti/Tratti/DNA/DNA - Composizione.md",
     "Sistemi biometrici/Riassunti/Tratti/KeyStroke dynamics/Sistemi biometrici - KeyStroke dynamics.md",
@@ -205,10 +210,6 @@
     "Sistemi biometrici/Riassunti/Standard per la biometria.md",
     "Sistemi biometrici/Riassunti/Standard BIOAPI.md",
     "Sistemi biometrici/Riassunti/Statistica/Comparazione dei sistemi biometrici.md",
-    "Sistemi biometrici/Riassunti/Statistica/Statistica - DET e ROC.md",
-    "Sistemi biometrici/Riassunti/Statistica/Biometrici - Statistica.md",
-    "Sistemi biometrici/Riassunti/Tratti/Sample indipendente.md",
-    "Sistemi biometrici/Riassunti/Tratti/Comparazione sistemi e tratti biometrici.md",
     "Sistemi biometrici/Riassunti/Statistica",
     "Sistemi biometrici/Riassunti/Tratti/Retina",
     "Sistemi biometrici/Riassunti/Tratti/Mano e palmo",

@@ -1,5 +1,3 @@
-Impronte digitali - Rappresentazione
-Rappresentazioni delle impronte
 La rappresentazione delle impronte digitali in un sistema biometrico dipende dal :
 - [[Impronte digitali - Sensori]]
 - [[Impronte digitali - Livelli di analisi]]
@@ -12,7 +10,7 @@ Il sample della impronta è una immagine in toni di grigio quando si controlla :
 - Risoluzione
 - Bit per pixel
 
-Un esempio : L'FBI digitalizza le impronte del DB nazionale a 100 DPI con 8 bit per pixel. Una cartella con 10 impronte occupa circa 10 MB.
+Un esempio : L'FBI digitalizza le impronte del DB nazionale a 100 DPI con 8 bit per pixel. `Una cartella con 10 impronte occupa circa 10 MB`.
 
 Formati di compressione:
 - Usando un `formato "lossless"`, con le impronte si ottiene un `fattore di compressione 2:1`, troppo poco per un archivio di grandi dimensioni. Il formato di compressione è interno a sistema, viene utilizzato per salvare le immagini sul DB al fine di non utilizzare troppo spazio di memorizzazione.

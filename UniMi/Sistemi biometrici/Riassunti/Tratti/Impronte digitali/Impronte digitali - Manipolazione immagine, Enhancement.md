@@ -35,7 +35,7 @@ Mediante la `rotazione della maschera` si cerca anche di fare "match" con la dir
 ![[Pasted image 20231106104255.png]]
 
 - Filtro di `Gabor`
-Viene creato il cosi detto `banco dei filtri`, preparato per varie angolazioni e varie distanze inter-ridge. Viene quindi estesa il filtro precedente, con l'idea di utilizzare più dita.
+Viene creato il cosi detto `banco dei filtri`, preparato per varie angolazioni e varie distanze inter-ridge. Viene quindi `estesa il filtro precedente, con l'idea di utilizzare più dita`.
 
 La maschera che offre migliore "match" viene impiegata nella convoluzione di quella zona dell'immagine. 
 - Quando si analizzano regioni “unrecovable” il filtro viene disattivato per non creare falsi ridge (artefatti).

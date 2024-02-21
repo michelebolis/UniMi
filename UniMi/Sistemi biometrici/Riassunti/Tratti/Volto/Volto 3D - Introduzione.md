@@ -11,7 +11,7 @@ L'acquisizione 3D di un volto può svolgersi nei seguenti modi:
 - `Luce strutturata`
 	Si illumina il volto da riprendere, con un proiettore in grado di produrre una fascio di luce strutturata ed una/due telecamere.
 	
-	Con i sistemi code light, si proiettano in successione tanti pattern binari con bande sempre più fini. Il sistema ricostruisce la tridimensionalità usando la deformazione delle bande nell'immagine.
+	Con i sistemi `code light, si proiettano in successione tanti pattern binari con bande sempre più fini. Il sistema ricostruisce la tridimensionalità usando la deformazione delle bande nell'immagine`.
 	
 	Per aumentare l'area della superficie 3d acquisita si possono usare due tecniche:
 	- Si usano due telecamere

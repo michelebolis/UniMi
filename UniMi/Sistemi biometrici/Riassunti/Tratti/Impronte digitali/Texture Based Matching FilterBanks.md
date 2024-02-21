@@ -1,4 +1,3 @@
-Texture Based Matching FilterBanks
 Questa tecnica estrae delle informazioni locali da N regioni dell'immagine. 
 Usando un `banco di filtri Gabor` di M filtri, estrae M coefficienti/immagini filtrate per ciascuna delle N regioni elaborate. L'algoritmo di matching compara N * M elementi fra le due immagini.
 

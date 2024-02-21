@@ -1,4 +1,3 @@
-Unicità delle impronte:
 È possibile stimare ( come fece Galton) la possibilità che due persone abbiano le stesse minuzie. Si tratta del classico problema intrapreso da un sitema biometrico oppure da un esperto di impronte digitali.
 
 Formulazione del problema :

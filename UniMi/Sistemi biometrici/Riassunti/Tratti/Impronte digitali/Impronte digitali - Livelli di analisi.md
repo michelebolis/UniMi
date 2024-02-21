@@ -2,14 +2,13 @@
 
 Una impronta può essere esaminata su tre livelli :
 - `Globale` (livello 1)
-	- A livello globale possiamo osservare :
-	- Il flusso delle linee ( arch, loop, whorl o sottoclassificazioni)
-	- I punti singolari ( core, delta)
+	- Il flusso delle linee (arch, loop, whorl o sottoclassificazioni)
+	- I punti singolari (`core, delta`)
 	- La forma dell'impronta
 	- L'orientamento
-	- La frequenza delle righe dell'immagine.
+	- La `frequenza delle righe` dell'immagine.
 - `Locale` (livello 2)
-A livello locale è possibile identificare fino a circa 150 diverse caratteristiche locali delle creste/ridge  ( minutae).
+A livello locale è possibile identificare fino a circa `150` diverse caratteristiche locali delle creste/ridge (minutae).
 Le due principali caratteristiche sono le terminazioni e le biforcazioni.
 
 Ad esempio FBI per i sistemi automatici AFIS usa solo terminazioni e biforcazioni.
@@ -17,8 +16,8 @@ Ad esempio FBI per i sistemi automatici AFIS usa solo terminazioni e biforcazion
 
 - `Ultra fine` (livello 3)
 A livello ultra-fine è possibili individuare i seguenti dettagli :
-- Intra-creste ( i porti della sudorazione)
-- Inter-creste ( incipient ridges)
+- Intra-creste (i porti della sudorazione)
+- Inter-creste (incipient ridges)
 
 I dettagli del livello 3 sono considerati altamente distintivi, ma si rilevano solo ad altissima risoluzione, almeno 1000 dpi ed in condizioni ideali. Questo in quanto i porti hanno una dimensione di 60-250 micron
 

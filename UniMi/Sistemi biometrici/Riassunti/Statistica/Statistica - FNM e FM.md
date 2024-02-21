@@ -9,5 +9,5 @@ Supponiamo di poter variare la soglia s del sistema e fissarla ad un `valore T i
 
 Il funzionamento di un sistema biometrico dal punto di vista degli errori commessi è principalmente descritto dai `tassi FMR(T) e FNMR(T)` descritti per tutti i valori della soglia.  Tali valori inoltre sono in funzione della soglia scelta T.
 
-L'andamento del sistema può essere descritto dalla `funzione DET` (Decision Rrror Tradeoff), mostra come variano i valori di FNMR (y)  e FMR (x) al variare del parametro T.  Esprime `quanti genuini non sono riusciti ad entrare nel sistema`.
+L'andamento del sistema può essere descritto dalla `funzione DET` (Decision Error Tradeoff), mostra come variano i valori di FNMR (y)  e FMR (x) al variare del parametro T.  Esprime `quanti genuini non sono riusciti ad entrare nel sistema`.
 La curva Det non rappresenta nessuna distribuzione.

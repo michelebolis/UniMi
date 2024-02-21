@@ -48,6 +48,7 @@ Il parametro d' da solo `non è esaustivo`, stesso d' ma DET diverse.
 Regioni con `bassi FMR` -> regioni di `security` $1-FAR(t)$
 - `Bassa possibilità che un utente non autorizzato possa entrare nel sistema`.
 - Tuttavia `la probabilità che un utente autorizzato non riesca ad entrare nel sistema al primo tentativo è più alta`. Occorrerà che l'utente presenti più volte il suo tratto biometrico al sensore.
+
 Regioni con `basso FNMR` -> regioni di `convenience` $1-FRR(t)$
 - Un utente autorizzato non perde tempo, in quanto con bassa probabilità non entrerà al primo tentativo
 - Tutta via avremo una percentuale più alta di utenti non autorizzati che riescono ad accedere al sistema.

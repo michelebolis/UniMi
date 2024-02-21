@@ -1,6 +1,4 @@
-Algoritmi di matching 3D
 Avendo a disposizione sensori 2D e 3D non è detto che non si possano usare congiuntamente
-
 Schema delle possibilità attualmente possibili :
 ![[Pasted image 20231115100500.png|400]]
 Il confronto fra due volti con tecniche 3D presenta i seguenti passaggi:
@@ -10,7 +8,7 @@ Il confronto fra due volti con tecniche 3D presenta i seguenti passaggi:
 
 Per approfondire i risultati ottenibili da queste tecniche ci `dobbiamo riferire solo a prove comparative indipendenti` (dai produttori) sui dati pubblici e non rilasciati prima dei test ( secretati). In ogni caso abbiamo i seguenti risultati:
 - FAR (false accept rate) fissato a 0.001 tra tutti i partecipanti. Viene misurato il tasso in verifica. Quante volte il sistema sbaglia nel dire tu sei tu.
-- Windows hello face autentication FAR = 0.001% 5% FRR  :
+- Windows hello face autentication FAR = 0.001% 5% FRR
 Alcuni aspetti interessati di questo sistema :
 - Vengono `utilizzate delle caratteristiche facciali locali`, l'algoritmo prende centinaia di sample da aeree differenti della faccia. `Nessuna immagine della faccia viene memorizzata`. Si tratta di un sistema a feauture locali
 - `La rappresentazione deve passare un modello di machine learning prima che l'algoritmo di matching lo identifichi come genuino`. In caso di autenticazione ( con pochi utenti del sistema) la soglia di matching viene alzata.

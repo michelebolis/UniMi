@@ -42,7 +42,7 @@ The type of pattern in which
 - with a recurve in front of each
 - Accidental: a volte categorizzata come Whorl, combina due tipi diversi di pattern o nessuno
 
-Ognuna delle 3 categorie si divide a sua volta in due sotto-categorie (tranne Whorl), per un totale di 3 categorie e 8 sotto-categorie.
+`Ognuna delle 3 categorie si divide a sua volta in due sotto-categorie` (tranne Whorl), per un totale di `3 categorie e 8 sotto-categorie`.
 Le classi inoltre non sono distribuite uniformemente. Ad esempio ARCHES è quella contenente meno impronte, mentre loop è la categoria più diffusa.
 
 I sistemi di classificazione `attribuiscono una certa categoria ad un impronta` in base a :
