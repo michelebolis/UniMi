@@ -14,3 +14,22 @@ MATCH (a) 
 UNWIND keys(a) AS key
 RETURN collect(distinct key)
 ```
+
+Generazione sample [https://github.com/iansrobinson/graph-databases-use-cases]
+Formula per creazione db da excel [https://towardsdatascience.com/getting-started-with-neo4j-in-10-minutes-94788d99cc2b]
+Profiling [https://neo4j.com/blog/data-profiling-holistic-view-neo4j/]
+Performance Python [https://neo4j.com/docs/python-manual/current/performance/]
+
+```python
+numbers = [{"value": random()} for _ in range(10000)]
+driver.execute_query("""
+    WITH $numbers AS batch
+    UNWIND batch AS node
+    MERGE (n:Number)
+    SET n.value = node.value
+    """, numbers=numbers,
+)
+```
+
+[https://www.mockaroo.com/]
+[https://faker.readthedocs.io/en/master/]

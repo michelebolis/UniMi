@@ -18,7 +18,7 @@
             }
           },
           {
-            "id": "ffe48721ac1b62bb",
+            "id": "cf46f0674f443b6c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -28,9 +28,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "9670671f635eb730",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Materiale tesi/Tesi - Problemi da risolvere.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -96,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Materiale tesi/Fonti tesi.md",
+                "file": "Materiale tesi/Tesi - Problemi da risolvere.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Materiale tesi/Fonti tesi.md",
+                "file": "Materiale tesi/Tesi - Problemi da risolvere.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Materiale tesi/Fonti tesi.md"
+                "file": "Materiale tesi/Tesi - Problemi da risolvere.md"
               }
             }
           },
@@ -196,9 +208,19 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "ffe48721ac1b62bb",
+  "active": "9670671f635eb730",
   "lastOpenFiles": [
+    "Ricerca operativa/Ricerca operativa.canvas",
+    "Ricerca operativa/Appunti.md",
+    "Materiale tesi/Tesi - Problemi da risolvere.md",
     "Materiale tesi/Fonti tesi.md",
+    "Ricerca operativa/Slide/03 - Algoritmo del simplesso.pdf",
+    "Ricerca operativa/Riassunti/Teorema fondamentale della PL.md",
+    "Ricerca operativa/Riassunti/Forme/ES/Es forma canonica.md",
+    "Materiale tesi/Neo4j - Python.md",
+    "Materiale tesi/Graph database - Riassunto.md",
+    "Ingegneria del software.zip",
+    "Ingegneria del software/Ingegneria del software - Riassunto.md",
     "Materiale tesi",
     "Sistemi biometrici/Riassunti/Tratti/Volto/Tratti biometrici - Volto.md",
     "Sistemi biometrici/Riassunti/Tratti/Volto/Volto 2D - Face Detection.md",
@@ -218,14 +240,6 @@
     "Sistemi biometrici/Riassunti/Tratti/Orecchio/Sistemi biometrici - Orecchio.md",
     "Sistemi biometrici/Riassunti/Tratti/Voce/Sistemi biometrici - Voce.md",
     "Sistemi biometrici/Riassunti/Tratti/Voce/Voce - Sensori.md",
-    "Sistemi biometrici/Riassunti/Tratti/Voce/Voce - Riconoscimento.md",
-    "Sistemi biometrici/Riassunti/Tratti/Retina/Sistemi biometrici - Retina.md",
-    "Sistemi biometrici/Riassunti/Tratti/Firma/Biometria della firma.md",
-    "Sistemi biometrici/Riassunti/Tratti/Mano e palmo/Sistemi biometrici - Mano e Palmo.md",
-    "Sistemi biometrici/Riassunti/Tratti/Mano e palmo/Palmo 3D.md",
-    "Sistemi biometrici/Riassunti/Tratti/Mano e palmo/Palmo 2D.md",
-    "Sistemi biometrici/Riassunti/Tratti/Mano e palmo/Mano - Matching.md",
-    "Sistemi biometrici/Riassunti/Tratti/Mano e palmo/Mano - Sensori.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Sistemi biometrici/Riassunti/Statistica",
     "Sistemi biometrici/Riassunti/Tratti/Retina",
@@ -234,8 +248,6 @@
     "Sistemi biometrici/Riassunti/Tratti/Voce",
     "Sistemi biometrici/Riassunti/Tratti/Volto",
     "Sistemi biometrici/Riassunti/Tratti/KeyStroke dynamics",
-    "Sistemi biometrici/Riassunti/Tratti/DNA",
-    "Sistemi biometrici/Riassunti/Tratti/Firma",
     "Sistemi biometrici/Img/Pasted image 20240214094438.png",
     "Sistemi biometrici/Img/Pasted image 20240214094306.png",
     "Sistemi biometrici/Img/Pasted image 20240214094252.png",
@@ -249,7 +261,6 @@
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/ES.canvas",
-    "Ricerca operativa/Ricerca operativa.canvas",
     "Sistemi embedded/Sistemi embedded.canvas"
   ]
 }

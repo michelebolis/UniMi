@@ -12,16 +12,17 @@ else
 		"Stop: problema illimitato"
 ```
 
-Nella prima parte si trova una soluzione di base ammissibile.
-Wile finche la base non è Ammissibile e non abbiamo dimostrato che il problema è Infeasible
-L'iterazione fondamentale del simplesso è il Pivot step
+1. `Si trova una soluzione di base ammissibile`.
+	 `While finche la base non è Ammissibile e non abbiamo dimostrato che il problema è inammissibile`
+	L'iterazione fondamentale del simplesso è il Pivot step
+2. SE il problema è inammissibile, allora l'algoritmo termina
+3. `Si cerca una soluzione ottima`
+	`Ogni iterazione conserva l'ammissibilità`
+	Possibilità:
+	- Si trova la `soluzione ottima` 
+	- Si scopre che il `problema è illimitato`
 
-SE il problema è inammissibile, allora l algoritmo termina
-Nella seconda parte si cerca una soluzione ottima
-Ogni iterazione conserva l ammissibilita
-O si trova la soluzione ottima o si scopre che il problema è illimitato
-
-Infeasible = Ammissibile
+Infeasible = Test che verifica che la base sia ammissibile
 Unbounded = Test che verifica che il problema sia illimitato
 
 Parti:
