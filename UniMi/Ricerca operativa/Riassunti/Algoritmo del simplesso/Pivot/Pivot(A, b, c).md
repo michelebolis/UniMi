@@ -8,4 +8,9 @@ Geometricamente è come se ci muovessimo dal un vertice a un vertice adiacente
 [[Es Pivot]]
 [[Pivot(A, b, c) - Interpretazioni]]
 
-Per determinare l'elemento pivot sono necessarie una regola di scelta della colonna e una regola di scelta della riga
+Per determinare l'elemento pivot sono necessarie una [[Regola di scelta della colonna]] e una [[Regola di scelta della riga]]
+
+[[Variabili limitate]]
+[[Inizializzazione]]
+
+[[Algoritmo del simplesso duale]]

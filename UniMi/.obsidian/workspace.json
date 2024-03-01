@@ -16,33 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "cf46f0674f443b6c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Materiale tesi/Fonti tesi.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9670671f635eb730",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Materiale tesi/Tesi - Problemi da risolvere.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -108,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Materiale tesi/Tesi - Problemi da risolvere.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Materiale tesi/Tesi - Problemi da risolvere.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Materiale tesi/Tesi - Problemi da risolvere.md"
-              }
+              "state": {}
             }
           },
           {
@@ -208,38 +179,50 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "9670671f635eb730",
+  "active": "47136b92c595cdff",
   "lastOpenFiles": [
-    "Ricerca operativa/Ricerca operativa.canvas",
+    "Ricerca operativa/Slide/Index slide.md",
+    "Ricerca operativa/Slide/04 - Teoria della dualita.pdf",
     "Ricerca operativa/Appunti.md",
-    "Materiale tesi/Tesi - Problemi da risolvere.md",
-    "Materiale tesi/Fonti tesi.md",
+    "Ricerca operativa/Ricerca operativa.canvas",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Teorema fondamentale della dualità lineare.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Teorema dello scarto complementare.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Teorema della dualità in forma forte.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Teorema della dualità in forma forte - DIM.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Lemma di Farkas.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Lemma di Farkas - DIM.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Teorema della dualità in forma debole.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Teorema della dualità in forma debole - DIM.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Lemma di Farkas - forma forte.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Algoritmo del simplesso duale.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Algoritmo del simplesso duale - Esempio.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Teoria della dualità.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Teorema fondamentale dell'algebra.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Metodo delle variabili artificiali.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Metodo delle variabili artificiali - Ottimizzazione.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Inizializzazione.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Metodo big M.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Regola di scelta della riga.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Regola di scelta della riga - Esempio.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Metodo di Balinski-Gomory.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Metodo di Balinski-Gomory - Esempio.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Problema ausiliario illimitato.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Balinski-Gomory - Test di inammissibilità.md",
+    "Ricerca operativa/Img/Pasted image 20240301110647.png",
+    "Ricerca operativa/Img/Pasted image 20240301110621.png",
+    "Ricerca operativa/Img/Pasted image 20240301110524.png",
+    "Ricerca operativa/Img/Pasted image 20240301110508.png",
+    "Ricerca operativa/Img/Pasted image 20240301110449.png",
+    "Ricerca operativa/Img/Pasted image 20240301110407.png",
+    "Ricerca operativa/Img/Pasted image 20240301105705.png",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Variabili limitate.md",
+    "Ricerca operativa/Img/Pasted image 20240301104240.png",
+    "Ricerca operativa/Img/Pasted image 20240301104138.png",
+    "Ricerca operativa/Img/Pasted image 20240301104128.png",
     "Ricerca operativa/Slide/03 - Algoritmo del simplesso.pdf",
-    "Ricerca operativa/Riassunti/Teorema fondamentale della PL.md",
-    "Ricerca operativa/Riassunti/Forme/ES/Es forma canonica.md",
-    "Materiale tesi/Neo4j - Python.md",
-    "Materiale tesi/Graph database - Riassunto.md",
     "Ingegneria del software.zip",
-    "Ingegneria del software/Ingegneria del software - Riassunto.md",
     "Materiale tesi",
-    "Sistemi biometrici/Riassunti/Tratti/Volto/Tratti biometrici - Volto.md",
-    "Sistemi biometrici/Riassunti/Tratti/Volto/Volto 2D - Face Detection.md",
-    "Sistemi biometrici/Riassunti/Tratti/Volto/Volto 2D - Feature Extraction.md",
-    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Tratti biometrici - Impronte digitali.md",
-    "Sistemi biometrici/Riassunti/Standard per la biometria.md",
-    "Sistemi biometrici/Riassunti/Statistica/Sistemi biometrici - Modelli statistici.md",
-    "Sistemi biometrici/Riassunti/Statistica/Statistica - FNM e FM.md",
     "Sistemi biometrici/Sistemi biometrici.canvas",
-    "Sistemi biometrici/Riassunti/Statistica/Valutazioni di un sistema biometrico.md",
-    "Sistemi biometrici/Riassunto unico.md",
-    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Estrarre L1.md",
-    "Sistemi biometrici/Riassunti/Tratti/Impronte digitali/Impronte digitali - Livelli di analisi.md",
-    "Sistemi biometrici/Riassunti/Tratti/DNA/Sistemi biometrici - DNA.md",
-    "Sistemi biometrici/Riassunti/Tratti/DNA/DNA - Composizione.md",
-    "Sistemi biometrici/Riassunti/Tratti/KeyStroke dynamics/Sistemi biometrici - KeyStroke dynamics.md",
-    "Sistemi biometrici/Riassunti/Tratti/Orecchio/Sistemi biometrici - Orecchio.md",
-    "Sistemi biometrici/Riassunti/Tratti/Voce/Sistemi biometrici - Voce.md",
-    "Sistemi biometrici/Riassunti/Tratti/Voce/Voce - Sensori.md",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Sistemi biometrici/Riassunti/Statistica",
     "Sistemi biometrici/Riassunti/Tratti/Retina",
@@ -247,17 +230,6 @@
     "Sistemi biometrici/Riassunti/Tratti/Orecchio",
     "Sistemi biometrici/Riassunti/Tratti/Voce",
     "Sistemi biometrici/Riassunti/Tratti/Volto",
-    "Sistemi biometrici/Riassunti/Tratti/KeyStroke dynamics",
-    "Sistemi biometrici/Img/Pasted image 20240214094438.png",
-    "Sistemi biometrici/Img/Pasted image 20240214094306.png",
-    "Sistemi biometrici/Img/Pasted image 20240214094252.png",
-    "Sistemi biometrici/Img/Pasted image 20240214094152.png",
-    "Sistemi biometrici/Img/Pasted image 20240214093319.png",
-    "Sistemi biometrici/Img/Pasted image 20240214093309.png",
-    "Sistemi biometrici/Img/Pasted image 20240214093256.png",
-    "Sistemi biometrici/Img/Pasted image 20240214092720.png",
-    "Sistemi biometrici/Img/Pasted image 20240214092622.png",
-    "Sistemi biometrici/Img/Pasted image 20240214091828.png",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/ES.canvas",
