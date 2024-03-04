@@ -16,8 +16,21 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "5ed2638bd4c79b8c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Materiale tesi/Tesi - Problemi da risolvere.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,6 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Materiale tesi/Tesi - Problemi da risolvere.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Materiale tesi/Tesi - Problemi da risolvere.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +135,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Materiale tesi/Tesi - Problemi da risolvere.md"
+              }
             }
           },
           {
@@ -179,8 +196,10 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "47136b92c595cdff",
+  "active": "5ed2638bd4c79b8c",
   "lastOpenFiles": [
+    "Materiale tesi/Fonti tesi.md",
+    "Materiale tesi/Tesi - Problemi da risolvere.md",
     "Ricerca operativa/Slide/Index slide.md",
     "Ricerca operativa/Slide/04 - Teoria della dualita.pdf",
     "Ricerca operativa/Appunti.md",
@@ -207,7 +226,6 @@
     "Ricerca operativa/Riassunti/Algoritmo del simplesso/Metodo di Balinski-Gomory.md",
     "Ricerca operativa/Riassunti/Algoritmo del simplesso/Metodo di Balinski-Gomory - Esempio.md",
     "Ricerca operativa/Riassunti/Algoritmo del simplesso/Problema ausiliario illimitato.md",
-    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Balinski-Gomory - Test di inammissibilità.md",
     "Ricerca operativa/Img/Pasted image 20240301110647.png",
     "Ricerca operativa/Img/Pasted image 20240301110621.png",
     "Ricerca operativa/Img/Pasted image 20240301110524.png",
@@ -215,7 +233,6 @@
     "Ricerca operativa/Img/Pasted image 20240301110449.png",
     "Ricerca operativa/Img/Pasted image 20240301110407.png",
     "Ricerca operativa/Img/Pasted image 20240301105705.png",
-    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Variabili limitate.md",
     "Ricerca operativa/Img/Pasted image 20240301104240.png",
     "Ricerca operativa/Img/Pasted image 20240301104138.png",
     "Ricerca operativa/Img/Pasted image 20240301104128.png",
