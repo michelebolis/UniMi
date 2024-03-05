@@ -745,3 +745,98 @@ Iterazione del simplesso duale: nel problema duale, nella colonna del -4, scelgo
 Iterazione: nel problema duale scelgo la colonna -2, scegliendo il pivot 2
 ![[Pasted image 20240301101046.png]]
 
+
+Analisi post-ottimale
+Si possono fare in maniera semplice con i problemi PL
+Dopo aver calcolato la soluzione ottima del problema, MA prima di prendere una decisione conseguente, è importante valutare la robustezza della soluzione
+I dati sono spesso affetti da errori, approssimazioni
+
+Quanto è robusta la soluzione ottima rispetto a possibili cambiamenti nel valore dei dati che sono stati usati per calcolarla?
+
+- Analisi di sensitività
+
+Input (dati che cambiano): $A$, $b$, $c$
+con 
+- $A$ matrice dei coefficienti dei vincoli
+- $b$ termini noti
+- $c$ coefficienti della funzione obiettivo
+Output: $B^*$, $x^*$, $z^*$
+con
+- $B^*$ la base ottima
+- $x^*$ il valore delle variabili
+- $z^*$ la soluzione ottima
+
+Scopo: valutare l'intervallo nel quale puo variare ogni coefficiente $c_j$ e $b_i$ SENZA che cambi la base ottima $B^*$
+La base rimane ottima finche valgono le condizioni di ammissibilità e di ottimalità
+- Ammissibilità: $x_B = B^{-1}b \geq 0$
+- Ottimalità: $\bar{c}_N = c_N - c_BB^{-1}N \geq 0$
+Le condizioni di ammissibilità dipendono solo da $b$
+Le condizioni di ottimalità dipendono solo da $c$
+
+
+Variazione di un coefficiente $c_j$
+Intuizione geometrica
+![[Pasted image 20240305133849.png]]
+![[Pasted image 20240305141057.png]]
+Quando $c_1$ diminuisce, pesa meno nella funzione obiettivo, tanto che per $c_1 = 1$ la base ottima cambia
+Quando $c_1$ aumenta, le curve di livello tendono a diventare verticali per $c_1 -> \infty$ e quindi la base ottima non cambia
+$B^* = \{1, 2, 3\}$ è ottima per $1 \leq c_1 < \infty$
+OSS anche se $B^*$ e $x^*$ non cambia, $z^*$ cambia
+
+
+Supponiamo di analizzare un problema che nella forma alle disuguaglianze ha 
+- funzione obiettivo da massimizzare 
+- vincoli di disuguaglianza $\leq$
+Considerando la colonna $\bar{j}$ e $\Delta c_{\bar{j}}$ la variazione possibile
+1. $\bar{j} \in B$ e $\bar{r}$ è la riga corrispondente
+$$\max\{-\infty, \max_{j \in N}\{\frac{-c_j^*}{a^{*+}_{\bar{r}j}}\}\} \leq \Delta c_{\bar{j}} \leq \min\{\min\{\frac{-c_j^*}{a^{*+}_{\bar{r}j}}\} + \infty\}\}$$
+Interpretazione: per i valore negativi (numeratore negativi e denominatore positivo) cerchiamo il max mentre di quelli positivi il min, che sono i primi valori che ci fanno cambiare base
+2. $\bar{j} \in N$
+$$\Delta c_{\bar{j}} \leq c^*_{\bar{j}}$$
+
+Esempio
+![[Pasted image 20240305140729.png]]
+
+
+Variazione di un coefficiente $b_i$
+Intuizione geometrica
+![[Pasted image 20240305141026.png]]
+![[Pasted image 20240305141137.png]]
+Quando $b_3$ diminuisce, il vincolo 3 trasla verso il basso e a sinistra finche il vincolo 2 diventa attivo con $b_3 = 8$
+Quando $b_3$ aumenta, il vincolo 3 trasla verso l'alto e a destra finche il vincolo 1 diventa attivo con $b_4 = 24$
+
+Quindi $B^* = \{1,2,3\}$ è ottima per $8 \leq b_3 \leq 24$
+OSS anche se $B^*$ non cambia, $z^*$ e $x^*$ cambiano
+
+Supponiamo di analizzare un problema che nella forma alle disuguaglianze ha 
+- funzione obiettivo da massimizzare 
+- vincoli di disuguaglianza $\leq$
+Considerando una riga $\bar{i}$ e sia la colonna della variabile di slak $\bar{j}$ e $\Delta b_{\bar{i}}$ la variazione possibile
+1. $\bar{i} \in B$
+$$\max\{-\infty, \max_{i}\{\frac{-b_i^*}{a^{*+}_{i\bar{j}}}\}\} \leq \Delta b_{\bar{i}} \leq \min\{\min_{i}\{\frac{-b_i^*}{a^{*+}_{i\bar{j}}}\} + \infty\}\}$$
+Interpretazione: per i valore negativi (numeratore negativi e denominatore positivo) cerchiamo il max mentre di quelli positivi il min, che sono i primi valori che ci fanno cambiare base
+2. $\bar{i} \in N$
+$$\Delta b_{\bar{i}} \geq -x^*_{\bar{j}}$$
+![[Pasted image 20240305142038.png]]
+
+- Analisi parametrica
+Studia come $z^*$ dipende dal valore del termine noto di un vincolo prescelto
+Il risultato è una funzione lineare a tratti: ogni suo segmento corrisponde ad una base ottima ed ogni punto di discontinuità ad un cambio di base
+
+![[Pasted image 20240305142926.png]]
+
+
+Interpretazione economica della PL
+![[Pasted image 20240305143430.png]]![[Pasted image 20240305143438.png]]
+
+1. le n variabili rappresentano le quantità prodotte per gli n prodotti
+2. i coefficienti rappresentano i profitti unitari
+3. i termini noti rappresentano le quantita di risorsa disponibili
+
+I c.c.r. delle colonne di slack all’ottimo indicano i prezzi-ombra delle corrispondenti risorse, cioe il massimo prezzo a cui conviene comprare la risorsa e il minimo prezzo a cui conviene venderla. Il prezzo-ombra di risorse non scarse e nullo.
+
+il costo ridotto $\bar{c}_j - \sum_{i}{a_{ij}\lambda_i}$
+dove 
+- $c_j$ coefficiente di $x_j$ nella funzione obiettivo
+- $a_{ij}$ coefficiente sulla riga $i$ e colonna $j$ nella matrice dei vincoli
+- $\lambda _i$ è il prezzo ombra del vincolo $i$

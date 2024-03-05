@@ -2,3 +2,4 @@
 ![[02 - Programmazione lineare.pdf]]
 ![[03 - Algoritmo del simplesso.pdf]]
 ![[04 - Teoria della dualita.pdf]]
+![[05 - Analisi post-ottimale.pdf]]

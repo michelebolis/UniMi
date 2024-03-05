@@ -16,21 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "5ed2638bd4c79b8c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Materiale tesi/Tesi - Problemi da risolvere.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -59,7 +46,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "path:\"Ricerca operativa/Slide/\" ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -96,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Materiale tesi/Tesi - Problemi da risolvere.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Materiale tesi/Tesi - Problemi da risolvere.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Materiale tesi/Tesi - Problemi da risolvere.md"
-              }
+              "state": {}
             }
           },
           {
@@ -196,13 +179,24 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "5ed2638bd4c79b8c",
+  "active": "47136b92c595cdff",
   "lastOpenFiles": [
-    "Materiale tesi/Fonti tesi.md",
-    "Materiale tesi/Tesi - Problemi da risolvere.md",
-    "Ricerca operativa/Slide/Index slide.md",
-    "Ricerca operativa/Slide/04 - Teoria della dualita.pdf",
     "Ricerca operativa/Appunti.md",
+    "Ricerca operativa/Img/Pasted image 20240305143438.png",
+    "Ricerca operativa/Img/Pasted image 20240305143430.png",
+    "Ricerca operativa/Slide/Index slide.md",
+    "Ricerca operativa/Slide/05 - Analisi post-ottimale.pdf",
+    "Ricerca operativa/Img/Pasted image 20240305142926.png",
+    "Ricerca operativa/Img/Pasted image 20240305142038.png",
+    "Ricerca operativa/Img/Pasted image 20240305141137.png",
+    "Ricerca operativa/Img/Pasted image 20240305141057.png",
+    "Ricerca operativa/Img/Pasted image 20240305141026.png",
+    "Ricerca operativa/Img/Pasted image 20240305140729.png",
+    "Ricerca operativa/Img/Pasted image 20240305133849.png",
+    "Ricerca operativa/Appunti esercitazioni.md",
+    "Materiale tesi/Tesi - Problemi da risolvere.md",
+    "Materiale tesi/Fonti tesi.md",
+    "Ricerca operativa/Slide/04 - Teoria della dualita.pdf",
     "Ricerca operativa/Ricerca operativa.canvas",
     "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Teorema fondamentale della dualità lineare.md",
     "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Teorema dello scarto complementare.md",
@@ -224,18 +218,7 @@
     "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Regola di scelta della riga.md",
     "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Regola di scelta della riga - Esempio.md",
     "Ricerca operativa/Riassunti/Algoritmo del simplesso/Metodo di Balinski-Gomory.md",
-    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Metodo di Balinski-Gomory - Esempio.md",
-    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Problema ausiliario illimitato.md",
     "Ricerca operativa/Img/Pasted image 20240301110647.png",
-    "Ricerca operativa/Img/Pasted image 20240301110621.png",
-    "Ricerca operativa/Img/Pasted image 20240301110524.png",
-    "Ricerca operativa/Img/Pasted image 20240301110508.png",
-    "Ricerca operativa/Img/Pasted image 20240301110449.png",
-    "Ricerca operativa/Img/Pasted image 20240301110407.png",
-    "Ricerca operativa/Img/Pasted image 20240301105705.png",
-    "Ricerca operativa/Img/Pasted image 20240301104240.png",
-    "Ricerca operativa/Img/Pasted image 20240301104138.png",
-    "Ricerca operativa/Img/Pasted image 20240301104128.png",
     "Ricerca operativa/Slide/03 - Algoritmo del simplesso.pdf",
     "Ingegneria del software.zip",
     "Materiale tesi",
@@ -246,7 +229,6 @@
     "Sistemi biometrici/Riassunti/Tratti/Mano e palmo",
     "Sistemi biometrici/Riassunti/Tratti/Orecchio",
     "Sistemi biometrici/Riassunti/Tratti/Voce",
-    "Sistemi biometrici/Riassunti/Tratti/Volto",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/ES.canvas",
