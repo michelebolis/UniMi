@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "IbTakeOff",
       "IbTrashWithLines",
       "IbGraphLineUp",
       "IbPencil",
-      "IbHeartbeatMonitor",
-      "IbConnectivity"
+      "IbHeartbeatMonitor"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -31,5 +31,6 @@
   "Ingegneria del software": "IbHeartbeatMonitor",
   "Linguaggi di programmazione": "IbPencil",
   "Ricerca operativa": "IbGraphLineUp",
-  "Sistemi biometrici": "IbTrashWithLines"
+  "Sistemi biometrici": "IbTrashWithLines",
+  "Materiale tesi": "IbTakeOff"
 }

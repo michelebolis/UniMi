@@ -28,3 +28,4 @@ Unbounded = Test che verifica che il problema sia illimitato
 Parti:
 - [[Pivot(A, b, c)]]
 - [[Test di ottimalità]]
+- [[Analisi post-ottimale]]

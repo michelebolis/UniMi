@@ -57,3 +57,16 @@ Altri dataset [https://ucsd.libguides.com/data-statistics/finddata]
 altri esempi ufficiali [https://github.com/neo4j-graph-examples]
 Repo con dataset [https://networkrepository.com/soc.php]
 - https://networkrepository.com/soc-livejournal.php
+
+1. label è nella lista?
+	1. label è una persona? 
+2. key è nella lista?
+
+
+cose che posso fare:
+- raffinare statistiche (di quegli archi, quanti in ingresso/uscita/ con quale label)
+- topologia grafo
+	- centralita del nodo 
+	- outlier: 
+		- nodo mail 9/10 è collegato a uni e solo 1/10 a persona 
+		- nodi non etichettati
