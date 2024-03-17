@@ -840,3 +840,105 @@ dove
 - $c_j$ coefficiente di $x_j$ nella funzione obiettivo
 - $a_{ij}$ coefficiente sulla riga $i$ e colonna $j$ nella matrice dei vincoli
 - $\lambda _i$ è il prezzo ombra del vincolo $i$
+
+---
+
+Programmazione lineare a molti obiettivi
+Programmazione lineare a molti obiettivi è l'estensione della programmazione matematica in cui ci siano piu funzioni obiettivo in conflitto tra loro (il miglioramento di una funzione porta il peggioramento dell'altra)
+
+Ci limitiamo a considerare programmazione lineare con due obiettivi
+
+Fasi
+- Prima fase: calcolo della regione Pareto-ottima, l'insieme delle soluzioni ammissibili non dominate
+- Seconda fase: scelta di una soluzione tra quelle Paretiane individuate nella fase uno
+
+La prima fase è algoritmica mentre la seconda implica scelte del decisore
+SE gli obiettivi sono in conflitto, nessuna decisione è ottima
+Il concetto di soluzione ottima viene quindi sostituito da quello di soluzione non dominata
+
+Prima fase
+Dominanza
+Dati gli obiettivi $f_1(x), ..., f_k(x)$ da minimizzare e date due soluzioni ammissibili $x'$ e $x''$, 
+$x'$ domina $x''$ SE e SOLO SE
+$$\begin{cases} f_i(x') \leq f_i(x''), \forall i=1,...,k \\ \exists j \in \{1,...,k\}:f_j(x')<f_j(x'')\end{cases}$$
+
+(in caso di massimizzazione invertire i segni di <)
+OSS non ho un confronto tra 2 soluzioni, ma tra coppie di soluzioni
+SE una soluzione non è dominata da nessun'altra, allora è una soluzione Pareto-ottima
+
+L'insieme delle soluzioni non dominate è la regione Pareto-ottima del problema
+
+Rappresentazione Regione Pareto-ottima
+Le soluzione e la regione Pareto-ottima possono essere rappresentate anche nello spazio 
+degli obiettivi
+es se le funzioni fossero da massimizzare, A ed E domina B
+![[Pasted image 20240317100555.png]]
+
+Metodo dei pesi
+Il metodo dei pesi consiste nell'ottimizzare una combinazione convessa delle funzioni obiettivo
+
+Date maximize $f_1(x), ...,$ maximize $f_k(x)$ s.t. $x \in X$
+maximize $\sum_{i=1}^{k}{\lambda _if_i(x)}$ s.t. $x \in X$
+con $\lambda _i \geq 0 \forall i=1,...,k$ e $\sum_{i=1}^{k}{\lambda _i = 1}$
+
+La soluzione ottima del problema risultante dipende dal vettore di pesi $\lambda$ (scelti arbitrariamente)
+Con due obiettivi lineari e vincoli lineari si puo calcolare la regione Paretiana con l'analisi parametrica
+OSS l'analisi parametrica è fatta su $\lambda$ è nell'obiettivo e NON nei termini noti MA non è un problema grazie alla dualità
+
+Esempio
+![[Pasted image 20240317101250.png]]
+![[Pasted image 20240317101532.png]]
+
+Metodo dei vincoli
+Il metodo dei vincoli consiste nell'ottimizzare una delle funzioni obiettivo trasformando le altre in vincoli con un termine noto parametrico
+
+Date maximize $f_1(x), ...,$ maximize $f_k(x)$ s.t. $x \in X$
+maximize $f_1(x)$ s.t. $x \in X$, $f_i \geq \beta  _i, \forall i =2,...,k$
+
+La soluzione ottima del problema risultante dipende dal vettore dei termini noti $\beta$
+Con due obiettivi lineari e vincoli lineari si puo calcolare la regione Paretiana con l'analisi parametrica
+
+Esempio
+![[Pasted image 20240317102224.png]]
+![[Pasted image 20240317102237.png]]
+
+Regioni paretiane continue e discrete
+Per problemi lineari nel continuo, il metodo dei pesi e dei vincoli generano correttamente la regione paretiana
+Per problemi lineare nel discreto, il metodo dei pesi in generale non garantisce di trovare tutte le soluzioni paretiane
+
+es non esiste una combinazione t.c. riesca a trovare una soluzione ottima nel punto segnato
+![[Pasted image 20240317102436.png]]
+
+Seconda fase
+La seconda fase del processo decisionale puo essere supportata da metodi quantitativi anche se richiede una scelta da parte del decisore
+- Metodo delle curve di indifferenza
+La soluzione scelta è quella in cui delle curve di indifferenza risulta tangente alla regione Paretiana
+
+es ipotizzando di voler massimizzare $f_1$ e $f_2$
+![[Pasted image 20240317102821.png]]
+
+Alcune curve di indifferenza comunemente usate per avere un'espressione analitica
+$w(f(x)) = [\sum_{i=1}^{k} (\lambda _i f_i(x))^p]$
+
+es con $k=1$ e $\lambda _1 = \lambda _2 = 1$
+![[Pasted image 20240317103025.png]]
+
+- Criterio del punto di massima curvatura 
+La soluzione scelta è quella per cui ad un piccolo miglioramento di un obiettivo corrisponde un grande peggioramento dell'altro
+
+es
+![[Pasted image 20240317103243.png]]
+
+- Criterio del punto utopia
+Il punto utopia è la soluzione che nello spazio degli obiettivi ha come coordinate i valori ottimi di ciascuno
+Ovviamente se siamo in un contesto di programmazione a molti obiettivi il punto utopia non sarà ammissibile
+
+es possiamo prendere il punto utopia e dall'origine vedere se c è un punto ammissibile che passa per la retta
+![[Pasted image 20240317103339.png]]
+
+- Criterio degli standard
+Gli standard sono valori soglia al di sotto dei quali non si vuole che gli obiettivi possano peggiorare
+
+es stavolta dato un S ammissibile, posso per esempio vedere se c è un punto che passa per la retta dall origine alla regione Pareto-ammissibile
+![[Pasted image 20240317103424.png]]
+
