@@ -942,3 +942,136 @@ Gli standard sono valori soglia al di sotto dei quali non si vuole che gli obiet
 es stavolta dato un S ammissibile, posso per esempio vedere se c è un punto che passa per la retta dall origine alla regione Pareto-ammissibile
 ![[Pasted image 20240317103424.png]]
 
+---
+
+PLI
+Esistono diverse classi di problemi di ottimizzazione con variabili discrete
+- IP Integer Programming: variabili vincolate ad assumere valori interi
+- BP Binary Programming: variabili vincolate ad assumere solo due valori
+- MIP Mixed Integer Programming: alcune variabili discrete e alcune continue
+- CO Combinatorial Optimization: delle variabili indicano gli elementi dell insieme 
+Noi consideriamo solo modelli lineari PLI
+
+NON si puo calcolare la derivata, NON si puo considerare il vertice del poliedro perche potrebbe avere coordinate non intere
+Per ottimizzare nel discreto possiamo
+- selezionare buone formulazioni lineari e migliorarle fino a poterle risolvere un problema di PLI come PL
+- scomporre il problema in sottoproblemi piu piccoli e piu facili
+- eseguire una enumerazione implicita delle soluzioni
+
+Dato un problema di ottimizzazione discreta P
+$$z^* = max{z(x) : x \in X \subseteq Z^n}$$
+L'ottimalità si dimostra calcolando un upper bound $\bar{z}$ e un lower bound $\underline{z}$ t.c. $\underline{z} \leq z \leq \bar{z}$
+SE P è di minimizzazione, $\bar{z}$ è primale e $\underline{z}$ è duale
+SE P è di massimizzazione, $\underline{z}$ è primale e $\bar{z}$ è duale
+La differenza $\bar{z}-\underline{z}$ è detto gap di ottimalità
+SE $\bar{z}-\underline{z} = 0$, si ha la garanzia di ottimalità
+
+Un bound primale $\bar{z}$ è dato dal valore della funzione obiettivo $z(x)$ in una qualsiasi soluzione ammissibile $\bar{x} \in X$
+$$\bar{z} = z(\bar{x}), \bar{x} \in X$$
+Il bound primale puo essere calcolato in vari modi
+- algoritmi euristici/meta euristici
+- algoritmi di approssimazione con garanzia (in tal caso si ha anche un bound duale)
+Per alcuni problemi di ottimizzazione discreta è difficile trovare una soluzione ammissibile
+
+Il bound duale è dato dal valore della funzione obiettivo in z(x) in corrispondenza di una soluzione super ottima $\bar{x}$ in generale non ammissibile
+
+Tecniche principali
+- risolvere all'ottimo un rilassamento R di P
+- trovare una soluzione ammissibile al duale D di P
+OSS nel discreto il teorema della dualità in forma debole resta vero mentre quello in forma forte in generale non è piu vero
+
+Rilassamento
+Dato un problema $P = min\{z_P(x) : x \in X(P)\}$
+un problema $R = min\{z_R(x) : x \in X(R)\}$
+è un rilassamento di P SE valgono
+- $X(P) \subseteq X(R)$ //sulle regioni ammissibili
+- $z_R(x) \leq z_P(x), \forall x \in X(P)$ //sugli obiettivi
+OSS in caso di massimizzazione le disequazioni sono invertite
+
+Corollario: $z^*_R \leq z^*_P$
+Ci sono molti tipi di versi di rilassamento
+Un rilassamento è tanto migliore quando piu il suo valore ottimo è vicino a $z^*_P$
+
+- Rilassamento lineare continuo
+Quando P è un problema di ottimizzazione discreta, il suo rilassamento continuo C è ottenuto da P trascurando le condizioni di integralità
+$$P: min\{z(x) \in X, x \in Z^n_+\}$$
+$$C: min\{z(x) \in X, x \in R^n_+\}$$
+Quando P è un problema di ottimizzazione lineare discreta, il suo rilassamento continuo LP è un problema di programmazione lineare
+$$P: min\{cx:Ax \leq b, x \in Z^n_+ \}$$
+$$LP: min\{cx:Ax \leq b, x \in R^n_+ \}$$
+SE $x^*_{LP} \in Z^n_+$ ALLORA $x^*_P=x^*_{LP}$
+
+- Rilassamenti combinatori
+Il rilassamento combinatorio C di un problema di ottimizzazione combinatoria P è ancora un problema di ottimizzazione combinatoria ma tipicamente molto piu facile da risolvere
+
+- Rilassamento Lagrangeano
+Il rilassamento Lagrangeano LR di un problema di ottimizzazione lineare discreto P si ottiene rimuovendo alcuni vincoli e aggiungendo all'obiettivo termini di penalità per la loro violazione
+$$P: min\{z(x): Ax \leq b, x \in X \subseteq Z^n_+\}$$
+$$LR: min\{z_{LR}(x, \lambda) = z(x) + \lambda (Ax-b) : x \in X \subseteq Z^n_+ \}$$
+con $\lambda \geq 0$ moltiplicatori lagrangiani
+
+Esso soddisfa le condizioni per essere un rilassamento
+- Vincoli: $\{x: Ax \leq b, x \in X\} \subseteq \{x:x \in X\}$
+- Obiettivo
+	- $Ax -b \leq 0$ per tutte le soluzioni ammissibili per P
+	- $\lambda (Ax-b) \leq 0$ per tutte le soluzioni ammissibili per P
+	- $z_{LR}(x, \lambda) = z(x) + \lambda (Ax-b) \leq 0$ per tutte le soluzioni ammissibili per P
+
+- Rilassamento surrogato
+Il rilassamento surrogato S di un problema di ottimizzazione lineare discreto P si ottiene sostituendo un insieme di vincoli con un loro combinazione convessa
+$$P: min\{z(x): Ax \leq b, x \in X \subseteq Z^n_+\}$$
+$$LR: min\{z(x) : \lambda ^TAx \leq \lambda^T b, x \in X \subseteq Z^n_+\}$$
+con $\lambda \geq 0$
+
+Esso soddisfa le condizioni per essere un rilassamento
+- Vincoli: $Ax \leq b$ implica $\lambda ^TAx \leq \lambda^T b$ MA non viceversa
+- Obiettivo: non cambia
+
+
+Si puo dimostrare che, scegliendo i migliori moltiplicatori $\lambda$, in caso di minimizzazione
+$$z^*_{LP} \leq z^*_{LR} \leq  z^*_S \leq z^*$$
+
+Dualità
+Problema lineare duale
+$$P: z^* = min\{cx: Ax \geq b, x \in R^n_+\}$$
+$$D:w^* = max\{yb: yA \leq c, y \in R^m_+\}$$
+
+Formulazioni lineari
+I problemi di ottimizzazione lineare discreti NON hanno un unica formulazione
+Ha senso quindi
+- confrontare formulazioni
+- migliorare formulazioni
+Una formulazione migliore si traduce in un algoritmo piu efficiente
+
+La formulazione ideale di un problema di programmazione lineare discreta è quella che consente di risolverlo come se fosse un problema di programmazione lineare nel continuo
+
+La formulazione di un problema di programmazione lineare corrisponde ad un poliedro, e ce sono infiniti che racchiudono le soluzioni
+I vincoli della formulazione ideale corrispondono al guscio convesso delle soluzioni intere
+![[Pasted image 20240318102337.png]]
+
+Guscio convesso
+Dato un insieme discreto X, il suo guscio convesso è il poliedro
+$$X = \{x_1,  ..., x_t\}, x_i \in R^n,  \forall i=1,..., t$$
+$conv(X) = \{x \in R^n : x = \sum_{i=1}^t \lambda_i x_i, \sum_{i=1}^t \lambda _i = 1, \lambda _i \geq 0, \forall i =1,...,t\}$
+E' un poliedro i cui punti estremi sono elementi dell'insieme discreto X
+Data una formulazione P e l'insieme discreto X delle sue soluzioni ammissibili vale
+$$X \subseteq conv(X) \subseteq P$$
+In generale non conosciamo la formulazione ideale dei problemi di ottimizzazione lineare discreta (es problema del cammino minimo su grafo...)
+Il numero dei vincoli del guscio convesso puo crescere esponenzialmente con la dimensione dell'istanza
+
+Conosciamo la formulazione ideale solo per alcuni problemi di ottimizzazione discreta
+La disciplina che studia tale questione è la polyhedral combinatorics
+
+
+Algoritmi cutting planes
+Dato un problema di PLI (all iterazione $k$), consideriamo il suo rilassamento continuo e la sua soluzione ottima $x^{*(k)}$
+$$P^{(k)} = max\{cx : Ax \leq b, x \in Z^n_+\}$$
+$$L^{(k)} = max\{cx : Ax \leq b, x \in R^n_+\}$$
+Generiamo un insieme di disuguaglianze valide/cutting planes $Qx \leq q$ t.c.
+- $Qx \leq q, \forall x \in Z^n_+ : Ax \leq b$ //non devono escludere nessuna soluzione ammissibile
+- $Qx^{*(k)} > q$ //devono rendere inammissibile il punto frazionario $x^{*(k)}$
+e otteniamo cosi una formulazione piu stretta
+$$P^{(k+1)} = max\{cx : Ax \leq b, Qx \leq q, x \in Z^n_+\}$$
+es
+![[Pasted image 20240318104509.png]]
+
