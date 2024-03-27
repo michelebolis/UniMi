@@ -21,11 +21,14 @@
             "id": "6de2366a5cb5aad2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Materiale tesi/Tesi - filone logico.md",
-                "mode": "source",
-                "source": false
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
+                "viewState": {
+                  "x": 2825.0786268724864,
+                  "y": -767.607521013618,
+                  "zoom": -0.2582933710515618
+                }
               }
             }
           },
@@ -42,7 +45,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -108,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Materiale tesi/Tesi - Problemi da risolvere.md",
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Materiale tesi/Tesi - Problemi da risolvere.md",
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Materiale tesi/Tesi - Problemi da risolvere.md"
+                "file": "Reti di calcolatori/Reti di calcolatori.canvas"
               }
             }
           },
@@ -208,11 +211,13 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "70c63efbb345e246",
+  "active": "6de2366a5cb5aad2",
   "lastOpenFiles": [
+    "Reti di calcolatori/Esami/2018-02-27.md",
+    "Reti di calcolatori/Reti di calcolatori.canvas",
     "Materiale tesi/Tesi - filone logico.md",
-    "Pasted image 20240325153937.png",
     "Materiale tesi/Tesi - Problemi da risolvere.md",
+    "Pasted image 20240325153937.png",
     "Pasted image 20240325095403.png",
     "Pasted image 20240325095320.png",
     "Pasted image 20240325092243.png",
@@ -223,7 +228,6 @@
     "Ricerca operativa/Appunti.md",
     "Ricerca operativa/Img/Pasted image 20240318102337.png",
     "Reti di calcolatori/Reti di calcolatori - Riassunto.md",
-    "Reti di calcolatori/Reti di calcolatori.canvas",
     "Ricerca operativa/Img/Pasted image 20240318104509.png",
     "Ricerca operativa/Ricerca operativa.canvas",
     "Ricerca operativa/Riassunti/PL a piu obiettivi.md",
