@@ -16,36 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "6de2366a5cb5aad2",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
-                "viewState": {
-                  "x": 2825.0786268724864,
-                  "y": -767.607521013618,
-                  "zoom": -0.2582933710515618
-                }
-              }
-            }
-          },
-          {
-            "id": "70c63efbb345e246",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Materiale tesi/Tesi - Problemi da risolvere.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -111,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Reti di calcolatori/Reti di calcolatori.canvas"
-              }
+              "state": {}
             }
           },
           {
@@ -211,25 +179,37 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "6de2366a5cb5aad2",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
-    "Reti di calcolatori/Esami/2018-02-27.md",
+    "Ricerca operativa/Ricerca operativa.canvas",
+    "Ricerca operativa/Slide/Index slide.md",
+    "Ricerca operativa/Appunti.md",
+    "Ricerca operativa/Slide/11 - Simplesso rivisto.pdf",
+    "Ricerca operativa/Slide/10c - PNL vincolata.pdf",
+    "Ricerca operativa/Slide/10b - PNL monodimensionale.pdf",
+    "Ricerca operativa/Slide/10a - PNL non vincolata.pdf",
+    "Ricerca operativa/Slide/09 - Modelli discreti.pdf",
+    "Pasted image 20240327152011.png",
+    "Pasted image 20240327151950.png",
+    "Ricerca operativa/Img/Pasted image 20240327150916.png",
+    "Ricerca operativa/Slide/08 - Branch-and-bound.pdf",
+    "Ricerca operativa/Img/Pasted image 20240327143303.png",
+    "Ricerca operativa/Img/Pasted image 20240327141006.png",
+    "Ricerca operativa/Img/Pasted image 20240327140941.png",
+    "Ricerca operativa/Img/Pasted image 20240327140356.png",
+    "Ricerca operativa/Img/Pasted image 20240327134723.png",
+    "Ricerca operativa/Slide/07 - PLI.pdf",
+    "Ricerca operativa/Img/Pasted image 20240327133357.png",
+    "Ricerca operativa/Img/Pasted image 20240327133347.png",
+    "Materiale tesi/img",
+    "Ricerca operativa/Slide/06 - PMO.pdf",
     "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/Esami/2018-02-27.md",
     "Materiale tesi/Tesi - filone logico.md",
     "Materiale tesi/Tesi - Problemi da risolvere.md",
-    "Pasted image 20240325153937.png",
-    "Pasted image 20240325095403.png",
-    "Pasted image 20240325095320.png",
-    "Pasted image 20240325092243.png",
-    "Pasted image 20240325091554.png",
-    "Pasted image 20240325091535.png",
     "Materiale tesi/Esempi.canvas",
     "Materiale tesi/Dataset Patients.canvas",
-    "Ricerca operativa/Appunti.md",
-    "Ricerca operativa/Img/Pasted image 20240318102337.png",
     "Reti di calcolatori/Reti di calcolatori - Riassunto.md",
-    "Ricerca operativa/Img/Pasted image 20240318104509.png",
-    "Ricerca operativa/Ricerca operativa.canvas",
     "Ricerca operativa/Riassunti/PL a piu obiettivi.md",
     "Ricerca operativa/Riassunti/PL a piu obiettivi - Seconda fase.md",
     "Ricerca operativa/Riassunti/Criterio degli standard.md",
@@ -240,8 +220,6 @@
     "Ricerca operativa/Riassunti/PL a piu obiettivi - Metodo dei vincoli.md",
     "Ricerca operativa/Riassunti/PL a piu obiettivi - Metodo dei pesi.md",
     "Ricerca operativa/Riassunti/PL a piu obiettivi - Dominanza.md",
-    "Ricerca operativa/Img/Pasted image 20240317103424.png",
-    "Ricerca operativa/Img/Pasted image 20240317103339.png",
     "Materiale tesi/Fonti tesi.md",
     "Materiale tesi/Graph database - Riassunto.md",
     "Materiale tesi/Neo4j - Python.md",
@@ -251,20 +229,9 @@
     "Ricerca operativa/Riassunti/Algoritmo del simplesso/Analisi post-ottimale.md",
     "Ricerca operativa/Riassunti/Algoritmo del simplesso/Analisi parametrica.md",
     "Ricerca operativa/Appunti esercitazioni.md",
-    "Ricerca operativa/Slide/Index slide.md",
     "Ricerca operativa/Slide/05 - Analisi post-ottimale.pdf",
-    "Ricerca operativa/Slide/04 - Teoria della dualita.pdf",
-    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Pivot/Teorema fondamentale della dualità lineare.md",
-    "Ricerca operativa/Slide/03 - Algoritmo del simplesso.pdf",
-    "Ingegneria del software.zip",
-    "Materiale tesi",
     "Sistemi biometrici/Sistemi biometrici.canvas",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-    "Sistemi biometrici/Riassunti/Statistica",
-    "Sistemi biometrici/Riassunti/Tratti/Retina",
-    "Sistemi biometrici/Riassunti/Tratti/Mano e palmo",
-    "Sistemi biometrici/Riassunti/Tratti/Orecchio",
-    "Sistemi biometrici/Riassunti/Tratti/Voce",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
     "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/ES.canvas",
     "Sistemi embedded/Sistemi embedded.canvas"

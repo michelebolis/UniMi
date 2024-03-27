@@ -1075,3 +1075,243 @@ $$P^{(k+1)} = max\{cx : Ax \leq b, Qx \leq q, x \in Z^n_+\}$$
 es
 ![[Pasted image 20240318104509.png]]
 
+Procedura di Chvatal-Gomory
+Considerando un problema di PLI con insieme ammissibile
+$$X = \{x \in Z^n_+ : Ax \leq b\}$$
+dove A ha $m$ righe e $n$ colonne
+Scegliamo un vettore $u \in R^n_+$
+- $\sum_{j=1}^{n}{ua_jx_j} \leq ub$ è valida perche $ax \leq b$ e $u \geq 0$ 
+- $\sum_{j=1}^{n}{\lfloor{ua_j}\rfloor x_j} \leq ub$ è valida perché $x \geq 0$
+	- arrotondando per difetto vuol dire mantenere uguale o diminuire il primo membro
+- $\sum_{j=1}^{n}{\lfloor{ua_j}\rfloor x_j} \leq \lfloor ub \rfloor$ è valida perché $x$ è intero
+	- arrotondando per difetto anche il secondo termine vuol dire mantenere uguale o anche il secondo 0
+
+Otteniamo quindi una disuguaglianza valida MA la sua efficienza dipenda dalla scelta di $u$
+Ogni disuguaglianza valida puo essere generata con questa procedura in un numero finito di passi
+
+
+Algoritmi cutting planes
+Gli algoritmi cutting planes iterativamente risolvono il rilassamento continuo L di un problema discreto P e rafforzano la sua formulazione generando ulteriori vincoli (cutting planes) in modo tale che la soluzione ottima di rilassamento continuo all'iterazione $k$ diventi inammissibile all'iterazione $k+1$
+Vantaggi: 
+- SE i piani di taglio sono generati in modo efficace, l'algoritmo di trovare la soluzione ottima discreta
+- una formulazione piu ristretta puo fornire bounds duale (non ideali) utilizzabili in algoritmi branch-and-bound (algoritmi branch and cut)
+Svantaggio:
+- Non ci da garanzie su quanti passi ci vogliono per arrivare all ottimo
+- è necessaria una procedura apposita, algoritmo di separazione, per generare iterativamente disuguaglianze valide e utili
+	- SE il problema è NP-hard, anche il problema di separazione lo è
+
+Pseudo codice
+Begin
+//con $P$ il rilassamento continuo e $t$ indice dell'iterazione
+t := 0; $P^{(0)}$ := $P$; 
+repeat
+	// risolvo il problema rilassato con $z^{*(t)}$ il valore ottimo e $x^{*(t)}$ la soluzione ottima
+	$z^{*(t)} := max\{cx : x \in P^{(t)}\}$ 
+	$x^{*(t)} := argmax\{cx : x \in P^{(t)}\}$ 
+	if  $x^{*(t)} \notin Z^n$ then // soluzione ottima non intera
+		genera un disuguaglianza valida $\pi x \leq \pi_0 : \pi x^{*(t)} > \pi_0$
+		$P^{(t+1)} := P^{(t)} \cap \{x : \pi x \leq \pi_0\}$
+		t := t+1
+	end if
+until $(x^{*(t)} \in Z^n)$ AND non riusciamo a trovare nessuna disuguaglianza valida (ANCHE SE esiste)
+End
+
+Dopo ogni iterazione, $z^{*(t)}$ è un bound duale valido che si avvicina sempre piu all ottimo
+
+Tagli di Gomory
+A differenza di quando usiamo un algoritmo di separazione euristico, con i tagli di Gomory si riesce sempre ad andare avanti. Usano la procedura di Chvatal-Gomory
+
+Data una soluzione frazionaria $x^*$ del rilassamento continuo di un problema di PLI, si utilizza la procedura di Chvatal-Gomory sul vincolo associato a una variabile frazionaria in modo da ottenere una disuguaglianza valida violata da $x^*$
+
+Dato un problema P di PLI e il suo rilassamento continuo LP
+$$P) max\{cx : ax = b, x\geq 0, x \in Z^n\}$$
+$$LP) max\{cx : ax = b, x\geq 0\}$$
+siano $x^*$ e $z^*$ la sua soluzione ottima di LP e il suo valore 
+$z^* = \overline{a}_{00} + \sum_{j \in NB^*}{\overline{a}_{0j}x_j^*}$
+$$\begin{cases} x^*_{B*i} + \sum _{j \in NB^*}{\overline{a}_{ij} x^*_j = \overline{a}_{i0}, \forall i = 1,...,m} \\ x^* \geq 0 \end{cases}$$
+
+La soluzione ottima sappiamo che è la somma di una costante (in alto a sinistra nel tableau) e dalla somma delle colonne fuori base (NB) dei coefficienti che leggo sulla riga 0 del tableau moltiplicate per le $x^*_j$
+variabili in base piu la somma delle altre deve dare il termine nodo della riga
+
+SE $x^*$ non è intero, esiste almeno un involo $\hat{i}$ t.c. $\overline{a}_{\hat{i}0}$ non è intero
+Eseguendo la procedura di Chvatal-Gomory su di esso si ottiene
+$$x_{B*\hat{i}} + \sum _{j \in NB^*}{\lfloor\overline{a}_{\hat{i}j} \rfloor x_j} \leq \lfloor\overline{a}_{\hat{i}0}\rfloor$$
+Sottraendo questa disuguaglianza dal vincolo di uguaglianza (riportata di seguito)
+$$x^*_{B*\hat{i}} + \sum _{j \in NB^*}{\overline{a}_{\hat{i}j} x^*_j} = \overline{a}_{\hat{i}0}$$
+Si ottiene il taglio di Gomory
+$$\sum _{j \in NB^*}{f_{\hat{i}j}x_j \geq f_{\hat{i}0}}$$
+Dove 
+- $f_{\hat{i}j} = \overline{a}_{\hat{i}j} - \lfloor \overline{a}_{\hat{i}j} \rfloor$
+- $f_{\hat{i}0} = \overline{a}_{\hat{i}0} - \lfloor \overline{a}_{\hat{i}0} \rfloor$
+- Anche la variabile di slack associata a questa disuguaglianza è intera
+
+es
+![[Pasted image 20240327132954.png]]
+![[Pasted image 20240327133137.png]]
+![[Pasted image 20240327133153.png]]
+![[Pasted image 20240327133204.png]]
+![[Pasted image 20240327133220.png]]
+![[Pasted image 20240327133249.png]]
+![[Pasted image 20240327133301.png]]
+![[Pasted image 20240327133317.png]]
+![[Pasted image 20240327133333.png]]
+![[Pasted image 20240327133347.png]]
+![[Pasted image 20240327133357.png]]
+
+---
+
+Branch-and-bound
+In un algoritmo branch-and-bound
+Dato un problema difficile $P$, viene ricorsivamente scomposto in piu sottoproblemi $F_1, ...,F_n$ piu facili
+La scomposizione/branching/ramificazione deve rispettare una condizione per assicurare la correttezza dell'algoritmo (non perdere la soluzioni ottime dei figli)
+$$X(P) = \bigcup_{i=1}^{n}{X(F_i)}$$
+La soluzione ottima di $P$ è determinata confrontando le soluzioni ottime dei sotto problemi originati da esso
+es in caso di minimizzazione
+$$z^*(P) = min_{i=1,...,n}\{z^*(F_i)\}$$
+La scomposizione ricorsiva di problemi genera un'arborescenza o decision tree o search tree in cui la radice corrisponde al problema originale $P$ ed ogni altro nodo corrisponde ad un sotto problema
+![[Pasted image 20240327134723.png]]
+
+
+Branching
+A scopo di efficienza, la scomposizione implica una partizione di X(P) in sottoinsiemi disgiunti di modo che nessuna soluzione debba essere considerata piu di una volta
+$$X(F_i) \cap X(F_j) = 0, \forall i \neq j = 1,...,n$$
+Modi per fare branching
+- Fissare le variabili
+- Inserire dei vincoli
+Ogni sotto problema è una restrizione del suo predecessore ed un rilassamento dei suoi successori
+
+Branching binario
+Regole di branching comuni
+- Branching su una variabile binaria
+Viene selezionata una variabile binaria $x$ (solitamente una variabile che ha un valore frazionario, quindi sto impedendo la soluzione del padre)
+Due sotto problemi vengono generati fissando $x=0$ e $x=1$ 
+- Branching su un vincolo intero
+Vengono scelti un vettore di variabili intere ($x_1$, ..., $x_n$), un opportuno vettore di coefficienti interi ($a_1$, ..., $a_n$) e un opportuno termine noto intero $k$
+Vengono generati due sotto problemi inserendo i vincoli $ax \leq k$ e $ax \geq k+1$
+
+Branching n-ario
+Regole di branching n-ario
+- Branching su una variabile intera
+Viene selezionata una variabile intera $x \in [1, ..., n]$
+Vengono generati n sotto problemi fissando $x=1$, ..., $x=n$
+- Branching su $n$ variabili binarie
+Viene scelto un vettore di $n$ variabili binarie ($x_1$, ..., $x_n$)
+Vengono generati $n+1$ sotto problemi fissando alcune variabili (una riga per ogni problema)
+Potrebbe sembrare che si generi un albero sbilanciato se una parte scelgo un numero piu alto/basso di variabili rispetto ad un altra zona. Di solito gli alberi di branch si cerca di tenerli bilanciati MA in realta ciò che conta non sono il numero di variabili, ma l'effetto vincolante delle variabili fissate (es x=0 non conta niente, x=1 ha un effetto forte)
+![[Pasted image 20240327140356.png]]
+
+
+es fissaggio di variabili
+![[Pasted image 20240327140941.png]]
+es inserzione di vincoli
+![[Pasted image 20240327141006.png]]
+
+Foglie dell'albero
+La procedura ricorsiva di branching termina quando il sotto problema corrente 
+- è inammissibile
+- è risolto all ottimo
+- puo essere trascurato
+Tutti i casi si possono rilevare risolvendo un rilassamento del sotto problema corrente
+
+Rilassamenti
+Dato un problema P, un problema R è un rilassamento di P
+minimize $z_P(x)$ s.t. $x \in X_P$
+minimize $z_R(x)$ s.t. $x \in X_R$
+SE e SOLO SE valgono le due condizioni
+- $X_P \subseteq X_R$
+- $z_R(x) \leq z_P(x), \forall x \in X_P$
+
+Il valore ottimo del rilassamento non è mai peggiore del valore ottimo del problema originale
+$z^*_R \leq z^*_P$
+
+Corollario 1: SE $R$ è inammissibile, anche $P$ è inammissibile
+Corollario 2: SE $x^*$ è ottima per $R$ ed è ammissibile per $P$ e $z_R(x)=z_P(x)$, ALLORA $x^*$ è ottima anche per $P$
+Corollario 3: SE $z^*_R \geq \overline{z}$, ALLORA $z^*_P \geq \overline{z}$ (SE la soluzione ottima del problema rilassato è peggiore di una soluzione ammissibile che conosciamo, allora tutte le soluzione del problema originario sono peggiore, QUINDI sono trascurabili)
+Il corollario 3 è utilizzato nell'operazione di bounding
+
+Bounding
+Il bounding consiste nell'associare un bound duale ad ogni sotto problema $F$
+Poiché $z^*_R \leq z^*_P$, il valore ottimo $R(F)$ fornisce un bound duale ogni sotto problema $F$
+$$z^*_{R(F)} \leq z^*_F$$
+Il bound duale è confrontato con un bound primale che corrisponde al valore $z_P(\overline{x})$ di una soluzione ammissibile $\overline{x} \in X(P)$
+SE il bound duale di $F$ risulta essere non migliore del bound primale, ALLORA $F$ puo essere scartato
+if $z^*_{R(F)} \geq z_P(\overline{x})$ then Fathom $F$
+
+La correttezza è data dalla concatenazione di due disuguaglianze
+1. Nessuna soluzione puo esistere in $X(F)$ con un valore migliore di $z^*_{R(F)}$ poiché
+$$z^*_F \geq z^*_{R(F)}$$
+2. $z^*_{R(F)} \geq z_P(\overline{x})$
+Concatenando:
+$$z_F^* \geq z^*_{R(F)} \geq z_P(\overline{x})$$
+Significa che risolvere un problema $F$ all'ottimo è inutile, poiche non fornirà una soluzione migliore di quella gia nota $\overline{x}$
+
+OSS Scartare sotto-problemi è cruciale per risparmiare tempo e memoria
+
+es ho due sottoproblemi divisi da un branching orizzontale. Sapendo che esiste una soluzione ammissibile $\overline{x}$, per il problema rosso la curva di livello che rappresenta la soluzione ottima nel continuo è peggiore della tratteggiata nera, quindi il sotto problema rosso puo essere scartato
+![[Pasted image 20240327143303.png]]
+
+Strategia di visita dell'albero
+Ogni volta che due o piu sotto problemi vengono generati, essi vengono appesi ad una lista di nodi aperti, cioe sotto problemi da risolvere
+
+La politica seguita per decidere quali nodi visitare per primi è detta search strategy.
+Il sotto problema corrente è quello che viene risolto ad un generico istante durante l'esecuzione
+
+Criteri 
+- FIFO
+- LIDO
+- Lista ordinata: best first search (basata sul valore del bound duale) (si utilizza un heap)
+
+---
+
+Modelli di ottimizzazione discreta
+Variabili binarie
+Molto spesso le variabili nei problemi di ottimizzazione rappresentano quantita che possono essere sia continue che discrete
+
+- Le variabili binarie rappresentano scelte logiche con un dominio {0, 1}
+Cioe quando
+- non hanno un'unita di misura 
+- non ammettono approssimazioni
+
+Le variabili binarie hanno un enorme importanza dal punto di vista modellistico
+$x_i = 1$ SE capita l'evento $i$
+$x_i = 0$ SE NON capita l'evento $i$
+
+- Le relazioni tra variabili binarie esprimono condizioni logiche
+
+| Condizione                   | Significato                                               |
+| ---------------------------- | --------------------------------------------------------- |
+| $\sum_{i=1}^{N}{x_i} \leq 1$ | Non deve capitare piu di uno tra N eventi                 |
+| $\sum_{i=1}^{N}{x_i} = 1$    | Deve capitare uno tra N possibili eventi                  |
+| $\sum_{i=1}^{N}{x_i} \geq 1$ | Deve capitare almeno uno di N possibili eventi            |
+| $x_1=x_2$                    | I due eventi devono capitare entrambi o nessuno dei due   |
+| $x_1 \leq x_2$               | L'evento 1 puo verificarsi solo se si verifica l'evento 2 |
+- Le variabili binarie sono usate per selezionare sotto insiemi di un insieme
+$$\sum_{i=1}^{N}{c_ix_i} \Leftrightarrow \sum_{i \in S}{c_i}$$
+dove $S$ è un sottoinsieme di {$1, ..., N$} corrispondente al vettore $x$
+$$x_i = \begin{cases} 1, i \in S \\ 0, i \notin S \end{cases}$$
+Le variabili binarie sono usate per eliminare i "se" dai modelli
+$$\begin{cases} 0 \leq y \leq u, \text{SE } x= 1 \\ y=0, \text{SE } x=0 \end{cases} \Leftrightarrow 0 \leq y  \leq ux$$
+es costi fissi
+![[Pasted image 20240327150916.png]]
+
+- Le variabili binarie possono essere usate anche per attivare e disattivare i vincoli
+Dato il vincolo, aggiungendo M abbastanza grande
+$$y \leq Q + Mx$$
+Qualunque sia il valore di y, in realta dopo aver aggiunto Mx il vincolo risulta soddisfatto e quindi è come se lo disattivassi
+Equivale a 
+$$\begin{cases} y \leq Q, \text{SE } x = 0 \\ y, \text{SE } x = 1 \end{cases}$$
+
+es vincoli disgiunti
+$$|a-b|\geq k$$
+essendo $a$ e $b$ due variabili continue non negative e $k >0$
+Il vincolo non è lineare ed è un vincolo disgiunto
+$$|a-b|\geq k \Leftrightarrow (a-b \geq k) \text{ OR } (a-b  \leq -k)$$
+Si puo linearizzare introducendo una variabile binaria $x$ ed una costante $M$ grande
+$$\begin{cases} a-b\geq k - Mx \\ a-n \leq -k+M(1-x) \end{cases}$$
+A seconda del valore di x, uno dei due vincoli viene imposto mentre l'altro risulta disattivato
+
+es regioni ammissibili non convesse 
+![[Pasted image 20240327151950.png]]
+
+es problema dello scheduling
+![[Pasted image 20240327152011.png]]
