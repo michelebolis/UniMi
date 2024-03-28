@@ -11,7 +11,7 @@
       "query": "path:\"Ingegneria del software\"  ",
       "color": {
         "a": 1,
-        "rgb": 14701138
+        "rgb": 16711680
       }
     },
     {
@@ -25,14 +25,14 @@
       "query": "path:\"Reti di calcolatori\"  ",
       "color": {
         "a": 1,
-        "rgb": 13559571
+        "rgb": 16455913
       }
     },
     {
       "query": "path:\"Linguaggi di programmazione\"  ",
       "color": {
         "a": 1,
-        "rgb": 11752160
+        "rgb": 6096006
       }
     },
     {
@@ -53,7 +53,7 @@
       "query": "path:\"Sistemi biometrici\" ",
       "color": {
         "a": 1,
-        "rgb": 4692595
+        "rgb": 65416
       }
     }
   ],
@@ -67,6 +67,6 @@
   "repelStrength": 13.6213333333333,
   "linkStrength": 0.662103703703704,
   "linkDistance": 348,
-  "scale": 0.03552464893086588,
+  "scale": 0.04980495025057423,
   "close": false
 }
