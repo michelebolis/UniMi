@@ -42,7 +42,7 @@ Inoltre individuiamo anche il nodo centrale, definito come il nodo con il maggio
 looser association: forse troppo quindi si fa cluster 
 kanonimity: approccio di anonimizzazione generalizzazione o soppressione (se ho poche tuple outliner, è meglio eliminare (prendo in input quanto al massimo voglio perdere))
 quando non posso cancellare?
-- cifrare (AES)
+- cifrare (AES https://pycryptodome.readthedocs.io/en/latest/src/examples.html#encrypt-data-with-aes)
 - gerarchie di generalizzazioni 
 
 

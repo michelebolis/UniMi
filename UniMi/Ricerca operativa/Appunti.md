@@ -103,16 +103,11 @@ Un insieme è convesso quando presi due qualunque punti nell'insieme, tutti i pu
 
 Regione ammissibile
 I "baffetti" dicono da quale parte il vincolo è violato
-![[Pasted image 20231105104952.png]]
 
 Poliedri ottenibili
 - Poliedro limitato / politopo
 - Poliedro illimitato: esiste una direzione per cui se parto da un punto e continuo per quella direzione, non incontro mai una frontiera 
 - Poliedro vuoto: i vincoli sono combinati tali da non avere una soluzione ammissibile (e quindi una regione)
-
-|     |     |
-| --- | --- |
-| ![[Pasted image 20231105105024.png]]    |  ![[Pasted image 20231105105039.png]]   |
 
 Tutte le soluzioni equivalenti giacciono su uno stesso iperpiano
 La funzione obiettivo corrisponde ad un fascio di iperpiani paralleli ordinati come i corrispondenti valori dell'obiettivo
@@ -121,8 +116,6 @@ La direzione di ottimizzazione definisce l'ordinamento degli iperpiano del fasci
 es
 minimize z = 2x1 - 3x2
 essendo x2 l'asse delle y e considerando che ha segno negativo, la direzione di ottimizzazione e verso l alto in quanto cosi x1 diminuisce e x2, aumentando, fa diminuire z
-
-![[Pasted image 20231105105130.png]]
 
 Considerando
 - Convessità del poliedro = regione ammissibile
@@ -187,8 +180,6 @@ Per verificare ciò basta controllare che le variabili di base siano ancora >=0
 Degenerazione
 Quando una variabile in base risulta avere valore nullo, si ha degenerazione in quanto piu soluzioni di base coincidono
 Piu di $n$ vincoli sono attivi nello stesso punto in uno spazio ad n dimensioni
-
-![[Pasted image 20231105110734.png]]
 
 Teorema fondamentale della PL
 Dato un problema lineare in forma standard
@@ -383,7 +374,6 @@ Associato ad ogni vincolo un indice, la corrispondente variabile che quando è a
 indice (1) è associato a $x_2$ e (2) a $x_1$ perche quando $x_1=0$, allora è attivo $x_2$
 
 es
-![[Pasted image 20231105152510.png]]
 
 Per determinare l'elemento pivot sono necessarie una regola di scelta della colonna e una regola di scelta della riga
 
@@ -427,15 +417,11 @@ Data la variabile entrante $x_j$, cioe lo spigolo del poliedro lungo il quale la
 Nel caso di parità di rapporto minimo, la regola di Bland impone di scegliere la riga di indice minimo (garanzia di assenza di cicli negativi)
 
 esempio
-![[Pasted image 20240301104105.png]]
-![[Pasted image 20240301104128.png]]
-![[Pasted image 20240301104138.png]]
 
 Test di illimitatezza
 SE non esistono candidati pivot positivi su una colonna con costo ridotto negativo, il problema è illimitato
 
 Esempio
-![[Pasted image 20240301104240.png]]
 
 Variabili limitate
 Le variabili possono essere limitate sia inferiormente che superiormente
@@ -477,7 +463,7 @@ Posso usare le variabili di slack o surplus come variabili artificiali
 
 Per i vincoli di $\leq$: introduco variabili di slack positive
 Per i vincoli di $\geq$: introduco variabili di slack negative
-![[Pasted image 20240301105705.png]]
+
 Le variabili di slack $\hat{x}_i$ per i vincoli $i \in I_1$ soddisfano gia la prima condizione per la forma canonica
 
 Sia $h \in I_2$ l'indice del vincolo col massimo valore del termine noto.
@@ -506,27 +492,18 @@ OSS la forma canonica si conserva rispetto ai vincoli originali
 In pratica scambio il vincolo violato con la funzione obiettivo, pensando il vincolo violato come la funzione obiettivo
 ATT il valore della funzione obiettivo puo essere peggiorato perche non stavamo ottimizzando quello
 Esempio
-![[Pasted image 20240301110407.png]]
-![[Pasted image 20240301110449.png]]
-![[Pasted image 20240301110508.png]]
-![[Pasted image 20240301110524.png]]
-
-
 
 Test di inammissibilità
 SE l'inammissibilità rispetto ad un vincolo violato è stato minimizzata MA il valore è ancora negativo, questo dimostra che il problema è inammissibile e l'algoritmo termina
 
 L'algoritmo se ne accorge perche ha ancora un termine noto negativo MA tutti gli altri coefficienti di costo ridotto (sulla riga 0) sono positivi, quindi il problema è stato risolto 
 Esempio
-![[Pasted image 20240301110621.png]]
-
 
 Problema ausiliario illimitato
 Puo capitare che il problema ausiliario sia illimitato anche se il problema originale non lo è
 
 Lo si capisce quando il pivot da scegliere è l'elemento negativo sulla riga del vincolo violato
 Esempio
-![[Pasted image 20240301110647.png]]
 
 
 Teoria della dualità
@@ -624,7 +601,6 @@ $x(q)^TA^Ty \geq 0, \forall q \in C \implies A^Ty \geq 0$
 QUINDI la seconda parte è vera
 
 Interpretazione geometrica 
-![[Pasted image 20240229151646.png]]
 
 Lemma di Farkas: variante (forma forte)
 Dato un sistema di disequazioni lineari $Ax \leq b$, $x \geq 0$ con A di dimensione $m$ x $n$ e $b$ di dimensione m, una e una sola di queste alternative è vera 
@@ -647,8 +623,6 @@ Data una coppia primale-duale
 - $P$: maximize $z=c^Tx$, s.t. $Ax\leq b$, $x \geq 0$
 - $D$: minimize $w=b^Ty$, s.t. $A^Ty \geq c$, $y \geq 0$
 SE uno dei due problemi ammette una soluzione ottima finita, ALLORA anche l'altro ammette una soluzione ottima finita e i due valori ottimi coincidono
-
-![[Pasted image 20240229153808.png]]
 
 DIM
 Sia $y^* \in R^m$ la soluzione ottima finita del duale $D$ e $w^* = b^Ty^*$ il suo valore
@@ -705,13 +679,10 @@ $(A^T\bar{y} - c)\bar{x} = 0$
 OSS stiamo usando la forma alle disuguaglianze, per i vincoli di uguaglianza sono già implicate dall'ammissibilità delle soluzioni.
 
 Esempio
-![[Pasted image 20240229161702.png]]
 
 Le lettere che individuano i punti in un problema corrispondono al punto con lettera in maiuscolo/minuscolo nell'altro problema secondo lo scarto complementare
 OSS $\in X$ indica se la soluzione sia ammissibile
 D/d è l'unica soluzione ammissibile per entrambi
-
-![[Pasted image 20240301095222.png]]
 
 
 Algoritmo del simplesso duale
@@ -719,11 +690,8 @@ Osservazione
 Dato che i coefficienti di $P$ e $D$ sono gli stessi, entrambi i problemi di coppia primale-duale si possono rappresentare sullo stesso tableau
 
 Esempio
-![[Pasted image 20240301095705.png]]
 
 Tableau ristretto
-![[Pasted image 20240301095935.png]]
-
 
 Data questa osservazione, è possibile lavorare sul tableau del problema primale, eseguendo su di esso gli stessi passi di pivot che l'algoritmo del simplesso eseguirebbe se lavorasse sul tableau del problema duale
 L'algoritmo risultante è l'algoritmo del simplesso duale
@@ -738,13 +706,9 @@ L'algoritmo del simplesso duale è  utile quando la base è inammissibile e supe
 E' una tipica situazione che si verifica negli algoritmi "cutting planes", che vengono usati per risolvere rilassamenti continui di problemi di PL intera o binaria
 
 
-![[Pasted image 20240301100650.png]]
-
 Iterazione del simplesso duale: nel problema duale, nella colonna del -4, scelgo il pivot scegliendo il minimo tra 1/1 e 2/1, scegliendo quindi la prima riga
-![[Pasted image 20240301100901.png]]
-Iterazione: nel problema duale scelgo la colonna -2, scegliendo il pivot 2
-![[Pasted image 20240301101046.png]]
 
+Iterazione: nel problema duale scelgo la colonna -2, scegliendo il pivot 2
 
 Analisi post-ottimale
 Si possono fare in maniera semplice con i problemi PL
@@ -776,8 +740,7 @@ Le condizioni di ottimalità dipendono solo da $c$
 
 Variazione di un coefficiente $c_j$
 Intuizione geometrica
-![[Pasted image 20240305133849.png]]
-![[Pasted image 20240305141057.png]]
+
 Quando $c_1$ diminuisce, pesa meno nella funzione obiettivo, tanto che per $c_1 = 1$ la base ottima cambia
 Quando $c_1$ aumenta, le curve di livello tendono a diventare verticali per $c_1 -> \infty$ e quindi la base ottima non cambia
 $B^* = \{1, 2, 3\}$ è ottima per $1 \leq c_1 < \infty$
@@ -795,13 +758,10 @@ Interpretazione: per i valore negativi (numeratore negativi e denominatore posit
 $$\Delta c_{\bar{j}} \leq c^*_{\bar{j}}$$
 
 Esempio
-![[Pasted image 20240305140729.png]]
-
 
 Variazione di un coefficiente $b_i$
 Intuizione geometrica
-![[Pasted image 20240305141026.png]]
-![[Pasted image 20240305141137.png]]
+
 Quando $b_3$ diminuisce, il vincolo 3 trasla verso il basso e a sinistra finche il vincolo 2 diventa attivo con $b_3 = 8$
 Quando $b_3$ aumenta, il vincolo 3 trasla verso l'alto e a destra finche il vincolo 1 diventa attivo con $b_4 = 24$
 
@@ -817,17 +777,13 @@ $$\max\{-\infty, \max_{i}\{\frac{-b_i^*}{a^{*+}_{i\bar{j}}}\}\} \leq \Delta b_{\
 Interpretazione: per i valore negativi (numeratore negativi e denominatore positivo) cerchiamo il max mentre di quelli positivi il min, che sono i primi valori che ci fanno cambiare base
 2. $\bar{i} \in N$
 $$\Delta b_{\bar{i}} \geq -x^*_{\bar{j}}$$
-![[Pasted image 20240305142038.png]]
 
 - Analisi parametrica
 Studia come $z^*$ dipende dal valore del termine noto di un vincolo prescelto
 Il risultato è una funzione lineare a tratti: ogni suo segmento corrisponde ad una base ottima ed ogni punto di discontinuità ad un cambio di base
 
-![[Pasted image 20240305142926.png]]
-
 
 Interpretazione economica della PL
-![[Pasted image 20240305143430.png]]![[Pasted image 20240305143438.png]]
 
 1. le n variabili rappresentano le quantità prodotte per gli n prodotti
 2. i coefficienti rappresentano i profitti unitari
@@ -872,7 +828,6 @@ Rappresentazione Regione Pareto-ottima
 Le soluzione e la regione Pareto-ottima possono essere rappresentate anche nello spazio 
 degli obiettivi
 es se le funzioni fossero da massimizzare, A ed E domina B
-![[Pasted image 20240317100555.png]]
 
 Metodo dei pesi
 Il metodo dei pesi consiste nell'ottimizzare una combinazione convessa delle funzioni obiettivo
@@ -886,8 +841,6 @@ Con due obiettivi lineari e vincoli lineari si puo calcolare la regione Paretian
 OSS l'analisi parametrica è fatta su $\lambda$ è nell'obiettivo e NON nei termini noti MA non è un problema grazie alla dualità
 
 Esempio
-![[Pasted image 20240317101250.png]]
-![[Pasted image 20240317101532.png]]
 
 Metodo dei vincoli
 Il metodo dei vincoli consiste nell'ottimizzare una delle funzioni obiettivo trasformando le altre in vincoli con un termine noto parametrico
@@ -899,15 +852,12 @@ La soluzione ottima del problema risultante dipende dal vettore dei termini noti
 Con due obiettivi lineari e vincoli lineari si puo calcolare la regione Paretiana con l'analisi parametrica
 
 Esempio
-![[Pasted image 20240317102224.png]]
-![[Pasted image 20240317102237.png]]
 
 Regioni paretiane continue e discrete
 Per problemi lineari nel continuo, il metodo dei pesi e dei vincoli generano correttamente la regione paretiana
 Per problemi lineare nel discreto, il metodo dei pesi in generale non garantisce di trovare tutte le soluzioni paretiane
 
 es non esiste una combinazione t.c. riesca a trovare una soluzione ottima nel punto segnato
-![[Pasted image 20240317102436.png]]
 
 Seconda fase
 La seconda fase del processo decisionale puo essere supportata da metodi quantitativi anche se richiede una scelta da parte del decisore
@@ -915,32 +865,29 @@ La seconda fase del processo decisionale puo essere supportata da metodi quantit
 La soluzione scelta è quella in cui delle curve di indifferenza risulta tangente alla regione Paretiana
 
 es ipotizzando di voler massimizzare $f_1$ e $f_2$
-![[Pasted image 20240317102821.png]]
 
 Alcune curve di indifferenza comunemente usate per avere un'espressione analitica
 $w(f(x)) = [\sum_{i=1}^{k} (\lambda _i f_i(x))^p]$
 
 es con $k=1$ e $\lambda _1 = \lambda _2 = 1$
-![[Pasted image 20240317103025.png]]
+
 
 - Criterio del punto di massima curvatura 
 La soluzione scelta è quella per cui ad un piccolo miglioramento di un obiettivo corrisponde un grande peggioramento dell'altro
 
 es
-![[Pasted image 20240317103243.png]]
 
 - Criterio del punto utopia
 Il punto utopia è la soluzione che nello spazio degli obiettivi ha come coordinate i valori ottimi di ciascuno
 Ovviamente se siamo in un contesto di programmazione a molti obiettivi il punto utopia non sarà ammissibile
 
 es possiamo prendere il punto utopia e dall'origine vedere se c è un punto ammissibile che passa per la retta
-![[Pasted image 20240317103339.png]]
 
 - Criterio degli standard
 Gli standard sono valori soglia al di sotto dei quali non si vuole che gli obiettivi possano peggiorare
 
 es stavolta dato un S ammissibile, posso per esempio vedere se c è un punto che passa per la retta dall origine alla regione Pareto-ammissibile
-![[Pasted image 20240317103424.png]]
+
 
 ---
 
@@ -1047,7 +994,6 @@ La formulazione ideale di un problema di programmazione lineare discreta è quel
 
 La formulazione di un problema di programmazione lineare corrisponde ad un poliedro, e ce sono infiniti che racchiudono le soluzioni
 I vincoli della formulazione ideale corrispondono al guscio convesso delle soluzioni intere
-![[Pasted image 20240318102337.png]]
 
 Guscio convesso
 Dato un insieme discreto X, il suo guscio convesso è il poliedro
@@ -1073,7 +1019,6 @@ Generiamo un insieme di disuguaglianze valide/cutting planes $Qx \leq q$ t.c.
 e otteniamo cosi una formulazione piu stretta
 $$P^{(k+1)} = max\{cx : Ax \leq b, Qx \leq q, x \in Z^n_+\}$$
 es
-![[Pasted image 20240318104509.png]]
 
 Procedura di Chvatal-Gomory
 Considerando un problema di PLI con insieme ammissibile
@@ -1146,17 +1091,6 @@ Dove
 - Anche la variabile di slack associata a questa disuguaglianza è intera
 
 es
-![[Pasted image 20240327132954.png]]
-![[Pasted image 20240327133137.png]]
-![[Pasted image 20240327133153.png]]
-![[Pasted image 20240327133204.png]]
-![[Pasted image 20240327133220.png]]
-![[Pasted image 20240327133249.png]]
-![[Pasted image 20240327133301.png]]
-![[Pasted image 20240327133317.png]]
-![[Pasted image 20240327133333.png]]
-![[Pasted image 20240327133347.png]]
-![[Pasted image 20240327133357.png]]
 
 ---
 
@@ -1169,7 +1103,6 @@ La soluzione ottima di $P$ è determinata confrontando le soluzioni ottime dei s
 es in caso di minimizzazione
 $$z^*(P) = min_{i=1,...,n}\{z^*(F_i)\}$$
 La scomposizione ricorsiva di problemi genera un'arborescenza o decision tree o search tree in cui la radice corrisponde al problema originale $P$ ed ogni altro nodo corrisponde ad un sotto problema
-![[Pasted image 20240327134723.png]]
 
 
 Branching
@@ -1198,13 +1131,11 @@ Vengono generati n sotto problemi fissando $x=1$, ..., $x=n$
 Viene scelto un vettore di $n$ variabili binarie ($x_1$, ..., $x_n$)
 Vengono generati $n+1$ sotto problemi fissando alcune variabili (una riga per ogni problema)
 Potrebbe sembrare che si generi un albero sbilanciato se una parte scelgo un numero piu alto/basso di variabili rispetto ad un altra zona. Di solito gli alberi di branch si cerca di tenerli bilanciati MA in realta ciò che conta non sono il numero di variabili, ma l'effetto vincolante delle variabili fissate (es x=0 non conta niente, x=1 ha un effetto forte)
-![[Pasted image 20240327140356.png]]
+
 
 
 es fissaggio di variabili
-![[Pasted image 20240327140941.png]]
 es inserzione di vincoli
-![[Pasted image 20240327141006.png]]
 
 Foglie dell'albero
 La procedura ricorsiva di branching termina quando il sotto problema corrente 
@@ -1248,7 +1179,6 @@ Significa che risolvere un problema $F$ all'ottimo è inutile, poiche non fornir
 OSS Scartare sotto-problemi è cruciale per risparmiare tempo e memoria
 
 es ho due sottoproblemi divisi da un branching orizzontale. Sapendo che esiste una soluzione ammissibile $\overline{x}$, per il problema rosso la curva di livello che rappresenta la soluzione ottima nel continuo è peggiore della tratteggiata nera, quindi il sotto problema rosso puo essere scartato
-![[Pasted image 20240327143303.png]]
 
 Strategia di visita dell'albero
 Ogni volta che due o piu sotto problemi vengono generati, essi vengono appesi ad una lista di nodi aperti, cioe sotto problemi da risolvere
@@ -1292,7 +1222,6 @@ $$x_i = \begin{cases} 1, i \in S \\ 0, i \notin S \end{cases}$$
 Le variabili binarie sono usate per eliminare i "se" dai modelli
 $$\begin{cases} 0 \leq y \leq u, \text{SE } x= 1 \\ y=0, \text{SE } x=0 \end{cases} \Leftrightarrow 0 \leq y  \leq ux$$
 es costi fissi
-![[Pasted image 20240327150916.png]]
 
 - Le variabili binarie possono essere usate anche per attivare e disattivare i vincoli
 Dato il vincolo, aggiungendo M abbastanza grande
@@ -1311,7 +1240,111 @@ $$\begin{cases} a-b\geq k - Mx \\ a-n \leq -k+M(1-x) \end{cases}$$
 A seconda del valore di x, uno dei due vincoli viene imposto mentre l'altro risulta disattivato
 
 es regioni ammissibili non convesse 
-![[Pasted image 20240327151950.png]]
-
 es problema dello scheduling
-![[Pasted image 20240327152011.png]]
+
+---
+
+Programmazione non lineare - PNL
+La programmazione non lineare studia problemi di ottimizzazione in cui la funzione obiettivo o alcuni vincoli sono non lineari
+
+Forma generale
+minimize $z = f(x)$
+s.t. $h_i(x) = 0, \forall i$
+$g_j(x) \leq 0, \forall j$
+$x \in R^n$
+
+Dove $f(x)$, $g(x)$ e $h(x)$ possono essere funzioni non lineari
+
+Proprieta:
+- La soluzione ottima puo non essere all'intersezione dei vincoli
+![[Pasted image 20240328164131.png]]
+- La soluzione ottima puo non essere necessariamente sulla frontiera della regione ammissibile
+![[Pasted image 20240328164213.png]]
+
+Soluzione ottima locale e globale
+In generali gli algoritmi PNL garantiscono solo l ottimalità locale
+Una soluzione $x^* \in X$ è un minimo globale SE e SOLO SE 
+$$f(x^*) \leq f(x), \forall x \in X$$
+Una soluzione $\overline{x} \in X$ è minimo locale SE e SOLO SE
+$\exists \epsilon > 0 : f(\overline{x}) \leq f(x), \forall x \in X : ||\overline{x}-x|| \leq \epsilon$
+L'insieme delle soluzioni $x \in X : ||\overline{x}-x|| \leq \epsilon$ è un intorno di $\overline{x}$
+es le soluzioni $x_1$ e $x_2$ sono ottimi locali mentre $x_3$ è un ottimo globale
+![[Pasted image 20240328164435.png]]
+
+Per trovare un ottimo globale si dovrebbero enumerare tutti gli ottimi locali e scegliere il migliore
+Tuttavia l'enumerazione completa degli ottimi locali in generale non è fattibile in pratica sia per il loro grande numero sia perché non è noto un metodo algoritmico per eseguirla in modo efficiente
+
+Un'importante eccezione positiva è la programmazione convessa
+Un problema di minimizzazione non lineare è convesso quando
+- la funzione obiettivo è una funzione convessa
+	- Una funzione è convessa SE e SOLO SE per ogni copia di punti x_1 e x_2 nel suo dominio e per $0 \leq \lambda \leq 1$
+		$$f(\lambda x_1+(1-\lambda)x_2) \leq \lambda f(x_1)+(1-\lambda)f(x_2)$$
+- la regione ammissibile è un insieme convesso
+	-  Un insieme X è convesso SE e SOLO SE per ogni coppia di punti x_1 e x_2, tutte le loro combinazioni convesse appartengono all'insieme
+		$$\forall x_1,x_2 \in X, \forall 0 \leq \lambda \leq 1, \lambda x_1 + (1-\lambda)x_2 \in X$$
+		es![[Pasted image 20240328165627.png]]
+
+Programmazione convessa
+1. La regione ammissibile è convessa SE
+	- TUTTI i vincoli di uguaglianza h(x) = 0 sono lineari
+	- tutti i vincoli di disuguaglianza, riscritti come $g(x) \leq  0$ sono convessi
+2. La funzione obiettivo da minimizzare deve essere convessa
+SE entrambe le condizioni  sono soddisfatte, il problema è di programmazione convessa e ciò garantisce che 
+- ottimalità locale implica quella globale
+- SE esistono piu ottimi, essi formano un insieme convesso
+
+
+Ottimizzazione vincolata e non vincolata
+Distinguiamo tra
+- Unconstrained NLP: minimizzare una funzione non lineare senza alcun vincolo
+- Constrained NLP: minimizzare $f(x)$ con $x \in X$: le non linearità possono essere sia nell'obiettivo che nei vincoli
+
+Ottimizzazione non vincolata
+Assumiamo che la funzione obiettivo $f(x)$ da minimizzare sia continua e differenziabile
+Il gradiente di una funzione $f(x_1, ..., x_n)$ è il vettore delle su derivate parziali di primo ordine
+$$\bigtriangledown f(x) = [\frac{\partial f}{\partial x_1}...\frac{\partial f}{\partial x_n}]^T$$
+L'Hessiano di una funzione $f(x_1, ..., x_n)$ è la matrice delle sue derivate parziali di secondo ordine (matrice simmetrica perchè è indifferente derivare prima per x e poi per y)
+![[Pasted image 20240328170725.png]]
+
+Caratterizzazione dei minimi locali
+Condizioni necessarie del primo ordine $\bigtriangledown f(\overline{x}) = 0$
+Condizioni necessario del secondo ordine $\bigtriangledown ^2 f(\overline{x}) \geq 0$ (semi definita positiva)
+Condizioni sufficienti del secondo ordine $\bigtriangledown ^2 f(\overline{x}) > 0$ (definita positiva)
+
+Algoritmi
+SE le derivate prime e seconde sono note, si possono enumerare i punti nei quali sono soddisfatte le condizioni analitiche
+
+Gli algoritmi per l'ottimizzazione non lineare sono algoritmi iterativi, che convergono verso un minimo  locale
+Partono da una soluzione data $x^{(0)}$ e calcolano una sequenza di soluzioni t.c. il valore di f(x) diminuisca monotonicamente
+Si fermano quando il miglioramento ottenuto o il passo compiuto sono piu piccoli di una data soglia
+
+Ad ogni iterazione k, l'algoritmo calcola una direzione $d^{(k)}$ (un vettore) e un passo $s_k$ (uno scalare) t.c. $x^{(k+1)} = x^{(k)} + s_kd^{(k)}$
+Caratteristiche che devono avere questi algoritmi
+- Convergenza globale: l'algoritmo converge sempre in un minimo locale a partire da qualsiasi punto
+Una volta noto che un algoritmo converge in modo globale analizziamo la sua velocita di convergenza
+Sia $\{x_k\}$ una sequenza in $R^n$ che converge a $x^*$
+- Convergenza lineare: l'errore che commettono rispetto all'iterazione prima è minore di 1
+$$\lim _{k-> \infty} \frac{||x_{k+1}-x^*||}{||x_k-x^*||} = r < 1$$
+- Convergenza superlineare
+$$\lim _{k-> \infty} \frac{||x_{k+1}-x^*||}{||x_k-x^*||} = 0$$
+- Convergenza quadratica: considero il quadrato dell'errore dell'iterazione prima (elevando al quadrato è piu piccola perche mi sto avvicinando)
+$$\lim _{k-> \infty} \frac{||x_{k+1}-x^*||}{||x_k-x^*||^2} = M$$
+
+Le due principali strategie per costruire algoritmi iterativi che scelgono il passo e la direzione sono
+- line search: prima si sceglie la direzione e poi il passo
+- trust regions: prima si sceglie il passo e poi la direzione
+
+Negli algoritmi line search, le scelte piu comuni per definire la direzione $d^{(k)}$ sono
+- metodo del gradiente: scelgo la direzione opposta a quella del gradiente, $-\bigtriangledown f(x^{(k)})$
+- metodo di Newton: scelgo una direzione $-B^-1\bigtriangledown f(x^{(k)})$, con B una matrice semi definita positiva
+- metodo del gradiente coniugato: una direzione $-\bigtriangledown f(x^{(k)}) + \beta _kd^{(k-1)}$ che considera anche la direzione del passo precedente
+
+Metodo del gradiente
+Per il teorema di Taylor
+$f(x^{(k)} + s_kd^{(k)}) = f(x^{(k)}) + s_kd^{(k)T} \bigtriangledown f(x^{(k)}) + ...$
+Questa approssimazione decresce piu rapidamente nella direzione opposta a quella del gradiente
+$$d^{(k)} = - \frac{\bigtriangledown f(x^{(k)})}{||\bigtriangledown f(x^{(k)})||}$$
+Vantaggio: questo metodo (steepest descent method) richiede solo il calcolo del gradiente e non delle derivate seconde
+
+
+Metodo di Newton
