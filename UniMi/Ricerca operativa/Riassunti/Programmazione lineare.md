@@ -7,3 +7,4 @@ Programmazione lineare quando:
 [[Teorema fondamentale della PL]]
 [[PL a piu obiettivi]]
 [[PLI - Programmazione lineare intera]]
+[[PNL - Programmazione non lineare]]

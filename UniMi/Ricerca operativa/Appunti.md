@@ -1341,10 +1341,147 @@ Negli algoritmi line search, le scelte piu comuni per definire la direzione $d^{
 
 Metodo del gradiente
 Per il teorema di Taylor
-$f(x^{(k)} + s_kd^{(k)}) = f(x^{(k)}) + s_kd^{(k)T} \bigtriangledown f(x^{(k)}) + ...$
+$$f(x^{(k)} + s_kd^{(k)}) = f(x^{(k)}) + s_kd^{(k)T} \bigtriangledown f(x^{(k)}) + ...$$
 Questa approssimazione decresce piu rapidamente nella direzione opposta a quella del gradiente
 $$d^{(k)} = - \frac{\bigtriangledown f(x^{(k)})}{||\bigtriangledown f(x^{(k)})||}$$
 Vantaggio: questo metodo (steepest descent method) richiede solo il calcolo del gradiente e non delle derivate seconde
 
 
 Metodo di Newton
+Assumendo $s_k=1$ e trascurando dal terzo ordine in poi nello sviluppo di Taylor si ha tale approssimazione
+$$f(x^{(k)} + s_kd^{(k)}) = f(x^{(k)}) + s_kd^{(k)T} \bigtriangledown f(x^{(k)}) + \frac{1}{2}d^{(k)T} \bigtriangledown^2f(x^{k})d^{(k)}$$
+
+La direzione che minimizza questa quantita
+$$d^{(k)} = - \bigtriangledown^2f(x^{(k)})^{-1}\bigtriangledown f(x^{k})$$
+Il metodo di Newton è piu veloce e accurato ma richiede il calcolo dell'Hessiano ($\bigtriangledown^2f(x^{(k)}$) e puo essere usato solo quando quest'ultimo è positivo
+Sono stati ideati metodi quasi-Newton approssimando l'Hessiano e aggiornando ad ogni iterazione l inverso dell Hessiano
+
+Metodi trust region
+Richiedono di
+- approssimare la funzione $f()$ con un metodo $m_k()$ che viene aggiornato ad ogni iterazione $k$
+- cercare un minimo di $m_k()$ in un  intorno di raggio $p_k$ della soluzione corrente $x_k$
+
+SE la diminuzione del valore dell'obiettivo non è grande abbastanza, il raggio viene diminuito e l'ottimizzazione viene ripetuta
+In questo metodo prima scegliamo il passo e poi la direzione
+Solitamente il modello $m$ è quadratico e usa il gradiente $\bigtriangledown f_k$ e l'Hessiano o una sua approssimazione $B_k$
+$$m_k(x_k+p) = f_k+p^T \bigtriangledown f_k + \frac{1}{2}p^TB_kp$$
+
+Effetto Scaling
+Gli algoritmi di programmazione non lineare possono essere piu o meno robusti rispetto allo scaling (es quando cambio unita di misura di alcune grandezze)
+L'invarianza di scala è una proprieta desiderabile degli algoritmi, che li rende appunto piu robusti
+
+
+Scelta del passo
+Una volta scelta la direzione $d^{(k)}$ nei metodi line search rimane un problema di minimizzazione ad una sola variabile, lo scalare $s_k\geq 0$ (monodimensionale)
+$$minimize f(x^{(k+1)}=f(x^{(k)}+s_kd^{(k)})$$
+L'ottimizzazione esatta di $s_k$ non è indispensabile infatti una buona approssimazione è sufficiente per avviare l'iterazione successiva dopo aver migliorato $f(x)$
+
+Gli algoritmi per determinare il passo possono essere classificati in
+- algoritmi che richiedono il calcolo della derivata
+- algoritmi derivative free
+
+Metodo di bisezione
+Richiede il calcolo della derivata
+Dato un intervallo iniziale $r=[a,b]$ per $s_k$
+1. calcolare $\bigtriangledown f(x^{(k)+\frac{a+b}{2}d^{(k)}})$
+	1. SE positiva, porre $r=[a, \frac{a+b}{2}]$
+	2. SE negativa, porre $r=[\frac{a+b}{2},b]$
+2. ripetere finche $r$ è abbastanza piccolo 
+
+Metodo dei numeri di Fibonacci
+Derivative free
+La sequenza dei numeri di Fibonacci inizia con $F_0=0$ e $F_1=1$ e si ricava con la ricorsione $F_k=F_{k-1}+F_{k-2}$
+
+Proprieta: dati 4 numeri di Fibonacci consecutive a partire dal k-esimo, si ha
+$$F_{k+1}F_{k+2}-F_{k}F_{k+3}=(-1)^k, \forall k\geq 0 $$
+DIM per induzione
+- Base $k =0$
+$$F_1F_2-F_0F_3=1*1-0*2=1^0$$
+- Passo induttivo: da $k-1$ a $k$ per ogni $k \geq 1$
+$$F_kF_{k+1}-F_{k-1}F_{k+2} = (-1)^{k-1}$$
+$$F_{k+1}F_{k+2}-F_{k}F_{k+3} = (-1)^{k}$$
+Infatti
+$F_{k+1}F_{k+2}-F_{k}F_{k+3} = [F_{k+1}(F_k+F_{k+1})]-[F_k(2F_{k+1}+F_k)] =$
+$= F_kF_{k+1}+F^2_{k+1}-2F_kF_{k+1}-F^2_{k} = (F^2_{k+1}-F^2_K)-F_kF_{k+1} =$
+$=(F_{k+1}+F_k)(F_{k+1}-F_k)-F_kF_{k+1}=F_{k+2}F_{k-1}-F_kF_{k+1} =$
+$=-(-1)^{k-1}=(-1)^k$
+
+
+Problema
+- Data una funzione continua $f(x)$ di una sola variabile $x$, si vuole cercare un punto di minimo f(x)
+- E' dato un intervallo di incertezza iniziale $I^0$ ed è richiesto un massimo intervallo di incertezza finale $\bigtriangleup$
+- Si assume che la funzione sia unimodale nell'intervallo $I^0$, cioè abbia un solo punto di minimo nell'intervallo
+- Si suppone
+	- di non poter/voler calcolare la derivata prima di $f(x)$
+	- che sia possibile valutare $f(x)$ in punti diversi purché distanti tra loro almeno $\epsilon$ (risoluzione/precisione dell'HW)
+
+OSS sarebbe ancora possibile usare il metodi di bisezione, valutando in ogni intervallo due punti distanti $\epsilon$ posti al centro dell'intervallo stesso MA l informazione sarebbe quella derivante dal calcolo della derivata al centro dell'intervallo
+In tal modo sarebbero necessarie due valutazioni della funzione ad ogni iterazione mentre con il metodo di Fibonacci ne basta una
+
+Iterazione generica
+Alla generica iterazione $k$, si ha un intervallo di incertezza $I^k$
+Si considerano due punti $a^k$ e $b^k$ interni all'intervallo che lo dividono in tre parti
+Si conosca il valore della funzione $f(x)$ nei due punti interni
+- SE $f(a^k) > f(b^k)$, ALLORA il minimo $f(x)$ non cade nella prima parte
+- SE $f(a^k) < f(b^k)$, ALLORA il minimo $f(x)$ non cade nella terza parte
+
+![[Pasted image 20240401102743.png]]
+
+Punti di valutazione
+Alla successiva iterazione l'intervallo di incertezza risulta composta da due delle tre parti dell'intervallo di incertezza precedente e uno dei due punti interni diventa un estremo dell'intervallo di incertezza
+
+Per simmetria, ad ogni iterazione i punti in cui valutare $f(x)$ sono scelti in modo simmetrico nell'intervallo di incertezza corrente
+Proprieta che ne consegue:
+$$I^k=I^{k+1}+I^{k+2}, \forall k \geq 0$$
+![[Pasted image 20240401103045.png]]
+
+OSS in uno dei due punti interni la funzione è gia stata valutata in precedenza
+
+Intervallo finale
+OSS piu è grande l'intervallo scartato all'iterazione k, e piu risultano piccoli quelli scartabili all'iterazione $k+1$
+L'iterazione di massima efficacia è quella che consente di scartare metà dell'intervallo di incertezza, valutando due punti interni distinti vicinissimo tra loro (a distanza $\epsilon$)
+Tuttavia all'iterazione successiva il primo e il terzo intervallo sarebbero larghi solo $\epsilon$, quindi si avrebbe un'iterazione di minima efficacia
+
+![[Pasted image 20240401103542.png]]
+
+Si vuole quindi compiere l'iterazione di massima efficacia per ultima, quindi si vuole avere come ultima iterazione due punti $a^{n-1}$ e $b^{n-1}$ distanti $\epsilon$
+Si ha perciò
+$$I^{n-1}=2I^n-\epsilon$$
+Dalle due relazioni
+$$I^k = I^{k+1}+I^{k+2},\forall k \geq 0$$
+$$I^{n-1}=2I^n-\epsilon$$
+Si ricava 
+$$I^{n-2} = I^{n-1}+I^n=3I^n-\epsilon$$
+$$...$$
+$$I^{n-k}=I^{n-k+1}+I^{n-k+2}=F_{k+2}I^n-F_k\epsilon, \forall k \geq 1$$
+$$...$$
+$$I^0=I^1+I^2=F_{n+2}I^n-F_n\epsilon$$
+Perciò
+$$I^0=F_{n+2}I^n-F_n\epsilon$$
+$$I^n=\frac{I^0}{F_{n+2}}+\frac{F_n}{F_{n+2}}\epsilon$$
+Dalla relazione soprastante e dal requisito di incertezza finale 
+$$I^n\leq \bigtriangleup$$
+Si ricava il numero di iterazioni necessarie
+$$\overline{n} = \min\{n|\frac{I^0}{F_{n+2}}+\frac{F_n}{F_{n+2}}\epsilon \leq \bigtriangleup\}$$
+OSS il secondo addendo è moltiplicato per $\epsilon$ piccolo, quindi in realta bisogna minimizzare il primo addendo
+Formula di Binet: lega $n$ al numero di Fibonacci di $n$
+$$F_n=\frac{1}{\sqrt{5}}((\frac{1+\sqrt{5}}{2})^n-(\frac{1-\sqrt{5}}{2})^n)$$
+Una volta trovato $n$, sappiamo quali siano i punti da scegliere
+$$I^\overline{n}=\frac{I^0}{F_{\overline{n}+2}}+\frac{F_\overline{n}}{F_{\overline{n}+2}}\epsilon$$
+$$I^1 = F_{\overline{n}+1}I^\overline{n}-F_{\overline{n}-1}\epsilon$$
+Ricavo $I^1$ in funzione di $I^0$
+$$I^1 = F_{\overline{n}+1}(\frac{I^0}{F_{\overline{n}+2}}+\frac{F_\overline{n}}{F_{\overline{n}+2}}\epsilon)-F_{\overline{n}-1}\epsilon =$$
+$$= \frac{F_{\overline{n}+1}}{F_{\overline{n}+2}}I^0+\frac{\epsilon}{F_{\overline{n}+2}}(F_{\overline{n}+1}F_\overline{n}-F_{\overline{n}+2}F_{\overline{n}-1}) =$$
+$$= \frac{F_{\overline{n}+1}}{F_{\overline{n}+2}}I^0 + \frac{\epsilon}{F_{\overline{n}+2}}(-1)^{\overline{n}-1}$$
+Conclusioni
+Il metodo dei numeri di Fibonacci consente di approssimare il minimo di una funzione di una sola variabile continua. 
+Deve essere noto un intervallo di incertezza iniziale e la funzione deve essere unimodale in esso. 
+Il metodo non richiede il calcolo della derivata prima della funzione. 
+Il metodo richiede di valutare la funzione in un numero di punti dello stesso ordine di grandezza del numero di iterazioni.
+
+es
+Incertezza iniziale $I^0=[0,100]$
+E richiesto un massimo intervallo di incertezza finale $\bigtriangleup =2$ 
+Risoluzione $\epsilon=1$
+![[Pasted image 20240401110147.png]]
+![[Pasted image 20240401110159.png]]
