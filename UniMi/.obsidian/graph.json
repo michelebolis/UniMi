@@ -55,6 +55,13 @@
         "a": 1,
         "rgb": 65416
       }
+    },
+    {
+      "query": "path:\"Algoritmi e strutture dati\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 1066577
+      }
     }
   ],
   "collapse-display": true,
@@ -62,11 +69,11 @@
   "textFadeMultiplier": -1.9,
   "nodeSizeMultiplier": 1.65677083333333,
   "lineSizeMultiplier": 0.967708333333333,
-  "collapse-forces": true,
-  "centerStrength": 0.373866666666667,
-  "repelStrength": 13.6213333333333,
-  "linkStrength": 0.662103703703704,
-  "linkDistance": 348,
-  "scale": 0.04980495025057427,
+  "collapse-forces": false,
+  "centerStrength": 0.286458333333333,
+  "repelStrength": 13.75,
+  "linkStrength": 0.34375,
+  "linkDistance": 238,
+  "scale": 0.03552464893086609,
   "close": false
 }

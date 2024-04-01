@@ -1,0 +1,8 @@
+- Criterio di costo logaritmico: assumiamo che il costo delle operazioni siano proporzionali alla grandezza della rappresentazione dei dati: intero $x -> (\log k)$ 
+	- Utilizzo: grandezze elevate
+	- Tempo: ogni istruzione elementare utilizza un'unità di tempo indipendentemente dalla grandezza degli operandi
+	- Spazio: ogni variabile elementare contiene un'unità di spazio indipendentemente dal valore contenuto
+- Criterio di costo uniforme: assumiamo che il costo delle operazioni siano $O(1)$, 1 unita di tempo 
+	- Utilizzo: grandezze ridotte
+	- Tempo: tempo di calcolo di ciascuna operazione è proporzionale  alla lunghezza dei valori coinvolti
+	- Spazio: lunghezza della rappresentazione del dato (numero di bit o numero di caratteri se stringa)

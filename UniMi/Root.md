@@ -1,3 +1,4 @@
+- [[Algoritmi e strutture dati]]
 - [[Sistemi embedded]]
 - [[SWENG]]
 - [[Linguaggi di programmazione]]
