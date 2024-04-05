@@ -9,4 +9,5 @@ Condizioni necessarie del primo ordine $\bigtriangledown f(\overline{x}) = 0$
 Condizioni necessario del secondo ordine $\bigtriangledown ^2 f(\overline{x}) \geq 0$ (semi definita positiva)
 Condizioni sufficienti del secondo ordine $\bigtriangledown ^2 f(\overline{x}) > 0$ (definita positiva)
 
-[[Ottimizzazione non vincolata - Algoritmi]]
+[[PNL non vincolata - Algoritmi]]
+[[PNL Vincolata]]

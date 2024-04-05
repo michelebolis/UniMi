@@ -1257,9 +1257,9 @@ Dove $f(x)$, $g(x)$ e $h(x)$ possono essere funzioni non lineari
 
 Proprieta:
 - La soluzione ottima puo non essere all'intersezione dei vincoli
-![[Pasted image 20240328164131.png]]
+
 - La soluzione ottima puo non essere necessariamente sulla frontiera della regione ammissibile
-![[Pasted image 20240328164213.png]]
+
 
 Soluzione ottima locale e globale
 In generali gli algoritmi PNL garantiscono solo l ottimalità locale
@@ -1269,7 +1269,7 @@ Una soluzione $\overline{x} \in X$ è minimo locale SE e SOLO SE
 $\exists \epsilon > 0 : f(\overline{x}) \leq f(x), \forall x \in X : ||\overline{x}-x|| \leq \epsilon$
 L'insieme delle soluzioni $x \in X : ||\overline{x}-x|| \leq \epsilon$ è un intorno di $\overline{x}$
 es le soluzioni $x_1$ e $x_2$ sono ottimi locali mentre $x_3$ è un ottimo globale
-![[Pasted image 20240328164435.png]]
+
 
 Per trovare un ottimo globale si dovrebbero enumerare tutti gli ottimi locali e scegliere il migliore
 Tuttavia l'enumerazione completa degli ottimi locali in generale non è fattibile in pratica sia per il loro grande numero sia perché non è noto un metodo algoritmico per eseguirla in modo efficiente
@@ -1282,7 +1282,7 @@ Un problema di minimizzazione non lineare è convesso quando
 - la regione ammissibile è un insieme convesso
 	-  Un insieme X è convesso SE e SOLO SE per ogni coppia di punti x_1 e x_2, tutte le loro combinazioni convesse appartengono all'insieme
 		$$\forall x_1,x_2 \in X, \forall 0 \leq \lambda \leq 1, \lambda x_1 + (1-\lambda)x_2 \in X$$
-		es![[Pasted image 20240328165627.png]]
+		es
 
 Programmazione convessa
 1. La regione ammissibile è convessa SE
@@ -1304,7 +1304,6 @@ Assumiamo che la funzione obiettivo $f(x)$ da minimizzare sia continua e differe
 Il gradiente di una funzione $f(x_1, ..., x_n)$ è il vettore delle su derivate parziali di primo ordine
 $$\bigtriangledown f(x) = [\frac{\partial f}{\partial x_1}...\frac{\partial f}{\partial x_n}]^T$$
 L'Hessiano di una funzione $f(x_1, ..., x_n)$ è la matrice delle sue derivate parziali di secondo ordine (matrice simmetrica perchè è indifferente derivare prima per x e poi per y)
-![[Pasted image 20240328170725.png]]
 
 Caratterizzazione dei minimi locali
 Condizioni necessarie del primo ordine $\bigtriangledown f(\overline{x}) = 0$
@@ -1425,7 +1424,6 @@ Si conosca il valore della funzione $f(x)$ nei due punti interni
 - SE $f(a^k) > f(b^k)$, ALLORA il minimo $f(x)$ non cade nella prima parte
 - SE $f(a^k) < f(b^k)$, ALLORA il minimo $f(x)$ non cade nella terza parte
 
-![[Pasted image 20240401102743.png]]
 
 Punti di valutazione
 Alla successiva iterazione l'intervallo di incertezza risulta composta da due delle tre parti dell'intervallo di incertezza precedente e uno dei due punti interni diventa un estremo dell'intervallo di incertezza
@@ -1433,7 +1431,6 @@ Alla successiva iterazione l'intervallo di incertezza risulta composta da due de
 Per simmetria, ad ogni iterazione i punti in cui valutare $f(x)$ sono scelti in modo simmetrico nell'intervallo di incertezza corrente
 Proprieta che ne consegue:
 $$I^k=I^{k+1}+I^{k+2}, \forall k \geq 0$$
-![[Pasted image 20240401103045.png]]
 
 OSS in uno dei due punti interni la funzione è gia stata valutata in precedenza
 
@@ -1442,7 +1439,6 @@ OSS piu è grande l'intervallo scartato all'iterazione k, e piu risultano piccol
 L'iterazione di massima efficacia è quella che consente di scartare metà dell'intervallo di incertezza, valutando due punti interni distinti vicinissimo tra loro (a distanza $\epsilon$)
 Tuttavia all'iterazione successiva il primo e il terzo intervallo sarebbero larghi solo $\epsilon$, quindi si avrebbe un'iterazione di minima efficacia
 
-![[Pasted image 20240401103542.png]]
 
 Si vuole quindi compiere l'iterazione di massima efficacia per ultima, quindi si vuole avere come ultima iterazione due punti $a^{n-1}$ e $b^{n-1}$ distanti $\epsilon$
 Si ha perciò
@@ -1483,5 +1479,229 @@ es
 Incertezza iniziale $I^0=[0,100]$
 E richiesto un massimo intervallo di incertezza finale $\bigtriangleup =2$ 
 Risoluzione $\epsilon=1$
-![[Pasted image 20240401110147.png]]
-![[Pasted image 20240401110159.png]]
+
+---
+
+PNL Vincolata
+Nell'ottimizzazione non lineare vincolata oltre alla funzione obiettivo minimize $f(x)$ consideriamo anche
+- vincoli di uguaglianza $h_i(x) = 0, \forall i \in E$
+- vincoli di disuguaglianza $g_i(x) \geq 0, \forall i \in I$
+
+Un  vincolo di disuguaglianza $j \in I$ è attivo in una soluzione $\overline{x}$ SE e SOLO SE $g_j(\overline{x})=0$
+L'insieme attivo $A(\overline{x})$ è l'insieme dei vincoli attivi in $\overline{x}$
+In ogni punto $\overline{x}$ ammissibile, $A(\overline{x})$ comprende sempre tutti i vincoli di uguaglianza
+
+Vincoli di uguaglianza
+Considerando un vincolo $c(x) = 0$ ed un punto $\overline{x}$ su di esso
+Indichiamo con  $\bigtriangledown c(\overline{x})$ ("nabla" c) la direzione della normale (perpendicolare) al vincolo in $\overline{x}$
+Consideriamo un passo infinitesimo da $\overline{x}$ lungo una direzione $d$
+Per mantenere l'ammissibilità rispetto al vincolo, $d$ deve essere t.c.
+$$\bigtriangledown c(\overline{x})^Td=0$$
+Il passo produce un miglioramento nel valore di $f(x)$ SE e SOLO se 
+$$\bigtriangledown f(\overline{x})^Td<0$$
+Quindi un passo migliorante da $\overline{x}$ NON è possibile SE e SOLO SE
+$$\exists \overline{\lambda} \neq 0: \bigtriangledown c(\overline{x}) = \overline{\lambda}\bigtriangledown f(\overline{x})$$
+es
+Abbiamo $\bigtriangledown f$ che punta sempre in alto mentre il vincolo di uguaglianza è la circonferenza
+In $x^*$ si ha una direzione opposta a quella di $\bigtriangledown f$, quindi i due vettori sono allineati
+
+Un modo alternativo di formulare la stessa condizione di ottimalità in un punto $\overline{x}$, consiste nell'introdurre la funzione Lagrangiana (in cui combiniamo la funzione obiettivo con la quantita di quanto viola il vincolo $c(x)$). Derivando tutto ottengo la derivata della funzione obiettivo meno la derivata di $c(x)$
+$$L(x, \lambda) = f(x)-\lambda c(x)$$
+$$\bigtriangledown_xL(x, \lambda) = \bigtriangledown f(x) - \lambda\bigtriangledown c(x)$$
+Quindi la condizione di ottimalità di $\overline{x}$ equivale alla condizione
+$$\exists \overline{\lambda} \neq 0: \bigtriangledown_xL(\overline{x}, \overline{\lambda}) = 0$$
+
+Si tratta di una condizione necessaria del primo ordine MA non sufficiente (come nel caso non vincolato QUINDI è un modo per ricondursi da vincolato a non vincolato)
+
+Vincoli di disuguaglianza
+Considerando un vincolo di disuguaglianza $g(x) \geq 0$ ed un punto $\overline{x}$ su di esso
+Il gradiente $\bigtriangledown  g(x)$ è un vettore che punta verso l'interno della regione ammissibile, dato che il vincolo è nella forma $g(x) \geq 0$ ($\leq 0$ nel caso la funzione obiettivo sia massimizzare)
+
+Il punto $\overline{x}$ NON è ottimo SE esiste uno spostamento infinitesimo $d$ tale da migliorare il valore dell'obiettivo e da mantenere l'ammissibilità
+$$\bigtriangledown f(\overline{x})d <0$$
+$$\bigtriangledown g(\overline{x})d \geq 0$$
+Tali condizioni NON possono essere vere entrambe SOLO SE
+$$\exists \overline{\lambda} \geq 0: \bigtriangledown f(\overline{x}) =  \overline{\lambda} \bigtriangledown g(\overline{x})$$
+(cioè quando puntano nella stessa direzione e stesso verso)
+
+Quando invece il punto $\overline{x}$ NON è sul vincolo, allora si puo avere uno spostamento infinitesimo ammissibile $d$ ammissibile E migliorante quando d è abbastanza piccolo da non superare lo slack del vincolo e 
+$$\bigtriangledown f(\overline{x})d <0$$
+Quindi la condizione necessaria del primo ordine per l'ottimalità in $\overline{x}$ è la stessa del caso non vincolato
+$$\bigtriangledown f(\overline{x}) =0$$
+es
+
+Un modo alternativo di formulare la stessa condizione di ottimalità in un punto $\overline{x}$ consiste nell'introdurre la funzione Lagrangiana si ha
+$$L(x, \lambda) = f(x)-\lambda g(x)$$
+$$\bigtriangledown_xL(x, \lambda) = \bigtriangledown f(x) - \lambda\bigtriangledown g(x)$$
+Quindi al condizione di ottimalità di $\overline{x}$
+$$\begin{cases} \exists \overline{\lambda} \geq 0: \bigtriangledown f(\overline{x}) =  \overline{\lambda} \bigtriangledown g(\overline{x}) \text{ SE }  g(\overline{x})=0
+\\ \bigtriangledown f(\overline{x}) = 0 \text{ SE } g(\overline{x})>0 \end{cases}$$
+Equivale alle condizioni
+$$\exists \overline{\lambda} \geq 0:\bigtriangledown_xL(x, \lambda) = 0$$
+$$\overline{\lambda}g(\overline{x})=0$$
+
+Due vincoli di disuguaglianza 
+Considerando due vincoli di disuguaglianza $g_1(x) \geq 0, g_2(x) \geq 0$ ed un punto $\overline{x}$, dove entrambi sono attivi
+Indichiamo con $\bigtriangledown g_1(x)$ e $\bigtriangledown g_2(x)$ la direzione della normale ai vincoli in $\overline{x}$
+consideriamo un passo infinitesimo da $\overline x$ lungo una direzione $d$
+Per l'ammissibilità, $d$ deve essere t.c.
+$$\bigtriangledown g_1(\overline{x})^Td \geq 0 \wedge \bigtriangledown g_2(\overline{x})^Td\geq0$$
+Il passo produce un miglioramento di $f(x)$ SE e SOLO SE 
+$$\bigtriangledown f(\overline x)^T d<0$$
+es
+Nella prima immagina abbiamo due vincoli, uno verticale uno orizzontale. Una direzione ammissibile sara compresa tra la circonferenza e $\bigtriangledown g_1(x)$ MA data la direzione dell'obiettivo ci dice che siamo nell'ottimo perche non esiste d che produca miglioramento
+All opposto la seconda immagine
+
+Direzioni ammissibili
+Una direzione $d$ è ammissibile in $\overline x$ SE e SOLO SE
+$$\bigtriangledown c_i(\overline x)^Td =0, \forall i \in E \wedge \bigtriangledown c_i(\overline x)^Td \geq 0, \forall i \in A(\overline x) \cap I$$Con $E$ insieme dei vincoli di uguaglianza mentre I di disuguaglianza
+
+Proprieta linear independence constraint qualification (LICQ) in un punto $\overline x$:
+tutti i gradienti dei vincoli attivi in $A(\overline x)$ sono linearmente indipendenti
+(non dobbiamo avere vincoli ridondanti, che ci danno la stessa informazione)
+
+Condizioni di ottimalità del primo ordine
+Definita la funzione Lagrangiana
+$$L(x, \lambda) = f(x)-\sum_{i \in E \cup I}\lambda_ic_i(x)$$
+si hanno le seguenti condizioni necessarie del primo ordine affinché un punto sia un minimo locale
+Condizioni di Karusk-Kuhn-Tucker KKT SE
+- $x^*$ è un minimo locale di $f(x)$
+- $f(x)$ e $c_i(x)$ sono funzioni continue e differenziabili
+- la LICQ è soddisfatta in $x^*$
+ALLORA esiste un $\lambda^*$ t.c.
+$$\bigtriangledown_x L(x^*, \lambda^*)=0$$
+$$\begin{cases} 
+c_i(x^*)=0, \forall i \in E \\
+c_i(x^*) \geq 0, \forall i \in I \\
+\lambda_i^* \geq  0, \forall i \in I \\
+\lambda_i^*c_i(x^*) = 0, \forall i \in E \cup I
+\end{cases}$$
+Spiegazione
+$$\begin{cases} \text{ammissibilita dei vincoli di uguaglianza} \\ 
+\text{ammissibilita vincoli di disuguaglianza} \\
+\text{moltiplicatori non negativi quando corrispondo a vincoli di disuguaglianza} \\
+\text{condizione di complementarieta (reminder a scarto complementare)} 
+\end{cases}$$
+
+Le condizioni di complementarietà
+$$\lambda_i^*c_i(x^*) = 0, \forall i \in E \cup I$$
+richiedono che 
+- o il vincolo $c_i(x)$ sia attivo
+- o il corrispondente moltiplicatore $\lambda_i$ sia nullo
+- o entrambe 
+
+Poiché $\lambda_i^*=0, \forall i \notin A(x^*)$, la condizione del primo ordine si puo riscrivere come 
+$$\bigtriangledown f(x^*)-\sum_{i \in A(x^*)}\lambda_i^*\bigtriangledown c_i (x^*)=0$$
+Complementarietà stretta
+Si ha complementarietà stretta quando solo una tra $\lambda_i^*$ e $c_i(x^*)$ è nulla $\forall i \in A(x^*)$
+Per uno stesso punto $x^*$ potrebbero esistere diversi $\lambda_i^*$ che soddisfano le condizioni KKT
+MA se valgono le condizioni LICQ, ALLORA $\lambda_i^*$ è unico
+
+
+Cono critico
+Nel primo ordine non siamo in grado di distinguere i massimi dai minimi
+Assumiamo che $f(x)$ e $c_i(x)$ siano tutte continue e differenziabili fino al secondo ordine
+Siano
+- $F(x^*)$ l'insieme delle direzioni ammissibili in $x^*$
+- $\lambda^*$ un vettore di moltiplicatori Lagrangiani che soddisfano le KKT in $x^*$
+
+DEF Cono critico in un punto $(x^*, \lambda^*)$ è l'insieme delle direzioni ammissibili t.c. il prodotto scalare tra le direzione e la normale è 0 per tutti i vincoli di disuguaglianza attivi nel punto con il $\lambda$ positivo
+$$C(x^*, \lambda^*) = \{w \in F(x^*):\bigtriangledown c_i(x^*)^Tw=0, \forall i \in A(x^*) \cap I : \lambda_i^* >0  \}$$
+QUINDI
+$$w \in C(x^*, \lambda^*)\Leftrightarrow \begin{cases}
+\bigtriangledown c_i(x^*)^Tw=0, \forall i \in E \\
+\bigtriangledown c_i(x^*)^Tw=0, \forall i \in A(x^*) \cap I:\lambda_i^* >0 \\
+\bigtriangledown c_i(x^*)^Tw \geq 0, \forall i \in A(x^*) \cap I:\lambda_i^* =0 
+\end{cases}$$Dato che $\lambda_i^*=0, \forall i \notin A(x^*)$,
+$$w \in C(x^*, \lambda^*) \implies \lambda_i^*\bigtriangledown c_i(x^*)^Tw=0, \forall i \in E \cup I$$
+Dalla definizione di $L(x, \lambda)$ e dalle KKT
+$$w \in C(x^*, \lambda^*) \implies w^T\bigtriangledown f(x^*) = \sum_{i \in E \cup I} \lambda_i^*w^T\bigtriangledown c_i(x^*)=0$$
+QUINDI il cono contiene le direzioni ammissibili per le quale le derivate prime non danno sufficienti informazioni
+
+es
+
+Condizioni del secondo ordine
+- Condizioni necessarie del secondo ordine:
+
+Sia $x^*$ un minimo locale di $f(x)$ in cui sono soddisfatte le LICQ,
+Sia $\lambda^*$ un vettore di moltiplicatori Lagrangiani che soddisfa le KKT in $x^*$
+$$w^T\bigtriangledown^2_{xx}L(x^*, \lambda^*)w \geq 0, \forall w \in C(x^*, \lambda^*)$$
+- Condizioni sufficienti del secondo ordine
+
+Sia $x^*$ una soluzione ammissibile 
+Sia $\lambda^*$ un vettore di moltiplicatori Lagrangiani che soddisfa le KKT in $x^*$
+SE 
+$$w^T\bigtriangledown^2_{xx}L(x^*, \lambda^*)w > 0, \forall w \in C(x^*, \lambda^*), w \neq 0$$
+ALLORA $x^*$ è un minimo locale di $f(x)$
+
+
+Algoritmi
+Per ogni dato sottoinsieme di vincoli attivi, working/active set, è possibile risolvere un problema di PNL non vincolata
+TUTTAVIA questo metodo soffre per l'esplosione combinatoria nel numero di sottoinsiemi che è necessario considerare
+
+I metodi active set eseguono una ricerca intelligente, scartando a priori alcuni sottoinsiemi
+I metodi del punto interno / metodi a barriera producono sequenze di punti che non rendono attivo alcun vincolo di disuguaglianza, bensì si avvicinano asintoticamente al contorno della regione ammissibile
+
+Vediamo come rilassare i vincoli per passare da un problema vincolato ad uno non vincolato
+In generale gli algoritmi di PNL devono bilanciare due effetti di ogni passo
+- il miglioramento della funzione obiettivo
+- il peggioramento nella violazione di alcuni vincoli
+
+Una funzione di merito combina insieme i due effetti tramite un opportuno penalty parameter, $\mu$
+Una funzione di merito $\phi(x, \mu)$ è esatta quando esiste un valore scalare positivo $\mu^*$ t.c. per ogni $\mu > \mu^*$ ogni minimo locale del problema vincolato è un minimo locale di $\phi(x, \mu)$
+
+- L1 penalty function
+
+$$\phi_1(x, \mu) = f(x) + \mu \sum_{i \in E} |c_i(x)| + \mu\sum_{i \in I}[c_i(x)]^-$$
+con $[k]^-$ indica $max\{0, -k\}$ quindi $[c_i(x)]^-$ indica quanto la violazione, di quanto è negativo
+La funzione $\phi_1(x, \mu)$ NON è differenziabile ovunque, ma è esatta
+Il valore soglia è dato da 
+$$\mu^*=\max_{i \in E \cup I}\{|\lambda^*_i|\}$$
+Con $\lambda^*_i$ il vettore dei moltiplicatori duali corrispondenti ad una soluzione ottima $x^*$
+Dato che $\lambda^*_i$ non è noto a priori, occorre iterativamente ricalibrare il valore di $\mu$
+
+- L2 penalty function
+
+Nei casi dei vincoli di uguaglianza
+$$\phi_2(x, \mu)=f(x)+\mu||c_i(x)||^2$$
+Non è differenziabile perché la derivata non è definita dove $c(x)=0$
+
+- Fletcher's augmented lagrangian
+
+E' sia differenziabile che esatta MA pesante a causa di $\lambda(x)$
+$$\phi_F(x, \mu) = f(x) - \lambda(x)^Tc(x)+\frac{1}{2}\mu\sum_{i\in E}c_i(x)^2$$
+con
+$$\lambda(x)=[A(x)A(x)^T]^{-1}A(x)\bigtriangledown f(x)$$
+e $A(x)$ indica lo Jacobiano di $c(x)$
+
+- Lagrangiana aumentata
+
+$$L_A(x, \lambda, \mu) = f(x) - \lambda^Tc(x) + \frac{1}{2}\mu||c(x)||_2^2$$
+Si accetta un punto prossimo $(x^{k+1}, \lambda^{k+1})$ SE la $L_A$ diminuisce rispetto al punto corrente $(x, \lambda)$
+Gli algoritmi che usano questa funzione di merito includono criteri per modificare opportunamente i valori di $\lambda$ e $\mu$
+
+
+Derivate direzionali
+Le funzioni non differenziabili hanno derivate direzionabili: data una funzione $f(x)$ e una direzione $p$, la derivata direzionale di $f(x)$ nella direzione $p$
+$$D(f(x), p) = \lim_{\epsilon->0}\frac{f(x+\epsilon p)-f(x)}{\epsilon}$$
+Quando $f(x)$ è continua e differenziabile in un intorno di $x$ si ha corrispondenza con il gradiente
+$$D(f(x),p) = \bigtriangledown f(x)^Tp$$
+In un metodo line search, la condizione per accettare un passo $\alpha$ è che sia abbastanza piccolo affinché sia soddisfatta per qualche $0 \leq \eta \leq 1$
+$$\phi(x+\alpha p, \mu) \leq \phi(\mu, x) + \eta\alpha D(\phi(x,u), p)$$
+Il nuovo punto che raggiungeremmo dopo il passo valutato con la funzione di merito deve essere minore o uguale al valore della funzione di merito dove siamo ora, sommata alla derivata direzionale nel punto in cui siamo e in p (quanto promette di migliorare se ci muoviamo per p) moltiplicata per $\alpha$
+
+I metodi trust region usano tipicamente un modello quadratico $q$ per stimare il valore di $\phi$ dopo un passo $p$
+La condizione sufficiente per accettare il passo. per qualche $0 \leq \eta \leq 1$, è 
+$$\phi(x + p, \mu) \leq \phi(x, \mu)-\eta(q(0)-q(p))$$
+In questo caso ci chiediamo quanto è il miglioramento quadratico spostandosi di $p$ 
+
+
+Metodi basati sui filtri
+Negli algoritmi basati sui filtri l'ottimalità e l'ammissibilità vengono trattate come due obiettivi, come nella programmazione multi obiettivo, e vengono accettate le soluzioni $x$ non dominate, cioe quelle per cui non è stata trovata in precedenza alcuna soluzione $x'$ con $f(x') \leq f(x)$ e $h(x') \leq h(x)$ dove viene indicata la misura della violazione dei vincoli con
+$$h(x)  = \sum_{i \in E}|c_i(x)|+\sum_{i \in I}[c_i(x)]^-$$
+Quindi nella struttura dati filtro salvo sia il valore della funzione obiettivo che la violazione dei vincoli
+
+Nei metodi line search una soluzione $x^{k+1} = x^k+\alpha_kp_k$ viene accettata SE $(f^{k+1}, h^{k+1})$ è una coppia di valori non dominata
+Nei metodi trust region SE una soluzione $x^{k+1}$ non viene accettata, si riduce il raggio e si ripete l'iterazione
+
+In entrambi i casi vengono intercalate iterazioni di ripristino dell'ammissibilità dove viene minimizzata SOLO $h(x)$
