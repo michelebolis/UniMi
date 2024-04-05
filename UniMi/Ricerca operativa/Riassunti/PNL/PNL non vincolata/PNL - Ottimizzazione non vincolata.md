@@ -10,4 +10,3 @@ Condizioni necessario del secondo ordine $\bigtriangledown ^2 f(\overline{x}) \g
 Condizioni sufficienti del secondo ordine $\bigtriangledown ^2 f(\overline{x}) > 0$ (definita positiva)
 
 [[PNL non vincolata - Algoritmi]]
-[[PNL Vincolata]]

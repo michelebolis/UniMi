@@ -13,4 +13,4 @@ Dove $f(x)$, $g(x)$ e $h(x)$ possono essere funzioni non lineari
 Ottimizzazione vincolata e non vincolata
 Distinguiamo tra
 - Unconstrained NLP/[[PNL - Ottimizzazione non vincolata]]: minimizzare una funzione non lineare senza alcun vincolo
-- Constrained NLP: minimizzare $f(x)$ con $x \in X$: le non linearità possono essere sia nell'obiettivo che nei vincoli
+- Constrained NLP/[[PNL Vincolata]]: minimizzare $f(x)$ con $x \in X$: le non linearità possono essere sia nell'obiettivo che nei vincoli

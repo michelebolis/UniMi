@@ -1705,3 +1705,123 @@ Nei metodi line search una soluzione $x^{k+1} = x^k+\alpha_kp_k$ viene accettata
 Nei metodi trust region SE una soluzione $x^{k+1}$ non viene accettata, si riduce il raggio e si ripete l'iterazione
 
 In entrambi i casi vengono intercalate iterazioni di ripristino dell'ammissibilità dove viene minimizzata SOLO $h(x)$
+
+---
+
+Algoritmo del simplesso rivisto
+Per eseguire i test di ammissibilità e ottimalità e scegliere il pivot su cui eseguire la prossima iterazione non e necessario conoscere tutti i coefficienti del tableau. 
+L’idea quindi e di rappresentare il tableau in un modo alternativo, ma equivalente, risparmiando alcune operazioni. 
+A questo scopo si sfrutta la dualità.
+
+Coppia duale
+Consideriamo un problema di PL in forma standard
+minimize $z = c^Tx$
+subject to $Ax = b$
+$x \geq 0$
+
+con $n+m$ variabili non negative e $m$ vincoli di uguaglianza
+Il suo duale è 
+maximize $w = b^Ty$
+subject to $A^Ty \geq c$
+
+con $m$ variabili libere e $n+m$ vincoli di disuguaglianza
+
+Base primale
+Scelta una base di $m$ colonne, il primale si puo riscrivere
+minimize $z =  c^T_Bx_B+c^T_Nx_N$
+subject to $Bx_B+Nx_N = b$
+$x_B, x_N \geq 0$
+con
+$A = [B|N]$
+$x^T  = [x_B|x_N]$
+$c^T=[c_B|c_N]$
+
+Base duale
+Il duale si puo mettere a sua volta in forma standard inserendo variabili non negative di slack
+maximize $w=b^Ty$
+subject to $A^Ty+s=c$
+con $m$ variabili $y$ libere, $n+m$ variabili $s \geq 0$ e $n+m$ equazioni
+
+Dato che $A^T = \begin{bmatrix} B^T \\ N^T \end{bmatrix}$ il duale si puo riscrivere
+maximize $w = b^Ty$
+subject to $B^Ty+s_B=c_B$
+subject to $N^Ty+s_N=c_N$
+
+Per il teorema degli scarti complementari, per ogni coppia di basi primale/duale che si corrispondono si ha che $x_is_i=0$ (una delle due deve essere fuori base), QUINDI $s_B = 0$
+Da $B^Ty = c^B$ si ottiene
+$$y = (B^T)^{-1}c_B$$
+Da $N^Ty+s_N=c_N$ si ottiene
+$$s_N = c_N- N^T(B^T)^{-1}c_B = $$
+$$c_N- N^T(B^{-1})^{T}c_B =$$
+$$c_N- (B^{-1}N)^{T}c_B$$
+Nel primale invece si ha
+$$x_B=B^{-1}b, x_N=0$$
+Cosi le soluzioni primale e duale si possono calcolare a partire da $B$ e $N$ e i dati iniziali
+
+
+Cambio di base
+Il problema ora è ottenere B e N 
+Per eseguire un passo di pivot, si sceglie una variabile primale fuori base con costo ridotto negativo, una colonna $q \in N$ t.c. $s_q <0$ (vincolo violato)
+Indichiamo con $T=B^{-1}A$ il tableau corrente (che non vogliamo calcolare esplicitamente)
+Sia $T_q$ la sua colonna corrispondente alla variabile $x_q$ (che calcoliamo esplicitamente)
+$$T_q = B^{-1}A_q$$
+dove $A_q$ indica la colonna $q$ della matrice $A$
+
+Indichiamo con $p \in B$ l'indice della variabile primale uscente
+$$p=argmin_{i:T_{iq}>0}{\{\frac{(x_B)_i}{T_{iq}}\}}$$
+dove $(x_B)_i$ indica il valore della variabile in base alla riga $i$
+
+Il nuovo valore di $x_q$, entrando in base, è $x'_q = \frac{(x_B)_p}{T_{pq}}$
+Sapendo che x e x' sono soluzioni ammissibili
+$$Ax = b, Ax'=b$$
+$$x_N=0, x_i'=0, \forall i \in N \backslash \{q\}$$
+Poiché
+$$b=Ax=Bx_B$$
+$$b=Ax'=Bx'_B+A_qx'_q$$
+uguagliando si ha
+$$x_B'=x_B-B^{-1}A_qx_q'$$
+Nel duale
+$$y^T = c_B^TB^{-1}$$
+$$A_q^Ty+s_q = c_q, s_q=c_q-y^TA_q$$
+Obiettivo
+Il valore dell'obiettivo z dopo il pivot è 
+$$z = c^Tx'=c_B^Tx'_B+c_qx'_q = $$
+$$c_B^T-c_B^T B^{-1}A_qx_q'+c_qx'_q = $$
+$$c_B^T-y^TA_qx_q'+c_qx'_q =$$
+$$c_B^T-(c_q-s_q)x'_q+c_qx'_q =$$
+$$c_B^T+s_qx'_q= z+s_qx'_q$$
+SE l'iterazione non è degenere, $s_q <0$ e $x'_q > 0$ implicano $z'<z$
+QUINDI tutto ciò che serve per procedere con le iterazioni dell'algoritmo del simplesso $(x,y,s,z)$ puo essere calcolato a partire dai dati iniziali seguendo solo prodotti tra vettore e matrice e non tra matrice, conoscendo PERO $B^-1$
+
+Fattorizzazione LU
+Per calcolare rapidamente l'inversa di B, si rappresenta $B=LU$ come prodotto tra due matrici triangolari
+- una matrice $L$ unit lower triangular (gli elementi sulla diagonale hanno valore 1 e sopra la diagonale hanno valore 0)
+- una matrice $U$ upper triangular (gli elementi sotto la diagonale hanno valore 0)
+
+Il calcolo di $T_q=B^{-1}A_q$, cioè t.c. $BT_q=A_q$ si divide in due step
+- Trovare $d:Ld=A_q$
+- Trovare $T_q:UT_q=d$
+
+Analogamente il calcolo di $y = (B^{-1})^Tc_B$, t.c. $B^Ty=c_B$ si divide in due step
+- Trovare $d:U^Td=c_B$
+- Trovare $y:L^Ty=d$
+
+Tutti gli step sono calcolabili efficientemente per eliminazione Gaussiana
+
+Aggiornamento di LU
+Nel passaggio da B a B', quando x_q entra in base e x_p esce, bisogna aggiornare efficientemente L e U
+
+$L^{-1}B = U$ è triangolare superiore
+Sia $j$ l'indice della colonna di $U$ che corrisponde a $x_p$
+$L^{-1}B'$ è ancora triangolare superiore tranne la colonna $j$
+
+Con
+- una permutazione ciclica delle colonne che sposta $j$ in fondo e tutte le colonne da $j+1$ a $n$ a sinistra di una posizione
+- una permutazione ciclica delle righe che sposta la riga $j$ in fondo e tutte le righe da $j+1$ a $n$ in alto di una posizione
+
+Si ottiene una nuova matrice triangolare superiore con in aggiunta alcuni elementi non zero sull'ultima riga
+Essa si puo esprimere come prodotto tra una matrice $L'$ identica a $I$ tranne che nell'ultima riga ed una matrice $U'$ identica alla matrice permutata tranne che nell'ultimo elemento in basso a destra
+
+Anche questi nuovi coefficienti si ricavano in modo efficiente per eliminazione Gaussiana
+
+es

@@ -11,3 +11,4 @@ Data la [[Forma canonica|forma canonica]] di un problema di PL si puo rappresent
 E' una struttura dati fondamentale sulla quale opera l'algoritmo del simplesso
 
 [[Pseudocodice algoritmo del simplesso]]
+[[Algoritmo del simplesso Semplificato]]
