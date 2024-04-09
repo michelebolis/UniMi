@@ -47,5 +47,4 @@ quando non posso cancellare?
 
 
 ATT lo spezzare va bene quando è pericolosa l associazione tra due nodi 
-posso spezzare le specificazioni tra cosa è sensibile nelle relazioni e nei nodi
 
