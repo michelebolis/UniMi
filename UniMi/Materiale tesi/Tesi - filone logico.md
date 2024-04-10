@@ -40,7 +40,54 @@ Motivo
 Inoltre individuiamo anche il nodo centrale, definito come il nodo con il maggior numero di relazioni. Considerando infatti che l'eliminazioni di un nodo deve essere preceduta dall'eliminazioni di tutte le sue relazioni, se il nodo centrale contenesse delle informazioni sensibili, avremmo una perdita considerevole di informazioni
 
 looser association: forse troppo quindi si fa cluster 
-kanonimity: approccio di anonimizzazione generalizzazione o soppressione (se ho poche tuple outliner, è meglio eliminare (prendo in input quanto al massimo voglio perdere))
+k-anonimity: approccio di anonimizzazione generalizzazione o soppressione (se ho poche 
+Richiede che ciascun dato sia indistinguibile da almeno un certo numero di soggetti, k
+Maggiore è k e maggiore sarà la protezione
+Requisiti: microdata tables 
+In base alle loro caratteristiche, gli attributi possono essere divisi in
+- attributi identificativi
+- attributi quasi identificativi
+- attributi sensibili
+- attributi non sensibili
+
+De identificando (togliendo gli attributi identificativi) non garantisce l anonimato a causa degli attributi quasi identificativi
+Togliendo sia attributi identificativi che quasi identificativi, avremmo l anonimato ma perderemmo una grande porzione 
+Metodi per il k-anonymity:
+- modificare i quasi identificatori rimpiazzandoli con un valore piu generico
+- soppressione degli outliner
+
+Come la k-anonymity puo essere rafforzato nella pratica
+La generalizzazione puo essere applicata a livello del valore o a livello dell'attributo o a livello di record
+Famiglie di approcci
+- Gerarchie: gerarchie di generalizzazioni pre definite per ogni quasi identificativo
+La nozione di dominio dell attributo viene esteso a dominio generalizzato, cioe dominio esteso ai valori generalizzati
+es
+![[Pasted image 20240410092709.png]]
+
+Il problema di generare k-anonymous dataset minimizzando le generalizzazioni è provato essere un problema NP-hard
+Approcci:
+- Cercare nell albero binario nel dominio generalizzato invece che nel dominio
+Si definisce una soglia MaxSup che rappresenta il numero massimo di soppressione accettabili in un record
+A binary search is adopted to determine the lowest level at which there is an element that corresponds to a k-anonymous dataset respecting the MaxSup constraint
+To avoid to compute the datasets to check for the k-anonymity requirement, the approach in [62] builds on the notion of (lattice of) distance vectors representing distances among the generalized domains, by means of which it is possible to check the satisfaction of k-anonymity without computing the actual corresponding datasets.
+
+- Recording: generalizza il valore del quasi identificativo in intervalli a runtime
+...
+
+Alternative:
+- Data fragmentation: alternativa alla generalizzazione che consiste in un taglio verticale
+
+es
+![[Pasted image 20240410095014.png]]
+- Micro aggregazione
+
+es
+![[Pasted image 20240410095131.png]]
+
+
+Fonte: https://spdp.di.unimi.it/papers/tdp2023.pdf, https://spdp.di.unimi.it/papers/tkde_k-anonymity.pdf
+
+tuple outliner, è meglio eliminare (prendo in input quanto al massimo voglio perdere))
 quando non posso cancellare?
 - cifrare (AES https://pycryptodome.readthedocs.io/en/latest/src/examples.html#encrypt-data-with-aes)
 - gerarchie di generalizzazioni 

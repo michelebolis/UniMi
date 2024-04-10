@@ -25,9 +25,9 @@
               "state": {
                 "file": "Materiale tesi/Demo.canvas",
                 "viewState": {
-                  "x": 1229.601250048408,
-                  "y": 2868.429797020225,
-                  "zoom": -1.6666666666666665
+                  "x": 1104.8223728073094,
+                  "y": 1762.9901777682228,
+                  "zoom": -2.083333333333333
                 }
               }
             }
@@ -43,9 +43,24 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "738cc3ad26df2d4b",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Materiale tesi/Dataset Patients.canvas",
+                "viewState": {
+                  "x": 830.6090879526466,
+                  "y": 1939.0256306839672,
+                  "zoom": -1.8587414787736598
+                }
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -74,7 +89,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"Ricerca operativa/Slide/\" ",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -111,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algoritmi e strutture dati/Algoritmi e strutture dati.canvas",
+                "file": "Materiale tesi/Dataset Patients.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algoritmi e strutture dati/Algoritmi e strutture dati.canvas",
+                "file": "Materiale tesi/Dataset Patients.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algoritmi e strutture dati/Algoritmi e strutture dati.canvas"
+                "file": "Materiale tesi/Dataset Patients.canvas"
               }
             }
           },
@@ -211,17 +226,20 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "47136b92c595cdff",
+  "active": "738cc3ad26df2d4b",
   "lastOpenFiles": [
+    "Materiale tesi/Tesi - filone logico.md",
+    "Ricerca operativa/Ricerca operativa.canvas",
+    "Materiale tesi/img/Pasted image 20240410095131.png",
+    "Materiale tesi/img/Pasted image 20240410095014.png",
+    "Materiale tesi/Demo.canvas",
+    "Materiale tesi/img/Pasted image 20240410092709.png",
     "Algoritmi e strutture dati/Riassunti/Gli  algoritmi/Tecnica Greedy - Es.md",
     "Algoritmi e strutture dati/Algoritmi e strutture dati.canvas",
-    "Materiale tesi/Demo.canvas",
-    "Materiale tesi/Tesi - filone logico.md",
     "Materiale tesi/AES.md",
     "Materiale tesi/img/Pasted image 20240407092826.png",
     "Ricerca operativa/Ricerca operativa.md",
     "Ricerca operativa/Appunti.md",
-    "Ricerca operativa/Ricerca operativa.canvas",
     "Ricerca operativa/Riassunti/Algoritmo del simplesso/Versione semplificata/Algoritmo del simplesso Semplificato.md",
     "Ricerca operativa/Riassunti/Algoritmo del simplesso/Versione semplificata/Algoritmo del simplesso Semplificato - Base primale e duale.md",
     "Ricerca operativa/Riassunti/Algoritmo del simplesso/Versione semplificata/Algoritmo del simplesso Semplificato - Fattorizzazione LU.md",
@@ -250,18 +268,14 @@
     "Ricerca operativa/Img/Pasted image 20240403103243.png",
     "Ricerca operativa/Img/Pasted image 20240403094728.png",
     "Ricerca operativa/Img/Pasted image 20240403091749.png",
-    "Ricerca operativa/Img/Pasted image 20240403085614.png",
     "Root.md",
     "Algoritmi e strutture dati/Riassunti/Strutture dati/Grafi/Rappresentazioni/Grafi - Matrice di incidenza.md",
     "Algoritmi e strutture dati/Riassunti/Strutture dati/Grafi/Rappresentazioni/Grafi - Rappresentazioni.md",
-    "Algoritmi e strutture dati/Riassunti/Strutture dati/Grafi/Rappresentazioni/Grafi - Lista di incidenza.md",
     "Algoritmi e strutture dati/Riassunti/Strutture dati/Grafi/Rappresentazioni",
     "Algoritmi e strutture dati/Riassunti/Strutture dati/Grafi/Cammini minimi",
     "Algoritmi e strutture dati/Riassunti/Strutture dati/Tabelle di hash",
     "Algoritmi e strutture dati/Riassunti/Strutture dati/Strutture indicizzate",
     "Algoritmi e strutture dati/Riassunti/Strutture dati/Grafi",
-    "Algoritmi e strutture dati/img/Pasted image 20240401155529.png",
-    "Algoritmi e strutture dati/img/Pasted image 20240401155518.png",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Materiale tesi/Esempi.canvas",
     "Materiale tesi/Dataset Patients.canvas",
