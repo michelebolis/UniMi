@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "IbChartBar",
       "IbReturnLeft",
       "IbTakeOff",
       "IbTrashWithLines",
-      "IbGraphLineUp",
-      "IbPencil"
+      "IbGraphLineUp"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -33,5 +33,6 @@
   "Ricerca operativa": "IbGraphLineUp",
   "Sistemi biometrici": "IbTrashWithLines",
   "Materiale tesi": "IbTakeOff",
-  "Algoritmi e strutture dati": "IbReturnLeft"
+  "Algoritmi e strutture dati": "IbReturnLeft",
+  "Statistica e analisi dei dati": "IbChartBar"
 }

@@ -1,0 +1,6 @@
+[[Modello Bernoulliano]]
+[[Modello Binomiale]]
+[[Modello Uniforme Discreto]]
+[[Modello Geometrico]]
+[[Modello di Poisson]]
+[[Modello Ipergeometrico]]

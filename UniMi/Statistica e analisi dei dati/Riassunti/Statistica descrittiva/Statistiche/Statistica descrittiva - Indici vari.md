@@ -1,0 +1,6 @@
+[[Statistica descrittiva - Statistiche per il valore centrale]]
+[[Statistica descrittiva - Indici di dispersione]]
+[[Statistica descrittiva - Correlazione lineare]]
+[[Entropia]]
+[[Statistica descrittiva - Indice di Gini per la concentrazione]]
+[[Statistica descrittiva - ANOVA]]

@@ -1,0 +1,6 @@
+[[Statistica Inferenziale - Introduzione]]
+[[Statistica Inferenziale - Valutazione Stimatore]]
+[[Statistica Inferenziale - Legge dei grandi numeri]]
+[[Statistica Inferenziale - Stimatore per la varianza]]
+[[Statistica Inferenziale - Metodo Plug in]]
+[[Statistica Inferenziale - Taglia del campione]]

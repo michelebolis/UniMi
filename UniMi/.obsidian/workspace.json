@@ -16,51 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "4f8e65710c5352a8",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Materiale tesi/Demo.canvas",
-                "viewState": {
-                  "x": 1104.8223728073094,
-                  "y": 1762.9901777682228,
-                  "zoom": -2.083333333333333
-                }
-              }
-            }
-          },
-          {
-            "id": "e9ec0eac7c2924d0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Materiale tesi/Tesi - filone logico.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "738cc3ad26df2d4b",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Materiale tesi/Dataset Patients.canvas",
-                "viewState": {
-                  "x": 830.6090879526466,
-                  "y": 1939.0256306839672,
-                  "zoom": -1.8587414787736598
-                }
-              }
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -126,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Materiale tesi/Dataset Patients.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Materiale tesi/Dataset Patients.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Materiale tesi/Dataset Patients.canvas"
-              }
+              "state": {}
             }
           },
           {
@@ -226,62 +179,63 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "738cc3ad26df2d4b",
+  "active": "c1ce2ce19829fc50",
   "lastOpenFiles": [
-    "Materiale tesi/Tesi - filone logico.md",
-    "Ricerca operativa/Ricerca operativa.canvas",
-    "Materiale tesi/img/Pasted image 20240410095131.png",
-    "Materiale tesi/img/Pasted image 20240410095014.png",
-    "Materiale tesi/Demo.canvas",
-    "Materiale tesi/img/Pasted image 20240410092709.png",
-    "Algoritmi e strutture dati/Riassunti/Gli  algoritmi/Tecnica Greedy - Es.md",
-    "Algoritmi e strutture dati/Algoritmi e strutture dati.canvas",
-    "Materiale tesi/AES.md",
-    "Materiale tesi/img/Pasted image 20240407092826.png",
-    "Ricerca operativa/Ricerca operativa.md",
-    "Ricerca operativa/Appunti.md",
-    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Versione semplificata/Algoritmo del simplesso Semplificato.md",
-    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Versione semplificata/Algoritmo del simplesso Semplificato - Base primale e duale.md",
-    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Versione semplificata/Algoritmo del simplesso Semplificato - Fattorizzazione LU.md",
-    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Versione semplificata/Algoritmo del simplesso Semplificato - Obiettivo.md",
-    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Versione semplificata/Algoritmo del simplesso Semplificato - Cambio di base.md",
-    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Versione semplificata",
-    "Ricerca operativa/Slide/11 - Simplesso rivisto.pdf",
-    "Ricerca operativa/Img/Pasted image 20240405091443.png",
-    "Ricerca operativa/Img/Pasted image 20240405091430.png",
-    "Ricerca operativa/Img/Pasted image 20240405091416.png",
-    "Ricerca operativa/Riassunti/PNL/PNL non vincolata",
-    "Ricerca operativa/Riassunti/PNL/PNL Vincolata",
-    "Ricerca operativa/Riassunti/PNL/PNL Vincolata/PNL Vincolata - Derivate direzionali.md",
-    "Ricerca operativa/Riassunti/PNL/PNL Vincolata/PNL Vincolata - Metodi basati sui filtri.md",
-    "Ricerca operativa/Riassunti/PNL/PNL Vincolata/PNL Vincolata - Metodi basati sulla funzione di merito.md",
-    "Ricerca operativa/Riassunti/PNL/PNL Vincolata/PNL Vincolata - Cono critico.md",
-    "Ricerca operativa/Riassunti/PNL/PNL Vincolata/PNL Vincolata.md",
-    "Ricerca operativa/Riassunti/PNL/PNL Vincolata/PNL Vincolata - Algoritmi.md",
-    "Ricerca operativa/Riassunti/PNL/PNL Vincolata/PNL Vincolata - Condizioni di ottimalità del secondo ordine.md",
-    "Ricerca operativa/Riassunti/PNL/PNL Vincolata/PNL Vincolata - Condizioni di ottimalità del primo ordine.md",
-    "Ricerca operativa/Riassunti/PNL/PNL Vincolata/PNL Vincolata - Direzioni ammissibili.md",
-    "Ricerca operativa/Riassunti/PNL/PNL Vincolata/PNL Vincolata - Due vincoli di disuguaglianza.md",
-    "Ricerca operativa/Riassunti/PNL/PNL Vincolata/PNL Vincolata - Vincoli di disuguaglianza.md",
-    "Ricerca operativa/Riassunti/PNL/PNL Vincolata/PNL Vincolata - Vincoli di uguaglianza.md",
-    "Ricerca operativa/Slide/10c - PNL vincolata.pdf",
-    "Ricerca operativa/Img/Pasted image 20240403103243.png",
-    "Ricerca operativa/Img/Pasted image 20240403094728.png",
-    "Ricerca operativa/Img/Pasted image 20240403091749.png",
     "Root.md",
-    "Algoritmi e strutture dati/Riassunti/Strutture dati/Grafi/Rappresentazioni/Grafi - Matrice di incidenza.md",
-    "Algoritmi e strutture dati/Riassunti/Strutture dati/Grafi/Rappresentazioni/Grafi - Rappresentazioni.md",
-    "Algoritmi e strutture dati/Riassunti/Strutture dati/Grafi/Rappresentazioni",
-    "Algoritmi e strutture dati/Riassunti/Strutture dati/Grafi/Cammini minimi",
-    "Algoritmi e strutture dati/Riassunti/Strutture dati/Tabelle di hash",
-    "Algoritmi e strutture dati/Riassunti/Strutture dati/Strutture indicizzate",
-    "Algoritmi e strutture dati/Riassunti/Strutture dati/Grafi",
+    "Materiale tesi/Dataset Patients.canvas",
+    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Statistica descrittiva - Indici vari.md",
+    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Statistica descrittiva - Statistiche per il valore centrale.md",
+    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Statistica descrittiva - Indici di dispersione.md",
+    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Statistica descrittiva - Indice di Gini per la concentrazione.md",
+    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Statistica descrittiva - Frequenze.md",
+    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Statistica descrittiva - Frequenze cumulate.md",
+    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Statistica Descrittiva - Frequenze congiunte e marginali.md",
+    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Grafici/Statistica descrittiva - Scatter Plot.md",
+    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Indici di dispersione - Varianza campionaria.md",
+    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Statistica descrittiva - ANOVA.md",
+    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Statistica descrittiva - Frequenze assolute e relative.md",
+    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Statistica descrittiva - Correlazione lineare.md",
+    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Indici di dispersione - Scarto assoluto medio.md",
+    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Indici di dispersione - Percentile campionario.md",
+    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Funzione cumulativa empirica.md",
+    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Entropia.md",
+    "Statistica e analisi dei dati/Riassunti/Calcolo delle probabilità/Variabili aleatorie/Varianza.md",
+    "Statistica e analisi dei dati/Riassunti/Calcolo delle probabilità/Variabili aleatorie/Variabili aleatorie congiunte.md",
+    "Statistica e analisi dei dati/Riassunti/Calcolo delle probabilità/Variabili aleatorie/Valore atteso.md",
+    "Statistica e analisi dei dati/Riassunti/Calcolo delle probabilità/Variabili aleatorie/Covarianza.md",
+    "Statistica e analisi dei dati/Riassunti/Calcolo delle probabilità/Variabili aleatorie/Calcolo delle probabilità - Variabili aleatorie.md",
+    "Statistica e analisi dei dati/Riassunti/Calcolo delle probabilità/Variabili aleatorie/Calcolo delle probabilità - Variabili aleatorie discrete.md",
+    "Statistica e analisi dei dati/Riassunti/Calcolo delle probabilità/Variabili aleatorie/Calcolo delle probabilità - Variabili aleatorie continua.md",
+    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Grafici/Statistica descrittiva - Diagramma Q-Q.md",
+    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Grafici/Statistica descrittiva - Grafici.md",
+    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche",
+    "Statistica e analisi dei dati/Riassunti/Calcolo delle probabilità/Variabili aleatorie",
+    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Grafici",
+    "Statistica e analisi dei dati/Riassunti/Calcolo delle probabilità/Modelli",
+    "Statistica e analisi dei dati/Riassunti/Calcolo delle probabilità/Definizioni",
+    "Statistica e analisi dei dati/Riassunti/Statistica Inferenziale",
+    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva",
+    "Statistica e analisi dei dati/Riassunti/Calcolo delle probabilità",
+    "Statistica e analisi dei dati/Riassunti",
+    "Statistica e analisi dei dati/img/Pasted image 20240412111900.png",
+    "Statistica e analisi dei dati/img/Pasted image 20240411153819.png",
+    "Statistica e analisi dei dati/img/Pasted image 20240411153753.png",
+    "Statistica e analisi dei dati/img/Pasted image 20240411131754.png",
+    "Statistica e analisi dei dati/img/Pasted image 20240411131750.png",
+    "Statistica e analisi dei dati/img/Pasted image 20240411125711.png",
+    "Statistica e analisi dei dati/img/Pasted image 20240411125705.png",
+    "Statistica e analisi dei dati/img/Pasted image 20240411105253.png",
+    "Statistica e analisi dei dati/img/Pasted image 20240411105249.png",
+    "Statistica e analisi dei dati/img/Pasted image 20240411102100.png",
+    "Statistica e analisi dei dati/img",
+    "Statistica e analisi dei dati/Statistica e analisi dei dati.canvas",
+    "Ricerca operativa/Ricerca operativa.canvas",
+    "Materiale tesi/Demo.canvas",
+    "Algoritmi e strutture dati/Algoritmi e strutture dati.canvas",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Materiale tesi/Esempi.canvas",
-    "Materiale tesi/Dataset Patients.canvas",
     "Sistemi biometrici/Sistemi biometrici.canvas",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
-    "Linguaggi di programmazione/Linguaggi di programmazione.canvas",
-    "Linguaggi di programmazione/Riassunti/Erlang/Erlang in action/ES.canvas"
+    "Linguaggi di programmazione/Linguaggi di programmazione.canvas"
   ]
 }

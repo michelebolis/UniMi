@@ -62,6 +62,13 @@
         "a": 1,
         "rgb": 1066577
       }
+    },
+    {
+      "query": "path:\"Statistica e analisi dei dati\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14701233
+      }
     }
   ],
   "collapse-display": true,
@@ -70,10 +77,10 @@
   "nodeSizeMultiplier": 1.65677083333333,
   "lineSizeMultiplier": 0.967708333333333,
   "collapse-forces": true,
-  "centerStrength": 0.447916666666667,
-  "repelStrength": 16.25,
-  "linkStrength": 0.609375,
-  "linkDistance": 302,
-  "scale": 0.03552464893086614,
+  "centerStrength": 0.473958333333333,
+  "repelStrength": 12.7083333333333,
+  "linkStrength": 0.651041666666667,
+  "linkDistance": 248,
+  "scale": 0.049804950250574374,
   "close": false
 }

@@ -1,4 +1,5 @@
 - [[Algoritmi e strutture dati]]
+- [[Statistica e analisi dei dati]]
 - [[Sistemi embedded]]
 - [[SWENG]]
 - [[Linguaggi di programmazione]]
