@@ -16,8 +16,24 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "57f2a81058e959d6",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Materiale tesi/Dataset Patients.canvas",
+                "viewState": {
+                  "x": 605.2292401213,
+                  "y": 2716.8835146173146,
+                  "zoom": -1.9562030120447498
+                }
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Materiale tesi/Dataset Patients.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Materiale tesi/Dataset Patients.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +138,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Materiale tesi/Dataset Patients.canvas"
+              }
             }
           },
           {
@@ -179,8 +199,11 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c1ce2ce19829fc50",
+  "active": "57f2a81058e959d6",
   "lastOpenFiles": [
+    "Materiale tesi/Esempi.canvas",
+    "Materiale tesi/Demo.canvas",
+    "Statistica e analisi dei dati/Statistica e analisi dei dati.canvas",
     "Root.md",
     "Materiale tesi/Dataset Patients.canvas",
     "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Statistica descrittiva - Indici vari.md",
@@ -207,7 +230,6 @@
     "Statistica e analisi dei dati/Riassunti/Calcolo delle probabilità/Variabili aleatorie/Calcolo delle probabilità - Variabili aleatorie discrete.md",
     "Statistica e analisi dei dati/Riassunti/Calcolo delle probabilità/Variabili aleatorie/Calcolo delle probabilità - Variabili aleatorie continua.md",
     "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Grafici/Statistica descrittiva - Diagramma Q-Q.md",
-    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Grafici/Statistica descrittiva - Grafici.md",
     "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche",
     "Statistica e analisi dei dati/Riassunti/Calcolo delle probabilità/Variabili aleatorie",
     "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Grafici",
@@ -228,12 +250,9 @@
     "Statistica e analisi dei dati/img/Pasted image 20240411105249.png",
     "Statistica e analisi dei dati/img/Pasted image 20240411102100.png",
     "Statistica e analisi dei dati/img",
-    "Statistica e analisi dei dati/Statistica e analisi dei dati.canvas",
     "Ricerca operativa/Ricerca operativa.canvas",
-    "Materiale tesi/Demo.canvas",
     "Algoritmi e strutture dati/Algoritmi e strutture dati.canvas",
     "Reti di calcolatori/Reti di calcolatori.canvas",
-    "Materiale tesi/Esempi.canvas",
     "Sistemi biometrici/Sistemi biometrici.canvas",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas"
