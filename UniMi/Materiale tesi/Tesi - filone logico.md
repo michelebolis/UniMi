@@ -95,3 +95,5 @@ quando non posso cancellare?
 
 ATT lo spezzare va bene quando è pericolosa l associazione tra due nodi 
 
+- NER per sostituire le liste 
+- mismatching words 
