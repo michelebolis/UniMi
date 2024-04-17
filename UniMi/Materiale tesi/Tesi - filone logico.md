@@ -95,5 +95,7 @@ quando non posso cancellare?
 
 ATT lo spezzare va bene quando è pericolosa l associazione tra due nodi 
 
-- NER per sostituire le liste 
+- NER per sostituire le liste
+	- https://www.nltk.org/api/nltk.classify.positivenaivebayes.html
 - mismatching words 
+	- https://github.com/seatgeek/thefuzz

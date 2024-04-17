@@ -89,7 +89,7 @@
 		{"id":"30600adaffdcca23","type":"text","text":"Id","x":451,"y":4160,"width":250,"height":60,"color":"4"},
 		{"id":"630b2491eca8bcf6","type":"text","text":"NAME","x":451,"y":4260,"width":250,"height":60,"color":"4"},
 		{"id":"932196b69cbb69af","type":"text","text":"REASONDESCRIPTION","x":-1740,"y":3182,"width":250,"height":60},
-		{"id":"d095ffba62022897","type":"text","text":"ZIP","x":451,"y":4380,"width":239,"height":50,"color":"2"},
+		{"id":"d095ffba62022897","type":"text","text":"ZIP","x":451,"y":4380,"width":239,"height":50,"color":"4"},
 		{"id":"7d8f9f8640e4c0d2","type":"text","text":"ADDRESS","x":1003,"y":3150,"width":250,"height":60,"color":"4"},
 		{"id":"bba47183a95fe733","type":"text","text":"STATE","x":1514,"y":3231,"width":250,"height":60,"color":"4"},
 		{"id":"825e8c855356c6fd","type":"text","text":"NAME","x":460,"y":3220,"width":250,"height":60,"color":"4"},
@@ -128,7 +128,7 @@
 		{"id":"22e89da5f025728f","type":"text","text":"Id","x":460,"y":3120,"width":250,"height":60,"color":"4"},
 		{"id":"43003c069898257f","type":"text","text":"LON","x":1003,"y":3434,"width":250,"height":60,"color":"4"},
 		{"id":"22f45066ad642c6b","type":"text","text":"SPECIALITY","x":460,"y":3441,"width":250,"height":53,"color":"4"},
-		{"id":"08a1f67c59fe41a1","type":"text","text":"ZIP","x":460,"y":3520,"width":109,"height":60,"color":"2"},
+		{"id":"08a1f67c59fe41a1","type":"text","text":"ZIP","x":460,"y":3520,"width":109,"height":60,"color":"4"},
 		{"id":"6800b0b216aa8e2e","type":"text","text":"PAYER_COVERAGE","x":-515,"y":2349,"width":250,"height":60,"color":"4"},
 		{"id":"b6a72593d5fbdef4","type":"text","text":"ORGANIZATION,ENCOUNTERCLASS,CODE","x":-440,"y":2020,"width":400,"height":72},
 		{"id":"b8e45decd773ca86","type":"text","text":"DESCRIPTION","x":239,"y":2660,"width":250,"height":60,"color":"4"}
