@@ -1,7 +1,7 @@
 Ogni `soluzione` $x$ è un `assegnamento di valore alle variabili`, quindi un `punto in uno spazio continuo` ad $n$ dimensioni, con $n$ il numero di variabili.
 
 Ogni vincolo di uguaglianza $ax = b$ corrisponde ad un `iperpiano`
-Ogni vincolo di disuguaglianza $ax \leq b$ corrisponde ad un semispazio
+Ogni vincolo di disuguaglianza $ax \leq b$ corrisponde ad un `semispazio`
 
 Il `sistema dei vincoli` nel modello alle disuguaglianze corrisponde all'`intersezione dei corrispondenti semispazi`, un `poliedro`
 

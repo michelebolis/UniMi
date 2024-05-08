@@ -48,54 +48,6 @@ cose che posso fare:
 		- nodo mail 9/10 è collegato a uni e solo 1/10 a persona 
 		- nodi non etichettati
 
-| Node Risk           | Warning label         | No Warning label      |
-| ------------------- | --------------------- | --------------------- |
-| Warning property    | RISK                  | look at relationships |
-| No Warning property | look at relationships | NO RISK               |
-
-| Relationship Risk   | Warning label | No Warning label                                                |
-| ------------------- | ------------- | --------------------------------------------------------------- |
-| Warning property    | RISK          | risk if it is connected to a risk label                         |
-| No Warning property | ??            | risk if it connects a risk label with a node with risk property |
-
-Possibile algoritmo
-```
-spots = given the warning properties, find all the nodes where (labels) they are
-no context = given the warning properties, the nodes where they are have no label
-
-if label is sensibile
-	count = conteggio nodi con quella label
-	for node in isolated node
-		if label == node.label
-			suggest to erase node
-			cont -= 1
-	found = False
-	for property in warning properties
-		if property[label] : found = True
-	if not found : 
-		if are there out/in relationships from/to spots :
-			# label sensibile collegate a nodi con propieta sensibili MA non ha proprieta pericolose
-			??
-		else :
-			# label sensibile MA non ha proprieta pericolose e non è collegate a proprieta pericolose
-			# Falso allarme ?
-			NO WARNING ?
-else
-	found = False
-	for property in warning properties
-		if property[label] : found = True
-	if not found : 
-		# Non è una label pericolosa e non ha properieta pericolose
-		NO WARNING
-	else 
-		if label is a person : 
-			HIGH WARNING
-			if is the central node : 
-				suggest to erase warning properties IF are not public info
-		else : NO WARNING ?
-```
-
-
 4. Che suggerimenti posso dare per ridurre il pericolo?
 	- Cancellazione
 	- Generalizzazione
@@ -103,7 +55,6 @@ else
 5. Dataset? [https://neo4j.com/docs/graph-data-science/current/management-ops/graph-creation/graph-generation/]
 Generatore pazienti [https://github.com/synthetichealth/synthea/wiki/Basic-Setup-and-Running]
 Generazione sample [https://github.com/iansrobinson/graph-databases-use-cases]
-Pole Dataset [https://github.com/neo4j-graph-examples/pole/tree/main]
 Generazione sample (limitato a 1k) [https://www.mockaroo.com/]
 Package di python utilizzabile per la generazione del sample [https://faker.readthedocs.io/en/master/]
 Formula per creazione db da excel [https://towardsdatascience.com/getting-started-with-neo4j-in-10-minutes-94788d99cc2b]

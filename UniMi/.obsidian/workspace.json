@@ -18,27 +18,27 @@
             }
           },
           {
-            "id": "57f2a81058e959d6",
+            "id": "e012aedfb24b94f9",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Materiale tesi/Dataset Patients.canvas",
+                "file": "Ricerca operativa/Ricerca operativa.canvas",
                 "viewState": {
-                  "x": 838.7699084623355,
-                  "y": 1784.0768140369994,
-                  "zoom": -1.6228696787114165
+                  "x": 2375.685835104718,
+                  "y": 3057.845355215426,
+                  "zoom": -1.6666666666666665
                 }
               }
             }
           },
           {
-            "id": "fd303726c06dd2d4",
+            "id": "b0a3c14399ada8b4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Materiale tesi/Tesi - filone logico.md",
+                "file": "Materiale tesi/Datasets.md",
                 "mode": "source",
                 "source": false
               }
@@ -95,7 +95,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 269.5
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -111,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Materiale tesi/Tesi - filone logico.md",
+                "file": "Materiale tesi/Datasets.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Materiale tesi/Tesi - filone logico.md",
+                "file": "Materiale tesi/Datasets.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Materiale tesi/Tesi - filone logico.md"
+                "file": "Materiale tesi/Datasets.md"
               }
             }
           },
@@ -211,10 +211,26 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "fd303726c06dd2d4",
+  "active": "b0a3c14399ada8b4",
   "lastOpenFiles": [
+    "Materiale tesi/img/Pasted image 20240507093711.png",
+    "Pasted image 20240506111101.png",
+    "Materiale tesi/Datasets.md",
+    "Materiale tesi/img/Pasted image 20240507093431.png",
+    "Pasted image 20240506111510.png",
+    "Materiale tesi/img/Pasted image 20240506105509.png",
+    "Materiale tesi/img/Pasted image 20240506101043.png",
+    "Ricerca operativa/Ricerca operativa.canvas",
+    "Reti di calcolatori/Esami/2023-09-26.md",
+    "Reti di calcolatori/Esami/2023-09-07.md",
+    "Materiale tesi/Tesi - Problemi da risolvere.md",
+    "Materiale tesi/Graph database - Riassunto.md",
     "Materiale tesi/Dataset Patients.canvas",
+    "Reti di calcolatori/Esami/2019-01-29.md",
+    "Reti di calcolatori/Reti di calcolatori.canvas",
+    "Reti di calcolatori/Esami/2018-02-27.md",
     "Materiale tesi/Tesi - filone logico.md",
+    "Materiale tesi/Tesi.md",
     "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistica descrittiva - Trasformazione dei dati.md",
     "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Grafici/Statistica descrittiva - Scatter Plot.md",
     "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Grafici/Box Plot.md",
@@ -234,14 +250,6 @@
     "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Statistica descrittiva - ANOVA.md",
     "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Statistica descrittiva - Frequenze assolute e relative.md",
     "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Statistica descrittiva - Correlazione lineare.md",
-    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Indici di dispersione - Scarto assoluto medio.md",
-    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Indici di dispersione - Percentile campionario.md",
-    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Funzione cumulativa empirica.md",
-    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Entropia.md",
-    "Statistica e analisi dei dati/Riassunti/Calcolo delle probabilità/Variabili aleatorie/Varianza.md",
-    "Statistica e analisi dei dati/Riassunti/Calcolo delle probabilità/Variabili aleatorie/Variabili aleatorie congiunte.md",
-    "Statistica e analisi dei dati/Riassunti/Calcolo delle probabilità/Variabili aleatorie/Valore atteso.md",
-    "Statistica e analisi dei dati/Riassunti/Calcolo delle probabilità/Variabili aleatorie/Covarianza.md",
     "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche",
     "Statistica e analisi dei dati/Riassunti/Calcolo delle probabilità/Variabili aleatorie",
     "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Grafici",
@@ -256,15 +264,8 @@
     "Statistica e analisi dei dati/img/Pasted image 20240411153753.png",
     "Statistica e analisi dei dati/img/Pasted image 20240411131754.png",
     "Statistica e analisi dei dati/img/Pasted image 20240411131750.png",
-    "Statistica e analisi dei dati/img/Pasted image 20240411125711.png",
-    "Statistica e analisi dei dati/img/Pasted image 20240411125705.png",
-    "Statistica e analisi dei dati/img/Pasted image 20240411105253.png",
-    "Statistica e analisi dei dati/img/Pasted image 20240411105249.png",
-    "Statistica e analisi dei dati/img/Pasted image 20240411102100.png",
     "Statistica e analisi dei dati/img",
-    "Ricerca operativa/Ricerca operativa.canvas",
     "Algoritmi e strutture dati/Algoritmi e strutture dati.canvas",
-    "Reti di calcolatori/Reti di calcolatori.canvas",
     "Sistemi biometrici/Sistemi biometrici.canvas",
     "Ingegneria del software/Ingegneria del software (SWENG).canvas",
     "Linguaggi di programmazione/Linguaggi di programmazione.canvas"

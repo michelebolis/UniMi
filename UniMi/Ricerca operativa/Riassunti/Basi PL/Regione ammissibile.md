@@ -12,7 +12,7 @@ Poliedri ottenibili
 
 `Tutte le soluzioni equivalenti giacciono su uno stesso iperpiano`
 La funzione obiettivo corrisponde ad un fascio di iperpiani paralleli ordinati come i corrispondenti valori dell'obiettivo
-La direzione di ottimizzazione definisce l'ordinamento degli iperpiano del fascio
+La direzione di ottimizzazione definisce l'`ordinamento` degli iperpiano del fascio
 
 es
 minimize $z = 2x_1 - 3x_2$
