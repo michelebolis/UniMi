@@ -17,3 +17,12 @@ Modelli NER Medical
 
 es
 ![[Pasted image 20240507093431.png]]
+
+usando un faker non sto rilevando che è una cosa sensibile ma mettendo un * si, sono protetto a livello di inferenze 
+inserisco cover stories
+Soppressione con * anche quando rilevo come keyword
+parlare di generalizzaione anche con gerarchie (citarlo va bene anche se non implementato)
+
+perche non faccio la ner anche sui valori delle keyword pericolose? spreco di tempo tanto ho gia una conoscenza di base del contesto data dalle keyword
+separazione contesti sanitizzazione ner o con keyword
+
