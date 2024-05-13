@@ -38,7 +38,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Materiale tesi/Datasets.md",
+                "file": "Materiale tesi/Workflow.md",
                 "mode": "source",
                 "source": false
               }
@@ -95,7 +95,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -111,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Materiale tesi/Datasets.md",
+                "file": "Materiale tesi/Workflow.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Materiale tesi/Datasets.md",
+                "file": "Materiale tesi/Workflow.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Materiale tesi/Datasets.md"
+                "file": "Materiale tesi/Workflow.md"
               }
             }
           },
@@ -213,19 +214,21 @@
   },
   "active": "b0a3c14399ada8b4",
   "lastOpenFiles": [
+    "Materiale tesi/NER sources.md",
+    "Materiale tesi/Workflow.md",
+    "Materiale tesi/Dataset Patients.canvas",
+    "Ricerca operativa/Ricerca operativa.canvas",
+    "Materiale tesi/Datasets.md",
     "Materiale tesi/img/Pasted image 20240507093711.png",
     "Pasted image 20240506111101.png",
-    "Materiale tesi/Datasets.md",
     "Materiale tesi/img/Pasted image 20240507093431.png",
     "Pasted image 20240506111510.png",
     "Materiale tesi/img/Pasted image 20240506105509.png",
     "Materiale tesi/img/Pasted image 20240506101043.png",
-    "Ricerca operativa/Ricerca operativa.canvas",
     "Reti di calcolatori/Esami/2023-09-26.md",
     "Reti di calcolatori/Esami/2023-09-07.md",
     "Materiale tesi/Tesi - Problemi da risolvere.md",
     "Materiale tesi/Graph database - Riassunto.md",
-    "Materiale tesi/Dataset Patients.canvas",
     "Reti di calcolatori/Esami/2019-01-29.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Reti di calcolatori/Esami/2018-02-27.md",
@@ -248,8 +251,6 @@
     "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Statistica Descrittiva - Frequenze congiunte e marginali.md",
     "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Indici di dispersione - Varianza campionaria.md",
     "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Statistica descrittiva - ANOVA.md",
-    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Statistica descrittiva - Frequenze assolute e relative.md",
-    "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche/Statistica descrittiva - Correlazione lineare.md",
     "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Statistiche",
     "Statistica e analisi dei dati/Riassunti/Calcolo delle probabilità/Variabili aleatorie",
     "Statistica e analisi dei dati/Riassunti/Statistica descrittiva/Grafici",
@@ -263,7 +264,6 @@
     "Statistica e analisi dei dati/img/Pasted image 20240411153819.png",
     "Statistica e analisi dei dati/img/Pasted image 20240411153753.png",
     "Statistica e analisi dei dati/img/Pasted image 20240411131754.png",
-    "Statistica e analisi dei dati/img/Pasted image 20240411131750.png",
     "Statistica e analisi dei dati/img",
     "Algoritmi e strutture dati/Algoritmi e strutture dati.canvas",
     "Sistemi biometrici/Sistemi biometrici.canvas",
