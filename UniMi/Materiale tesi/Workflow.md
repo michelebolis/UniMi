@@ -22,8 +22,8 @@ __init__(driver, keyword_context_node, keyword_context_rels, ner_context_node, n
 	self.ner_context_node := contiene i contesti da considerare in fase di ner nei nodi
 	self.ner_context_rels := contiene i contesti da considerare in fase di ner nelle relazioni
 	self.models = contiene per ogni contesto, il modello ner da utilizzare e la lista di entita considerate pericolose
-	aes_key := viene generata una chiave casuale aes per le sanitizzazioni con cifratura
-	hmac_key := viene generata una chiave casuale hmac per le sanitizzazioni con cifratura
+	self.aes_key := viene generata una chiave casuale aes per le sanitizzazioni con cifratura
+	self.hmac_key := viene generata una chiave casuale hmac per le sanitizzazioni con cifratura
 ```
 
 3. Getter delle informazioni della base di dati

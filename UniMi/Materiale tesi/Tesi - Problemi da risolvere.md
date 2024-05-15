@@ -62,3 +62,10 @@ Altri dataset [https://ucsd.libguides.com/data-statistics/finddata]
 altri esempi ufficiali [https://github.com/neo4j-graph-examples]
 Repo con dataset [https://networkrepository.com/soc.php]
 - https://networkrepository.com/soc-livejournal.php
+
+- Tesi
+
+- Prefazione: (ultima cosa perche il riassunto se è fatto bene è la prefazione stessa)
+- Introduzione: contesto/problemi/contributo
+- Stato dell'arte: sanitizzazione su basi di dati a grafo, che problemi ho toccato? Basi a grafo, ner... (i pdf li tiro giu solo da eduroam) (quando clisso su cita mi compare la entry per il file .lib con la chiave quella che usero nel file latex)
+- Esperimenti: scalabilità? 
