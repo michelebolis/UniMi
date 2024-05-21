@@ -68,4 +68,6 @@ Repo con dataset [https://networkrepository.com/soc.php]
 - Prefazione: (ultima cosa perche il riassunto se è fatto bene è la prefazione stessa)
 - Introduzione: contesto/problemi/contributo
 - Stato dell'arte: sanitizzazione su basi di dati a grafo, che problemi ho toccato? Basi a grafo, ner... (i pdf li tiro giu solo da eduroam) (quando clisso su cita mi compare la entry per il file .lib con la chiave quella che usero nel file latex)
+	- https://books.google.it/books?hl=it&lr=&id=qvA-DwAAQBAJ&oi=fnd&pg=PA23&dq=Data+Protection+and+De-identification&ots=JvFNTeyTgn&sig=eNQZym3_04faBnVfxddG2I1I4qw&redir_esc=y#v=onepage&q=Data%20Protection%20and%20De-identification&f=false
+	- https://webthesis.biblio.polito.it/18166/
 - Esperimenti: scalabilità? 
