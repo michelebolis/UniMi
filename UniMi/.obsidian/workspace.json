@@ -18,7 +18,34 @@
             }
           },
           {
+            "id": "e012aedfb24b94f9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Materiale tesi/Tesi - Problemi da risolvere.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "b0a3c14399ada8b4",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Materiale tesi/Untitled.canvas",
+                "viewState": {
+                  "x": 31.077099043359972,
+                  "y": 1171.9140567247932,
+                  "zoom": -1.1879840025722772
+                }
+              }
+            }
+          },
+          {
+            "id": "9b1f4d47bd2c6475",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -30,41 +57,14 @@
             }
           },
           {
-            "id": "76f1ff7f87639d8e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Materiale tesi/Latex.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "e70f52fa0f6675af",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Materiale tesi/Tesi - filone logico.md",
+                "file": "Ricerca operativa/CheatSheet.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "8850cc9ca8dcec0a",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Materiale tesi/Untitled.canvas",
-                "viewState": {
-                  "x": 31.78364986254377,
-                  "y": 1133.790618951084,
-                  "zoom": -0.5354455358433678
-                }
               }
             }
           }
@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Materiale tesi/Bibliografia.md",
+                "file": "Materiale tesi/Tesi - Problemi da risolvere.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Materiale tesi/Bibliografia.md",
+                "file": "Materiale tesi/Tesi - Problemi da risolvere.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Materiale tesi/Bibliografia.md"
+                "file": "Materiale tesi/Tesi - Problemi da risolvere.md"
               }
             }
           },
@@ -235,36 +235,36 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "b0a3c14399ada8b4",
+  "active": "e012aedfb24b94f9",
   "lastOpenFiles": [
-    "Materiale tesi/Latex.md",
-    "Materiale tesi/Graph database - Riassunto.md",
-    "Materiale tesi/Tesi - filone logico.md",
-    "Materiale tesi/Untitled.canvas",
-    "Materiale tesi/Bibliografia.md",
-    "Materiale tesi/Tesi - Problemi da risolvere.md",
-    "Materiale tesi/Untitled 1.canvas",
-    "Materiale tesi/Fonti tesi.md",
     "Ricerca operativa/Ricerca operativa.canvas",
+    "Materiale tesi/Untitled.canvas",
+    "Materiale tesi/Tesi - Problemi da risolvere.md",
+    "Materiale tesi/Bibliografia.md",
     "Ricerca operativa/CheatSheet.md",
+    "Materiale tesi/Untitled 1.canvas",
+    "Pasted image 20240521102617.png",
     "Materiale tesi/img/Pasted image 20240521153527.png",
     "Materiale tesi/img/Pasted image 20240521153140.png",
     "Materiale tesi/img/Pasted image 20240521152506.png",
     "Materiale tesi/img/Pasted image 20240521152402.png",
     "Materiale tesi/img/Pasted image 20240521152331.png",
-    "Pasted image 20240521151410.png",
-    "Pasted image 20240521151251.png",
-    "Pasted image 20240521103508.png",
-    "Pasted image 20240521103446.png",
-    "Pasted image 20240521102617.png",
     "Materiale tesi/Neo4j - Python.md",
     "Materiale tesi/Esempi.canvas",
+    "Materiale tesi/Latex.md",
+    "Materiale tesi/Untitled.md",
+    "Materiale tesi/Tesi - filone logico.md",
     "Materiale tesi/Workflow.md",
     "Materiale tesi/NER sources.md",
     "Materiale tesi/Dataset Patients.canvas",
     "Materiale tesi/Datasets.md",
+    "Materiale tesi/img/Pasted image 20240507093711.png",
+    "Pasted image 20240506111101.png",
+    "Materiale tesi/img/Pasted image 20240507093431.png",
+    "Pasted image 20240506111510.png",
     "Reti di calcolatori/Esami/2023-09-26.md",
     "Reti di calcolatori/Esami/2023-09-07.md",
+    "Materiale tesi/Graph database - Riassunto.md",
     "Reti di calcolatori/Esami/2019-01-29.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
     "Reti di calcolatori/Esami/2018-02-27.md",

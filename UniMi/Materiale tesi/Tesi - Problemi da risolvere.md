@@ -71,3 +71,26 @@ Repo con dataset [https://networkrepository.com/soc.php]
 	- https://books.google.it/books?hl=it&lr=&id=qvA-DwAAQBAJ&oi=fnd&pg=PA23&dq=Data+Protection+and+De-identification&ots=JvFNTeyTgn&sig=eNQZym3_04faBnVfxddG2I1I4qw&redir_esc=y#v=onepage&q=Data%20Protection%20and%20De-identification&f=false
 	- https://webthesis.biblio.polito.it/18166/
 - Esperimenti: scalabilità? 
+
+
+- La sezione stato dell'arte comprende anche macroargomenti non di tecnologie? es GDPR/definizione di dati sensibili
+
+- Come inserisco definizioni/spiegazione iniziale di un argomento?
+es spiego la distanza di levenshtein usando la definizione trovata in un paper
+
+- Come inserisco paper inerenti ai macroargomenti?
+es ho trovato che la NER è stata utilizzata per analizzare la presenza di informazioni sensibili in documenti della PA (non strutturati)
+
+
+sanitizzazione anche di dati strutturati
+k anonimity è complementare al mio problema non non compatibile
+k anonimity techiche di anonimizzazione o metriche di privacy
+
+uso soppressione e generalizzazione che SONO tecniched di sanitizzazione 
+mentre k anonimity e cosi sono metriche di protezione
+sezione 2.2: panoramica tecniche di protezione (trovo riferimento Federal Commi... 2005 da rubare come riferimento)
+scenari applicativi di k anonimity: sezione 4.2 
+basic concepts es basi di dati a grafo, come funziona la ner, cifratura, distanza di ...
+articoli
+
+- privacy
