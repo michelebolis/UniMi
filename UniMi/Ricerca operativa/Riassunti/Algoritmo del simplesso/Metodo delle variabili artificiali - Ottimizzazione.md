@@ -1,8 +1,8 @@
 Per evitare di dover eseguire $m$ passi di pivot per espellere dalla base le $m$ variabili artificiali, partendo da un problema in forma alle disuguaglianze, riscrivo in modo che il termine noto $b$ sia $\geq 0$.
 Posso usare le variabili di slack o surplus come variabili artificiali
 
-Per i vincoli di $\leq$: introduco variabili di slack positive
-Per i vincoli di $\geq$: introduco variabili di slack negative
+Per i vincoli di $\leq$: introduco `variabili di slack positive`
+Per i vincoli di $\geq$: introduco `variabili di slack negative`
 ![[Pasted image 20240301105705.png]]
 Le variabili di slack $\hat{x}_i$ per i vincoli $i \in I_1$ soddisfano gia la prima condizione per la forma canonica
 

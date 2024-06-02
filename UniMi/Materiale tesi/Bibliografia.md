@@ -77,3 +77,33 @@ Tuttavia la scelta di quale tecnica utilizzare e direttamente legata al tipo di 
 base e allo scopo associato alla sua pubblicazione. In alcuni casi, il metodo di pertur-  
 bazione potrebbe essere una scelta appropriata in quanto puo garantire il desiderato  
 compromesso privacy-utilita.
+
+- Privacy in Microdata Release: Challenges, Techniques, and Approaches
+
+Abstract: viviamo sempre di piu in una società che si basa sulla disponibilità di informazioni per prendere delle decisioni. Ci sono molti benefici associati ma allo stesso tempo ci sono  molte leggi e regolamentazioni che riconoscono la privacy e la protezione dei dati come un diritto. Inizialmente i dati venivano rilasciati sotto forma di statistiche aggregate (macrodata) ma cio era molto limitante per l'utilizzatore, quindi per garantire una maggiore flessibilità, si rilasciano dati dettagliati (microdata). Il problema è chiaramente che, in termini di protezione dei dati, i microdata potrebbero contenere informazioni sensibili
+
+Tecniche di protezione
+La comunità scientifica ha proposto diverse tecniche per la protezione dei microdata.
+Distinguiamo tra le tecniche di masking e le tecniche di syntetic data generation.
+Le prime operano direttamente sui microdata originali per sanitizzarli prima del loro rilascio mentre le seconde prevedono il rilascio di un nuovo dataset che mantenga alcune proprietà statistiche dei dati originali.
+Le tecniche di masking possono essere classifiche come
+- Non perturbative: non modificano direttamente i dati originali ma rimuovono dettagli dalla tabella, sacrificando data completeness. Questa categoria include la soppressione, la generalizzazione e il bucketization. La soppressione rimuove informazioni dalla tabella. La generalizzazione sostituisce selettivamente il contenuto di alcune celle con un valore piu generico, spesso basato su gerarchie di generalizzazione. Il bucketization opera su set di attributi la cui unione dovrebbe essere evitata dividendo le tuple in bucket, mischiandole all interno del bucket in modo da rompere la corrispondenza
+- Perturbative: distorcono le tabelle da rilasciare modificando il loro contenuto informativo, sacrificando data truthfulness. Esempi di queste tecniche sono l'aggiunta di rumore e la microaggregazione. La prima tecnica aggiunge valori alla collezione di dati iniziali in questo modo alcuni valori inclusi in quelli rilasciati non corrisponderanno a quelli veri e vice versa. La microaggregazione invece rimpiazza selettivamente tuple originali con alcune nuove, prima raggrupando le tuple in gruppi in modo che le tuple dello stesso gruppo siano simili, e poi rimpiazzando con un valore restituito da un operatore di aggregazione (es media)
+
+Un importante osservazione è che tutte le tecniche di protezione di microdata prevedono la perdita di informazioni. Per questo la comunità scientifica ha proposto degli approcci di protezione che, dato un requisito di privacy da soddisfare, si affidano alle tecniche sopra citate limitando la perdita di informazioni.
+
+Le tecniche tradizioni di protezione dei microdata sono costruite sull'assunzione che i dati da rilasciare si trovino su una singola tabella. Questo rappresenta una limitazione in molti scenari reali o in una rappresentazione non tabellare.
+
+- k-Anonymity: From Theory to Applications
+
+Abstract: k anonymity è un modello di privacy pensato per proteggere le identità degli individui coinvolti nella pubblicazioni della collezioni di dati.
+
+Social Network Analysis
+I dati di un social network sono solitamente rilasciati sotto forma di grafo, dove i nodi rappresentano gli utenti mentre gli archi le relazioni tra essi.
+La semplice rimozione delle identità degli utenti dai nodi non fornisce alcuna garanzia sull'anonimizzazione. Per rispettare una metrica di protezione, sono necessarie modifiche alla struttura del grafo, quali aggiunta/cancellazione di nodi/archi.
+Una prima possibilità è quella di applicare queste modifiche in modo casuale in modo da fornire una resistenza probabilistica alla ridentificazione.
+Altre soluzioni si basano su k-anonymity per offrire una quantificazione della protezione contro la ridentificazione. 
+L'assunzione in questo contesto è che il grado dei nodi è considerato un quasi-identificatore. Si è proposta la nozione di k-degree anonymity richiedendo che ogni nodo abbia lo stesso grado di almeno k-1 nodi del grafo
+Un altro requisito di privacy proposto si basa sull'assunzione che sia possibile identificare nuovamente un utente grazie alla struttura del grado. Si propone la nozione di k-neighborhood anonymity che richiede che il 1-neighborhood sottografo sia isomorfo a quello di almeno k-1 nodi
+
+- https://www.oracle.com/it/big-data/structured-vs-unstructured-data/

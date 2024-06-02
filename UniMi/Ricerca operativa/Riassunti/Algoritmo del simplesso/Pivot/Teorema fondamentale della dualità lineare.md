@@ -2,11 +2,11 @@ Data una coppia primale-duale
 - $P$: maximize $z(x)$, s.t. $x \in X$
 - $D$: minimize $w(x)$, s.t. $y \in Y$
 
-Esiste una sequenza finita di passi di pivot che porta l'algoritmo del simplesso a terminare, riconoscendo uno di questi quattro possibili casi
-- Soluzione ottima di $P$ e $D$
-- $P$ è illimitato e $D$ è inammissibile
-- $D$ è illimitato e $P$ è inammissibile
-- Sia $P$ che $D$ sono inammissibili
+`Esiste una sequenza finita di passi di pivot che porta l'algoritmo del simplesso a terminare, riconoscendo uno di questi quattro possibili casi`
+- `Soluzione ottima` di $P$ e $D$
+- $P$ è `illimitato` e $D$ è `inammissibile`
+- $P$ è `inammissibile` e $D$ è `illimitato` 
+- Sia $P$ che $D$ sono `inammissibili`
 
 [[Teorema dello scarto complementare]]
 

@@ -11,7 +11,7 @@ $x_B, x_N \geq 0$
 2. Moltiplicando a sinistra per $B^{-1}$
 minimize $z = c^{T}_B x_B + c^T_N x_N$
 subject to $I_{X_B} + (B^{-1} N) x_N = B^{-1} b$
-$x_B, x_N >\geq 0$
+$x_B, x_N \geq 0$
 con $I$ `matrice di identità`
 
 La soluzione di base $x_B = B^{-1} b - (B^{-1} N) x_N$

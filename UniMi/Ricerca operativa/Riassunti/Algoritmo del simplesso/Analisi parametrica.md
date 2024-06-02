@@ -1,4 +1,4 @@
-Studia come $z^*$ dipende dal valore del termine noto di un vincolo prescelto
+Studia come $z^*$ `dipende dal valore del termine noto di un vincolo prescelto`
 Il risultato è una funzione lineare a tratti: ogni suo segmento corrisponde ad una base ottima ed ogni punto di discontinuità ad un cambio di base
 
 ![[Pasted image 20240305142926.png|300]]
@@ -11,7 +11,7 @@ Interpretazione economica della PL
 3. i `termini noti` rappresentano le `quantità di risorsa disponibili`
 
 I c.c.r. delle colonne di slack all’ottimo indicano i prezzi-ombra delle corrispondenti risorse, cioè il massimo prezzo a cui conviene comprare la risorsa e il minimo prezzo a cui conviene venderla. 
-Il prezzo-ombra di risorse non scarse e nullo.
+Il prezzo-ombra di risorse non scarse è nullo.
 
 il costo ridotto $\bar{c}_j - \sum_{i}{a_{ij}\lambda_i}$ dove 
 - $c_j$ coefficiente di $x_j$ nella funzione obiettivo

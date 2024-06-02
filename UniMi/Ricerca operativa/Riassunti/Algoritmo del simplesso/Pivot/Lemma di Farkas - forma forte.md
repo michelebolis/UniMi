@@ -1,7 +1,8 @@
-Dato un sistema di disequazioni lineari $Ax \leq b$, $x \geq 0$ con A di dimensione $m$ x $n$ e $b$ di dimensione m, una e una sola di queste alternative è vera 
+Dato un sistema di disequazioni lineari $Ax \leq b$, $x \geq 0$ con $A$ di dimensione $m$ x $n$ e $b$ di dimensione $m$, una e una sola di queste alternative è vera 
 $$\exists x \in R^n : Ax \leq b, x \geq 0$$
 $$\exists y \in R^m : A^Ty \geq 0, b^Ty <0, y \geq 0$$
 OSS $y\geq 0$ non c era prima
+
 DIM 
 Introduciamo variabili di slack non negative
 La condizione 1 diventa
