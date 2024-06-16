@@ -1,6 +1,6 @@
 La sequenza dei numeri di Fibonacci inizia con $F_0=0$ e $F_1=1$ e si ricava con la ricorsione $F_k=F_{k-1}+F_{k-2}$
 
-Proprieta: dati 4 numeri di Fibonacci consecutive a partire dal k-esimo, si ha
+`Proprieta`: dati 4 numeri di Fibonacci consecutive a partire dal k-esimo, si ha
 $$F_{k+1}F_{k+2}-F_{k}F_{k+3}=(-1)^k, \forall k\geq 0 $$
 DIM per induzione
 - Base $k =0$

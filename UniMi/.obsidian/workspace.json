@@ -74,24 +74,21 @@
                 "file": "Materiale tesi/Untitled.canvas",
                 "viewState": {
                   "x": 31.78364986254377,
-                  "y": 1133.790618951084,
+                  "y": 998.9973778978484,
                   "zoom": -0.5354455358433678
                 }
               }
             }
           },
           {
-            "id": "bbe0180ea50b2331",
+            "id": "f1cfaddca28e8616",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Ricerca operativa/Ricerca operativa.canvas",
-                "viewState": {
-                  "x": 4964.003192863482,
-                  "y": 5061.913872033089,
-                  "zoom": -0.3333333333333332
-                }
+                "file": "Ricerca operativa/CheatSheet Esami passati.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -125,10 +122,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "massima curvatu",
+                "query": "kkt",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "byModifiedTime"
               }
@@ -146,7 +143,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 293.5
+    "width": 200
   },
   "right": {
     "id": "98d901f23bf6ce7e",
@@ -162,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ricerca operativa/Ricerca operativa.canvas",
+                "file": "Ricerca operativa/CheatSheet Esami passati.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,7 +176,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ricerca operativa/Ricerca operativa.canvas",
+                "file": "Ricerca operativa/CheatSheet Esami passati.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -202,7 +199,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ricerca operativa/Ricerca operativa.canvas"
+                "file": "Ricerca operativa/CheatSheet Esami passati.md"
               }
             }
           },
@@ -242,7 +239,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -261,36 +259,43 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "bbe0180ea50b2331",
+  "active": "47136b92c595cdff",
   "lastOpenFiles": [
-    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Metodo delle variabili artificiali.md",
-    "Ricerca operativa/Ricerca operativa.canvas",
-    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Metodo delle variabili artificiali - Ottimizzazione.md",
+    "Ricerca operativa/CheatSheet.md",
+    "Ricerca operativa/CheatSheet Esami passati.md",
     "Materiale tesi/Untitled.canvas",
-    "Materiale tesi/Bibliografia.md",
     "Pasted image 20240521102617.png",
+    "Ricerca operativa/Ricerca operativa.canvas",
+    "Ricerca operativa/Riassunti/PNL/PNL Vincolata/PNL Vincolata - Cono critico.md",
+    "Ricerca operativa/Riassunti/PNL/PNL Vincolata/PNL Vincolata - Condizioni di ottimalità del secondo ordine.md",
+    "Ricerca operativa/Riassunti/PNL/PNL Vincolata/PNL Vincolata - Condizioni di ottimalità del primo ordine.md",
+    "Pasted image 20240608141214.png",
+    "Ricerca operativa/Domande Orale.md",
+    "Ricerca operativa/Slide/10a - PNL non vincolata.pdf",
+    "Ricerca operativa/Slide/10b - PNL monodimensionale.pdf",
+    "Ricerca operativa/Slide/07 - PLI.pdf",
+    "Ricerca operativa/Riassunti/PLI/PLI - Rilassamento Definizione.md",
+    "Ricerca operativa/Riassunti/PLI/PLI - Rilassamento surrogato.md",
+    "Ricerca operativa/Riassunti/PLI/PLI - Rilassamento Lagrangeano.md",
+    "Ricerca operativa/Riassunti/PLI/PLI - Rilassamento lineare continuo.md",
+    "Ricerca operativa/Riassunti/PLI/PLI - Problema duale.md",
+    "Materiale tesi/Latex.md",
+    "Algoritmi e strutture dati/Riassunti/Strutture dati/Alberi/Alberi binari di ricerca.md",
+    "Algoritmi e strutture dati/Riassunti/Strutture dati/Alberi/Strutture dati - Alberi.md",
+    "Algoritmi e strutture dati/Riassunti/Strutture dati/Alberi/Alberi perfettamente bilanciati.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Metodo delle variabili artificiali.md",
+    "Ricerca operativa/Riassunti/Algoritmo del simplesso/Metodo delle variabili artificiali - Ottimizzazione.md",
+    "Materiale tesi/Bibliografia.md",
     "Ricerca operativa/Riassunti/Ricerca operativa - Riassunto.md",
     "Ricerca operativa/Riassunti/PL - Programmazione lineare.md",
-    "Ricerca operativa/CheatSheet.md",
     "Ricerca operativa/Riassunti/PL a piu obiettivi/Criterio del punto di massima curvatura.md",
     "Ricerca operativa/Riassunti/PL a piu obiettivi/PL a piu obiettivi - Prima fase.md",
     "Ricerca operativa/Riassunti/PL a piu obiettivi/PL a piu obiettivi - Seconda fase.md",
     "Algoritmi e strutture dati/Riassunti/Strutture dati/Grafi/Grafo - Algoritmo di Prim.md",
     "Materiale tesi/Tesi - Problemi da risolvere.md",
     "Materiale tesi/Tesi - filone logico.md",
-    "Materiale tesi/Latex.md",
-    "Reti di calcolatori/Esami/2019-01-29.md",
-    "Reti di calcolatori/Esami/2022-06-21.md",
-    "Reti di calcolatori/Esami/2023-02-21.md",
-    "Reti di calcolatori/Esami/2023-06-20.md",
-    "Reti di calcolatori/Esami/2023-07-25.md",
-    "Reti di calcolatori/Esami/2023-09-07.md",
-    "Reti di calcolatori/Esami/2023-09-26.md",
     "Reti di calcolatori/Reti di calcolatori.canvas",
-    "Reti di calcolatori/Esami/2018-02-27.md",
-    "Materiale tesi/Graph database - Riassunto.md",
     "Materiale tesi/Untitled 1.canvas",
-    "Materiale tesi/Fonti tesi.md",
     "Materiale tesi/img/Pasted image 20240521153527.png",
     "Materiale tesi/img/Pasted image 20240521153140.png",
     "Materiale tesi/img/Pasted image 20240521152506.png",
@@ -299,10 +304,7 @@
     "Pasted image 20240521151410.png",
     "Pasted image 20240521151251.png",
     "Pasted image 20240521103508.png",
-    "Pasted image 20240521103446.png",
-    "Materiale tesi/Neo4j - Python.md",
     "Materiale tesi/Esempi.canvas",
-    "Materiale tesi/Workflow.md",
     "Materiale tesi/Dataset Patients.canvas",
     "Materiale tesi/Demo.canvas",
     "Statistica e analisi dei dati/Statistica e analisi dei dati.canvas",
@@ -313,9 +315,6 @@
     "Statistica e analisi dei dati/Riassunti/Calcolo delle probabilità/Definizioni",
     "Statistica e analisi dei dati/Riassunti/Statistica Inferenziale",
     "Statistica e analisi dei dati/Riassunti/Statistica descrittiva",
-    "Statistica e analisi dei dati/Riassunti/Calcolo delle probabilità",
-    "Statistica e analisi dei dati/Riassunti",
-    "Statistica e analisi dei dati/img",
     "Algoritmi e strutture dati/Algoritmi e strutture dati.canvas",
     "Sistemi biometrici/Sistemi biometrici.canvas"
   ]

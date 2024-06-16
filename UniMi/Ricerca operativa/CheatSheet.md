@@ -24,16 +24,16 @@ param M : 1   2 :=
 Situazioni ricorrenti
 - Massimizzare un minimo
 
-Dichiaro una variabile di appoggio in cui calcolo il minimo `y` attraverso un vincolo 
+Dichiaro una variabile di appoggio in cui calcolo il minimo $y$ attraverso un vincolo 
 `subject to Vincolo : y <= ...`
-Massimizzo nella funzione obiettivo y
+Massimizzo nella funzione obiettivo $y$
 
 - Serie di lower e upper bound
 
 Creo due vettori/matrici, uno che conterrà i lower bound e uno gli upper bound
 Creo due vincoli per far rispettare i due bound
-SE bound in %, `subject to Vincolo {i in N} : x[i] <= lowerBound[i]*...`
-SE bound quantitativi, `subject to Vincolo {i in N} : x[i] <= lowerBound[i]`
+SE bound relativi, `subject to Vincolo {i in N} : x[i] <= lowerBound[i]*...`
+SE bound assoluti, `subject to Vincolo {i in N} : x[i] <= lowerBound[i]`
 
 - Solo una parte di un insieme è utilizzata per un parametro
 
@@ -115,11 +115,26 @@ Per inizializzare la variabile, cioe da dove parte il risolutore, nella variabil
 
 Solver:
 - snopt: non lineare
-- minos: lineare
-- lindo: non lineare intero
+- knitro: non lineare intero
 
 Funzioni non lineare di AMPL
 - `x mod y` modulo 
 	- cercare di avere sempre numeri positivi es `i-1 mod 3` -> `i+2 mod 3`
-	- sui parametri su cui uso il mod, cercare di avere indici da 0 a n-1 piuttosto che da 1 a n
+	- sui parametri su cui uso il mod, cercare di avere indici da $0$ a $n-1$ piuttosto che da $1$ a $n$
 - `sqrt(x)` radice quadrata
+- `abs(x)` valore assoluto
+
+
+Ottimalità della soluzione:
+- `PL`: ottimo sicuramente raggiunto
+- `PLI`: ottimo sicuramente raggiunto
+- `PLN`: bisogna ragionare se il problema è convesso ALLORA la soluzione è un ottimo globale ALTRIMENTI non si puo dire
+
+Unicità della soluzione:
+- `PL`: unica SE tutte le variabili fuori base (`NL`) hanno coefficiente diverso da 0 (cerca `< eps` nel file .out)
+- `PLI`: dipende dal problema, ci potrebbero essere piu assegnamenti delle variabili binari che raggiungono l'ottimo (es permutazione quando due variabili contribuiscono allo stesso modo)
+- `PLN`: bisogna ragionare se il problema è convesso ALLORA è unica la soluzione ALTRIMENTI non si puo dire
+
+Trick: se sospetti della non unicità:
+- metti un vincolo di non peggioramento in cui fissi l'ottimo al valore che hai trovato 
+- metti un vincolo che obblighi la soluzione a essere diversa se il problema non è impossibile hai trovato un'altra soluzione per cui l'obiettivo è ottimo

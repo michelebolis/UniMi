@@ -6,7 +6,7 @@ Si conosca il valore della funzione $f(x)$ nei due punti interni
 
 ![[Pasted image 20240401102743.png|250]]
 
-Alla successiva iterazione l'intervallo di incertezza risulta composta da due delle tre parti dell'intervallo di incertezza precedente e uno dei due punti interni diventa un estremo dell'intervallo di incertezza
+`Alla successiva iterazione l'intervallo di incertezza risulta composta da due delle tre parti dell'intervallo di incertezza precedente e uno dei due punti interni diventa un estremo dell'intervallo di incertezza`
 
 Per simmetria, ad ogni iterazione i punti in cui valutare $f(x)$ sono scelti in modo simmetrico nell'intervallo di incertezza corrente
 Proprieta che ne consegue:

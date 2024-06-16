@@ -10,7 +10,7 @@ Interpretazione economica della PL
 2. i `coefficienti` rappresentano i `profitti unitari`
 3. i `termini noti` rappresentano le `quantità di risorsa disponibili`
 
-I c.c.r. delle colonne di slack all’ottimo indicano i prezzi-ombra delle corrispondenti risorse, cioè il massimo prezzo a cui conviene comprare la risorsa e il minimo prezzo a cui conviene venderla. 
+I c.c.r. delle colonne di slack all’ottimo indicano i prezzi-ombra delle corrispondenti risorse, cioè il `massimo prezzo a cui conviene comprare la risorsa e il minimo prezzo a cui conviene venderla`. 
 Il prezzo-ombra di risorse non scarse è nullo.
 
 il costo ridotto $\bar{c}_j - \sum_{i}{a_{ij}\lambda_i}$ dove 

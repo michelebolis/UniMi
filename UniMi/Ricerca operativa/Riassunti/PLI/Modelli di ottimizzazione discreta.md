@@ -1,7 +1,7 @@
 Variabili binarie
 Molto spesso le variabili nei problemi di ottimizzazione rappresentano quantita che possono essere sia continue che discrete
 
-- Le variabili binarie rappresentano scelte logiche con un dominio {0, 1}
+- Le variabili binarie rappresentano `scelte logiche` con un dominio {0, 1}
 Cioe quando
 - non hanno un'unita di misura 
 - non ammettono approssimazioni
@@ -28,7 +28,7 @@ $$\begin{cases} 0 \leq y \leq u, \text{SE } x= 1 \\ y=0, \text{SE } x=0 \end{cas
 es costi fissi
 ![[Pasted image 20240327150916.png|400]]
 
-- Le variabili binarie possono essere usate anche per attivare e disattivare i vincoli
+- Le variabili binarie possono essere `usate anche per attivare e disattivare i vincoli`
 Dato il vincolo, aggiungendo M abbastanza grande
 $$y \leq Q + Mx$$
 Qualunque sia il valore di y, in realta dopo aver aggiunto Mx il vincolo risulta soddisfatto e quindi è come se lo disattivassi
